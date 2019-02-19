@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Licenses on OSRTOS</title>
+    <link>https://osrtos.com/licenses/</link>
+    <description>Recent content in Licenses on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jan 2018 05:35:24 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/licenses/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apache License</title>
+      <link>https://osrtos.com/licenses/apache-license/</link>
+      <pubDate>Tue, 23 Jan 2018 05:35:24 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/apache-license/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache License 2.0</title>
+      <link>https://osrtos.com/licenses/apache-license-2.0/</link>
+      <pubDate>Tue, 12 Feb 2019 05:45:10 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/apache-license-2.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bsd</title>
+      <link>https://osrtos.com/licenses/bsd/</link>
+      <pubDate>Tue, 12 Feb 2019 06:21:04 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/bsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gpl</title>
+      <link>https://osrtos.com/licenses/gpl/</link>
+      <pubDate>Thu, 01 Dec 2016 10:50:15 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/gpl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gpl V2</title>
+      <link>https://osrtos.com/licenses/gpl-v2/</link>
+      <pubDate>Thu, 14 Feb 2019 08:13:11 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/gpl-v2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gpl V3</title>
+      <link>https://osrtos.com/licenses/gpl-v3/</link>
+      <pubDate>Wed, 26 Apr 2017 18:36:10 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/gpl-v3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lgplv2.1</title>
+      <link>https://osrtos.com/licenses/lgplv2.1/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/lgplv2.1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mit</title>
+      <link>https://osrtos.com/licenses/mit/</link>
+      <pubDate>Tue, 07 Aug 2018 02:47:39 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/mit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modified Gpl</title>
+      <link>https://osrtos.com/licenses/modified-gpl/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/modified-gpl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modified Gpl V2</title>
+      <link>https://osrtos.com/licenses/modified-gpl-v2/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/modified-gpl-v2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mozilla Public License Version 2.0</title>
+      <link>https://osrtos.com/licenses/mozilla-public-license-version-2.0/</link>
+      <pubDate>Mon, 17 Dec 2018 07:25:23 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/mozilla-public-license-version-2.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>https://osrtos.com/licenses/other/</link>
+      <pubDate>Tue, 12 Feb 2019 03:38:22 +0000</pubDate>
+      
+      <guid>https://osrtos.com/licenses/other/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

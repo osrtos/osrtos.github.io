@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>OSRTOS </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/app.1fe4897791c61bfc04856626e923754e.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+
+    
+      <link href="https://osrtos.com/libraries/ucglib/index.xml" rel="alternate" type="application/rss+xml" title="OSRTOS" />
+      <link href="https://osrtos.com/libraries/ucglib/index.xml" rel="feed" type="application/rss+xml" title="OSRTOS" />
+    
+
+    <meta property="og:title" content="Ucglib" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://osrtos.com/libraries/ucglib/" />
+<meta property="og:updated_time" content="2016-11-29T11:36:58&#43;00:00"/>
+
+<meta itemprop="name" content="Ucglib">
+<meta itemprop="description" content="">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ucglib"/>
+<meta name="twitter:description" content=""/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+<header id="js-header" class="u-header u-header--static">
+    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+        <div class="container">
+          
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          
+
+        
+        <a href="https://osrtos.com/" class="navbar-brand">
+          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
+        </a>
+        
+
+        
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          
+          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+            
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+
+
+
+    <main class="pb7" role="main">
+      
+
+
+
+
+
+
+
+<section class="container-fluid g-px-50 g-pt-20 g-pb-70">
+  <div class="pull-right">
+    <div class="g-mt-10">
+      <a class="btn btn-success" href="/submit">Submit Library / Fix Bugs</a>
+    </div>
+  </div>
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">Open Source RTOS Libraries</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover table-fixed">
+      <thead style="background:#eee;">
+        <tr>
+          <th>Name</th>
+          <th>License</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Version</th>
+          <th>Links</th>
+          <th>Last updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/cgui/">CGUI</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                GPL
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">GUI</td>
+          <td><p>CGUI is a library that provides you with a set of C-functions to create GUI applications, i.e. windows and window controls like buttons, check-boxes, menus, input boxes etc.</p></td>
+          <td width="8%">2.0.5</td>
+          <td width="8%">
+            
+            <a href="https://sourceforge.net/projects/cgui/" target="_blank"><i
+                class="fa fa-file-code-o"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2015-12-15</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/fatfs/">FatFs</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                GPL
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">File System</td>
+          <td><p>FatFs is a generic FAT/exFAT file system module for small embedded systems. The FatFs module is written in compliance with ANSI C (C89) and completely separated from the disk I/O layer. Therefore it is independent of the platform. It can be incorporated into small microcontrollers with limited resource, such as 8051, PIC, AVR, ARM, Z80, 78K and etc.</p></td>
+          <td width="8%">R0.12b</td>
+          <td width="8%">
+            
+          </td>
+          <td width="8%">2016-10-13</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/iup/">IUP</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Other
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">GUI</td>
+          <td><p>IUP is a portable toolkit for building graphical user interfaces. It offers a configuration API in three basic languages: C, Lua and LED. IUP purpose is to allow a program to be executed in different systems without any modification.</p></td>
+          <td width="8%">3.25</td>
+          <td width="8%">
+            
+            <a href="https://sourceforge.net/projects/iup/" target="_blank"><i
+                class="fa fa-file-code-o"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-05-30</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/jesfs/">JesFs</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Other
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">File System</td>
+          <td><p>JesFs is an Ultra-Lightweight Flash File System, especially designed for NOR-Flash.</p></td>
+          <td width="8%">dev</td>
+          <td width="8%">
+            
+            <a href="https://github.com/joembedded/JesFs" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-03-22</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/littlevgl/">LittlevGL</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                MIT
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">GUI</td>
+          <td><p>LittlevGL is a free and open-source graphics library providing everything you need to create a Graphical User Interface (GUI) on embedded systems with easy-to-use graphical elements, beautiful visual effects and low memory footprint.</p></td>
+          <td width="8%">v5.1.1</td>
+          <td width="8%">
+            
+            <a href="https://github.com/littlevgl/lvgl" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-05-20</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/micropython/">MicroPython</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                MIT
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">other</td>
+          <td><p>A lean and efficient Python implementation for microcontrollers and constrained systems.</p></td>
+          <td width="8%">v1.9.4</td>
+          <td width="8%">
+            
+            <a href="https://github.com/micropython/micropython" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-05-11</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/minigui/">MiniGUI</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                GPL
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">GUI</td>
+          <td><p>MiniGUI is a free software project. It aims to provide a fast, stable, and cross-operating-system graphics user interface (GUI) support system, which is especially fit for real-time embedded systems based-on Linux/uClinux, eCos, and other traditional RTOSes, such as VxWorks, ThreadX, uC/OS-II, and Nucleus.</p></td>
+          <td width="8%">V3.0.12</td>
+          <td width="8%">
+            
+          </td>
+          <td width="8%">2012-01-16</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/nffs/">NFFS</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Apache License
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">File System</td>
+          <td><p>The Newtron Flash File System (nffs) is an open source file system available by default with the Apache Mynewt OS.</p></td>
+          <td width="8%">dev-master</td>
+          <td width="8%">
+            
+            <a href="https://github.com/apache/incubator-mynewt-core/tree/develop/fs/nffs" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2017-01-05</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/open-thread/">Open Thread</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                BSD
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">Networking</td>
+          <td><p>OpenThread released by Nest is an open-source implementation of the Thread networking protocol.</p></td>
+          <td width="8%">2017-07-16</td>
+          <td width="8%">
+            
+            <a href="https://github.com/openthread/openthread" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-02-02</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/spiffs/">SPIFFS</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                MIT
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">File System</td>
+          <td><p>Spiffs is a file system intended for SPI NOR flash devices on embedded targets.</p></td>
+          <td width="8%">0.3.7</td>
+          <td width="8%">
+            
+            <a href="https://github.com/pellepl/spiffs" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2017-07-17</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/ucglib/">Ucglib</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                BSD
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">GUI</td>
+          <td><p>Arduino True Color Library for TFTs and OLEDs</p></td>
+          <td width="8%">v1.00</td>
+          <td width="8%">
+            
+            <a href="https://github.com/olikraus/ucglib" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-01-01</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/yaffs/">Yaffs</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                GPL v2
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">File System</td>
+          <td><p>Yaffs (Yet Another Flash File System) is an open-source file system specifically designed to be fast, robust and suitable for embedded use with NAND and NOR Flash.</p></td>
+          <td width="8%">aleph1-release</td>
+          <td width="8%">
+            
+          </td>
+          <td width="8%">2016-07-08</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/eefs/">eefs</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Other
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">File System</td>
+          <td><p>EEFS is for EEPROM File System Project (EEFS). It is a simple file system for memory devices such as EEPROM, RAM, ROM, etc. Currently it is not intended for block oriented devices such as disks and flash devices.</p></td>
+          <td width="8%">eefs-2.0</td>
+          <td width="8%">
+            
+            <a href="https://github.com/nasa/eefs" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2014-04-23</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/littlefs/">littlefs</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Apache License
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">File System</td>
+          <td><p>A little fail-safe filesystem designed for embedded systems</p></td>
+          <td width="8%">v1.3</td>
+          <td width="8%">
+            
+            <a href="https://github.com/geky/littlefs" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-04-30</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/lwip/">lwIP</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                BSD
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">Networking</td>
+          <td><p>lwIP is a small independent implementation of the TCP/IP protocol suite. The focus of the lwIP TCP/IP implementation is to reduce resource usage while still having a full scale TCP. This makes lwIP suitable for use in embedded systems with tens of kilobytes of free RAM and room for around 40 kilobytes of code ROM.</p></td>
+          <td width="8%">2.0.3</td>
+          <td width="8%">
+            
+            <a href="http://git.savannah.gnu.org/cgit/lwip/lwip-contrib.git" target="_blank"><i
+                class="fa fa-file-code-o"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2017-09-16</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/modm/">modm</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Mozilla Public License Version 2.0
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">other</td>
+          <td><p>modm is a toolbox for building custom C++17 libraries tailored to your embedded device. modm generates startup code, HALs and their implementations, communication protocols, drivers for external devices, BSPs, etc… in a modular, customizable process that you can fine-tune to your needs.</p></td>
+          <td width="8%">dev-master</td>
+          <td width="8%">
+            
+            <a href="https://github.com/modm-io/modm" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2018-12-17</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="/library/ugui/">µGUI</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Other
+              </li>
+              </ul>
+            
+          </td>
+          <td width="8%">GUI</td>
+          <td><p>µGUI is a free and open source graphic library for embedded systems. It is platform-independent and can be easily ported to almost any microcontroller system. As long as the display is capable of showing graphics, µGUI is not restricted to a certain display technology. Therefore, display technologies such as LCD, TFT, E-Paper, LED or OLED are supported.</p></td>
+          <td width="8%">V0.31 beta</td>
+          <td width="8%">
+            
+            <a href="https://github.com/achimdoebler/UGUI" target="_blank"><i
+                class="fa fa-github"
+                aria-hidden="true"></i> Code</a>
+            
+          </td>
+          <td width="8%">2016-01-02</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+    </main>
+    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+    
+    <div class="container">
+        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+    </div>
+</div>
+    
+
+  <script src="/app.511f51f2142527ad1ca0.js"></script>
+
+
+  </body>
+</html>

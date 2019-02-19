@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Platforms on OSRTOS</title>
+    <link>https://osrtos.com/platforms/</link>
+    <description>Recent content in Platforms on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Nov 2016 11:36:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/platforms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>8051</title>
+      <link>https://osrtos.com/platforms/8051/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/8051/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andes</title>
+      <link>https://osrtos.com/platforms/andes/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/andes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arc</title>
+      <link>https://osrtos.com/platforms/arc/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/arc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arm</title>
+      <link>https://osrtos.com/platforms/arm/</link>
+      <pubDate>Thu, 14 Feb 2019 08:13:11 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/arm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Avr</title>
+      <link>https://osrtos.com/platforms/avr/</link>
+      <pubDate>Tue, 12 Feb 2019 06:21:04 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/avr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coldfire</title>
+      <link>https://osrtos.com/platforms/coldfire/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/coldfire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freescale Hcs12</title>
+      <link>https://osrtos.com/platforms/freescale-hcs12/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/freescale-hcs12/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M68k</title>
+      <link>https://osrtos.com/platforms/m68k/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/m68k/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mips</title>
+      <link>https://osrtos.com/platforms/mips/</link>
+      <pubDate>Sat, 18 Mar 2017 01:28:16 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/mips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Msp430</title>
+      <link>https://osrtos.com/platforms/msp430/</link>
+      <pubDate>Tue, 12 Feb 2019 06:21:04 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/msp430/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nios Ii</title>
+      <link>https://osrtos.com/platforms/nios-ii/</link>
+      <pubDate>Tue, 12 Feb 2019 03:38:22 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/nios-ii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>None</title>
+      <link>https://osrtos.com/platforms/none/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/none/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pic</title>
+      <link>https://osrtos.com/platforms/pic/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/pic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posix</title>
+      <link>https://osrtos.com/platforms/posix/</link>
+      <pubDate>Sun, 25 Jun 2017 20:58:42 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/posix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Powerpc</title>
+      <link>https://osrtos.com/platforms/powerpc/</link>
+      <pubDate>Sun, 25 Jun 2017 20:58:42 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/powerpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Risc V</title>
+      <link>https://osrtos.com/platforms/risc-v/</link>
+      <pubDate>Tue, 12 Feb 2019 06:00:17 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/risc-v/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X86</title>
+      <link>https://osrtos.com/platforms/x86/</link>
+      <pubDate>Tue, 12 Feb 2019 06:00:17 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/x86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X86_64</title>
+      <link>https://osrtos.com/platforms/x86_64/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/x86_64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xtensa</title>
+      <link>https://osrtos.com/platforms/xtensa/</link>
+      <pubDate>Wed, 24 Jan 2018 01:43:59 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/xtensa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zilog</title>
+      <link>https://osrtos.com/platforms/zilog/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/platforms/zilog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

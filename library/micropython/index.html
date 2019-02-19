@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>OSRTOS  | MicroPython</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/app.1fe4897791c61bfc04856626e923754e.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+
+    
+
+    <meta property="og:title" content="MicroPython" />
+<meta property="og:description" content="A lean and efficient Python implementation for microcontrollers and constrained systems." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://osrtos.com/library/micropython/" /><meta property="article:published_time" content="2018-08-07T02:47:39&#43;00:00"/>
+<meta property="article:modified_time" content="2018-08-07T02:47:39&#43;00:00"/>
+
+<meta itemprop="name" content="MicroPython">
+<meta itemprop="description" content="A lean and efficient Python implementation for microcontrollers and constrained systems.">
+
+
+<meta itemprop="datePublished" content="2018-08-07T02:47:39&#43;00:00" />
+<meta itemprop="dateModified" content="2018-08-07T02:47:39&#43;00:00" />
+<meta itemprop="wordCount" content="242">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MicroPython"/>
+<meta name="twitter:description" content="A lean and efficient Python implementation for microcontrollers and constrained systems."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+<header id="js-header" class="u-header u-header--static">
+    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+        <div class="container">
+          
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          
+
+        
+        <a href="https://osrtos.com/" class="navbar-brand">
+          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
+        </a>
+        
+
+        
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          
+          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+            
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+
+
+
+    <main class="pb7" role="main">
+      
+<section class="container g-px-50 g-pt-20 g-pb-70">
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">MicroPython</h1>
+  <div class="row rtos-page rtos-item rtos">
+    <div class="col-md-9">
+      <div class=""><p>A lean and efficient Python implementation for microcontrollers and constrained systems.</p>
+
+<h3 id="features">Features</h3>
+
+<ul>
+<li>highly configurable due to many compile-time configuration options</li>
+<li>support for many architectures (x86, x86-64, ARM, ARM Thumb, Xtensa)</li>
+<li>extensive test suite with over 590 tests, and more than 18,500 individual testcases</li>
+<li>code coverage at 98.4% for the core and at 96.3% for the core plus extended modules</li>
+<li>fast start-up time from boot to loading of first script (150 microseconds to get to boot.py, on PYBv1.1 running at 168MHz)</li>
+<li>a simple, fast and robust mark-sweep garbage collector for heap memory</li>
+<li>a MemoryError exception is raised if the heap is exhausted</li>
+<li>a RuntimeError exception is raised if the stack limit is reached</li>
+<li>support for running Python code on a hard interrupt with minimal latency</li>
+<li>errors have a backtrace and report the line number of the source code</li>
+<li>constant folding in the parser/compiler</li>
+<li>pointer tagging to fit small integers, strings and objects in a machine word</li>
+<li>transparent transition from small integers to big integers</li>
+<li>support for 64-bit NaN boxing object model</li>
+<li>support for 30-bit stuffed floats, which don&rsquo;t require heap memory</li>
+<li>a cross-compiler and frozen bytecode, to have pre-compiled scripts that don&rsquo;t take any RAM (except for any dynamic objects they create)</li>
+<li>multithreading via the &ldquo;_thread&rdquo; module, with an optional global-interpreter-lock (still work in progress, only available on selected ports)</li>
+<li>a native emitter that targets machine code directly rather than the bytecode virtual machine</li>
+<li>inline assembler (currently Thumb and Xtensa instruction sets only)</li>
+</ul></div>
+      <div class="g-mb-20">
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-link"> </i>
+          <span>Website: <a href="http://micropython.org/" target="_blank">http://micropython.org/</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i
+            class="fa fa-github">
+          </i>
+          <span>Source code: <a href="https://github.com/micropython/micropython" target="_blank">https://github.com/micropython/micropython</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-copyright"> </i>
+          <span>License: </span>
+          
+          
+          
+          
+          MIT
+          </ul>
+          
+        </h3>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+    
+    <div class="container">
+        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+    </div>
+</div>
+    
+
+  <script src="/app.511f51f2142527ad1ca0.js"></script>
+
+
+  </body>
+</html>

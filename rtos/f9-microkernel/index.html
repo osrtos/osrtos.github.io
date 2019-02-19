@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>OSRTOS  | F9 Microkernel</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/app.1fe4897791c61bfc04856626e923754e.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+
+    
+
+    <meta property="og:title" content="F9 Microkernel" />
+<meta property="og:description" content="F9 microkernel is a microkernel-based (L4-style) kernel to support running real-time and time-sharing applications (for example, wireless communications) for ARM Cortex-M series microprocessors with efficiency (performance &#43; power consumption) and security (memory protection &#43; isolated execution) in mind." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://osrtos.com/rtos/f9-microkernel/" /><meta property="article:published_time" content="2016-11-30T13:54:12&#43;00:00"/>
+<meta property="article:modified_time" content="2016-11-30T13:54:12&#43;00:00"/>
+
+<meta itemprop="name" content="F9 Microkernel">
+<meta itemprop="description" content="F9 microkernel is a microkernel-based (L4-style) kernel to support running real-time and time-sharing applications (for example, wireless communications) for ARM Cortex-M series microprocessors with efficiency (performance &#43; power consumption) and security (memory protection &#43; isolated execution) in mind.">
+
+
+<meta itemprop="datePublished" content="2016-11-30T13:54:12&#43;00:00" />
+<meta itemprop="dateModified" content="2016-11-30T13:54:12&#43;00:00" />
+<meta itemprop="wordCount" content="541">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="F9 Microkernel"/>
+<meta name="twitter:description" content="F9 microkernel is a microkernel-based (L4-style) kernel to support running real-time and time-sharing applications (for example, wireless communications) for ARM Cortex-M series microprocessors with efficiency (performance &#43; power consumption) and security (memory protection &#43; isolated execution) in mind."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+<header id="js-header" class="u-header u-header--static">
+    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+        <div class="container">
+          
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          
+
+        
+        <a href="https://osrtos.com/" class="navbar-brand">
+          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
+        </a>
+        
+
+        
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          
+          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+            
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+
+
+
+    <main class="pb7" role="main">
+      
+<section class="container g-px-50 g-pt-20 g-pb-70">
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">F9 Microkernel</h1>
+  <div class="row rtos-page rtos-item rtos">
+    <div class="col-md-9">
+      <div class=""><p>F9 microkernel is a microkernel-based (L4-style) kernel to support running real-time and time-sharing applications (for example, wireless communications) for ARM Cortex-M series microprocessors with efficiency (performance + power consumption) and security (memory protection + isolated execution) in mind.</p>
+
+<h3 id="features">Features</h3>
+
+<ul>
+<li>F9 follows the fundamental principles of microkernels in that it implements address spaces, thread management, and IPC only in the privileged kernel.</li>
+<li>Designed and customized for ARM Cortex-M, supporting NVIC (Nested Vectored Interrupt Controller), Bit Banding, MPU (Memory Protection Unit).</li>
+<li>Energy efficient scheduling and tickless timer which allow the ARM Cortex-M to wake up only when needed, either at a scheduled time or on an interrupt event. Therefore, it results in better current consumption than the common approach using the system timer, SysTick, which requires a constantly running and high frequency clock.</li>
+<li>KProbes, dynamic instrumentation system inspired by Linux Kernel, allowing developers to gather additional information about kernel operation without recompiling or rebooting the kernel. It enables locations in the kernel to be instrumented with code, and the instrumentation code runs when the ARM core encounters that probe point. Once the instrumentation code completes execution, the kernel continues normal execution.</li>
+<li>Each thread has its own TCB (Thread Control Block) and addressed by its global id. Also dispatcher is responsible for switching contexts. Threads with the same priority are executed in a round-robin fashion.</li>
+<li>Memory management is split into three concepts: Memory pool, which represent area of physical address space with specific attributes. Flexible page, which describes an always size aligned region of an address space. Unlike other L4 implementations, flexible pages in F9 represent MPU region instead. Address space, which is made up of these flexible pages.</li>
+<li>System calls are provided to manage address spaces: Grant: The memory page is granted to a new user and cannot be used anymore by its former user. Map: This implements shared memory – the memory page is passed to another task but can be used by both tasks. Flush: The memory page that has been mapped to other users will be flushed out of their address space.</li>
+<li>Regarding the interaction between a user thread and the microkernel, the concept of UTCB (user-level thread-control blocks) is being taken on. A UTCB is a small thread-specific region in the thread&rsquo;s virtual address space, which is always mapped. Therefore, the access to the UTCB can never raise a page fault, which makes it perfect for the kernel to access system-call arguments, in particular IPC payload copied from/to user threads.</li>
+<li>The kernel provides synchronous IPC (inter-process communication), for which short IPC carries payload in CPU registers only and full IPC copies message payload via the UTCBs of the communicating parties.</li>
+<li>Debugging and profiling mechanisms: configurable debug console. memory dump. thread profiling: name, uptime, stack allocated/current/used. memory profiling: kernel table, pool free/allocated size, fragmentation.</li>
+</ul>
+
+<h3 id="demo-projects">Demo Projects</h3>
+
+<ul>
+<li><a href="https://genesi.company/solutions/embedded">Smart Solutions for the Internet of Things</a>. Genesi has developed a series of low cost data collection and transmission devices with custom operating system deriving from F9 microkernel. The Radix IoT PaaS (Platform-as-a-Service) to securely enable end-to-end connectivity and device management. It uses industry standard SSL/TLS encryption and provides a generic and scalable solution for data gathering and processing. The Radix IoT PaaS also provides external interfaces to allow for real-time analytics and visualizations.</li>
+</ul></div>
+      <div class="g-mb-20">
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-link"> </i>
+          <span>Website: <a href="https://github.com/f9micro/f9-kernel" target="_blank">https://github.com/f9micro/f9-kernel</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i
+            class="fa fa-github">
+          </i>
+          <span>Source code: <a href="https://github.com/f9micro/f9-kernel" target="_blank">https://github.com/f9micro/f9-kernel</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-copyright"> </i>
+          <span>License: </span>
+          
+          
+          
+          
+          BSD
+          </ul>
+          
+        </h3>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-3">
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> F9 Microkernel Platforms</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            
+            <li>
+              ARM
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> F9 Microkernel Components</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            <li>
+              None
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+    
+    <div class="container">
+        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+    </div>
+</div>
+    
+
+  <script src="/app.511f51f2142527ad1ca0.js"></script>
+
+
+  </body>
+</html>

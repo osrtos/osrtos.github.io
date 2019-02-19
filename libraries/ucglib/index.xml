@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ucglib on OSRTOS</title>
+    <link>https://osrtos.com/libraries/ucglib/</link>
+    <description>Recent content in Ucglib on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Nov 2016 11:36:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/libraries/ucglib/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RIOT</title>
+      <link>https://osrtos.com/rtos/riot/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/riot/</guid>
+      <description>&lt;p&gt;RIOT is a real-time multi-threading operating system that supports a range of devices that are typically found in the Internet of Things (IoT): 8-bit, 16-bit and 32-bit microcontrollers.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

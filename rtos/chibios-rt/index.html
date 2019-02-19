@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>OSRTOS  | ChibiOS/RT</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/app.1fe4897791c61bfc04856626e923754e.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+
+    
+
+    <meta property="og:title" content="ChibiOS/RT" />
+<meta property="og:description" content="ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://osrtos.com/rtos/chibios-rt/" /><meta property="article:published_time" content="2016-11-29T11:36:57&#43;00:00"/>
+<meta property="article:modified_time" content="2016-11-29T11:36:57&#43;00:00"/>
+
+<meta itemprop="name" content="ChibiOS/RT">
+<meta itemprop="description" content="ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment.">
+
+
+<meta itemprop="datePublished" content="2016-11-29T11:36:57&#43;00:00" />
+<meta itemprop="dateModified" content="2016-11-29T11:36:57&#43;00:00" />
+<meta itemprop="wordCount" content="358">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ChibiOS/RT"/>
+<meta name="twitter:description" content="ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+<header id="js-header" class="u-header u-header--static">
+    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+        <div class="container">
+          
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          
+
+        
+        <a href="https://osrtos.com/" class="navbar-brand">
+          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
+        </a>
+        
+
+        
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          
+          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+            
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+
+
+
+    <main class="pb7" role="main">
+      
+<section class="container g-px-50 g-pt-20 g-pb-70">
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">ChibiOS/RT</h1>
+  <div class="row rtos-page rtos-item rtos">
+    <div class="col-md-9">
+      <div class=""><p>ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment.</p>
+
+<h3 id="features">Features</h3>
+
+<ul>
+<li>Efficient and portable preemptive kernel.</li>
+<li>Best in class context switch performance.</li>
+<li>Many supported architectures and platforms.</li>
+<li>Static architecture, everything is statically allocated at compile time.</li>
+<li>Dynamic extensions, dynamic objects are supported by an optional layer built on top of the static core.</li>
+<li>Rich set of primitives: threads, virtual timers, semaphores, mutexes, condition variables, messages, mailboxes, event flags, queues.</li>
+<li>Support for priority inheritance algorithm on mutexes.</li>
+<li>HAL component supporting a variety of abstract device drivers: Port, Serial, ADC, CAN, EXT, GPT, I2C, ICU, MAC, MMC, PWM, RTC, SDC, SPI, UART, USB, USB-CDC.</li>
+<li>Extensive test suite with benchmarks.</li>
+</ul>
+
+<h3 id="demo-projects">Demo Projects</h3>
+
+<ul>
+<li><a href="http://www.stevebate.net/chibios-rpi/GettingStarted.html">Raspberry Pi ChibiOS/RT Port</a>. Raspberry Pi ChibiOS/RT Port by Steverino. So far, this port has drivers for the Port (GPIO), Serial, GPT (General-Purpose Timer), I2C, SPI and PWM. An example application is in demos/demos/ARM11-BCM2835-GCC. This example creates one thread to blink the onboard LED and another thread to support a very simple command shell. There are also examples showing how to use ChibiOS/RT to access devices likeTMP102 temperature sensor.</li>
+<li><a href="http://recursive-labs.com/blog/2012/05/07/stm32f4discovery-chibios-linux/">STM32F4Discovery and ChibiOS/RT</a>. Demo project of STM32F4Discovery and ChibiOS/RT on GNU/Linux.   Build the toolchain/os (on Debian system) and get some sample programs running with very little effort. This Project use the Summon Arm Toolchain. The demo simply blinks the blue LED on the STM32F4DISCOVERY board (connected to I/O port pin PD15).</li>
+<li><a href="http://recursive-labs.com/blog/2012/05/22/pwm-chibios-stm32discovery/">ChibiOS/RT PWM demo on the STM32F4Discovery</a>. Another ChibiOS/RT demo project on the STM32F4Discovery board.   The four user LED&rsquo;s on the STM32F4Discovery board are connected to I/O port pins PD12, PD13, PD14, PD15 and PD16. These are in turn linked to PWM channels 1 to 4 of the 16 bit TIM4 unit on the STM32F407 processor.</li>
+<li><a href="http://www.chibios.org/dokuwiki/doku.php?id=chibios:articles:stm32f4_discovery">Getting started with the STM32F4-Discovery and ChibiOS</a>. This article will explain how to get started with the recently released STM32F4-Discovery board using ChibiOS. This board is really cheap (below 20$) and is an excellent evaluation platform for the STMicroelectronics Hi-Performance &amp; DSP STM32F4 family.</li>
+<li><a href="http://www.elektricks.net/stm32f4-discovery-chibios-data-acquisition-system/">STM32F4-Discovery + ChibiOS = Data Acquisition System</a>. Data acquisition system using STM32F4-Discovery board and ChibiOS.</li>
+<li><a href="http://corsiga">julius</a>. Clhi</li>
+<li><a href="http://09260291967">julius</a>. Julius</li>
+</ul></div>
+      <div class="g-mb-20">
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-link"> </i>
+          <span>Website: <a href="http://www.chibios.org/dokuwiki/doku.php" target="_blank">http://www.chibios.org/dokuwiki/doku.php</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i
+            class="fa fa-file-code-o">
+          </i>
+          <span>Source code: <a href="https://sourceforge.net/projects/chibios/" target="_blank">https://sourceforge.net/projects/chibios/</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-copyright"> </i>
+          <span>License: </span>
+          
+          
+          
+          
+          Modified GPL
+          </ul>
+          
+        </h3>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-3">
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> ChibiOS/RT Platforms</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            
+            <li>
+              MSP430
+            </li>
+            
+            
+            <li>
+              AVR
+            </li>
+            
+            
+            <li>
+              ColdFire
+            </li>
+            
+            
+            <li>
+              PowerPC
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> ChibiOS/RT Components</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            <li>
+              FileSystem
+            </li>
+            <li>
+              Network
+            </li>
+            <li>
+              USBHost
+            </li>
+            <li>
+              USBDevice
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+    
+    <div class="container">
+        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+    </div>
+</div>
+    
+
+  <script src="/app.511f51f2142527ad1ca0.js"></script>
+
+
+  </body>
+</html>

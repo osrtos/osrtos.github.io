@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M68k on OSRTOS</title>
+    <link>https://osrtos.com/platforms/m68k/</link>
+    <description>Recent content in M68k on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Nov 2016 11:36:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/platforms/m68k/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RTAI</title>
+      <link>https://osrtos.com/rtos/rtai/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/rtai/</guid>
+      <description>&lt;p&gt;RTAI is the RealTime Application Interface for Linux - which lets you write applications with strict timing constraints for your favourite operating system. The RTAI distribution includes RTAI-Lab, a tool chain to convert block diagrams into RTAI executab&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RTEMS</title>
+      <link>https://osrtos.com/rtos/rtems/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/rtems/</guid>
+      <description>&lt;p&gt;RTEMS is an open source RTOS that supports open standard application programming interfaces such as POSIX. It is used in space flight, medical, networking and many more embedded devices.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

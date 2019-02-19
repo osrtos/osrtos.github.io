@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gpl V2 on OSRTOS</title>
+    <link>https://osrtos.com/licenses/gpl-v2/</link>
+    <description>Recent content in Gpl V2 on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Feb 2019 08:13:11 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/licenses/gpl-v2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Frosted</title>
+      <link>https://osrtos.com/rtos/frosted/</link>
+      <pubDate>Thu, 14 Feb 2019 08:13:11 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/frosted/</guid>
+      <description>&lt;p&gt;Frosted is an acronym that means &amp;ldquo;Free Operating Systems for Tiny Embedded Devices&amp;rdquo;. The goal of this project is to provide a Free (as in Freedom) kernel for embedded systems, which exposes a POSIX-compliant system call API.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MaRTE</title>
+      <link>https://osrtos.com/rtos/marte/</link>
+      <pubDate>Tue, 12 Feb 2019 03:31:45 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/marte/</guid>
+      <description>&lt;p&gt;MaRTE OS is a Hard Real-Time Operating System for embedded applications that follows the Minimal Real-Time POSIX.13 subset.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mongoose OS</title>
+      <link>https://osrtos.com/rtos/mongoose-os/</link>
+      <pubDate>Wed, 24 Jan 2018 01:43:59 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/mongoose-os/</guid>
+      <description>&lt;p&gt;Mongoose OS - an open source Operating System for Internet of Things. Supported microcontrollers: ESP32, ESP8266, CC3220, CC3200, STM32F4. Amazon AWS IoT &amp;amp; Google IoT Core integrated. Code in C or JavaScript.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trampoline</title>
+      <link>https://osrtos.com/rtos/trampoline/</link>
+      <pubDate>Sun, 11 Jun 2017 21:00:48 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/trampoline/</guid>
+      <description>&lt;p&gt;Trampoline is a static RTOS for small embedded systems. Its API is aligned with OSEK/VDX OS and AUTOSAR OS 4.2 standards.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>seL4</title>
+      <link>https://osrtos.com/rtos/sel4/</link>
+      <pubDate>Sat, 29 Apr 2017 08:18:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/sel4/</guid>
+      <description>&lt;p&gt;The world&amp;rsquo;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yaffs</title>
+      <link>https://osrtos.com/library/yaffs/</link>
+      <pubDate>Tue, 29 Nov 2016 16:37:51 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/yaffs/</guid>
+      <description>&lt;p&gt;Yaffs (Yet Another Flash File System) is an open-source file system specifically designed to be fast, robust and suitable for embedded use with NAND and NOR Flash.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BitThunder</title>
+      <link>https://osrtos.com/rtos/bitthunder/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/bitthunder/</guid>
+      <description>&lt;p&gt;A Reliable Real-Time Operating System &amp;amp; Application Framework.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

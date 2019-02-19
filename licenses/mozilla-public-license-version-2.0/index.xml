@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mozilla Public License Version 2.0 on OSRTOS</title>
+    <link>https://osrtos.com/licenses/mozilla-public-license-version-2.0/</link>
+    <description>Recent content in Mozilla Public License Version 2.0 on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Dec 2018 07:25:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/licenses/mozilla-public-license-version-2.0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>modm</title>
+      <link>https://osrtos.com/library/modm/</link>
+      <pubDate>Mon, 17 Dec 2018 07:25:23 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/modm/</guid>
+      <description>&lt;p&gt;modm is a toolbox for building custom C++17 libraries tailored to your embedded device. modm generates startup code, HALs and their implementations, communication protocols, drivers for external devices, BSPs, etc… in a modular, customizable process that you can fine-tune to your needs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>distortos</title>
+      <link>https://osrtos.com/rtos/distortos/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/distortos/</guid>
+      <description>&lt;p&gt;Distortos is an advanced RTOS written in C++11.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

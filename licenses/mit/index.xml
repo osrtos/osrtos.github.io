@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mit on OSRTOS</title>
+    <link>https://osrtos.com/licenses/mit/</link>
+    <description>Recent content in Mit on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Aug 2018 02:47:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/licenses/mit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MicroPython</title>
+      <link>https://osrtos.com/library/micropython/</link>
+      <pubDate>Tue, 07 Aug 2018 02:47:39 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/micropython/</guid>
+      <description>&lt;p&gt;A lean and efficient Python implementation for microcontrollers and constrained systems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MOE</title>
+      <link>https://osrtos.com/rtos/moe/</link>
+      <pubDate>Tue, 20 Mar 2018 09:24:52 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/moe/</guid>
+      <description>&lt;p&gt;MOE is an event-driven scheduler system for 8/16/32-bit MCUs. MOE means &amp;ldquo;Minds Of Embedded system&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LittlevGL</title>
+      <link>https://osrtos.com/library/littlevgl/</link>
+      <pubDate>Mon, 25 Dec 2017 19:20:10 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/littlevgl/</guid>
+      <description>&lt;p&gt;LittlevGL is a free and open-source graphics library providing everything you need to create a Graphical User Interface (GUI) on embedded systems with easy-to-use graphical elements, beautiful visual effects and low memory footprint.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SPIFFS</title>
+      <link>https://osrtos.com/library/spiffs/</link>
+      <pubDate>Tue, 29 Nov 2016 16:41:42 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/spiffs/</guid>
+      <description>&lt;p&gt;Spiffs is a file system intended for SPI NOR flash devices on embedded targets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>scmRTOS</title>
+      <link>https://osrtos.com/rtos/scmrtos/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/scmrtos/</guid>
+      <description>&lt;p&gt;scmRTOS is tiny Real-Time Preemptive Operating System intended for use with Single-Chip Microcontrollers. scmRTOS is capable to run on tiny uCs with as small amount of RAM as 512 bytes. The RTOS is written on C++ and supports various platforms.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BRTOS</title>
+      <link>https://osrtos.com/rtos/brtos/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/brtos/</guid>
+      <description>&lt;p&gt;BRTOS is a lightweight preemptive real time operating system designed for low end microcontrollers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FreeRTOS</title>
+      <link>https://osrtos.com/rtos/freertos/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/freertos/</guid>
+      <description>&lt;p&gt;FreeRTOS is a popular real-time operating system for embedded devices, being ported to 31 microcontrollers. It is distributed under the GPL with an optional exception.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

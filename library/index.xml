@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libraries on OSRTOS</title>
+    <link>https://osrtos.com/library/</link>
+    <description>Recent content in Libraries on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Dec 2018 07:25:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/library/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>modm</title>
+      <link>https://osrtos.com/library/modm/</link>
+      <pubDate>Mon, 17 Dec 2018 07:25:23 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/modm/</guid>
+      <description>&lt;p&gt;modm is a toolbox for building custom C++17 libraries tailored to your embedded device. modm generates startup code, HALs and their implementations, communication protocols, drivers for external devices, BSPs, etc… in a modular, customizable process that you can fine-tune to your needs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ucglib</title>
+      <link>https://osrtos.com/library/ucglib/</link>
+      <pubDate>Tue, 07 Aug 2018 03:56:44 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/ucglib/</guid>
+      <description>&lt;p&gt;Arduino True Color Library for TFTs and OLEDs&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MicroPython</title>
+      <link>https://osrtos.com/library/micropython/</link>
+      <pubDate>Tue, 07 Aug 2018 02:47:39 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/micropython/</guid>
+      <description>&lt;p&gt;A lean and efficient Python implementation for microcontrollers and constrained systems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>lwIP</title>
+      <link>https://osrtos.com/library/lwip/</link>
+      <pubDate>Tue, 07 Aug 2018 01:41:26 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/lwip/</guid>
+      <description>&lt;p&gt;lwIP is a small independent implementation of the TCP/IP protocol suite. The focus of the lwIP TCP/IP implementation is to reduce resource usage while still having a full scale TCP. This makes lwIP suitable for use in embedded systems with tens of kilobytes of free RAM and room for around 40 kilobytes of code ROM.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JesFs</title>
+      <link>https://osrtos.com/library/jesfs/</link>
+      <pubDate>Thu, 22 Mar 2018 03:28:24 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/jesfs/</guid>
+      <description>&lt;p&gt;JesFs is an Ultra-Lightweight Flash File System, especially designed for NOR-Flash.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Thread</title>
+      <link>https://osrtos.com/library/open-thread/</link>
+      <pubDate>Fri, 02 Feb 2018 09:19:51 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/open-thread/</guid>
+      <description>&lt;p&gt;OpenThread released by Nest is an open-source implementation of the Thread networking protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LittlevGL</title>
+      <link>https://osrtos.com/library/littlevgl/</link>
+      <pubDate>Mon, 25 Dec 2017 19:20:10 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/littlevgl/</guid>
+      <description>&lt;p&gt;LittlevGL is a free and open-source graphics library providing everything you need to create a Graphical User Interface (GUI) on embedded systems with easy-to-use graphical elements, beautiful visual effects and low memory footprint.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>littlefs</title>
+      <link>https://osrtos.com/library/littlefs/</link>
+      <pubDate>Mon, 25 Dec 2017 19:14:32 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/littlefs/</guid>
+      <description>&lt;p&gt;A little fail-safe filesystem designed for embedded systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NFFS</title>
+      <link>https://osrtos.com/library/nffs/</link>
+      <pubDate>Thu, 05 Jan 2017 13:26:05 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/nffs/</guid>
+      <description>&lt;p&gt;The Newtron Flash File System (nffs) is an open source file system available by default with the Apache Mynewt OS.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CGUI</title>
+      <link>https://osrtos.com/library/cgui/</link>
+      <pubDate>Thu, 01 Dec 2016 10:50:15 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/cgui/</guid>
+      <description>&lt;p&gt;CGUI is a library that provides you with a set of C-functions to create GUI applications, i.e. windows and window controls like buttons, check-boxes, menus, input boxes etc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IUP</title>
+      <link>https://osrtos.com/library/iup/</link>
+      <pubDate>Thu, 01 Dec 2016 10:46:51 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/iup/</guid>
+      <description>&lt;p&gt;IUP is a portable toolkit for building graphical user interfaces. It offers a configuration API in three basic languages: C, Lua and LED. IUP purpose is to allow a program to be executed in different systems without any modification.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>eefs</title>
+      <link>https://osrtos.com/library/eefs/</link>
+      <pubDate>Tue, 29 Nov 2016 17:05:51 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/eefs/</guid>
+      <description>&lt;p&gt;EEFS is for EEPROM File System Project (EEFS). It is a simple file system for memory devices such as EEPROM, RAM, ROM, etc. Currently it is not intended for block oriented devices such as disks and flash devices.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FatFs</title>
+      <link>https://osrtos.com/library/fatfs/</link>
+      <pubDate>Tue, 29 Nov 2016 17:02:33 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/fatfs/</guid>
+      <description>&lt;p&gt;FatFs is a generic FAT/exFAT file system module for small embedded systems. The FatFs module is written in compliance with ANSI C (C89) and completely separated from the disk I/O layer. Therefore it is independent of the platform. It can be incorporated into small microcontrollers with limited resource, such as 8051, PIC, AVR, ARM, Z80, 78K and etc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>µGUI</title>
+      <link>https://osrtos.com/library/ugui/</link>
+      <pubDate>Tue, 29 Nov 2016 16:57:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/ugui/</guid>
+      <description>&lt;p&gt;µGUI is a free and open source graphic library for embedded systems. It is platform-independent and can be easily ported to almost any microcontroller system. As long as the display is capable of showing graphics, µGUI is not restricted to a certain display technology. Therefore, display technologies such as LCD, TFT, E-Paper, LED or OLED are supported.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MiniGUI</title>
+      <link>https://osrtos.com/library/minigui/</link>
+      <pubDate>Tue, 29 Nov 2016 16:55:33 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/minigui/</guid>
+      <description>&lt;p&gt;MiniGUI is a free software project. It aims to provide a fast, stable, and cross-operating-system graphics user interface (GUI) support system, which is especially fit for real-time embedded systems based-on Linux/uClinux, eCos, and other traditional RTOSes, such as VxWorks, ThreadX, uC/OS-II, and Nucleus.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SPIFFS</title>
+      <link>https://osrtos.com/library/spiffs/</link>
+      <pubDate>Tue, 29 Nov 2016 16:41:42 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/spiffs/</guid>
+      <description>&lt;p&gt;Spiffs is a file system intended for SPI NOR flash devices on embedded targets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yaffs</title>
+      <link>https://osrtos.com/library/yaffs/</link>
+      <pubDate>Tue, 29 Nov 2016 16:37:51 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/yaffs/</guid>
+      <description>&lt;p&gt;Yaffs (Yet Another Flash File System) is an open-source file system specifically designed to be fast, robust and suitable for embedded use with NAND and NOR Flash.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

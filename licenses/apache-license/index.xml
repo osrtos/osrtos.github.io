@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache License on OSRTOS</title>
+    <link>https://osrtos.com/licenses/apache-license/</link>
+    <description>Recent content in Apache License on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jan 2018 05:35:24 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/licenses/apache-license/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AliOS Things</title>
+      <link>https://osrtos.com/rtos/alios-things/</link>
+      <pubDate>Tue, 23 Jan 2018 05:35:24 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/alios-things/</guid>
+      <description>&lt;p&gt;AliOS Things is designed for low power, resource constrained MCU, connectivity SoC, greatly suitable for IoT devices. AliOS Things is not just a RTOS, it contains full stack of software components and tools for building IoT devices.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>littlefs</title>
+      <link>https://osrtos.com/library/littlefs/</link>
+      <pubDate>Mon, 25 Dec 2017 19:14:32 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/littlefs/</guid>
+      <description>&lt;p&gt;A little fail-safe filesystem designed for embedded systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NFFS</title>
+      <link>https://osrtos.com/library/nffs/</link>
+      <pubDate>Thu, 05 Jan 2017 13:26:05 +0000</pubDate>
+      
+      <guid>https://osrtos.com/library/nffs/</guid>
+      <description>&lt;p&gt;The Newtron Flash File System (nffs) is an open source file system available by default with the Apache Mynewt OS.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LibreRTOS</title>
+      <link>https://osrtos.com/rtos/librertos/</link>
+      <pubDate>Fri, 30 Dec 2016 09:03:15 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/librertos/</guid>
+      <description>&lt;p&gt;LibreRTOS is a portable single-stack Real Time Operating System. All tasks share the same stack, allowing a large number or tasks to be created even on architectures with low RAM, such as ATmega328P (2kB).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Mynewt</title>
+      <link>https://osrtos.com/rtos/apache-mynewt/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/apache-mynewt/</guid>
+      <description>&lt;p&gt;Apache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zephyr</title>
+      <link>https://osrtos.com/rtos/zephyr/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/zephyr/</guid>
+      <description>&lt;p&gt;The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mbed OS</title>
+      <link>https://osrtos.com/rtos/mbed-os/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/mbed-os/</guid>
+      <description>&lt;p&gt;mbed OS is an open-source embedded operating system designed specifically for the &amp;ldquo;things&amp;rdquo; in the Internet of Things (IoT). It includes all the features you need to develop a connected product based on an ARM Cortex-M microcontroller.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command Line Interface on OSRTOS</title>
+    <link>https://osrtos.com/components/command-line-interface/</link>
+    <description>Recent content in Command Line Interface on OSRTOS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Nov 2016 11:36:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://osrtos.com/components/command-line-interface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zephyr</title>
+      <link>https://osrtos.com/rtos/zephyr/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/zephyr/</guid>
+      <description>&lt;p&gt;The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Contiki OS</title>
+      <link>https://osrtos.com/rtos/contiki-os/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/contiki-os/</guid>
+      <description>&lt;p&gt;Contiki is an open source operating system for the Internet of Things. Contiki connects tiny low-cost, low-power microcontrollers to the Internet.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FreeRTOS</title>
+      <link>https://osrtos.com/rtos/freertos/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/freertos/</guid>
+      <description>&lt;p&gt;FreeRTOS is a popular real-time operating system for embedded devices, being ported to 31 microcontrollers. It is distributed under the GPL with an optional exception.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NuttX</title>
+      <link>https://osrtos.com/rtos/nuttx/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/nuttx/</guid>
+      <description>&lt;p&gt;NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RT-Thread</title>
+      <link>https://osrtos.com/rtos/rt-thread/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/rt-thread/</guid>
+      <description>&lt;p&gt;RT-Thread is an open source real-time operating system for embedded devices from China. RT-Thread RTOS is a scalable real-time operating system: a tiny kernel for ARM Cortex-M0, Cortex-M3/4, or a full feature system in ARM Cortex-A8, ARM Cortex-A9 DualCor&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RTEMS</title>
+      <link>https://osrtos.com/rtos/rtems/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
+      
+      <guid>https://osrtos.com/rtos/rtems/</guid>
+      <description>&lt;p&gt;RTEMS is an open source RTOS that supports open standard application programming interfaces such as POSIX. It is used in space flight, medical, networking and many more embedded devices.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>OSRTOS  | ATK2</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/app.1fe4897791c61bfc04856626e923754e.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+
+    
+
+    <meta property="og:title" content="ATK2" />
+<meta property="og:description" content="The TOPPERS/ATK (Automotive Kernel) is a real-time operating system for automotive system control publicly released by the TOPPERS project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://osrtos.com/rtos/atk2/" /><meta property="article:published_time" content="2019-02-12T03:38:22&#43;00:00"/>
+<meta property="article:modified_time" content="2019-02-12T03:38:22&#43;00:00"/>
+
+<meta itemprop="name" content="ATK2">
+<meta itemprop="description" content="The TOPPERS/ATK (Automotive Kernel) is a real-time operating system for automotive system control publicly released by the TOPPERS project.">
+
+
+<meta itemprop="datePublished" content="2019-02-12T03:38:22&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-12T03:38:22&#43;00:00" />
+<meta itemprop="wordCount" content="481">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ATK2"/>
+<meta name="twitter:description" content="The TOPPERS/ATK (Automotive Kernel) is a real-time operating system for automotive system control publicly released by the TOPPERS project."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+<header id="js-header" class="u-header u-header--static">
+    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+        <div class="container">
+          
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          
+
+        
+        <a href="https://osrtos.com/" class="navbar-brand">
+          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
+        </a>
+        
+
+        
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          
+          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+            
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+
+
+
+    <main class="pb7" role="main">
+      
+<section class="container g-px-50 g-pt-20 g-pb-70">
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">ATK2</h1>
+  <div class="row rtos-page rtos-item rtos">
+    <div class="col-md-9">
+      <div class=""><p>The TOPPERS/ATK (Automotive Kernel) is a real-time operating system for automotive system control publicly released by the TOPPERS project.</p>
+
+<h3 id="features">Features</h3>
+
+<ul>
+<li>Based on the AUTOSAR OS specification</li>
+<li>It is based on the OS specification included in the software platform for automotive control designed by the AUTOSAR consortium. In particular, it is based on the external specification AUTOSAR Release 4.0 Revision 3.</li>
+<li>Supports configuration based on the AUTOSAR specification</li>
+<li>In AUTOSAR, XML is used for system configuration. From the OS perspective, a configuration file (description file/XML) is input by upper layers, and the OS objects, such as tasks, are generated. The TOPPERS configurator for next generation kernels supports the AUTOSAR XML format since release 1.9.0. ATK2 uses this configurator tool, and it can execute within the AUTOSAR architecture as an operating system.</li>
+<li>In addition, since XML is rather hard to read and write, in order to use the OS as it is, it is possible to use a static API equivalent to the XML. This static API is the same that has been used in the past for the TOPPERS next generation kernels. For the specification of the static API supported by ATK2, please refer to the documentation that is shipped with ATK2.</li>
+<li>Designed with accumulated TOPPERS know-how</li>
+<li>It was developed using TOPPERS/ASP kernel source code as a reference, and the know-how obtained from developing OSs based on the ITRON specification. It inherits concepts from the ASP kernel such as &ldquo;easy to read&rdquo;, &ldquo;easy to remodel&rdquo; or &ldquo;easy to port&rdquo;.</li>
+<li>Target-dependent and target-independent parts are separated</li>
+<li>It is easy to port to other targets because only the target-dependent part needs to be rewritten.</li>
+<li>Verification test suite</li>
+<li>TTSP (TOPPERS Test Suite Package) was customized to the AUTOSAR specification, including comprehensive tests, such as the AUTOSAR conformance tests or OSEK/VDX specification&rsquo;s MODISTARC.</li>
+<li>At the moment, it is only available to members of the consortium. Please, send an e-mail to atk2-conso-staff○nces.is.nagoya-u.ac.jp for detailed information (change ○ by @).</li>
+<li>Support for MISRA-C</li>
+<li>We are carrying out checks on the C language design rules MISRA-C:2004 defined by European automotive makers. Code that can be dangerous as specified by MISRA has been avoided, and parts where execution speed or code minimization are given priority are separately verified. Rules that have been omitted will be published as the TOPPERS coding rules in the future.</li>
+<li>Support for scalability class 1 and 3</li>
+<li>At present, the kernel publicly released only supports scalability classes 1 and 3. Regarding to the scalability class 3, level 2 is adopted as the functional level. (Please, refer to the external specification for functional levels).</li>
+<li>Scalability class 3 supports memory protection and it leverages the TOPPERS/HRP2 kernel for supporting numerous targets. Additionally, comprehensive tests are being implemented for the memory protection functionality.</li>
+<li>At present, we are implementing multi-core support for scalability classes 1 and 3. We leave the implementation of scalability classes 2 and 4 as future work.</li>
+</ul></div>
+      <div class="g-mb-20">
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-link"> </i>
+          <span>Website: <a href="https://www.toppers.jp/en/atk2.html" target="_blank">https://www.toppers.jp/en/atk2.html</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i
+            class="fa fa-file-code-o">
+          </i>
+          <span>Source code: <a href="http://www.toppers.jp/atk2-download.html" target="_blank">http://www.toppers.jp/atk2-download.html</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-copyright"> </i>
+          <span>License: </span>
+          
+          
+          
+          
+          Other
+          </ul>
+          
+        </h3>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-3">
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> ATK2 Platforms</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            
+            <li>
+              Nios II
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> ATK2 Components</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            <li>
+              None
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+    
+    <div class="container">
+        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+    </div>
+</div>
+    
+
+  <script src="/app.511f51f2142527ad1ca0.js"></script>
+
+
+  </body>
+</html>

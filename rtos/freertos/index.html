@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>OSRTOS  | FreeRTOS</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/app.1fe4897791c61bfc04856626e923754e.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+
+    
+
+    <meta property="og:title" content="FreeRTOS" />
+<meta property="og:description" content="FreeRTOS is a popular real-time operating system for embedded devices, being ported to 31 microcontrollers. It is distributed under the GPL with an optional exception." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://osrtos.com/rtos/freertos/" /><meta property="article:published_time" content="2016-11-29T11:36:57&#43;00:00"/>
+<meta property="article:modified_time" content="2016-11-29T11:36:57&#43;00:00"/>
+
+<meta itemprop="name" content="FreeRTOS">
+<meta itemprop="description" content="FreeRTOS is a popular real-time operating system for embedded devices, being ported to 31 microcontrollers. It is distributed under the GPL with an optional exception.">
+
+
+<meta itemprop="datePublished" content="2016-11-29T11:36:57&#43;00:00" />
+<meta itemprop="dateModified" content="2016-11-29T11:36:57&#43;00:00" />
+<meta itemprop="wordCount" content="658">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FreeRTOS"/>
+<meta name="twitter:description" content="FreeRTOS is a popular real-time operating system for embedded devices, being ported to 31 microcontrollers. It is distributed under the GPL with an optional exception."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+<header id="js-header" class="u-header u-header--static">
+    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+        <div class="container">
+          
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          
+
+        
+        <a href="https://osrtos.com/" class="navbar-brand">
+          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
+        </a>
+        
+
+        
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          
+          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+            
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+
+
+
+    <main class="pb7" role="main">
+      
+<section class="container g-px-50 g-pt-20 g-pb-70">
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">FreeRTOS</h1>
+  <div class="row rtos-page rtos-item rtos">
+    <div class="col-md-9">
+      <div class=""><p>FreeRTOS is a popular real-time operating system for embedded devices, being ported to 31 microcontrollers. It is distributed under the GPL with an optional exception.</p>
+
+<h3 id="features">Features</h3>
+
+<ul>
+<li>Designed to be small, simple and easy to use.</li>
+<li>Free RTOS kernel - preemptive, cooperative and hybrid configuration options.</li>
+<li>Includes a tickless mode for low power applications.</li>
+<li>Official support for 34 embedded system architectures.</li>
+<li>Supports the ARM Cortex-M3 MPU.</li>
+<li>Very portable, predominantly written in C.</li>
+<li>Supports both real time tasks and co-routines.</li>
+<li>Mutexes with priority inheritance.</li>
+<li>Powerful execution trace functionality.</li>
+<li>Stack overflow detection options.</li>
+<li>No software restriction on the number of real time tasks that can be created.</li>
+<li>No software restriction on the number of task priorities that can be used.</li>
+<li>No restrictions imposed on task priority assignment - more than one real time task can be assigned the same priority.</li>
+</ul>
+
+<h3 id="demo-projects">Demo Projects</h3>
+
+<ul>
+<li><a href="https://github.com/jameswalmsley/RaspberryPi-FreeRTOS">FreeRTOS Ported to Raspberry Pi</a>. This project provides a very basic port of FreeRTOS to Raspberry pi. It includes a demo application that use 2 FreeRTOS tasks to flash the LED on and off.</li>
+<li><a href="https://code.google.com/p/duinos/">DuinOS</a>. DuinOS is a small multithreading real time operating system (RTOS), based on the FreeRTOS kernel, for Arduino compatible boards.It&rsquo;s installed as an Arduino core, and currently supports the following AVR processors:</li>
+<li><a href="https://github.com/Protoneer/LPC43XX-FreeRTOS-with-2xLED-Threads">LPC43XX-FreeRTOS-with-2xLED-Threads</a>. This is example code of using a NXP LPC4337 Xplorer board from NGX with FreeRTOS.It has two LED blinking tasks running at the same time.</li>
+<li><a href="https://github.com/yuriykulikov/FreeRTOS-on-XMEGA">FreeRTOS on XMEGA</a>. port.c and portmacro.h for FreeRTOS to run on any AVR XMEGA</li>
+<li><a href="http://www.scienceprog.com/freertos-on-stm32/">FreeRTOS on STM32</a>. FreeRTOS demos for STM32F103ZET6 board that include LEDs, Buttons, USART, and LCD.</li>
+<li><a href="http://www.scienceprog.com/freertos-on-avr-with-external-ram/">FreeRTOS on AVR with external RAM</a>. This project add extra RAM connected to the external memory interface of Atmega128.</li>
+<li><a href="http://www.lpc4350.com/">LPC4300 Development Boards with FreeRTOS demo</a>. LPC4350 Dual-Core Cortex-M4 and Cortex-M0 Development BoardLPC4350 is the first asymmetrical dual-core digital signal controller with ARM Cortex-M4 and Cortex-M0 processors. The LPC-4350-DB1 development board consists of the most essential components that you need to start your development.It contains the LPC4350FET256 dual-core controller, USB, Ethernet and JTAG connectors, 4 push buttons + 4 LEDs, 16MB external NOR flash.</li>
+<li><a href="http://www.libstock.com/projects/view/370/porting-freertos-to-mikroc-for-stm32-m3">Porting FreeRTOS to MikroC for STM32 M3</a>. This project port FreeRTOSV7.1.1 to CORTEX STM32F107 MikroC Version 2.5.</li>
+<li><a href="http://www.scienceprog.com/using-freertos-kernel-in-avr-projects/">Using FreeRTOS kernel in AVR projects</a>. Instructions to run FreeRTOS on AVR Atmega128L, using AVRStudio5.</li>
+<li><a href="http://www.scienceprog.com/running-multiple-freertos-tasks-on-avr/">Running multiple FreeRTOS tasks on AVR</a>. Let us go further with our example code and add more tasks to our FreeRTOS engine. We already have LED flashing task that toggles LED every second. Additionally we are going to create another task that checks button state. Also we are going to send some information to LCD. As always lets take care of drivers for all of them.</li>
+<li><a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dai0210A/index.html">Running FreeRTOS on the Keil MCBSTM32 Board with the RVMDK Evaluation Tools</a>. This application note describes how to modify an existing port demo of the FreeRTOS operating system that targets the Luminary Micro LM3S102 evaluation board. It uses Keil</li>
+<li><a href="http://www.avrfreaks.net/index.php?module=Freaks%20Academy&amp;func=viewItem&amp;item_id=3450&amp;item_type=project">uc3l0 freertos demo</a>. Demos for FreeRTOS and the UC3L0. This demo provides: Full USART Command TerminalConfigurable ADC TaskPWM control over RGB LEDs (on the L0 Xplained)Printable Data from various sources.</li>
+<li><a href="http://www.avrfreaks.net/projects/gsm-control-system-freertos?module=Freaks%20Academy&amp;func=viewItem&amp;item_id=3672&amp;item_type=project">gsm control system</a>. G.S.A. (GSM System Automation) is a control system that allows you to manage your domestic appliances by means of gsm-communication.You can program GSA simply by send a SMS.</li>
+<li><a href="https://istarc.wordpress.com/2014/07/10/stm32f4-deploy-freertos-in-under-10-seconds/">STM32F4 – Deploy FreeRTOS Embedded OS in under 10 seconds!</a>. This tutorial describe how to build and deploy the FreeRTOS embedded operating system on STM32F4 Discovery board under 10 seconds.</li>
+<li><a href="http://www.freertos.org/ST_STM32F7_Cortex-M7_RTOS_Demo.html">ST ARM Cortex-M7 STM32 F7 RTOS Demo</a>. This page provides documentation for the FreeRTOS demo that targets the STM32756G-EVAL Evaluation Kit, which incorporates an STM32F7 ARM Cortex-M7 microcontroller from STMicroelectronics. Pre-configured build projects are provided for both the IAR and ARM Keil tools.</li>
+<li><a href="https://visualgdb.com/tutorials/esp8266/relay/">Creating a FreeRTOS-based WiFi HTTP server for ESP8266</a>. This tutorial shows how to create a FreeRTOS-based HTTP server with the ESP8266 chip.</li>
+<li><a href="https://github.com/SuperHouse/esp-open-rtos">esp-open-rtos</a>. A community developed open source FreeRTOS-based framework for ESP8266 WiFi-enabled microcontrollers. Intended for use in both commercial and open source projects.</li>
+</ul></div>
+      <div class="g-mb-20">
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-link"> </i>
+          <span>Website: <a href="http://www.freertos.org/" target="_blank">http://www.freertos.org/</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i
+            class="fa fa-file-code-o">
+          </i>
+          <span>Source code: <a href="https://sourceforge.net/projects/freertos/" target="_blank">https://sourceforge.net/projects/freertos/</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fa fa-copyright"> </i>
+          <span>License: </span>
+          
+          
+          
+          
+          MIT
+          </ul>
+          
+        </h3>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-3">
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> FreeRTOS Platforms</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            
+            <li>
+              MSP430
+            </li>
+            
+            
+            <li>
+              ARM
+            </li>
+            
+            
+            <li>
+              AVR
+            </li>
+            
+            
+            <li>
+              ColdFire
+            </li>
+            
+            
+            <li>
+              PIC
+            </li>
+            
+            
+            <li>
+              x86
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> FreeRTOS Components</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            <li>
+              FileSystem
+            </li>
+            <li>
+              Network
+            </li>
+            <li>
+              TLS/SSL
+            </li>
+            <li>
+              Command Line Interface
+            </li>
+            <li>
+              Runtime Analysis
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+    
+    <div class="container">
+        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+    </div>
+</div>
+    
+
+  <script src="/app.511f51f2142527ad1ca0.js"></script>
+
+
+  </body>
+</html>
