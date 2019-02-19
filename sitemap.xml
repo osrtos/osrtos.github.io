@@ -603,6 +603,12 @@
   </url>
   
   <url>
+    <loc>https://osrtos.com/components/none/</loc>
+    <lastmod>2019-02-14T08:13:11+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://osrtos.com/libraries/none/</loc>
     <lastmod>2019-02-14T08:13:11+00:00</lastmod>
     <priority>0</priority>
@@ -611,12 +617,6 @@
   <url>
     <loc>https://osrtos.com/platforms/none/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://osrtos.com/components/none/</loc>
-    <lastmod>2019-02-14T08:13:11+00:00</lastmod>
     <priority>0</priority>
   </url>
   
