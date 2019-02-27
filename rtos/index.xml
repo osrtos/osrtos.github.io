@@ -6,15 +6,24 @@
     <description>Recent content in Rtos on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Feb 2019 09:36:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Feb 2019 16:49:25 +0800</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/rtos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>QuarkTS</title>
+      <link>https://www.osrtos.com/rtos/quark-ts/</link>
+      <pubDate>Wed, 27 Feb 2019 16:49:25 +0800</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/quark-ts/</guid>
+      <description>&lt;p&gt;QuarkTS is a simple non-Preemtive Real-Time OS with a quasi-static scheduler for embedded multi-tasking applications.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>HyperC</title>
       <link>https://www.osrtos.com/rtos/hyperc/</link>
-      <pubDate>Sun, 24 Feb 2019 09:36:21 +0800</pubDate>
+      <pubDate>Sun, 24 Feb 2019 01:36:21 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/hyperc/</guid>
       <description>&lt;p&gt;The hyperC OS is a real time-operating system (RTOS) designed for various IoT applications. All the designs are aimed at the optimization of ARM Cortex CPUs.&lt;/p&gt;</description>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>OSRTOS  | NFFS</title>
+    <title>OSRTOS  | QuarkTS</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -94,31 +94,28 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 <section class="container g-px-50 g-pt-20 g-pb-70">
-  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">NFFS</h1>
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">QuarkTS</h1>
   <div class="row rtos-page rtos-item rtos">
     <div class="col-md-9">
-      <div class=""><p>The Newtron Flash File System (nffs) is an open source file system available by default with the Apache Mynewt OS.</p>
+      <div class=""><p>QuarkTS is a simple non-Preemtive Real-Time OS with a quasi-static scheduler for embedded multi-tasking applications.</p>
 
 <h3 id="features">Features</h3>
 
 <ul>
-<li>It is highly suitable for embedded use because of its focus on minimal RAM usage and reliability.</li>
-<li>There is also an abstraction layer API (fs) to allow generic access by an application to NFFS or any other file system.</li>
-<li>Error correction.</li>
-<li>Encryption.</li>
-<li>Compression.</li>
+<li>QuarkTS uses a cooperative Round-Robin scheme with a linked chain approach, and a queue to provide true FIFO priority-scheduling.</li>
+<li>QuarkTS uses a Time-Triggered Architecture (TTA), in which the tasks are triggered by comparing the corresponding task-time with a monotonic real-time clock.</li>
 </ul></div>
       <div class="g-mb-20">
         <h3 class="h5 g-font-weight-300 g-mb-5">
           <i class="fas fa-link"> </i>
-          <span>Website: <a href="https://github.com/apache/mynewt-nffs" target="_blank">https://github.com/apache/mynewt-nffs</a></span>
+          <span>Website: <a href="https://github.com/kmilo17pet/QuarkTS/wiki" target="_blank">https://github.com/kmilo17pet/QuarkTS/wiki</a></span>
         </h3>
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
           <i
-            class=" fab fa-github">
+                  class=" fab fa-github">
           </i>
-          <span>Source code: <a href="https://github.com/apache/mynewt-nffs" target="_blank">https://github.com/apache/mynewt-nffs</a></span>
+          <span>Source code: <a href="https://github.com/kmilo17pet/QuarkTS" target="_blank">https://github.com/kmilo17pet/QuarkTS</a></span>
         </h3>
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -128,7 +125,7 @@ if (!doNotTrack) {
           
           
           
-          Apache License
+          LGPL
           </ul>
           
         </h3>
@@ -136,6 +133,75 @@ if (!doNotTrack) {
       <hr />
     </div>
     <div class="col-md-3">
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> QuarkTS Platforms</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            
+            <li>
+              ARM
+            </li>
+            
+            
+            <li>
+              AVR
+            </li>
+            
+            
+            <li>
+              PIC
+            </li>
+            
+            
+            <li>
+              ColdFire
+            </li>
+            
+            
+            <li>
+              MSP430
+            </li>
+            
+            
+            <li>
+              8051
+            </li>
+            
+            
+            <li>
+              MIPS
+            </li>
+            
+            
+            <li>
+              HCS12
+            </li>
+            
+            
+            <li>
+              x86
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> QuarkTS Components</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            <li>
+              None
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
