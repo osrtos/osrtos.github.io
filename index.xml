@@ -6,15 +6,24 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Feb 2019 16:49:25 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Mar 2019 08:07:07 +0800</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>EasyFlash</title>
+      <link>https://www.osrtos.com/library/easyflash/</link>
+      <pubDate>Sat, 02 Mar 2019 08:07:07 +0800</pubDate>
+      
+      <guid>https://www.osrtos.com/library/easyflash/</guid>
+      <description>&lt;p&gt;EasyFlash is an open source lightweight embedded flash memory library. It provides convenient application interface for MCU. The developers can achieve more efficient and common application development based on Flash memory.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>QuarkTS</title>
       <link>https://www.osrtos.com/rtos/quark-ts/</link>
-      <pubDate>Wed, 27 Feb 2019 16:49:25 +0800</pubDate>
+      <pubDate>Wed, 27 Feb 2019 08:49:25 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/quark-ts/</guid>
       <description>&lt;p&gt;QuarkTS is a simple non-Preemtive Real-Time OS with a quasi-static scheduler for embedded multi-tasking applications.&lt;/p&gt;</description>
