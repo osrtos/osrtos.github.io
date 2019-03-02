@@ -6,7 +6,7 @@
     <description>Recent content in Libraries on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Mar 2019 08:07:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Mar 2019 00:07:07 +0000</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/library/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>EasyFlash</title>
       <link>https://www.osrtos.com/library/easyflash/</link>
-      <pubDate>Sat, 02 Mar 2019 08:07:07 +0800</pubDate>
+      <pubDate>Sat, 02 Mar 2019 00:07:07 +0000</pubDate>
       
       <guid>https://www.osrtos.com/library/easyflash/</guid>
       <description>&lt;p&gt;EasyFlash is an open source lightweight embedded flash memory library. It provides convenient application interface for MCU. The developers can achieve more efficient and common application development based on Flash memory.&lt;/p&gt;</description>
