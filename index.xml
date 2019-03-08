@@ -6,10 +6,29 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Mar 2019 01:03:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2019 01:11:02 +0000</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tensorflow Micro</title>
+      <link>https://www.osrtos.com/library/tensorflow-micro/</link>
+      <pubDate>Fri, 08 Mar 2019 01:11:02 +0000</pubDate>
+      
+      <guid>https://www.osrtos.com/library/tensorflow-micro/</guid>
+      <description>&lt;p&gt;This an experimental port of TensorFlow Lite aimed at micro controllers and other devices with only kilobytes of memory.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>uTensor</title>
+      <link>https://www.osrtos.com/library/utensor/</link>
+      <pubDate>Fri, 08 Mar 2019 01:10:34 +0000</pubDate>
+      
+      <guid>https://www.osrtos.com/library/utensor/</guid>
+      <description> uTensor is an extremely light-weight machine learning inference framework built on Mbed and Tensorflow. It consists of a runtime library and an offline tool. The total size of graph definition and algorithm implementation of a 3-layer MLP produced by uTensor is less than 32kB in the resulting binary (excluding the weights).
+Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient Run-time  </description>
+    </item>
     
     <item>
       <title>NimBLE</title>
