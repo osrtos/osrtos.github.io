@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.osrtos.com/library/</loc>
+    <lastmod>2019-03-08T01:11:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.osrtos.com/</loc>
+    <lastmod>2019-03-08T01:11:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.osrtos.com/library/tensorflow-micro/</loc>
     <lastmod>2019-03-08T01:11:02+00:00</lastmod>
   </url>
@@ -25,6 +37,12 @@
   <url>
     <loc>https://www.osrtos.com/rtos/quark-ts/</loc>
     <lastmod>2019-02-27T08:49:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.osrtos.com/rtos/</loc>
+    <lastmod>2019-02-27T08:49:25+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -390,24 +408,6 @@
   <url>
     <loc>https://www.osrtos.com/rtos/ecos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.osrtos.com/library/</loc>
-    <lastmod>2019-03-08T01:11:02+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.osrtos.com/</loc>
-    <lastmod>2019-03-08T01:11:02+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.osrtos.com/rtos/</loc>
-    <lastmod>2019-02-27T08:49:25+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

@@ -305,7 +305,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/distortos/</guid>
-      <description>&lt;p&gt;Distortos is an advanced RTOS written in C++11.&lt;/p&gt;</description>
+      <description>&lt;p&gt;distortos is an object-oriented C++ RTOS for microcontrollers.&lt;/p&gt;</description>
     </item>
     
     <item>
