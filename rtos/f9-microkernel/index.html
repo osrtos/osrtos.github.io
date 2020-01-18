@@ -98,9 +98,7 @@ if (!doNotTrack) {
   <div class="row rtos-page rtos-item rtos">
     <div class="col-md-9">
       <div class=""><p>F9 microkernel is a microkernel-based (L4-style) kernel to support running real-time and time-sharing applications (for example, wireless communications) for ARM Cortex-M series microprocessors with efficiency (performance + power consumption) and security (memory protection + isolated execution) in mind.</p>
-
 <h3 id="features">Features</h3>
-
 <ul>
 <li>F9 follows the fundamental principles of microkernels in that it implements address spaces, thread management, and IPC only in the privileged kernel.</li>
 <li>Designed and customized for ARM Cortex-M, supporting NVIC (Nested Vectored Interrupt Controller), Bit Banding, MPU (Memory Protection Unit).</li>
@@ -109,13 +107,11 @@ if (!doNotTrack) {
 <li>Each thread has its own TCB (Thread Control Block) and addressed by its global id. Also dispatcher is responsible for switching contexts. Threads with the same priority are executed in a round-robin fashion.</li>
 <li>Memory management is split into three concepts: Memory pool, which represent area of physical address space with specific attributes. Flexible page, which describes an always size aligned region of an address space. Unlike other L4 implementations, flexible pages in F9 represent MPU region instead. Address space, which is made up of these flexible pages.</li>
 <li>System calls are provided to manage address spaces: Grant: The memory page is granted to a new user and cannot be used anymore by its former user. Map: This implements shared memory – the memory page is passed to another task but can be used by both tasks. Flush: The memory page that has been mapped to other users will be flushed out of their address space.</li>
-<li>Regarding the interaction between a user thread and the microkernel, the concept of UTCB (user-level thread-control blocks) is being taken on. A UTCB is a small thread-specific region in the thread&rsquo;s virtual address space, which is always mapped. Therefore, the access to the UTCB can never raise a page fault, which makes it perfect for the kernel to access system-call arguments, in particular IPC payload copied from/to user threads.</li>
+<li>Regarding the interaction between a user thread and the microkernel, the concept of UTCB (user-level thread-control blocks) is being taken on. A UTCB is a small thread-specific region in the thread's virtual address space, which is always mapped. Therefore, the access to the UTCB can never raise a page fault, which makes it perfect for the kernel to access system-call arguments, in particular IPC payload copied from/to user threads.</li>
 <li>The kernel provides synchronous IPC (inter-process communication), for which short IPC carries payload in CPU registers only and full IPC copies message payload via the UTCBs of the communicating parties.</li>
 <li>Debugging and profiling mechanisms: configurable debug console. memory dump. thread profiling: name, uptime, stack allocated/current/used. memory profiling: kernel table, pool free/allocated size, fragmentation.</li>
 </ul>
-
 <h3 id="demo-projects">Demo Projects</h3>
-
 <ul>
 <li><a href="https://genesi.company/solutions/embedded">Smart Solutions for the Internet of Things</a>. Genesi has developed a series of low cost data collection and transmission devices with custom operating system deriving from F9 microkernel. The Radix IoT PaaS (Platform-as-a-Service) to securely enable end-to-end connectivity and device management. It uses industry standard SSL/TLS encryption and provides a generic and scalable solution for data gathering and processing. The Radix IoT PaaS also provides external interfaces to allow for real-time analytics and visualizations.</li>
 </ul></div>

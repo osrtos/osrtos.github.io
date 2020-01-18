@@ -35,7 +35,7 @@
       <pubDate>Fri, 08 Mar 2019 01:10:34 +0000</pubDate>
       
       <guid>https://www.osrtos.com/library/utensor/</guid>
-      <description> uTensor is an extremely light-weight machine learning inference framework built on Mbed and Tensorflow. It consists of a runtime library and an offline tool. The total size of graph definition and algorithm implementation of a 3-layer MLP produced by uTensor is less than 32kB in the resulting binary (excluding the weights).
+      <description>uTensor is an extremely light-weight machine learning inference framework built on Mbed and Tensorflow. It consists of a runtime library and an offline tool. The total size of graph definition and algorithm implementation of a 3-layer MLP produced by uTensor is less than 32kB in the resulting binary (excluding the weights).
 Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient Run-time  </description>
     </item>
     
@@ -279,7 +279,7 @@ Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient
       <pubDate>Sat, 29 Apr 2017 08:18:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/sel4/</guid>
-      <description>&lt;p&gt;The world&amp;rsquo;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The world&#39;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -612,7 +612,7 @@ Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/femto-os/</guid>
-      <description>&lt;p&gt;Femto OS: RTOS for small MCU&amp;rsquo;s like AVR.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Femto OS: RTOS for small MCU&#39;s like AVR.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -657,7 +657,7 @@ Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/mark3/</guid>
-      <description>&lt;p&gt;Mark3 is a sophisticated, modern RTOS and application development platform, targeted towards a growing list of today&amp;rsquo;s most compelling embedded devices.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Mark3 is a sophisticated, modern RTOS and application development platform, targeted towards a growing list of today&#39;s most compelling embedded devices.&lt;/p&gt;</description>
     </item>
     
     <item>
