@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>OSRTOS  | Femto OS</title>
+    <title>OSRTOS  | Drone</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -94,33 +94,39 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 <section class="container g-px-50 g-pt-20 g-pb-70">
-  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">Femto OS</h1>
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">Drone</h1>
   <div class="row rtos-page rtos-item rtos">
     <div class="col-md-9">
-      <div class=""><p>Femto OS: RTOS for small MCU&rsquo;s like AVR.</p>
+      <div class=""><p>Drone is an Embedded Operating System for writing real-time applications in Rust.</p>
+<p>It aims to bring modern development approaches without compromising performance into the world of embedded programming.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li>Round Robin Scheduling	Every task in the each priority gets an equal amount of time.</li>
-<li>Preemptive and cooperative	Choose between preemptive or cooperative on a task by task basis.</li>
-<li>Shared Stacks for tasks	Possibility to save ram by letting tasks share their stack space.</li>
-<li>Register Compression	Save only the registers that are used on the stack at taskswitch.</li>
-<li>Separate OS/ISR Stack Space	The OS (ISR) has its own stack space</li>
-<li>Power save on Idle	The idle task can be used to save power.</li>
-<li>Honest Time Slicing	Every task gets the same amount of execution time, so no starvation.</li>
-<li>OS interruptible	Large parts of the OS can be made interruptable.</li>
-<li>Resource Tracking	Tasks that are terminated are managed to release all kernel resources.</li>
+<li>Energy effective from the start. Drone encourages interrupt-driven execution model.</li>
+<li>Hard Real-Time. Drone relies on atomic operations instead of using critical sections.</li>
+<li>Fully preemptive multi-tasking with strict priorities. A higher priority task takes precedence with minimal latency.</li>
+<li>Highly concurrent. Multi-tasking in Drone is very cheap, and Rust ensures it is also safe.</li>
+<li>Message passing concurrency. Drone ships with synchronization primitives out of the box.</li>
+<li>Single stack by default. Drone concurrency primitives are essentially stack-less state machines. But stackful tasks are still supported.</li>
+<li>Dynamic memory enabled. Drone lets you use convenient data structures like mutable strings or vectors while still staying deterministic and code efficient.</li>
+<li>Async/await by default. Drone provides all required run-time to use native async/await syntax and execute Futures.</li>
+<li>Doesn’t require unsafe code. In spite of the fact that Drone core inevitably relies on unsafe code, Drone applications can fully rely on the safe abstractions provided by Drone.</li>
+<li>Modern tooling. Apart from standard Rust tools like cargo package manager, rustfmt code formatter, clippy code linter, Drone provides drone command-line utility which can generate a new Drone project for your hardware, or manage your debug probe.</li>
+<li>Primary stack is stack-overflow protected regardless of MMU/MPU presence. But secondary stackful tasks require MMU/MPU to ensure the safety.</li>
+<li>Debug communication channels. Rust’s print!, eprint! and similar macros are mapped to Cortex-M’s ITM channels 0 and 1 out of the box. Debug messages incur no overhead when no debug probe is connected.</li>
+<li>Drone.toml configuration file, which saves you from manually writing linker scripts.</li>
+<li>Rich and safe zero-cost abstractions for memory-mapped registers. Drone automatically generates register bindings from vendor-provided SVD files. It also provides a way to write code generic over similar peripherals.</li>
 </ul></div>
       <div class="g-mb-20">
         <h3 class="h5 g-font-weight-300 g-mb-5">
           <i class="fas fa-link"> </i>
-          <span>Website: <a href="http://www.femtoos.org/" target="_blank">http://www.femtoos.org/</a></span>
+          <span>Website: <a href="https://www.drone-os.com/" target="_blank">https://www.drone-os.com/</a></span>
         </h3>
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
           <i
-                  class="fas fa-code-branch">
+                  class=" fab fa-github">
           </i>
-          <span>Source code: <a href="https://sourceforge.net/projects/funkos/" target="_blank">https://sourceforge.net/projects/funkos/</a></span>
+          <span>Source code: <a href="https://github.com/drone-os/drone-core" target="_blank">https://github.com/drone-os/drone-core</a></span>
         </h3>
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -130,7 +136,10 @@ if (!doNotTrack) {
           
           
           
-          GPL
+          Apache License 2.0
+          
+          
+          MIT license
           </ul>
           
         </h3>
@@ -139,7 +148,7 @@ if (!doNotTrack) {
     </div>
     <div class="col-md-3">
       <div class="card rounded-0 g-mb-30">
-        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Femto OS Platforms</h3>
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Drone Platforms</h3>
         <div class="card-block">
           <ul class="list-unstyled">
             
@@ -147,14 +156,14 @@ if (!doNotTrack) {
             
             
             <li>
-              AVR
+              ARM
             </li>
             
           </ul>
         </div>
       </div>
       <div class="card rounded-0 g-mb-30">
-        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Femto OS Components</h3>
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Drone Components</h3>
         <div class="card-block">
           <ul class="list-unstyled">
             

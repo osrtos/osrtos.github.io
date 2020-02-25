@@ -6,10 +6,19 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2019 05:35:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 11:37:19 +0800</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Drone</title>
+      <link>https://www.osrtos.com/rtos/drone/</link>
+      <pubDate>Tue, 25 Feb 2020 11:37:19 +0800</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/drone/</guid>
+      <description>&lt;p&gt;Drone is an Embedded Operating System for writing real-time applications in Rust.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>TencentOS-tiny</title>
@@ -279,7 +288,7 @@ Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient
       <pubDate>Sat, 29 Apr 2017 08:18:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/sel4/</guid>
-      <description>&lt;p&gt;The world&#39;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The world&amp;rsquo;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -612,7 +621,7 @@ Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/femto-os/</guid>
-      <description>&lt;p&gt;Femto OS: RTOS for small MCU&#39;s like AVR.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Femto OS: RTOS for small MCU&amp;rsquo;s like AVR.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -657,7 +666,7 @@ Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/mark3/</guid>
-      <description>&lt;p&gt;Mark3 is a sophisticated, modern RTOS and application development platform, targeted towards a growing list of today&#39;s most compelling embedded devices.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Mark3 is a sophisticated, modern RTOS and application development platform, targeted towards a growing list of today&amp;rsquo;s most compelling embedded devices.&lt;/p&gt;</description>
     </item>
     
     <item>
