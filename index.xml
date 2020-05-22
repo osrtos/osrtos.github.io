@@ -6,10 +6,19 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2020 10:22:58 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 08:43:25 +0800</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contiki-NG</title>
+      <link>https://www.osrtos.com/rtos/contiki-ng/</link>
+      <pubDate>Fri, 22 May 2020 08:43:25 +0800</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/contiki-ng/</guid>
+      <description>&lt;p&gt;Contiki-NG is an operating system for resource-constrained devices in the Internet of Things. Contiki-NG contains an RFC-compliant, low-power IPv6 communication stack, enabling Internet connectivity.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>uC/OS-II</title>
