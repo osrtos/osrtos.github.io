@@ -100,17 +100,24 @@ if (!doNotTrack) {
       <div class=""><p>Free, simple and tiny cooperative operating system (OS) designed for deeply embedded applications.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li>kernel works in cooperative (non-preemptive) mode only</li>
-<li>signals (auto clearing, protected)</li>
+<li>kernel can operate in cooperative (non-preemptive) mode only</li>
+<li>kernel can operate with 16, 32 or 64-bit timer counter</li>
+<li>kernel can operate in tick-less mode</li>
+<li>spin locks</li>
+<li>once flags</li>
 <li>events</li>
-<li>flags (one, all)</li>
+<li>signals with protection mask</li>
+<li>flags (any, all)</li>
 <li>barriers</li>
 <li>semaphores</li>
 <li>mutexes</li>
 <li>condition variables</li>
 <li>memory pools</li>
-<li>message queues</li>
+<li>stream buffers</li>
+<li>message buffers</li>
 <li>mailbox queues</li>
+<li>event queues</li>
+<li>job queues</li>
 <li>timers (one-shot, periodic)</li>
 <li>c++ wrapper</li>
 <li>all documentation is contained within the source files</li>
@@ -136,7 +143,7 @@ if (!doNotTrack) {
           
           
           
-          GPL v3
+          MIT
           </ul>
           
         </h3>
@@ -153,7 +160,7 @@ if (!doNotTrack) {
             
             
             <li>
-              ARM
+              ARM, STM8, AVR8
             </li>
             
           </ul>

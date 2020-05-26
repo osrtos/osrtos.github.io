@@ -97,26 +97,35 @@ if (!doNotTrack) {
   <h1 class="h1 g-font-weight-300 w-100 g-mb-20">StateOS</h1>
   <div class="row rtos-page rtos-item rtos">
     <div class="col-md-9">
-      <div class=""><p>Free, extremely simple and amazingly tiny real-time operating system (RTOS) designed for deeply embedded applications. Target: ARM Cortex-M family. It was inspired by the concept of a state machine.</p>
+      <div class=""><p>Free, extremely simple and amazingly tiny real-time operating system (RTOS) designed for deeply embedded applications. Target: ARM Cortex-M, STM8. It was inspired by the concept of a state machine.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li>kernel works in preemptive or cooperative mode</li>
-<li>kernel can operate in tick-less mode (32-bit timer required)</li>
-<li>signals (auto clearing, protected)</li>
+<li>kernel can operate in preemptive or cooperative mode</li>
+<li>kernel can operate with 16, 32 or 64-bit timer counter</li>
+<li>kernel can operate in tick-less mode</li>
+<li>spin locks</li>
+<li>once flags</li>
 <li>events</li>
-<li>flags (one, all, accept, ignore)</li>
+<li>signals with protection mask</li>
+<li>flags (any, all, protect, ignore)</li>
 <li>barriers</li>
 <li>semaphores (binary, limited, counting)</li>
-<li>mutexes (recursive and priority inheritance)</li>
-<li>fast mutexes (non-recursive and non-priority-inheritance)</li>
+<li>mutexes with configurable type, protocol and robustness</li>
+<li>fast mutexes (error checking)</li>
 <li>condition variables</li>
 <li>memory pools</li>
-<li>message queues</li>
+<li>stream buffers</li>
+<li>message buffers</li>
 <li>mailbox queues</li>
+<li>event queues</li>
+<li>job queues</li>
 <li>timers (one-shot, periodic)</li>
 <li>cmsis-rtos api</li>
+<li>cmsis-rtos2 api</li>
+<li>nasa-osal support</li>
 <li>c++ wrapper</li>
 <li>all documentation is contained within the source files</li>
+<li>examples and templates are in separate repositories</li>
 </ul></div>
       <div class="g-mb-20">
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -138,7 +147,7 @@ if (!doNotTrack) {
           
           
           
-          GPL v3
+          MIT
           </ul>
           
         </h3>
@@ -155,7 +164,7 @@ if (!doNotTrack) {
             
             
             <li>
-              ARM
+              ARM Cortex-M, STM8
             </li>
             
           </ul>
