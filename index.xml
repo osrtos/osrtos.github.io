@@ -6,10 +6,20 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 May 2020 09:25:57 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 10:06:21 +0800</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learn RTOS</title>
+      <link>https://www.osrtos.com/learn/</link>
+      <pubDate>Wed, 27 May 2020 10:06:21 +0800</pubDate>
+      
+      <guid>https://www.osrtos.com/learn/</guid>
+      <description>Resource for learning RTOS RTOS 101  NASA: Real-Time Operating Systems (RTOS) 101  Books MicroC/OS-II: The Real-Time Kernel
+Courses  Modern Embedded Systems Programming Course Real-Time Bluetooth Networks - Shape the World An RTOS Based Software Development for Embedded Systems Development of Real-Time Systems astering RTOS: Hands on FreeRTOS and STM32Fx with Debugging Getting started with TI-RTOS training series The Modern Embedded Systems Programming  Useful Links  How I ended up writing a new real-time kernel The Architecture of Open Source Applications: FreeRTOS FreeRTOS Documentation RTOS Resources and Tutorials Study of an operating system: FreeRTOS  </description>
+    </item>
     
     <item>
       <title>Azure RTOS</title>
