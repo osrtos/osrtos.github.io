@@ -6,10 +6,19 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2020 08:43:25 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 09:25:57 +0800</lastBuildDate>
     
 	<atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Azure Rtos</title>
+      <link>https://www.osrtos.com/rtos/azure-rtos/</link>
+      <pubDate>Wed, 27 May 2020 09:25:57 +0800</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/azure-rtos/</guid>
+      <description>&lt;p&gt;This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Azure RTOS ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Contiki-NG</title>
