@@ -104,7 +104,7 @@
     <loc>https://www.osrtos.com/rtos/alios-things/</loc>
     <lastmod>2018-01-23T05:35:24+00:00</lastmod>
   </url><url>
-    <loc>https://www.osrtos.com/library/littlevgl/</loc>
+    <loc>https://www.osrtos.com/library/lvgl/</loc>
     <lastmod>2017-12-25T19:20:10+00:00</lastmod>
   </url><url>
     <loc>https://www.osrtos.com/library/littlefs/</loc>
@@ -183,6 +183,9 @@
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
   </url><url>
     <loc>https://www.osrtos.com/rtos/riot/</loc>
+    <lastmod>2016-11-29T11:36:58+00:00</lastmod>
+  </url><url>
+    <loc>https://www.osrtos.com/rtos/rtic/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
   </url><url>
     <loc>https://www.osrtos.com/rtos/scmrtos/</loc>

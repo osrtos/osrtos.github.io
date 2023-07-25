@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>OSRTOS  | Learn RTOS</title>
+    <title>OSRTOS  | RTIC</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -64,7 +64,7 @@
               <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
             </li>
             
-            <li class="nav-item g-mx-20--lg active">
+            <li class="nav-item g-mx-20--lg">
               <a href="/learn/" class="nav-link px-0" title="Learn RTOS page">Learn RTOS</a>
             </li>
             
@@ -83,35 +83,83 @@
     <main class="pb7" role="main">
       
 <section class="container g-px-50 g-pt-20 g-pb-70">
-  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">Learn RTOS</h1>
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">RTIC</h1>
   <div class="row rtos-page rtos-item rtos">
-    <div class="col-md-12">
-      <div class=""><h2 id="resource-for-learning-rtos">Resource for learning RTOS</h2>
-<h3 id="rtos-101">RTOS 101</h3>
+    <div class="col-md-9">
+      <div class=""><p>RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.</p>
+<h3 id="features">Features</h3>
 <ul>
-<li><a href="https://www.nasa.gov/sites/default/files/482489main_4100_-_RTOS_101.pdf">NASA: Real-Time Operating Systems (RTOS) 101</a></li>
+<li>Tasks as the unit of concurrency 1. Tasks can be event triggered (fired in response to asynchronous stimuli) or spawned by the application on demand.</li>
+<li>Message passing between tasks. Specifically, messages can be passed to software tasks at spawn time.</li>
+<li>A timer queue 2. Software tasks can be scheduled to run at some time in the future. This feature can be used to implement periodic tasks.</li>
+<li>Support for prioritization of tasks and, thus, preemptive multitasking.</li>
+<li>Efficient and data race free memory sharing through fine-grained priority based critical sections 1.</li>
+<li>Deadlock free execution guaranteed at compile time. This is a stronger guarantee than what&rsquo;s provided by the standard Mutex abstraction.</li>
+<li>Minimal scheduling overhead. The task scheduler has minimal software footprint; the hardware does the bulk of the scheduling.</li>
+<li>Highly efficient memory usage: All the tasks share a single call stack and there&rsquo;s no hard dependency on a dynamic memory allocator.</li>
+<li>All Cortex-M devices are fully supported.</li>
+<li>This task model is amenable to known WCET (Worst Case Execution Time) analysis and scheduling analysis techniques.</li>
 </ul>
-<h3 id="books">Books</h3>
-<p><a href="https://www.micrium.com/books/ucosii/">MicroC/OS-II: The Real-Time Kernel</a></p>
-<h3 id="courses">Courses</h3>
+<h3 id="demo-projects">Demo Projects</h3>
 <ul>
-<li><a href="https://www.youtube.com/playlist?list=PLPW8O6W-1chwyTzI3BHwBLbGQoPFxPAPM">Modern Embedded Systems Programming Course</a></li>
-<li><a href="https://www.edx.org/course/real-time-bluetooth-networks-shape-the-world">Real-Time Bluetooth Networks - Shape the World</a></li>
-<li><a href="https://www.udemy.com/course/an-rtos-based-software-development-for-embedded-systems/">An RTOS Based Software Development for Embedded Systems</a></li>
-<li><a href="https://www.coursera.org/learn/real-time-systems">Development of Real-Time Systems</a></li>
-<li><a href="https://www.udemy.com/course/mastering-rtos-hands-on-with-freertos-arduino-and-stm32fx/">astering RTOS: Hands on FreeRTOS and STM32Fx with Debugging</a></li>
-<li><a href="https://training.ti.com/getting-started-ti-rtos-chapter-0-workshop-intro-oob">Getting started with TI-RTOS training series</a></li>
-<li><a href="">The Modern Embedded Systems Programming</a></li>
-</ul>
-<h3 id="useful-links">Useful Links</h3>
-<ul>
-<li><a href="https://dmitryfrank.com/articles/how_i_ended_up_writing_my_own_kernel">How I ended up writing a new real-time kernel</a></li>
-<li><a href="http://www.aosabook.org/en/freertos.html">The Architecture of Open Source Applications: FreeRTOS</a></li>
-<li><a href="https://www.freertos.org/Documentation/RTOS_book.html">FreeRTOS Documentation</a></li>
-<li><a href="https://www.highintegritysystems.com/rtos/rtos-tutorials/">RTOS Resources and Tutorials</a></li>
-<li><a href="http://wiki.csie.ncku.edu.tw/embedded/FreeRTOS_Melot.pdf">Study of an operating system: FreeRTOS</a></li>
-</ul>
-</div>
+<li><a href="https://github.com/newAM/stm32wl-lightswitch-demo">STM32WL Lightswitch Demo</a>. This is a demo project for the stm32wl-hal.</li>
+</ul></div>
+      <div class="g-mb-20">
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fas fa-link"> </i>
+          <span>Website: <a href="https://rtic.rs/" target="_blank">https://rtic.rs/</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i
+                  class=" fab fa-github">
+          </i>
+          <span>Source code: <a href="https://github.com/rtic-rs/rtic" target="_blank">https://github.com/rtic-rs/rtic</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="far fa-copyright"> </i>
+          <span>License: </span>
+          
+          
+          
+          
+          Apache License, Version 2.0
+          
+          
+          MIT license
+          </ul>
+          
+        </h3>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-3">
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> RTIC Platforms</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            
+            <li>
+              ARM
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> RTIC Components</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

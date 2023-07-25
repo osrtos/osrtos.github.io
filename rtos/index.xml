@@ -332,6 +332,15 @@
     </item>
     
     <item>
+      <title>RTIC</title>
+      <link>https://www.osrtos.com/rtos/rtic/</link>
+      <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/rtic/</guid>
+      <description>&lt;p&gt;RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>scmRTOS</title>
       <link>https://www.osrtos.com/rtos/scmrtos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>

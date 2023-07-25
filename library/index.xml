@@ -23,7 +23,7 @@
       
       <guid>https://www.osrtos.com/library/utensor/</guid>
       <description>uTensor is an extremely light-weight machine learning inference framework built on Mbed and Tensorflow. It consists of a runtime library and an offline tool. The total size of graph definition and algorithm implementation of a 3-layer MLP produced by uTensor is less than 32kB in the resulting binary (excluding the weights).
-Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient Run-time  </description>
+Features Convolution Pooling CMSIS-NN integration Smaller binary More efficient Run-time </description>
     </item>
     
     <item>
@@ -99,12 +99,12 @@ Features  Convolution Pooling CMSIS-NN integration Smaller binary More efficient
     </item>
     
     <item>
-      <title>LittlevGL</title>
-      <link>https://www.osrtos.com/library/littlevgl/</link>
+      <title>LVGL</title>
+      <link>https://www.osrtos.com/library/lvgl/</link>
       <pubDate>Mon, 25 Dec 2017 19:20:10 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/littlevgl/</guid>
-      <description>&lt;p&gt;LittlevGL is a free and open-source graphics library providing everything you need to create a Graphical User Interface (GUI) on embedded systems with easy-to-use graphical elements, beautiful visual effects and low memory footprint.&lt;/p&gt;</description>
+      <guid>https://www.osrtos.com/library/lvgl/</guid>
+      <description>&lt;p&gt;LVGL is the most popular free and open-source embedded graphics library to create beautiful UIs for any MCU, MPU and display type.&lt;/p&gt;</description>
     </item>
     
     <item>
