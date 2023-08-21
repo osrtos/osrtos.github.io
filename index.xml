@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OSRTOS</title>
+    <title>OSRTOS - open source real-time operating system</title>
     <link>https://www.osrtos.com/</link>
-    <description>Recent content on OSRTOS</description>
+    <description>Recent content on OSRTOS - open source real-time operating system</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Aug 2023 11:36:57 +0000</lastBuildDate><atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
