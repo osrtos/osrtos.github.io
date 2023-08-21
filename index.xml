@@ -6,7 +6,36 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 May 2020 09:25:57 +0800</lastBuildDate><atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Aug 2023 11:36:57 +0000</lastBuildDate><atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apex</title>
+      <link>https://www.osrtos.com/rtos/apex/</link>
+      <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/apex/</guid>
+      <description>Apex is a real-time operating system (RTOS) designed for use in small to medium scale embedded systems. It aims to be a bridge between traditional RTOSes for small microcontrollers and Linux for larger embedded systems. Apex provides a Linux-compatible environment, making it easier for developers familiar with Linux. The RTOS is currently under heavy development and is not considered stable.
+Features Implements a subset of the Linux syscall interface. Uses the musl C library.</description>
+    </item>
+    
+    <item>
+      <title>CMSIS Version 5</title>
+      <link>https://www.osrtos.com/rtos/cmsis/</link>
+      <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/cmsis/</guid>
+      <description>&lt;p&gt;CMSIS is a set of tools, APIs, frameworks, and workflows designed to simplify software re-use, reduce the learning curve for microcontroller developers, and accelerate project build and debug processes. It was initiated as a vendor-independent hardware abstraction layer for Arm® Cortex®-M based processors and later expanded to support entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach to interface with peripherals, real-time operating systems, and middleware components.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HuskEOS</title>
+      <link>https://www.osrtos.com/rtos/huskeos/</link>
+      <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/huskeos/</guid>
+      <description>HuskEOS is a real-time operating system (RTOS) designed for embedded systems. It offers a priority-based preemptive scheduler and boasts impressive performance metrics, such as achieving 50,000 context switches per second on a Cortex-M4 configured at 16MHz.
+Features Priority-based Preemptive Scheduler: Efficiently schedules tasks based on their priority. Performance: Achieves 50,000 context switches per second on Cortex-M4 at 16MHz. Memory Management: Memory footprint can be as low as 550 bytes. All memory is statically allocated, eliminating the need for a heap.</description>
+    </item>
+    
     <item>
       <title>Learn RTOS</title>
       <link>https://www.osrtos.com/learn/</link>
