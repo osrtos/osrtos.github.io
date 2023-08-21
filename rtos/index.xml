@@ -112,7 +112,7 @@
       <pubDate>Tue, 12 Feb 2019 05:45:10 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/tock/</guid>
-      <description>&lt;p&gt;Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on Cortex-M based embedded platforms. The kernel and device drivers are written in Rust.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -157,7 +157,7 @@
       <pubDate>Sun, 11 Feb 2018 06:48:49 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/tizenrt/</guid>
-      <description>&lt;p&gt;TizenRT is a lightweight RTOS-based platform to support low-end IoT devices&lt;/p&gt;</description>
+      <description>&lt;p&gt;TizenRT is a lightweight RTOS (Real-Time Operating System) designed to support low-end IoT devices. It aims to extend the Tizen platform device coverage to devices like home appliances without display and wearable bands with a small LCD. These devices are typically equipped with Cortex-M/R processors with MPU, less than 2 MB RAM, and less than 16 MB Flash.&lt;/p&gt;</description>
     </item>
     
     <item>

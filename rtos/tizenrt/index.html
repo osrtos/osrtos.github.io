@@ -94,10 +94,47 @@
   <h1 class="h1 g-font-weight-300 w-100 g-mb-20">TizenRT</h1>
   <div class="row rtos-page rtos-item rtos">
     <div class="col-md-9">
-      <div class=""><p>TizenRT is a lightweight RTOS-based platform to support low-end IoT devices</p>
+      <div class=""><p>TizenRT is a lightweight RTOS (Real-Time Operating System) designed to support low-end IoT devices. It aims to extend the Tizen platform device coverage to devices like home appliances without display and wearable bands with a small LCD. These devices are typically equipped with Cortex-M/R processors with MPU, less than 2 MB RAM, and less than 16 MB Flash.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li>TizenRT is a lightweight RTOS-based platform to support low-end IoT devices</li>
+<li><strong>RTOS-based Platform</strong>: Specifically designed for low-end IoT devices.</li>
+<li><strong>IPv6 Support</strong>: Includes support for Neighbor Discovery (ND6), Multicast Listener Discovery (MLD), and ICMPv6 protocols.</li>
+<li><strong>Docker Build Environment</strong>: Provides an easy way to build using Docker, eliminating the need for manual library and toolchain installations.</li>
+<li><strong>Media Framework</strong>: Offers player/recorder functionalities for voice/audio streaming.</li>
+<li><strong>Task Manager Framework</strong>: Enables control and messaging between applications.</li>
+<li><strong>Network Monitoring Tool</strong>: Monitors real-time information regarding network sockets, network interface, and WiFi Manager.</li>
+<li><strong>gRPC for Client Roles</strong>: Supports various RPC types and both insecure and secure modes of RPC execution.</li>
+<li><strong>HTTP/2 Support</strong>: Ported nghttp2 version 1.32.0 from Github.</li>
+</ul>
+<h3 id="components">Components</h3>
+<ul>
+<li><strong>Kernel and System</strong>: Provides features like stack trace in text, new pthread_tryjoin_np API, and Docker build environment.</li>
+<li><strong>Network and Connectivity</strong>: Offers IPv6 support, network monitoring tools, gRPC for client roles, and HTTP/2.</li>
+<li><strong>Framework</strong>: Includes a media framework, voice control manager, task manager framework, and Wi-Fi manager framework.</li>
+<li><strong>External</strong>: Incorporates libc++, protocol buffer, cURL, and a stress test tool.</li>
+</ul>
+<h3 id="platforms">Platforms</h3>
+<ul>
+<li>ARTIK053</li>
+<li>ARTIK053S</li>
+<li>ARTIK055S</li>
+<li>CY4390X</li>
+<li>ESP32-DevKitC</li>
+<li>ESP-WROVER-KIT</li>
+<li>iMX RT 1020 EVK</li>
+<li>iMX RT 1050 EVK</li>
+<li>SIDK_S5JT200</li>
+<li>STM32F407-DISC1</li>
+<li>STM32F429I-DISCO</li>
+<li>STM32L4R9AI-DISCO</li>
+<li>QEMU</li>
+</ul>
+<h3 id="resources">Resources</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/SKKU-ESLAB/IoTJS-Plus-TizenRT">IoTJS-Plus-TizenRT</a>. IoT.js of ANT based on Tizen RT.</li>
+<li><a href="https://github.com/webispy/docker-artik-devenv">docker-artik-devenv</a>. Dockerfile for ARTIK development environment.</li>
+<li><a href="https://github.com/webispy/ocf_mylight">ocf_mylight</a>. OCF Light sample for Linux and TizenRT using IoTivity stack..</li>
 </ul></div>
       <div class="g-mb-20">
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -139,6 +176,16 @@
               ARM
             </li>
             
+            
+            <li>
+              iMX RT
+            </li>
+            
+            
+            <li>
+              QEMU
+            </li>
+            
           </ul>
         </div>
       </div>
@@ -150,7 +197,28 @@
             
             
             <li>
-              None
+              FileSystem
+            </li>
+            <li>
+              Network
+            </li>
+            <li>
+              HTTP
+            </li>
+            <li>
+              HTTP/2
+            </li>
+            <li>
+              TLS/SSL
+            </li>
+            <li>
+              Command Line Interface
+            </li>
+            <li>
+              gRPC
+            </li>
+            <li>
+              IPv6
             </li>
           </ul>
         </div>

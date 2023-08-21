@@ -97,9 +97,129 @@
       <div class=""><p>The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li>Security. The Zephyr Project was developed with security in mind.The project employs an in-depth security development life cycle through all stages of development including: security validation, fuzz and penetration testing, frequent code reviews, static code analysis, threat modeling and reviews to prevent back doors in the code.</li>
-<li>Connectivity. The Zephyr Project provides connectivity protocols optimized for low powered, small memory footprint devices. The project will support Bluetooth, Bluetooth LE, WiFi, 802.15.4 as well as other standards like 6Lowpan, CoAP, IPv4, IPv6, and NFC.</li>
-<li>Modular. The Zephyr project provides developers with feature-rich software optimized for memory constrained devices. The Zephyr kernel and associated software modules can run on systems as small as 8kB of memory all the way up to 512 kB. It is designed to allow complete freedom to use the RTOS as-is or to tailor a solution by enabling or disabling almost every feature via kconfig to define the best configuration for your device.</li>
+<li>Scalable from 8-bit to 64-bit microcontroller environments.</li>
+<li>Built with safety and security in mind.</li>
+<li>Supports a wide variety of development tools, including SDKs, debuggers, and more.</li>
+<li>Provides a unified API across architectures.</li>
+<li>Modular design that allows for configuring the OS for various use cases.</li>
+<li>Extensive suite of kernel services including threads, multi-threading, and more.</li>
+</ul>
+<h3 id="components"><strong>Components:</strong></h3>
+<ul>
+<li><strong>Kernel:</strong> Core component providing essential services.</li>
+<li><strong>OS Services:</strong> Includes services like cryptography, debugging, device management, file systems, logging, power management, shell, storage, and more.</li>
+<li><strong>Connectivity:</strong> Provides support for various communication protocols.</li>
+<li><strong>Hardware Support:</strong> Extensive support for different boards and architectures.</li>
+</ul>
+<h3 id="supported-platforms"><strong>Supported Platforms:</strong></h3>
+<ul>
+<li><strong>ARC Boards:</strong> DesignWare ARC series.</li>
+<li><strong>ARM Boards:</strong> 96Boards series, Adafruit series, NXP series, and more.</li>
+<li><strong>ARM64 Boards:</strong> Broadcom, ARM BASE, Intel Agilex, NXP i.MX series, and more.</li>
+<li><strong>MIPS Boards:</strong> MIPS Malta Emulation.</li>
+<li><strong>Nios II Boards:</strong> Altera MAX10, Altera Nios-II Emulation.</li>
+<li><strong>POSIX/Native Boards:</strong> POSIX architecture, Bsim boards, Native POSIX execution.</li>
+<li><strong>RISC-V Boards:</strong> Andes, ESP32-C3, GigaDevice, SiFive, and more.</li>
+<li><strong>SPARC Boards:</strong> Generic LEON3, GR716-MINI Development Board.</li>
+<li><strong>x86 Boards:</strong> Alder Lake N, Elkhart Lake CRB, Intel Integrated Sensor Hub, and more.</li>
+<li><strong>Xtensa Boards:</strong> ESP32 series, Intel ADSP series, and more.</li>
+</ul>
+<h3 id="resources">Resources</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/zlgopen/awtk">awtk</a>. AWTK = Toolkit AnyWhere(a cross-platform embedded GUI).</li>
+<li><a href="https://github.com/zmkfirmware/zmk">zmk</a>. ZMK Firmware Repository.</li>
+<li><a href="https://github.com/jakkra/ZSWatch">ZSWatch</a>. ZSWatch - the Open Source Zephyr™ based Smartwatch, including both HW and FW..</li>
+<li><a href="https://github.com/heliosproj/HeliOS">HeliOS</a>. A community delivered, open source embedded operating system project..</li>
+<li><a href="https://github.com/maksimdrachov/zephyr-rtos-tutorial">zephyr-rtos-tutorial</a>. Zephyr: Tutorial for beginners.</li>
+<li><a href="https://github.com/zephyrproject-rtos/west">west</a>. West, Zephyr&rsquo;s meta-tool.</li>
+<li><a href="https://github.com/chunhuajiang/zephyr-doc">zephyr-doc</a>. 《Zephyr OS 文档 - 中文版》.</li>
+<li><a href="https://github.com/chunhuajiang/zephyr-inside">zephyr-inside</a>. 揭秘 Zephyr OS  .</li>
+<li><a href="https://github.com/zephyrproject-rtos/sdk-ng">sdk-ng</a>. Zephyr SDK (Toolchains, Development Tools).</li>
+<li><a href="https://github.com/iotwuxi/iot_security">iot_security</a>. 《密码技术与物联网安全——mbedtls开发实战》示例代码.</li>
+<li><a href="https://github.com/zephyrproject-rtos/zscilib">zscilib</a>. An open-source scientific computing library for embedded systems running Zephyr OS or standalone..</li>
+<li><a href="https://github.com/golioth/awesome-zephyr-rtos">awesome-zephyr-rtos</a>. 🪁 A curated list of awesome projects and resources for the Zephyr RTOS project..</li>
+<li><a href="https://github.com/swedishembedded/control">control</a>. Embedded Firmware Control Systems Toolbox (Pure C and GNU Octave).</li>
+<li><a href="https://github.com/albsod/pinetime-hypnos">pinetime-hypnos</a>. Zephyr firmware for the nRF52832 PineTime smartwatch.</li>
+<li><a href="https://github.com/Linaro/lava">lava</a>. Read only mirror <a href="https://git.lavasoftware.org/lava/lava">https://git.lavasoftware.org/lava/lava</a>.</li>
+<li><a href="https://github.com/cenfun/monocart-reporter">monocart-reporter</a>. A playwright test reporter (Node.js).</li>
+<li><a href="https://github.com/svenssonjoel/lispBM">lispBM</a>. An interpreter for a concurrent lisp-like language with message-passing and pattern-matching implemented in C..</li>
+<li><a href="https://github.com/golioth/golioth-zephyr-sdk">golioth-zephyr-sdk</a>. Golioth SDK For Zephyr.</li>
+<li><a href="https://github.com/JuulLabs-OSS/mcumgr-android">mcumgr-android</a>. A mobile management library for devices running Apache Mynewt and Zephyr (DFU, logs, stats, config, etc.).</li>
+<li><a href="https://github.com/Featherweight-IP/fwrisc">fwrisc</a>. Featherweight RISC-V implementation.</li>
+<li><a href="https://github.com/NordicPlayground/nrf-docker">nrf-docker</a>. Dockerfile that contains all dependencies needed to build nRF Connect SDK applications..</li>
+<li><a href="https://github.com/rgujju/Dynamic_App_Loading">Dynamic_App_Loading</a>. Dynamically load apps to zephyr RTOS.</li>
+<li><a href="https://github.com/RT-LOC/zephyr-dwm1001">zephyr-dwm1001</a>. Open source DWM1001 + Zephyr example implementations.</li>
+<li><a href="https://github.com/JuulLabs-OSS/mcumgr-ios">mcumgr-ios</a>. A mobile management library for devices running Apache Mynewt and Zephyr (DFU, logs, stats, config, etc.).</li>
+<li><a href="https://github.com/scttnlsn/bms">bms</a>. Battery management system for 4-series li-ion packs.</li>
+<li><a href="https://github.com/lowlander/zpp">zpp</a>. Zephyr C++ Framework.</li>
+<li><a href="https://github.com/koenvervloesem/openhaystack-zephyr">openhaystack-zephyr</a>. Zephyr-based OpenHaystack firmware to track your personal Bluetooth devices via Apple&rsquo;s Find My network.</li>
+<li><a href="https://github.com/micro-ROS/micro_ros_zephyr_module">micro_ros_zephyr_module</a>. micro-ROS Zephyr module and sample code.</li>
+<li><a href="https://github.com/swedishembedded/sdk">sdk</a>. Embedded firmware development, simulation and verification SDK.</li>
+<li><a href="https://github.com/makerdiary/nrf52840-m2-devkit">nrf52840-m2-devkit</a>. An open-source developer kit based on a removable nRF52840 M.2 module, designed for IoT prototyping.</li>
+<li><a href="https://github.com/intel/tcf">tcf</a>. Documentation.</li>
+<li><a href="https://github.com/trond-snekvik/vscode-kconfig">vscode-kconfig</a>. Kconfig language support in vscode.</li>
+<li><a href="https://github.com/AVSystem/Anjay-zephyr-client">Anjay-zephyr-client</a>. Anjay Zephyr LwM2M client..</li>
+<li><a href="https://github.com/BLE-MIDI/NCS-MIDI">NCS-MIDI</a>. MIDI tools for nRF Connect SDK.</li>
+<li><a href="https://github.com/koenvervloesem/bluetooth-low-energy-applications">bluetooth-low-energy-applications</a>. Code examples, errata and additional tips and references to interesting projects for the book &ldquo;Develop your own Bluetooth Low Energy Applications for Raspberry Pi, ESP32 and nRF52 with Python, Arduino and Zephyr&rdquo;.</li>
+<li><a href="https://github.com/zmkfirmware/zmk-docker">zmk-docker</a>. Lightweight Docker images for ZMK.</li>
+<li><a href="https://github.com/elaichenkov/playwright-zephyr">playwright-zephyr</a>. Zephyr reporter for the Playwright.</li>
+<li><a href="https://github.com/swedishembedded/workstation">workstation</a>. Docker based development environment for coding, building and flashing embedded firmware..</li>
+<li><a href="https://github.com/boaks/zephyr-coaps-client">zephyr-coaps-client</a>. CoAP / DTLS 1.2 CID client for Zephyr - Reliable - Efficient - Encrypted.</li>
+<li><a href="https://github.com/theheraldproject/herald-for-cpp">herald-for-cpp</a>. Herald for C++ - Reliable mobile Bluetooth communications - Native library &amp; test apps.</li>
+<li><a href="https://github.com/Technoculture/awesome-zephyr-rtos">awesome-zephyr-rtos</a>. Zephyr RTOS for building modular firmware.</li>
+<li><a href="https://github.com/lindemer/cozy">cozy</a>. CBOR Object Signing and Encryption (COSE) for Zephyr RTOS.</li>
+<li><a href="https://github.com/ck-telecom/pinetime">pinetime</a>. zephyr based PineTime smartwatch.</li>
+<li><a href="https://github.com/a-smiggle/ruuvitag_fw_zephyr">ruuvitag_fw_zephyr</a>. Ruuvitag FW using Zephyr OS.</li>
+<li><a href="https://github.com/illinois/zephyr">zephyr</a>. A unified grading platform for student code.</li>
+<li><a href="https://github.com/CharlyCst/zephyr">zephyr</a>. A Programming Language built for WebAssembly.</li>
+<li><a href="https://github.com/dimka-rs/zephyr-stm32-webusb">zephyr-stm32-webusb</a>. Playing with Zephyr Web USB example on STM32 Bluepill.</li>
+<li><a href="https://github.com/koenvervloesem/send-my-sensor">send-my-sensor</a>. Zephyr-based firmware to upload sensor data via Apple&rsquo;s Find My network.</li>
+<li><a href="https://github.com/szymonh/zephyr_cve-2021-3625">zephyr_cve-2021-3625</a>. CVE-2021-3625 - Sample exploits for Zephyr.</li>
+<li><a href="https://github.com/platformio/platform-nxpimxrt">platform-nxpimxrt</a>. NXP i.MX RT: development platform for PlatformIO.</li>
+<li><a href="https://github.com/winnedatsch/aW_1-keyboard">aW_1-keyboard</a>. A split (semi-)wireless keyboard based on the NRF52832.</li>
+<li><a href="https://github.com/vkirankumar3090/zephyrWithCucumber">zephyrWithCucumber</a>. This Framework will help you to update the Test Cycle Status and Steps of the Test Case which is executed in the Test Cycle with the help of cucumber json file.</li>
+<li><a href="https://github.com/ufechner7/teensy4_shell">teensy4_shell</a>. Tutorial on how to use the shell of Zephyr with Teensy 4.0.</li>
+<li><a href="https://github.com/beriberikix/zephyr-docker">zephyr-docker</a>. Develop with Zephyr locally using Docker containers.</li>
+<li><a href="https://github.com/iwasz/zephyr-grbl">zephyr-grbl</a>. Started as a firmware for <a href="https://hackaday.io/project/177237-corexy-pen-plotter">https://hackaday.io/project/177237-corexy-pen-plotter</a>, possibly could be adapted to other CNCs as well..</li>
+<li><a href="https://github.com/craigpeacock/Zephyr_WiFi">Zephyr_WiFi</a>. Example Zephyr WiFi code.</li>
+<li><a href="https://github.com/tiacsys/bridle">bridle</a>. Bridle and kite line for embedded systems based on Zephyr..</li>
+<li><a href="https://github.com/bcdevices/ly10-zephyr-fw">ly10-zephyr-fw</a>. Zephyr-based firmware for PLT Demo V2.</li>
+<li><a href="https://github.com/jkdhn/mcumgr-dart">mcumgr-dart</a>. Dart mcumgr client.</li>
+<li><a href="https://github.com/jezztify/JiphyLib">JiphyLib</a>. making it easier to publish robotframework results to JIRA.</li>
+<li><a href="https://github.com/craigpeacock/Zephyr_LoRaWAN">Zephyr_LoRaWAN</a>. An example LoRaWAN Application on the Zephyr RTOS.</li>
+<li><a href="https://github.com/AVSystem/Anjay-zephyr">Anjay-zephyr</a>. Anjay LwM2M library module for Zephyr..</li>
+<li><a href="https://github.com/fallrisk/Kconfig-Highlighter">Kconfig-Highlighter</a>. Sublime Text 3 highlight script for the Kconfig language..</li>
+<li><a href="https://github.com/codingspirit/vscode-zephyr">vscode-zephyr</a>. This is an example vscode setting to provide supports for zephyr based projects build/debug..</li>
+<li><a href="https://github.com/fcgdam/zLorawan_Node">zLorawan_Node</a>. A Zephyr RTOS based Lorawan node..</li>
+<li><a href="https://github.com/joelguittet/mender-stm32l4a6-zephyr-example">mender-stm32l4a6-zephyr-example</a>. Mender MCU example running on STM32L4 using Zephyr RTOS.</li>
+<li><a href="https://github.com/GatCode/bazel2zephyr">bazel2zephyr</a>. Hands-on tutorial on building a static library (.a) with Bazel and linking it into a Zephyr based project..</li>
+<li><a href="https://github.com/ck-telecom/twatch">twatch</a>. Zephyr based firmware for ligo twatch.</li>
+<li><a href="https://github.com/oldrev/stm32_blackpill_zephyr_ssd1306_demo">stm32_blackpill_zephyr_ssd1306_demo</a>. A demo for Zephyr RTOS to shows how to using a custom TTF Font with CFB sub-system to prints text on a small OLED screen..</li>
+<li><a href="https://github.com/96boards-projects/patient_monitoring">patient_monitoring</a>. Patient Monitoring System using 96Boards.</li>
+<li><a href="https://github.com/pyrinas-iot/pyrinas-zephyr">pyrinas-zephyr</a>. Open companion cloud client to Pyrinas Server for the nRF9160 Feather and Zephyr.</li>
+<li><a href="https://github.com/ravindrakumarkumawat/Netflix-clone">Netflix-clone</a>. This the clone of Netflix functionalities using YouTube Data API. Where you can watch videos, search videos (Not Channel). You can view the preview screen. Every Video has a recommended video list. Sign in with Google..</li>
+<li><a href="https://github.com/lucamoroz/Bluetooth-Mesh-Sensor-Network">Bluetooth-Mesh-Sensor-Network</a>. Bluetooth Mesh sensor network.</li>
+<li><a href="https://github.com/inductivekickback/nrf_servo">nrf_servo</a>. Servo implementation that uses the NRFX PWM driver.</li>
+<li><a href="https://github.com/aaron-mohtar-co/Lemon-IoT-Accessories">Lemon-IoT-Accessories</a>. Support files for Lemon IoT Ecosystem Accessories.</li>
+<li><a href="https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nRF9160">Lemon-IoT-LTE-nRF9160</a>. Support files for the Lemon IoT LTE nRF9160 Board.</li>
+<li><a href="https://github.com/zmkfirmware/zmk-config-split-template">zmk-config-split-template</a>. A template used to generate user configuration repos for split (left + right) keyboards.</li>
+<li><a href="https://github.com/chaitanya8/ZAPI">ZAPI</a>. Test execution and result reporting on Jira + Zephyr setup.</li>
+<li><a href="https://github.com/LairdCP/MG100_firmware">MG100_firmware</a>. MG100 Zephyr RTOS based firmware.</li>
+<li><a href="https://github.com/LairdCP/Pinnacle-100-Firmware-Manifest">Pinnacle-100-Firmware-Manifest</a>. Manifest repository for Pinnacle 100 and MG100 BLE Gateway Firmware demos: <a href="https://github.com/LairdCP/BLE_Gateway_Firmware">https://github.com/LairdCP/BLE_Gateway_Firmware</a>.</li>
+<li><a href="https://github.com/inductivekickback/hc-sr04">hc-sr04</a>. Zephyr RTOS driver for HC-SR04 Ultrasonic Ranging Module.</li>
+<li><a href="https://github.com/rckTom/alturia-firmware">alturia-firmware</a>. Firmware for the alturia flight computer.</li>
+<li><a href="https://github.com/ideak/zephyr-stm32-spi">zephyr-stm32-spi</a>. Simple example of using SPI on the STM32 Nucleo-F411RE board.</li>
+<li><a href="https://github.com/jonnykl/kw1281-diag">kw1281-diag</a>. Simple KW1281 diagnosis tool using Zephyr shell.</li>
+<li><a href="https://github.com/hardwario/nrf-connect-sdk-build-docker">nrf-connect-sdk-build-docker</a>. Build Environment for nRF Connect SDK.</li>
+<li><a href="https://github.com/gaurav1264/zephyr-data-migrator">zephyr-data-migrator</a>. This is self-service utility to migrate zephyr for Jira data from one instance to another..</li>
+<li><a href="https://github.com/stuffmatic/zephyr-usb-midi">zephyr-usb-midi</a>. A configurable USB MIDI 1.0 device class driver for the Zephyr RTOS..</li>
+<li><a href="https://github.com/williamcaruso/AffectHub">AffectHub</a>. A multimodal physiological and affective data hub affectivecomputing.</li>
+<li><a href="https://github.com/HomeSmartMesh/sdk-hsm-thingy53">sdk-hsm-thingy53</a>. Zephyr Samples for Nordic Thingy53 dev kit OpenThread mesh with json data, BME688 BSEC2 for Air Quality, Light color, RGB Les, Battery.</li>
+<li><a href="https://github.com/HeartfeltBP/bpm">bpm</a>. Firmware for the Heartfelt Cardiac Monitor. Consists of sensor (MAX86150) driver, WiFi and Bluetooth connectivity, and client authentication..</li>
+<li><a href="https://github.com/jptcarreira/zephyr-demo-wifi">zephyr-demo-wifi</a>. Zephyr Demo Wifi and TCP/UDP connection console using STM32L4+ B-L4S5I-IOT01A.</li>
+<li><a href="https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest">Pinnacle_100_OOB_Demo_Manifest</a>. Manifest repo for the Pinnacle 100 Out of Box Demo.</li>
+<li><a href="https://github.com/nrjn/hello-zephyr">hello-zephyr</a>. playing around with zephyr .</li>
 </ul></div>
       <div class="g-mb-20">
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -148,6 +268,11 @@
             
             
             <li>
+              MIPS
+            </li>
+            
+            
+            <li>
               Xtensa
             </li>
             
@@ -158,12 +283,12 @@
             
             
             <li>
-              ARC
+              QEMU
             </li>
             
             
             <li>
-              Nios II
+              SPARC V8
             </li>
             
           </ul>
@@ -177,16 +302,46 @@
             
             
             <li>
-              BLE
-            </li>
-            <li>
               FileSystem
             </li>
             <li>
-              Command Line Interface
+              Network
+            </li>
+            <li>
+              HTTP
+            </li>
+            <li>
+              TLS/SSL
+            </li>
+            <li>
+              Shell
             </li>
             <li>
               Logging
+            </li>
+            <li>
+              BLE
+            </li>
+            <li>
+              LoRaWAN
+            </li>
+            <li>
+              6LoWPAN
+            </li>
+            <li>
+              USBHost
+            </li>
+            <li>
+              USBDevice
+            </li>
+            <li>
+              OTA
+            </li>
+            <li>
+              Modbus
+            </li>
+            <li>
+              CAN
             </li>
           </ul>
         </div>

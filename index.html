@@ -123,163 +123,6 @@
         
         <tr>
           <td width="15%">
-            <a href="https://www.osrtos.com/rtos/tock/">Tock</a>
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                Apache License 2.0
-              </li>
-              </ul>
-            
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                ARM
-              </li>
-              </ul>
-            
-          </td>
-          <td width="15%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              </ul>
-            
-          </td>
-          <td><p>Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on Cortex-M based embedded platforms. The kernel and device drivers are written in Rust.</p></td>
-          <td width="8%">release-2.1.1</td>
-          <td width="8%">
-            <ul class="list-unstyled" style="margin-bottom:0;">
-            
-              <li><a href="https://github.com/tock/tock" target="_blank"><i
-                class="fab fa-github"
-                aria-hidden="true"></i> Code</a></li>
-            
-            
-              <li><a href="https://github.com/tock/tock" target="_blank"><i
-                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
-            
-            </ul>
-          </td>
-          <td width="8%">2023-08-17</td>
-        </tr>
-        
-        <tr>
-          <td width="15%">
-            <a href="https://www.osrtos.com/rtos/freertos/">FreeRTOS</a>
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                MIT
-              </li>
-              </ul>
-            
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                MSP430
-              </li>
-              
-              
-              <li>
-                ARM
-              </li>
-              
-              
-              <li>
-                AVR
-              </li>
-              
-              
-              <li>
-                ColdFire
-              </li>
-              
-              
-              <li>
-                PIC
-              </li>
-              
-              
-              <li>
-                x86
-              </li>
-              </ul>
-            
-          </td>
-          <td width="15%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                FileSystem
-              </li>
-              
-              
-              <li>
-                Network
-              </li>
-              
-              
-              <li>
-                TLS/SSL
-              </li>
-              
-              
-              <li>
-                Command Line Interface
-              </li>
-              
-              
-              <li>
-                Runtime Analysis
-              </li>
-              </ul>
-            
-          </td>
-          <td><p>FreeRTOS is a market leading RTOS from Amazon Web Services that supports more than 35 architectures. It is distributed under the MIT license.</p></td>
-          <td width="8%">202212.01</td>
-          <td width="8%">
-            <ul class="list-unstyled" style="margin-bottom:0;">
-            
-              <li><a href="https://github.com/FreeRTOS/FreeRTOS" target="_blank"><i
-                class="fab fa-github"
-                aria-hidden="true"></i> Code</a></li>
-            
-            
-              <li><a href="http://www.freertos.org/" target="_blank"><i
-                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
-            
-            </ul>
-          </td>
-          <td width="8%">2023-08-17</td>
-        </tr>
-        
-        <tr>
-          <td width="15%">
             <a href="https://www.osrtos.com/rtos/nuttx/">NuttX</a>
           </td>
           <td width="10%">
@@ -398,7 +241,7 @@
           <td width="8%">
             <ul class="list-unstyled" style="margin-bottom:0;">
             
-              <li><a href="https://github.com/apache/incubator-nuttx" target="_blank"><i
+              <li><a href="https://github.com/apache/nuttx" target="_blank"><i
                 class="fab fa-github"
                 aria-hidden="true"></i> Code</a></li>
             
@@ -408,7 +251,7 @@
             
             </ul>
           </td>
-          <td width="8%">2023-08-17</td>
+          <td width="8%">2023-08-21</td>
         </tr>
         
         <tr>
@@ -521,7 +364,343 @@
             
             </ul>
           </td>
-          <td width="8%">2023-08-17</td>
+          <td width="8%">2023-08-21</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="https://www.osrtos.com/rtos/tock/">Tock</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Apache License 2.0
+              </li>
+              </ul>
+            
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                ARM
+              </li>
+              
+              
+              <li>
+                RISC-V
+              </li>
+              </ul>
+            
+          </td>
+          <td width="15%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              </ul>
+            
+          </td>
+          <td><p>Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.</p></td>
+          <td width="8%">release-2.1.1</td>
+          <td width="8%">
+            <ul class="list-unstyled" style="margin-bottom:0;">
+            
+              <li><a href="https://github.com/tock/tock" target="_blank"><i
+                class="fab fa-github"
+                aria-hidden="true"></i> Code</a></li>
+            
+            
+              <li><a href="https://github.com/tock/tock" target="_blank"><i
+                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
+            
+            </ul>
+          </td>
+          <td width="8%">2023-08-20</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="https://www.osrtos.com/rtos/rtic/">RTIC</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Apache License, Version 2.0
+              </li>
+              
+              
+              <li>
+                MIT license
+              </li>
+              </ul>
+            
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                ARM
+              </li>
+              </ul>
+            
+          </td>
+          <td width="15%">
+            
+            
+          </td>
+          <td><p>RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.</p></td>
+          <td width="8%">v2.0.0</td>
+          <td width="8%">
+            <ul class="list-unstyled" style="margin-bottom:0;">
+            
+              <li><a href="https://github.com/rtic-rs/rtic" target="_blank"><i
+                class="fab fa-github"
+                aria-hidden="true"></i> Code</a></li>
+            
+            
+              <li><a href="https://rtic.rs/" target="_blank"><i
+                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
+            
+            </ul>
+          </td>
+          <td width="8%">2023-08-20</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="https://www.osrtos.com/rtos/zephyr/">Zephyr</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Apache License
+              </li>
+              </ul>
+            
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                ARM
+              </li>
+              
+              
+              <li>
+                x86
+              </li>
+              
+              
+              <li>
+                MIPS
+              </li>
+              
+              
+              <li>
+                Xtensa
+              </li>
+              
+              
+              <li>
+                RISC-V
+              </li>
+              
+              
+              <li>
+                QEMU
+              </li>
+              
+              
+              <li>
+                SPARC V8
+              </li>
+              </ul>
+            
+          </td>
+          <td width="15%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                FileSystem
+              </li>
+              
+              
+              <li>
+                Network
+              </li>
+              
+              
+              <li>
+                HTTP
+              </li>
+              
+              
+              <li>
+                TLS/SSL
+              </li>
+              
+              
+              <li>
+                Shell
+              </li>
+              
+              
+              <li>
+                Logging
+              </li>
+              
+              
+              <li>
+                BLE
+              </li>
+              
+              
+              <li>
+                LoRaWAN
+              </li>
+              
+              
+              <li>
+                6LoWPAN
+              </li>
+              
+              
+              <li>
+                USBHost
+              </li>
+              
+              
+              <li>
+                USBDevice
+              </li>
+              
+              
+              <li>
+                OTA
+              </li>
+              
+              
+              <li>
+                Modbus
+              </li>
+              
+              
+              <li>
+                CAN
+              </li>
+              </ul>
+            
+          </td>
+          <td><p>The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.</p></td>
+          <td width="8%">v3.4.0</td>
+          <td width="8%">
+            <ul class="list-unstyled" style="margin-bottom:0;">
+            
+              <li><a href="https://github.com/zephyrproject-rtos/zephyr" target="_blank"><i
+                class="fab fa-github"
+                aria-hidden="true"></i> Code</a></li>
+            
+            
+              <li><a href="https://www.zephyrproject.org" target="_blank"><i
+                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
+            
+            </ul>
+          </td>
+          <td width="8%">2023-08-20</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="https://www.osrtos.com/rtos/embox/">embox</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Other
+              </li>
+              </ul>
+            
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                MSP430
+              </li>
+              
+              
+              <li>
+                ARM
+              </li>
+              
+              
+              <li>
+                MIPS
+              </li>
+              
+              
+              <li>
+                PowerPC
+              </li>
+              </ul>
+            
+          </td>
+          <td width="15%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              </ul>
+            
+          </td>
+          <td><p>Embox is a configurable operating system kernel designed for resource constrained and embedded systems.</p></td>
+          <td width="8%">v0.5.10</td>
+          <td width="8%">
+            <ul class="list-unstyled" style="margin-bottom:0;">
+            
+              <li><a href="https://github.com/embox/embox" target="_blank"><i
+                class="fab fa-github"
+                aria-hidden="true"></i> Code</a></li>
+            
+            
+              <li><a href="https://github.com/embox/embox" target="_blank"><i
+                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
+            
+            </ul>
+          </td>
+          <td width="8%">2023-08-19</td>
         </tr>
         
         <tr>
@@ -609,7 +788,90 @@
             
             </ul>
           </td>
-          <td width="8%">2023-08-16</td>
+          <td width="8%">2023-08-18</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="https://www.osrtos.com/rtos/phoenix-rtos/">Phoenix-RTOS</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                BSD
+              </li>
+              </ul>
+            
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                ARM
+              </li>
+              
+              
+              <li>
+                x86
+              </li>
+              
+              
+              <li>
+                RISC-V
+              </li>
+              </ul>
+            
+          </td>
+          <td width="15%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                FileSystem
+              </li>
+              
+              
+              <li>
+                Network
+              </li>
+              
+              
+              <li>
+                USBDevice
+              </li>
+              
+              
+              <li>
+                USBHost
+              </li>
+              </ul>
+            
+          </td>
+          <td><p>Phoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.</p></td>
+          <td width="8%">dev</td>
+          <td width="8%">
+            <ul class="list-unstyled" style="margin-bottom:0;">
+            
+              <li><a href="https://github.com/phoenix-rtos/phoenix-rtos-kernel" target="_blank"><i
+                class="fab fa-github"
+                aria-hidden="true"></i> Code</a></li>
+            
+            
+              <li><a href="http://phoenix-rtos.com/" target="_blank"><i
+                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
+            
+            </ul>
+          </td>
+          <td width="8%">2023-08-18</td>
         </tr>
         
         <tr>
@@ -637,6 +899,16 @@
               <li>
                 ARM
               </li>
+              
+              
+              <li>
+                iMX RT
+              </li>
+              
+              
+              <li>
+                QEMU
+              </li>
               </ul>
             
           </td>
@@ -645,10 +917,49 @@
             
             <ul class="list-unstyled" style="margin-bottom:0;">
               
+              
+              <li>
+                FileSystem
+              </li>
+              
+              
+              <li>
+                Network
+              </li>
+              
+              
+              <li>
+                HTTP
+              </li>
+              
+              
+              <li>
+                HTTP/2
+              </li>
+              
+              
+              <li>
+                TLS/SSL
+              </li>
+              
+              
+              <li>
+                Command Line Interface
+              </li>
+              
+              
+              <li>
+                gRPC
+              </li>
+              
+              
+              <li>
+                IPv6
+              </li>
               </ul>
             
           </td>
-          <td><p>TizenRT is a lightweight RTOS-based platform to support low-end IoT devices</p></td>
+          <td><p>TizenRT is a lightweight RTOS (Real-Time Operating System) designed to support low-end IoT devices. It aims to extend the Tizen platform device coverage to devices like home appliances without display and wearable bands with a small LCD. These devices are typically equipped with Cortex-M/R processors with MPU, less than 2 MB RAM, and less than 16 MB Flash.</p></td>
           <td width="8%">3.0_GBM</td>
           <td width="8%">
             <ul class="list-unstyled" style="margin-bottom:0;">
@@ -663,12 +974,12 @@
             
             </ul>
           </td>
-          <td width="8%">2023-08-16</td>
+          <td width="8%">2023-08-18</td>
         </tr>
         
         <tr>
           <td width="15%">
-            <a href="https://www.osrtos.com/rtos/embox/">embox</a>
+            <a href="https://www.osrtos.com/rtos/freertos/">FreeRTOS</a>
           </td>
           <td width="10%">
             
@@ -677,7 +988,7 @@
               
               
               <li>
-                Other
+                MIT
               </li>
               </ul>
             
@@ -699,12 +1010,22 @@
               
               
               <li>
-                MIPS
+                AVR
               </li>
               
               
               <li>
-                PowerPC
+                ColdFire
+              </li>
+              
+              
+              <li>
+                PIC
+              </li>
+              
+              
+              <li>
+                x86
               </li>
               </ul>
             
@@ -714,25 +1035,225 @@
             
             <ul class="list-unstyled" style="margin-bottom:0;">
               
+              
+              <li>
+                FileSystem
+              </li>
+              
+              
+              <li>
+                Network
+              </li>
+              
+              
+              <li>
+                TLS/SSL
+              </li>
+              
+              
+              <li>
+                Command Line Interface
+              </li>
+              
+              
+              <li>
+                Runtime Analysis
+              </li>
               </ul>
             
           </td>
-          <td><p>Embox is a configurable operating system kernel designed for resource constrained and embedded systems.</p></td>
-          <td width="8%">v0.5.10</td>
+          <td><p>FreeRTOS is a market leading RTOS from Amazon Web Services that supports more than 35 architectures. It is distributed under the MIT license.</p></td>
+          <td width="8%">202212.01</td>
           <td width="8%">
             <ul class="list-unstyled" style="margin-bottom:0;">
             
-              <li><a href="https://github.com/embox/embox" target="_blank"><i
+              <li><a href="https://github.com/FreeRTOS/FreeRTOS" target="_blank"><i
                 class="fab fa-github"
                 aria-hidden="true"></i> Code</a></li>
             
             
-              <li><a href="https://github.com/embox/embox" target="_blank"><i
+              <li><a href="http://www.freertos.org/" target="_blank"><i
                       class="fas fa-link" aria-hidden="true"></i> Website</a></li>
             
             </ul>
           </td>
-          <td width="8%">2023-08-16</td>
+          <td width="8%">2023-08-18</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="https://www.osrtos.com/rtos/tencent-os-tiny/">TencentOS-tiny</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                BSD 3-Clause License
+              </li>
+              </ul>
+            
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                ARM
+              </li>
+              </ul>
+            
+          </td>
+          <td width="15%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                BLE
+              </li>
+              
+              
+              <li>
+                LoRaWAN
+              </li>
+              
+              
+              <li>
+                FileSystem
+              </li>
+              
+              
+              <li>
+                TLS/SSL
+              </li>
+              
+              
+              <li>
+                Network
+              </li>
+              
+              
+              <li>
+                GUI
+              </li>
+              </ul>
+            
+          </td>
+          <td><p>TencentOS tiny is a real-time operating system developed by Tencent for the Internet of Things. It features low power consumption, low resource consumption, modularity, security and reliability, and can effectively improve the development efficiency of IoT terminal products.</p></td>
+          <td width="8%">v2.5.0</td>
+          <td width="8%">
+            <ul class="list-unstyled" style="margin-bottom:0;">
+            
+              <li><a href="https://github.com/Tencent/TencentOS-tiny" target="_blank"><i
+                class="fab fa-github"
+                aria-hidden="true"></i> Code</a></li>
+            
+            
+              <li><a href="https://cloud.tencent.com/product/tos-tiny" target="_blank"><i
+                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
+            
+            </ul>
+          </td>
+          <td width="8%">2023-08-17</td>
+        </tr>
+        
+        <tr>
+          <td width="15%">
+            <a href="https://www.osrtos.com/rtos/apache-mynewt/">Apache Mynewt</a>
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                Apache License
+              </li>
+              </ul>
+            
+          </td>
+          <td width="10%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                ARM
+              </li>
+              
+              
+              <li>
+                MIPS
+              </li>
+              </ul>
+            
+          </td>
+          <td width="15%">
+            
+            
+            <ul class="list-unstyled" style="margin-bottom:0;">
+              
+              
+              <li>
+                BLE
+              </li>
+              
+              
+              <li>
+                LoRaWAN
+              </li>
+              
+              
+              <li>
+                FileSystem
+              </li>
+              
+              
+              <li>
+                Network
+              </li>
+              
+              
+              <li>
+                6LoWPAN
+              </li>
+              
+              
+              <li>
+                TLS/SSL
+              </li>
+              
+              
+              <li>
+                Runtime Analysis
+              </li>
+              </ul>
+            
+          </td>
+          <td><p>Apache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em</p></td>
+          <td width="8%">pre_sterly_refactor</td>
+          <td width="8%">
+            <ul class="list-unstyled" style="margin-bottom:0;">
+            
+              <li><a href="https://github.com/apache/mynewt-core" target="_blank"><i
+                class="fab fa-github"
+                aria-hidden="true"></i> Code</a></li>
+            
+            
+              <li><a href="https://mynewt.apache.org/" target="_blank"><i
+                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
+            
+            </ul>
+          </td>
+          <td width="8%">2023-08-17</td>
         </tr>
         
         <tr>
@@ -836,187 +1357,6 @@
             </ul>
           </td>
           <td width="8%">2023-08-16</td>
-        </tr>
-        
-        <tr>
-          <td width="15%">
-            <a href="https://www.osrtos.com/rtos/zephyr/">Zephyr</a>
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                Apache License
-              </li>
-              </ul>
-            
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                ARM
-              </li>
-              
-              
-              <li>
-                x86
-              </li>
-              
-              
-              <li>
-                Xtensa
-              </li>
-              
-              
-              <li>
-                RISC-V
-              </li>
-              
-              
-              <li>
-                ARC
-              </li>
-              
-              
-              <li>
-                Nios II
-              </li>
-              </ul>
-            
-          </td>
-          <td width="15%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                BLE
-              </li>
-              
-              
-              <li>
-                FileSystem
-              </li>
-              
-              
-              <li>
-                Command Line Interface
-              </li>
-              
-              
-              <li>
-                Logging
-              </li>
-              </ul>
-            
-          </td>
-          <td><p>The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.</p></td>
-          <td width="8%">v3.4.0</td>
-          <td width="8%">
-            <ul class="list-unstyled" style="margin-bottom:0;">
-            
-              <li><a href="https://github.com/zephyrproject-rtos/zephyr" target="_blank"><i
-                class="fab fa-github"
-                aria-hidden="true"></i> Code</a></li>
-            
-            
-              <li><a href="https://www.zephyrproject.org" target="_blank"><i
-                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
-            
-            </ul>
-          </td>
-          <td width="8%">2023-08-16</td>
-        </tr>
-        
-        <tr>
-          <td width="15%">
-            <a href="https://www.osrtos.com/rtos/tencent-os-tiny/">TencentOS-tiny</a>
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                BSD 3-Clause License
-              </li>
-              </ul>
-            
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                ARM
-              </li>
-              </ul>
-            
-          </td>
-          <td width="15%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                BLE
-              </li>
-              
-              
-              <li>
-                LoRaWAN
-              </li>
-              
-              
-              <li>
-                FileSystem
-              </li>
-              
-              
-              <li>
-                TLS/SSL
-              </li>
-              
-              
-              <li>
-                Network
-              </li>
-              
-              
-              <li>
-                GUI
-              </li>
-              </ul>
-            
-          </td>
-          <td><p>TencentOS tiny is a real-time operating system developed by Tencent for the Internet of Things. It features low power consumption, low resource consumption, modularity, security and reliability, and can effectively improve the development efficiency of IoT terminal products.</p></td>
-          <td width="8%">v2.5.0</td>
-          <td width="8%">
-            <ul class="list-unstyled" style="margin-bottom:0;">
-            
-              <li><a href="https://github.com/Tencent/TencentOS-tiny" target="_blank"><i
-                class="fab fa-github"
-                aria-hidden="true"></i> Code</a></li>
-            
-            
-              <li><a href="https://cloud.tencent.com/product/tos-tiny" target="_blank"><i
-                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
-            
-            </ul>
-          </td>
-          <td width="8%">2023-08-15</td>
         </tr>
         
         <tr>
@@ -1199,237 +1539,6 @@
             </ul>
           </td>
           <td width="8%">2023-08-14</td>
-        </tr>
-        
-        <tr>
-          <td width="15%">
-            <a href="https://www.osrtos.com/rtos/phoenix-rtos/">Phoenix-RTOS</a>
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                BSD
-              </li>
-              </ul>
-            
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                ARM
-              </li>
-              
-              
-              <li>
-                x86
-              </li>
-              
-              
-              <li>
-                RISC-V
-              </li>
-              </ul>
-            
-          </td>
-          <td width="15%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                FileSystem
-              </li>
-              
-              
-              <li>
-                Network
-              </li>
-              
-              
-              <li>
-                USBDevice
-              </li>
-              
-              
-              <li>
-                USBHost
-              </li>
-              </ul>
-            
-          </td>
-          <td><p>Phoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.</p></td>
-          <td width="8%">dev</td>
-          <td width="8%">
-            <ul class="list-unstyled" style="margin-bottom:0;">
-            
-              <li><a href="https://github.com/phoenix-rtos/phoenix-rtos-kernel" target="_blank"><i
-                class="fab fa-github"
-                aria-hidden="true"></i> Code</a></li>
-            
-            
-              <li><a href="http://phoenix-rtos.com/" target="_blank"><i
-                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
-            
-            </ul>
-          </td>
-          <td width="8%">2023-08-11</td>
-        </tr>
-        
-        <tr>
-          <td width="15%">
-            <a href="https://www.osrtos.com/rtos/apache-mynewt/">Apache Mynewt</a>
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                Apache License
-              </li>
-              </ul>
-            
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                ARM
-              </li>
-              
-              
-              <li>
-                MIPS
-              </li>
-              </ul>
-            
-          </td>
-          <td width="15%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                BLE
-              </li>
-              
-              
-              <li>
-                LoRaWAN
-              </li>
-              
-              
-              <li>
-                FileSystem
-              </li>
-              
-              
-              <li>
-                Network
-              </li>
-              
-              
-              <li>
-                6LoWPAN
-              </li>
-              
-              
-              <li>
-                TLS/SSL
-              </li>
-              
-              
-              <li>
-                Runtime Analysis
-              </li>
-              </ul>
-            
-          </td>
-          <td><p>Apache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em</p></td>
-          <td width="8%">pre_sterly_refactor</td>
-          <td width="8%">
-            <ul class="list-unstyled" style="margin-bottom:0;">
-            
-              <li><a href="https://github.com/apache/mynewt-core" target="_blank"><i
-                class="fab fa-github"
-                aria-hidden="true"></i> Code</a></li>
-            
-            
-              <li><a href="https://mynewt.apache.org/" target="_blank"><i
-                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
-            
-            </ul>
-          </td>
-          <td width="8%">2023-08-10</td>
-        </tr>
-        
-        <tr>
-          <td width="15%">
-            <a href="https://www.osrtos.com/rtos/rtic/">RTIC</a>
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                Apache License, Version 2.0
-              </li>
-              
-              
-              <li>
-                MIT license
-              </li>
-              </ul>
-            
-          </td>
-          <td width="10%">
-            
-            
-            <ul class="list-unstyled" style="margin-bottom:0;">
-              
-              
-              <li>
-                ARM
-              </li>
-              </ul>
-            
-          </td>
-          <td width="15%">
-            
-            
-          </td>
-          <td><p>RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.</p></td>
-          <td width="8%">v2.0.0</td>
-          <td width="8%">
-            <ul class="list-unstyled" style="margin-bottom:0;">
-            
-              <li><a href="https://github.com/rtic-rs/rtic" target="_blank"><i
-                class="fab fa-github"
-                aria-hidden="true"></i> Code</a></li>
-            
-            
-              <li><a href="https://rtic.rs/" target="_blank"><i
-                      class="fas fa-link" aria-hidden="true"></i> Website</a></li>
-            
-            </ul>
-          </td>
-          <td width="8%">2023-08-08</td>
         </tr>
         
         <tr>

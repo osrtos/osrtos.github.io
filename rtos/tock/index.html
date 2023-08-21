@@ -94,10 +94,53 @@
   <h1 class="h1 g-font-weight-300 w-100 g-mb-20">Tock</h1>
   <div class="row rtos-page rtos-item rtos">
     <div class="col-md-9">
-      <div class=""><p>Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on Cortex-M based embedded platforms. The kernel and device drivers are written in Rust.</p>
+      <div class=""><p>Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li>The kernel and device drivers are written in Rust.</li>
+<li>
+<p>Language-Based Isolation: Tock uses Rust for the kernel and capsules, ensuring compile-time memory safety and type safety. This prevents many common vulnerabilities like buffer overflows.</p>
+</li>
+<li>
+<p>Hardware-Based Protection: For user-space processes, Tock employs hardware protection mechanisms like the Memory Protection Unit (MPU) to ensure isolation.</p>
+</li>
+<li>
+<p>Capsules: These are Rust-based kernel extensions that provide system calls and other functionalities. They are memory-safe and cannot use unsafe Rust features.</p>
+</li>
+<li>
+<p>Processes: Independent applications that run with reduced privileges. They can be written in any language and are isolated from the kernel using the MPU.</p>
+</li>
+<li>
+<p>Cooperative Scheduling in Kernel: Tock&rsquo;s kernel uses a cooperative scheduling model, ensuring efficient resource utilization.</p>
+</li>
+<li>
+<p>Preemptive Scheduling for Processes: Processes are scheduled preemptively, ensuring system responsiveness.</p>
+</li>
+<li>
+<p>Memory Grants: A mechanism that allows capsules to dynamically allocate memory from a process, ensuring safety and efficient memory utilization.</p>
+</li>
+<li>
+<p>System Calls: Tock provides four major system calls - command, subscribe, allow, and yield, facilitating interaction between processes and the kernel.</p>
+</li>
+<li>
+<p>Extensible Architecture: Tock is designed to be modular, allowing for the addition of new capsules and processes as needed.</p>
+</li>
+<li>
+<p>Support for Multiple Platforms: Tock supports various hardware platforms and can be configured to use different scheduling algorithms.</p>
+</li>
+</ul>
+<h3 id="resources">Resources</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/google/OpenSK">OpenSK</a>. OpenSK is an open-source implementation for security keys written in Rust that supports both FIDO U2F and FIDO2 standards..</li>
+<li><a href="https://github.com/tock/libtock-c">libtock-c</a>. Userland apps for Tock written in C and C++.</li>
+<li><a href="https://github.com/tock/tockloader">tockloader</a>. Tool for programming Tock onto hardware boards..</li>
+<li><a href="https://github.com/tock/tock-stm32">tock-stm32</a>. Ports of Tock for STM32 chips and discovery boards.</li>
+<li><a href="https://github.com/tock/tock-bootloader">tock-bootloader</a>. Software bootloader for boards running Tock..</li>
+<li><a href="https://github.com/lab11/hail">hail</a>. An IoT development module that supports the Tock operating system..</li>
+<li><a href="https://github.com/JayKickliter/pinetime-tock">pinetime-tock</a>. An out-of-tree port of Tock to the PineTime smart watch.</li>
+<li><a href="https://github.com/jehoffmann/tock-docker">tock-docker</a>. TockOS build.</li>
+<li><a href="https://github.com/goodoomoodoo/tock-test-harness">tock-test-harness</a>. Tock OS test runner.</li>
+<li><a href="https://github.com/george-hopkins/tock-docker">tock-docker</a>. Tock OS Docker Image.</li>
 </ul></div>
       <div class="g-mb-20">
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -137,6 +180,11 @@
             
             <li>
               ARM
+            </li>
+            
+            
+            <li>
+              RISC-V
             </li>
             
           </ul>
