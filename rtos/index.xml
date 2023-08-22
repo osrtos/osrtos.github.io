@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rtos on OSRTOS - open source real-time operating system</title>
+    <title>Rtos on OSRTOS</title>
     <link>https://www.osrtos.com/rtos/</link>
-    <description>Recent content in Rtos on OSRTOS - open source real-time operating system</description>
+    <description>Recent content in Rtos on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Aug 2023 11:36:57 +0000</lastBuildDate><atom:link href="https://www.osrtos.com/rtos/index.xml" rel="self" type="application/rss+xml" />
@@ -27,13 +27,21 @@ Features Implements a subset of the Linux syscall interface. Uses the musl C lib
     </item>
     
     <item>
+      <title>Hubris</title>
+      <link>https://www.osrtos.com/rtos/hubris/</link>
+      <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
+      
+      <guid>https://www.osrtos.com/rtos/hubris/</guid>
+      <description>&lt;p&gt;Hubris is an open-source operating system designed for deeply-embedded computer systems. Developed by Oxide Computer Company, it&amp;rsquo;s an all-Rust system that focuses on security, robustness, and efficiency for embedded systems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>HuskEOS</title>
       <link>https://www.osrtos.com/rtos/huskeos/</link>
       <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/huskeos/</guid>
-      <description>HuskEOS is a real-time operating system (RTOS) designed for embedded systems. It offers a priority-based preemptive scheduler and boasts impressive performance metrics, such as achieving 50,000 context switches per second on a Cortex-M4 configured at 16MHz.
-Features Priority-based Preemptive Scheduler: Efficiently schedules tasks based on their priority. Performance: Achieves 50,000 context switches per second on Cortex-M4 at 16MHz. Memory Management: Memory footprint can be as low as 550 bytes. All memory is statically allocated, eliminating the need for a heap.</description>
+      <description>&lt;p&gt;HuskEOS is a real-time operating system (RTOS) designed for embedded systems. It offers a priority-based preemptive scheduler and boasts impressive performance metrics, such as achieving 50,000 context switches per second on a Cortex-M4 configured at 16MHz.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>OSRTOS | RIOT</title>
+    <title>OSRTOS | Hubris</title>
     
     
     
@@ -94,45 +94,41 @@
     <main class="pb7" role="main">
       
 <section class="container g-px-50 g-pt-20 g-pb-70">
-  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">RIOT</h1>
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">Hubris</h1>
   <div class="row rtos-page rtos-item rtos">
     <div class="col-md-9">
-      <div class=""><p>RIOT is a real-time multi-threading operating system that supports a range of devices that are typically found in the Internet of Things (IoT): 8-bit, 16-bit and 32-bit microcontrollers.</p>
+      <div class=""><p>Hubris is an open-source operating system designed for deeply-embedded computer systems. Developed by Oxide Computer Company, it&rsquo;s an all-Rust system that focuses on security, robustness, and efficiency for embedded systems.</p>
+<p>Hubris employs a microkernel-based architecture, allowing for safety and isolation. It also uses a strictly synchronous task model, making it easier to develop and understand. One of the unique features of Hubris is that it fully specifies the tasks for a particular application at build time, combining the kernel with the selected tasks to produce a single attestable image.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li>A preemptive, tickless scheduler with priorities</li>
-<li>Flexible memory management</li>
-<li>High resolution, long-term timers</li>
-<li>Support for AVR, MSP430, ARM7, and ARM Cortex-M on over 50 boards</li>
-<li>The native port allows to run RIOT as-is on Linux, BSD, and MacOS. Multiple instances of RIOT running on a single machine can also be interconnected via a simple virtual Ethernet bridge</li>
-<li>IPv6</li>
-<li>6LoWPAN (RFC4944, RFC6282, and RFC6775)</li>
-<li>UDP</li>
-<li>RPL (storing mode, P2P mode)</li>
-<li>CoAP</li>
-<li>CCN-Lite</li>
+<li><strong>All-Rust System</strong>: Hubris is developed entirely in the Rust programming language, ensuring memory safety and concurrency.</li>
+<li><strong>Microkernel-based</strong>: This design allows for enhanced safety and isolation between tasks.</li>
+<li><strong>Strictly Synchronous Task Model</strong>: Simplifies development and comprehension.</li>
+<li><strong>Static Task Specification</strong>: Tasks for a specific application are fully specified at build time, eliminating dynamic resource exhaustion issues.</li>
+<li><strong>Memory Protection</strong>: Even in memory-safe languages like Rust, Hubris ensures memory protection, with tasks, the kernel, and drivers all in separate protection domains.</li>
 </ul>
-<h3 id="resources">Resources</h3>
+<h3 id="components">Components</h3>
 <ul>
-<li><a href="https://github.com/RIOT-OS/RIOT/tree/master/examples/arduino_hello-world">Arduino Hello World</a>. This application demonstrates the usage of Arduino sketches in RIOT.</li>
+<li><strong>Kernel</strong>: The core component that manages system resources and tasks.</li>
+<li><strong>Tasks</strong>: Pre-defined operations or applications that the system can run.</li>
+<li><strong>Drivers</strong>: Software components that allow the OS to interact with hardware devices.</li>
+<li><strong>Debugger (Humility)</strong>: A debugging tool developed alongside Hubris to ensure system quality and debuggability.</li>
 </ul>
 <!-- raw HTML omitted -->
 <ul>
-<li><a href="https://github.com/riot/examples">examples</a>. Demos and examples for Riot and submodules.</li>
-<li><a href="https://github.com/bosmoment/PineTime-apps">PineTime-apps</a>. Firmware for the PineTime based on RIOT, NimBLE and LittleVGL.</li>
-<li><a href="https://github.com/RIOT-OS/applications">applications</a>. Some useful RIOT applications.</li>
+<li><a href="https://github.com/casey/brev">brev</a>. 💀 Do or die: quick and dirty utility functions in rust.</li>
 </ul></div>
       <div class="g-mb-20">
         <h3 class="h5 g-font-weight-300 g-mb-5">
           <i class="fas fa-link"> </i>
-          <span>Website: <a href="http://riot-os.org/" target="_blank">http://riot-os.org/</a></span>
+          <span>Website: <a href="https://github.com/oxidecomputer/hubris" target="_blank">https://github.com/oxidecomputer/hubris</a></span>
         </h3>
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
           <i
                   class=" fab fa-github">
           </i>
-          <span>Source code: <a href="https://github.com/RIOT-OS/RIOT" target="_blank">https://github.com/RIOT-OS/RIOT</a></span>
+          <span>Source code: <a href="https://github.com/oxidecomputer/hubris" target="_blank">https://github.com/oxidecomputer/hubris</a></span>
         </h3>
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -142,7 +138,7 @@
           
           
           
-          LGPLv2.1
+          MPL-2.0 license
           </ul>
           
         </h3>
@@ -151,73 +147,29 @@
     </div>
     <div class="col-md-3">
       <div class="card rounded-0 g-mb-30">
-        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> RIOT Platforms</h3>
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Hubris Platforms</h3>
         <div class="card-block">
           <ul class="list-unstyled">
             
             
-            
-            
-            <li>
-              MSP430
-            </li>
             
             
             <li>
               ARM
             </li>
             
-            
-            <li>
-              AVR
-            </li>
-            
-            
-            <li>
-              MIPS
-            </li>
-            
-            
-            <li>
-              RISC-V
-            </li>
-            
           </ul>
         </div>
       </div>
       <div class="card rounded-0 g-mb-30">
-        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> RIOT Components</h3>
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Hubris Components</h3>
         <div class="card-block">
           <ul class="list-unstyled">
             
             
             
             <li>
-              BLE
-            </li>
-            <li>
-              LoRaWAN
-            </li>
-            <li>
-              FileSystem
-            </li>
-            <li>
-              Network
-            </li>
-            <li>
-              6LoWPAN
-            </li>
-            <li>
-              GUI
-            </li>
-            <li>
-              TLS/SSL
-            </li>
-            <li>
-              USBDevice
-            </li>
-            <li>
-              OTA
+              None
             </li>
           </ul>
         </div>
