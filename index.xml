@@ -4,38 +4,10 @@
     <title>OSRTOS</title>
     <link>https://www.osrtos.com/</link>
     <description>Recent content on OSRTOS</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2024 12:06:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2023 11:36:57 +0000</lastBuildDate>
     <atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MiROS</title>
-      <link>https://www.osrtos.com/rtos/miros/</link>
-      <pubDate>Mon, 19 Feb 2024 12:06:27 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/miros/</guid>
-      <description>&lt;p&gt;MiROS is a Minimal Real-Time Operating System (RTOS) kernel for ARM Cortex-M microcontrollers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>HeliOS</title>
-      <link>https://www.osrtos.com/rtos/helios/</link>
-      <pubDate>Mon, 19 Feb 2024 12:05:55 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/helios/</guid>
-      <description>&lt;p&gt;HeliOS is a lightweight, open-source embedded operating system designed primarily for low-power embedded systems.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>attifyos</title>
-      <link>https://www.osrtos.com/rtos/attifyos/</link>
-      <pubDate>Mon, 19 Feb 2024 12:04:50 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/attifyos/</guid>
-      <description>&lt;p&gt;AttifyOS is a specialized Linux distribution tailored for the security evaluation of Internet of Things (IoT) devices.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>argon-rtos</title>
-      <link>https://www.osrtos.com/rtos/argon-rtos/</link>
-      <pubDate>Mon, 19 Feb 2024 11:44:03 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/argon-rtos/</guid>
-      <description>&lt;p&gt;Argon RTOS is a lightweight, preemptive real-time operating system designed for efficient execution on Arm Cortex-M microcontrollers.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Apex</title>
       <link>https://www.osrtos.com/rtos/apex/</link>
@@ -72,11 +44,11 @@
       <description>Resource for learning RTOS RTOS 101 NASA: Real-Time Operating Systems (RTOS) 101 Operating Systems: From 0 to 1 Bootstrap yourself to write an OS from scratch. A book for self-learner. Kernels 101 – Let’s write a Kernel Books The little book about OS development MicroC/OS-II: The Real-Time Kernel Courses Modern Embedded Systems Programming Course Real-Time Bluetooth Networks - Shape the World An RTOS Based Software Development for Embedded Systems Development of Real-Time Systems astering RTOS: Hands on FreeRTOS and STM32Fx with Debugging Getting started with TI-RTOS training series Useful Links How I ended up writing a new real-time kernel The Architecture of Open Source Applications: FreeRTOS FreeRTOS Documentation RTOS Resources and Tutorials Study of an operating system: FreeRTOS </description>
     </item>
     <item>
-      <title>Azure RTOS</title>
-      <link>https://www.osrtos.com/rtos/azure-rtos/</link>
+      <title>Eclipse ThreadX</title>
+      <link>https://www.osrtos.com/rtos/threadx-rtos/</link>
       <pubDate>Wed, 27 May 2020 09:25:57 +0800</pubDate>
-      <guid>https://www.osrtos.com/rtos/azure-rtos/</guid>
-      <description>&lt;p&gt;This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Azure RTOS ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.&lt;/p&gt;</description>
+      <guid>https://www.osrtos.com/rtos/threadx-rtos/</guid>
+      <description>&lt;p&gt;This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contiki-NG</title>

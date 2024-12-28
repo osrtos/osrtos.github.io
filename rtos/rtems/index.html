@@ -102,8 +102,9 @@
 <ul>
 <li>POSIX 1003.1b API including threads.</li>
 <li>VMEbus Industry Trade Association RTEID/ORKID based Classic API (similar to pSOS+).</li>
-<li>TCP/IP including BSD Sockets.</li>
+<li>TCP/IP including BSD Sockets. Choice of high performance port of FreeBSD TCP/IP stack or LwIP.</li>
 <li>GNU Toolset Supports Multiple Language Standards. Multitasking capabilities.</li>
+<li>Symmetric Multiprocessing (SMP) on ARM, AArch64, PowerPC, RISC-V, SPARC, and x86.</li>
 <li>Homogeneous and heterogeneous multiprocessor systems. Event-driven, priority-based pre-emptive scheduling.</li>
 <li>Optional rate-monotonic scheduling. Intertask communication and synchronization.</li>
 <li>Priority inheritance.</li>
@@ -111,9 +112,10 @@
 <li>Dynamic memory allocation.</li>
 <li>High level of user configurability.</li>
 <li>Portable to many target environments.</li>
-<li>High performance port of FreeBSD TCP/IP stack.</li>
 <li>POSIX standard file system semantics.</li>
 <li>GNU debugger. DDD GUI interface to gdb.</li>
+<li>Self-hosted debugging on AArch64, ARM, i386, Microblaze, PowerPC</li>
+<li>Loadable modules on AArch64, ARM, Blackfin, i386, lm32, m68k, Microblaze, MIPS, Moxie, PowerPC, RISC-V, SPARC, v850</li>
 </ul>
 <h3 id="sample-projects-and-resources">Sample projects and resources</h3>
 <ul>
@@ -141,9 +143,9 @@
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
           <i
-                  class=" fab fa-github">
+                  class="fas fa-code-branch">
           </i>
-          <span>Source code: <a href="https://github.com/RTEMS/rtems" target="_blank">https://github.com/RTEMS/rtems</a></span>
+          <span>Source code: <a href="https://gitlab.rtems.org/rtems/rtos/rtems" target="_blank">https://gitlab.rtems.org/rtems/rtos/rtems</a></span>
         </h3>
         
         <h3 class="h5 g-font-weight-300 g-mb-5">
@@ -153,7 +155,7 @@
           
           
           
-          GPL
+          BSD
           </ul>
           
         </h3>
@@ -170,12 +172,32 @@
             
             
             <li>
-              ARM
+              AArch64
             </li>
             
             
             <li>
-              x86
+              BlackFin
+            </li>
+            
+            
+            <li>
+              i386
+            </li>
+            
+            
+            <li>
+              lm32
+            </li>
+            
+            
+            <li>
+              m68k, ColdFire
+            </li>
+            
+            
+            <li>
+              Microblaze
             </li>
             
             
@@ -185,12 +207,52 @@
             
             
             <li>
+              Moxie
+            </li>
+            
+            
+            <li>
+              Nios 2
+            </li>
+            
+            
+            <li>
+              OR1K
+            </li>
+            
+            
+            <li>
               PowerPC
             </li>
             
             
             <li>
-              m68k
+              RISC-V
+            </li>
+            
+            
+            <li>
+              SuperH (sh)
+            </li>
+            
+            
+            <li>
+              SPARC (LEON)
+            </li>
+            
+            
+            <li>
+              SPARC64
+            </li>
+            
+            
+            <li>
+              V850
+            </li>
+            
+            
+            <li>
+              x86
             </li>
             
           </ul>
@@ -207,10 +269,13 @@
               FileSystem
             </li>
             <li>
-              Network
+              TLS/SSL
             </li>
             <li>
-              TLS/SSL
+              Dynamic Loading
+            </li>
+            <li>
+              SMP
             </li>
             <li>
               Command Line Interface

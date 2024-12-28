@@ -4,38 +4,10 @@
     <title>Rtos on OSRTOS</title>
     <link>https://www.osrtos.com/rtos/</link>
     <description>Recent content in Rtos on OSRTOS</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2024 12:06:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2023 11:36:57 +0000</lastBuildDate>
     <atom:link href="https://www.osrtos.com/rtos/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MiROS</title>
-      <link>https://www.osrtos.com/rtos/miros/</link>
-      <pubDate>Mon, 19 Feb 2024 12:06:27 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/miros/</guid>
-      <description>&lt;p&gt;MiROS is a Minimal Real-Time Operating System (RTOS) kernel for ARM Cortex-M microcontrollers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>HeliOS</title>
-      <link>https://www.osrtos.com/rtos/helios/</link>
-      <pubDate>Mon, 19 Feb 2024 12:05:55 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/helios/</guid>
-      <description>&lt;p&gt;HeliOS is a lightweight, open-source embedded operating system designed primarily for low-power embedded systems.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>attifyos</title>
-      <link>https://www.osrtos.com/rtos/attifyos/</link>
-      <pubDate>Mon, 19 Feb 2024 12:04:50 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/attifyos/</guid>
-      <description>&lt;p&gt;AttifyOS is a specialized Linux distribution tailored for the security evaluation of Internet of Things (IoT) devices.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>argon-rtos</title>
-      <link>https://www.osrtos.com/rtos/argon-rtos/</link>
-      <pubDate>Mon, 19 Feb 2024 11:44:03 +0000</pubDate>
-      <guid>https://www.osrtos.com/rtos/argon-rtos/</guid>
-      <description>&lt;p&gt;Argon RTOS is a lightweight, preemptive real-time operating system designed for efficient execution on Arm Cortex-M microcontrollers.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Apex</title>
       <link>https://www.osrtos.com/rtos/apex/</link>
@@ -65,11 +37,11 @@
       <description>&lt;p&gt;HuskEOS is a real-time operating system (RTOS) designed for embedded systems. It offers a priority-based preemptive scheduler and boasts impressive performance metrics, such as achieving 50,000 context switches per second on a Cortex-M4 configured at 16MHz.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Azure RTOS</title>
-      <link>https://www.osrtos.com/rtos/azure-rtos/</link>
+      <title>Eclipse ThreadX</title>
+      <link>https://www.osrtos.com/rtos/threadx-rtos/</link>
       <pubDate>Wed, 27 May 2020 09:25:57 +0800</pubDate>
-      <guid>https://www.osrtos.com/rtos/azure-rtos/</guid>
-      <description>&lt;p&gt;This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Azure RTOS ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.&lt;/p&gt;</description>
+      <guid>https://www.osrtos.com/rtos/threadx-rtos/</guid>
+      <description>&lt;p&gt;This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contiki-NG</title>

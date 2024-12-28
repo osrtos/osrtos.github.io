@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.osrtos.com/rtos/miros/</loc>
-    <lastmod>2024-02-19T12:06:27+00:00</lastmod>
-  </url><url>
-    <loc>https://www.osrtos.com/</loc>
-    <lastmod>2024-02-19T12:06:27+00:00</lastmod>
-  </url><url>
-    <loc>https://www.osrtos.com/rtos/</loc>
-    <lastmod>2024-02-19T12:06:27+00:00</lastmod>
-  </url><url>
-    <loc>https://www.osrtos.com/rtos/helios/</loc>
-    <lastmod>2024-02-19T12:05:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.osrtos.com/rtos/attifyos/</loc>
-    <lastmod>2024-02-19T12:04:50+00:00</lastmod>
-  </url><url>
-    <loc>https://www.osrtos.com/rtos/argon-rtos/</loc>
-    <lastmod>2024-02-19T11:44:03+00:00</lastmod>
-  </url><url>
     <loc>https://www.osrtos.com/rtos/apex/</loc>
     <lastmod>2023-08-20T11:36:57+00:00</lastmod>
   </url><url>
@@ -32,10 +14,16 @@
     <loc>https://www.osrtos.com/rtos/huskeos/</loc>
     <lastmod>2023-08-20T11:36:57+00:00</lastmod>
   </url><url>
+    <loc>https://www.osrtos.com/</loc>
+    <lastmod>2023-08-20T11:36:57+00:00</lastmod>
+  </url><url>
+    <loc>https://www.osrtos.com/rtos/</loc>
+    <lastmod>2023-08-20T11:36:57+00:00</lastmod>
+  </url><url>
     <loc>https://www.osrtos.com/learn/</loc>
     <lastmod>2020-05-27T10:06:21+08:00</lastmod>
   </url><url>
-    <loc>https://www.osrtos.com/rtos/azure-rtos/</loc>
+    <loc>https://www.osrtos.com/rtos/threadx-rtos/</loc>
     <lastmod>2020-05-27T09:25:57+08:00</lastmod>
   </url><url>
     <loc>https://www.osrtos.com/rtos/contiki-ng/</loc>

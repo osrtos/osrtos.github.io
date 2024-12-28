@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>OSRTOS | Eclipse ThreadX</title>
+    
+    
+    
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+    
+    
+      <link href="/app.7b110ee56eb076880e8fc70cd893331d.css" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+      
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-19HMY2DH6K');
+    </script>
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+<header id="js-header" class="u-header u-header--static">
+    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+        <div class="container">
+          
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          
+
+        
+        <a href="https://www.osrtos.com/" class="navbar-brand">
+          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
+        </a>
+        
+
+        
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          
+          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+            
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
+            </li>
+            
+            <li class="nav-item g-mx-20--lg">
+              <a href="/learn/" class="nav-link px-0" title="Learn RTOS page">Learn RTOS</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+
+
+
+    <main class="pb7" role="main">
+      
+<section class="container g-px-50 g-pt-20 g-pb-70">
+  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">Eclipse ThreadX</h1>
+  <div class="row rtos-page rtos-item rtos">
+    <div class="col-md-9">
+      <div class=""><p>This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.</p>
+<h3 id="eclipse-threadx-core-scheduler">Eclipse ThreadX Core Scheduler</h3>
+<ul>
+<li>Minimal 2KB FLASH, 1KB RAM footprint</li>
+<li>Fast, sub-microsecond context-switch</li>
+<li>Fully deterministic regardless of number of threads</li>
+<li>Priority-based, fully preemptive-scheduling</li>
+<li>32 default priority levels, optionally up to 1024 levels</li>
+<li>Cooperative scheduling within priority level (FIFO)</li>
+<li>Preemption-threshold technology</li>
+<li>Optional timer services, including:</li>
+<li>Per-thread optional time-slice</li>
+<li>Optional timeout on all blocking</li>
+<li>APIs Requires on hardware timer interrupt</li>
+<li>Execution profiling</li>
+<li>System-level Trace</li>
+<li>Safety certified to many standards</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>Intuitive and consistent API</li>
+<li>Blocking APIs have optional thread timeout</li>
+<li>Many APIs are directly available from application ISRs</li>
+<li>Core Scheduler:</li>
+<li>No limits on the number of threads</li>
+<li>Dynamic queue creation.</li>
+<li>Dynamic semaphore creation. No limits on the number of semaphores. 32-bit counting semaphores (0 to 4,294,967,295). Supports consumer-producer or resource protection. Optional thread suspension when semaphore unavailable
+Optional timeout on all suspension.</li>
+<li>Dynamic mutex creation. No limits on the number of mutexes. Nested resource protection supported. Optional priority inheritance supported. Optional thread suspension when mutex unavailable. Optional timeout on all suspension.</li>
+<li>Dynamic event flag group creation. No limits on the number of event flag groups. Synchronization of one thread or multiple threads. Atomic get and clear supported. Optional multithread suspension on AND/OR set of events. Optional timeout on all suspension</li>
+<li>Dynamic block pool creation. No limits on the number of block pools. No limits on size of fixed-size blocks or size of pool. Fastest possible memory allocation/deal-location. Optional thread suspension on empty pool. Optional timeout on all suspension</li>
+<li>Dynamic byte pool creation. No limits on the number of byte pools. No limits on size of byte pool. Most flexible variable-length memory allocation/deallocation. Allocation size locality supported.</li>
+<li>Dynamic timer creation. No limits on the number of timers. Periodic or one-shot timers supported. Periodic timers may have different initial expiration value. No searching on timer activation or deactivation. All timers driven from one hardware timer interrupt.</li>
+</ul>
+<h3 id="sample-projects-and-resources">Sample projects and resources</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/eclipse-threadx/guix">guix</a>. Eclipse GUIX Studio provides a complete, embedded graphical user interface (GUI) library and design environment, facilitating the creation and maintenance of all graphical elements needed by your device..</li>
+<li><a href="https://github.com/eclipse-threadx/netxduo">netxduo</a>. Eclipse NetX Duo is an advanced, industrial-grade TCP/IP network stack designed specifically for deeply embedded real-time and IoT applications.</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-h7">x-cube-azrtos-h7</a>. X-CUBE-AZRTOS-H7 (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32H7 series of microcontrollers..</li>
+<li><a href="https://github.com/eclipse-threadx/filex">filex</a>. Eclipse FileX is a high-performance, FAT-compatible file system that’s fully integrated with Eclipse ThreadX.</li>
+<li><a href="https://github.com/eclipse-threadx/usbx">usbx</a>. Eclipse USBX is a high-performance USB host, device, and on-the-go (OTG) embedded stack, that is fully integrated with Eclipse ThreadX .</li>
+<li><a href="https://github.com/eclipse-threadx/levelx">levelx</a>. Eclipse LevelX Provides Flash Wear Leveling for FileX and Stand Alone purposes..</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-f4">x-cube-azrtos-f4</a>. X-CUBE-AZRTOS-F4 (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32F4 series of microcontrollers..</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-iota1">x-cube-iota1</a>. The X-CUBE-IOTA1 is an expansion software package for STM32Cube. The software runs on the STM32 and includes the middleware for enabling the IOTA Distributed Ledger Technology..</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-l4">x-cube-azrtos-l4</a>. X-CUBE-AZRTOS-L4 (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32L4 series of microcontrollers..</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-g4">x-cube-azrtos-g4</a>. X-CUBE-AZRTOS-G4 (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32G4 series of microcontrollers..</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-f7">x-cube-azrtos-f7</a>. X-CUBE-AZRTOS-F7 (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32F7 series of microcontrollers..</li>
+<li><a href="https://github.com/avnet-iotconnect/iotc-azurertos-sdk">iotc-azurertos-sdk</a>. IoTConnect C SDK for AzureRTOS Devices.</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-wb">x-cube-azrtos-wb</a>. X-CUBE-AZRTOS-WB (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32WB series of microcontrollers..</li>
+<li><a href="https://github.com/c4chris/H747-Test">H747-Test</a>. STM32 H747I DISCO trying out Eclipse ThreadX and GUIX on dual core and DSI LTDC display.</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-wl">x-cube-azrtos-wl</a>. X-CUBE-AZRTOS-WL (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32WL series of microcontrollers..</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-g0">x-cube-azrtos-g0</a>. X-CUBE-AZRTOS-G0 (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32G0 series of microcontrollers..</li>
+<li><a href="https://github.com/jgroman/rp2040-eclipse-threadx-blink">rp2040-eclipse-threadx-blink</a>. Blink example with RPi Pico RP2040 and Eclipse.</li>
+<li><a href="https://github.com/c4chris/H747-Camera">H747-Camera</a>. Explore AI possibilities to sort seeds using STM32 H7 board coupled to a camera.</li>
+<li><a href="https://github.com/STMicroelectronics/x-cube-azrtos-l5">x-cube-azrtos-l5</a>. X-CUBE-AZRTOS-L5 (Eclipse Software Expansion for STM32Cube) provides a full integration of Microsoft Eclipse in the STM32Cube environment for the STM32L5 series of microcontrollers..</li>
+<li><a href="https://github.com/c4chris/H747-WeighingStation">H747-WeighingStation</a>. Control board for a prototype weighing station, HDMI display and touchscreen USB interface.</li>
+</ul></div>
+      <div class="g-mb-20">
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="fas fa-link"> </i>
+          <span>Website: <a href="#ZgotmplZ" target="_blank">hhttps://threadx.io/ttps://azure.microsoft.com/en-us/services/rtos/</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i
+                  class=" fab fa-github">
+          </i>
+          <span>Source code: <a href="https://github.com/eclipse-threadx/threadx" target="_blank">https://github.com/eclipse-threadx/threadx</a></span>
+        </h3>
+        
+        <h3 class="h5 g-font-weight-300 g-mb-5">
+          <i class="far fa-copyright"> </i>
+          <span>License: </span>
+          
+          
+          
+          
+          MIT
+          </ul>
+          
+        </h3>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-3">
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Eclipse ThreadX Platforms</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            
+            <li>
+              Arm Cortex-A7/A8/A9/A1x/A3x/A6x/A5x/A7x
+            </li>
+            
+            
+            <li>
+              Arm Cortex-R4/R5/R7
+            </li>
+            
+            
+            <li>
+              Arm Cortex-M0&#43;/M3/M4/M7/M23/M33/M55/M85
+            </li>
+            
+            
+            <li>
+              RISC-V
+            </li>
+            
+            
+            <li>
+              Xtensa
+            </li>
+            
+            
+            <li>
+              RXv1/v2/v3
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card rounded-0 g-mb-30">
+        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> Eclipse ThreadX Components</h3>
+        <div class="card-block">
+          <ul class="list-unstyled">
+            
+            
+            
+            <li>
+              FileSystem
+            </li>
+            <li>
+              Network
+            </li>
+            <li>
+              Runtime Analysis
+            </li>
+            <li>
+              GUI
+            </li>
+            <li>
+              USBHost
+            </li>
+            <li>
+              USBDevice
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+    
+    <div class="container">
+        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+    </div>
+</div>
+    
+
+  <script src="/app.891c52d1754686d395e4.js"></script>
+
+
+  </body>
+</html>
