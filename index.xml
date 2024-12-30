@@ -6,8 +6,15 @@
     <description>Recent content on OSRTOS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Aug 2023 11:36:57 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.osrtos.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RA3-RTOS</title>
+      <link>https://www.osrtos.com/rtos/ra3-rtos/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.osrtos.com/rtos/ra3-rtos/</guid>
+      <description>&lt;p&gt;RA3 RTOS is a lightweight, open-source real-time operating system specifically designed for embedded systems.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Apex</title>
       <link>https://www.osrtos.com/rtos/apex/</link>
