@@ -1,290 +1,575 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://www.osrtos.com/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/qpc/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/ra3-rtos/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/apex/</loc>
     <lastmod>2023-08-20T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/cmsis/</loc>
     <lastmod>2023-08-20T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/hubris/</loc>
     <lastmod>2023-08-20T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/huskeos/</loc>
     <lastmod>2023-08-20T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/learn/</loc>
     <lastmod>2020-05-27T10:06:21+08:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/threadx-rtos/</loc>
     <lastmod>2020-05-27T09:25:57+08:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/contiki-ng/</loc>
     <lastmod>2020-05-22T08:43:25+08:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/uc-os-ii/</loc>
     <lastmod>2020-05-04T10:22:58+08:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/uc-os-iii/</loc>
     <lastmod>2020-05-04T10:22:58+08:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/drone/</loc>
     <lastmod>2020-02-25T11:37:19+08:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/tencent-os-tiny/</loc>
     <lastmod>2019-11-03T05:35:24+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/</loc>
     <lastmod>2019-03-08T01:11:02+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/tensorflow-micro/</loc>
     <lastmod>2019-03-08T01:11:02+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/utensor/</loc>
     <lastmod>2019-03-08T01:10:34+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/nimble/</loc>
     <lastmod>2019-03-04T01:03:41+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/easyflash/</loc>
     <lastmod>2019-03-02T00:07:07+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/quark-ts/</loc>
     <lastmod>2019-02-27T08:49:25+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/hyperc/</loc>
     <lastmod>2019-02-24T01:36:21+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/frosted/</loc>
     <lastmod>2019-02-14T08:13:11+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/tinyos/</loc>
     <lastmod>2019-02-12T06:21:04+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/phoenix-rtos/</loc>
     <lastmod>2019-02-12T06:00:17+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/tock/</loc>
     <lastmod>2019-02-12T05:45:10+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/atk2/</loc>
     <lastmod>2019-02-12T03:38:22+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/marte/</loc>
     <lastmod>2019-02-12T03:31:45+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/modm/</loc>
     <lastmod>2018-12-17T07:25:23+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/ucglib/</loc>
     <lastmod>2018-08-07T03:56:44+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/micropython/</loc>
     <lastmod>2018-08-07T02:47:39+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/cocoos/</loc>
     <lastmod>2018-08-07T02:05:06+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/lwip/</loc>
     <lastmod>2018-08-07T01:41:26+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/jesfs/</loc>
     <lastmod>2018-03-22T03:28:24+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/moe/</loc>
     <lastmod>2018-03-20T09:24:52+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/tizenrt/</loc>
     <lastmod>2018-02-11T06:48:49+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/liteos/</loc>
     <lastmod>2018-02-06T03:23:05+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/open-thread/</loc>
     <lastmod>2018-02-02T09:19:51+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/mongoose-os/</loc>
     <lastmod>2018-01-24T01:43:59+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/alios-things/</loc>
     <lastmod>2018-01-23T05:35:24+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/lvgl/</loc>
     <lastmod>2017-12-25T19:20:10+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/littlefs/</loc>
     <lastmod>2017-12-25T19:14:32+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/echronos/</loc>
     <lastmod>2017-06-25T20:58:42+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/trampoline/</loc>
     <lastmod>2017-06-11T21:00:48+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/sel4/</loc>
     <lastmod>2017-04-29T08:18:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/ukos/</loc>
     <lastmod>2017-04-26T18:36:10+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/embox/</loc>
     <lastmod>2017-03-18T01:28:16+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/nffs/</loc>
     <lastmod>2017-01-05T13:26:05+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/intros/</loc>
     <lastmod>2016-12-30T09:12:13+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/librertos/</loc>
     <lastmod>2016-12-30T09:03:15+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/tneo/</loc>
     <lastmod>2016-12-20T09:03:32+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/cgui/</loc>
     <lastmod>2016-12-01T10:50:15+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/iup/</loc>
     <lastmod>2016-12-01T10:46:51+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/f9-microkernel/</loc>
     <lastmod>2016-11-30T13:54:12+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/eefs/</loc>
     <lastmod>2016-11-29T17:05:51+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/fatfs/</loc>
     <lastmod>2016-11-29T17:02:33+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/ugui/</loc>
     <lastmod>2016-11-29T16:57:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/minigui/</loc>
     <lastmod>2016-11-29T16:55:33+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/spiffs/</loc>
     <lastmod>2016-11-29T16:41:42+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/library/yaffs/</loc>
     <lastmod>2016-11-29T16:37:51+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/apache-mynewt/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/bitthunder/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/distortos/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/mbed-os/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/prex/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/protothreads/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/riot/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/rtic/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/scmrtos/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/stateos/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/ti-rtos-kernel/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/tnkernel/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/usmartx/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/zephyr/</loc>
     <lastmod>2016-11-29T11:36:58+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/atomthreads/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/bertos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/brtos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/chibios-rt/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/contiki-os/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/duinos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/ecos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/erika-enterprise/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/femto-os/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/freertos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/freescale-mqx/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/funkos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/fusion-embedded-rtos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/mark3/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/nut-os/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/nuttx/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/rt-thread/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/rtai/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/rtems/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/stratifyos/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
-  </url><url>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.osrtos.com/rtos/xenomai/</loc>
     <lastmod>2016-11-29T11:36:57+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

@@ -1,104 +1,545 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>OSRTOS | CMSIS Version 5</title>
-    
-    
-    
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
+<html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en-us" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>CMSIS Version 5 - OSRTOS</title>
+  <meta name="title" content="CMSIS Version 5 - OSRTOS" />
+  
+  
+  
+  
+  
+  <link rel="canonical" href="https://www.osrtos.com/rtos/cmsis/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.70394f6dcf3e442c7463b1cb721b8abaef497227896c1a447497ddd7a8135fe6fb4739b094b1092eea63c3a42dc5581e57ad3ac28d6353fe86b7bfeab0e7522a.css"
+    integrity="sha512-cDlPbc8&#43;RCx0Y7HLchuKuu9JcieJbBpEdJfd16gTX&#43;b7RzmwlLEJLupjw6QtxVgeV606wo1jU/6Gt7/qsOdSKg==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
+    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://www.osrtos.com/rtos/cmsis/">
+  <meta property="og:site_name" content="OSRTOS">
+  <meta property="og:title" content="CMSIS Version 5">
+  <meta property="og:description" content="CMSIS is a set of tools, APIs, frameworks, and workflows designed to simplify software re-use, reduce the learning curve for microcontroller developers, and accelerate project build and debug processes. It was initiated as a vendor-independent hardware abstraction layer for Arm® Cortex®-M based processors and later expanded to support entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach to interface with peripherals, real-time operating systems, and middleware components.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="rtos">
+    <meta property="article:published_time" content="2023-08-20T11:36:57+00:00">
+    <meta property="article:modified_time" content="2023-08-20T11:36:57+00:00">
 
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CMSIS Version 5">
+  <meta name="twitter:description" content="CMSIS is a set of tools, APIs, frameworks, and workflows designed to simplify software re-use, reduce the learning curve for microcontroller developers, and accelerate project build and debug processes. It was initiated as a vendor-independent hardware abstraction layer for Arm® Cortex®-M based processors and later expanded to support entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach to interface with peripherals, real-time operating systems, and middleware components.">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Rtos",
+    "name": "CMSIS Version 5",
+    "headline": "CMSIS Version 5",
+    
+    "abstract": "\u003cp\u003eCMSIS is a set of tools, APIs, frameworks, and workflows designed to simplify software re-use, reduce the learning curve for microcontroller developers, and accelerate project build and debug processes. It was initiated as a vendor-independent hardware abstraction layer for Arm® Cortex®-M based processors and later expanded to support entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach to interface with peripherals, real-time operating systems, and middleware components.\u003c\/p\u003e",
+    "inLanguage": "en-us",
+    "url" : "https:\/\/www.osrtos.com\/rtos\/cmsis\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-08-20T11:36:57\u002b00:00",
+    "datePublished": "2023-08-20T11:36:57\u002b00:00",
+    
+    "dateModified": "2023-08-20T11:36:57\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1445"
+  }]
+  </script>
+
+
+  
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46054378-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-46054378-1');
+</script>
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Home
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        RTOS
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Library
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Learn RTOS">
+        Learn RTOS
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+
+
+            
+            
+            <div
+                class=" flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Home
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            RTOS
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Library
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Learn RTOS">
+            Learn RTOS
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+
+  <header id="single_header" class="mt-5 max-w-full">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      CMSIS Version 5
+    </h1>
 
     
     
-      <link href="/app.7b110ee56eb076880e8fc70cd893331d.css" rel="stylesheet">
+    
+    
     
 
     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     
       
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      
+        
+        
+<div class="flex author">
+  
+  <div class="place-self-center">
+    
+    
+    <div class="text-2xl sm:text-lg">
+</div>
+  </div>
+</div>
+
+      
+
+      
+
+      
+      <div class="mb-5"></div>
+      
 
     
 
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-19HMY2DH6K');
-    </script>
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
-
     
-<header id="js-header" class="u-header u-header--static">
-    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
-      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
-        <div class="container">
+    <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
           
-          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-            <span class="hamburger hamburger--slider">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-            </span>
-            </span>
-          </button>
+          
+        
+        
+        <div class="mt-6 mb-6 pl-4 border-l border-neutral-300 dark:border-neutral-700 min-w-[280px]">
+        
+          
+          <div class="mt-2">
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: 5.9.0</h4>
+          </div>
           
 
-        
-        <a href="https://www.osrtos.com/" class="navbar-brand">
-          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
-        </a>
-        
-
-        
-        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
           
-          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
+          <div class="mt-2">
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2024-09-03</h4>
+          </div>
+          
+          
+          
+          <div class="mt-2">
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
+            <ul class="mt-1 list-none pl-0">
+              
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0 license</li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="mt-2">
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
+            <div class="flex flex-wrap gap-1 mt-1">
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+              
+            </div>
+          </div>
+          
+          
+          
             
             
-            <li class="nav-item g-mx-20--lg">
-              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
-            </li>
+              
             
-            <li class="nav-item g-mx-20--lg">
-              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
-            </li>
             
-            <li class="nav-item g-mx-20--lg">
-              <a href="/learn/" class="nav-link px-0" title="Learn RTOS page">Learn RTOS</a>
-            </li>
             
-          </ul>
+          
+          
+          
+            
+            
+              
+            
+            
+            
           
         </div>
         
       </div>
-    </nav>
-  </div>
-</header>
-<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+    </div>
+    
+
+      <div class="min-w-0 min-h-0 max-w-full">
+        
+        
 
 
+        <div class="article-content max-w-full mb-20">
+          <p>CMSIS is a set of tools, APIs, frameworks, and workflows designed to simplify software re-use, reduce the learning curve for microcontroller developers, and accelerate project build and debug processes. It was initiated as a vendor-independent hardware abstraction layer for Arm® Cortex®-M based processors and later expanded to support entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach to interface with peripherals, real-time operating systems, and middleware components.</p>
 
-    <main class="pb7" role="main">
-      
-<section class="container g-px-50 g-pt-20 g-pb-70">
-  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">CMSIS Version 5</h1>
-  <div class="row rtos-page rtos-item rtos">
-    <div class="col-md-9">
-      <div class=""><p>CMSIS is a set of tools, APIs, frameworks, and workflows designed to simplify software re-use, reduce the learning curve for microcontroller developers, and accelerate project build and debug processes. It was initiated as a vendor-independent hardware abstraction layer for Arm® Cortex®-M based processors and later expanded to support entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach to interface with peripherals, real-time operating systems, and middleware components.</p>
-<h3 id="features">Features</h3>
+
+<h3 class="relative group">Features 
+    <div id="features" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ul>
 <li>Vendor-independent hardware abstraction layer.</li>
 <li>Simplifies software re-use and reduces the learning curve.</li>
@@ -107,7 +548,18 @@
 <li>Enables the combination of software components from multiple vendors.</li>
 <li>Open-source and collaboratively developed on GitHub.</li>
 </ul>
-<h3 id="components">Components</h3>
+
+
+<h3 class="relative group">Components 
+    <div id="components" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ol>
 <li><strong>Core(M)</strong>: Standardized API for the Cortex-M processor core and peripherals.</li>
 <li><strong>Core(A)</strong>: Standardized API and basic runtime system for Cortex-A5/A7/A9 processor core and peripherals.</li>
@@ -122,7 +574,18 @@
 <li><strong>DAP</strong>: Firmware for a debug unit interfacing with the CoreSight Debug Access Port.</li>
 <li><strong>Zone</strong>: Methods to describe system resources and partition them.</li>
 </ol>
-<h3 id="supported-platforms"><strong>Supported Platforms:</strong></h3>
+
+
+<h3 class="relative group"><strong>Supported Platforms:</strong> 
+    <div id="supported-platforms" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#supported-platforms" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ul>
 <li>All Cortex-M processors (including Cortex-M0/M0+/M3/M4/M7/M33/M35P and more).</li>
 <li>Cortex-A5/A7/A9 processors.</li>
@@ -133,176 +596,249 @@
 <li>Cortex-M35P, a temper-resistant Cortex-M processor with optional software isolation using TrustZone for Armv8-M.</li>
 <li>STAR-MC1, a variant of Armv8-M with TrustZone designed by Arm China.</li>
 </ul>
-<h3 id="sample-projects-and-resources">Sample projects and resources</h3>
-<!-- raw HTML omitted -->
+
+
+<h3 class="relative group">Sample projects and resources 
+    <div id="sample-projects-and-resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ul>
-<li><a href="https://github.com/platformio/platformio-core">platformio-core</a>. Your Gateway to Embedded Software Development Excellence :alien:.</li>
-<li><a href="https://github.com/cpq/bare-metal-programming-guide">bare-metal-programming-guide</a>. A bare metal programming guide (ARM microcontrollers).</li>
-<li><a href="https://github.com/arm-university/Rapid-Embedded-Education-Kit">Rapid-Embedded-Education-Kit</a>. Design and program Arm-based embedded systems and implement them using commercial API.</li>
-<li><a href="https://github.com/modm-io/cmsis-header-stm32">cmsis-header-stm32</a>. CMSIS device headers for all STM32 devices.</li>
-<li><a href="https://github.com/saewave/STM32F103-USB-CDC-CMSIS">STM32F103-USB-CDC-CMSIS</a>. STM32F103 USB CDC CMSIS.</li>
-<li><a href="https://github.com/nicocvn/cppreg">cppreg</a>. A C++11 header-only library for MMIO registers.</li>
-<li><a href="https://github.com/arm-university/Introduction-to-SoC-Design-Education-Kit">Introduction-to-SoC-Design-Education-Kit</a>. Gain an introductory knowledge to the basics of SoC design and key skills required to implement a simple SoC on an FPGA, and write embedded programs targeted at the microprocessor to control the peripherals.</li>
-<li><a href="https://github.com/gkiryaziev/STM32-CMSIS_Libraries">STM32-CMSIS_Libraries</a>. Libraries for STM32 (STM32F103C8T6) on pure CMSIS..</li>
-<li><a href="https://github.com/matteoscordino/iir-designer-cmsis-dsp">iir-designer-cmsis-dsp</a>. GNU Octave scripts to design IIR filters that can be HW accelerated on ARM Cortex cores via CMSIS DSP.</li>
-<li><a href="https://github.com/EEESlab/CMix-NN">CMix-NN</a>. CMix-NN: Mixed Low-Precision CNN Library for Memory-Constrained Edge Devices.</li>
-<li><a href="https://github.com/pyocd/cmsis-pack-manager">cmsis-pack-manager</a>. A Rust and Python module for handling CMSIS Pack files.</li>
-<li><a href="https://github.com/STMicroelectronics/cmsis_core">cmsis_core</a>. CMSIS Core module, fully aligned with ARM versions..</li>
-<li><a href="https://github.com/Levitrevisan/STM32_Inverter">STM32_Inverter</a>. University project: Simple micro-inverter using a STM32F103C8 .</li>
-<li><a href="https://github.com/BCJuan/torch2cmsis">torch2cmsis</a>. Framework for automatically porting PyTorch neural networks to CMSIS-NN..</li>
-<li><a href="https://github.com/postspectacular/cmsis-svd-srcgen">cmsis-svd-srcgen</a>. Extensible ARM CMSIS SVD spec based, multi-language source code generator.</li>
-<li><a href="https://github.com/ankitemb/IIR-Filter-Coefficient-for-CMSIS-DSP">IIR-Filter-Coefficient-for-CMSIS-DSP</a>. IIR filters coefficient generation for ARM CMSIS DSP library using GNU Octave Script..</li>
-<li><a href="https://github.com/KushalKQB/ARM-Cortex-M-Hilbert-Transform">ARM-Cortex-M-Hilbert-Transform</a>. Functions to perform Hilbert Transform on a set of real or complex samples..</li>
-<li><a href="https://github.com/coder137/STM32-Repo">STM32-Repo</a>. Enterprise Firmware platform development.</li>
-<li><a href="https://github.com/har-in-air/STM32_CODE_EXAMPLES">STM32_CODE_EXAMPLES</a>. Code examples demonstrating usage of peripherals and features on STM32 Cortex micro-controllers.</li>
-<li><a href="https://github.com/Microchip-MPLAB-Harmony/dev_packs">dev_packs</a>. Harmony 3 Product Database.</li>
-<li><a href="https://github.com/dmitrystu/svd_editor">svd_editor</a>. CMSIS SVD editor.</li>
-<li><a href="https://github.com/k-omura/STM32F4-Digital-Synthesizer">STM32F4-Digital-Synthesizer</a>. digital synthesizer with STM32.</li>
-<li><a href="https://github.com/TheUnsolvedDev/Quadruped-Robot">Quadruped-Robot</a>. Quadruped Robot – It is a four-legged walking robot that is a bionic replica of a spider (Arachnid species) that uses its legs for movement and can perform some tasks either by human interaction or on its own..</li>
-<li><a href="https://github.com/abtom87/GPS-Tracking-STM32F4">GPS-Tracking-STM32F4</a>. GPS Tracking Device using SMS  - GPS Module connected to STM32F4 Eval Board - LCD Display interfaced via I2C bus.</li>
-<li><a href="https://github.com/irakr/LCD-lib-STM32F407xx-HAL">LCD-lib-STM32F407xx-HAL</a>. A library for character LCD 16x2 for the STM32F407xx series MCUs. (HAL compatible only).</li>
-<li><a href="https://github.com/mnemocron/P5-DSP-Board-mdk">P5-DSP-Board-mdk</a>. C Firmware for FHNW P5 DSP Board based on STM32F412 / TLV320aic.</li>
-<li><a href="https://github.com/JohnBerg60/stm32-cmake-cmsis">stm32-cmake-cmsis</a>. A skelleton for STM32 projects, with cmake and cmsis.</li>
-<li><a href="https://github.com/Introduction-To-System-On-Chip/QEMU_an505">QEMU_an505</a>.  C code on QEMU AN505 to experiment on Arm TrustZone for Cortex M..</li>
-<li><a href="https://github.com/RT-Thread-packages/CMSIS_RTOS2">CMSIS_RTOS2</a>. RT-Thread操作系统的CMSIS-RTOS2兼容层 | CMSIS-RTOS2 Application Compatibility Layer (ACL) for RT-Thread.</li>
-<li><a href="https://github.com/XinLiGH/CMSIS-Documentation">CMSIS-Documentation</a>. Cortex 微控制器软件接口标准（CMSIS）文档.</li>
-<li><a href="https://github.com/CrustyAuklet/seal-test">seal-test</a>. test project using bare bones seal-device implementation.</li>
-<li><a href="https://github.com/phatvu1294/hoc-lap-trinh-stm32f1">hoc-lap-trinh-stm32f1</a>. Tự học lập trình STM32F1 Public bao gồm code mẫu CMSIS, StdPeriph, HAL, Low-Layer, FreeRTOS.</li>
-<li><a href="https://github.com/lvgl/lv_port_an547_cm55_sim">lv_port_an547_cm55_sim</a>. A LVGL porting for Cortex-M55 running on an Arm official FPGA prototyping development board called MPS3 (AN547), see Figure 1. It is also possible to run the project template on an emulator called Corstone-300-FVP, which is free.  Topics Resources.</li>
-<li><a href="https://github.com/majbthrd/pico-demos">pico-demos</a>. lightweight demos for rp2040 and pico-debug.</li>
-<li><a href="https://github.com/Introduction-To-System-On-Chip/QEMU_lm3s6965evb">QEMU_lm3s6965evb</a>. Explore configuration of an MPU and RTOS for Cortex-M on a QEMU simulated system.</li>
-<li><a href="https://github.com/JohnBerg60/stm32F030-cmake-cmsis">stm32F030-cmake-cmsis</a>. Example project on how to use stm32f030 + cmsis in visual studio code with cmake, ninja.</li>
-<li><a href="https://github.com/tcrs/stm-start">stm-start</a>. Low-level getting-started guide for STM32 boards.</li>
-<li><a href="https://github.com/amamory-embedded/learning-stm32">learning-stm32</a>. A tutorial-like description for using an STM32 device.</li>
-<li><a href="https://github.com/ventZl/arm-bare-rtos">arm-bare-rtos</a>. Minimalistic thread switcher for ARM Cortex-M cores available in C and C++.</li>
-<li><a href="https://github.com/etiennedemontalivet/arm-dwt-c-library">arm-dwt-c-library</a>. A DWT implementation based on CMSIS library.</li>
-<li><a href="https://github.com/fcayci/stm32f1-rtos">stm32f1-rtos</a>. Example project for running the CMSIS-RTOS2 on an STM32F107-based board using GNU Arm toolchain.</li>
-<li><a href="https://github.com/Ivanchenko59/SMD_counter">SMD_counter</a>. Device for counting the number of SMD elements in the tape..</li>
-<li><a href="https://github.com/Masmiseim36/iMXRT">iMXRT</a>. iMXRT CPU Support package.</li>
-<li><a href="https://github.com/donRumata03/STM32F4-CMSIS-lessons">STM32F4-CMSIS-lessons</a>. This repository contains all STM32 CMSIS projects from videos from youtube channel called &ldquo;donRumata&rdquo; .</li>
-<li><a href="https://github.com/MrZahaki/GSM">GSM</a>. Driver API for LTE-FDD, LTE-TDD, and GPRS modules.</li>
-<li><a href="https://github.com/quinnabrvau/Keras_2_CMSIS">Keras_2_CMSIS</a>. Python program that converts Keras models to CMSIS NN programs.</li>
-<li><a href="https://github.com/RT-Thread-packages/CMSIS_RTOS1">CMSIS_RTOS1</a>. RT-Thread操作系统的CMSIS-RTOS1兼容层 | CMSIS-RTOS1 Application Compatibility Layer (ACL) for RT-Thread.</li>
-<li><a href="https://github.com/AVilezhaninov/STM32F103RB">STM32F103RB</a>. Templates and examples for STM32F103RB MCU.</li>
-<li><a href="https://github.com/EZdenki/STM32F103-Libraries-and-Projects">STM32F103-Libraries-and-Projects</a>. Basic libraries and simple project to help you get started in programming the STM32F103 (Blue Pill)..</li>
-<li><a href="https://github.com/mariusmm/CMSIS_Drivers">CMSIS_Drivers</a>. CMSIS_Driver implementation.</li>
-<li><a href="https://github.com/JLewinski/OSProject">OSProject</a>. Project that uses RTOS on the stm32l476g_discovery board.</li>
-<li><a href="https://github.com/ttzeng/lpcdev">lpcdev</a>. My development environment for NXP LPC812, LPC1768 MCUs.</li>
-<li><a href="https://github.com/utkarshsethi/Embedded-Systems-Bare-Metal-Programming-Ground-Up">Embedded-Systems-Bare-Metal-Programming-Ground-Up</a>. My implementation of the exercises in Udemy - Embedded Systems Bare Metal Programming Ground Up on STM32F407VG based discovery kit (STM32F407G-DISC1) to learn CMSIS..</li>
-<li><a href="https://github.com/winxos/stm32-event-trigger-state-machine-demo">stm32-event-trigger-state-machine-demo</a>. a framework for event trigger finite state machine .</li>
-<li><a href="https://github.com/imrealsd/STM32F407-Bare-Metal-Basics">STM32F407-Bare-Metal-Basics</a>. Programming STM32F407 through CMSIS Registers &amp; HAL APIs.</li>
-<li><a href="https://github.com/a5021/stm32codegen">stm32codegen</a>. CMSIS-based bare-metal initialization code generator for STM32.</li>
-<li><a href="https://github.com/Mohammadsafarisouri/stm32f103CMSIS">stm32f103CMSIS</a>. stm32f103 micro controller peripherals are configured using the CMSIS library.</li>
-<li><a href="https://github.com/alexeychurchill/Thermometer">Thermometer</a>. Firmware of a small STM32F103C8T6 and DS18B20 thermometer.</li>
-<li><a href="https://github.com/wayri/DACard-Basic">DACard-Basic</a>. This is a raw test platform/ gamma stage prototype for the DAC-XCore Project.</li>
-<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-Minimal-UART-DMA-Driver-Demo">STM32F746-CMSIS-Minimal-UART-DMA-Driver-Demo</a>. Minimal DMA-based UART driver for STM32F746.</li>
-<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-Minimal-UART-Driver-Interrupts-Ring-Buffers">STM32F746-CMSIS-Minimal-UART-Driver-Interrupts-Ring-Buffers</a>. STM32F469-Discovery Minimal UART Driver based on Interrupts.</li>
-<li><a href="https://github.com/vladubase/STM32_Lib">STM32_Lib</a>. STM32 Libraries for faster prototyping. All files are ready-to-integrate. You just need to copy setup files (Init&mdash;- and function files) of used periphery. The CMSIS (Cortex Microcontroller Software Interface Standard) hardware abstraction layer is used in all initialization files. FreeRTOS is installed in examples and projects. All examples have docs..</li>
-<li><a href="https://github.com/CalinRadoni/pax-BB5">pax-BB5</a>. STM32L051K8T BaseBoard with RFM69HW and external Flash memory with support for PlatformIO.</li>
-<li><a href="https://github.com/AnatolyGeorgievski/CMSIS-RTOS">CMSIS-RTOS</a>. R3v2 real-time OS w API CMSIS-RTOS, RTOS2, C1x.</li>
-<li><a href="https://github.com/ellectroid/STM32F746-Disco-CMSIS-DMA-I2C-UART-Touch-Panel-Sampling">STM32F746-Disco-CMSIS-DMA-I2C-UART-Touch-Panel-Sampling</a>. STM32F746-Disco I2C Touch Panel sampling and sending data over UART, all with DMA.</li>
-<li><a href="https://github.com/cinnamondev/cmsis-rp2040">cmsis-rp2040</a>. RP2040 / Pi Pico development environment using CMSIS solutions..</li>
-<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-RCC-Max-Freq-SysTick-Basic-Timer-Demo">STM32F746-CMSIS-RCC-Max-Freq-SysTick-Basic-Timer-Demo</a>. Basic demo of setting up max overdrive freuency for MCU, using SysTick to make delay, using basic timer with interrupts.</li>
-<li><a href="https://github.com/fjpolo/UdemyDSPFromGroundUpOnARMProcessors">UdemyDSPFromGroundUpOnARMProcessors</a>. DSP on ARM uC.</li>
-<li><a href="https://github.com/modm-io/cmsis-header-sam">cmsis-header-sam</a>. CMSIS device headers for all Microchip SAM devices.</li>
-<li><a href="https://github.com/Lembed/cmsis-addon">cmsis-addon</a>. CMSIS-PACKS Repository with ARM gcc support.</li>
-<li><a href="https://github.com/akmsw/ed3-ejercicios-y-tpi">ed3-ejercicios-y-tpi</a>. A collection of multiple LPC1769 (ARM Cortex-M3) excercises with and without CMSIS, written in C..</li>
-<li><a href="https://github.com/mhdfasilwyd/STM32F103C8_FreeRTOS_CMSIS">STM32F103C8_FreeRTOS_CMSIS</a>. FreeRTOS and CMSIS Blink Example from scratch on STM32F103C8 (Official FreeRTOS Version)..</li>
-<li><a href="https://github.com/chipcodelab/CMSIS">CMSIS</a>. This repository main branch contains the latest version of ARM CMSIS and STMicroelectronics device header files..</li>
-<li><a href="https://github.com/IntergatedCircuits/stm32header">stm32header</a>. A single STM32 header for all your portable CMSIS / HAL code!.</li>
-<li><a href="https://github.com/fortytwosystems/ArduinoModule-CMSIS">ArduinoModule-CMSIS</a>. Vendor-independent ARM CMSIS hardware abstraction layer (HAL) sources for Arduino environment.</li>
-<li><a href="https://github.com/pochemuchek/Stm32f401cc-CMSIS">Stm32f401cc-CMSIS</a>. There will be initialized the most importantant parts of developing Stm32f401cc MCU. Like PWM, USART and others.</li>
-<li><a href="https://github.com/RoSchmi/VSCode_LPC1113">VSCode_LPC1113</a>. VS-Code development for LPC1113 MCU using CMake, Cortex-Debug and GDB.</li>
-<li><a href="https://github.com/michaeldaranto/UglySTM32">UglySTM32</a>. STM32 with CMSIS only. A fork from STM32-base.</li>
-<li><a href="https://github.com/mikikg/ryattn">ryattn</a>. Audio Relay Attenuator with STM32F103, OLED, Optical Encoder, and IR.</li>
-<li><a href="https://github.com/bartosz-podkanski/STM32-PID-IMPLEMENTATION-CMSIS">STM32-PID-IMPLEMENTATION-CMSIS</a>. PID implementation on NUCLEO-F746ZG using CMSIS library.</li>
-<li><a href="https://github.com/ahmedFarouk2020/Simple-App-using-CMSIS-lib">Simple-App-using-CMSIS-lib</a>. Simple Applications Using CMSIS Library.</li>
-<li><a href="https://github.com/a5021/CMSIS-Parser">CMSIS-Parser</a>. Python code to generate ARM microcontroller firmware sources.</li>
-<li><a href="https://github.com/kodezine/NUCLEO-H7A3ZI-Q">NUCLEO-H7A3ZI-Q</a>. CMake based ARM-LLVM based STM32H7A3ZI board blinky project with no assembly files.</li>
-<li><a href="https://github.com/SaitoYutaka/CMSIS-RTOS-microbit">CMSIS-RTOS-microbit</a>. CMSIS RTOS on microbit.</li>
-<li><a href="https://github.com/NUAA-WatchDog/CARe-stm32-embedded-system">CARe-stm32-embedded-system</a>. 🔌 The embedded system part of CARe..</li>
-<li><a href="https://github.com/nakane1chome/development-utils">development-utils</a>. Scripts and templates for assisting development. Code generators, MMIO Register interfaces..</li>
-<li><a href="https://github.com/stuianna/stm32f1xx_bare_template">stm32f1xx_bare_template</a>. Makefile template for &ldquo;bare metal&rdquo; programming of stm32f1xx family..</li>
-<li><a href="https://github.com/cmsis-packs/cmsis-dfp-repo_template">cmsis-dfp-repo_template</a>. template repository for a cmsis pack.</li>
-<li><a href="https://github.com/0e72f46e/STM32-CMSIS-HAL-CMake-Template-Project">STM32-CMSIS-HAL-CMake-Template-Project</a>. STM32 Cortex-M CMSIS/HAL CMake Template Project, can be used in CMake-supported IDEs.</li>
-<li><a href="https://github.com/fortytwosystems/ArduinoModule-CMSIS-Microchip">ArduinoModule-CMSIS-Microchip</a>. Microchip vendor-specific ARM CMSIS hardware abstraction layer (HAL) sources for Arduino environment.</li>
-<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-Minimal-Blocking-Uart-Driver">STM32F746-CMSIS-Minimal-Blocking-Uart-Driver</a>. Minimalist blocking UART driver for STM32F746-Disco UART1 ST-Link COM Port.</li>
-<li><a href="https://github.com/ApophisXIV/STM32F1-CMSIS-ZeroToHero">STM32F1-CMSIS-ZeroToHero</a>. In this repo you&rsquo;ll find some bare-metal examples based on CMSIS for STM32, F1 family.</li>
-<li><a href="https://github.com/darsolano/LPC1115_Libraries">LPC1115_Libraries</a>. Different sensors, actuators and other stuff code.</li>
-<li><a href="https://github.com/JeremyGrosser/smol">smol</a>. Simple Microcontroller Operation Library.</li>
-</ul></div>
-      <div class="g-mb-20">
-        <h3 class="h5 g-font-weight-300 g-mb-5">
-          <i class="fas fa-link"> </i>
-          <span>Website: <a href="https://github.com/ARM-software/CMSIS_5" target="_blank">https://github.com/ARM-software/CMSIS_5</a></span>
-        </h3>
-        
-        <h3 class="h5 g-font-weight-300 g-mb-5">
-          <i
-                  class=" fab fa-github">
-          </i>
-          <span>Source code: <a href="https://github.com/ARM-software/CMSIS_5" target="_blank">https://github.com/ARM-software/CMSIS_5</a></span>
-        </h3>
-        
-        <h3 class="h5 g-font-weight-300 g-mb-5">
-          <i class="far fa-copyright"> </i>
-          <span>License: </span>
+<li><a href="https://github.com/platformio/platformio-core" target="_blank">platformio-core</a>. Your Gateway to Embedded Software Development Excellence :alien:.</li>
+<li><a href="https://github.com/cpq/bare-metal-programming-guide" target="_blank">bare-metal-programming-guide</a>. A bare metal programming guide (ARM microcontrollers).</li>
+<li><a href="https://github.com/arm-university/Rapid-Embedded-Education-Kit" target="_blank">Rapid-Embedded-Education-Kit</a>. Design and program Arm-based embedded systems and implement them using commercial API.</li>
+<li><a href="https://github.com/modm-io/cmsis-header-stm32" target="_blank">cmsis-header-stm32</a>. CMSIS device headers for all STM32 devices.</li>
+<li><a href="https://github.com/saewave/STM32F103-USB-CDC-CMSIS" target="_blank">STM32F103-USB-CDC-CMSIS</a>. STM32F103 USB CDC CMSIS.</li>
+<li><a href="https://github.com/nicocvn/cppreg" target="_blank">cppreg</a>. A C++11 header-only library for MMIO registers.</li>
+<li><a href="https://github.com/arm-university/Introduction-to-SoC-Design-Education-Kit" target="_blank">Introduction-to-SoC-Design-Education-Kit</a>. Gain an introductory knowledge to the basics of SoC design and key skills required to implement a simple SoC on an FPGA, and write embedded programs targeted at the microprocessor to control the peripherals.</li>
+<li><a href="https://github.com/gkiryaziev/STM32-CMSIS_Libraries" target="_blank">STM32-CMSIS_Libraries</a>. Libraries for STM32 (STM32F103C8T6) on pure CMSIS..</li>
+<li><a href="https://github.com/matteoscordino/iir-designer-cmsis-dsp" target="_blank">iir-designer-cmsis-dsp</a>. GNU Octave scripts to design IIR filters that can be HW accelerated on ARM Cortex cores via CMSIS DSP.</li>
+<li><a href="https://github.com/EEESlab/CMix-NN" target="_blank">CMix-NN</a>. CMix-NN: Mixed Low-Precision CNN Library for Memory-Constrained Edge Devices.</li>
+<li><a href="https://github.com/pyocd/cmsis-pack-manager" target="_blank">cmsis-pack-manager</a>. A Rust and Python module for handling CMSIS Pack files.</li>
+<li><a href="https://github.com/STMicroelectronics/cmsis_core" target="_blank">cmsis_core</a>. CMSIS Core module, fully aligned with ARM versions..</li>
+<li><a href="https://github.com/Levitrevisan/STM32_Inverter" target="_blank">STM32_Inverter</a>. University project: Simple micro-inverter using a STM32F103C8 .</li>
+<li><a href="https://github.com/BCJuan/torch2cmsis" target="_blank">torch2cmsis</a>. Framework for automatically porting PyTorch neural networks to CMSIS-NN..</li>
+<li><a href="https://github.com/postspectacular/cmsis-svd-srcgen" target="_blank">cmsis-svd-srcgen</a>. Extensible ARM CMSIS SVD spec based, multi-language source code generator.</li>
+<li><a href="https://github.com/ankitemb/IIR-Filter-Coefficient-for-CMSIS-DSP" target="_blank">IIR-Filter-Coefficient-for-CMSIS-DSP</a>. IIR filters coefficient generation for ARM CMSIS DSP library using GNU Octave Script..</li>
+<li><a href="https://github.com/KushalKQB/ARM-Cortex-M-Hilbert-Transform" target="_blank">ARM-Cortex-M-Hilbert-Transform</a>. Functions to perform Hilbert Transform on a set of real or complex samples..</li>
+<li><a href="https://github.com/coder137/STM32-Repo" target="_blank">STM32-Repo</a>. Enterprise Firmware platform development.</li>
+<li><a href="https://github.com/har-in-air/STM32_CODE_EXAMPLES" target="_blank">STM32_CODE_EXAMPLES</a>. Code examples demonstrating usage of peripherals and features on STM32 Cortex micro-controllers.</li>
+<li><a href="https://github.com/Microchip-MPLAB-Harmony/dev_packs" target="_blank">dev_packs</a>. Harmony 3 Product Database.</li>
+<li><a href="https://github.com/dmitrystu/svd_editor" target="_blank">svd_editor</a>. CMSIS SVD editor.</li>
+<li><a href="https://github.com/k-omura/STM32F4-Digital-Synthesizer" target="_blank">STM32F4-Digital-Synthesizer</a>. digital synthesizer with STM32.</li>
+<li><a href="https://github.com/TheUnsolvedDev/Quadruped-Robot" target="_blank">Quadruped-Robot</a>. Quadruped Robot – It is a four-legged walking robot that is a bionic replica of a spider (Arachnid species) that uses its legs for movement and can perform some tasks either by human interaction or on its own..</li>
+<li><a href="https://github.com/abtom87/GPS-Tracking-STM32F4" target="_blank">GPS-Tracking-STM32F4</a>. GPS Tracking Device using SMS  - GPS Module connected to STM32F4 Eval Board - LCD Display interfaced via I2C bus.</li>
+<li><a href="https://github.com/irakr/LCD-lib-STM32F407xx-HAL" target="_blank">LCD-lib-STM32F407xx-HAL</a>. A library for character LCD 16x2 for the STM32F407xx series MCUs. (HAL compatible only).</li>
+<li><a href="https://github.com/mnemocron/P5-DSP-Board-mdk" target="_blank">P5-DSP-Board-mdk</a>. C Firmware for FHNW P5 DSP Board based on STM32F412 / TLV320aic.</li>
+<li><a href="https://github.com/JohnBerg60/stm32-cmake-cmsis" target="_blank">stm32-cmake-cmsis</a>. A skelleton for STM32 projects, with cmake and cmsis.</li>
+<li><a href="https://github.com/Introduction-To-System-On-Chip/QEMU_an505" target="_blank">QEMU_an505</a>.  C code on QEMU AN505 to experiment on Arm TrustZone for Cortex M..</li>
+<li><a href="https://github.com/RT-Thread-packages/CMSIS_RTOS2" target="_blank">CMSIS_RTOS2</a>. RT-Thread操作系统的CMSIS-RTOS2兼容层 | CMSIS-RTOS2 Application Compatibility Layer (ACL) for RT-Thread.</li>
+<li><a href="https://github.com/XinLiGH/CMSIS-Documentation" target="_blank">CMSIS-Documentation</a>. Cortex 微控制器软件接口标准（CMSIS）文档.</li>
+<li><a href="https://github.com/CrustyAuklet/seal-test" target="_blank">seal-test</a>. test project using bare bones seal-device implementation.</li>
+<li><a href="https://github.com/phatvu1294/hoc-lap-trinh-stm32f1" target="_blank">hoc-lap-trinh-stm32f1</a>. Tự học lập trình STM32F1 Public bao gồm code mẫu CMSIS, StdPeriph, HAL, Low-Layer, FreeRTOS.</li>
+<li><a href="https://github.com/lvgl/lv_port_an547_cm55_sim" target="_blank">lv_port_an547_cm55_sim</a>. A LVGL porting for Cortex-M55 running on an Arm official FPGA prototyping development board called MPS3 (AN547), see Figure 1. It is also possible to run the project template on an emulator called Corstone-300-FVP, which is free.  Topics Resources.</li>
+<li><a href="https://github.com/majbthrd/pico-demos" target="_blank">pico-demos</a>. lightweight demos for rp2040 and pico-debug.</li>
+<li><a href="https://github.com/Introduction-To-System-On-Chip/QEMU_lm3s6965evb" target="_blank">QEMU_lm3s6965evb</a>. Explore configuration of an MPU and RTOS for Cortex-M on a QEMU simulated system.</li>
+<li><a href="https://github.com/JohnBerg60/stm32F030-cmake-cmsis" target="_blank">stm32F030-cmake-cmsis</a>. Example project on how to use stm32f030 + cmsis in visual studio code with cmake, ninja.</li>
+<li><a href="https://github.com/tcrs/stm-start" target="_blank">stm-start</a>. Low-level getting-started guide for STM32 boards.</li>
+<li><a href="https://github.com/amamory-embedded/learning-stm32" target="_blank">learning-stm32</a>. A tutorial-like description for using an STM32 device.</li>
+<li><a href="https://github.com/ventZl/arm-bare-rtos" target="_blank">arm-bare-rtos</a>. Minimalistic thread switcher for ARM Cortex-M cores available in C and C++.</li>
+<li><a href="https://github.com/etiennedemontalivet/arm-dwt-c-library" target="_blank">arm-dwt-c-library</a>. A DWT implementation based on CMSIS library.</li>
+<li><a href="https://github.com/fcayci/stm32f1-rtos" target="_blank">stm32f1-rtos</a>. Example project for running the CMSIS-RTOS2 on an STM32F107-based board using GNU Arm toolchain.</li>
+<li><a href="https://github.com/Ivanchenko59/SMD_counter" target="_blank">SMD_counter</a>. Device for counting the number of SMD elements in the tape..</li>
+<li><a href="https://github.com/Masmiseim36/iMXRT" target="_blank">iMXRT</a>. iMXRT CPU Support package.</li>
+<li><a href="https://github.com/donRumata03/STM32F4-CMSIS-lessons" target="_blank">STM32F4-CMSIS-lessons</a>. This repository contains all STM32 CMSIS projects from videos from youtube channel called &ldquo;donRumata&rdquo; .</li>
+<li><a href="https://github.com/MrZahaki/GSM" target="_blank">GSM</a>. Driver API for LTE-FDD, LTE-TDD, and GPRS modules.</li>
+<li><a href="https://github.com/quinnabrvau/Keras_2_CMSIS" target="_blank">Keras_2_CMSIS</a>. Python program that converts Keras models to CMSIS NN programs.</li>
+<li><a href="https://github.com/RT-Thread-packages/CMSIS_RTOS1" target="_blank">CMSIS_RTOS1</a>. RT-Thread操作系统的CMSIS-RTOS1兼容层 | CMSIS-RTOS1 Application Compatibility Layer (ACL) for RT-Thread.</li>
+<li><a href="https://github.com/AVilezhaninov/STM32F103RB" target="_blank">STM32F103RB</a>. Templates and examples for STM32F103RB MCU.</li>
+<li><a href="https://github.com/EZdenki/STM32F103-Libraries-and-Projects" target="_blank">STM32F103-Libraries-and-Projects</a>. Basic libraries and simple project to help you get started in programming the STM32F103 (Blue Pill)..</li>
+<li><a href="https://github.com/mariusmm/CMSIS_Drivers" target="_blank">CMSIS_Drivers</a>. CMSIS_Driver implementation.</li>
+<li><a href="https://github.com/JLewinski/OSProject" target="_blank">OSProject</a>. Project that uses RTOS on the stm32l476g_discovery board.</li>
+<li><a href="https://github.com/ttzeng/lpcdev" target="_blank">lpcdev</a>. My development environment for NXP LPC812, LPC1768 MCUs.</li>
+<li><a href="https://github.com/utkarshsethi/Embedded-Systems-Bare-Metal-Programming-Ground-Up" target="_blank">Embedded-Systems-Bare-Metal-Programming-Ground-Up</a>. My implementation of the exercises in Udemy - Embedded Systems Bare Metal Programming Ground Up on STM32F407VG based discovery kit (STM32F407G-DISC1) to learn CMSIS..</li>
+<li><a href="https://github.com/winxos/stm32-event-trigger-state-machine-demo" target="_blank">stm32-event-trigger-state-machine-demo</a>. a framework for event trigger finite state machine .</li>
+<li><a href="https://github.com/imrealsd/STM32F407-Bare-Metal-Basics" target="_blank">STM32F407-Bare-Metal-Basics</a>. Programming STM32F407 through CMSIS Registers &amp; HAL APIs.</li>
+<li><a href="https://github.com/a5021/stm32codegen" target="_blank">stm32codegen</a>. CMSIS-based bare-metal initialization code generator for STM32.</li>
+<li><a href="https://github.com/Mohammadsafarisouri/stm32f103CMSIS" target="_blank">stm32f103CMSIS</a>. stm32f103 micro controller peripherals are configured using the CMSIS library.</li>
+<li><a href="https://github.com/alexeychurchill/Thermometer" target="_blank">Thermometer</a>. Firmware of a small STM32F103C8T6 and DS18B20 thermometer.</li>
+<li><a href="https://github.com/wayri/DACard-Basic" target="_blank">DACard-Basic</a>. This is a raw test platform/ gamma stage prototype for the DAC-XCore Project.</li>
+<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-Minimal-UART-DMA-Driver-Demo" target="_blank">STM32F746-CMSIS-Minimal-UART-DMA-Driver-Demo</a>. Minimal DMA-based UART driver for STM32F746.</li>
+<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-Minimal-UART-Driver-Interrupts-Ring-Buffers" target="_blank">STM32F746-CMSIS-Minimal-UART-Driver-Interrupts-Ring-Buffers</a>. STM32F469-Discovery Minimal UART Driver based on Interrupts.</li>
+<li><a href="https://github.com/vladubase/STM32_Lib" target="_blank">STM32_Lib</a>. STM32 Libraries for faster prototyping. All files are ready-to-integrate. You just need to copy setup files (Init&mdash;- and function files) of used periphery. The CMSIS (Cortex Microcontroller Software Interface Standard) hardware abstraction layer is used in all initialization files. FreeRTOS is installed in examples and projects. All examples have docs..</li>
+<li><a href="https://github.com/CalinRadoni/pax-BB5" target="_blank">pax-BB5</a>. STM32L051K8T BaseBoard with RFM69HW and external Flash memory with support for PlatformIO.</li>
+<li><a href="https://github.com/AnatolyGeorgievski/CMSIS-RTOS" target="_blank">CMSIS-RTOS</a>. R3v2 real-time OS w API CMSIS-RTOS, RTOS2, C1x.</li>
+<li><a href="https://github.com/ellectroid/STM32F746-Disco-CMSIS-DMA-I2C-UART-Touch-Panel-Sampling" target="_blank">STM32F746-Disco-CMSIS-DMA-I2C-UART-Touch-Panel-Sampling</a>. STM32F746-Disco I2C Touch Panel sampling and sending data over UART, all with DMA.</li>
+<li><a href="https://github.com/cinnamondev/cmsis-rp2040" target="_blank">cmsis-rp2040</a>. RP2040 / Pi Pico development environment using CMSIS solutions..</li>
+<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-RCC-Max-Freq-SysTick-Basic-Timer-Demo" target="_blank">STM32F746-CMSIS-RCC-Max-Freq-SysTick-Basic-Timer-Demo</a>. Basic demo of setting up max overdrive freuency for MCU, using SysTick to make delay, using basic timer with interrupts.</li>
+<li><a href="https://github.com/fjpolo/UdemyDSPFromGroundUpOnARMProcessors" target="_blank">UdemyDSPFromGroundUpOnARMProcessors</a>. DSP on ARM uC.</li>
+<li><a href="https://github.com/modm-io/cmsis-header-sam" target="_blank">cmsis-header-sam</a>. CMSIS device headers for all Microchip SAM devices.</li>
+<li><a href="https://github.com/Lembed/cmsis-addon" target="_blank">cmsis-addon</a>. CMSIS-PACKS Repository with ARM gcc support.</li>
+<li><a href="https://github.com/akmsw/ed3-ejercicios-y-tpi" target="_blank">ed3-ejercicios-y-tpi</a>. A collection of multiple LPC1769 (ARM Cortex-M3) excercises with and without CMSIS, written in C..</li>
+<li><a href="https://github.com/mhdfasilwyd/STM32F103C8_FreeRTOS_CMSIS" target="_blank">STM32F103C8_FreeRTOS_CMSIS</a>. FreeRTOS and CMSIS Blink Example from scratch on STM32F103C8 (Official FreeRTOS Version)..</li>
+<li><a href="https://github.com/chipcodelab/CMSIS" target="_blank">CMSIS</a>. This repository main branch contains the latest version of ARM CMSIS and STMicroelectronics device header files..</li>
+<li><a href="https://github.com/IntergatedCircuits/stm32header" target="_blank">stm32header</a>. A single STM32 header for all your portable CMSIS / HAL code!.</li>
+<li><a href="https://github.com/fortytwosystems/ArduinoModule-CMSIS" target="_blank">ArduinoModule-CMSIS</a>. Vendor-independent ARM CMSIS hardware abstraction layer (HAL) sources for Arduino environment.</li>
+<li><a href="https://github.com/pochemuchek/Stm32f401cc-CMSIS" target="_blank">Stm32f401cc-CMSIS</a>. There will be initialized the most importantant parts of developing Stm32f401cc MCU. Like PWM, USART and others.</li>
+<li><a href="https://github.com/RoSchmi/VSCode_LPC1113" target="_blank">VSCode_LPC1113</a>. VS-Code development for LPC1113 MCU using CMake, Cortex-Debug and GDB.</li>
+<li><a href="https://github.com/michaeldaranto/UglySTM32" target="_blank">UglySTM32</a>. STM32 with CMSIS only. A fork from STM32-base.</li>
+<li><a href="https://github.com/mikikg/ryattn" target="_blank">ryattn</a>. Audio Relay Attenuator with STM32F103, OLED, Optical Encoder, and IR.</li>
+<li><a href="https://github.com/bartosz-podkanski/STM32-PID-IMPLEMENTATION-CMSIS" target="_blank">STM32-PID-IMPLEMENTATION-CMSIS</a>. PID implementation on NUCLEO-F746ZG using CMSIS library.</li>
+<li><a href="https://github.com/ahmedFarouk2020/Simple-App-using-CMSIS-lib" target="_blank">Simple-App-using-CMSIS-lib</a>. Simple Applications Using CMSIS Library.</li>
+<li><a href="https://github.com/a5021/CMSIS-Parser" target="_blank">CMSIS-Parser</a>. Python code to generate ARM microcontroller firmware sources.</li>
+<li><a href="https://github.com/kodezine/NUCLEO-H7A3ZI-Q" target="_blank">NUCLEO-H7A3ZI-Q</a>. CMake based ARM-LLVM based STM32H7A3ZI board blinky project with no assembly files.</li>
+<li><a href="https://github.com/SaitoYutaka/CMSIS-RTOS-microbit" target="_blank">CMSIS-RTOS-microbit</a>. CMSIS RTOS on microbit.</li>
+<li><a href="https://github.com/NUAA-WatchDog/CARe-stm32-embedded-system" target="_blank">CARe-stm32-embedded-system</a>. 🔌 The embedded system part of CARe..</li>
+<li><a href="https://github.com/nakane1chome/development-utils" target="_blank">development-utils</a>. Scripts and templates for assisting development. Code generators, MMIO Register interfaces..</li>
+<li><a href="https://github.com/stuianna/stm32f1xx_bare_template" target="_blank">stm32f1xx_bare_template</a>. Makefile template for &ldquo;bare metal&rdquo; programming of stm32f1xx family..</li>
+<li><a href="https://github.com/cmsis-packs/cmsis-dfp-repo_template" target="_blank">cmsis-dfp-repo_template</a>. template repository for a cmsis pack.</li>
+<li><a href="https://github.com/0e72f46e/STM32-CMSIS-HAL-CMake-Template-Project" target="_blank">STM32-CMSIS-HAL-CMake-Template-Project</a>. STM32 Cortex-M CMSIS/HAL CMake Template Project, can be used in CMake-supported IDEs.</li>
+<li><a href="https://github.com/fortytwosystems/ArduinoModule-CMSIS-Microchip" target="_blank">ArduinoModule-CMSIS-Microchip</a>. Microchip vendor-specific ARM CMSIS hardware abstraction layer (HAL) sources for Arduino environment.</li>
+<li><a href="https://github.com/ellectroid/STM32F746-CMSIS-Minimal-Blocking-Uart-Driver" target="_blank">STM32F746-CMSIS-Minimal-Blocking-Uart-Driver</a>. Minimalist blocking UART driver for STM32F746-Disco UART1 ST-Link COM Port.</li>
+<li><a href="https://github.com/ApophisXIV/STM32F1-CMSIS-ZeroToHero" target="_blank">STM32F1-CMSIS-ZeroToHero</a>. In this repo you&rsquo;ll find some bare-metal examples based on CMSIS for STM32, F1 family.</li>
+<li><a href="https://github.com/darsolano/LPC1115_Libraries" target="_blank">LPC1115_Libraries</a>. Different sensors, actuators and other stuff code.</li>
+<li><a href="https://github.com/JeremyGrosser/smol" target="_blank">smol</a>. Simple Microcontroller Operation Library.</li>
+</ul>
+          <div class="mb-5">
+            <h3 class="text-md mb-2">
+              <i class="fas fa-link"></i>
+              <span>Website: <a href="https://github.com/ARM-software/CMSIS_5" target="_blank" class="text-blue-500 hover:underline">https://github.com/ARM-software/CMSIS_5</a></span>
+            </h3>
+            
+            <h3 class="text-md mb-2">
+              <span>Source code: <a href="https://github.com/ARM-software/CMSIS_5" target="_blank" class="text-blue-500 hover:underline">https://github.com/ARM-software/CMSIS_5</a></span>
+            </h3>
+            
+          </div>
           
           
           
-          
-          Apache-2.0 license
-          </ul>
-          
-        </h3>
-      </div>
-      <hr />
-    </div>
-    <div class="col-md-3">
-      <div class="card rounded-0 g-mb-30">
-        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> CMSIS Version 5 Platforms</h3>
-        <div class="card-block">
-          <ul class="list-unstyled">
-            
-            
-            
-            
-            <li>
-              ARM
-            </li>
-            
-          </ul>
         </div>
-      </div>
-      <div class="card rounded-0 g-mb-30">
-        <h3 class="card-header h5 rounded-0"><i class="fa fa-desktop"></i> CMSIS Version 5 Components</h3>
-        <div class="card-block">
-          <ul class="list-unstyled">
-            
-            
-            
-            <li>
-              None
-            </li>
-          </ul>
-        </div>
-      </div>
+        
+        
 
-    </div>
-  </div>
-</section>
+        
+        
 
-    </main>
-    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_rtos\/cmsis-5.md"
+        var oid_likes = "likes_rtos\/cmsis-5.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-full print:hidden">
     
-    <div class="container">
-        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/rtos/hubris/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Hubris</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/rtos/apex/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Apex</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
     </div>
+  
+
+
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
 </div>
+    </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
+  <div class="flex items-center justify-between">
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />
+      Most of the text is available under the Creative Commons Attribution-ShareAlike License.
+    </p>
+  </div>
+  <script>
     
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
 
-  <script src="/app.891c52d1754686d395e4.js"></script>
+  </div>
+</body>
 
-
-  </body>
 </html>

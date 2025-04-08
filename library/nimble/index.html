@@ -1,104 +1,522 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>OSRTOS | NimBLE</title>
-    
-    
-    
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
+<html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en-us" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>NimBLE - OSRTOS</title>
+  <meta name="title" content="NimBLE - OSRTOS" />
+  
+  
+  
+  
+  
+  <link rel="canonical" href="https://www.osrtos.com/library/nimble/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.70394f6dcf3e442c7463b1cb721b8abaef497227896c1a447497ddd7a8135fe6fb4739b094b1092eea63c3a42dc5581e57ad3ac28d6353fe86b7bfeab0e7522a.css"
+    integrity="sha512-cDlPbc8&#43;RCx0Y7HLchuKuu9JcieJbBpEdJfd16gTX&#43;b7RzmwlLEJLupjw6QtxVgeV606wo1jU/6Gt7/qsOdSKg==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
+    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://www.osrtos.com/library/nimble/">
+  <meta property="og:site_name" content="OSRTOS">
+  <meta property="og:title" content="NimBLE">
+  <meta property="og:description" content="Apache NimBLE is an open-source Bluetooth 5.0 stack (both Host &amp; Controller) that completely replaces the proprietary SoftDevice on Nordic chipsets. It is part of Apache Mynewt project.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="library">
+    <meta property="article:published_time" content="2019-03-04T01:03:41+00:00">
+    <meta property="article:modified_time" content="2019-03-04T01:03:41+00:00">
 
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NimBLE">
+  <meta name="twitter:description" content="Apache NimBLE is an open-source Bluetooth 5.0 stack (both Host &amp; Controller) that completely replaces the proprietary SoftDevice on Nordic chipsets. It is part of Apache Mynewt project.">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Libraries",
+    "name": "NimBLE",
+    "headline": "NimBLE",
+    
+    "abstract": "\u003cp\u003eApache NimBLE is an open-source Bluetooth 5.0 stack (both Host \u0026amp; Controller) that completely replaces the proprietary SoftDevice on Nordic chipsets. It is part of Apache Mynewt project.\u003c\/p\u003e",
+    "inLanguage": "en-us",
+    "url" : "https:\/\/www.osrtos.com\/library\/nimble\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2019",
+    "dateCreated": "2019-03-04T01:03:41\u002b00:00",
+    "datePublished": "2019-03-04T01:03:41\u002b00:00",
+    
+    "dateModified": "2019-03-04T01:03:41\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1179"
+  }]
+  </script>
+
+
+  
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46054378-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-46054378-1');
+</script>
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Home
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        RTOS
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Library
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Learn RTOS">
+        Learn RTOS
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+
+
+            
+            
+            <div
+                class=" flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Home
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            RTOS
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Library
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Learn RTOS">
+            Learn RTOS
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+
+  <header id="single_header" class="mt-5 max-w-full">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      NimBLE
+    </h1>
 
     
     
-      <link href="/app.7b110ee56eb076880e8fc70cd893331d.css" rel="stylesheet">
+    
+    
     
 
     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     
       
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      
+        
+        
+<div class="flex author">
+  
+  <div class="place-self-center">
+    
+    
+    <div class="text-2xl sm:text-lg">
+</div>
+  </div>
+</div>
+
+      
+
+      
+
+      
+      <div class="mb-5"></div>
+      
 
     
 
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-19HMY2DH6K');
-    </script>
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
-
     
-<header id="js-header" class="u-header u-header--static">
-    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
-      <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
-        <div class="container">
+    <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
           
-          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-            <span class="hamburger hamburger--slider">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-            </span>
-            </span>
-          </button>
+          
+        
+        
+        <div class="mt-6 mb-6 pl-4 border-l border-neutral-300 dark:border-neutral-700 min-w-[280px]">
+        
+          
+          <div class="mt-2">
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: nimble_1_5_0_tag</h4>
+          </div>
           
 
-        
-        <a href="https://www.osrtos.com/" class="navbar-brand">
-          <h2 class="h4 g-font-weight-600 g-mb-5">OSRTOS</h2>
-        </a>
-        
-
-        
-        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
           
-          <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v5 u-sub-menu-v1">
-            
-            
-            <li class="nav-item g-mx-20--lg">
-              <a href="/" class="nav-link px-0" title="RTOS page">RTOS</a>
-            </li>
-            
-            <li class="nav-item g-mx-20--lg">
-              <a href="/library/" class="nav-link px-0" title="Library page">Library</a>
-            </li>
-            
-            <li class="nav-item g-mx-20--lg">
-              <a href="/learn/" class="nav-link px-0" title="Learn RTOS page">Learn RTOS</a>
-            </li>
-            
-          </ul>
+          <div class="mt-2">
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2024-12-23</h4>
+          </div>
+          
+          
+          
+          <div class="mt-2">
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
+            <ul class="mt-1 list-none pl-0">
+              
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache License 2.0</li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          
+          
+          
           
         </div>
         
       </div>
-    </nav>
-  </div>
-</header>
-<hr class="d-none d-lg-block g-brd-gray-light-v4 g-mb-40" />
+    </div>
+    
+
+      <div class="min-w-0 min-h-0 max-w-full">
+        
+        
 
 
+        <div class="article-content max-w-full mb-20">
+          <p>Apache NimBLE is an open-source Bluetooth 5.0 stack (both Host &amp; Controller) that completely replaces the proprietary SoftDevice on Nordic chipsets. It is part of Apache Mynewt project.</p>
 
-    <main class="pb7" role="main">
-      
-<section class="container g-px-50 g-pt-20 g-pb-70">
-  <h1 class="h1 g-font-weight-300 w-100 g-mb-20">NimBLE</h1>
-  <div class="row rtos-page rtos-item rtos">
-    <div class="col-md-9">
-      <div class=""><p>Apache NimBLE is an open-source Bluetooth 5.0 stack (both Host &amp; Controller) that completely replaces the proprietary SoftDevice on Nordic chipsets. It is part of Apache Mynewt project.</p>
-<h3 id="features">Features</h3>
+
+<h3 class="relative group">Features 
+    <div id="features" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ul>
 <li>Support for 251 byte packet size</li>
 <li>Support for all 4 roles concurrently - Broadcaster, Observer, Peripheral and Central</li>
@@ -108,150 +526,252 @@
 <li>Coded (aka Long Range) and 2M PHYs.</li>
 <li>Bluetooth Mesh.</li>
 </ul>
-<h3 id="resources">Resources</h3>
-<!-- raw HTML omitted -->
+
+
+<h3 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ul>
-<li><a href="https://github.com/inim-repl/INim">INim</a>. Interactive Nim Shell / REPL / Playground.</li>
-<li><a href="https://github.com/h2zero/NimBLE-Arduino">NimBLE-Arduino</a>. A fork of the NimBLE library structured for compilation with Arduino, for use with ESP32, nRF5x..</li>
-<li><a href="https://github.com/nim-lang/packages">packages</a>. List of packages for Nimble.</li>
-<li><a href="https://github.com/moigagoo/norm">norm</a>. A Nim ORM for SQLite and Postgres.</li>
-<li><a href="https://github.com/Quick/Spry">Spry</a>. A Mac and iOS Playgrounds Unit Testing library based on Nimble..</li>
-<li><a href="https://github.com/ashfurrow/Nimble-Snapshots">Nimble-Snapshots</a>. Nimble matchers for FBSnapshotTestCase..</li>
-<li><a href="https://github.com/Calabonga/Microservice-Template">Microservice-Template</a>. Templates for microservice architecture. Nimble Microservice Framework contains two modules. The first with OpenIddict and the second without OpenIddict. Templates are built on ASP.NET Core platform with different versions Core 3.1, NET 5, NET 6, NET 7. You can create a new project extremely fast: in Visual Studio, Rider, dotnet CLI..</li>
-<li><a href="https://github.com/dom96/nim-in-action-code">nim-in-action-code</a>. Nim in Action code samples.</li>
-<li><a href="https://github.com/narimiran/itertools">itertools</a>. Nim rewrite of a very popular Python module of the same name..</li>
-<li><a href="https://github.com/RT-Thread-packages/nimble">nimble</a>. An Apache open-source Bluetooth 5.0 stack porting on RT-Thread.</li>
-<li><a href="https://github.com/h2zero/esp-nimble-cpp">esp-nimble-cpp</a>. C++ library for the esp32 NimBLE stack based on and mostly  compatible with @nkolban cpp_utils BLE library..</li>
-<li><a href="https://github.com/genotrance/nimgen">nimgen</a>. Nimgen is a helper for c2nim to simplify and automate the wrapping of C libraries.</li>
-<li><a href="https://github.com/lupyuen/stm32bluepill-mynewt-sensor">stm32bluepill-mynewt-sensor</a>. Apache Mynewt Sensor Network Application for STM32 Blue Pill and nRF52 with Visual Rust, NB-IoT, GPS, iBeacon, NimBLE, ESP8266 (WiFi Geolocation) and nRF24L01.</li>
-<li><a href="https://github.com/aruZeta/QRgen">QRgen</a>. A QR code generation library..</li>
-<li><a href="https://github.com/bosmoment/PineTime-apps">PineTime-apps</a>. Firmware for the PineTime based on RIOT, NimBLE and LittleVGL.</li>
-<li><a href="https://github.com/HelioMesquita/Swiftmazing">Swiftmazing</a>. A iOS application with layout based on App Store that can check the most starred and last updated Swift repository.</li>
-<li><a href="https://github.com/webui-dev/nim-webui">nim-webui</a>. Use any web browser as GUI, with Nim in the backend and HTML5 in the frontend..</li>
-<li><a href="https://github.com/Glasses-Neo/OOlib">OOlib</a>. A nimble package for object-oriented programming.</li>
-<li><a href="https://github.com/S3lrius/Nimalathatep">Nimalathatep</a>. Nim Payload Generation.</li>
-<li><a href="https://github.com/CartelProject/vitable">vitable</a>. VITable - a simple tool to view your timetable. Licensed under CPL.</li>
-<li><a href="https://github.com/enthus1ast/flatdb">flatdb</a>. small/tiny, flatfile, jsonl based, inprogress database for nim.</li>
-<li><a href="https://github.com/ZJ-TEK/ZJ-RT-Thread-NIMBLE-NORDIC">ZJ-RT-Thread-NIMBLE-NORDIC</a>. 基于RT-Thread操作系统的开源BLE5.0(mynewt-nimble)在nordic平台上的应用.</li>
-<li><a href="https://github.com/synap5e/onefile_python">onefile_python</a>. Run python from a single exe.</li>
-<li><a href="https://github.com/ringabout/timeit">timeit</a>. measuring execution times written by Nim..</li>
-<li><a href="https://github.com/disruptek/bump">bump</a>. a tiny tool to bump nimble versions 🍻.</li>
-<li><a href="https://github.com/Andrew9Lawson/Bayesian-DM-code-examples">Bayesian-DM-code-examples</a>. BDM Code examples from Win/OpenBUGS, CARBayes and INLA.</li>
-<li><a href="https://github.com/KingDarBoja/Phosphate">Phosphate</a>. Phosphate is a Nim port of GraphQL.js, the JavaScript reference implementation of GraphQL created by Facebook..</li>
-<li><a href="https://github.com/olegos76/nimble_kbdhid_example">nimble_kbdhid_example</a>. Bluetooth Low Energy (BLE) HID keyboard and mouse example for ESP32 using Apache NimBLE stack on ESP-IDF framework..</li>
-<li><a href="https://github.com/flaviut/nre">nre</a>. Nim wrapper around PCRE.</li>
-<li><a href="https://github.com/h2zero/n-able-Arduino">n-able-Arduino</a>. An arduino core for ARM based BLE devices supported by the NimBLE stack..</li>
-<li><a href="https://github.com/genotrance/nimssl">nimssl</a>. Nimssl is a Nim wrapper for the OpenSSL library.</li>
-<li><a href="https://github.com/sivchari/db_wrapper">db_wrapper</a>. db provides more faster methods than std libs.</li>
-<li><a href="https://github.com/sujinnaljin/EmojiCommit">EmojiCommit</a>. 잔디 대신 이모지로 커밋 단계를 표현해보자 👩🏻‍💻.</li>
-<li><a href="https://github.com/JohnAD/turn_based_game">turn_based_game</a>. Game rules engine for simulating or playing turn-based games..</li>
-<li><a href="https://github.com/carpall/nobject">nobject</a>. A dynamic object for dynamic typing in nim, allowing recursive types. Inspired by .net object.</li>
-<li><a href="https://github.com/behrad-kzm/SpotifyExplorer">SpotifyExplorer</a>. A sample over The Clean Architecture + RxSwift + MVVMC uses the Spotify APIs + Custom Dark Mode+ Unit Tests.</li>
-<li><a href="https://github.com/Bennyelg/csvql">csvql</a>. query CSVs in memory. with ansi sql.</li>
-<li><a href="https://github.com/oliviergimenez/banana-book">banana-book</a>. Repo for a book on Bayesian capture-recapture w/ HMMs.</li>
-<li><a href="https://github.com/jdhorwitz/NimQL">NimQL</a>. Nim implementation of GraphQL.</li>
-<li><a href="https://github.com/oliviergimenez/bayesian-cr-workshop">bayesian-cr-workshop</a>. Material for a workshop on Bayesian analysis of capture-recapture data with hidden Markov models and Nimble.</li>
-<li><a href="https://github.com/ucpr/httpstat">httpstat</a>. &ldquo;curl statistics made simple &quot; in Nim.</li>
-<li><a href="https://github.com/esp32beans/BLE_HID_Client">BLE_HID_Client</a>. ESP32 NimBLE Bluetooth Low Energy HID Client/Central and Mouse Pass Through.</li>
-<li><a href="https://github.com/mash-up-kr/TwoToo_iOS">TwoToo_iOS</a>. 💘 커플 22일 챌린지 앱 💌.</li>
-<li><a href="https://github.com/hadanischal/NewsArticle">NewsArticle</a>. This application is an example to display News information using MVVM + RxSwift and (MVVM + RxSwift) example in Swift. It uses the News API (<a href="https://newsapi.org">https://newsapi.org</a>)..</li>
-<li><a href="https://github.com/doctalk-india/ReactorKit-Tests-Example">ReactorKit-Tests-Example</a>. ReactorKit tests using Quick, Nimble, Stubber and RxBlocking.</li>
-<li><a href="https://github.com/oliviergimenez/multievent_jags_R">multievent_jags_R</a>. Fit multievent capture-recapture models in R (maximum-likelihood), Nimble and JAGS (Bayesian).</li>
-<li><a href="https://github.com/genotrance/nimfuzzy">nimfuzzy</a>. Nimfuzz is a Nim wrapper for the fts_fuzzy_match library by Forrest Smith.</li>
-<li><a href="https://github.com/juancarlospaco/nim_packages_security_audit">nim_packages_security_audit</a>. Fully Automated Nim Packages Security Audit.</li>
-<li><a href="https://github.com/mem-memov/mocknim">mocknim</a>. Mocking framework for Nim language.</li>
-<li><a href="https://github.com/openpeeps/pkginfo">pkginfo</a>. A tiny utility package to extract Nimble information from any .nimble project.</li>
-<li><a href="https://github.com/Maybulb/Nimble2">Nimble2</a>. A Wolfram|Alpha® menu bar app..</li>
-<li><a href="https://github.com/neodym1337/Pytt">Pytt</a>. Search for recipes by image recognition of food ingredients using food2fork recipe api and CoreML. App built using MVP and Clean architecture. Unit tests with Quick, Nimble and Mockingjay. .</li>
-<li><a href="https://github.com/genotrance/nimbass">nimbass</a>. NimBASS is a Nim wrapper for the BASS audio library..</li>
-<li><a href="https://github.com/genotrance/nimrax">nimrax</a>. Nimrax is a Nim wrapper for the rax library.</li>
-<li><a href="https://github.com/ShivangKakkar/heroku-buildpack-nim">heroku-buildpack-nim</a>. Minimal Heroku Buildpack for Nim.</li>
-<li><a href="https://github.com/littledivy/bloom-nim">bloom-nim</a>. Definitely not another blogging engine in Nim! :expressionless:.</li>
-<li><a href="https://github.com/alexvelikotckiy/Taskem">Taskem</a>. Taskem is a way to browse and maintain your tasks and goals on any iPhone device..</li>
-<li><a href="https://github.com/OsbornePro/BackupScripts">BackupScripts</a>. Collection of PowerShell scripts that can be used to back different things up.</li>
-<li><a href="https://github.com/ZJ-TEK/ZJ_RT_Thread_NimBLE_LittlevGL_Nordic">ZJ_RT_Thread_NimBLE_LittlevGL_Nordic</a>. 基于RT-Thread操作系统的开源BLE5.0(mynewt-nimble)+开源GUI LittlevGL在nordic nrf52840平台上的应用.</li>
-<li><a href="https://github.com/CORDEA/backoff">backoff</a>.  Implementation of exponential backoff for nim..</li>
-<li><a href="https://github.com/FedericoCeratto/nim_project_maker">nim_project_maker</a>. Initialize a Nim project directory.</li>
-<li><a href="https://github.com/supranim/emitter">emitter</a>. Supranim&rsquo;s Event Emitter, allowing you to subscribe &amp; listen for various events within your application.</li>
-<li><a href="https://github.com/hpe-storage/nimble-golang-sdk">nimble-golang-sdk</a>. Go Software Development Kit (SDK) for HPE Nimble Storage Arrays.</li>
-<li><a href="https://github.com/momeemt/Palette">Palette</a>. Palette is the Nim library of color..</li>
-<li><a href="https://github.com/bandithedoge/nimble2nix">nimble2nix</a>. Painless Nimble dependencies in Nix derivations.</li>
-<li><a href="https://github.com/salleuska/IRT_nimble_code">IRT_nimble_code</a>. Supplementary code to the paper &ldquo;Computational methods for Bayesian semiparametric Item Response Theory models&rdquo;.</li>
-<li><a href="https://github.com/thatrandomperson5/xgui-nim">xgui-nim</a>. XGui is a tool for nigui that imports xml files and turns them into nim at compile-time..</li>
-<li><a href="https://github.com/lvsti/NimbleMockSix">NimbleMockSix</a>. Nimble matchers for MockSix.</li>
-<li><a href="https://github.com/aws-samples/nimblestudio-game-development-suite">nimblestudio-game-development-suite</a>. Collection of CDK applications to deploy game development tools for use with Amazon Nimble Studio.</li>
-<li><a href="https://github.com/chocobo333/mcmurry">mcmurry</a>. A module for generating lexer/parser in Nim..</li>
-<li><a href="https://github.com/dkashin/sb-cms">sb-cms</a>. Broadcast head-end CMS.</li>
-<li><a href="https://github.com/genotrance/nimkerberos">nimkerberos</a>. WinKerberos wrapper for Nim.</li>
-<li><a href="https://github.com/molnarmark/nimism.co">nimism.co</a>. 🔍 The front end of Nimism..</li>
-<li><a href="https://github.com/genotrance/nimbigwig">nimbigwig</a>. libBigWig wrapper for Nim.</li>
-<li><a href="https://github.com/littledivy/candyscript">candyscript</a>. A minimal single-line programming language for writing web servers and restAPIs :candy: :relieved: :rocket:.</li>
-<li><a href="https://github.com/maxisoft/Nim-Docker-Images">Nim-Docker-Images</a>. Multiarch Alpine based Docker image with Nim included.</li>
-<li><a href="https://github.com/willdoescode/bf-interpreter-nim">bf-interpreter-nim</a>. Nim bf interpreter.</li>
-<li><a href="https://github.com/yoshz/puppet-nimblestreamer">puppet-nimblestreamer</a>. A puppet module to install Nimble Streamer.</li>
-<li><a href="https://github.com/nhutle/laravel-crawler-app">laravel-crawler-app</a>. A simple Laravel App to crawler Google search page.</li>
-<li><a href="https://github.com/HelioMesquita/DogBreeds">DogBreeds</a>. A dog breed list app using clean architecture and unit test with cuckoo.</li>
-<li><a href="https://github.com/oliviergimenez/hmm-cr-nimble-isec2022-workshop">hmm-cr-nimble-isec2022-workshop</a>. material for a workshop on Bayesian capture-recapture inference with hidden Markov models in Nimble.</li>
-<li><a href="https://github.com/hiteshjasani/nim-pg-util">nim-pg-util</a>. Utility functions for working with Postgres from Nim.</li>
-<li><a href="https://github.com/sigmapie8/luhny">luhny</a>. Luhn&rsquo;s Algorithm implementation in Nim.</li>
-<li><a href="https://github.com/ChristianWitts/actions">actions</a>. Repo for GitHub actions dockerfiles.</li>
-<li><a href="https://github.com/oliviergimenez/bayesian-hmm-cr-workshop-valencia">bayesian-hmm-cr-workshop-valencia</a>. Material for a workshop on Bayesian analysis of capture-recapture data with hidden Markov models and Nimble.</li>
-<li><a href="https://github.com/aws-samples/nimblestudio-auto-workstation-scheduler">nimblestudio-auto-workstation-scheduler</a>. Sample AWS CDK application for creating an automated streaming workstation launcher for Amazon Nimble Studio..</li>
-<li><a href="https://github.com/oliviergimenez/nimble-workshop">nimble-workshop</a>. Material for a workshop on NIMBLE.</li>
-<li><a href="https://github.com/oliviergimenez/NETDEM-workshop-survival-nimble">NETDEM-workshop-survival-nimble</a>. This repository holds the source materials used for a working group/symposium on capture-recapture models and social networks, and an introduction to capture-recapture models in nimble to estimate demographic parameters..</li>
-<li><a href="https://github.com/koingdev/MockNetworkingSample">MockNetworkingSample</a>. Unit Testing by mocking a network response + Nimble including with a quick MVVM Concept.</li>
-<li><a href="https://github.com/HelioMesquita/Sunscreen">Sunscreen</a>. A project that shows how to use some unit test frameworks, in Clean Swift architecture such, as Cuckoo, Quick and Nimble and XCTest.</li>
-<li><a href="https://github.com/genotrance/libsvm">libsvm</a>. This project is a Nim wrapper for the libsvm library.</li>
-<li><a href="https://github.com/ptdel/pastebim">pastebim</a>. Simple pastebim written in Nim.</li>
-<li><a href="https://github.com/Wassmd/LiveRates">LiveRates</a>. Live currency converter app.</li>
-<li><a href="https://github.com/ttytm/nimpretty_t">nimpretty_t</a>. Use nimpretty with tab indentation..</li>
-<li><a href="https://github.com/mondrepublic/libyuga">libyuga</a>. Nim database driver for YugaByte, PostgreSQL, and Cassandra.</li>
-<li><a href="https://github.com/mecoFarid/Trending-KMM">Trending-KMM</a>. Simple Clean Architecture KMM App.</li>
-<li><a href="https://github.com/Jjuandi/Nimble">Nimble</a>. Taller final de la Universidad.</li>
-</ul></div>
-      <div class="g-mb-20">
-        <h3 class="h5 g-font-weight-300 g-mb-5">
-          <i class="fas fa-link"> </i>
-          <span>Website: <a href="http://mynewt.apache.org/latest/network/docs/index.html" target="_blank">http://mynewt.apache.org/latest/network/docs/index.html</a></span>
-        </h3>
+<li><a href="https://github.com/inim-repl/INim" target="_blank">INim</a>. Interactive Nim Shell / REPL / Playground.</li>
+<li><a href="https://github.com/h2zero/NimBLE-Arduino" target="_blank">NimBLE-Arduino</a>. A fork of the NimBLE library structured for compilation with Arduino, for use with ESP32, nRF5x..</li>
+<li><a href="https://github.com/nim-lang/packages" target="_blank">packages</a>. List of packages for Nimble.</li>
+<li><a href="https://github.com/moigagoo/norm" target="_blank">norm</a>. A Nim ORM for SQLite and Postgres.</li>
+<li><a href="https://github.com/Quick/Spry" target="_blank">Spry</a>. A Mac and iOS Playgrounds Unit Testing library based on Nimble..</li>
+<li><a href="https://github.com/ashfurrow/Nimble-Snapshots" target="_blank">Nimble-Snapshots</a>. Nimble matchers for FBSnapshotTestCase..</li>
+<li><a href="https://github.com/Calabonga/Microservice-Template" target="_blank">Microservice-Template</a>. Templates for microservice architecture. Nimble Microservice Framework contains two modules. The first with OpenIddict and the second without OpenIddict. Templates are built on ASP.NET Core platform with different versions Core 3.1, NET 5, NET 6, NET 7. You can create a new project extremely fast: in Visual Studio, Rider, dotnet CLI..</li>
+<li><a href="https://github.com/dom96/nim-in-action-code" target="_blank">nim-in-action-code</a>. Nim in Action code samples.</li>
+<li><a href="https://github.com/narimiran/itertools" target="_blank">itertools</a>. Nim rewrite of a very popular Python module of the same name..</li>
+<li><a href="https://github.com/RT-Thread-packages/nimble" target="_blank">nimble</a>. An Apache open-source Bluetooth 5.0 stack porting on RT-Thread.</li>
+<li><a href="https://github.com/h2zero/esp-nimble-cpp" target="_blank">esp-nimble-cpp</a>. C++ library for the esp32 NimBLE stack based on and mostly  compatible with @nkolban cpp_utils BLE library..</li>
+<li><a href="https://github.com/genotrance/nimgen" target="_blank">nimgen</a>. Nimgen is a helper for c2nim to simplify and automate the wrapping of C libraries.</li>
+<li><a href="https://github.com/lupyuen/stm32bluepill-mynewt-sensor" target="_blank">stm32bluepill-mynewt-sensor</a>. Apache Mynewt Sensor Network Application for STM32 Blue Pill and nRF52 with Visual Rust, NB-IoT, GPS, iBeacon, NimBLE, ESP8266 (WiFi Geolocation) and nRF24L01.</li>
+<li><a href="https://github.com/aruZeta/QRgen" target="_blank">QRgen</a>. A QR code generation library..</li>
+<li><a href="https://github.com/bosmoment/PineTime-apps" target="_blank">PineTime-apps</a>. Firmware for the PineTime based on RIOT, NimBLE and LittleVGL.</li>
+<li><a href="https://github.com/HelioMesquita/Swiftmazing" target="_blank">Swiftmazing</a>. A iOS application with layout based on App Store that can check the most starred and last updated Swift repository.</li>
+<li><a href="https://github.com/webui-dev/nim-webui" target="_blank">nim-webui</a>. Use any web browser as GUI, with Nim in the backend and HTML5 in the frontend..</li>
+<li><a href="https://github.com/Glasses-Neo/OOlib" target="_blank">OOlib</a>. A nimble package for object-oriented programming.</li>
+<li><a href="https://github.com/S3lrius/Nimalathatep" target="_blank">Nimalathatep</a>. Nim Payload Generation.</li>
+<li><a href="https://github.com/CartelProject/vitable" target="_blank">vitable</a>. VITable - a simple tool to view your timetable. Licensed under CPL.</li>
+<li><a href="https://github.com/enthus1ast/flatdb" target="_blank">flatdb</a>. small/tiny, flatfile, jsonl based, inprogress database for nim.</li>
+<li><a href="https://github.com/ZJ-TEK/ZJ-RT-Thread-NIMBLE-NORDIC" target="_blank">ZJ-RT-Thread-NIMBLE-NORDIC</a>. 基于RT-Thread操作系统的开源BLE5.0(mynewt-nimble)在nordic平台上的应用.</li>
+<li><a href="https://github.com/synap5e/onefile_python" target="_blank">onefile_python</a>. Run python from a single exe.</li>
+<li><a href="https://github.com/ringabout/timeit" target="_blank">timeit</a>. measuring execution times written by Nim..</li>
+<li><a href="https://github.com/disruptek/bump" target="_blank">bump</a>. a tiny tool to bump nimble versions 🍻.</li>
+<li><a href="https://github.com/Andrew9Lawson/Bayesian-DM-code-examples" target="_blank">Bayesian-DM-code-examples</a>. BDM Code examples from Win/OpenBUGS, CARBayes and INLA.</li>
+<li><a href="https://github.com/KingDarBoja/Phosphate" target="_blank">Phosphate</a>. Phosphate is a Nim port of GraphQL.js, the JavaScript reference implementation of GraphQL created by Facebook..</li>
+<li><a href="https://github.com/olegos76/nimble_kbdhid_example" target="_blank">nimble_kbdhid_example</a>. Bluetooth Low Energy (BLE) HID keyboard and mouse example for ESP32 using Apache NimBLE stack on ESP-IDF framework..</li>
+<li><a href="https://github.com/flaviut/nre" target="_blank">nre</a>. Nim wrapper around PCRE.</li>
+<li><a href="https://github.com/h2zero/n-able-Arduino" target="_blank">n-able-Arduino</a>. An arduino core for ARM based BLE devices supported by the NimBLE stack..</li>
+<li><a href="https://github.com/genotrance/nimssl" target="_blank">nimssl</a>. Nimssl is a Nim wrapper for the OpenSSL library.</li>
+<li><a href="https://github.com/sivchari/db_wrapper" target="_blank">db_wrapper</a>. db provides more faster methods than std libs.</li>
+<li><a href="https://github.com/sujinnaljin/EmojiCommit" target="_blank">EmojiCommit</a>. 잔디 대신 이모지로 커밋 단계를 표현해보자 👩🏻‍💻.</li>
+<li><a href="https://github.com/JohnAD/turn_based_game" target="_blank">turn_based_game</a>. Game rules engine for simulating or playing turn-based games..</li>
+<li><a href="https://github.com/carpall/nobject" target="_blank">nobject</a>. A dynamic object for dynamic typing in nim, allowing recursive types. Inspired by .net object.</li>
+<li><a href="https://github.com/behrad-kzm/SpotifyExplorer" target="_blank">SpotifyExplorer</a>. A sample over The Clean Architecture + RxSwift + MVVMC uses the Spotify APIs + Custom Dark Mode+ Unit Tests.</li>
+<li><a href="https://github.com/Bennyelg/csvql" target="_blank">csvql</a>. query CSVs in memory. with ansi sql.</li>
+<li><a href="https://github.com/oliviergimenez/banana-book" target="_blank">banana-book</a>. Repo for a book on Bayesian capture-recapture w/ HMMs.</li>
+<li><a href="https://github.com/jdhorwitz/NimQL" target="_blank">NimQL</a>. Nim implementation of GraphQL.</li>
+<li><a href="https://github.com/oliviergimenez/bayesian-cr-workshop" target="_blank">bayesian-cr-workshop</a>. Material for a workshop on Bayesian analysis of capture-recapture data with hidden Markov models and Nimble.</li>
+<li><a href="https://github.com/ucpr/httpstat" target="_blank">httpstat</a>. &ldquo;curl statistics made simple &quot; in Nim.</li>
+<li><a href="https://github.com/esp32beans/BLE_HID_Client" target="_blank">BLE_HID_Client</a>. ESP32 NimBLE Bluetooth Low Energy HID Client/Central and Mouse Pass Through.</li>
+<li><a href="https://github.com/mash-up-kr/TwoToo_iOS" target="_blank">TwoToo_iOS</a>. 💘 커플 22일 챌린지 앱 💌.</li>
+<li><a href="https://github.com/hadanischal/NewsArticle" target="_blank">NewsArticle</a>. This application is an example to display News information using MVVM + RxSwift and (MVVM + RxSwift) example in Swift. It uses the News API (<a href="https://newsapi.org" target="_blank">https://newsapi.org</a>)..</li>
+<li><a href="https://github.com/doctalk-india/ReactorKit-Tests-Example" target="_blank">ReactorKit-Tests-Example</a>. ReactorKit tests using Quick, Nimble, Stubber and RxBlocking.</li>
+<li><a href="https://github.com/oliviergimenez/multievent_jags_R" target="_blank">multievent_jags_R</a>. Fit multievent capture-recapture models in R (maximum-likelihood), Nimble and JAGS (Bayesian).</li>
+<li><a href="https://github.com/genotrance/nimfuzzy" target="_blank">nimfuzzy</a>. Nimfuzz is a Nim wrapper for the fts_fuzzy_match library by Forrest Smith.</li>
+<li><a href="https://github.com/juancarlospaco/nim_packages_security_audit" target="_blank">nim_packages_security_audit</a>. Fully Automated Nim Packages Security Audit.</li>
+<li><a href="https://github.com/mem-memov/mocknim" target="_blank">mocknim</a>. Mocking framework for Nim language.</li>
+<li><a href="https://github.com/openpeeps/pkginfo" target="_blank">pkginfo</a>. A tiny utility package to extract Nimble information from any .nimble project.</li>
+<li><a href="https://github.com/Maybulb/Nimble2" target="_blank">Nimble2</a>. A Wolfram|Alpha® menu bar app..</li>
+<li><a href="https://github.com/neodym1337/Pytt" target="_blank">Pytt</a>. Search for recipes by image recognition of food ingredients using food2fork recipe api and CoreML. App built using MVP and Clean architecture. Unit tests with Quick, Nimble and Mockingjay. .</li>
+<li><a href="https://github.com/genotrance/nimbass" target="_blank">nimbass</a>. NimBASS is a Nim wrapper for the BASS audio library..</li>
+<li><a href="https://github.com/genotrance/nimrax" target="_blank">nimrax</a>. Nimrax is a Nim wrapper for the rax library.</li>
+<li><a href="https://github.com/ShivangKakkar/heroku-buildpack-nim" target="_blank">heroku-buildpack-nim</a>. Minimal Heroku Buildpack for Nim.</li>
+<li><a href="https://github.com/littledivy/bloom-nim" target="_blank">bloom-nim</a>. Definitely not another blogging engine in Nim! :expressionless:.</li>
+<li><a href="https://github.com/alexvelikotckiy/Taskem" target="_blank">Taskem</a>. Taskem is a way to browse and maintain your tasks and goals on any iPhone device..</li>
+<li><a href="https://github.com/OsbornePro/BackupScripts" target="_blank">BackupScripts</a>. Collection of PowerShell scripts that can be used to back different things up.</li>
+<li><a href="https://github.com/ZJ-TEK/ZJ_RT_Thread_NimBLE_LittlevGL_Nordic" target="_blank">ZJ_RT_Thread_NimBLE_LittlevGL_Nordic</a>. 基于RT-Thread操作系统的开源BLE5.0(mynewt-nimble)+开源GUI LittlevGL在nordic nrf52840平台上的应用.</li>
+<li><a href="https://github.com/CORDEA/backoff" target="_blank">backoff</a>.  Implementation of exponential backoff for nim..</li>
+<li><a href="https://github.com/FedericoCeratto/nim_project_maker" target="_blank">nim_project_maker</a>. Initialize a Nim project directory.</li>
+<li><a href="https://github.com/supranim/emitter" target="_blank">emitter</a>. Supranim&rsquo;s Event Emitter, allowing you to subscribe &amp; listen for various events within your application.</li>
+<li><a href="https://github.com/hpe-storage/nimble-golang-sdk" target="_blank">nimble-golang-sdk</a>. Go Software Development Kit (SDK) for HPE Nimble Storage Arrays.</li>
+<li><a href="https://github.com/momeemt/Palette" target="_blank">Palette</a>. Palette is the Nim library of color..</li>
+<li><a href="https://github.com/bandithedoge/nimble2nix" target="_blank">nimble2nix</a>. Painless Nimble dependencies in Nix derivations.</li>
+<li><a href="https://github.com/salleuska/IRT_nimble_code" target="_blank">IRT_nimble_code</a>. Supplementary code to the paper &ldquo;Computational methods for Bayesian semiparametric Item Response Theory models&rdquo;.</li>
+<li><a href="https://github.com/thatrandomperson5/xgui-nim" target="_blank">xgui-nim</a>. XGui is a tool for nigui that imports xml files and turns them into nim at compile-time..</li>
+<li><a href="https://github.com/lvsti/NimbleMockSix" target="_blank">NimbleMockSix</a>. Nimble matchers for MockSix.</li>
+<li><a href="https://github.com/aws-samples/nimblestudio-game-development-suite" target="_blank">nimblestudio-game-development-suite</a>. Collection of CDK applications to deploy game development tools for use with Amazon Nimble Studio.</li>
+<li><a href="https://github.com/chocobo333/mcmurry" target="_blank">mcmurry</a>. A module for generating lexer/parser in Nim..</li>
+<li><a href="https://github.com/dkashin/sb-cms" target="_blank">sb-cms</a>. Broadcast head-end CMS.</li>
+<li><a href="https://github.com/genotrance/nimkerberos" target="_blank">nimkerberos</a>. WinKerberos wrapper for Nim.</li>
+<li><a href="https://github.com/molnarmark/nimism.co" target="_blank">nimism.co</a>. 🔍 The front end of Nimism..</li>
+<li><a href="https://github.com/genotrance/nimbigwig" target="_blank">nimbigwig</a>. libBigWig wrapper for Nim.</li>
+<li><a href="https://github.com/littledivy/candyscript" target="_blank">candyscript</a>. A minimal single-line programming language for writing web servers and restAPIs :candy: :relieved: :rocket:.</li>
+<li><a href="https://github.com/maxisoft/Nim-Docker-Images" target="_blank">Nim-Docker-Images</a>. Multiarch Alpine based Docker image with Nim included.</li>
+<li><a href="https://github.com/willdoescode/bf-interpreter-nim" target="_blank">bf-interpreter-nim</a>. Nim bf interpreter.</li>
+<li><a href="https://github.com/yoshz/puppet-nimblestreamer" target="_blank">puppet-nimblestreamer</a>. A puppet module to install Nimble Streamer.</li>
+<li><a href="https://github.com/nhutle/laravel-crawler-app" target="_blank">laravel-crawler-app</a>. A simple Laravel App to crawler Google search page.</li>
+<li><a href="https://github.com/HelioMesquita/DogBreeds" target="_blank">DogBreeds</a>. A dog breed list app using clean architecture and unit test with cuckoo.</li>
+<li><a href="https://github.com/oliviergimenez/hmm-cr-nimble-isec2022-workshop" target="_blank">hmm-cr-nimble-isec2022-workshop</a>. material for a workshop on Bayesian capture-recapture inference with hidden Markov models in Nimble.</li>
+<li><a href="https://github.com/hiteshjasani/nim-pg-util" target="_blank">nim-pg-util</a>. Utility functions for working with Postgres from Nim.</li>
+<li><a href="https://github.com/sigmapie8/luhny" target="_blank">luhny</a>. Luhn&rsquo;s Algorithm implementation in Nim.</li>
+<li><a href="https://github.com/ChristianWitts/actions" target="_blank">actions</a>. Repo for GitHub actions dockerfiles.</li>
+<li><a href="https://github.com/oliviergimenez/bayesian-hmm-cr-workshop-valencia" target="_blank">bayesian-hmm-cr-workshop-valencia</a>. Material for a workshop on Bayesian analysis of capture-recapture data with hidden Markov models and Nimble.</li>
+<li><a href="https://github.com/aws-samples/nimblestudio-auto-workstation-scheduler" target="_blank">nimblestudio-auto-workstation-scheduler</a>. Sample AWS CDK application for creating an automated streaming workstation launcher for Amazon Nimble Studio..</li>
+<li><a href="https://github.com/oliviergimenez/nimble-workshop" target="_blank">nimble-workshop</a>. Material for a workshop on NIMBLE.</li>
+<li><a href="https://github.com/oliviergimenez/NETDEM-workshop-survival-nimble" target="_blank">NETDEM-workshop-survival-nimble</a>. This repository holds the source materials used for a working group/symposium on capture-recapture models and social networks, and an introduction to capture-recapture models in nimble to estimate demographic parameters..</li>
+<li><a href="https://github.com/koingdev/MockNetworkingSample" target="_blank">MockNetworkingSample</a>. Unit Testing by mocking a network response + Nimble including with a quick MVVM Concept.</li>
+<li><a href="https://github.com/HelioMesquita/Sunscreen" target="_blank">Sunscreen</a>. A project that shows how to use some unit test frameworks, in Clean Swift architecture such, as Cuckoo, Quick and Nimble and XCTest.</li>
+<li><a href="https://github.com/genotrance/libsvm" target="_blank">libsvm</a>. This project is a Nim wrapper for the libsvm library.</li>
+<li><a href="https://github.com/ptdel/pastebim" target="_blank">pastebim</a>. Simple pastebim written in Nim.</li>
+<li><a href="https://github.com/Wassmd/LiveRates" target="_blank">LiveRates</a>. Live currency converter app.</li>
+<li><a href="https://github.com/ttytm/nimpretty_t" target="_blank">nimpretty_t</a>. Use nimpretty with tab indentation..</li>
+<li><a href="https://github.com/mondrepublic/libyuga" target="_blank">libyuga</a>. Nim database driver for YugaByte, PostgreSQL, and Cassandra.</li>
+<li><a href="https://github.com/mecoFarid/Trending-KMM" target="_blank">Trending-KMM</a>. Simple Clean Architecture KMM App.</li>
+<li><a href="https://github.com/Jjuandi/Nimble" target="_blank">Nimble</a>. Taller final de la Universidad.</li>
+</ul>
+          <div class="mb-5">
+            <h3 class="text-md mb-2">
+              <i class="fas fa-link"></i>
+              <span>Website: <a href="http://mynewt.apache.org/latest/network/docs/index.html" target="_blank" class="text-blue-500 hover:underline">http://mynewt.apache.org/latest/network/docs/index.html</a></span>
+            </h3>
+            
+            <h3 class="text-md mb-2">
+              <span>Source code: <a href="https://github.com/apache/mynewt-nimble" target="_blank" class="text-blue-500 hover:underline">https://github.com/apache/mynewt-nimble</a></span>
+            </h3>
+            
+          </div>
+          
+          
+          
+        </div>
         
-        <h3 class="h5 g-font-weight-300 g-mb-5">
-          <i
-            class=" fab fa-github">
-          </i>
-          <span>Source code: <a href="https://github.com/apache/mynewt-nimble" target="_blank">https://github.com/apache/mynewt-nimble</a></span>
-        </h3>
         
-        <h3 class="h5 g-font-weight-300 g-mb-5">
-          <i class="far fa-copyright"> </i>
-          <span>License: </span>
+
+        
+        
+
           
-          
-          
-          
-          Apache License 2.0
-          </ul>
-          
-        </h3>
       </div>
-      <hr />
-    </div>
-    <div class="col-md-3">
-    </div>
-  </div>
-</section>
-
-    </main>
-    <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-40">
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_library\/nimble.md"
+        var oid_likes = "likes_library\/nimble.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-full print:hidden">
     
-    <div class="container">
-        <p>OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />Most of the text is available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>.</p>
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/library/easyflash/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >EasyFlash</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/library/utensor/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >uTensor</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
     </div>
+  
+
+
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
 </div>
+    </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
+  <div class="flex items-center justify-between">
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />
+      Most of the text is available under the Creative Commons Attribution-ShareAlike License.
+    </p>
+  </div>
+  <script>
     
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
 
-  <script src="/app.891c52d1754686d395e4.js"></script>
+  </div>
+</body>
 
-
-  </body>
 </html>

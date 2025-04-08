@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head>
+	<meta name="generator" content="Hugo 0.145.0">
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en-us" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>OSRTOS - Top Open Source Real-Time Operating Systems (RTOS)</title>
+  <meta name="title" content="OSRTOS - Top Open Source Real-Time Operating Systems (RTOS)" />
+  
+  <meta name="description" content="List of open source real-time operating systems. Dive deep into features, comparisons, and use-cases to choose the perfect real-time operating system for your project. Stay updated with the latest in the RTOS world." />
+  <meta name="keywords" content="RTOS, Real-Time Operating System, Embedded RTOS, Free RTOS">
+  
+  
+  <link rel="canonical" href="https://www.osrtos.com/" />
+  
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="OSRTOS" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.70394f6dcf3e442c7463b1cb721b8abaef497227896c1a447497ddd7a8135fe6fb4739b094b1092eea63c3a42dc5581e57ad3ac28d6353fe86b7bfeab0e7522a.css"
+    integrity="sha512-cDlPbc8&#43;RCx0Y7HLchuKuu9JcieJbBpEdJfd16gTX&#43;b7RzmwlLEJLupjw6QtxVgeV606wo1jU/6Gt7/qsOdSKg==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
+    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://www.osrtos.com/">
+  <meta property="og:site_name" content="OSRTOS">
+  <meta property="og:title" content="OSRTOS">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OSRTOS">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https:\/\/www.osrtos.com\/",
+    "name": "OSRTOS",
+    
+    "inLanguage": "en-us",
+    "url": "https:\/\/www.osrtos.com\/",
+    
+    "publisher" : {
+      "@type": "Person",
+      "name": ""
+    }
+  }
+  </script>
+
+
+  
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46054378-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-46054378-1');
+</script>
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Home
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        RTOS
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Library
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Learn RTOS">
+        Learn RTOS
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+
+
+            
+            
+            <div
+                class=" flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Home
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            RTOS
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Library
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Learn RTOS">
+            Learn RTOS
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+
+
+
+
+
+
+<div class="container mx-auto px-4 py-8">
+  
+  <section class="space-y-10 w-full">
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/phoenix-rtos/">Phoenix-RTOS</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> dev</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>Phoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">FileSystem</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Network</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">USBDevice</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">USBHost</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">BSD</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">x86</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">RISC-V</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/phoenix-rtos/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/tock/">Tock</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> release-2.1.1</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Apache License 2.0</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">RISC-V</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/tock/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/atk2/">ATK2</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> 1.4.2</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>The TOPPERS/ATK (Automotive Kernel) is a real-time operating system for automotive system control publicly released by the TOPPERS project.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Other</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">Nios II</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/atk2/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/marte/">MaRTE</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> 2.0</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>MaRTE OS is a Hard Real-Time Operating System for embedded applications that follows the Minimal Real-Time POSIX.13 subset.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Network</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Logging</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">GPL v2</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">x86</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/marte/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/modm/">modm</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> 2024q3</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>modm is a toolbox for building custom C++17 libraries tailored to your embedded device. modm generates startup code, HALs and their implementations, communication protocols, drivers for external devices, BSPs, etc… in a modular, customizable process that you can fine-tune to your needs.</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Mozilla Public License Version 2.0</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/modm/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/ucglib/">Ucglib</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> v1.00</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>Arduino True Color Library for TFTs and OLEDs</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">BSD</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/ucglib/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/micropython/">MicroPython</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> v1.24.1</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>A lean and efficient Python implementation for microcontrollers and constrained systems.</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">MIT</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/micropython/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/cocoos/">cocoOS</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> 5.0.1</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>cocoOS is a free, open source, cooperative task scheduler, based on coroutines targeted for embedded microcontrollers like AVR, MSP430 and STM32.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">BSD</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">MSP430</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">AVR</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/cocoos/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/lwip/">lwIP</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> start</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>lwIP is a small independent implementation of the TCP/IP protocol suite. The focus of the lwIP TCP/IP implementation is to reduce resource usage while still having a full scale TCP. This makes lwIP suitable for use in embedded systems with tens of kilobytes of free RAM and room for around 40 kilobytes of code ROM.</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">BSD</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/lwip/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/jesfs/">JesFs</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> dev</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>JesFs is an Ultra-Lightweight Flash File System, especially designed for NOR-Flash.</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Other</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/jesfs/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/moe/">MOE</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> V0.1.6</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>MOE is an event-driven scheduler system for 8/16/32-bit MCUs. MOE means &ldquo;Minds Of Embedded system&rdquo;.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">MIT</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/moe/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/tizenrt/">TizenRT</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> 3.0_GBM</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>TizenRT is a lightweight RTOS (Real-Time Operating System) designed to support low-end IoT devices. It aims to extend the Tizen platform device coverage to devices like home appliances without display and wearable bands with a small LCD. These devices are typically equipped with Cortex-M/R processors with MPU, less than 2 MB RAM, and less than 16 MB Flash.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">FileSystem</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Network</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">HTTP</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">HTTP/2</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">TLS/SSL</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Command Line Interface</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">gRPC</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">IPv6</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Apache License 2.0</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">iMX RT</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">QEMU</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/tizenrt/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/liteos/">LiteOS</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> LiteOSV200R001C50B039</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>Huawei LiteOS is a lightweight open-source IoT OS and a smart hardware development platform. It simplifies IoT device development and device connectivity, makes services smarter, delivers superb user experience, and provides better data protection. Huawei LiteOS is designed for smart homes, wearables, IoV, and intelligent manufacturing applications.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">BSD</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/liteos/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/open-thread/">Open Thread</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> thread-reference-20230706</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>OpenThread released by Nest is an open-source implementation of the Thread networking protocol.</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">BSD</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/open-thread/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/mongoose-os/">Mongoose OS</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> 2.20.0</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>Mongoose OS - an open source Operating System for Internet of Things. Supported microcontrollers: ESP32, ESP8266, CC3220, CC3200, STM32F4. Amazon AWS IoT &amp; Google IoT Core integrated. Code in C or JavaScript.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">FileSystem</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Network</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">TLS/SSL</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">GPL v2</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">Xtensa</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/mongoose-os/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/alios-things/">AliOS Things</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> v1.3.4</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>AliOS Things is designed for low power, resource constrained MCU, connectivity SoC, greatly suitable for IoT devices. AliOS Things is not just a RTOS, it contains full stack of software components and tools for building IoT devices.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Apache License</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/alios-things/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/lvgl/">LVGL</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> v9.2.2</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>LVGL is the most popular free and open-source embedded graphics library to create beautiful UIs for any MCU, MPU and display type.</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">MIT</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/lvgl/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/library/littlefs/">littlefs</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> v2.10.1</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>A little fail-safe filesystem designed for embedded systems</p></div>
+            
+          </div>
+
+          
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Apache License</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/library/littlefs/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/echronos/">eChronos</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> v3.0.5</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>The eChronos RTOS is a real-time operating system (RTOS) originally developed by NICTA and Breakaway Consulting Pty. Ltd. It is intended for tightly resource-constrained devices without memory protection.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Other</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">PowerPC</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">POSIX</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/echronos/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="bg-neutral-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-3">
+            <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/trampoline/">Trampoline</a>
+            
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> dev-master</span>
+            
+          </h3>
+          
+          <div class="mb-4">
+            
+              <div class="text-neutral-700 dark:text-neutral-300"><p>Trampoline is a static RTOS for small embedded systems. Its API is aligned with OSEK/VDX OS and AUTOSAR OS 4.2 standards.</p></div>
+            
+          </div>
+
+          
+          
+          <div class="mb-3">
+            <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
+            <div class="flex flex-wrap gap-2">
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">None</span>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            
+            
+            <div class="flex-shrink-0 min-w-[280px]">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">GPL v2</span>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            <div class="flex-grow">
+              <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">AVR</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">PowerPC</span>
+                
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="flex justify-end">
+            <a href="/rtos/trampoline/" class="inline-flex items-center px-4 py-2 border-2 border-primary-600 text-primary-700 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors font-medium">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    
+    
+    
+    <div class="flex items-center justify-center gap-2 mt-12">
+      
+      <a href="/" class="inline-flex items-center justify-center h-10 px-4 rounded-md border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+        <span>Previous</span>
+      </a>
+      
+      
+      <div class="hidden sm:flex items-center gap-1">
+        
+        
+        
+          
+          
+          
+            
+            <a href="/" class="inline-flex items-center justify-center h-10 w-10 rounded-md border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-primary-600 dark:hover:text-primary-400 transition-all">
+              1
+            </a>
+            
+          
+        
+          
+          
+          
+            
+            <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-primary-600 text-white font-medium">
+              2
+            </span>
+            
+          
+        
+          
+          
+          
+            
+            <a href="/page/3/" class="inline-flex items-center justify-center h-10 w-10 rounded-md border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-primary-600 dark:hover:text-primary-400 transition-all">
+              3
+            </a>
+            
+          
+        
+          
+          
+          
+            
+            <a href="/page/4/" class="inline-flex items-center justify-center h-10 w-10 rounded-md border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-primary-600 dark:hover:text-primary-400 transition-all">
+              4
+            </a>
+            
+          
+        
+          
+          
+          
+            
+            <a href="/page/5/" class="inline-flex items-center justify-center h-10 w-10 rounded-md border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-primary-600 dark:hover:text-primary-400 transition-all">
+              5
+            </a>
+            
+          
+        
+      </div>
+      
+      <div class="sm:hidden flex items-center justify-center">
+        <span class="text-sm text-neutral-600 dark:text-neutral-400">
+          2 / 5
+        </span>
+      </div>
+      
+      
+      <a href="/page/3/" class="inline-flex items-center justify-center h-10 px-4 rounded-md border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-all">
+        <span>Next</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      
+    </div>
+    
+
+  </section>
+</div>
+
+
+      
+    </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
+  <div class="flex items-center justify-between">
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      OSRTOS.COM is a website about open source real-time operating systems and open source embedded projects.<br />
+      Most of the text is available under the Creative Commons Attribution-ShareAlike License.
+    </p>
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+
+  </div>
+</body>
+
+</html>
