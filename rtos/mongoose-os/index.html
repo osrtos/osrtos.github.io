@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/mongoose-os/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Mongoose OS">
-  <meta property="og:description" content="Mongoose OS - an open source Operating System for Internet of Things. Supported microcontrollers: ESP32, ESP8266, CC3220, CC3200, STM32F4. Amazon AWS IoT &amp; Google IoT Core integrated. Code in C or JavaScript.">
+  <meta property="og:description" content="Mongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C/C&#43;&#43; and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the mos command-line tool for simplified building, flashing, and device management.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mongoose OS">
-  <meta name="twitter:description" content="Mongoose OS - an open source Operating System for Internet of Things. Supported microcontrollers: ESP32, ESP8266, CC3220, CC3200, STM32F4. Amazon AWS IoT &amp; Google IoT Core integrated. Code in C or JavaScript.">
+  <meta name="twitter:description" content="Mongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C/C&#43;&#43; and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the mos command-line tool for simplified building, flashing, and device management.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "Mongoose OS",
     "headline": "Mongoose OS",
     
-    "abstract": "\u003cp\u003eMongoose OS - an open source Operating System for Internet of Things. Supported microcontrollers: ESP32, ESP8266, CC3220, CC3200, STM32F4. Amazon AWS IoT \u0026amp; Google IoT Core integrated. Code in C or JavaScript.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eMongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C\/C\u002b\u002b and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the \u003ccode\u003emos\u003c\/code\u003e command-line tool for simplified building, flashing, and device management.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/mongoose-os\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "1132"
+    "wordCount": "1569"
   }]
   </script>
 
@@ -481,7 +481,9 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">GPL v2</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
+              
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Commercial</li>
               
             </ul>
           </div>
@@ -492,9 +494,9 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Xtensa</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">xtensa</span>
               
             </div>
           </div>
@@ -502,6 +504,46 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -522,15 +564,55 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">TLS/SSL</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">wifi</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ota-update</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
                   
                 
               </div>
@@ -538,13 +620,6 @@
             
           
           
-          
-            
-            
-              
-            
-            
-            
           
         </div>
         
@@ -558,10 +633,15 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>Mongoose OS - an open source Operating System for Internet of Things. Supported microcontrollers: ESP32, ESP8266, CC3220, CC3200, STM32F4. Amazon AWS IoT &amp; Google IoT Core integrated. Code in C or JavaScript.</p>
+          <p>Mongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C/C++ and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the <code>mos</code> command-line tool for simplified building, flashing, and device management.</p>
+<p>Mongoose OS provides a comprehensive environment for building connected embedded products. It aims to reduce development time and complexity by offering pre-built libraries, a configuration framework, remote procedure call (RPC) capabilities, and integrated device management through its companion cloud service, mDash.</p>
+<p>The framework is built upon a real-time kernel (FreeRTOS for most ports, except ESP32 which uses its specific version) providing standard OS services. Developers can leverage the <code>mos</code> tool, which offers both a command-line interface and a web UI, to manage the entire development lifecycle: cloning example projects, building firmware, flashing devices, configuring settings (like Wi-Fi credentials), and interacting with device services remotely.</p>
+<p>Security is a core aspect, with support for encrypted file systems, secure boot, crypto-chip integration, and an optimized mbedTLS library for secure communication. The OTA update mechanism is designed for reliability, ensuring devices can be updated securely and efficiently in the field, with automatic rollback if an update fails.</p>
+<p>Mongoose OS supports development in both C/C++ for performance-critical tasks and JavaScript (using the lightweight <code>mJS</code> engine) for application logic, offering flexibility to developers. It has built-in support for popular communication protocols like MQTT, HTTP, and WebSockets, facilitating easy connection to cloud services and backend systems.</p>
+<p>The project is dual-licensed, offering a free Apache 2.0 licensed Community Edition and a commercially licensed Enterprise Edition with additional features and support options. It&rsquo;s recognized and recommended by major industry players like AWS, Google Cloud, Microsoft Azure, Texas Instruments, and STMicroelectronics.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -570,17 +650,48 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Over-The-Air updates and remote management - OTA firmware updates with rollback on failures; RPC infrastructure for the full remote control;</li>
-<li>Security - built in flash encryption, crypto chip support ARM mbedTLS optimized for small memory footprint;</li>
-<li>Device management dashboard service	- for tracking your fleet. On-prem option is available;</li>
-<li>Supported microcontrollers: CC3220, CC3200, ESP32, ESP8266, STM32F4;</li>
-<li>Recommended dev kits: ESP32-DevKitC for AWS IoT, ESP32 Kit for Google IoT Core;</li>
-<li>IoT cloud integration. Built in support for: AWS IoT, Google IoT Core, Microsoft Azure, Samsung Artik, Adafruit IO, Generic MQTT/Restful;</li>
-<li>Code in C or JavaScript;</li>
-<li>Ready to go Apps and Libraries;</li>
-<li>Embedded JavaScript engine - mJS;</li>
+<li><strong>Multi-Language Development:</strong> Supports application development in both C/C++ and JavaScript (via embedded mJS engine).</li>
+<li><strong>Over-The-Air (OTA) Updates:</strong> Reliable OTA firmware updates with rollback capability.</li>
+<li><strong>Security:</strong> Built-in support for flash encryption, crypto chips, and optimized mbedTLS.</li>
+<li><strong>Cloud Integration:</strong> Native support for AWS IoT, Google Cloud IoT Core, Microsoft Azure IoT, Adafruit IO, and generic MQTT/REST backends.</li>
+<li><strong>Remote Management:</strong> Device management via mDash cloud service or custom solutions using RPC.</li>
+<li><strong>Cross-Platform:</strong> Supports popular MCUs including ESP32, ESP8266, STM32 (F4, L4, F7), TI CC3200/CC3220.</li>
+<li><strong>Rich Connectivity:</strong> Includes libraries for WiFi, MQTT, HTTP, WebSockets, DNS, SNTP.</li>
+<li><strong>Configuration Management:</strong> Flexible device configuration system accessible via CLI or RPC.</li>
+<li><strong>RPC Framework:</strong> Enables remote invocation of device functions over serial, MQTT, HTTP.</li>
+<li><strong>Filesystem Support:</strong> On-device filesystem for storing configuration and assets.</li>
+<li><strong><code>mos</code> Tool:</strong> Unified command-line tool (with optional Web UI) for build, flash, configuration, and communication.</li>
+<li><strong>Embedded JavaScript Engine (mJS):</strong> Lightweight engine for scripting device logic.</li>
+<li><strong>Dual Licensing:</strong> Available under Apache 2.0 (Community) or Commercial (Enterprise) licenses.</li>
+</ul>
+
+
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><strong>scheduler:</strong> Core task scheduling (provided by underlying RTOS like FreeRTOS).</li>
+<li><strong>task-management:</strong> Task creation and management primitives.</li>
+<li><strong>timer-management:</strong> Software timers for scheduling events.</li>
+<li><strong>network-stack:</strong> Integrated networking capabilities (likely leveraging Mongoose library).</li>
+<li><strong>wifi:</strong> Configuration and management of Wi-Fi connectivity.</li>
+<li><strong>http-client:</strong> Making HTTP(S) requests.</li>
+<li><strong>http-server:</strong> Serving web content from the device.</li>
+<li><strong>mqtt-client:</strong> Connecting and communicating with MQTT brokers.</li>
+<li><strong>tls-ssl:</strong> Secure communication using mbedTLS.</li>
+<li><strong>filesystem:</strong> Managing files on the device&rsquo;s storage.</li>
+<li><strong>ota-update:</strong> Core component for firmware updates.</li>
+<li><strong>shell-cli:</strong> Interaction via the <code>mos</code> command-line tool.</li>
+<li><strong>logging:</strong> System and application logging framework.</li>
 </ul>
 
 

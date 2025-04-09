@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/riot/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="RIOT">
-  <meta property="og:description" content="RIOT is a real-time multi-threading operating system that supports a range of devices that are typically found in the Internet of Things (IoT): 8-bit, 16-bit and 32-bit microcontrollers.">
+  <meta property="og:description" content="RIOT, “The friendly Operating System for IoT,” is an open-source RTOS designed for resource-constrained embedded devices, particularly in the Internet of Things space. It supports a wide range of 8-bit, 16-bit, and 32-bit microcontrollers. Key design goals include energy efficiency, real-time capabilities, a small memory footprint, modularity, and a hardware-independent API with partial POSIX compliance. Developed by a vendor-independent open-source community, RIOT uses the LGPLv2.1 license, allowing integration with closed-source components. Its extensive feature set, especially in networking, makes it a strong choice for connected embedded systems.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="RIOT">
-  <meta name="twitter:description" content="RIOT is a real-time multi-threading operating system that supports a range of devices that are typically found in the Internet of Things (IoT): 8-bit, 16-bit and 32-bit microcontrollers.">
+  <meta name="twitter:description" content="RIOT, “The friendly Operating System for IoT,” is an open-source RTOS designed for resource-constrained embedded devices, particularly in the Internet of Things space. It supports a wide range of 8-bit, 16-bit, and 32-bit microcontrollers. Key design goals include energy efficiency, real-time capabilities, a small memory footprint, modularity, and a hardware-independent API with partial POSIX compliance. Developed by a vendor-independent open-source community, RIOT uses the LGPLv2.1 license, allowing integration with closed-source components. Its extensive feature set, especially in networking, makes it a strong choice for connected embedded systems.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "RIOT",
     "headline": "RIOT",
     
-    "abstract": "\u003cp\u003eRIOT is a real-time multi-threading operating system that supports a range of devices that are typically found in the Internet of Things (IoT): 8-bit, 16-bit and 32-bit microcontrollers.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eRIOT, \u0026ldquo;The friendly Operating System for IoT,\u0026rdquo; is an open-source RTOS designed for resource-constrained embedded devices, particularly in the Internet of Things space. It supports a wide range of 8-bit, 16-bit, and 32-bit microcontrollers. Key design goals include energy efficiency, real-time capabilities, a small memory footprint, modularity, and a hardware-independent API with partial POSIX compliance. Developed by a vendor-independent open-source community, RIOT uses the LGPLv2.1 license, allowing integration with closed-source components. Its extensive feature set, especially in networking, makes it a strong choice for connected embedded systems.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/riot\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "143"
+    "wordCount": "725"
   }]
   </script>
 
@@ -481,7 +481,7 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">LGPLv2.1</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">LGPL-2.1</li>
               
             </ul>
           </div>
@@ -492,15 +492,17 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MSP430</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">AVR</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">xtensa</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MIPS</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">avr</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">msp430</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
               
             </div>
           </div>
@@ -508,6 +510,46 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -552,39 +594,79 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">BLE</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">LoRaWAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6LoWPAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">GUI</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">TLS/SSL</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ble</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBDevice</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">lorawan</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">OTA</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6lowpan</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">coap</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-device</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ota-update</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">crypto</span>
                   
                 
               </div>
@@ -592,50 +674,6 @@
             
           
           
-          
-            
-            
-              
-                
-              
-            
-              
-                
-              
-            
-              
-                
-              
-            
-              
-                
-              
-            
-            
-            
-            <div class="mt-2">
-              <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Libraries:</h4>
-              <ul class="mt-1 list-none pl-0">
-                
-                  
-                    <li class="text-sm text-neutral-600 dark:text-neutral-400">SPIFFS</li>
-                  
-                
-                  
-                    <li class="text-sm text-neutral-600 dark:text-neutral-400">FatFs</li>
-                  
-                
-                  
-                    <li class="text-sm text-neutral-600 dark:text-neutral-400">littlefs</li>
-                  
-                
-                  
-                    <li class="text-sm text-neutral-600 dark:text-neutral-400">Ucglib</li>
-                  
-                
-              </ul>
-            </div>
-            
           
         </div>
         
@@ -649,10 +687,14 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>RIOT is a real-time multi-threading operating system that supports a range of devices that are typically found in the Internet of Things (IoT): 8-bit, 16-bit and 32-bit microcontrollers.</p>
+          <p>RIOT, &ldquo;The friendly Operating System for IoT,&rdquo; is an open-source RTOS designed for resource-constrained embedded devices, particularly in the Internet of Things space. It supports a wide range of 8-bit, 16-bit, and 32-bit microcontrollers. Key design goals include energy efficiency, real-time capabilities, a small memory footprint, modularity, and a hardware-independent API with partial POSIX compliance. Developed by a vendor-independent open-source community, RIOT uses the LGPLv2.1 license, allowing integration with closed-source components. Its extensive feature set, especially in networking, makes it a strong choice for connected embedded systems.</p>
+<p>RIOT aims to provide a developer-friendly environment for building IoT applications. It features a preemptive, tickless real-time kernel, flexible memory management, and high-resolution timers. Its hardware support is broad, covering architectures like ARM Cortex-M, RISC-V, ESP32/ESP8266, AVR, and MSP430, with over 200 specific boards supported.</p>
+<p>A standout feature is the <code>native</code> port, which allows RIOT applications to run as standard processes on Linux, BSD, or macOS. This facilitates development, debugging, testing, and simulation without requiring target hardware initially. Multiple native instances can be interconnected using virtual network interfaces (TAP devices) or simulated IEEE 802.15.4 networks.</p>
+<p>Networking is a core strength, built around the modular GNRC (Generic Network Stack). GNRC provides a comprehensive IPv6 stack including 6LoWPAN (with header compression and fragmentation), UDP, and RPL (routing protocol). Higher-level protocols like CoAP and MQTT are also supported. Wireless connectivity options include LoRaWAN and Bluetooth Low Energy (via Apache NimBLE integration).</p>
+<p>RIOT employs a standard Make-based build system and offers Docker images for simplified toolchain setup across different development environments. The community provides support through a forum and Matrix chat, maintaining extensive documentation including API references and tutorials. The LGPLv2.1 license encourages adoption by allowing proprietary code linkage while keeping the core OS open.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -661,34 +703,75 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>A preemptive, tickless scheduler with priorities</li>
-<li>Flexible memory management</li>
-<li>High resolution, long-term timers</li>
-<li>Support for AVR, MSP430, ARM7, and ARM Cortex-M on over 50 boards</li>
-<li>The native port allows to run RIOT as-is on Linux, BSD, and MacOS. Multiple instances of RIOT running on a single machine can also be interconnected via a simple virtual Ethernet bridge</li>
-<li>IPv6</li>
-<li>6LoWPAN (RFC4944, RFC6282, and RFC6775)</li>
-<li>UDP</li>
-<li>RPL (storing mode, P2P mode)</li>
-<li>CoAP</li>
-<li>CCN-Lite</li>
+<li><strong>Real-time Kernel:</strong> Preemptive, tickless scheduler with configurable priorities.</li>
+<li><strong>Low Footprint:</strong> Designed for memory-constrained devices (8/16/32-bit MCUs).</li>
+<li><strong>Modularity:</strong> Highly configurable via Kconfig and module selection.</li>
+<li><strong>Hardware Abstraction:</strong> Uniform API access across different microcontrollers.</li>
+<li><strong>Partial POSIX Compliance:</strong> Offers a familiar API for developers.</li>
+<li><strong>Native Port:</strong> Run RIOT applications on Linux/BSD/macOS for development and simulation.</li>
+<li><strong>Extensive Networking (GNRC):</strong> IPv6, 6LoWPAN (RFC6282, RFC6775), UDP, RPL (Storing &amp; P2P), TCP (experimental).</li>
+<li><strong>IoT Protocols:</strong> CoAP, MQTT client support.</li>
+<li><strong>Wireless Support:</strong> LoRaWAN, Bluetooth Low Energy (via NimBLE), IEEE 802.15.4 MAC protocols (e.g., CSMA, TSCH).</li>
+<li><strong>Wide Platform Support:</strong> ARM Cortex-M, RISC-V, Xtensa (ESP32/ESP8266), AVR, MSP430, native (POSIX).</li>
+<li><strong>Timers:</strong> High-resolution <code>ztimer</code> abstraction layer for precise timing.</li>
+<li><strong>Memory Management:</strong> Flexible options including heap allocators.</li>
+<li><strong>Filesystem Integration:</strong> Virtual File System (VFS) support.</li>
+<li><strong>USB Device Stack:</strong> Support for USB device functionality.</li>
+<li><strong>OTA Updates:</strong> Secure Firmware Updates using the SUIT (Software Updates for IoT) standard.</li>
+<li><strong>Cryptography:</strong> Integrated crypto libraries (e.g., HWRNG support, PSA Crypto API, C25519, TweetNaCl).</li>
+<li><strong>Shell Interface:</strong> Built-in command-line shell for interaction and diagnostics.</li>
+<li><strong>Development Tools:</strong> Make build system, Docker support, <code>pyterm</code> serial terminal, GDB debugging integration.</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><strong>scheduler:</strong> Preemptive, tickless, priority-based kernel scheduler.</li>
+<li><strong>task-management:</strong> Multi-threading support with standard RTOS primitives (creation, termination, synchronization).</li>
+<li><strong>inter-task-communication:</strong> Includes messaging (IPC), mailboxes, event queues, semaphores, and mutexes.</li>
+<li><strong>memory-management:</strong> Provides various memory allocation strategies suitable for constrained devices.</li>
+<li><strong>timer-management:</strong> <code>ztimer</code> high-resolution timer abstraction for scheduling events and delays.</li>
+<li><strong>network-stack:</strong> Modular GNRC stack supporting IPv6, 6LoWPAN, UDP, TCP (experimental), RPL, and various MAC layers.</li>
+<li><strong>ble:</strong> Support via integrated Apache NimBLE stack.</li>
+<li><strong>lorawan:</strong> LoRaWAN stack implementation integrated with GNRC.</li>
+<li><strong>6lowpan:</strong> Integrated 6LoWPAN adaptation layer with fragmentation (RFC4944) and header compression (RFC6282, RFC6775).</li>
+<li><strong>coap:</strong> Support for the Constrained Application Protocol.</li>
+<li><strong>mqtt-client:</strong> MQTT client functionality for IoT messaging.</li>
+<li><strong>usb-device:</strong> USB device stack enabling peripherals like CDC-ACM (Serial), MSC (Mass Storage), DFU (Device Firmware Upgrade).</li>
+<li><strong>filesystem:</strong> Virtual File System (VFS) layer allowing integration of filesystems like FATFS (SPIFFS, LittleFS via external modules).</li>
+<li><strong>ota-update:</strong> Secure Firmware Updates using the IETF SUIT standard manifest format.</li>
+<li><strong>shell-cli:</strong> Interactive command-line interface accessible via serial/network for system control and debugging.</li>
+<li><strong>logging:</strong> Configurable logging framework for diagnostics.</li>
+<li><strong>simulation:</strong> Native port allows running RIOT applications directly on host OS (Linux, macOS, BSD) for rapid development and testing.</li>
+<li><strong>runtime-analysis:</strong> Utilities like <code>ps</code> (process status) and scheduler statistics (<code>schedstatistics</code>) for observing system state.</li>
+<li><strong>crypto:</strong> Includes cryptographic primitives, hash functions, and support for PSA Cryptographic API.</li>
+</ul>
+
+
+<h3 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <ul>
 <li><a href="https://github.com/RIOT-OS/RIOT/tree/master/examples/arduino_hello-world" target="_blank">Arduino Hello World</a>. This application demonstrates the usage of Arduino sketches in RIOT.</li>
+<li><a href="https://doc.riot-os.org/" target="_blank">RIOT Documentation</a>: Official documentation, including API reference and guides.</li>
 </ul>
 <ul>
 <li><a href="https://github.com/riot/examples" target="_blank">examples</a>. Demos and examples for Riot and submodules.</li>

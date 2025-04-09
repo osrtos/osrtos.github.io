@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/phoenix-rtos/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Phoenix-RTOS">
-  <meta property="og:description" content="Phoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.">
+  <meta property="og:description" content="Phoenix-RTOS is a scalable, open-source, real-time operating system designed for IoT devices and other resource-constrained applications. It features a custom microkernel architecture, separating core functionalities like memory management, scheduling, and IPC from higher-level services such as filesystems, networking stacks, and device drivers, which run as server processes in user space. This design emphasizes modularity and scalability, allowing deployment on microcontrollers up to multi-processor systems. It supports multiple hardware architectures including ARM Cortex-M/A, x86, RISC-V, and SPARC (LEON).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Phoenix-RTOS">
-  <meta name="twitter:description" content="Phoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.">
+  <meta name="twitter:description" content="Phoenix-RTOS is a scalable, open-source, real-time operating system designed for IoT devices and other resource-constrained applications. It features a custom microkernel architecture, separating core functionalities like memory management, scheduling, and IPC from higher-level services such as filesystems, networking stacks, and device drivers, which run as server processes in user space. This design emphasizes modularity and scalability, allowing deployment on microcontrollers up to multi-processor systems. It supports multiple hardware architectures including ARM Cortex-M/A, x86, RISC-V, and SPARC (LEON).">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "Phoenix-RTOS",
     "headline": "Phoenix-RTOS",
     
-    "abstract": "\u003cp\u003ePhoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003ePhoenix-RTOS is a scalable, open-source, real-time operating system designed for IoT devices and other resource-constrained applications. It features a custom microkernel architecture, separating core functionalities like memory management, scheduling, and IPC from higher-level services such as filesystems, networking stacks, and device drivers, which run as server processes in user space. This design emphasizes modularity and scalability, allowing deployment on microcontrollers up to multi-processor systems. It supports multiple hardware architectures including ARM Cortex-M\/A, x86, RISC-V, and SPARC (LEON).\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/phoenix-rtos\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "22"
+    "wordCount": "517"
   }]
   </script>
 
@@ -466,7 +466,7 @@
         
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: dev</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: v3.3.2</h4>
           </div>
           
 
@@ -481,7 +481,7 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">BSD</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">BSD-3-Clause</li>
               
             </ul>
           </div>
@@ -492,11 +492,17 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
               
                 <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">sparc</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
               
             </div>
           </div>
@@ -504,6 +510,54 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -528,19 +582,67 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBDevice</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBHost</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">wifi</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-host</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-device</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">gui</span>
                   
                 
               </div>
@@ -548,26 +650,6 @@
             
           
           
-          
-            
-            
-              
-                
-              
-            
-            
-            
-            <div class="mt-2">
-              <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Libraries:</h4>
-              <ul class="mt-1 list-none pl-0">
-                
-                  
-                    <li class="text-sm text-neutral-600 dark:text-neutral-400">lwIP</li>
-                  
-                
-              </ul>
-            </div>
-            
           
         </div>
         
@@ -581,10 +663,13 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>Phoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.</p>
+          <p>Phoenix-RTOS is a scalable, open-source, real-time operating system designed for IoT devices and other resource-constrained applications. It features a custom microkernel architecture, separating core functionalities like memory management, scheduling, and IPC from higher-level services such as filesystems, networking stacks, and device drivers, which run as server processes in user space. This design emphasizes modularity and scalability, allowing deployment on microcontrollers up to multi-processor systems. It supports multiple hardware architectures including ARM Cortex-M/A, x86, RISC-V, and SPARC (LEON).</p>
+<p>Phoenix-RTOS utilizes a message-passing mechanism for inter-process communication (IPC), enabling interaction between the microkernel, servers, and applications. While this can introduce some overhead compared to monolithic kernels, it enhances system modularity, robustness (fault isolation), and scalability. User-space device drivers communicate with hardware via memory mapping or special I/O privileges granted by the kernel, with interrupts redirected to the relevant driver processes.</p>
+<p>The system provides its own standard C library (libphoenix) and can emulate a POSIX environment, allowing many standard Unix/Linux applications and libraries to be ported and executed. This portability is demonstrated by the availability of numerous &ldquo;ports&rdquo; - adapted open-source tools and libraries like busybox, curl, dropbear (SSH), lighttpd, mbedtls/openssl, micropython, and network utilities like wpa_supplicant and OpenVPN.</p>
+<p>Phoenix-RTOS has seen practical deployment in smart utility applications (gas/energy meters, data concentrators). Development includes ongoing work on an ARINC653 (avionics standard) execution environment. It also offers core libraries for graphics (libgraph), CGI (libcgi), virtual I/O (libvirtio), UUIDs, caching, and software watchdog services.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -593,13 +678,56 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Microkernel</li>
+<li><strong>Microkernel Architecture:</strong> Core OS services (scheduling, memory management, IPC) in the kernel, drivers and filesystems run as user-space servers.</li>
+<li><strong>Real-time Capabilities:</strong> Designed with real-time performance considerations for time-critical applications.</li>
+<li><strong>Scalability:</strong> Suitable for small microcontrollers up to complex multi-processor systems.</li>
+<li><strong>Modularity:</strong> System services are implemented as independent server processes communicating via IPC.</li>
+<li><strong>Multi-architecture Support:</strong> Runs on ARM Cortex-M, Cortex-A, x86, RISC-V, and SPARC (LEON).</li>
+<li><strong>Message Passing IPC:</strong> Primary communication mechanism between system components.</li>
+<li><strong>User-space Device Drivers:</strong> Drivers run as processes, enhancing fault isolation.</li>
+<li><strong>Filesystem Abstraction:</strong> Supports multiple filesystems via dedicated file server processes.</li>
+<li><strong>POSIX Compatibility Layer:</strong> Enables porting and running standard POSIX applications.</li>
+<li><strong>Ported Software Ecosystem:</strong> Includes ports of common utilities (busybox), network tools (curl, ssh, httpd, vpn), crypto libraries (mbedtls, openssl), and scripting languages (lua, micropython).</li>
+<li><strong>ARINC653 Support (In Development):</strong> Work towards supporting the avionics application software standard.</li>
 </ul>
 
 
-<h3 class="relative group">Resources 
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><strong>Scheduler:</strong> Manages thread scheduling within the microkernel.</li>
+<li><strong>Task Management:</strong> Handles process and thread creation, termination, and management.</li>
+<li><strong>Inter-task Communication:</strong> Provides message passing ports for IPC between kernel, servers, and applications.</li>
+<li><strong>Memory Management:</strong> Microkernel manages memory allocation and protection.</li>
+<li><strong>Filesystem:</strong> Implemented via user-space file servers (e.g., FAT, JFFS2, rootfs).</li>
+<li><strong>Network Stack:</strong> Provided through ports like lwIP and support for standard protocols (TCP/IP, UDP). Includes associated services:
+<ul>
+<li><code>http-client</code> (via curl)</li>
+<li><code>http-server</code> (via lighttpd)</li>
+<li><code>tls-ssl</code> (via mbedtls, openssl)</li>
+<li><code>mqtt-client</code> (via Azure SDK port)</li>
+<li><code>wifi</code> (via wpa_supplicant port)</li>
+</ul>
+</li>
+<li><strong>USB Host:</strong> Support for USB host functionality.</li>
+<li><strong>USB Device:</strong> Support for USB device functionality.</li>
+<li><strong>Shell/CLI:</strong> Command-line interface provided via ports like busybox.</li>
+<li><strong>Logging:</strong> System logging facilities.</li>
+<li><strong>GUI:</strong> Basic graphics support via libgraph library.</li>
+</ul>
+
+
+<h2 class="relative group">Resources 
     <div id="resources" class="anchor"></div>
     
     <span
@@ -608,14 +736,16 @@
             style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li><a href="https://github.com/phoenix-rtos/phoenix-rtos-project" target="_blank">phoenix-rtos-project</a>. Sample project using Phoenix-RTOS.</li>
+<li><a href="https://github.com/phoenix-rtos/phoenix-rtos-project" target="_blank">phoenix-rtos/phoenix-rtos-project</a>: Sample project using Phoenix-RTOS.</li>
+<li><a href="https://github.com/phoenix-rtos/phoenix-rtos-ports" target="_blank">phoenix-rtos/phoenix-rtos-ports</a>: Repository containing ports of third-party software.</li>
+<li><a href="https://phoenix-rtos.com/documentation/" target="_blank">Phoenix-RTOS Documentation</a>: Official documentation portal.</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">
               <i class="fas fa-link"></i>
-              <span>Website: <a href="http://phoenix-rtos.com/" target="_blank" class="text-blue-500 hover:underline">http://phoenix-rtos.com/</a></span>
+              <span>Website: <a href="https://phoenix-rtos.com/" target="_blank" class="text-blue-500 hover:underline">https://phoenix-rtos.com/</a></span>
             </h3>
             
             <h3 class="text-md mb-2">

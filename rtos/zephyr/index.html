@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/zephyr/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Zephyr">
-  <meta property="og:description" content="The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.">
+  <meta property="og:description" content="Zephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M/R/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Zephyr">
-  <meta name="twitter:description" content="The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.">
+  <meta name="twitter:description" content="Zephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M/R/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "Zephyr",
     "headline": "Zephyr",
     
-    "abstract": "\u003cp\u003eThe Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eZephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M\/R\/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/zephyr\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "1205"
+    "wordCount": "1521"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-08</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-09</h4>
           </div>
           
           
@@ -481,7 +481,7 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache License</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
               
             </ul>
           </div>
@@ -492,19 +492,31 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">aarch32</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">aarch64</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-r</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
                 <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MIPS</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Xtensa</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mips</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">nios-ii</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">QEMU</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">xtensa</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">SPARC V8</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">sparc</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">qemu</span>
               
             </div>
           </div>
@@ -512,6 +524,70 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -576,59 +652,123 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">HTTP</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">TLS/SSL</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Shell</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Logging</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">BLE</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ble</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">LoRaWAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">wifi</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6LoWPAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">lorawan</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBHost</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6lowpan</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBDevice</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-client</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">OTA</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-server</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Modbus</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">CAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">coap</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dns-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-host</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-device</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">can</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">modbus</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ota-update</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">smp-support</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">gui</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
                   
                 
               </div>
@@ -636,13 +776,6 @@
             
           
           
-          
-            
-            
-              
-            
-            
-            
           
         </div>
         
@@ -656,10 +789,19 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.</p>
+          <p>Zephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M/R/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.</p>
+<p>The Zephyr Project provides a vendor-neutral, open-source, permissively licensed RTOS focused on the rapidly growing IoT market. It aims to deliver a robust, scalable, and secure platform for connected, resource-constrained devices.</p>
+<p><strong>Architecture and Modularity:</strong>
+Zephyr&rsquo;s kernel is highly configurable. Developers can select only the necessary features (like specific kernel services, drivers, or protocol stacks) through the Kconfig system, minimizing the final image size. Hardware configuration is managed using Devicetree, allowing the same application code to run on different hardware platforms by simply changing the board configuration.</p>
+<p><strong>Key Capabilities:</strong>
+The RTOS offers a rich set of kernel services, including preemptive and cooperative scheduling, various inter-thread synchronization and communication mechanisms, memory management (including MPU support for thread isolation on capable hardware), and power management features.</p>
+<p><strong>Connectivity and Ecosystem:</strong>
+Zephyr boasts a native, highly optimized networking stack supporting IPv4/IPv6, TCP, UDP, and common application layer protocols (HTTP, MQTT, CoAP, LwM2M). It features a Bluetooth 5.0 qualified controller and host stack, including Mesh support. File systems like LittleFS and FatFs are supported, along with comprehensive logging, a command-line shell interface, settings management, and over-the-air (OTA) update capabilities.</p>
+<p><strong>Development and Community:</strong>
+Development is supported on Linux, macOS, and Windows using CMake and the <code>west</code> meta-tool for managing the source code and build process. A native simulation target (<code>native_sim</code>) allows running and debugging Zephyr applications directly on the host PC. The project benefits from a vibrant community, extensive documentation, and support from numerous semiconductor vendors.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -668,56 +810,28 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Scalable from 8-bit to 64-bit microcontroller environments.</li>
-<li>Built with safety and security in mind.</li>
-<li>Supports a wide variety of development tools, including SDKs, debuggers, and more.</li>
-<li>Provides a unified API across architectures.</li>
-<li>Modular design that allows for configuring the OS for various use cases.</li>
-<li>Extensive suite of kernel services including threads, multi-threading, and more.</li>
+<li><strong>Scalable &amp; Modular Kernel:</strong> Configurable kernel services (threads, semaphores, mutexes, messages queues, etc.) via Kconfig.</li>
+<li><strong>Cross-Architecture:</strong> Supports ARM Cortex-M/R/A (32/64-bit), RISC-V (32/64-bit), x86 (32/64-bit), Xtensa, MIPS, NIOS II, SPARC.</li>
+<li><strong>Flexible Scheduling:</strong> Includes preemptive/cooperative priority-based scheduling, Earliest Deadline First (EDF), round-robin time-slicing, and meta-IRQ scheduling.</li>
+<li><strong>Memory Management:</strong> Dynamic memory allocation (slab/heap), Memory Protection Unit (MPU) support for thread isolation and userspace, stack overflow protection.</li>
+<li><strong>Devicetree Integration:</strong> Hardware description language for configuring peripherals and board features.</li>
+<li><strong>Unified Device Driver Model:</strong> Consistent API for accessing diverse hardware peripherals.</li>
+<li><strong>Power Management:</strong> System and device-level power management framework.</li>
+<li><strong>Rich Connectivity:</strong>
+<ul>
+<li>Native Networking Stack (LwIP based): TCP/IP (v4/v6), UDP, ICMP, CoAP, LwM2M, MQTT, HTTP, DNS, DHCP.</li>
+<li>Bluetooth 5.0 Qualified: Host stack &amp; Controller (Link Layer), BLE Mesh, GAP/GATT, Secure Connections.</li>
+<li>Other Wireless: Wi-Fi, LoRaWAN, OpenThread, 802.15.4.</li>
 </ul>
-
-
-<h3 class="relative group"><strong>Components:</strong> 
-    <div id="components" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li><strong>Kernel:</strong> Core component providing essential services.</li>
-<li><strong>OS Services:</strong> Includes services like cryptography, debugging, device management, file systems, logging, power management, shell, storage, and more.</li>
-<li><strong>Connectivity:</strong> Provides support for various communication protocols.</li>
-<li><strong>Hardware Support:</strong> Extensive support for different boards and architectures.</li>
-</ul>
-
-
-<h3 class="relative group"><strong>Supported Platforms:</strong> 
-    <div id="supported-platforms" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#supported-platforms" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li><strong>ARC Boards:</strong> DesignWare ARC series.</li>
-<li><strong>ARM Boards:</strong> 96Boards series, Adafruit series, NXP series, and more.</li>
-<li><strong>ARM64 Boards:</strong> Broadcom, ARM BASE, Intel Agilex, NXP i.MX series, and more.</li>
-<li><strong>MIPS Boards:</strong> MIPS Malta Emulation.</li>
-<li><strong>Nios II Boards:</strong> Altera MAX10, Altera Nios-II Emulation.</li>
-<li><strong>POSIX/Native Boards:</strong> POSIX architecture, Bsim boards, Native POSIX execution.</li>
-<li><strong>RISC-V Boards:</strong> Andes, ESP32-C3, GigaDevice, SiFive, and more.</li>
-<li><strong>SPARC Boards:</strong> Generic LEON3, GR716-MINI Development Board.</li>
-<li><strong>x86 Boards:</strong> Alder Lake N, Elkhart Lake CRB, Intel Integrated Sensor Hub, and more.</li>
-<li><strong>Xtensa Boards:</strong> ESP32 series, Intel ADSP series, and more.</li>
+</li>
+<li><strong>Security:</strong> Designed with security focus, includes features like MPU support, secure boot capabilities (via MCUboot), TLS/DTLS integration (mbedTLS), and a dedicated security subcommittee.</li>
+<li><strong>Storage:</strong> Virtual Filesystem (VFS) support with backends like LittleFS, FatFs, NVS (Non-Volatile Storage), FCB (Flash Circular Buffer).</li>
+<li><strong>Development Tools:</strong> CMake build system, <code>west</code> meta-tool, extensive sample applications, native simulation (<code>native_sim</code>), debugging support (GDB, OpenOCD, J-Link).</li>
+<li><strong>Logging &amp; Diagnostics:</strong> Powerful logging framework with multiple backends, shell interface with auto-completion, runtime analysis hooks.</li>
+<li><strong>SMP Support:</strong> Symmetric Multi-Processing support on multi-core devices.</li>
+<li><strong>Permissive Licensing:</strong> Apache 2.0 license for the core OS.</li>
 </ul>
 
 

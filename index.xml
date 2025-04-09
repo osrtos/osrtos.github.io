@@ -394,7 +394,7 @@
       <pubDate>Tue, 12 Feb 2019 06:00:17 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/phoenix-rtos/</guid>
-      <description>&lt;p&gt;Phoenix-RTOS is an open-source, microkernel-based, realtime operating system for resource constrained devices.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Phoenix-RTOS is a scalable, open-source, real-time operating system designed for IoT devices and other resource-constrained applications. It features a custom microkernel architecture, separating core functionalities like memory management, scheduling, and IPC from higher-level services such as filesystems, networking stacks, and device drivers, which run as server processes in user space. This design emphasizes modularity and scalability, allowing deployment on microcontrollers up to multi-processor systems. It supports multiple hardware architectures including ARM Cortex-M/A, x86, RISC-V, and SPARC (LEON).&lt;/p&gt;</description>
       
     </item>
     
@@ -534,7 +534,7 @@
       <pubDate>Wed, 24 Jan 2018 01:43:59 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/mongoose-os/</guid>
-      <description>&lt;p&gt;Mongoose OS - an open source Operating System for Internet of Things. Supported microcontrollers: ESP32, ESP8266, CC3220, CC3200, STM32F4. Amazon AWS IoT &amp;amp; Google IoT Core integrated. Code in C or JavaScript.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Mongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C/C++ and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the &lt;code&gt;mos&lt;/code&gt; command-line tool for simplified building, flashing, and device management.&lt;/p&gt;</description>
       
     </item>
     
@@ -614,7 +614,7 @@
       <pubDate>Sat, 18 Mar 2017 01:28:16 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/embox/</guid>
-      <description>&lt;p&gt;Embox is a configurable operating system kernel designed for resource constrained and embedded systems.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Embox is a highly configurable Real-Time Operating System (RTOS) designed for resource-constrained embedded systems. Its core philosophy is enabling the use of familiar Linux software and development paradigms &lt;em&gt;without&lt;/em&gt; needing a full Linux kernel. Embox achieves this through strong POSIX compliance and a modular architecture (Mybuild system) allowing developers to select only necessary components. It supports a wide range of architectures and platforms, aiming to bring desktop-like capabilities, including networking, filesystems, GUIs (Qt, LVGL), and various scripting languages, to microcontroller environments.&lt;/p&gt;</description>
       
     </item>
     
@@ -814,7 +814,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/riot/</guid>
-      <description>&lt;p&gt;RIOT is a real-time multi-threading operating system that supports a range of devices that are typically found in the Internet of Things (IoT): 8-bit, 16-bit and 32-bit microcontrollers.&lt;/p&gt;</description>
+      <description>&lt;p&gt;RIOT, &amp;ldquo;The friendly Operating System for IoT,&amp;rdquo; is an open-source RTOS designed for resource-constrained embedded devices, particularly in the Internet of Things space. It supports a wide range of 8-bit, 16-bit, and 32-bit microcontrollers. Key design goals include energy efficiency, real-time capabilities, a small memory footprint, modularity, and a hardware-independent API with partial POSIX compliance. Developed by a vendor-independent open-source community, RIOT uses the LGPLv2.1 license, allowing integration with closed-source components. Its extensive feature set, especially in networking, makes it a strong choice for connected embedded systems.&lt;/p&gt;</description>
       
     </item>
     
@@ -884,7 +884,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/zephyr/</guid>
-      <description>&lt;p&gt;The Zephyr™ Project is a scalable, real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind. This Linux Foundation hosted project embraces open source development values and governance on its mission to unite leaders from across the industry to produce a best-in-breed solution.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Zephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M/R/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.&lt;/p&gt;</description>
       
     </item>
     
