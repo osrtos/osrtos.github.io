@@ -287,7 +287,7 @@
       <pubDate>Sun, 11 Feb 2018 06:48:49 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/tizenrt/</guid>
-      <description>&lt;p&gt;TizenRT is a lightweight RTOS (Real-Time Operating System) designed to support low-end IoT devices. It aims to extend the Tizen platform device coverage to devices like home appliances without display and wearable bands with a small LCD. These devices are typically equipped with Cortex-M/R processors with MPU, less than 2 MB RAM, and less than 16 MB Flash.&lt;/p&gt;</description>
+      <description>&lt;p&gt;TizenRT is a lightweight Real-Time Operating System (RTOS) developed by Samsung, designed to extend the Tizen platform to low-end, resource-constrained IoT devices. Based initially on the NuttX kernel, TizenRT targets microcontrollers like ARM Cortex-M/R with limited memory (less than 2MB RAM) and flash storage (less than 16MB). It provides a familiar Linux-like development environment with POSIX API compatibility, BSD sockets, and a shell interface (TASH). TizenRT includes integrated networking stacks (IPv4/IPv6), file systems, a lightweight database (AraStorage), and support for various IoT protocols, aiming to simplify development for connected devices.&lt;/p&gt;</description>
       
     </item>
     
