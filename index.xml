@@ -107,7 +107,7 @@
       <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/hubris/</guid>
-      <description>&lt;p&gt;Hubris is an open-source operating system designed for deeply-embedded computer systems. Developed by Oxide Computer Company, it&amp;rsquo;s an all-Rust system that focuses on security, robustness, and efficiency for embedded systems.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hubris is a microcontroller operating system designed for deeply embedded systems prioritizing reliability and robustness. Developed in Rust, it leverages memory safety features and strict memory isolation using the Memory Protection Unit (MPU) found on target MCUs like ARM Cortex-M. Tasks run in unprivileged mode and communicate via synchronous IPC. Hubris employs a static task model, where tasks are defined at compile time, enhancing predictability and simplifying resource management. It features a unique supervisor task responsible for managing other tasks and handling faults. Development utilizes a custom &lt;code&gt;xtask&lt;/code&gt;-based build system and integrates tightly with the Humility debugger.&lt;/p&gt;</description>
       
     </item>
     
@@ -218,7 +218,7 @@
       <pubDate>Wed, 27 May 2020 09:25:57 +0800</pubDate>
       
       <guid>https://www.osrtos.com/rtos/threadx-rtos/</guid>
-      <description>&lt;p&gt;This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Eclipse ThreadX is an advanced, widely deployed Real-Time Operating System (RTOS) designed for deeply embedded, real-time, and IoT applications, especially on resource-constrained devices. Formerly known as Azure RTOS, ThreadX offers reliable, ultra-fast performance with a minimal footprint (as low as 2KB ROM, 1KB RAM). It features a picokernel architecture, preemption-threshold scheduling, event chaining, comprehensive IPC mechanisms, and a rich ecosystem including networking, file system, USB, and GUI components. ThreadX comes with extensive safety and security certifications (e.g., TÜV IEC 61508 SIL4, UL 60730, EAL4+, FIPS 140-2).&lt;/p&gt;</description>
       
     </item>
     
@@ -404,7 +404,7 @@
       <pubDate>Tue, 12 Feb 2019 05:45:10 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/tock/</guid>
-      <description>&lt;p&gt;Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on ARM Cortex-M and RISC-V microcontrollers. Its core design prioritizes safety and reliability, utilizing Rust&amp;rsquo;s compile-time guarantees to protect the kernel and drivers, and hardware Memory Protection Units (MPUs) to isolate applications. Tock introduces a unique architecture dividing components into kernel-space &amp;ldquo;capsules&amp;rdquo; (Rust-based, cooperatively scheduled, minimal overhead) and user-space &amp;ldquo;processes&amp;rdquo; (MPU-isolated, preemptively scheduled, can be written in any language and loaded dynamically). This approach enables robust, secure applications on resource-constrained devices like wearables and IoT nodes.&lt;/p&gt;</description>
       
     </item>
     
@@ -754,7 +754,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/apache-mynewt/</guid>
-      <description>&lt;p&gt;Apache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em&lt;/p&gt;</description>
+      <description>&lt;p&gt;Apache Mynewt is a community-driven, open-source RTOS designed for highly constrained embedded systems where power and cost are primary concerns. It emphasizes modularity and portability, enabling developers to include only the necessary components for their application. Mynewt features a preemptive real-time kernel, the high-performance Apache NimBLE Bluetooth 5 stack, secure bootloader, and flash filesystems (NFFS, FatFS). Its companion &lt;code&gt;Newt&lt;/code&gt; build and package management tool simplifies development, configuration, and deployment across diverse hardware, facilitating fine-grained control over the final firmware image.&lt;/p&gt;</description>
       
     </item>
     
@@ -984,7 +984,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/freertos/</guid>
-      <description>&lt;p&gt;FreeRTOS is a market leading RTOS from Amazon Web Services that supports more than 35 architectures. It is distributed under the MIT license.&lt;/p&gt;</description>
+      <description>&lt;p&gt;FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.&lt;/p&gt;</description>
       
     </item>
     
@@ -1044,7 +1044,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/nuttx/</guid>
-      <description>&lt;p&gt;NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Apache NuttX is a real-time operating system (RTOS) emphasizing standards compliance (POSIX, ANSI) and a small footprint. Highly scalable, it operates on microcontrollers from 8-bit to 64-bit architectures. NuttX provides a rich, multi-threaded development environment suitable for deeply embedded systems. Its architecture includes a preemptible core, extensive networking capabilities (including IPv6 and 6LoWPAN), various filesystems, USB host/device support, a graphical subsystem, and options for protected builds using MPU/MMU. Licensed under Apache 2.0, it fosters an open development environment supported by GNU toolchains and simulation capabilities.&lt;/p&gt;</description>
       
     </item>
     
@@ -1054,7 +1054,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/rt-thread/</guid>
-      <description>&lt;p&gt;RT-Thread is an open source real-time operating system for embedded devices from China. RT-Thread RTOS is a scalable real-time operating system: a tiny kernel for ARM Cortex-M0, Cortex-M3/4, or a full feature system in ARM Cortex-A8, ARM Cortex-A9 DualCor&lt;/p&gt;</description>
+      <description>&lt;p&gt;RT-Thread is an open-source, community-driven embedded real-time operating system (RTOS) established in 2006, primarily targeting IoT and diverse embedded applications. It offers both a standard version for feature-rich devices and a lightweight Nano version requiring minimal resources (3KB Flash, 1.2KB RAM). RT-Thread features a modular architecture with a real-time kernel, extensive middleware components (like filesystems, networking, GUI), and a rich package ecosystem. It emphasizes ease of porting across various MCU architectures (ARM, RISC-V, MIPS, etc.) and provides development tools like RT-Thread Studio and Env for configuration and building.&lt;/p&gt;</description>
       
     </item>
     

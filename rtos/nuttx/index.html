@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/nuttx/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="NuttX">
-  <meta property="og:description" content="NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards.">
+  <meta property="og:description" content="Apache NuttX is a real-time operating system (RTOS) emphasizing standards compliance (POSIX, ANSI) and a small footprint. Highly scalable, it operates on microcontrollers from 8-bit to 64-bit architectures. NuttX provides a rich, multi-threaded development environment suitable for deeply embedded systems. Its architecture includes a preemptible core, extensive networking capabilities (including IPv6 and 6LoWPAN), various filesystems, USB host/device support, a graphical subsystem, and options for protected builds using MPU/MMU. Licensed under Apache 2.0, it fosters an open development environment supported by GNU toolchains and simulation capabilities.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="NuttX">
-  <meta name="twitter:description" content="NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards.">
+  <meta name="twitter:description" content="Apache NuttX is a real-time operating system (RTOS) emphasizing standards compliance (POSIX, ANSI) and a small footprint. Highly scalable, it operates on microcontrollers from 8-bit to 64-bit architectures. NuttX provides a rich, multi-threaded development environment suitable for deeply embedded systems. Its architecture includes a preemptible core, extensive networking capabilities (including IPv6 and 6LoWPAN), various filesystems, USB host/device support, a graphical subsystem, and options for protected builds using MPU/MMU. Licensed under Apache 2.0, it fosters an open development environment supported by GNU toolchains and simulation capabilities.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "NuttX",
     "headline": "NuttX",
     
-    "abstract": "\u003cp\u003eNuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eApache NuttX is a real-time operating system (RTOS) emphasizing standards compliance (POSIX, ANSI) and a small footprint. Highly scalable, it operates on microcontrollers from 8-bit to 64-bit architectures. NuttX provides a rich, multi-threaded development environment suitable for deeply embedded systems. Its architecture includes a preemptible core, extensive networking capabilities (including IPv6 and 6LoWPAN), various filesystems, USB host\/device support, a graphical subsystem, and options for protected builds using MPU\/MMU. Licensed under Apache 2.0, it fosters an open development environment supported by GNU toolchains and simulation capabilities.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/nuttx\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "691"
+    "wordCount": "1466"
   }]
   </script>
 
@@ -466,13 +466,13 @@
         
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: nuttx-12.9.0-RC0</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: nuttx-12.9.0-RC1</h4>
           </div>
           
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-10</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-13</h4>
           </div>
           
           
@@ -481,7 +481,7 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache License 2.0</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
               
             </ul>
           </div>
@@ -492,25 +492,39 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">aarch32</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">AVR</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">aarch64</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">8051</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">PIC</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-r</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
                 <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MIPS</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86_64</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Xtensa</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mips</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Freescale HCS12</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">avr</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Zilog</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">hcs12</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">sparc</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">superh</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">z80</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">xtensa</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">qemu</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
               
             </div>
           </div>
@@ -518,6 +532,118 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -554,31 +680,143 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6LoWPAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Command Line Interface</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBHost</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBDevice</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">GUI</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ble</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">wifi</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">lorawan</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6lowpan</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">coap</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ftp-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ftp-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">snmp-agent</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dns-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-host</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-device</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">can</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">modbus</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">at-command</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ota-update</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dynamic-loading</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">smp-support</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">gui</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
                   
                 
               </div>
@@ -599,10 +837,23 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards.</p>
+          <p>Apache NuttX is a real-time operating system (RTOS) emphasizing standards compliance (POSIX, ANSI) and a small footprint. Highly scalable, it operates on microcontrollers from 8-bit to 64-bit architectures. NuttX provides a rich, multi-threaded development environment suitable for deeply embedded systems. Its architecture includes a preemptible core, extensive networking capabilities (including IPv6 and 6LoWPAN), various filesystems, USB host/device support, a graphical subsystem, and options for protected builds using MPU/MMU. Licensed under Apache 2.0, it fosters an open development environment supported by GNU toolchains and simulation capabilities.</p>
+<p>Apache NuttX is a highly flexible and scalable Real-Time Operating System (RTOS) designed for embedded systems ranging from tiny 8-bit microcontrollers to powerful 64-bit platforms. Its core design philosophy centers around strict adherence to standards, primarily POSIX and ANSI, making it familiar to developers accustomed to Unix-like environments such as Linux. This standards compliance facilitates easier porting of existing software to NuttX.</p>
+<p>NuttX distinguishes itself with its scalability. Through extensive configuration options (using Kconfig) and a modular architecture with many small source files linked from static libraries, developers can tailor the RTOS footprint precisely to their needs. This allows NuttX to run efficiently on resource-constrained devices while still offering a rich feature set for more complex applications.</p>
+<p>Key architectural features include a fully preemptible kernel with multiple scheduling policies (FIFO, Round-Robin, Sporadic), support for priority inheritance to mitigate priority inversion issues, and optional tickless operation for power efficiency. NuttX supports different memory configurations: a simple flat build, a protected build leveraging an MPU for memory isolation between kernel and user space, and a full kernel build using an MMU for virtual memory support, enabling process-like environments.</p>
+<p>The RTOS boasts a comprehensive set of subsystems:</p>
+<ul>
+<li><strong>Networking:</strong> A robust network stack supporting IPv4, IPv6, TCP/IP, UDP, ICMP, and various protocols like HTTP, FTP, MQTT, CoAP, and network services like DHCP and DNS. It includes support for different link layers including Ethernet, WiFi, Bluetooth LE, and 6LoWPAN over IEEE 802.15.4 radios.</li>
+<li><strong>File System:</strong> A Virtual File System (VFS) supporting numerous underlying filesystems such as FAT, ROMFS, CROMFS, NFS client, and several Flash file systems (LittleFS, SPIFFS, NXFFS, SmartFS). It also supports TMPFS, ProcFS, and UnionFS.</li>
+<li><strong>Device Drivers:</strong> A well-defined driver model for character, block, and specialized drivers, covering peripherals like USB (Host &amp; Device), CAN (SocketCAN), I2C, SPI, Audio, Display, Sensors, MTD (NAND, SPI Flash), Power Management and more.</li>
+<li><strong>Dynamic Loading:</strong> Support for loading and running applications dynamically using ELF or the custom NXFLAT binary format.</li>
+<li><strong>Graphics:</strong> The NX Graphics subsystem provides a lightweight windowing system (NxWM), widget toolkit (NxWidgets), font rendering, and support for various framebuffer and LCD/OLED display types.</li>
+<li><strong>Shell:</strong> The NuttShell (NSH) offers a powerful command-line interface resembling Bash for system interaction and scripting.</li>
+</ul>
+<p>NuttX also includes support for Symmetric Multiprocessing (SMP) on multi-core processors, a simulation environment for host-based development and testing (Linux, Cygwin, macOS, Renode), experimental support for modern languages like Rust, OpenAMP for heterogeneous systems, and integrated cryptography support via libraries like Mbed TLS and wolfSSL. Its permissive Apache 2.0 license encourages broad adoption and contribution within the open-source community.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -611,36 +862,43 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Standards Compliant.</li>
-<li>Core Task Management.</li>
-<li>Modular, micro-kernel.</li>
-<li>Fully pre-emptible.</li>
-<li>Naturally scalable.</li>
-<li>Highly configurable.</li>
-<li>Easily extensible to new processor architectures, SoC architecture, or board architectures. See Porting Guide.</li>
-<li>FIFO and round-robin scheduling.</li>
-<li>Realtime, deterministic, with support for priority inheritance.</li>
-<li>POSIX/ANSI-like task controls, named message queues, counting semaphores, clocks/timers, signals, pthreads, environment variables, filesystem.</li>
-<li>VxWorks-like task management and watchdog timers.</li>
-<li>BSD socket interface.</li>
-<li>Extensions to manage pre-emption.</li>
-<li>Optional tasks with address environments (Processes).</li>
-<li>Inheritable</li>
+<li><strong>Standards Compliant:</strong> High conformance to POSIX, ANSI, and other common standards (VxWorks APIs, BSD Sockets).</li>
+<li><strong>Scalable:</strong> Suitable for 8-bit to 64-bit MCUs and MPUs, configurable footprint.</li>
+<li><strong>Real-Time Kernel:</strong> Fully preemptible, deterministic scheduling (FIFO, RR, Sporadic), optional tickless mode for low power.</li>
+<li><strong>Memory Configurations:</strong> Flat Build, Protected Build (MPU), Kernel Build (MMU).</li>
+<li><strong>Memory Management:</strong> Standard heap allocators (malloc, free), Granule allocator (for aligned memory like DMA), Page allocator (for MMU), Shared Memory support.</li>
+<li><strong>Tasking Model:</strong> Tasks, Pthreads, Kernel Threads, optional Processes with address environments (similar to Linux processes).</li>
+<li><strong>Rich IPC:</strong> POSIX Semaphores (Counting, Binary), Mutexes (with Priority Inheritance), POSIX Message Queues, Signals, Pipes, FIFOs.</li>
+<li><strong>Virtual File System (VFS):</strong> Supports FAT12/16/32, ROMFS, CROMFS, TMPFS, NFS Client, ProcFS, UnionFS, UserFS, and Flash Filesystems (NXFFS, LittleFS, SPIFFS, SmartFS).</li>
+<li><strong>Networking Stack:</strong> Built-in IPv4/IPv6 stack, TCP/IP, UDP, ICMP, ICMPv6, IGMPv2, MLDv1/v2, Sockets (TCP, UDP, Raw, Packet, Local Unix Domain, Netlink), 6LoWPAN, SLIP, PPP, IP Forwarding, NAT, IP Filtering.</li>
+<li><strong>Network Services:</strong> DHCP Client/Server, DNS Client, FTP Client/Server, HTTP Client/Server (THTTPD with CGI), Telnet Client/Server, NTP Client, MQTT Client, CoAP, SNMP Agent.</li>
+<li><strong>Wireless Support:</strong> IEEE 802.11 (WiFi FullMac), Bluetooth LE, IEEE 802.15.4 (Generic Packet Radio, 6LoWPAN), LoRaWAN (via apps).</li>
+<li><strong>Device Drivers:</strong> Extensive framework including USB Host/Device, Serial, I2C, SPI, CAN (SocketCAN), ADC, DAC, PWM, Quadrature Encoder, Audio Subsystem, Graphics (Framebuffer, LCD/OLED), Sensors, MTD (NAND, SPI FLASH/FRAM), Power Management Framework, Crypto API.</li>
+<li><strong>USB Stack:</strong> Host (Mass Storage, CDC/ACM Serial, HID Keyboard/Mouse, Hub support) and Device (Mass Storage, CDC/ACM Serial, PL2303 Emulation, RNDIS &amp; CDC/ECM Networking, DFU, Composite Device support). Built-in USB trace functionality.</li>
+<li><strong>Dynamic Loading:</strong> Supports loading applications from filesystems via standard ELF and custom NXFLAT (XIP-capable) binary formats.</li>
+<li><strong>Shell:</strong> NuttShell (NSH) provides a feature-rich, Bash-like command-line interface.</li>
+<li><strong>Graphics:</strong> NX Graphics library, NXWM tiny Windowing System, NxWidgets C++ Widget library, Font management subsystem, VNC Server support.</li>
+<li><strong>Security:</strong> Protected build mode via MPU restricts user-space access to kernel resources through a syscall interface.</li>
+<li><strong>Simulation:</strong> Runs as a process on Linux, macOS, Cygwin for development and testing; supports Renode simulator integration.</li>
+<li><strong>SMP Support:</strong> Supports Symmetric Multiprocessing on multi-core systems (pthreads, scheduling, spinlocks).</li>
+<li><strong>OpenAMP Support:</strong> Facilitates communication in heterogeneous multi-core systems (AMP).</li>
+<li><strong>Language Support:</strong> Primarily C/C++, includes standard C library, optional uClibc++, and experimental Rust integration (including std support).</li>
+<li><strong>Licensing:</strong> Permissive Apache 2.0 License for the core OS.</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
 <li><a href="http://pixhawk.org/choice" target="_blank">PX4</a>. PX4 is an independent, open-source, open-hardware project aiming at providing a high-end autopilot to the academic, hobby and industrial communities (BSD licensed) at low costs and high availability.</li>
 <li><a href="http://fob.po8.org/node/613" target="_blank">HOWTO: Installing NuttX on the STM32F4 Discovery board (using Debian Linux)</a>. Installed the NuttX RTOS on a new STM32F4 Discovery board.</li>

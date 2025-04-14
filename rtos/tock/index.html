@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/tock/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Tock">
-  <meta property="og:description" content="Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.">
+  <meta property="og:description" content="Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on ARM Cortex-M and RISC-V microcontrollers. Its core design prioritizes safety and reliability, utilizing Rust’s compile-time guarantees to protect the kernel and drivers, and hardware Memory Protection Units (MPUs) to isolate applications. Tock introduces a unique architecture dividing components into kernel-space “capsules” (Rust-based, cooperatively scheduled, minimal overhead) and user-space “processes” (MPU-isolated, preemptively scheduled, can be written in any language and loaded dynamically). This approach enables robust, secure applications on resource-constrained devices like wearables and IoT nodes.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tock">
-  <meta name="twitter:description" content="Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.">
+  <meta name="twitter:description" content="Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on ARM Cortex-M and RISC-V microcontrollers. Its core design prioritizes safety and reliability, utilizing Rust’s compile-time guarantees to protect the kernel and drivers, and hardware Memory Protection Units (MPUs) to isolate applications. Tock introduces a unique architecture dividing components into kernel-space “capsules” (Rust-based, cooperatively scheduled, minimal overhead) and user-space “processes” (MPU-isolated, preemptively scheduled, can be written in any language and loaded dynamically). This approach enables robust, secure applications on resource-constrained devices like wearables and IoT nodes.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "Tock",
     "headline": "Tock",
     
-    "abstract": "\u003cp\u003eTock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eTock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on ARM Cortex-M and RISC-V microcontrollers. Its core design prioritizes safety and reliability, utilizing Rust\u0026rsquo;s compile-time guarantees to protect the kernel and drivers, and hardware Memory Protection Units (MPUs) to isolate applications. Tock introduces a unique architecture dividing components into kernel-space \u0026ldquo;capsules\u0026rdquo; (Rust-based, cooperatively scheduled, minimal overhead) and user-space \u0026ldquo;processes\u0026rdquo; (MPU-isolated, preemptively scheduled, can be written in any language and loaded dynamically). This approach enables robust, secure applications on resource-constrained devices like wearables and IoT nodes.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/tock\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "368"
+    "wordCount": "810"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-09</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-10</h4>
           </div>
           
           
@@ -481,7 +481,9 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache License 2.0</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
+              
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">MIT</li>
               
             </ul>
           </div>
@@ -492,9 +494,9 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
               
             </div>
           </div>
@@ -504,8 +506,77 @@
             
             
               
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
             
+            
+            <div class="mt-2">
+              <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Components:</h4>
+              <div class="flex flex-wrap gap-1 mt-1">
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dynamic-loading</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+              </div>
+            </div>
             
           
           
@@ -522,10 +593,76 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>Tock is a secure embedded operating system designed for Cortex-M and RISC-V microcontrollers. It focuses on providing isolation between components, ensuring safety and security. The Tock kernel and its extensions, known as capsules, are written in Rust, a systems programming language known for its memory safety and type safety features. Tock supports multiple, independent untrusted processes, which can be written in any language. The system is designed to be preemptive, using a round-robin scheduling policy, and offers a microkernel architecture.</p>
+          <p>Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on ARM Cortex-M and RISC-V microcontrollers. Its core design prioritizes safety and reliability, utilizing Rust&rsquo;s compile-time guarantees to protect the kernel and drivers, and hardware Memory Protection Units (MPUs) to isolate applications. Tock introduces a unique architecture dividing components into kernel-space &ldquo;capsules&rdquo; (Rust-based, cooperatively scheduled, minimal overhead) and user-space &ldquo;processes&rdquo; (MPU-isolated, preemptively scheduled, can be written in any language and loaded dynamically). This approach enables robust, secure applications on resource-constrained devices like wearables and IoT nodes.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Architecture and Core Concepts 
+    <div id="architecture-and-core-concepts" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#architecture-and-core-concepts" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Tock&rsquo;s architecture aims to provide strong isolation guarantees suitable for embedded systems where resources are scarce, and reliability is paramount. It achieves this through a combination of language features and hardware protection:</p>
+<ol>
+<li>
+<p><strong>Rust-Based Kernel and Capsules:</strong> The core kernel, device drivers, and virtualization layers (&ldquo;capsules&rdquo;) are written in Rust. Rust&rsquo;s ownership and borrowing system provides compile-time memory safety and type safety, preventing common errors like null pointer dereferences, buffer overflows, and data races within the kernel space. This allows fine-grained isolation between kernel components with virtually no runtime overhead. Capsules run in privileged mode but are cooperatively scheduled within a single-threaded event loop. While safe in terms of memory, a misbehaving capsule could potentially block the system.</p>
+</li>
+<li>
+<p><strong>MPU-Protected Processes:</strong> Applications run as user-space &ldquo;processes&rdquo;. Each process is isolated from the kernel and other processes using the hardware Memory Protection Unit (MPU). This allows processes to be written in any language (commonly C/C++) and loaded dynamically at runtime without recompiling the kernel. Processes are preemptively scheduled, ensuring that one process cannot monopolize the CPU indefinitely.</p>
+</li>
+<li>
+<p><strong>Grants Mechanism:</strong> To allow safe sharing of memory between untrusted user-space processes and trusted kernel capsules (e.g., for driver buffers or asynchronous operation context), Tock uses a &ldquo;grant&rdquo; mechanism. Processes allocate a specific memory region that the kernel can manage on their behalf. Capsules can safely allocate typed data within this grant region without violating memory safety, even if the process crashes or terminates.</p>
+</li>
+<li>
+<p><strong>Asynchronous Event-Driven Model:</strong> Tock employs an asynchronous, event-driven model based on callbacks (upcalls). Processes register callbacks for driver events (e.g., timer expiry, data reception) using the <code>subscribe</code> system call and then yield execution using the <code>yield</code> system call. The kernel wakes the process only when a subscribed event occurs, enabling efficient low-power operation.</p>
+</li>
+</ol>
+
+
+<h2 class="relative group">System Calls 
+    <div id="system-calls" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#system-calls" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Processes interact with the kernel via a minimal set of system calls:</p>
+<ul>
+<li><code>subscribe</code>: Register a callback function for a driver event.</li>
+<li><code>command</code>: Issue a synchronous command to a driver.</li>
+<li><code>allow</code>: Share a read-only or read-write buffer from process memory with a driver.</li>
+<li><code>memop</code>: Perform operations related to process memory management (e.g., requesting more memory).</li>
+<li><code>yield</code>: Relinquish control to the kernel, waiting for the next pending callback.</li>
+</ul>
+
+
+<h2 class="relative group">Target Applications 
+    <div id="target-applications" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#target-applications" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Tock is well-suited for applications requiring high security and reliability on low-power microcontrollers, such as:</p>
+<ul>
+<li>Secure IoT devices</li>
+<li>Wearable technology</li>
+<li>Wireless sensor nodes</li>
+<li>Systems requiring secure third-party application support</li>
+</ul>
+
+
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -534,38 +671,45 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>
-<p>Language-Based Isolation: Tock uses Rust for the kernel and capsules, ensuring compile-time memory safety and type safety. This prevents many common vulnerabilities like buffer overflows.</p>
+<li><strong>Memory Safety:</strong> Kernel and drivers written in Rust for compile-time memory safety.</li>
+<li><strong>Hardware Isolation:</strong> Uses Memory Protection Units (MPU) to isolate processes from the kernel and each other.</li>
+<li><strong>Dual Component Model:</strong>
+<ul>
+<li><strong>Capsules:</strong> Kernel-space, Rust-based, type-safe, cooperative scheduling, fine-grained isolation.</li>
+<li><strong>Processes:</strong> User-space, MPU-isolated, preemptive scheduling, language-agnostic, dynamic loading.</li>
+</ul>
 </li>
-<li>
-<p>Hardware-Based Protection: For user-space processes, Tock employs hardware protection mechanisms like the Memory Protection Unit (MPU) to ensure isolation.</p>
-</li>
-<li>
-<p>Capsules: These are Rust-based kernel extensions that provide system calls and other functionalities. They are memory-safe and cannot use unsafe Rust features.</p>
-</li>
-<li>
-<p>Processes: Independent applications that run with reduced privileges. They can be written in any language and are isolated from the kernel using the MPU.</p>
-</li>
-<li>
-<p>Cooperative Scheduling in Kernel: Tock&rsquo;s kernel uses a cooperative scheduling model, ensuring efficient resource utilization.</p>
-</li>
-<li>
-<p>Preemptive Scheduling for Processes: Processes are scheduled preemptively, ensuring system responsiveness.</p>
-</li>
-<li>
-<p>Memory Grants: A mechanism that allows capsules to dynamically allocate memory from a process, ensuring safety and efficient memory utilization.</p>
-</li>
-<li>
-<p>System Calls: Tock provides four major system calls - command, subscribe, allow, and yield, facilitating interaction between processes and the kernel.</p>
-</li>
-<li>
-<p>Extensible Architecture: Tock is designed to be modular, allowing for the addition of new capsules and processes as needed.</p>
-</li>
-<li>
-<p>Support for Multiple Platforms: Tock supports various hardware platforms and can be configured to use different scheduling algorithms.</p>
-</li>
+<li><strong>Concurrency:</strong> Supports multiple concurrent applications (processes) and kernel tasks (capsules).</li>
+<li><strong>Grant Mechanism:</strong> Safe dynamic memory allocation for kernel capsules from process memory.</li>
+<li><strong>Asynchronous Operations:</strong> Callback-based system calls (<code>subscribe</code>/<code>yield</code>) for efficient, event-driven execution.</li>
+<li><strong>Resource Constrained:</strong> Designed specifically for MCUs like ARM Cortex-M and RISC-V with limited memory.</li>
+<li><strong>Modularity:</strong> Clear separation between chip support, board support, kernel core, and capsules.</li>
+<li><strong>Minimal System Call Interface:</strong> Reduces attack surface and complexity.</li>
+</ul>
+
+
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><strong>Scheduler:</strong> Manages both cooperative scheduling for capsules and preemptive scheduling for processes.</li>
+<li><strong>Task Management:</strong> Handles creation, scheduling, and lifecycle of processes and capsules.</li>
+<li><strong>Memory Management:</strong> Enforces MPU regions for processes, manages kernel memory, and implements the Grant mechanism.</li>
+<li><strong>Inter-task Communication:</strong> Primarily via system calls (<code>command</code>, <code>subscribe</code>, <code>allow</code>) and the Grant mechanism. Kernel includes an IPC service.</li>
+<li><strong>Timer Management:</strong> Provides virtualized timers and alarms accessible by processes and capsules.</li>
+<li><strong>Hardware Abstraction Layer (HIL):</strong> Defines traits for abstracting hardware peripherals (GPIO, UART, SPI, Timers, etc.).</li>
+<li><strong>Dynamic Loading:</strong> Supports loading new processes at runtime without kernel modification.</li>
+<li><strong>Logging:</strong> Provides debugging macros (<code>debug!</code>) for kernel-level logging.</li>
+<li><strong>Storage Management:</strong> Mechanisms for managing access permissions to non-volatile storage areas.</li>
 </ul>
 
 

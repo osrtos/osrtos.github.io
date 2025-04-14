@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/hubris/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Hubris">
-  <meta property="og:description" content="Hubris is an open-source operating system designed for deeply-embedded computer systems. Developed by Oxide Computer Company, it’s an all-Rust system that focuses on security, robustness, and efficiency for embedded systems.">
+  <meta property="og:description" content="Hubris is a microcontroller operating system designed for deeply embedded systems prioritizing reliability and robustness. Developed in Rust, it leverages memory safety features and strict memory isolation using the Memory Protection Unit (MPU) found on target MCUs like ARM Cortex-M. Tasks run in unprivileged mode and communicate via synchronous IPC. Hubris employs a static task model, where tasks are defined at compile time, enhancing predictability and simplifying resource management. It features a unique supervisor task responsible for managing other tasks and handling faults. Development utilizes a custom xtask-based build system and integrates tightly with the Humility debugger.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Hubris">
-  <meta name="twitter:description" content="Hubris is an open-source operating system designed for deeply-embedded computer systems. Developed by Oxide Computer Company, it’s an all-Rust system that focuses on security, robustness, and efficiency for embedded systems.">
+  <meta name="twitter:description" content="Hubris is a microcontroller operating system designed for deeply embedded systems prioritizing reliability and robustness. Developed in Rust, it leverages memory safety features and strict memory isolation using the Memory Protection Unit (MPU) found on target MCUs like ARM Cortex-M. Tasks run in unprivileged mode and communicate via synchronous IPC. Hubris employs a static task model, where tasks are defined at compile time, enhancing predictability and simplifying resource management. It features a unique supervisor task responsible for managing other tasks and handling faults. Development utilizes a custom xtask-based build system and integrates tightly with the Humility debugger.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "Hubris",
     "headline": "Hubris",
     
-    "abstract": "\u003cp\u003eHubris is an open-source operating system designed for deeply-embedded computer systems. Developed by Oxide Computer Company, it\u0026rsquo;s an all-Rust system that focuses on security, robustness, and efficiency for embedded systems.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eHubris is a microcontroller operating system designed for deeply embedded systems prioritizing reliability and robustness. Developed in Rust, it leverages memory safety features and strict memory isolation using the Memory Protection Unit (MPU) found on target MCUs like ARM Cortex-M. Tasks run in unprivileged mode and communicate via synchronous IPC. Hubris employs a static task model, where tasks are defined at compile time, enhancing predictability and simplifying resource management. It features a unique supervisor task responsible for managing other tasks and handling faults. Development utilizes a custom \u003ccode\u003extask\u003c\/code\u003e-based build system and integrates tightly with the Humility debugger.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/hubris\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "228"
+    "wordCount": "889"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-09</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-10</h4>
           </div>
           
           
@@ -481,7 +481,7 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">MPL-2.0 license</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">MPL-2.0</li>
               
             </ul>
           </div>
@@ -492,7 +492,7 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
             </div>
           </div>
@@ -502,8 +502,69 @@
             
             
               
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
             
+            
+            <div class="mt-2">
+              <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Components:</h4>
+              <div class="flex flex-wrap gap-1 mt-1">
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+              </div>
+            </div>
             
           
           
@@ -520,11 +581,53 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>Hubris is an open-source operating system designed for deeply-embedded computer systems. Developed by Oxide Computer Company, it&rsquo;s an all-Rust system that focuses on security, robustness, and efficiency for embedded systems.</p>
-<p>Hubris employs a microkernel-based architecture, allowing for safety and isolation. It also uses a strictly synchronous task model, making it easier to develop and understand. One of the unique features of Hubris is that it fully specifies the tasks for a particular application at build time, combining the kernel with the selected tasks to produce a single attestable image.</p>
+          <p>Hubris is a microcontroller operating system designed for deeply embedded systems prioritizing reliability and robustness. Developed in Rust, it leverages memory safety features and strict memory isolation using the Memory Protection Unit (MPU) found on target MCUs like ARM Cortex-M. Tasks run in unprivileged mode and communicate via synchronous IPC. Hubris employs a static task model, where tasks are defined at compile time, enhancing predictability and simplifying resource management. It features a unique supervisor task responsible for managing other tasks and handling faults. Development utilizes a custom <code>xtask</code>-based build system and integrates tightly with the Humility debugger.</p>
+<p>Hubris is an operating environment tailored for 32-bit microcontrollers (specifically ARM Cortex-M variants like STM32 and NXP LPC families) that demand high reliability. It is written primarily in safe Rust, aiming to minimize common bugs associated with memory management found in C/C++ based systems.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Architecture and Philosophy 
+    <div id="architecture-and-philosophy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#architecture-and-philosophy" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Hubris follows a microkernel-like design philosophy, keeping the core kernel minimal and running in privileged mode. Key functionalities like drivers and task management are implemented as separate tasks running in unprivileged mode.</p>
+<p><strong>Key Architectural Principles:</strong></p>
+<ul>
+<li><strong>Memory Isolation:</strong> Utilizes the hardware Memory Protection Unit (MPU) to enforce strict memory boundaries between tasks and between tasks and the kernel. It operates in a physically addressed space, simplifying debugging compared to virtual memory systems.</li>
+<li><strong>Static Task Model:</strong> Tasks are defined entirely at compile time within an <code>app.toml</code> configuration file. Hubris deliberately avoids dynamic task creation or destruction at runtime to ensure predictable resource usage and prevent fork-bomb scenarios.</li>
+<li><strong>Supervisor Task:</strong> A special task (typically Task 0) is responsible for system-level policies, including monitoring other tasks, handling faults, logging errors, and initiating task restarts (reinitialization). Applications can provide their own supervisor implementation.</li>
+<li><strong>IPC:</strong> Tasks communicate using a synchronous, message-based Inter-Process Communication (IPC) mechanism. The kernel facilitates message passing and manages task blocking states during communication. Leases allow tasks to safely grant temporary access to their memory regions during IPC.</li>
+<li><strong>Holistic Deployment:</strong> Applications are built and deployed as a single firmware image containing the kernel and all tasks. This ensures that the deployed system matches the tested configuration, avoiding issues arising from piecewise updates.</li>
+<li><strong>Fault Handling:</strong> Designed with the expectation that tasks <em>can</em> fail. Hardware faults, syscall misuse, or explicit panics trigger a fault state. The faulted task is stopped, and the supervisor is notified to handle the recovery process, often involving reinitializing the task.</li>
+<li><strong>Rust-Centric:</strong> Leverages Rust&rsquo;s safety features extensively. The kernel and user libraries aim to provide safe APIs, minimizing the need for <code>unsafe</code> code in application tasks.</li>
+</ul>
+
+
+<h2 class="relative group">Development and Tooling 
+    <div id="development-and-tooling" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#development-and-tooling" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Hubris development deviates from standard <code>cargo build</code> workflows due to its complex multi-task, multi-architecture nature.</p>
+<ul>
+<li><strong><code>xtask</code> Build System:</strong> Uses a custom Cargo extension (<code>cargo xtask</code>) for building application images (<code>dist</code>), individual tasks (<code>build</code>), running static analysis (<code>clippy</code>), and integrating with tools like <code>rust-analyzer</code> (<code>lsp</code>).</li>
+<li><strong>Humility Debugger:</strong> Tightly integrated with its companion debugger, Humility (<code>humility</code>), for flashing (<code>cargo xtask flash</code>), live debugging (<code>cargo xtask humility</code>), GDB integration (<code>cargo xtask gdb</code>), and running the integrated test suite (<code>cargo xtask test</code>).</li>
+<li><strong>Configuration:</strong> Application structure, task definitions, priorities, memory requirements, and peripheral access are defined in <code>app.toml</code> files.</li>
+<li><strong>Debugging:</strong> Supports debugging via Humility and standard GDB through OpenOCD or pyOCD. ITM tracing is used for test output and logging.</li>
+</ul>
+
+
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -533,17 +636,26 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li><strong>All-Rust System</strong>: Hubris is developed entirely in the Rust programming language, ensuring memory safety and concurrency.</li>
-<li><strong>Microkernel-based</strong>: This design allows for enhanced safety and isolation between tasks.</li>
-<li><strong>Strictly Synchronous Task Model</strong>: Simplifies development and comprehension.</li>
-<li><strong>Static Task Specification</strong>: Tasks for a specific application are fully specified at build time, eliminating dynamic resource exhaustion issues.</li>
-<li><strong>Memory Protection</strong>: Even in memory-safe languages like Rust, Hubris ensures memory protection, with tasks, the kernel, and drivers all in separate protection domains.</li>
+<li><strong>Memory Safety:</strong> Primarily written in Rust, leveraging its compile-time safety guarantees.</li>
+<li><strong>Memory Protection:</strong> Utilizes hardware MPU for spatial isolation between kernel and tasks, and among tasks.</li>
+<li><strong>Preemptive Priority-Based Scheduling:</strong> The highest-priority runnable task always executes. Tasks at the same priority run cooperatively until they block or yield.</li>
+<li><strong>Static Task Allocation:</strong> All tasks and their resources are defined at compile time, preventing dynamic allocation issues and enabling predictable resource usage.</li>
+<li><strong>Synchronous IPC:</strong> Tasks communicate via a blocking send/receive/reply mechanism with memory leasing.</li>
+<li><strong>Fault Isolation &amp; Supervision:</strong> Task failures (faults) are contained and handled by a dedicated supervisor task, enabling robust recovery strategies.</li>
+<li><strong>Task Reinitialization:</strong> Faulted or stopped tasks can be reset to their initial state by the supervisor, including incrementing a generation counter to invalidate stale IPC interactions.</li>
+<li><strong>Rust-Friendly Syscall Interface:</strong> Designed to be callable from safe Rust code.</li>
+<li><strong>Integrated Debugging:</strong> Works closely with the Humility debugger for flashing, monitoring, and GDB integration.</li>
+</ul>
+<ul>
+<li><strong>Integrated Testing Framework:</strong> Provides infrastructure (<code>cargo xtask test</code>) for running kernel and task tests on target hardware, reporting results via ITM.</li>
+<li><strong>Custom Build System (<code>xtask</code>):</strong> Manages the complexity of building multi-component firmware images.</li>
+<li><strong>Physically Addressed:</strong> Simplifies the memory model and debugging by avoiding virtual memory mappings.</li>
 </ul>
 
 
-<h3 class="relative group">Components 
+<h2 class="relative group">Components 
     <div id="components" class="anchor"></div>
     
     <span
@@ -552,15 +664,20 @@
             style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li><strong>Kernel</strong>: The core component that manages system resources and tasks.</li>
-<li><strong>Tasks</strong>: Pre-defined operations or applications that the system can run.</li>
-<li><strong>Drivers</strong>: Software components that allow the OS to interact with hardware devices.</li>
-<li><strong>Debugger (Humility)</strong>: A debugging tool developed alongside Hubris to ensure system quality and debuggability.</li>
+<li><strong>Kernel (<code>sys/kern</code>):</strong> Minimal core running in privileged mode, responsible for scheduling, IPC, syscall handling, and MPU configuration.</li>
+<li><strong>User Library (<code>sys/userlib</code>):</strong> Provides the standard library interface and syscall wrappers for tasks running in unprivileged mode.</li>
+<li><strong>ABI (<code>sys/abi</code>):</strong> Defines the interface and data structures shared between the kernel and user tasks.</li>
+<li><strong>Supervisor Task:</strong> A user-provided or default task (Index 0) responsible for system management, fault handling, and task lifecycle control.</li>
+<li><strong>Tasks (<code>task/</code>, <code>drv/</code>):</strong> Application-specific logic and drivers, compiled separately and running in unprivileged mode.</li>
+<li><strong>IPC Mechanism:</strong> Core system for inter-task communication and synchronization.</li>
+<li><strong>Build System (<code>build/</code>, <code>xtask</code>):</strong> Rust-based tooling to compile and link the kernel and tasks into a final image.</li>
+<li><strong>Debugging Support (Humility):</strong> External host tool for interacting with Hubris systems via debug probes (ST-Link, J-Link via pyOCD/OpenOCD).</li>
+<li><strong>Test Framework (<code>test/</code>):</strong> Infrastructure for defining and running on-target tests.</li>
 </ul>
 <ul>
-<li><a href="https://github.com/casey/brev" target="_blank">brev</a>. 💀 Do or die: quick and dirty utility functions in rust.</li>
+<li><a href="https://github.com/casey/brev" target="_blank">brev</a>. Do or die: quick and dirty utility functions in rust.</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">

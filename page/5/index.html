@@ -29,8 +29,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -752,13 +752,13 @@
           <h3 class="text-2xl font-bold mb-3">
             <a class="text-primary-700 dark:text-primary-400 hover:underline" href="/rtos/nuttx/">NuttX</a>
             
-                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> nuttx-12.9.0-RC0</span>
+                <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300"> nuttx-12.9.0-RC1</span>
             
           </h3>
           
           <div class="mb-4">
             
-              <div class="text-neutral-700 dark:text-neutral-300"><p>NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards.</p></div>
+              <div class="text-neutral-700 dark:text-neutral-300"><p>Apache NuttX is a real-time operating system (RTOS) emphasizing standards compliance (POSIX, ANSI) and a small footprint. Highly scalable, it operates on microcontrollers from 8-bit to 64-bit architectures. NuttX provides a rich, multi-threaded development environment suitable for deeply embedded systems. Its architecture includes a preemptible core, extensive networking capabilities (including IPv6 and 6LoWPAN), various filesystems, USB host/device support, a graphical subsystem, and options for protected builds using MPU/MMU. Licensed under Apache 2.0, it fosters an open development environment supported by GNU toolchains and simulation capabilities.</p></div>
             
           </div>
 
@@ -768,19 +768,75 @@
             <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
             <div class="flex flex-wrap gap-2">
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">FileSystem</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">scheduler</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Network</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">task-management</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">6LoWPAN</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">inter-task-communication</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Command Line Interface</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">memory-management</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">USBHost</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">timer-management</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">USBDevice</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">network-stack</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">GUI</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">ble</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">wifi</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">lorawan</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">6lowpan</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">http-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">http-server</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">mqtt-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">coap</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">ftp-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">ftp-server</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">snmp-agent</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">dhcp-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">dhcp-server</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">dns-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">tls-ssl</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">filesystem</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">usb-host</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">usb-device</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">can</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">modbus</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">at-command</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">shell-cli</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">logging</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">ota-update</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">dynamic-loading</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">smp-support</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">gui</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">runtime-analysis</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">simulation</span>
               
             </div>
           </div>
@@ -794,7 +850,7 @@
               <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Licenses:</h4>
               <div class="flex flex-wrap gap-2">
                 
-                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Apache License 2.0</span>
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Apache-2.0</span>
                 
               </div>
             </div>
@@ -806,25 +862,39 @@
               <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
               <div class="flex flex-wrap gap-2">
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">aarch32</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">AVR</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">aarch64</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">8051</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">arm-cortex-a</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">PIC</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">arm-cortex-r</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">arm-cortex-m</span>
                 
                   <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">x86</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">MIPS</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">x86_64</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">Xtensa</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">risc-v</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">RISC-V</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">mips</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">Freescale HCS12</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">avr</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">Zilog</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">hcs12</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">sparc</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">superh</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">z80</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">xtensa</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">qemu</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">posix</span>
                 
               </div>
             </div>
@@ -856,7 +926,7 @@
           
           <div class="mb-4">
             
-              <div class="text-neutral-700 dark:text-neutral-300"><p>RT-Thread is an open source real-time operating system for embedded devices from China. RT-Thread RTOS is a scalable real-time operating system: a tiny kernel for ARM Cortex-M0, Cortex-M3/4, or a full feature system in ARM Cortex-A8, ARM Cortex-A9 DualCor</p></div>
+              <div class="text-neutral-700 dark:text-neutral-300"><p>RT-Thread is an open-source, community-driven embedded real-time operating system (RTOS) established in 2006, primarily targeting IoT and diverse embedded applications. It offers both a standard version for feature-rich devices and a lightweight Nano version requiring minimal resources (3KB Flash, 1.2KB RAM). RT-Thread features a modular architecture with a real-time kernel, extensive middleware components (like filesystems, networking, GUI), and a rich package ecosystem. It emphasizes ease of porting across various MCU architectures (ARM, RISC-V, MIPS, etc.) and provides development tools like RT-Thread Studio and Env for configuration and building.</p></div>
             
           </div>
 
@@ -866,19 +936,63 @@
             <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Components:</h4>
             <div class="flex flex-wrap gap-2">
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">FileSystem</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">scheduler</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Network</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">task-management</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">AT Commands</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">inter-task-communication</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Command Line Interface</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">memory-management</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">Runtime Analysis</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">timer-management</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">USBHost</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">filesystem</span>
               
-                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">USBDevice</span>
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">shell-cli</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">network-stack</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">http-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">mqtt-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">tls-ssl</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">usb-host</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">usb-device</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">can</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">modbus</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">gui</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">logging</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">ota-update</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">runtime-analysis</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">simulation</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">at-command</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">wifi</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">ble</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">lorawan</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">6lowpan</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">coap</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">ftp-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">dns-client</span>
+              
+                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs rounded-md">dhcp-client</span>
               
             </div>
           </div>
@@ -894,6 +1008,8 @@
                 
                   <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">Apache-2.0</span>
                 
+                  <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs rounded-md">GPL-2.0</span>
+                
               </div>
             </div>
             
@@ -904,17 +1020,23 @@
               <h4 class="text-sm font-semibold text-neutral-600 dark:text-neutral-400 mb-2">Platforms:</h4>
               <div class="flex flex-wrap gap-2">
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">ARM</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">arm-cortex-m</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">arm-cortex-r</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">arm-cortex-a</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">risc-v</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">mips</span>
+                
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">xtensa</span>
                 
                   <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">x86</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">MIPS</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">qemu</span>
                 
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">PowerPC</span>
-                
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">RISC-V</span>
-                
-                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">Andes</span>
+                  <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs rounded-md">posix</span>
                 
               </div>
             </div>

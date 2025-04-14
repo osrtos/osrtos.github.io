@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/apache-mynewt/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Apache Mynewt">
-  <meta property="og:description" content="Apache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em">
+  <meta property="og:description" content="Apache Mynewt is a community-driven, open-source RTOS designed for highly constrained embedded systems where power and cost are primary concerns. It emphasizes modularity and portability, enabling developers to include only the necessary components for their application. Mynewt features a preemptive real-time kernel, the high-performance Apache NimBLE Bluetooth 5 stack, secure bootloader, and flash filesystems (NFFS, FatFS). Its companion Newt build and package management tool simplifies development, configuration, and deployment across diverse hardware, facilitating fine-grained control over the final firmware image.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Apache Mynewt">
-  <meta name="twitter:description" content="Apache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em">
+  <meta name="twitter:description" content="Apache Mynewt is a community-driven, open-source RTOS designed for highly constrained embedded systems where power and cost are primary concerns. It emphasizes modularity and portability, enabling developers to include only the necessary components for their application. Mynewt features a preemptive real-time kernel, the high-performance Apache NimBLE Bluetooth 5 stack, secure bootloader, and flash filesystems (NFFS, FatFS). Its companion Newt build and package management tool simplifies development, configuration, and deployment across diverse hardware, facilitating fine-grained control over the final firmware image.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "Apache Mynewt",
     "headline": "Apache Mynewt",
     
-    "abstract": "\u003cp\u003eApache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eApache Mynewt is a community-driven, open-source RTOS designed for highly constrained embedded systems where power and cost are primary concerns. It emphasizes modularity and portability, enabling developers to include only the necessary components for their application. Mynewt features a preemptive real-time kernel, the high-performance Apache NimBLE Bluetooth 5 stack, secure bootloader, and flash filesystems (NFFS, FatFS). Its companion \u003ccode\u003eNewt\u003c\/code\u003e build and package management tool simplifies development, configuration, and deployment across diverse hardware, facilitating fine-grained control over the final firmware image.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/apache-mynewt\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "130"
+    "wordCount": "500"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-09</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-11</h4>
           </div>
           
           
@@ -481,7 +481,7 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache License</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
               
             </ul>
           </div>
@@ -492,9 +492,13 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MIPS</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mips</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
               
             </div>
           </div>
@@ -502,6 +506,46 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -538,31 +582,71 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">BLE</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">LoRaWAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6LoWPAN</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">TLS/SSL</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Runtime Analysis</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ble</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6lowpan</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">coap</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dns-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ota-update</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
                   
                 
               </div>
@@ -583,10 +667,16 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>Apache Mynewt OS is a real-time, modular operating system for connected IoT devices that need to operate for long periods of time under power, memory, and storage constraints. It provides a complete environment for prototyping, developing, and managing em</p>
+          <p>Apache Mynewt is a community-driven, open-source RTOS designed for highly constrained embedded systems where power and cost are primary concerns. It emphasizes modularity and portability, enabling developers to include only the necessary components for their application. Mynewt features a preemptive real-time kernel, the high-performance Apache NimBLE Bluetooth 5 stack, secure bootloader, and flash filesystems (NFFS, FatFS). Its companion <code>Newt</code> build and package management tool simplifies development, configuration, and deployment across diverse hardware, facilitating fine-grained control over the final firmware image.</p>
+<p>Apache Mynewt provides a complete ecosystem for developing and managing connected IoT devices operating under significant memory and power constraints. The core of the system is a highly efficient, preemptive RTOS kernel offering standard features like task management, timers, memory allocation, and inter-task communication primitives.</p>
+<p>A key differentiator is the <code>Newt</code> tool, which manages the build process and package dependencies. This allows developers to easily compose custom OS configurations tailored to specific hardware and application requirements. <code>Newt</code> handles source package management, dependency resolution, building, and flashing firmware images, streamlining the development workflow.</p>
+<p>Mynewt integrates the Apache NimBLE stack, a highly portable and efficient open-source Bluetooth Low Energy 5.0 implementation supporting both host and controller roles. Notably, NimBLE can replace proprietary vendor stacks on supported chipsets (like Nordic nRF series) and is designed to be OS-agnostic, although tightly integrated with Mynewt.</p>
+<p>Filesystem support includes NFFS (Newtron Flash File System), optimized for small NOR flash devices, FatFS for compatibility with SD cards and other FAT media, and FCB (Flash Circular Buffer) for efficient logging or data streaming to flash.</p>
+<p>Device management is facilitated by the <code>Newtmgr</code> tool and corresponding Mynewt libraries, enabling secure remote firmware updates (OTA), statistics collection, log retrieval, and configuration management over various transports like BLE or serial.</p>
+<p>Networking capabilities are provided through integration with LwIP (offering IPv4/IPv6) and support for 6LoWPAN. Higher-level protocols like CoAP (via OIC support) are also available. Security is addressed through integration with mbedTLS for TLS/SSL connections. The OS provides extensive logging and statistics frameworks for monitoring and debugging.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -595,20 +685,21 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>A Pre-emptive, Real Time OS Kernel</li>
-<li>A open-source Bluetooth 4.2 stack (both Host &amp; Controller), NimBLE, that completely replaces the proprietary SoftDevice on Nordic chipsets.</li>
-<li>Support for 251 byte packet size</li>
-<li>Support for all 4 roles concurrently - Broadcaster, Observer, Peripheral and Central</li>
-<li>Support for up to 32 simultaneous connections.</li>
-<li>Legacy SMP support (pairing and bonding).</li>
-<li>A flash filesystem, NFFS, which is designed for tiny (128KB-&gt;16MB) flashes.</li>
-<li>Bootloader support</li>
-<li>Remote Software Upgrade</li>
-<li>HAL and BSP infrastructure designed to abstract microcontroller specifics</li>
-<li>Shell and Console support</li>
-<li>Statistics and Logging Infrastructure.</li>
+<li><strong>Preemptive RTOS Kernel:</strong> Provides core real-time scheduling, task management, IPC, and timing services.</li>
+<li><strong>Modular Architecture:</strong> Highly composable using the <code>Newt</code> build and package management tool.</li>
+<li><strong>Apache NimBLE Bluetooth 5 Stack:</strong> Integrated, open-source BLE Host &amp; Controller supporting concurrent roles, extended advertising, and security features. (NimBLE source now in separate repo)</li>
+<li><strong>Multiple Filesystem Support:</strong> Includes NFFS (optimized for small flash), FatFS, and FCB (Flash Circular Buffer).</li>
+<li><strong>Secure Bootloader &amp; OTA:</strong> Integrated bootloader supporting secure image validation and remote firmware updates via <code>Newtmgr</code>.</li>
+<li><strong>Hardware Abstraction Layer (HAL):</strong> Simplifies porting across different microcontroller architectures.</li>
+<li><strong>Power Management:</strong> Features designed for low-power operation in constrained devices.</li>
+<li><strong>Networking Stack:</strong> Includes LwIP (IPv4/IPv6), 6LoWPAN, CoAP (via OIC), and standard TCP/IP utilities.</li>
+<li><strong>Rich Peripheral Support:</strong> Drivers for common peripherals like UART, SPI, I2C, GPIO, Timers, Watchdog.</li>
+<li><strong>Shell &amp; Console:</strong> Command-line interface for debugging and interaction.</li>
+<li><strong>Logging &amp; Statistics:</strong> Infrastructure for system diagnostics and performance monitoring.</li>
+<li><strong>Data Serialization:</strong> Support for JSON and CBOR encoding/decoding.</li>
+<li><strong>Security:</strong> Integration with mbedTLS for secure communication (TLS/SSL).</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">

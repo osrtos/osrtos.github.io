@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/freertos/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="FreeRTOS">
-  <meta property="og:description" content="FreeRTOS is a market leading RTOS from Amazon Web Services that supports more than 35 architectures. It is distributed under the MIT license.">
+  <meta property="og:description" content="FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="FreeRTOS">
-  <meta name="twitter:description" content="FreeRTOS is a market leading RTOS from Amazon Web Services that supports more than 35 architectures. It is distributed under the MIT license.">
+  <meta name="twitter:description" content="FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "FreeRTOS",
     "headline": "FreeRTOS",
     
-    "abstract": "\u003cp\u003eFreeRTOS is a market leading RTOS from Amazon Web Services that supports more than 35 architectures. It is distributed under the MIT license.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eFreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/freertos\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "2061"
+    "wordCount": "2402"
   }]
   </script>
 
@@ -492,17 +492,33 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MSP430</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">AVR</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-r</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ColdFire</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">PIC</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">xtensa</span>
               
                 <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mips</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">powerpc</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">avr</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">pic</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">8051</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">msp430</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">qemu</span>
               
             </div>
           </div>
@@ -531,6 +547,38 @@
                 
               
             
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
             
             
             <div class="mt-2">
@@ -538,23 +586,55 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">TLS/SSL</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Command Line Interface</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Runtime Analysis</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ota-update</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">smp-support</span>
                   
                 
               </div>
@@ -575,10 +655,14 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>FreeRTOS is a market leading RTOS from Amazon Web Services that supports more than 35 architectures. It is distributed under the MIT license.</p>
+          <p>FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.</p>
+<p>Originally developed by Richard Barry around 2003, FreeRTOS has become a de facto standard in the embedded industry. Since AWS took stewardship, FreeRTOS development continues openly on GitHub, with contributions from a large community and AWS engineers. It remains hardware, development tool, and cloud-neutral.</p>
+<p>The FreeRTOS kernel provides core RTOS functionality including task scheduling (pre-emptive, co-operative, time-sliced), inter-task communication (queues, semaphores, mutexes, event groups, task notifications), timer management, and memory management (with multiple heap implementations). It supports a vast number of microcontroller architectures.</p>
+<p>Beyond the kernel, the FreeRTOS ecosystem includes libraries such as FreeRTOS+TCP (a lightweight TCP/IP stack), coreMQTT, coreHTTP, corePKCS11, and integrations with security libraries like Mbed TLS and wolfSSL. AWS provides libraries for seamless integration with AWS IoT services, covering OTA updates, Device Shadow, Device Defender, and more. FreeRTOS also supports Symmetric Multiprocessing (SMP) on multi-core processors.</p>
+<p>The project emphasizes quality control, robustness, and long-term support (LTS) releases. Commercial licensing and support options are available through strategic partners like WITTENSTEIN high integrity systems (OpenRTOS/SafeRTOS) for users requiring additional guarantees or indemnification.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -587,46 +671,64 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Free RTOS scheduler - preemptive, cooperative and hybrid configuration options, with optional time slicing.</li>
-<li>The SafeRTOS derivative product provides a high level of confidence in the code integrity.</li>
-<li>Includes a tickless mode for low power applications.</li>
-<li>RTOS objects (tasks, queues, semaphores, software timers, mutexes and event groups) can be created using either dynamically or statically allocated RAM.</li>
-<li>Tiny footprint.</li>
-<li>Official support for &gt;30 embedded system architectures (counting ARM7 and ARM Cortex-M3 as one architecture each).</li>
-<li>FreeRTOS-MPU supports the ARM Cortex-M3 Memory Protection Unit (MPU).</li>
-<li>Designed to be small, simple and easy to use. Typically a RTOS kernel binary image will be in the region of 4K to 9K bytes.</li>
-<li>Very portable source code structure, predominantly written in C.</li>
-<li>Supports both real time tasks and co-routines.</li>
-<li>Direct to task notifications, queues, binary semaphores, counting semaphores, recursive semaphores and mutexes for communication and synchronisation between tasks, or between real time tasks - and interrupts.</li>
-<li>Innovative event group (or event flag) implementation.</li>
-<li>Mutexes with priority inheritance.</li>
-<li>Efficient software timers.</li>
-<li>Powerful execution trace functionality.</li>
-<li>Stack overflow detection options.</li>
-<li>Pre-configured RTOS demo applications for selected single board computers allowing &lsquo;out of the box&rsquo; operation and fast learning curve.</li>
-<li>Free monitored forum support, or optional commercial support and licensing.</li>
-<li>No software restriction on the number of real time tasks that can be created.</li>
-<li>No software restriction on the number of task priorities that can be used.</li>
-<li>No restrictions imposed on task priority assignment - more than one real time task can be assigned the same priority.</li>
-<li>Free development tools for many supported architectures.</li>
-<li>Free embedded software source code.</li>
-<li>Royalty free.</li>
-<li>Cross development from a standard Windows host.</li>
+<li><strong>Choice of Scheduling Algorithms:</strong> Supports pre-emptive, co-operative, and optional time-slicing configurations.</li>
+<li><strong>Flexible Task Management:</strong> Includes creation, deletion, priority assignment, and state management (Ready, Running, Blocked, Suspended).</li>
+<li><strong>Rich Inter-Task Communication (ITC):</strong> Provides Queues, Binary Semaphores, Counting Semaphores, Mutexes (with Priority Inheritance), Recursive Mutexes, Event Groups, Stream Buffers, and Message Buffers.</li>
+<li><strong>Direct-to-Task Notifications:</strong> Offers a lightweight and fast alternative for ITC and synchronization.</li>
+<li><strong>Software Timers:</strong> Supports one-shot and auto-reload software timers managed by a dedicated timer service task.</li>
+<li><strong>Flexible Memory Management:</strong> Offers both static and dynamic memory allocation options, including five sample heap implementations (heap_1 to heap_5).</li>
+<li><strong>Interrupt Management:</strong> Provides interrupt-safe API functions, deferred interrupt processing mechanisms, and support for interrupt nesting on capable ports.</li>
+<li><strong>Symmetric Multiprocessing (SMP) Support:</strong> Enables scheduling tasks across multiple identical processor cores.</li>
+<li><strong>Resource Management:</strong> Includes features like critical sections, scheduler suspension (locking), and support for the Gatekeeper task pattern to manage shared resources.</li>
+<li><strong>Low Power Support:</strong> Features include the Idle task hook for custom power saving and a tickless idle mode to stop the tick interrupt during idle periods.</li>
+<li><strong>Stack Overflow Detection:</strong> Offers multiple mechanisms to detect task stack overflows during runtime.</li>
+<li><strong>Optional MPU Support:</strong> Provides support for Memory Protection Units on certain architectures to enhance application safety and robustness.</li>
+<li><strong>Runtime Analysis and Tracing:</strong> Includes hooks for tracing kernel events and gathering task run-time statistics.</li>
+<li><strong>Thread Local Storage:</strong> Supports standard C library reentrancy (newlib, picolibc) and application-specific thread local storage pointers.</li>
+<li><strong>Extensive Platform Support:</strong> Officially supports over 40 microcontroller architectures and multiple compilers.</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
+<p>The FreeRTOS distribution includes the kernel and various supplementary libraries:</p>
+<ul>
+<li><strong>FreeRTOS Kernel:</strong> The core real-time scheduler and task management component.</li>
+<li><strong>Inter-Task Communication:</strong> Queues, Semaphores (Binary, Counting, Mutex, Recursive), Event Groups, Task Notifications, Stream Buffers, Message Buffers.</li>
+<li><strong>Memory Management:</strong> Various heap implementations (heap_1 through heap_5).</li>
+<li><strong>Software Timers:</strong> Kernel-managed software timers.</li>
+<li><strong>FreeRTOS+TCP:</strong> A lightweight, embedded TCP/IP stack (IPv4 and IPv6).</li>
+<li><strong>coreMQTT:</strong> Client implementation for the MQTT 3.1.1 specification.</li>
+<li><strong>coreHTTP:</strong> Client implementation for HTTP/1.1.</li>
+<li><strong>coreJSON:</strong> Parser for JSON documents.</li>
+<li><strong>corePKCS11:</strong> API for cryptographic objects based on the PKCS#11 standard.</li>
+<li><strong>AWS IoT Libraries:</strong> Components for Over-the-air Updates (OTA), Device Shadow, Jobs, Device Defender, Fleet Provisioning.</li>
+<li><strong>Security:</strong> Integrations with Mbed TLS and wolfSSL for TLS/SSL functionality.</li>
+<li><strong>Other Utilities:</strong> Backoff Algorithm, coreSNTP, SigV4 client, Logging.</li>
+<li><strong>Cellular Interface:</strong> Library for interfacing with cellular modems.</li>
+</ul>
+
+
+<h2 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <ul>
 <li><a href="https://github.com/jameswalmsley/RaspberryPi-FreeRTOS" target="_blank">FreeRTOS Ported to Raspberry Pi</a>. This project provides a very basic port of FreeRTOS to Raspberry pi. It includes a demo application that use 2 FreeRTOS tasks to flash the LED on and off.</li>
 <li><a href="https://code.google.com/p/duinos/" target="_blank">DuinOS</a>. DuinOS is a small multithreading real time operating system (RTOS), based on the FreeRTOS kernel, for Arduino compatible boards.It&rsquo;s installed as an Arduino core, and currently supports the following AVR processors:</li>

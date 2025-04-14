@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/rt-thread/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="RT-Thread">
-  <meta property="og:description" content="RT-Thread is an open source real-time operating system for embedded devices from China. RT-Thread RTOS is a scalable real-time operating system: a tiny kernel for ARM Cortex-M0, Cortex-M3/4, or a full feature system in ARM Cortex-A8, ARM Cortex-A9 DualCor">
+  <meta property="og:description" content="RT-Thread is an open-source, community-driven embedded real-time operating system (RTOS) established in 2006, primarily targeting IoT and diverse embedded applications. It offers both a standard version for feature-rich devices and a lightweight Nano version requiring minimal resources (3KB Flash, 1.2KB RAM). RT-Thread features a modular architecture with a real-time kernel, extensive middleware components (like filesystems, networking, GUI), and a rich package ecosystem. It emphasizes ease of porting across various MCU architectures (ARM, RISC-V, MIPS, etc.) and provides development tools like RT-Thread Studio and Env for configuration and building.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="RT-Thread">
-  <meta name="twitter:description" content="RT-Thread is an open source real-time operating system for embedded devices from China. RT-Thread RTOS is a scalable real-time operating system: a tiny kernel for ARM Cortex-M0, Cortex-M3/4, or a full feature system in ARM Cortex-A8, ARM Cortex-A9 DualCor">
+  <meta name="twitter:description" content="RT-Thread is an open-source, community-driven embedded real-time operating system (RTOS) established in 2006, primarily targeting IoT and diverse embedded applications. It offers both a standard version for feature-rich devices and a lightweight Nano version requiring minimal resources (3KB Flash, 1.2KB RAM). RT-Thread features a modular architecture with a real-time kernel, extensive middleware components (like filesystems, networking, GUI), and a rich package ecosystem. It emphasizes ease of porting across various MCU architectures (ARM, RISC-V, MIPS, etc.) and provides development tools like RT-Thread Studio and Env for configuration and building.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "RT-Thread",
     "headline": "RT-Thread",
     
-    "abstract": "\u003cp\u003eRT-Thread is an open source real-time operating system for embedded devices from China. RT-Thread RTOS is a scalable real-time operating system: a tiny kernel for ARM Cortex-M0, Cortex-M3\/4, or a full feature system in ARM Cortex-A8, ARM Cortex-A9 DualCor\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eRT-Thread is an open-source, community-driven embedded real-time operating system (RTOS) established in 2006, primarily targeting IoT and diverse embedded applications. It offers both a standard version for feature-rich devices and a lightweight Nano version requiring minimal resources (3KB Flash, 1.2KB RAM). RT-Thread features a modular architecture with a real-time kernel, extensive middleware components (like filesystems, networking, GUI), and a rich package ecosystem. It emphasizes ease of porting across various MCU architectures (ARM, RISC-V, MIPS, etc.) and provides development tools like RT-Thread Studio and Env for configuration and building.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/rt-thread\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "895"
+    "wordCount": "1367"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-10</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-13</h4>
           </div>
           
           
@@ -483,6 +483,8 @@
               
                 <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
               
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">GPL-2.0</li>
+              
             </ul>
           </div>
           
@@ -492,17 +494,23 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-r</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mips</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">xtensa</span>
               
                 <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MIPS</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">qemu</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">PowerPC</span>
-              
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
-              
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Andes</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
               
             </div>
           </div>
@@ -510,6 +518,94 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -546,31 +642,119 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">AT Commands</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Command Line Interface</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Runtime Analysis</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBHost</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBDevice</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-host</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-device</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">can</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">modbus</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">gui</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ota-update</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">at-command</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">wifi</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ble</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">lorawan</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">6lowpan</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">coap</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ftp-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dns-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-client</span>
                   
                 
               </div>
@@ -591,10 +775,29 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>RT-Thread is an open source real-time operating system for embedded devices from China. RT-Thread RTOS is a scalable real-time operating system: a tiny kernel for ARM Cortex-M0, Cortex-M3/4, or a full feature system in ARM Cortex-A8, ARM Cortex-A9 DualCor</p>
+          <p>RT-Thread is an open-source, community-driven embedded real-time operating system (RTOS) established in 2006, primarily targeting IoT and diverse embedded applications. It offers both a standard version for feature-rich devices and a lightweight Nano version requiring minimal resources (3KB Flash, 1.2KB RAM). RT-Thread features a modular architecture with a real-time kernel, extensive middleware components (like filesystems, networking, GUI), and a rich package ecosystem. It emphasizes ease of porting across various MCU architectures (ARM, RISC-V, MIPS, etc.) and provides development tools like RT-Thread Studio and Env for configuration and building.</p>
+<p>RT-Thread is designed as a comprehensive platform for embedded systems, particularly in the Internet of Things (IoT) domain. Born in 2006, it has evolved from a pure real-time kernel into a feature-rich operating system with a strong emphasis on components and connectivity.</p>
+<p><strong>Architecture:</strong></p>
+<p>RT-Thread&rsquo;s architecture is layered:</p>
+<ol>
+<li><strong>Kernel Layer:</strong> Provides core RTOS functionalities including multi-threading scheduling (priority-based preemptive and time-slicing), clock management, memory management (static pools, dynamic heaps with multiple algorithms like small memory and SLAB), and inter-thread communication (semaphores, mutexes with priority inheritance, event sets, mailboxes, message queues, signals). It also includes the CPU porting layer (libcpu) and Board Support Packages (BSP) for hardware adaptation.</li>
+<li><strong>Components &amp; Service Layer:</strong> Builds upon the kernel, offering essential middleware like the Device Virtual File System (DFS), FinSH command-line interface, networking frameworks (e.g., LwIP), a unified device driver framework, logging, and more. These components are designed with modularity and low coupling.</li>
+<li><strong>Software Packages:</strong> A crucial part of the RT-Thread ecosystem, offering over 450 reusable software components for various domains like IoT protocols (MQTT, CoAP, HTTP), scripting (MicroPython, JerryScript), multimedia, tools (EasyFlash, SystemView), system utilities (RTGUI, Persimmon UI, SQLite), and peripheral libraries. These packages can be managed and integrated using RT-Thread&rsquo;s tools.</li>
+</ol>
+<p><strong>Versions:</strong></p>
+<ul>
+<li><strong>Standard Version:</strong> For resource-rich devices, leveraging the full component and package ecosystem.</li>
+<li><strong>Nano Version:</strong> A highly configurable, minimal kernel footprint version (as low as 3KB Flash, 1.2KB RAM) suitable for resource-constrained MCUs.</li>
+</ul>
+<p><strong>Development Tools:</strong></p>
+<ul>
+<li><strong>RT-Thread Studio:</strong> A dedicated one-stop IDE based on Eclipse, offering project creation, graphical configuration (replacing manual rtconfig.h editing), code editing, SDK management, building, debugging, and package management.</li>
+<li><strong>Env Tool:</strong> A command-line based auxiliary tool providing configuration (menuconfig), package management (<code>pkgs</code>), and project generation for GCC, Keil MDK, and IAR environments.</li>
+</ul>
+<p><strong>Licensing:</strong> Since version 3.1.0, RT-Thread follows the permissive Apache License 2.0, making it suitable for commercial applications without requiring source code disclosure. Earlier versions used the GPLv2 license.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -603,27 +806,53 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Object oriented real-time core (while remaining the elegant and flexible style of C Programming Language);</li>
-<li>8, 32 or 256 priority scheduling multi-thread scheduling; Using the round-robin policy ensures that all threads having the same priority level will be scheduled equally;</li>
-<li>Synchronization of threads: semaphore and mutual exclusion semaphore (mutex) to prevent priority inversion;</li>
-<li>Complete and efficient support for communication between threads, including mailbox, message queues, event flag;</li>
-<li>Static memory management supports thread suspend/resume when it allocates/frees a memory block and thread-safe dynamic heap management;</li>
-<li>A device driver framework to provide standard interface to high level application;</li>
+<li><strong>Small Footprint:</strong> Nano version requires only 1.2KB RAM and 3KB Flash.</li>
+<li><strong>Real-time Kernel:</strong> Priority-based preemptive scheduler, 256 priorities (configurable), time-slicing for same-priority threads.</li>
+<li><strong>Rich Components:</strong> Includes Filesystem (DFS), Command-line Interface (FinSH), Network Stack (LwIP), Device Driver Framework.</li>
+<li><strong>Extensive Package Ecosystem:</strong> Over 450+ packages for IoT, scripting, multimedia, tools, system, and peripherals.</li>
+<li><strong>Memory Management:</strong> Supports static memory pools and dynamic memory heaps (multiple algorithms like small memory, SLAB, memheap).</li>
+<li><strong>Inter-Thread Communication:</strong> Provides Semaphores, Mutexes (with priority inheritance), Event Sets, Mailboxes, Message Queues, Signals.</li>
+<li><strong>Timer Management:</strong> Offers one-shot and periodic timers, supporting HARD (interrupt context) and SOFT (thread context) modes.</li>
+<li><strong>Device Management:</strong> Unified device model for peripherals like UART, SPI, I2C, USB, CAN etc.</li>
+<li><strong>POSIX Compatibility:</strong> Provides a standard POSIX API layer (pthreads, semaphore, message queue).</li>
+<li><strong>Wide Architecture Support:</strong> Runs on ARM Cortex-M/R/A, RISC-V, MIPS, Xtensa, x86, and more.</li>
+<li><strong>Development Tools:</strong> Includes RT-Thread Studio IDE and Env command-line tool with menuconfig.</li>
+<li><strong>Licensing:</strong> Apache License 2.0 (commercial friendly).</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
+<ul>
+<li><strong>Kernel:</strong> scheduler, task-management, inter-task-communication, memory-management, timer-management</li>
+<li><strong>File System:</strong> filesystem (DFS, FAT, LittleFS, etc.), database (SQLite via package)</li>
+<li><strong>Networking:</strong> network-stack (LwIP), http-client, http-server, mqtt-client, coap, ftp-client, ftp-server, dhcp-client, dns-client, tls-ssl, wifi, ble, lorawan, 6lowpan</li>
+<li><strong>Peripherals:</strong> can, modbus, usb-host, usb-device, at-command</li>
+<li><strong>Tools:</strong> shell-cli (FinSH), logging, ota-update, runtime-analysis (SystemView integration), simulation (QEMU)</li>
+<li><strong>GUI:</strong> gui (RTGUI, Persimmon UI)</li>
+</ul>
+
+
+<h2 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <ul>
 <li><a href="https://github.com/RT-Thread/ART" target="_blank">ART</a>. ART is an Arduino like board with STM32F407VGT6 (ARM Cortex-M4) chip. RT-Thread RTOS is running as a platform in this board. Arduino hardware/software compatible. 32bit ARM Cortex-M4 with FPU. Running multi-Arduino Program in parallel.</li>
 </ul>

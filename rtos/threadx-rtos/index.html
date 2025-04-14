@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.810340be151077a466d83f3b8eec9fffdcfb2d1e37de055e443ef12cbad00251677dbbde3b39c5af9bb5c7eb9d6201fa0c5c1a2d73350e5bae259fdfd74df2c3.css"
-    integrity="sha512-gQNAvhUQd6Rm2D87juyf/9z7LR433gVeRD7xLLrQAlFnfbveOznFr5u1x&#43;udYgH6DFwaLXM1DluuJZ/f103yww==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
+    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/threadx-rtos/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Eclipse ThreadX">
-  <meta property="og:description" content="This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.">
+  <meta property="og:description" content="Eclipse ThreadX is an advanced, widely deployed Real-Time Operating System (RTOS) designed for deeply embedded, real-time, and IoT applications, especially on resource-constrained devices. Formerly known as Azure RTOS, ThreadX offers reliable, ultra-fast performance with a minimal footprint (as low as 2KB ROM, 1KB RAM). It features a picokernel architecture, preemption-threshold scheduling, event chaining, comprehensive IPC mechanisms, and a rich ecosystem including networking, file system, USB, and GUI components. ThreadX comes with extensive safety and security certifications (e.g., TÜV IEC 61508 SIL4, UL 60730, EAL4&#43;, FIPS 140-2).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Eclipse ThreadX">
-  <meta name="twitter:description" content="This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.">
+  <meta name="twitter:description" content="Eclipse ThreadX is an advanced, widely deployed Real-Time Operating System (RTOS) designed for deeply embedded, real-time, and IoT applications, especially on resource-constrained devices. Formerly known as Azure RTOS, ThreadX offers reliable, ultra-fast performance with a minimal footprint (as low as 2KB ROM, 1KB RAM). It features a picokernel architecture, preemption-threshold scheduling, event chaining, comprehensive IPC mechanisms, and a rich ecosystem including networking, file system, USB, and GUI components. ThreadX comes with extensive safety and security certifications (e.g., TÜV IEC 61508 SIL4, UL 60730, EAL4&#43;, FIPS 140-2).">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "Eclipse ThreadX",
     "headline": "Eclipse ThreadX",
     
-    "abstract": "\u003cp\u003eThis advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eEclipse ThreadX is an advanced, widely deployed Real-Time Operating System (RTOS) designed for deeply embedded, real-time, and IoT applications, especially on resource-constrained devices. Formerly known as Azure RTOS, ThreadX offers reliable, ultra-fast performance with a minimal footprint (as low as 2KB ROM, 1KB RAM). It features a picokernel architecture, preemption-threshold scheduling, event chaining, comprehensive IPC mechanisms, and a rich ecosystem including networking, file system, USB, and GUI components. ThreadX comes with extensive safety and security certifications (e.g., TÜV IEC 61508 SIL4, UL 60730, EAL4\u002b, FIPS 140-2).\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/threadx-rtos\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "763"
+    "wordCount": "1305"
   }]
   </script>
 
@@ -492,17 +492,27 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Arm Cortex-A7/A8/A9/A1x/A3x/A6x/A5x/A7x</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Arm Cortex-R4/R5/R7</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Arm Cortex-M0&#43;/M3/M4/M7/M23/M33/M55/M85</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-r</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Xtensa</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">xtensa</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RXv1/v2/v3</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arc</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mips</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">nios-ii</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">microblaze</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">powerpc</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
               
             </div>
           </div>
@@ -535,6 +545,74 @@
                 
               
             
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
             
             
             <div class="mt-2">
@@ -542,27 +620,95 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Runtime Analysis</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">GUI</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBHost</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBDevice</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-host</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-device</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">gui</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dynamic-loading</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">smp-support</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">tls-ssl</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">http-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">mqtt-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dhcp-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dns-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ftp-client</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ftp-server</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">snmp-agent</span>
                   
                 
               </div>
@@ -583,38 +729,127 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>This advanced real-time operating system (RTOS) is designed specifically for deeply embedded applications. Among the multiple benefits it provides are advanced scheduling facilities, message passing, interrupt management, and messaging services. Eclipse ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.</p>
+          <p>Eclipse ThreadX is an advanced, widely deployed Real-Time Operating System (RTOS) designed for deeply embedded, real-time, and IoT applications, especially on resource-constrained devices. Formerly known as Azure RTOS, ThreadX offers reliable, ultra-fast performance with a minimal footprint (as low as 2KB ROM, 1KB RAM). It features a picokernel architecture, preemption-threshold scheduling, event chaining, comprehensive IPC mechanisms, and a rich ecosystem including networking, file system, USB, and GUI components. ThreadX comes with extensive safety and security certifications (e.g., TÜV IEC 61508 SIL4, UL 60730, EAL4+, FIPS 140-2).</p>
 
 
-<h3 class="relative group">Eclipse ThreadX Core Scheduler 
-    <div id="eclipse-threadx-core-scheduler" class="anchor"></div>
+<h2 class="relative group">Overview 
+    <div id="overview" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#eclipse-threadx-core-scheduler" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#overview" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
+<p>Eclipse ThreadX, originally developed by Express Logic and later known as Microsoft Azure RTOS, is now an open-source project under the Eclipse Foundation. It has been deployed on over 12 billion devices worldwide. ThreadX is designed specifically for embedded systems requiring high performance, determinism, and minimal resource usage.</p>
+
+
+<h2 class="relative group">Core Kernel (ThreadX) 
+    <div id="core-kernel-threadx" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#core-kernel-threadx" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The heart of the Eclipse ThreadX suite is the ThreadX RTOS kernel. Its key characteristics include:</p>
 <ul>
-<li>Minimal 2KB FLASH, 1KB RAM footprint</li>
-<li>Fast, sub-microsecond context-switch</li>
-<li>Fully deterministic regardless of number of threads</li>
-<li>Priority-based, fully preemptive-scheduling</li>
-<li>32 default priority levels, optionally up to 1024 levels</li>
-<li>Cooperative scheduling within priority level (FIFO)</li>
-<li>Preemption-threshold technology</li>
-<li>Optional timer services, including:</li>
-<li>Per-thread optional time-slice</li>
-<li>Optional timeout on all blocking</li>
-<li>APIs Requires on hardware timer interrupt</li>
-<li>Execution profiling</li>
-<li>System-level Trace</li>
-<li>Safety certified to many standards</li>
+<li><strong>Picokernel Architecture:</strong> A non-layered design where services plug directly into the core, ensuring minimal internal function call layering and fast context switching (sub-microsecond on many processors).</li>
+<li><strong>Scheduling:</strong> Features priority-based preemptive scheduling with up to 1024 priority levels. It supports round-robin scheduling, time-slicing per thread, and cooperative scheduling via <code>tx_thread_relinquish</code>.</li>
+<li><strong>Preemption-Threshold Scheduling:</strong> A unique feature allowing threads to disable preemption up to a specified priority level, reducing context switches and aiding in preventing priority inversion.</li>
+<li><strong>Inter-Process Communication (IPC):</strong> Provides a rich set of synchronization and communication primitives:
+<ul>
+<li>Message Queues (including mailboxes)</li>
+<li>Counting Semaphores (including binary semaphores)</li>
+<li>Mutexes (with optional priority inheritance to prevent non-deterministic priority inversion)</li>
+<li>Event Flags Groups (32 flags per group, supporting AND/OR logic)</li>
+</ul>
+</li>
+<li><strong>Memory Management:</strong> Offers two types of memory pools:
+<ul>
+<li>Fixed-size Block Pools: Fast, deterministic allocation with no fragmentation.</li>
+<li>Byte Pools: Flexible allocation similar to <code>malloc</code>, supporting variable-size blocks with fragmentation management (merging/splitting).</li>
+</ul>
+</li>
+<li><strong>Timers:</strong> Supports application timers (one-shot and periodic) and a relative time tick counter (<code>tx_time_get</code>/<code>tx_time_set</code>).</li>
+<li><strong>Interrupt Management:</strong> Provides efficient interrupt handling with minimal lockout times and allows many API services to be called from ISRs.</li>
 </ul>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Additional Components &amp; Features 
+    <div id="additional-components--features" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#additional-components--features" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><strong>ThreadX SMP:</strong> A Symmetric Multi-Processing (SMP) version of ThreadX for multi-core processors, featuring automatic load balancing and per-thread/timer core exclusion capabilities.</li>
+<li><strong>ThreadX Modules:</strong> Enables dynamic loading and execution (or execute-in-place) of application modules, facilitating field upgrades, bug fixes, and memory protection via MPU/MMU if available.</li>
+<li><strong>FileX:</strong> A high-performance, FAT-compatible (FAT12/16/32, exFAT) embedded file system, fully integrated with ThreadX. Supports various media like RAM disk, SD cards, and Flash memory via LevelX.</li>
+<li><strong>LevelX:</strong> Provides Flash wear leveling support for NAND and NOR flash memory, working beneath FileX.</li>
+<li><strong>NetX Duo:</strong> An advanced, industrial-grade dual IPv4/IPv6 TCP/IP network stack. It includes support for core protocols (TCP, UDP, IPv4, IPv6, ICMPv4, ICMPv6, IGMP, MLD, ARP, RARP, NDP) and numerous application protocols like MQTT, HTTP(S), FTP(S), DHCP, DNS, mDNS/DNS-SD, SNMP, SMTP, POP3, Telnet, TFTP, SNTP, AutoIP, PPP, PPPoE, DTLS, TLS, and more. Includes BSD socket compatibility layer.</li>
+<li><strong>USBX:</strong> A high-performance USB Host, Device, and OTG embedded stack supporting various device classes (HID, CDC/ACM, PIMA/MTP, Storage, Audio, DPUMP, GSER, RNDIS, etc.).</li>
+<li><strong>GUIX:</strong> A professional-quality embedded graphical user interface (GUI) development package, small, fast, and easily portable. Includes GUIX Studio, a desktop design tool that generates C code.</li>
+<li><strong>TraceX:</strong> A host-based analysis tool providing a graphical view of real-time system events for visualization and debugging.</li>
+<li><strong>Adaptation Layers:</strong> Provides compatibility layers for easier migration from other RTOS APIs like FreeRTOS, POSIX, and OSEK.</li>
+</ul>
+
+
+<h2 class="relative group">Certifications and Compliance 
+    <div id="certifications-and-compliance" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#certifications-and-compliance" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Eclipse ThreadX is notable for its extensive pre-certifications:</p>
+<ul>
+<li><strong>Safety:</strong> SGS-TÜV Saar certified to IEC 61508 SIL 4. Recognized by UL for compliance with UL/IEC 60730 Annex H, UL/IEC 60335 Annex R, and UL 1998.</li>
+<li><strong>Security:</strong> EAL4+ Common Criteria security certification (covering ThreadX, NetX Duo, TLS, MQTT). FIPS 140-2 validated crypto libraries.</li>
+<li><strong>MISRA:</strong> MISRA C:2004 and MISRA C:2012 compliant source code.</li>
+</ul>
+
+
+<h2 class="relative group">Supported Architectures 
+    <div id="supported-architectures" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#supported-architectures" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Eclipse ThreadX runs on a vast majority of popular 32/64-bit microprocessors and microcontrollers, including:</p>
+<ul>
+<li>ARM Cortex-M (M0/M0+/M3/M4/M7/M23/M33/M35P/M55/M85), including TrustZone (ARMv8-M)</li>
+<li>ARM Cortex-R (R4/R5/R7)</li>
+<li>ARM Cortex-A (A5/A7/A8/A9/A1x/A3x/A5x/A6x/A7x), including 64-bit variants</li>
+<li>Legacy ARM (ARM7/9/11)</li>
+<li>RISC-V (32/64-bit)</li>
+<li>Synopsys ARC (EM, HS, SMP variants)</li>
+<li>Cadence Xtensa</li>
+<li>MIPS (MIPS32, MIPS64, microAptiv, interAptiv, proAptiv)</li>
+<li>Renesas RX, SH, HS, V850, RA, RZ, Synergy</li>
+<li>Intel x86</li>
+<li>Xilinx MicroBlaze, Zynq</li>
+<li>NXP PowerPC</li>
+<li>And many others.</li>
+<li>Simulation/Emulation: Linux and Windows ports available for development and testing.</li>
+</ul>
+
+
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -623,34 +858,36 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Intuitive and consistent API</li>
-<li>Blocking APIs have optional thread timeout</li>
-<li>Many APIs are directly available from application ISRs</li>
-<li>Core Scheduler:</li>
-<li>No limits on the number of threads</li>
-<li>Dynamic queue creation.</li>
-<li>Dynamic semaphore creation. No limits on the number of semaphores. 32-bit counting semaphores (0 to 4,294,967,295). Supports consumer-producer or resource protection. Optional thread suspension when semaphore unavailable
-Optional timeout on all suspension.</li>
-<li>Dynamic mutex creation. No limits on the number of mutexes. Nested resource protection supported. Optional priority inheritance supported. Optional thread suspension when mutex unavailable. Optional timeout on all suspension.</li>
-<li>Dynamic event flag group creation. No limits on the number of event flag groups. Synchronization of one thread or multiple threads. Atomic get and clear supported. Optional multithread suspension on AND/OR set of events. Optional timeout on all suspension</li>
-<li>Dynamic block pool creation. No limits on the number of block pools. No limits on size of fixed-size blocks or size of pool. Fastest possible memory allocation/deal-location. Optional thread suspension on empty pool. Optional timeout on all suspension</li>
-<li>Dynamic byte pool creation. No limits on the number of byte pools. No limits on size of byte pool. Most flexible variable-length memory allocation/deallocation. Allocation size locality supported.</li>
-<li>Dynamic timer creation. No limits on the number of timers. Periodic or one-shot timers supported. Periodic timers may have different initial expiration value. No searching on timer activation or deactivation. All timers driven from one hardware timer interrupt.</li>
+<li><strong>Picokernel Architecture:</strong> Non-layered design for maximum performance and minimal overhead.</li>
+<li><strong>Preemption-Threshold Scheduling:</strong> Advanced scheduling feature unique to ThreadX, reduces context switching and improves responsiveness.</li>
+<li><strong>Event Chaining:</strong> Efficiently links multiple synchronization events for complex coordination.</li>
+<li><strong>Small Footprint:</strong> Highly scalable, minimal configuration requires ~2KB ROM and ~1KB RAM.</li>
+<li><strong>Fast and Deterministic:</strong> Sub-microsecond context switch times on typical MCUs, highly deterministic behavior.</li>
+<li><strong>Comprehensive IPC:</strong> Includes Queues, Semaphores, Mutexes (with Priority Inheritance), and Event Flags.</li>
+<li><strong>Memory Management:</strong> Offers fast Fixed Block Pools (no fragmentation) and flexible Byte Pools.</li>
+<li><strong>Application Timers:</strong> Supports one-shot and periodic software timers.</li>
+<li><strong>SMP Support:</strong> Optional Symmetric Multi-Processing capability with automatic load balancing and core exclusion.</li>
+<li><strong>Modules:</strong> Supports dynamic loading of application code with optional memory protection.</li>
+<li><strong>Safety/Security Certified:</strong> Pre-certified for IEC 61508 SIL 4, UL 60730/60335/1998, EAL4+, FIPS 140-2.</li>
+<li><strong>MISRA C Compliant:</strong> Adheres to MISRA C:2004 and C:2012 standards.</li>
+<li><strong>Wide Processor Support:</strong> Extensive support for various 32-bit and 64-bit architectures.</li>
+<li><strong>Rich Ecosystem:</strong> Includes mature components for Networking (NetX Duo), File System (FileX), USB (USBX), GUI (GUIX), Flash Wear Leveling (LevelX), and analysis tools (TraceX, GUIX Studio).</li>
+<li><strong>Adaptation Layers:</strong> Simplifies migration from other RTOS environments like FreeRTOS, POSIX, OSEK.</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
 <li><a href="https://github.com/eclipse-threadx/guix" target="_blank">guix</a>. Eclipse GUIX Studio provides a complete, embedded graphical user interface (GUI) library and design environment, facilitating the creation and maintenance of all graphical elements needed by your device..</li>
 <li><a href="https://github.com/eclipse-threadx/netxduo" target="_blank">netxduo</a>. Eclipse NetX Duo is an advanced, industrial-grade TCP/IP network stack designed specifically for deeply embedded real-time and IoT applications.</li>
