@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/qpc/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="qpc">
-  <meta property="og:description" content="A lightweight Active Object implementation for real-time embedded systems.">
+  <meta property="og:description" content="QP/C is a lightweight, open-source Real-Time Event Framework (RTEF) for building responsive and modular real-time embedded applications in C. It implements the Active Object (Actor) model of computation and utilizes Hierarchical State Machines (HSMs) to describe system behavior. QP/C promotes asynchronous, event-driven programming, enhancing safety and maintainability compared to traditional RTOS approaches based on shared-state concurrency and blocking calls. It can run standalone on bare-metal MCUs or be deployed on top of various 3rd-party RTOS and OSes.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="qpc">
-  <meta name="twitter:description" content="A lightweight Active Object implementation for real-time embedded systems.">
+  <meta name="twitter:description" content="QP/C is a lightweight, open-source Real-Time Event Framework (RTEF) for building responsive and modular real-time embedded applications in C. It implements the Active Object (Actor) model of computation and utilizes Hierarchical State Machines (HSMs) to describe system behavior. QP/C promotes asynchronous, event-driven programming, enhancing safety and maintainability compared to traditional RTOS approaches based on shared-state concurrency and blocking calls. It can run standalone on bare-metal MCUs or be deployed on top of various 3rd-party RTOS and OSes.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "qpc",
     "headline": "qpc",
     
-    "abstract": "\u003cp\u003eA lightweight Active Object implementation for real-time embedded systems.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eQP\/C is a lightweight, open-source Real-Time Event Framework (RTEF) for building responsive and modular real-time embedded applications in C. It implements the Active Object (Actor) model of computation and utilizes Hierarchical State Machines (HSMs) to describe system behavior. QP\/C promotes asynchronous, event-driven programming, enhancing safety and maintainability compared to traditional RTOS approaches based on shared-state concurrency and blocking calls. It can run standalone on bare-metal MCUs or be deployed on top of various 3rd-party RTOS and OSes.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/qpc\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "59"
+    "wordCount": "758"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-07</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-26</h4>
           </div>
           
           
@@ -481,9 +481,9 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">GNU GPLv3</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">GPL-3.0</li>
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">Commercial License (Quantum Leaps)</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Commercial</li>
               
             </ul>
           </div>
@@ -494,7 +494,27 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM Cortex-M</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-r</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">msp430</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">8051</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">avr</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">pic</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">qemu</span>
               
             </div>
           </div>
@@ -507,6 +527,34 @@
                 
               
             
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
             
             
             <div class="mt-2">
@@ -514,7 +562,35 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Active Objects</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
                   
                 
               </div>
@@ -535,11 +611,35 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>A lightweight Active Object implementation for real-time embedded systems.</p>
-<p>QP/C is a robust Real-Time Embedded Framework, employing the Active Object model to enhance safety and maintainability in concurrent systems. It supports modern hierarchical state machines and provides built-in real-time kernels, making it suitable for diverse embedded applications.</p>
+          <p>QP/C is a lightweight, open-source Real-Time Event Framework (RTEF) for building responsive and modular real-time embedded applications in C. It implements the Active Object (Actor) model of computation and utilizes Hierarchical State Machines (HSMs) to describe system behavior. QP/C promotes asynchronous, event-driven programming, enhancing safety and maintainability compared to traditional RTOS approaches based on shared-state concurrency and blocking calls. It can run standalone on bare-metal MCUs or be deployed on top of various 3rd-party RTOS and OSes.</p>
+<p>QP/C is part of the QP framework family, which also includes QP/C++ and safety-certified versions (SafeQP/C, SafeQP/C++). The framework provides a software infrastructure and runtime environment specifically designed for resource-constrained embedded systems like microcontrollers (MCUs).</p>
+<p><strong>Core Concepts:</strong></p>
+<ul>
+<li><strong>Active Objects (Actors):</strong> QP/C applications are built from encapsulated, event-driven concurrent components called Active Objects. Each Active Object runs in its own logical thread of control (managed by the QP framework or an underlying OS/RTOS), owns its private data, and communicates with other Active Objects asynchronously via events. This inherently avoids many common concurrency hazards found in shared-state systems.</li>
+<li><strong>Hierarchical State Machines (HSMs):</strong> The behavior of Active Objects is specified using UML-compliant Hierarchical State Machines (Statecharts). HSMs provide a powerful and mathematically precise way to manage complex modes and event handling logic, reducing bugs and improving clarity compared to ad-hoc state management. QP/C provides an efficient HSM implementation.</li>
+<li><strong>Event-Driven Architecture:</strong> Systems built with QP/C are inherently reactive. Active Objects wait for events in their dedicated event queues and process them one at a time according to their current state (Run-to-Completion semantics). This non-blocking approach improves responsiveness and simplifies real-time analysis.</li>
+</ul>
+<p><strong>Built-in Kernels &amp; Flexibility:</strong></p>
+<p>QP/C can operate standalone, replacing a traditional RTOS. It includes several built-in kernels:</p>
+<ul>
+<li><strong>QV:</strong> A simple cooperative kernel.</li>
+<li><strong>QK:</strong> A preemptive, priority-based, non-blocking run-to-completion kernel suitable for many real-time applications.</li>
+<li><strong>QXK:</strong> A preemptive, priority-based, dual-mode kernel supporting both non-blocking Active Objects (basic threads) and traditional blocking threads (extended threads). QXK is designed to integrate Active Objects with legacy code or 3rd-party middleware (like TCP/IP stacks, file systems) that require blocking APIs. (<em>Note: The QXK kernel is available under commercial licenses only.</em>)</li>
+</ul>
+<p>Alternatively, QP/C can be ported to run on top of many existing 3rd-party RTOSes (like FreeRTOS, Zephyr, ThreadX, embOS, uC/OS-II) and general-purpose OSes (Linux/POSIX, Windows), allowing integration into existing systems or leveraging OS-specific features.</p>
+<p><strong>Modeling and Tooling:</strong></p>
+<p>QP/C is supported by the free QM (QP Modeler) graphical modeling tool. QM allows developers to design Active Object structures and HSMs graphically and automatically generate production-quality C or C++ code, enhancing productivity and ensuring design-code traceability.</p>
+<p><strong>Licensing:</strong></p>
+<p>QP/C is dual-licensed:</p>
+<ul>
+<li><strong>GPLv3:</strong> Suitable for open-source projects. Requires derivative works to be licensed under GPLv3.</li>
+<li><strong>Commercial:</strong> For closed-source projects, allows retaining proprietary code status. Required for using certain components like QS tracing target code and the QXK kernel.</li>
+</ul>
+<p><strong>Safety:</strong></p>
+<p>The core QP/C framework promotes design practices beneficial for safety-critical systems (modularity, state machines). For projects requiring certification, the SafeQP/C variant offers enhanced safety features, documentation, and certification artifacts (available under commercial license).</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -548,11 +648,44 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Non-blocking Concurrency</li>
-<li>Preemptive Priority-Based Scheduling</li>
-<li>Support for Traditional RTOS Integration</li>
+<li><strong>Active Object (Actor) Model:</strong> Implements event-driven, encapsulated concurrency.</li>
+<li><strong>Hierarchical State Machines (HSMs):</strong> Supports UML statecharts for defining behavior.</li>
+<li><strong>Event-Driven &amp; Asynchronous:</strong> Communication via events and event queues, non-blocking architecture.</li>
+<li><strong>Run-to-Completion (RTC):</strong> Predictable event processing semantics.</li>
+<li><strong>Built-in Kernels:</strong> Includes cooperative (QV), preemptive non-blocking (QK), and preemptive dual-mode (QXK - commercial only) kernels.</li>
+<li><strong>Standalone Operation:</strong> Can run on bare-metal MCUs without an external RTOS.</li>
+<li><strong>RTOS/OS Integration:</strong> Ports available for various 3rd-party RTOSes and OSes (FreeRTOS, Zephyr, Linux, Windows, etc.).</li>
+<li><strong>Object-Oriented Design in C:</strong> Provides a structured way to implement OO concepts in C.</li>
+<li><strong>Low Footprint:</strong> Optimized for resource-constrained MCUs (low RAM/ROM usage).</li>
+<li><strong>High Efficiency:</strong> Often outperforms traditional RTOS applications in terms of CPU usage.</li>
+<li><strong>Portable C Code:</strong> Written in standard C (MISRA compliance targeted).</li>
+<li><strong>Model-Based Design Support:</strong> Integrates with the QM graphical modeling tool for code generation.</li>
+<li><strong>Software Tracing:</strong> Supports the QS software tracing component (target code is commercial).</li>
+<li><strong>Dual Licensing:</strong> Available under GPLv3 or commercial licenses.</li>
+<li><strong>Safety Focus:</strong> Design promotes safety; dedicated SafeQP/C version available commercially.</li>
+</ul>
+
+
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>QP/C provides core framework features and integrates several logical components:</p>
+<ul>
+<li><strong>Scheduler &amp; Task Management:</strong> Manages the execution of Active Objects via built-in kernels or underlying RTOS tasks.</li>
+<li><strong>Inter-Task Communication:</strong> Based on asynchronous event passing through thread-safe event queues.</li>
+<li><strong>Memory Management:</strong> Includes efficient fixed-size block memory management for events.</li>
+<li><strong>Timer Management:</strong> Provides event-based time management services for Active Objects.</li>
+<li><strong>Runtime Analysis / Logging (QS):</strong> The Quantum Spy (QS) component offers software tracing capabilities for debugging and analysis (target-resident code is commercial).</li>
+<li><strong>Simulation:</strong> Can run on host platforms (Linux, Windows) for development and testing.</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">

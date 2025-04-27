@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/chibios-rt/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="ChibiOS/RT">
-  <meta property="og:description" content="ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment.">
+  <meta property="og:description" content="ChibiOS is a complete development environment for embedded applications, featuring a compact and high-performance Real-Time Operating System (RTOS). It includes two kernel variants: ChibiOS/RT, a feature-rich preemptive kernel, and ChibiOS/NIL, designed for extremely resource-constrained devices. The ecosystem encompasses a Hardware Abstraction Layer (HAL) with drivers for many peripherals, an OS library (OSLIB) for extensions like dynamic memory allocation and advanced IPC, and tools like ChibiStudio IDE. ChibiOS emphasizes efficiency, a fully static architecture (for core components), and portability, primarily targeting ARM Cortex-M MCUs but supporting various other architectures.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="ChibiOS/RT">
-  <meta name="twitter:description" content="ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment.">
+  <meta name="twitter:description" content="ChibiOS is a complete development environment for embedded applications, featuring a compact and high-performance Real-Time Operating System (RTOS). It includes two kernel variants: ChibiOS/RT, a feature-rich preemptive kernel, and ChibiOS/NIL, designed for extremely resource-constrained devices. The ecosystem encompasses a Hardware Abstraction Layer (HAL) with drivers for many peripherals, an OS library (OSLIB) for extensions like dynamic memory allocation and advanced IPC, and tools like ChibiStudio IDE. ChibiOS emphasizes efficiency, a fully static architecture (for core components), and portability, primarily targeting ARM Cortex-M MCUs but supporting various other architectures.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "ChibiOS\/RT",
     "headline": "ChibiOS\/RT",
     
-    "abstract": "\u003cp\u003eChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eChibiOS is a complete development environment for embedded applications, featuring a compact and high-performance Real-Time Operating System (RTOS). It includes two kernel variants: ChibiOS\/RT, a feature-rich preemptive kernel, and ChibiOS\/NIL, designed for extremely resource-constrained devices. The ecosystem encompasses a Hardware Abstraction Layer (HAL) with drivers for many peripherals, an OS library (OSLIB) for extensions like dynamic memory allocation and advanced IPC, and tools like ChibiStudio IDE. ChibiOS emphasizes efficiency, a fully static architecture (for core components), and portability, primarily targeting ARM Cortex-M MCUs but supporting various other architectures.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/chibios-rt\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "226"
+    "wordCount": "842"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-07</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-22</h4>
           </div>
           
           
@@ -481,7 +481,11 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">Modified GPL or Apache</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">GPL-3.0</li>
+              
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
+              
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Commercial</li>
               
             </ul>
           </div>
@@ -492,15 +496,23 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">MSP430</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">AVR</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ColdFire</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">PowerPC</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">avr</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">STM32</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">msp430</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">powerpc</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">pic</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">posix</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
               
             </div>
           </div>
@@ -508,6 +520,54 @@
           
           
             
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
               
                 
@@ -532,19 +592,67 @@
               <div class="flex flex-wrap gap-1 mt-1">
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">FileSystem</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">Network</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBHost</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
                   
                 
                   
-                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">USBDevice</span>
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">network-stack</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">filesystem</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-host</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">usb-device</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">can</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">shell-cli</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">dynamic-loading</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">smp-support</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
                   
                 
               </div>
@@ -565,10 +673,25 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment.</p>
+          <p>ChibiOS is a complete development environment for embedded applications, featuring a compact and high-performance Real-Time Operating System (RTOS). It includes two kernel variants: ChibiOS/RT, a feature-rich preemptive kernel, and ChibiOS/NIL, designed for extremely resource-constrained devices. The ecosystem encompasses a Hardware Abstraction Layer (HAL) with drivers for many peripherals, an OS library (OSLIB) for extensions like dynamic memory allocation and advanced IPC, and tools like ChibiStudio IDE. ChibiOS emphasizes efficiency, a fully static architecture (for core components), and portability, primarily targeting ARM Cortex-M MCUs but supporting various other architectures.</p>
+<p>ChibiOS provides a comprehensive suite for embedded systems development. Its core offering is the RTOS, available in two main flavors:</p>
+<ol>
+<li><strong>ChibiOS/RT:</strong> A high-performance, preemptive, real-time kernel designed for efficiency and a rich feature set. It supports multiple scheduling strategies, including priority-based preemptive and round-robin. It offers a wide range of synchronization primitives (semaphores, mutexes with priority inheritance, condition variables, event flags, synchronous messages) and efficient timer management, including virtual timers and tickless operation. RT is known for its speed and deterministic behavior. Recent versions also introduce experimental SMP support.</li>
+<li><strong>ChibiOS/NIL:</strong> An extremely tiny RTOS designed for MCUs with very limited resources (potentially sub-kB code size). While significantly smaller, it retains a core set of RTOS functionalities and follows a similar API structure to RT, allowing easier migration. It also employs a fully static architecture.</li>
+</ol>
+<p>Beyond the kernels, the ChibiOS project includes:</p>
+<ul>
+<li><strong>ChibiOS/HAL:</strong> A Hardware Abstraction Layer providing a consistent API across different microcontroller families. It includes drivers for peripherals like ADC, CAN, DAC, GPIO, I2C, SPI, UART, USB (Device &amp; Host), SD/MMC, Ethernet, RTC, PWM, Timers, and more. It heavily supports STMicroelectronics STM32, Raspberry Pi RP2040, Microchip PIC32/AVR/SAM, NXP Kinetis/LPC/i.MX RT, TI MSP430/Tiva, Infineon XMC, GigaDevice GD32 and others.</li>
+<li><strong>ChibiOS/OSLIB:</strong> An optional library extending both RT and NIL kernels with features like dynamic memory allocators (heap, memory pools), additional IPC mechanisms (mailboxes, object FIFOs), and dynamic thread creation support (RT only).</li>
+<li><strong>ChibiOS/SB (Sandbox):</strong> An extension for Cortex-M3/M4/M7 providing MPU-based memory isolation (sandboxing) capabilities, allowing applications to run untrusted or less critical code safely. Supports static and dynamic sandboxes, including loading ELF files into RAM-only sandboxes.</li>
+<li><strong>ChibiOS/EX (Explore):</strong> A newer component, potentially focusing on higher-level device abstractions or explorations.</li>
+<li><strong>ChibiOS/VFS:</strong> A Virtual File System layer allowing integration with various file systems like FatFS and LittleFS on different storage media (SD Cards, Flash).</li>
+<li><strong>ChibiStudio:</strong> A free, ready-to-use Eclipse-based IDE pre-configured with GCC toolchain, debugger (OpenOCD), and demo projects for quick setup and development.</li>
+</ul>
+<p>ChibiOS is known for its code quality, extensive documentation, strong debug support (including runtime checks, stack checking, kernel statistics, and a trace buffer), and flexible licensing (GPLv3, Apache 2.0, or Commercial).</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -577,30 +700,62 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Efficient and portable preemptive kernel.</li>
-<li>Best in class context switch performance.</li>
-<li>Many supported architectures and platforms.</li>
-<li>Static architecture, everything is statically allocated at compile time.</li>
-<li>Dynamic extensions, dynamic objects are supported by an optional layer built on top of the static core.</li>
-<li>Rich set of primitives: threads, virtual timers, semaphores, mutexes, condition variables, messages, mailboxes, event flags, queues.</li>
-<li>Support for priority inheritance algorithm on mutexes.</li>
-<li>HAL component supporting a variety of abstract device drivers: Port, Serial, ADC, CAN, EXT, GPT, I2C, ICU, MAC, MMC, PWM, RTC, SDC, SPI, UART, USB, USB-CDC.</li>
-<li>Extensive test suite with benchmarks.</li>
+<li><strong>Kernel Options:</strong> Offers ChibiOS/RT (full-featured) and ChibiOS/NIL (minimalist) kernels.</li>
+<li><strong>High Performance:</strong> Designed for low latency and fast context switching.</li>
+<li><strong>Static Architecture:</strong> Core kernel objects can be statically allocated, enhancing determinism and reducing runtime overhead.</li>
+<li><strong>Preemptive Scheduler:</strong> Priority-based scheduling with round-robin support.</li>
+<li><strong>Tickless Mode:</strong> Reduces power consumption during idle periods (RT).</li>
+<li><strong>Rich IPC Mechanisms:</strong> Semaphores (counting &amp; binary), Mutexes (with priority inheritance), Condition Variables, Event Flags, Synchronous Messages, Mailboxes, Object FIFOs.</li>
+<li><strong>Memory Management:</strong> Static allocation focus, with optional dynamic memory pools and heap allocation via OSLIB. MPU-based stack protection on supported platforms.</li>
+<li><strong>Comprehensive HAL:</strong> Extensive set of peripheral drivers with a consistent API across supported MCUs.</li>
+<li><strong>Timer Management:</strong> System timer, one-shot and periodic virtual timers.</li>
+<li><strong>Sandboxing (ChibiOS/SB):</strong> MPU-based isolation for Cortex-M3/M4/M7.</li>
+<li><strong>Filesystem Support:</strong> Virtual File System (VFS) with integrations for FatFS and LittleFS.</li>
+<li><strong>USB Stack:</strong> Support for USB Device and USB Host.</li>
+<li><strong>Network Stack:</strong> Integration with lwIP TCP/IP stack.</li>
+<li><strong>Shell/CLI:</strong> Integrated command-line shell component (XShell, msh).</li>
+<li><strong>Debugging Support:</strong> Extensive compile-time and runtime checks, assertions, stack overflow detection, kernel statistics, trace buffer.</li>
+<li><strong>SMP Support:</strong> Experimental Symmetric Multiprocessing support in recent RT versions.</li>
+<li><strong>Dynamic Loading:</strong> Supports loading ELF applications into sandboxes.</li>
+<li><strong>Platform Portability:</strong> Supports a wide range of architectures including ARM Cortex-M, RISC-V, AVR, MSP430, PIC32, PowerPC. Includes simulation ports (POSIX, Win32).</li>
+<li><strong>Licensing:</strong> Dual licensed under GPLv3/Apache 2.0 and Commercial licenses.</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
+<ul>
+<li><strong>Kernel (RT/NIL):</strong> Core RTOS providing scheduling, task management, IPC, and timing services.</li>
+<li><strong>HAL (Hardware Abstraction Layer):</strong> Provides portable device drivers for MCU peripherals.</li>
+<li><strong>OSLIB (OS Library):</strong> Extends kernel functionality with dynamic memory allocation, advanced IPC, etc.</li>
+<li><strong>SB (Sandbox):</strong> MPU-based memory isolation framework for Cortex-M.</li>
+<li><strong>VFS (Virtual File System):</strong> Abstraction layer for filesystem access.</li>
+<li><strong>Network:</strong> Integration layer for networking stacks like lwIP.</li>
+<li><strong>USB Stack:</strong> Provides USB Device and Host functionalities.</li>
+<li><strong>Shell:</strong> Command-line interface for interaction and debugging.</li>
+</ul>
+
+
+<h2 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <ul>
 <li><a href="http://www.stevebate.net/chibios-rpi/GettingStarted.html" target="_blank">Raspberry Pi ChibiOS/RT Port</a>. Raspberry Pi ChibiOS/RT Port by Steverino. So far, this port has drivers for the Port (GPIO), Serial, GPT (General-Purpose Timer), I2C, SPI and PWM. An example application is in demos/demos/ARM11-BCM2835-GCC. This example creates one thread to blink the onboard LED and another thread to support a very simple command shell. There are also examples showing how to use ChibiOS/RT to access devices likeTMP102 temperature sensor.</li>
 <li><a href="http://www.chibios.org/dokuwiki/doku.php?id=chibios:articles:start" target="_blank">Getting started</a>. More demo projects.</li>

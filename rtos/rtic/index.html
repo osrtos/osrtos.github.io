@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/rtic/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="RTIC">
-  <meta property="og:description" content="RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.">
+  <meta property="og:description" content="RTIC (Real-Time Interrupt-driven Concurrency) is a concurrency framework for Rust designed for building real-time embedded systems. It leverages hardware features like the NVIC (on ARM Cortex-M) or CLIC (on RISC-V) for highly efficient, preemptive task scheduling, minimizing software overhead. Built upon the Stack Resource Policy (SRP), RTIC provides compile-time guarantees against data races and deadlocks for shared resources. It features distinct hardware tasks (interrupt handlers) and asynchronous software tasks (async/await), promoting efficient memory usage through a shared stack and static allocation focus. RTIC offers a zero-cost abstraction for safe and predictable concurrency on microcontrollers.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="RTIC">
-  <meta name="twitter:description" content="RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.">
+  <meta name="twitter:description" content="RTIC (Real-Time Interrupt-driven Concurrency) is a concurrency framework for Rust designed for building real-time embedded systems. It leverages hardware features like the NVIC (on ARM Cortex-M) or CLIC (on RISC-V) for highly efficient, preemptive task scheduling, minimizing software overhead. Built upon the Stack Resource Policy (SRP), RTIC provides compile-time guarantees against data races and deadlocks for shared resources. It features distinct hardware tasks (interrupt handlers) and asynchronous software tasks (async/await), promoting efficient memory usage through a shared stack and static allocation focus. RTIC offers a zero-cost abstraction for safe and predictable concurrency on microcontrollers.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "RTIC",
     "headline": "RTIC",
     
-    "abstract": "\u003cp\u003eRIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eRTIC (Real-Time Interrupt-driven Concurrency) is a concurrency framework for Rust designed for building real-time embedded systems. It leverages hardware features like the NVIC (on ARM Cortex-M) or CLIC (on RISC-V) for highly efficient, preemptive task scheduling, minimizing software overhead. Built upon the Stack Resource Policy (SRP), RTIC provides compile-time guarantees against data races and deadlocks for shared resources. It features distinct hardware tasks (interrupt handlers) and asynchronous software tasks (\u003ccode\u003easync\u003c\/code\u003e\/\u003ccode\u003eawait\u003c\/code\u003e), promoting efficient memory usage through a shared stack and static allocation focus. RTIC offers a zero-cost abstraction for safe and predictable concurrency on microcontrollers.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/rtic\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "496"
+    "wordCount": "945"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-03</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-07</h4>
           </div>
           
           
@@ -481,9 +481,9 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache License, Version 2.0</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">Apache-2.0</li>
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">MIT license</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">MIT</li>
               
             </ul>
           </div>
@@ -494,12 +494,92 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-m</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">qemu</span>
               
             </div>
           </div>
           
           
+          
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+            <div class="mt-2">
+              <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Components:</h4>
+              <div class="flex flex-wrap gap-1 mt-1">
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
+                  
+                
+              </div>
+            </div>
+            
           
           
           
@@ -515,10 +595,26 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.</p>
+          <p>RTIC (Real-Time Interrupt-driven Concurrency) is a concurrency framework for Rust designed for building real-time embedded systems. It leverages hardware features like the NVIC (on ARM Cortex-M) or CLIC (on RISC-V) for highly efficient, preemptive task scheduling, minimizing software overhead. Built upon the Stack Resource Policy (SRP), RTIC provides compile-time guarantees against data races and deadlocks for shared resources. It features distinct hardware tasks (interrupt handlers) and asynchronous software tasks (<code>async</code>/<code>await</code>), promoting efficient memory usage through a shared stack and static allocation focus. RTIC offers a zero-cost abstraction for safe and predictable concurrency on microcontrollers.</p>
+<p>RTIC, standing for Real-Time Interrupt-driven Concurrency, positions itself as a &ldquo;hardware-accelerated Rust RTOS&rdquo; or concurrency framework, depending on perspective. Unlike traditional RTOS kernels that rely heavily on software for scheduling, RTIC utilizes underlying hardware mechanisms (like ARM Cortex-M&rsquo;s NVIC or RISC-V&rsquo;s interrupt controllers) to manage task scheduling and preemption based on static priorities. This approach leads to minimal scheduling overhead and predictable performance.</p>
+<p>The core of RTIC&rsquo;s safety model is the Stack Resource Policy (SRP). By analyzing task priorities and resource usage at compile time, RTIC enforces SRP rules to guarantee deadlock-free and data-race-free access to shared resources without requiring complex runtime locking mechanisms in many cases. Resource access is managed through priority-based critical sections (<code>lock</code> API), ensuring bounded priority inversion and maintaining system predictability.</p>
+<p>RTIC applications are structured around tasks:</p>
+<ul>
+<li><strong><code>#[init]</code></strong>: Runs once at startup with interrupts disabled to initialize peripherals and resources.</li>
+<li><strong><code>#[idle]</code></strong>: The lowest priority task, runs when no other task is ready. Often used for power saving (<code>wfi</code>).</li>
+<li><strong>Hardware Tasks</strong>: Functions bound directly to hardware interrupt vectors (<code>#[task(binds = InterruptName)]</code>). They handle asynchronous hardware events.</li>
+<li><strong>Software Tasks</strong>: Asynchronous functions (<code>async fn</code>) spawned programmatically (<code>task::spawn()</code>). They allow for sequential logic broken by <code>await</code> points (yields) and are scheduled by hardware interrupt dispatchers.</li>
+</ul>
+<p>Resource management distinguishes between:</p>
+<ul>
+<li><strong><code>#[local]</code> resources</strong>: Owned exclusively by a single task, allowing direct, lock-free access.</li>
+<li><strong><code>#[shared]</code> resources</strong>: Can be accessed by multiple tasks. Access requires using the <code>lock</code> API, which creates a priority ceiling-based critical section, or can be lock-free if only accessed by tasks of the same priority or accessed immutably.</li>
+</ul>
+<p>RTIC integrates seamlessly with Rust&rsquo;s <code>async</code>/<code>await</code> syntax for software tasks, providing ergonomic ways to handle delays, timeouts, and inter-task communication. Time management is handled by the <code>rtic-monotonics</code> crate, offering implementations for various hardware timers (like Systick) conforming to the <code>rtic-time::Monotonic</code> trait. Inter-task communication and asynchronous synchronization are facilitated by primitives in the <code>rtic-sync</code> crate, such as <code>Channel</code> for message passing.</p>
+<p>Designed for resource-constrained environments, RTIC applications typically share a single call stack and avoid dynamic memory allocation by default, promoting high memory efficiency. It supports all ARM Cortex-M variants (with specific handling for architectures lacking <code>BASEPRI</code>) and provides multiple backends for the heterogeneous RISC-V ecosystem.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -527,31 +623,35 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>Tasks as the unit of concurrency 1. Tasks can be event triggered (fired in response to asynchronous stimuli) or spawned by the application on demand.</li>
-<li>Message passing between tasks. Specifically, messages can be passed to software tasks at spawn time.</li>
-<li>A timer queue 2. Software tasks can be scheduled to run at some time in the future. This feature can be used to implement periodic tasks.</li>
-<li>Support for prioritization of tasks and, thus, preemptive multitasking.</li>
-<li>Efficient and data race free memory sharing through fine-grained priority based critical sections 1.</li>
-<li>Deadlock free execution guaranteed at compile time. This is a stronger guarantee than what&rsquo;s provided by the standard Mutex abstraction.</li>
-<li>Minimal scheduling overhead. The task scheduler has minimal software footprint; the hardware does the bulk of the scheduling.</li>
-<li>Highly efficient memory usage: All the tasks share a single call stack and there&rsquo;s no hard dependency on a dynamic memory allocator.</li>
-<li>All Cortex-M devices are fully supported.</li>
-<li>This task model is amenable to known WCET (Worst Case Execution Time) analysis and scheduling analysis techniques.</li>
+<li><strong>Hardware-Accelerated Scheduling</strong>: Utilizes NVIC/CLIC for low-overhead, preemptive task scheduling based on static priorities.</li>
+<li><strong>Stack Resource Policy (SRP)</strong>: Provides compile-time guarantees against deadlocks and data races for shared resources.</li>
+<li><strong>Preemptive Multitasking</strong>: Supports task preemption based on fixed priorities.</li>
+<li><strong>Memory Efficient</strong>: Tasks share a single call stack; promotes static memory allocation (<code>heapless</code>).</li>
+<li><strong>Asynchronous Software Tasks</strong>: Leverages Rust&rsquo;s <code>async</code>/<code>await</code> for ergonomic concurrency in software tasks.</li>
+<li><strong>Hardware Tasks</strong>: Direct binding of tasks to hardware interrupt handlers.</li>
+<li><strong>Flexible Resource Management</strong>: Clear distinction and safe access mechanisms for <code>local</code> and <code>shared</code> resources.</li>
+<li><strong>Priority Ceiling Emulation</strong>: Guarantees bounded priority inversion via <code>lock</code> API critical sections (ICPP/SRP).</li>
+<li><strong>Lock-Free Optimizations</strong>: Allows lock-free access to shared resources under specific conditions (same priority, immutable access).</li>
+<li><strong>Monotonic Timers</strong>: Integration with <code>rtic-monotonics</code> for precise scheduling (<code>delay</code>, <code>delay_until</code>) and timeouts (<code>timeout_after</code>, <code>timeout_at</code>).</li>
+<li><strong>Cross-Architecture Support</strong>: Full support for ARM Cortex-M (v6/v7/v8-M) and broad support for RISC-V via dedicated backends.</li>
+<li><strong>Zero-Cost Abstraction</strong>: Aims to introduce minimal runtime overhead compared to equivalent hand-written interrupt-safe code.</li>
+<li><strong>Inter-Task Communication</strong>: Provides <code>rtic-sync::Channel</code> for robust message passing between tasks.</li>
+<li><strong>Compile-Time Safety</strong>: Catches many concurrency errors during compilation rather than at runtime.</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
 <li><a href="https://github.com/newAM/stm32wl-lightswitch-demo" target="_blank">STM32WL Lightswitch Demo</a>. This is a demo project for the stm32wl-hal.</li>
 </ul>

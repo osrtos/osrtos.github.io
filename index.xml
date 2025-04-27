@@ -15,7 +15,7 @@
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/qpc/</guid>
-      <description>&lt;p&gt;A lightweight Active Object implementation for real-time embedded systems.&lt;/p&gt;</description>
+      <description>&lt;p&gt;QP/C is a lightweight, open-source Real-Time Event Framework (RTEF) for building responsive and modular real-time embedded applications in C. It implements the Active Object (Actor) model of computation and utilizes Hierarchical State Machines (HSMs) to describe system behavior. QP/C promotes asynchronous, event-driven programming, enhancing safety and maintainability compared to traditional RTOS approaches based on shared-state concurrency and blocking calls. It can run standalone on bare-metal MCUs or be deployed on top of various 3rd-party RTOS and OSes.&lt;/p&gt;</description>
       
     </item>
     
@@ -594,7 +594,7 @@
       <pubDate>Sat, 29 Apr 2017 08:18:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/sel4/</guid>
-      <description>&lt;p&gt;The world&amp;rsquo;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.&lt;/p&gt;</description>
+      <description>&lt;p&gt;seL4 is the world&amp;rsquo;s first operating system kernel with a formal proof of implementation correctness and security enforcement (confidentiality, integrity, availability). It is a high-assurance, high-performance microkernel designed for security and safety-critical systems. Its minimal kernel design minimizes the attack surface, and its capability-based access control mechanism provides fine-grained control over system resources, enabling strong isolation between components. seL4 is developed and maintained by the seL4 Foundation as an open-source project.&lt;/p&gt;</description>
       
     </item>
     
@@ -824,7 +824,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/rtic/</guid>
-      <description>&lt;p&gt;RIOT, the hardware accelerated Rust RTOS. A concurrency framework for building real-time systems.&lt;/p&gt;</description>
+      <description>&lt;p&gt;RTIC (Real-Time Interrupt-driven Concurrency) is a concurrency framework for Rust designed for building real-time embedded systems. It leverages hardware features like the NVIC (on ARM Cortex-M) or CLIC (on RISC-V) for highly efficient, preemptive task scheduling, minimizing software overhead. Built upon the Stack Resource Policy (SRP), RTIC provides compile-time guarantees against data races and deadlocks for shared resources. It features distinct hardware tasks (interrupt handlers) and asynchronous software tasks (&lt;code&gt;async&lt;/code&gt;/&lt;code&gt;await&lt;/code&gt;), promoting efficient memory usage through a shared stack and static allocation focus. RTIC offers a zero-cost abstraction for safe and predictable concurrency on microcontrollers.&lt;/p&gt;</description>
       
     </item>
     
@@ -924,7 +924,7 @@
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
       <guid>https://www.osrtos.com/rtos/chibios-rt/</guid>
-      <description>&lt;p&gt;ChibiOS is a complete development environment for embedded applications including RTOS, an HAL, peripheral drivers, support files and a development environment.&lt;/p&gt;</description>
+      <description>&lt;p&gt;ChibiOS is a complete development environment for embedded applications, featuring a compact and high-performance Real-Time Operating System (RTOS). It includes two kernel variants: ChibiOS/RT, a feature-rich preemptive kernel, and ChibiOS/NIL, designed for extremely resource-constrained devices. The ecosystem encompasses a Hardware Abstraction Layer (HAL) with drivers for many peripherals, an OS library (OSLIB) for extensions like dynamic memory allocation and advanced IPC, and tools like ChibiStudio IDE. ChibiOS emphasizes efficiency, a fully static architecture (for core components), and portability, primarily targeting ARM Cortex-M MCUs but supporting various other architectures.&lt;/p&gt;</description>
       
     </item>
     

@@ -63,7 +63,7 @@
   <meta property="og:url" content="https://www.osrtos.com/rtos/sel4/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="seL4">
-  <meta property="og:description" content="The world’s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.">
+  <meta property="og:description" content="seL4 is the world’s first operating system kernel with a formal proof of implementation correctness and security enforcement (confidentiality, integrity, availability). It is a high-assurance, high-performance microkernel designed for security and safety-critical systems. Its minimal kernel design minimizes the attack surface, and its capability-based access control mechanism provides fine-grained control over system resources, enabling strong isolation between components. seL4 is developed and maintained by the seL4 Foundation as an open-source project.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rtos">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="seL4">
-  <meta name="twitter:description" content="The world’s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.">
+  <meta name="twitter:description" content="seL4 is the world’s first operating system kernel with a formal proof of implementation correctness and security enforcement (confidentiality, integrity, availability). It is a high-assurance, high-performance microkernel designed for security and safety-critical systems. Its minimal kernel design minimizes the attack surface, and its capability-based access control mechanism provides fine-grained control over system resources, enabling strong isolation between components. seL4 is developed and maintained by the seL4 Foundation as an open-source project.">
 
   
   <script type="application/ld+json">
@@ -84,7 +84,7 @@
     "name": "seL4",
     "headline": "seL4",
     
-    "abstract": "\u003cp\u003eThe world\u0026rsquo;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.\u003c\/p\u003e",
+    "abstract": "\u003cp\u003eseL4 is the world\u0026rsquo;s first operating system kernel with a formal proof of implementation correctness and security enforcement (confidentiality, integrity, availability). It is a high-assurance, high-performance microkernel designed for security and safety-critical systems. Its minimal kernel design minimizes the attack surface, and its capability-based access control mechanism provides fine-grained control over system resources, enabling strong isolation between components. seL4 is developed and maintained by the seL4 Foundation as an open-source project.\u003c\/p\u003e",
     "inLanguage": "en-us",
     "url" : "https:\/\/www.osrtos.com\/rtos\/sel4\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "447"
+    "wordCount": "904"
   }]
   </script>
 
@@ -472,7 +472,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-04</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-27</h4>
           </div>
           
           
@@ -481,7 +481,9 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">License:</h4>
             <ul class="mt-1 list-none pl-0">
               
-                <li class="text-sm text-neutral-600 dark:text-neutral-400">GPL v2</li>
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">GPL-2.0-only</li>
+              
+                <li class="text-sm text-neutral-600 dark:text-neutral-400">BSD-2-Clause</li>
               
             </ul>
           </div>
@@ -492,11 +494,19 @@
             <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Platforms:</h4>
             <div class="flex flex-wrap gap-1 mt-1">
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">ARM</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">aarch32</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">aarch64</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">arm-cortex-a</span>
               
                 <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86</span>
               
-                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">RISC-V</span>
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">x86-64</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">risc-v</span>
+              
+                <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">qemu</span>
               
             </div>
           </div>
@@ -506,8 +516,85 @@
             
             
               
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
             
             
+            
+            <div class="mt-2">
+              <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Components:</h4>
+              <div class="flex flex-wrap gap-1 mt-1">
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">scheduler</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">task-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">inter-task-communication</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">memory-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">timer-management</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">smp-support</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">runtime-analysis</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">simulation</span>
+                  
+                
+                  
+                    <span class="px-2 py-1 text-xs rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300">logging</span>
+                  
+                
+              </div>
+            </div>
             
           
           
@@ -524,10 +611,21 @@
 
 
         <div class="article-content max-w-full mb-20">
-          <p>The world&rsquo;s first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source.</p>
+          <p>seL4 is the world&rsquo;s first operating system kernel with a formal proof of implementation correctness and security enforcement (confidentiality, integrity, availability). It is a high-assurance, high-performance microkernel designed for security and safety-critical systems. Its minimal kernel design minimizes the attack surface, and its capability-based access control mechanism provides fine-grained control over system resources, enabling strong isolation between components. seL4 is developed and maintained by the seL4 Foundation as an open-source project.</p>
+<p>seL4 stands out in the embedded OS landscape due to its rigorous focus on formal verification. It belongs to the L4 family of microkernels, emphasizing minimality, high performance, and flexible user-level construction of system services. The core kernel provides fundamental mechanisms for scheduling, inter-process communication (IPC), memory management via capabilities, and interrupt handling. All other system services, like device drivers, file systems, and network stacks, run as isolated user-level processes.</p>
+<p>The formal verification proofs cover functional correctness (the C code behaves exactly as specified), integrity (enforcement of kernel data structure invariants), and confidentiality (information cannot leak between isolated components). This provides an unprecedented level of assurance against bugs and security vulnerabilities within the kernel itself.</p>
+<p>Key features include:</p>
+<ul>
+<li><strong>Capability-Based Security:</strong> Objects and access rights are managed through unforgeable capabilities, preventing unauthorized access by default.</li>
+<li><strong>High Performance:</strong> Optimized IPC paths and minimal kernel overhead ensure efficient communication and execution.</li>
+<li><strong>Mixed-Criticality Systems (MCS):</strong> Extensions allow for guaranteed scheduling budgets and periods, enabling the co-existence of critical and non-critical tasks on the same hardware.</li>
+<li><strong>Virtualization Support:</strong> Includes support for ARM HYP mode and Intel VTX, allowing secure hosting of virtual machines. IOMMU (ARM SMMU, Intel VT-d) support is available through user-level components like the CAmkES VMM.</li>
+<li><strong>Multi-core (SMP) Support:</strong> Allows seL4 systems to leverage multi-core processors.</li>
+</ul>
+<p>The seL4 ecosystem includes user-level libraries, device drivers, the CAmkES component framework for building static systems, and the Microkit framework for simplified system construction. It supports ARM (32/64-bit), x86 (32/64-bit), and RISC-V (32/64-bit) architectures, along with QEMU simulation targets.</p>
 
 
-<h3 class="relative group">Features 
+<h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
@@ -536,23 +634,56 @@
             style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
-<li>seL4 is a high-assurance, high-performance microkernel developed, maintained and formally verified by NICTA (now the Trustworthy Systems Group at Data61) and owned by General Dynamics C4 Systems. It is a member of the L4 family of microkernels, and is the world&rsquo;s most advanced, highest-assured operating-system microkernel.</li>
-<li>seL4&rsquo;s implementation is formally (mathematically) proved correct (bug-free) against its specification, is proved to enforce strong security properties, and its operations have proved save upper bounds on their worst-case execution times.</li>
+<li><strong>Formally Verified Kernel:</strong> Guarantees implementation correctness, security enforcement (confidentiality, integrity), and binary correctness against its specification.</li>
+<li><strong>Capability-Based Security:</strong> Provides fine-grained access control and strong isolation through unforgeable capabilities.</li>
+<li><strong>High Performance:</strong> Optimized IPC mechanisms and minimal kernel overhead.</li>
+<li><strong>Microkernel Design:</strong> Reduces attack surface by implementing most services in user space.</li>
+<li><strong>Mixed Criticality Systems (MCS):</strong> Supports time and resource partitioning for tasks with different criticality levels (verified for specific configurations).</li>
+<li><strong>Hardware Virtualization Support:</strong> Enables secure execution of virtual machines (ARM HYP, x86 VTX).</li>
+<li><strong>IOMMU Support:</strong> User-level support for ARM SMMU and Intel VT-d via frameworks like CAmkES.</li>
+<li><strong>Multi-core (SMP) Support:</strong> Enables scheduling across multiple CPU cores.</li>
+<li><strong>User-level Device Drivers:</strong> Enhances system security and modularity.</li>
+<li><strong>Architecture Support:</strong> Runs on ARMv7/v8 (AArch32/AArch64), IA32/x86-64, and RISC-V (RV32/RV64) architectures.</li>
+<li><strong>Open Source:</strong> Kernel licensed under GPLv2, core libraries under BSD. Managed by the seL4 Foundation.</li>
+<li><strong>Debugging and Benchmarking:</strong> Includes kernel debugging features and performance benchmarking tools.</li>
 </ul>
 
 
-<h3 class="relative group">Sample projects and resources 
-    <div id="sample-projects-and-resources" class="anchor"></div>
+<h2 class="relative group">Components 
+    <div id="components" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
+<ul>
+<li><strong>Scheduler:</strong> Core scheduling mechanism, supports fixed-priority and MCS scheduling.</li>
+<li><strong>Task Management:</strong> Manages threads via TCB (Thread Control Block) objects.</li>
+<li><strong>Inter-task Communication:</strong> Synchronous IPC via Endpoints, asynchronous signaling via Notifications.</li>
+<li><strong>Memory Management:</strong> Capability-based management of memory (Untyped Memory, Frames, VSpaces).</li>
+<li><strong>Timer Management:</strong> Requires user-level timer drivers (e.g., via <code>libplatsupport</code>).</li>
+<li><strong>SMP Support:</strong> Kernel mechanisms for multi-core operation and synchronization.</li>
+<li><strong>Runtime Analysis:</strong> Benchmarking syscalls (<code>seL4_Benchmark*</code>) and debug syscalls (<code>seL4_Debug*</code>).</li>
+<li><strong>Simulation:</strong> Supported on QEMU for various architectures.</li>
+<li><strong>Logging:</strong> Basic kernel debug printing (<code>seL4_DebugPutChar</code>) and benchmark logging capabilities.</li>
+</ul>
+
+
+<h2 class="relative group">Resources 
+    <div id="resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <ul>
 <li><a href="https://github.com/mikeroyal/RISC-V-Guide" target="_blank">RISC-V-Guide</a>. RISC-V Guide. Learn all about the RISC-V computer architecture along with the Development Tools and Operating Systems to develop on RISC-V hardware..</li>
 <li><a href="https://github.com/cl91/NeptuneOS" target="_blank">NeptuneOS</a>. Neptune OS: A Windows NT personality for the seL4 microkernel.</li>
