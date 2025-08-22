@@ -2,39 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Libraries on OSRTOS</title>
-    <link>https://www.osrtos.com/library/</link>
+    <link>http://localhost:1313/library/</link>
     <description>Recent content in Libraries on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 08 Mar 2019 01:11:02 +0000</lastBuildDate><atom:link href="https://www.osrtos.com/library/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Mar 2019 01:11:02 +0000</lastBuildDate><atom:link href="http://localhost:1313/library/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tensorflow Micro</title>
-      <link>https://www.osrtos.com/library/tensorflow-micro/</link>
+      <link>http://localhost:1313/library/tensorflow-micro/</link>
       <pubDate>Fri, 08 Mar 2019 01:11:02 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/tensorflow-micro/</guid>
+      <guid>http://localhost:1313/library/tensorflow-micro/</guid>
       <description>&lt;p&gt;This an experimental port of TensorFlow Lite aimed at micro controllers and other devices with only kilobytes of memory.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>uTensor</title>
-      <link>https://www.osrtos.com/library/utensor/</link>
+      <link>http://localhost:1313/library/utensor/</link>
       <pubDate>Fri, 08 Mar 2019 01:10:34 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/utensor/</guid>
+      <guid>http://localhost:1313/library/utensor/</guid>
       <description>&lt;p&gt;uTensor is an extremely light-weight machine learning inference framework built on Mbed and Tensorflow. It consists of a runtime library and an offline tool. The total size of graph definition and algorithm implementation of a 3-layer MLP produced by uTensor is less than 32kB in the resulting binary (excluding the weights).&lt;/p&gt;
-
 
 &lt;h3 class=&#34;relative group&#34;&gt;Features 
     &lt;div id=&#34;features&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#features&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline&#34; href=&#34;#features&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h3&gt;
@@ -46,211 +44,221 @@
 &lt;li&gt;More efficient Run-time&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;h3 class=&#34;relative group&#34;&gt;Resources 
     &lt;div id=&#34;resources&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#resources&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline&#34; href=&#34;#resources&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/uTensor/utensor_cgen&#34; target=&#34;_blank&#34;&gt;utensor_cgen&lt;/a&gt;. C++ code generator for uTensor &lt;a href=&#34;https://utensor-cgen.readthedocs.io/en/latest/&#34; target=&#34;_blank&#34;&gt;https://utensor-cgen.readthedocs.io/en/latest/&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/crespum/oscw18-edge-ai&#34; target=&#34;_blank&#34;&gt;oscw18-edge-ai&lt;/a&gt;. Analysys of edge computing resources for cubesats.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ARMmbed/utensor-mnist-demo&#34; target=&#34;_blank&#34;&gt;utensor-mnist-demo&lt;/a&gt;. Handwritten digit recognition demo.&lt;/li&gt;
+&lt;li&gt;&lt;a
+  href=&#34;https://github.com/uTensor/utensor_cgen&#34;
+    target=&#34;_blank&#34;
+  &gt;utensor_cgen&lt;/a&gt;. C++ code generator for uTensor &lt;a
+  href=&#34;https://utensor-cgen.readthedocs.io/en/latest/&#34;
+    target=&#34;_blank&#34;
+  &gt;https://utensor-cgen.readthedocs.io/en/latest/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a
+  href=&#34;https://github.com/crespum/oscw18-edge-ai&#34;
+    target=&#34;_blank&#34;
+  &gt;oscw18-edge-ai&lt;/a&gt;. Analysys of edge computing resources for cubesats.&lt;/li&gt;
+&lt;li&gt;&lt;a
+  href=&#34;https://github.com/ARMmbed/utensor-mnist-demo&#34;
+    target=&#34;_blank&#34;
+  &gt;utensor-mnist-demo&lt;/a&gt;. Handwritten digit recognition demo.&lt;/li&gt;
 &lt;/ul&gt;</description>
       
     </item>
     
     <item>
       <title>NimBLE</title>
-      <link>https://www.osrtos.com/library/nimble/</link>
+      <link>http://localhost:1313/library/nimble/</link>
       <pubDate>Mon, 04 Mar 2019 01:03:41 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/nimble/</guid>
+      <guid>http://localhost:1313/library/nimble/</guid>
       <description>&lt;p&gt;Apache NimBLE is an open-source Bluetooth 5.0 stack (both Host &amp;amp; Controller) that completely replaces the proprietary SoftDevice on Nordic chipsets. It is part of Apache Mynewt project.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>EasyFlash</title>
-      <link>https://www.osrtos.com/library/easyflash/</link>
+      <link>http://localhost:1313/library/easyflash/</link>
       <pubDate>Sat, 02 Mar 2019 00:07:07 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/easyflash/</guid>
+      <guid>http://localhost:1313/library/easyflash/</guid>
       <description>&lt;p&gt;EasyFlash is an open source lightweight embedded flash memory library. It provides convenient application interface for MCU. The developers can achieve more efficient and common application development based on Flash memory.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>modm</title>
-      <link>https://www.osrtos.com/library/modm/</link>
+      <link>http://localhost:1313/library/modm/</link>
       <pubDate>Mon, 17 Dec 2018 07:25:23 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/modm/</guid>
+      <guid>http://localhost:1313/library/modm/</guid>
       <description>&lt;p&gt;modm is a toolbox for building custom C++17 libraries tailored to your embedded device. modm generates startup code, HALs and their implementations, communication protocols, drivers for external devices, BSPs, etc… in a modular, customizable process that you can fine-tune to your needs.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Ucglib</title>
-      <link>https://www.osrtos.com/library/ucglib/</link>
+      <link>http://localhost:1313/library/ucglib/</link>
       <pubDate>Tue, 07 Aug 2018 03:56:44 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/ucglib/</guid>
+      <guid>http://localhost:1313/library/ucglib/</guid>
       <description>&lt;p&gt;Arduino True Color Library for TFTs and OLEDs&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>MicroPython</title>
-      <link>https://www.osrtos.com/library/micropython/</link>
+      <link>http://localhost:1313/library/micropython/</link>
       <pubDate>Tue, 07 Aug 2018 02:47:39 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/micropython/</guid>
+      <guid>http://localhost:1313/library/micropython/</guid>
       <description>&lt;p&gt;A lean and efficient Python implementation for microcontrollers and constrained systems.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>lwIP</title>
-      <link>https://www.osrtos.com/library/lwip/</link>
+      <link>http://localhost:1313/library/lwip/</link>
       <pubDate>Tue, 07 Aug 2018 01:41:26 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/lwip/</guid>
+      <guid>http://localhost:1313/library/lwip/</guid>
       <description>&lt;p&gt;lwIP is a small independent implementation of the TCP/IP protocol suite. The focus of the lwIP TCP/IP implementation is to reduce resource usage while still having a full scale TCP. This makes lwIP suitable for use in embedded systems with tens of kilobytes of free RAM and room for around 40 kilobytes of code ROM.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>JesFs</title>
-      <link>https://www.osrtos.com/library/jesfs/</link>
+      <link>http://localhost:1313/library/jesfs/</link>
       <pubDate>Thu, 22 Mar 2018 03:28:24 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/jesfs/</guid>
+      <guid>http://localhost:1313/library/jesfs/</guid>
       <description>&lt;p&gt;JesFs is an Ultra-Lightweight Flash File System, especially designed for NOR-Flash.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Open Thread</title>
-      <link>https://www.osrtos.com/library/open-thread/</link>
+      <link>http://localhost:1313/library/open-thread/</link>
       <pubDate>Fri, 02 Feb 2018 09:19:51 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/open-thread/</guid>
+      <guid>http://localhost:1313/library/open-thread/</guid>
       <description>&lt;p&gt;OpenThread released by Nest is an open-source implementation of the Thread networking protocol.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>LVGL</title>
-      <link>https://www.osrtos.com/library/lvgl/</link>
+      <link>http://localhost:1313/library/lvgl/</link>
       <pubDate>Mon, 25 Dec 2017 19:20:10 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/lvgl/</guid>
+      <guid>http://localhost:1313/library/lvgl/</guid>
       <description>&lt;p&gt;LVGL is the most popular free and open-source embedded graphics library to create beautiful UIs for any MCU, MPU and display type.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>littlefs</title>
-      <link>https://www.osrtos.com/library/littlefs/</link>
+      <link>http://localhost:1313/library/littlefs/</link>
       <pubDate>Mon, 25 Dec 2017 19:14:32 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/littlefs/</guid>
+      <guid>http://localhost:1313/library/littlefs/</guid>
       <description>&lt;p&gt;A little fail-safe filesystem designed for embedded systems&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>NFFS</title>
-      <link>https://www.osrtos.com/library/nffs/</link>
+      <link>http://localhost:1313/library/nffs/</link>
       <pubDate>Thu, 05 Jan 2017 13:26:05 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/nffs/</guid>
+      <guid>http://localhost:1313/library/nffs/</guid>
       <description>&lt;p&gt;The Newtron Flash File System (nffs) is an open source file system available by default with the Apache Mynewt OS.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>CGUI</title>
-      <link>https://www.osrtos.com/library/cgui/</link>
+      <link>http://localhost:1313/library/cgui/</link>
       <pubDate>Thu, 01 Dec 2016 10:50:15 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/cgui/</guid>
+      <guid>http://localhost:1313/library/cgui/</guid>
       <description>&lt;p&gt;CGUI is a library that provides you with a set of C-functions to create GUI applications, i.e. windows and window controls like buttons, check-boxes, menus, input boxes etc.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>IUP</title>
-      <link>https://www.osrtos.com/library/iup/</link>
+      <link>http://localhost:1313/library/iup/</link>
       <pubDate>Thu, 01 Dec 2016 10:46:51 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/iup/</guid>
+      <guid>http://localhost:1313/library/iup/</guid>
       <description>&lt;p&gt;IUP is a portable toolkit for building graphical user interfaces. It offers a configuration API in three basic languages: C, Lua and LED. IUP purpose is to allow a program to be executed in different systems without any modification.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>eefs</title>
-      <link>https://www.osrtos.com/library/eefs/</link>
+      <link>http://localhost:1313/library/eefs/</link>
       <pubDate>Tue, 29 Nov 2016 17:05:51 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/eefs/</guid>
+      <guid>http://localhost:1313/library/eefs/</guid>
       <description>&lt;p&gt;EEFS is for EEPROM File System Project (EEFS). It is a simple file system for memory devices such as EEPROM, RAM, ROM, etc. Currently it is not intended for block oriented devices such as disks and flash devices.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>FatFs</title>
-      <link>https://www.osrtos.com/library/fatfs/</link>
+      <link>http://localhost:1313/library/fatfs/</link>
       <pubDate>Tue, 29 Nov 2016 17:02:33 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/fatfs/</guid>
+      <guid>http://localhost:1313/library/fatfs/</guid>
       <description>&lt;p&gt;FatFs is a generic FAT/exFAT file system module for small embedded systems. The FatFs module is written in compliance with ANSI C (C89) and completely separated from the disk I/O layer. Therefore it is independent of the platform. It can be incorporated into small microcontrollers with limited resource, such as 8051, PIC, AVR, ARM, Z80, 78K and etc.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>µGUI</title>
-      <link>https://www.osrtos.com/library/ugui/</link>
+      <link>http://localhost:1313/library/ugui/</link>
       <pubDate>Tue, 29 Nov 2016 16:57:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/ugui/</guid>
+      <guid>http://localhost:1313/library/ugui/</guid>
       <description>&lt;p&gt;µGUI is a free and open source graphic library for embedded systems. It is platform-independent and can be easily ported to almost any microcontroller system. As long as the display is capable of showing graphics, µGUI is not restricted to a certain display technology. Therefore, display technologies such as LCD, TFT, E-Paper, LED or OLED are supported.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>MiniGUI</title>
-      <link>https://www.osrtos.com/library/minigui/</link>
+      <link>http://localhost:1313/library/minigui/</link>
       <pubDate>Tue, 29 Nov 2016 16:55:33 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/minigui/</guid>
+      <guid>http://localhost:1313/library/minigui/</guid>
       <description>&lt;p&gt;MiniGUI is a free software project. It aims to provide a fast, stable, and cross-operating-system graphics user interface (GUI) support system, which is especially fit for real-time embedded systems based-on Linux/uClinux, eCos, and other traditional RTOSes, such as VxWorks, ThreadX, uC/OS-II, and Nucleus.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>SPIFFS</title>
-      <link>https://www.osrtos.com/library/spiffs/</link>
+      <link>http://localhost:1313/library/spiffs/</link>
       <pubDate>Tue, 29 Nov 2016 16:41:42 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/spiffs/</guid>
+      <guid>http://localhost:1313/library/spiffs/</guid>
       <description>&lt;p&gt;Spiffs is a file system intended for SPI NOR flash devices on embedded targets.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Yaffs</title>
-      <link>https://www.osrtos.com/library/yaffs/</link>
+      <link>http://localhost:1313/library/yaffs/</link>
       <pubDate>Tue, 29 Nov 2016 16:37:51 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/library/yaffs/</guid>
+      <guid>http://localhost:1313/library/yaffs/</guid>
       <description>&lt;p&gt;Yaffs (Yet Another Flash File System) is an open-source file system specifically designed to be fast, robust and suitable for embedded use with NAND and NOR Flash.&lt;/p&gt;</description>
       
     </item>

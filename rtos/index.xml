@@ -2,49 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rtos on OSRTOS</title>
-    <link>https://www.osrtos.com/rtos/</link>
+    <link>http://localhost:1313/rtos/</link>
     <description>Recent content in Rtos on OSRTOS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.osrtos.com/rtos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/rtos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>qpc</title>
-      <link>https://www.osrtos.com/rtos/qpc/</link>
+      <link>http://localhost:1313/rtos/qpc/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/qpc/</guid>
+      <guid>http://localhost:1313/rtos/qpc/</guid>
       <description>&lt;p&gt;QP/C is a lightweight, open-source Real-Time Event Framework (RTEF) for building responsive and modular real-time embedded applications in C. It implements the Active Object (Actor) model of computation and utilizes Hierarchical State Machines (HSMs) to describe system behavior. QP/C promotes asynchronous, event-driven programming, enhancing safety and maintainability compared to traditional RTOS approaches based on shared-state concurrency and blocking calls. It can run standalone on bare-metal MCUs or be deployed on top of various 3rd-party RTOS and OSes.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>RA3-RTOS</title>
-      <link>https://www.osrtos.com/rtos/ra3-rtos/</link>
+      <link>http://localhost:1313/rtos/ra3-rtos/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/ra3-rtos/</guid>
+      <guid>http://localhost:1313/rtos/ra3-rtos/</guid>
       <description>&lt;p&gt;RA3 RTOS is a lightweight, open-source real-time operating system specifically designed for embedded systems.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Apex</title>
-      <link>https://www.osrtos.com/rtos/apex/</link>
+      <link>http://localhost:1313/rtos/apex/</link>
       <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/apex/</guid>
+      <guid>http://localhost:1313/rtos/apex/</guid>
       <description>&lt;p&gt;Apex is a real-time operating system (RTOS) designed for use in small to medium scale embedded systems. It aims to be a bridge between traditional RTOSes for small microcontrollers and Linux for larger embedded systems. Apex provides a Linux-compatible environment, making it easier for developers familiar with Linux. The RTOS is currently under heavy development and is not considered stable.&lt;/p&gt;
-
 
 &lt;h3 class=&#34;relative group&#34;&gt;Features 
     &lt;div id=&#34;features&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#features&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline&#34; href=&#34;#features&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h3&gt;
@@ -59,14 +57,12 @@
 &lt;li&gt;Development can focus on the kernel as userspace tools &amp;amp; libraries are provided by external projects.&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;h3 class=&#34;relative group&#34;&gt;Components 
     &lt;div id=&#34;components&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#components&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline&#34; href=&#34;#components&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h3&gt;
@@ -93,670 +89,670 @@
     
     <item>
       <title>CMSIS Version 5</title>
-      <link>https://www.osrtos.com/rtos/cmsis/</link>
+      <link>http://localhost:1313/rtos/cmsis/</link>
       <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/cmsis/</guid>
+      <guid>http://localhost:1313/rtos/cmsis/</guid>
       <description>&lt;p&gt;CMSIS is a set of tools, APIs, frameworks, and workflows designed to simplify software re-use, reduce the learning curve for microcontroller developers, and accelerate project build and debug processes. It was initiated as a vendor-independent hardware abstraction layer for Arm® Cortex®-M based processors and later expanded to support entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach to interface with peripherals, real-time operating systems, and middleware components.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Hubris</title>
-      <link>https://www.osrtos.com/rtos/hubris/</link>
+      <link>http://localhost:1313/rtos/hubris/</link>
       <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/hubris/</guid>
+      <guid>http://localhost:1313/rtos/hubris/</guid>
       <description>&lt;p&gt;Hubris is a microcontroller operating system designed for deeply embedded systems prioritizing reliability and robustness. Developed in Rust, it leverages memory safety features and strict memory isolation using the Memory Protection Unit (MPU) found on target MCUs like ARM Cortex-M. Tasks run in unprivileged mode and communicate via synchronous IPC. Hubris employs a static task model, where tasks are defined at compile time, enhancing predictability and simplifying resource management. It features a unique supervisor task responsible for managing other tasks and handling faults. Development utilizes a custom &lt;code&gt;xtask&lt;/code&gt;-based build system and integrates tightly with the Humility debugger.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>HuskEOS</title>
-      <link>https://www.osrtos.com/rtos/huskeos/</link>
+      <link>http://localhost:1313/rtos/huskeos/</link>
       <pubDate>Sun, 20 Aug 2023 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/huskeos/</guid>
+      <guid>http://localhost:1313/rtos/huskeos/</guid>
       <description>&lt;p&gt;HuskEOS is a real-time operating system (RTOS) designed for embedded systems. It offers a priority-based preemptive scheduler and boasts impressive performance metrics, such as achieving 50,000 context switches per second on a Cortex-M4 configured at 16MHz.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Eclipse ThreadX</title>
-      <link>https://www.osrtos.com/rtos/threadx-rtos/</link>
+      <link>http://localhost:1313/rtos/threadx-rtos/</link>
       <pubDate>Wed, 27 May 2020 09:25:57 +0800</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/threadx-rtos/</guid>
+      <guid>http://localhost:1313/rtos/threadx-rtos/</guid>
       <description>&lt;p&gt;Eclipse ThreadX is an advanced, widely deployed Real-Time Operating System (RTOS) designed for deeply embedded, real-time, and IoT applications, especially on resource-constrained devices. Formerly known as Azure RTOS, ThreadX offers reliable, ultra-fast performance with a minimal footprint (as low as 2KB ROM, 1KB RAM). It features a picokernel architecture, preemption-threshold scheduling, event chaining, comprehensive IPC mechanisms, and a rich ecosystem including networking, file system, USB, and GUI components. ThreadX comes with extensive safety and security certifications (e.g., TÜV IEC 61508 SIL4, UL 60730, EAL4+, FIPS 140-2).&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Contiki-NG</title>
-      <link>https://www.osrtos.com/rtos/contiki-ng/</link>
+      <link>http://localhost:1313/rtos/contiki-ng/</link>
       <pubDate>Fri, 22 May 2020 08:43:25 +0800</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/contiki-ng/</guid>
+      <guid>http://localhost:1313/rtos/contiki-ng/</guid>
       <description>&lt;p&gt;Contiki-NG is an operating system for resource-constrained devices in the Internet of Things. Contiki-NG contains an RFC-compliant, low-power IPv6 communication stack, enabling Internet connectivity.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>uC/OS-II</title>
-      <link>https://www.osrtos.com/rtos/uc-os-ii/</link>
+      <link>http://localhost:1313/rtos/uc-os-ii/</link>
       <pubDate>Mon, 04 May 2020 10:22:58 +0800</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/uc-os-ii/</guid>
+      <guid>http://localhost:1313/rtos/uc-os-ii/</guid>
       <description>&lt;p&gt;μC/OS-II is a portable, ROMable, scalable, preemptive, real-time deterministic multitasking kernel for microprocessors, microcontrollers and DSPs.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>uC/OS-III</title>
-      <link>https://www.osrtos.com/rtos/uc-os-iii/</link>
+      <link>http://localhost:1313/rtos/uc-os-iii/</link>
       <pubDate>Mon, 04 May 2020 10:22:58 +0800</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/uc-os-iii/</guid>
+      <guid>http://localhost:1313/rtos/uc-os-iii/</guid>
       <description>&lt;p&gt;µC/OS-III is a highly portable, ROMable, scalable, preemptive, real-time, deterministic, multitasking kernel for microprocessors, microcontrollers and DSPs.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Drone</title>
-      <link>https://www.osrtos.com/rtos/drone/</link>
+      <link>http://localhost:1313/rtos/drone/</link>
       <pubDate>Tue, 25 Feb 2020 11:37:19 +0800</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/drone/</guid>
+      <guid>http://localhost:1313/rtos/drone/</guid>
       <description>&lt;p&gt;Drone is an Embedded Operating System for writing real-time applications in Rust.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>TencentOS-tiny</title>
-      <link>https://www.osrtos.com/rtos/tencent-os-tiny/</link>
+      <link>http://localhost:1313/rtos/tencent-os-tiny/</link>
       <pubDate>Sun, 03 Nov 2019 05:35:24 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/tencent-os-tiny/</guid>
+      <guid>http://localhost:1313/rtos/tencent-os-tiny/</guid>
       <description>&lt;p&gt;TencentOS tiny is a real-time operating system developed by Tencent for the Internet of Things. It features low power consumption, low resource consumption, modularity, security and reliability, and can effectively improve the development efficiency of IoT terminal products.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>QuarkTS</title>
-      <link>https://www.osrtos.com/rtos/quark-ts/</link>
+      <link>http://localhost:1313/rtos/quark-ts/</link>
       <pubDate>Wed, 27 Feb 2019 08:49:25 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/quark-ts/</guid>
+      <guid>http://localhost:1313/rtos/quark-ts/</guid>
       <description>&lt;p&gt;QuarkTS is a simple non-Preemtive Real-Time OS with a quasi-static scheduler for embedded multi-tasking applications.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>HyperC</title>
-      <link>https://www.osrtos.com/rtos/hyperc/</link>
+      <link>http://localhost:1313/rtos/hyperc/</link>
       <pubDate>Sun, 24 Feb 2019 01:36:21 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/hyperc/</guid>
+      <guid>http://localhost:1313/rtos/hyperc/</guid>
       <description>&lt;p&gt;The hyperC OS is a real time-operating system (RTOS) designed for various IoT applications. All the designs are aimed at the optimization of ARM Cortex CPUs.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Frosted</title>
-      <link>https://www.osrtos.com/rtos/frosted/</link>
+      <link>http://localhost:1313/rtos/frosted/</link>
       <pubDate>Thu, 14 Feb 2019 08:13:11 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/frosted/</guid>
+      <guid>http://localhost:1313/rtos/frosted/</guid>
       <description>&lt;p&gt;Frosted is an acronym that means &amp;ldquo;Free Operating Systems for Tiny Embedded Devices&amp;rdquo;. The goal of this project is to provide a Free (as in Freedom) kernel for embedded systems, which exposes a POSIX-compliant system call API.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>TinyOS</title>
-      <link>https://www.osrtos.com/rtos/tinyos/</link>
+      <link>http://localhost:1313/rtos/tinyos/</link>
       <pubDate>Tue, 12 Feb 2019 06:21:04 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/tinyos/</guid>
+      <guid>http://localhost:1313/rtos/tinyos/</guid>
       <description>&lt;p&gt;TinyOS is an open source, BSD-licensed operating system designed for low-power wireless devices, such as those used in sensor networks, ubiquitous computing, personal area networks, smart buildings, and smart meters.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Phoenix-RTOS</title>
-      <link>https://www.osrtos.com/rtos/phoenix-rtos/</link>
+      <link>http://localhost:1313/rtos/phoenix-rtos/</link>
       <pubDate>Tue, 12 Feb 2019 06:00:17 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/phoenix-rtos/</guid>
+      <guid>http://localhost:1313/rtos/phoenix-rtos/</guid>
       <description>&lt;p&gt;Phoenix-RTOS is a scalable, open-source, real-time operating system designed for IoT devices and other resource-constrained applications. It features a custom microkernel architecture, separating core functionalities like memory management, scheduling, and IPC from higher-level services such as filesystems, networking stacks, and device drivers, which run as server processes in user space. This design emphasizes modularity and scalability, allowing deployment on microcontrollers up to multi-processor systems. It supports multiple hardware architectures including ARM Cortex-M/A, x86, RISC-V, and SPARC (LEON).&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Tock</title>
-      <link>https://www.osrtos.com/rtos/tock/</link>
+      <link>http://localhost:1313/rtos/tock/</link>
       <pubDate>Tue, 12 Feb 2019 05:45:10 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/tock/</guid>
+      <guid>http://localhost:1313/rtos/tock/</guid>
       <description>&lt;p&gt;Tock is an embedded operating system designed for running multiple concurrent, mutually distrustful applications on ARM Cortex-M and RISC-V microcontrollers. Its core design prioritizes safety and reliability, utilizing Rust&amp;rsquo;s compile-time guarantees to protect the kernel and drivers, and hardware Memory Protection Units (MPUs) to isolate applications. Tock introduces a unique architecture dividing components into kernel-space &amp;ldquo;capsules&amp;rdquo; (Rust-based, cooperatively scheduled, minimal overhead) and user-space &amp;ldquo;processes&amp;rdquo; (MPU-isolated, preemptively scheduled, can be written in any language and loaded dynamically). This approach enables robust, secure applications on resource-constrained devices like wearables and IoT nodes.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>ATK2</title>
-      <link>https://www.osrtos.com/rtos/atk2/</link>
+      <link>http://localhost:1313/rtos/atk2/</link>
       <pubDate>Tue, 12 Feb 2019 03:38:22 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/atk2/</guid>
+      <guid>http://localhost:1313/rtos/atk2/</guid>
       <description>&lt;p&gt;The TOPPERS/ATK (Automotive Kernel) is a real-time operating system for automotive system control publicly released by the TOPPERS project.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>MaRTE</title>
-      <link>https://www.osrtos.com/rtos/marte/</link>
+      <link>http://localhost:1313/rtos/marte/</link>
       <pubDate>Tue, 12 Feb 2019 03:31:45 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/marte/</guid>
+      <guid>http://localhost:1313/rtos/marte/</guid>
       <description>&lt;p&gt;MaRTE OS is a Hard Real-Time Operating System for embedded applications that follows the Minimal Real-Time POSIX.13 subset.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>cocoOS</title>
-      <link>https://www.osrtos.com/rtos/cocoos/</link>
+      <link>http://localhost:1313/rtos/cocoos/</link>
       <pubDate>Tue, 07 Aug 2018 02:05:06 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/cocoos/</guid>
+      <guid>http://localhost:1313/rtos/cocoos/</guid>
       <description>&lt;p&gt;cocoOS is a free, open source, cooperative task scheduler, based on coroutines targeted for embedded microcontrollers like AVR, MSP430 and STM32.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>MOE</title>
-      <link>https://www.osrtos.com/rtos/moe/</link>
+      <link>http://localhost:1313/rtos/moe/</link>
       <pubDate>Tue, 20 Mar 2018 09:24:52 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/moe/</guid>
+      <guid>http://localhost:1313/rtos/moe/</guid>
       <description>&lt;p&gt;MOE is an event-driven scheduler system for 8/16/32-bit MCUs. MOE means &amp;ldquo;Minds Of Embedded system&amp;rdquo;.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>TizenRT</title>
-      <link>https://www.osrtos.com/rtos/tizenrt/</link>
+      <link>http://localhost:1313/rtos/tizenrt/</link>
       <pubDate>Sun, 11 Feb 2018 06:48:49 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/tizenrt/</guid>
+      <guid>http://localhost:1313/rtos/tizenrt/</guid>
       <description>&lt;p&gt;TizenRT is a lightweight Real-Time Operating System (RTOS) developed by Samsung, designed to extend the Tizen platform to low-end, resource-constrained IoT devices. Based initially on the NuttX kernel, TizenRT targets microcontrollers like ARM Cortex-M/R with limited memory (less than 2MB RAM) and flash storage (less than 16MB). It provides a familiar Linux-like development environment with POSIX API compatibility, BSD sockets, and a shell interface (TASH). TizenRT includes integrated networking stacks (IPv4/IPv6), file systems, a lightweight database (AraStorage), and support for various IoT protocols, aiming to simplify development for connected devices.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>LiteOS</title>
-      <link>https://www.osrtos.com/rtos/liteos/</link>
+      <link>http://localhost:1313/rtos/liteos/</link>
       <pubDate>Tue, 06 Feb 2018 03:23:05 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/liteos/</guid>
+      <guid>http://localhost:1313/rtos/liteos/</guid>
       <description>&lt;p&gt;Huawei LiteOS is a lightweight open-source IoT OS and a smart hardware development platform. It simplifies IoT device development and device connectivity, makes services smarter, delivers superb user experience, and provides better data protection. Huawei LiteOS is designed for smart homes, wearables, IoV, and intelligent manufacturing applications.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Mongoose OS</title>
-      <link>https://www.osrtos.com/rtos/mongoose-os/</link>
+      <link>http://localhost:1313/rtos/mongoose-os/</link>
       <pubDate>Wed, 24 Jan 2018 01:43:59 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/mongoose-os/</guid>
+      <guid>http://localhost:1313/rtos/mongoose-os/</guid>
       <description>&lt;p&gt;Mongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C/C++ and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the &lt;code&gt;mos&lt;/code&gt; command-line tool for simplified building, flashing, and device management.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>AliOS Things</title>
-      <link>https://www.osrtos.com/rtos/alios-things/</link>
+      <link>http://localhost:1313/rtos/alios-things/</link>
       <pubDate>Tue, 23 Jan 2018 05:35:24 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/alios-things/</guid>
+      <guid>http://localhost:1313/rtos/alios-things/</guid>
       <description>&lt;p&gt;AliOS Things is designed for low power, resource constrained MCU, connectivity SoC, greatly suitable for IoT devices. AliOS Things is not just a RTOS, it contains full stack of software components and tools for building IoT devices.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>eChronos</title>
-      <link>https://www.osrtos.com/rtos/echronos/</link>
+      <link>http://localhost:1313/rtos/echronos/</link>
       <pubDate>Sun, 25 Jun 2017 20:58:42 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/echronos/</guid>
+      <guid>http://localhost:1313/rtos/echronos/</guid>
       <description>&lt;p&gt;The eChronos RTOS is a real-time operating system (RTOS) originally developed by NICTA and Breakaway Consulting Pty. Ltd. It is intended for tightly resource-constrained devices without memory protection.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Trampoline</title>
-      <link>https://www.osrtos.com/rtos/trampoline/</link>
+      <link>http://localhost:1313/rtos/trampoline/</link>
       <pubDate>Sun, 11 Jun 2017 21:00:48 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/trampoline/</guid>
+      <guid>http://localhost:1313/rtos/trampoline/</guid>
       <description>&lt;p&gt;Trampoline is a static RTOS for small embedded systems. Its API is aligned with OSEK/VDX OS and AUTOSAR OS 4.2 standards.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>seL4</title>
-      <link>https://www.osrtos.com/rtos/sel4/</link>
+      <link>http://localhost:1313/rtos/sel4/</link>
       <pubDate>Sat, 29 Apr 2017 08:18:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/sel4/</guid>
+      <guid>http://localhost:1313/rtos/sel4/</guid>
       <description>&lt;p&gt;seL4 is the world&amp;rsquo;s first operating system kernel with a formal proof of implementation correctness and security enforcement (confidentiality, integrity, availability). It is a high-assurance, high-performance microkernel designed for security and safety-critical systems. Its minimal kernel design minimizes the attack surface, and its capability-based access control mechanism provides fine-grained control over system resources, enabling strong isolation between components. seL4 is developed and maintained by the seL4 Foundation as an open-source project.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>uKOS</title>
-      <link>https://www.osrtos.com/rtos/ukos/</link>
+      <link>http://localhost:1313/rtos/ukos/</link>
       <pubDate>Wed, 26 Apr 2017 18:36:10 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/ukos/</guid>
+      <guid>http://localhost:1313/rtos/ukos/</guid>
       <description>&lt;p&gt;uKOS is a multi-tasking OS suitable for small embedded µController systems. It is based on a preventive multitasking scheduler.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>embox</title>
-      <link>https://www.osrtos.com/rtos/embox/</link>
+      <link>http://localhost:1313/rtos/embox/</link>
       <pubDate>Sat, 18 Mar 2017 01:28:16 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/embox/</guid>
+      <guid>http://localhost:1313/rtos/embox/</guid>
       <description>&lt;p&gt;Embox is a highly configurable Real-Time Operating System (RTOS) designed for resource-constrained embedded systems. Its core philosophy is enabling the use of familiar Linux software and development paradigms &lt;em&gt;without&lt;/em&gt; needing a full Linux kernel. Embox achieves this through strong POSIX compliance and a modular architecture (Mybuild system) allowing developers to select only necessary components. It supports a wide range of architectures and platforms, aiming to bring desktop-like capabilities, including networking, filesystems, GUIs (Qt, LVGL), and various scripting languages, to microcontroller environments.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>IntrOS</title>
-      <link>https://www.osrtos.com/rtos/intros/</link>
+      <link>http://localhost:1313/rtos/intros/</link>
       <pubDate>Fri, 30 Dec 2016 09:12:13 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/intros/</guid>
+      <guid>http://localhost:1313/rtos/intros/</guid>
       <description>&lt;p&gt;Free, simple and tiny cooperative operating system (OS) designed for deeply embedded applications.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>LibreRTOS</title>
-      <link>https://www.osrtos.com/rtos/librertos/</link>
+      <link>http://localhost:1313/rtos/librertos/</link>
       <pubDate>Fri, 30 Dec 2016 09:03:15 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/librertos/</guid>
+      <guid>http://localhost:1313/rtos/librertos/</guid>
       <description>&lt;p&gt;LibreRTOS is a portable single-stack Real Time Operating System. All tasks share the same stack, allowing a large number or tasks to be created even on architectures with low RAM, such as ATmega328P (2kB).&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>TNeo</title>
-      <link>https://www.osrtos.com/rtos/tneo/</link>
+      <link>http://localhost:1313/rtos/tneo/</link>
       <pubDate>Tue, 20 Dec 2016 09:03:32 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/tneo/</guid>
+      <guid>http://localhost:1313/rtos/tneo/</guid>
       <description>&lt;p&gt;TNeo is a well-formed and carefully tested preemptive real-time kernel for 16- and 32-bits MCUs. It is compact and fast.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>F9 Microkernel</title>
-      <link>https://www.osrtos.com/rtos/f9-microkernel/</link>
+      <link>http://localhost:1313/rtos/f9-microkernel/</link>
       <pubDate>Wed, 30 Nov 2016 13:54:12 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/f9-microkernel/</guid>
+      <guid>http://localhost:1313/rtos/f9-microkernel/</guid>
       <description>&lt;p&gt;F9 microkernel is a microkernel-based (L4-style) kernel to support running real-time and time-sharing applications (for example, wireless communications) for ARM Cortex-M series microprocessors with efficiency (performance + power consumption) and security (memory protection + isolated execution) in mind.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Apache Mynewt</title>
-      <link>https://www.osrtos.com/rtos/apache-mynewt/</link>
+      <link>http://localhost:1313/rtos/apache-mynewt/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/apache-mynewt/</guid>
+      <guid>http://localhost:1313/rtos/apache-mynewt/</guid>
       <description>&lt;p&gt;Apache Mynewt is a community-driven, open-source RTOS designed for highly constrained embedded systems where power and cost are primary concerns. It emphasizes modularity and portability, enabling developers to include only the necessary components for their application. Mynewt features a preemptive real-time kernel, the high-performance Apache NimBLE Bluetooth 5 stack, secure bootloader, and flash filesystems (NFFS, FatFS). Its companion &lt;code&gt;Newt&lt;/code&gt; build and package management tool simplifies development, configuration, and deployment across diverse hardware, facilitating fine-grained control over the final firmware image.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>BitThunder</title>
-      <link>https://www.osrtos.com/rtos/bitthunder/</link>
+      <link>http://localhost:1313/rtos/bitthunder/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/bitthunder/</guid>
+      <guid>http://localhost:1313/rtos/bitthunder/</guid>
       <description>&lt;p&gt;A Reliable Real-Time Operating System &amp;amp; Application Framework.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>distortos</title>
-      <link>https://www.osrtos.com/rtos/distortos/</link>
+      <link>http://localhost:1313/rtos/distortos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/distortos/</guid>
+      <guid>http://localhost:1313/rtos/distortos/</guid>
       <description>&lt;p&gt;distortos is an object-oriented C++ RTOS for microcontrollers.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>mbed OS</title>
-      <link>https://www.osrtos.com/rtos/mbed-os/</link>
+      <link>http://localhost:1313/rtos/mbed-os/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/mbed-os/</guid>
+      <guid>http://localhost:1313/rtos/mbed-os/</guid>
       <description>&lt;p&gt;mbed OS is an open-source embedded operating system designed specifically for the &amp;ldquo;things&amp;rdquo; in the Internet of Things (IoT). It includes all the features you need to develop a connected product based on an ARM Cortex-M microcontroller.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Prex</title>
-      <link>https://www.osrtos.com/rtos/prex/</link>
+      <link>http://localhost:1313/rtos/prex/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/prex/</guid>
+      <guid>http://localhost:1313/rtos/prex/</guid>
       <description>&lt;p&gt;Prex is an open source, royalty-free, real-time operating system for embedded systems. It is designed and implemented for resource-constrained systems that require predictable timing behavior. The highly portable code of Prex is written in 100% ANSI C bas&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Protothreads</title>
-      <link>https://www.osrtos.com/rtos/protothreads/</link>
+      <link>http://localhost:1313/rtos/protothreads/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/protothreads/</guid>
+      <guid>http://localhost:1313/rtos/protothreads/</guid>
       <description>&lt;p&gt;Protothreads are extremely lightweight stackless threads designed for severely memory constrained systems.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>RIOT</title>
-      <link>https://www.osrtos.com/rtos/riot/</link>
+      <link>http://localhost:1313/rtos/riot/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/riot/</guid>
+      <guid>http://localhost:1313/rtos/riot/</guid>
       <description>&lt;p&gt;RIOT, &amp;ldquo;The friendly Operating System for IoT,&amp;rdquo; is an open-source RTOS designed for resource-constrained embedded devices, particularly in the Internet of Things space. It supports a wide range of 8-bit, 16-bit, and 32-bit microcontrollers. Key design goals include energy efficiency, real-time capabilities, a small memory footprint, modularity, and a hardware-independent API with partial POSIX compliance. Developed by a vendor-independent open-source community, RIOT uses the LGPLv2.1 license, allowing integration with closed-source components. Its extensive feature set, especially in networking, makes it a strong choice for connected embedded systems.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>RTIC</title>
-      <link>https://www.osrtos.com/rtos/rtic/</link>
+      <link>http://localhost:1313/rtos/rtic/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/rtic/</guid>
+      <guid>http://localhost:1313/rtos/rtic/</guid>
       <description>&lt;p&gt;RTIC (Real-Time Interrupt-driven Concurrency) is a concurrency framework for Rust designed for building real-time embedded systems. It leverages hardware features like the NVIC (on ARM Cortex-M) or CLIC (on RISC-V) for highly efficient, preemptive task scheduling, minimizing software overhead. Built upon the Stack Resource Policy (SRP), RTIC provides compile-time guarantees against data races and deadlocks for shared resources. It features distinct hardware tasks (interrupt handlers) and asynchronous software tasks (&lt;code&gt;async&lt;/code&gt;/&lt;code&gt;await&lt;/code&gt;), promoting efficient memory usage through a shared stack and static allocation focus. RTIC offers a zero-cost abstraction for safe and predictable concurrency on microcontrollers.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>scmRTOS</title>
-      <link>https://www.osrtos.com/rtos/scmrtos/</link>
+      <link>http://localhost:1313/rtos/scmrtos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/scmrtos/</guid>
+      <guid>http://localhost:1313/rtos/scmrtos/</guid>
       <description>&lt;p&gt;scmRTOS is tiny Real-Time Preemptive Operating System intended for use with Single-Chip Microcontrollers. scmRTOS is capable to run on tiny uCs with as small amount of RAM as 512 bytes. The RTOS is written on C++ and supports various platforms.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>StateOS</title>
-      <link>https://www.osrtos.com/rtos/stateos/</link>
+      <link>http://localhost:1313/rtos/stateos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/stateos/</guid>
+      <guid>http://localhost:1313/rtos/stateos/</guid>
       <description>&lt;p&gt;Free, extremely simple and amazingly tiny real-time operating system (RTOS) designed for deeply embedded applications. Target: ARM Cortex-M, STM8. It was inspired by the concept of a state machine.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>TI-RTOS Kernel</title>
-      <link>https://www.osrtos.com/rtos/ti-rtos-kernel/</link>
+      <link>http://localhost:1313/rtos/ti-rtos-kernel/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/ti-rtos-kernel/</guid>
+      <guid>http://localhost:1313/rtos/ti-rtos-kernel/</guid>
       <description>&lt;p&gt;TI-RTOS Kernel (formerly known as SYS/BIOS&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>TNKernel</title>
-      <link>https://www.osrtos.com/rtos/tnkernel/</link>
+      <link>http://localhost:1313/rtos/tnkernel/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/tnkernel/</guid>
+      <guid>http://localhost:1313/rtos/tnkernel/</guid>
       <description>&lt;p&gt;TNKernel is a compact and very fast real-time kernel for the embedded 32/16/8 bits microprocessors.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>uSmartX</title>
-      <link>https://www.osrtos.com/rtos/usmartx/</link>
+      <link>http://localhost:1313/rtos/usmartx/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/usmartx/</guid>
+      <guid>http://localhost:1313/rtos/usmartx/</guid>
       <description>&lt;p&gt;uSmartX is a non-preemptive, multitasking, priority based RTOS.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Zephyr</title>
-      <link>https://www.osrtos.com/rtos/zephyr/</link>
+      <link>http://localhost:1313/rtos/zephyr/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:58 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/zephyr/</guid>
+      <guid>http://localhost:1313/rtos/zephyr/</guid>
       <description>&lt;p&gt;Zephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M/R/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Atomthreads</title>
-      <link>https://www.osrtos.com/rtos/atomthreads/</link>
+      <link>http://localhost:1313/rtos/atomthreads/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/atomthreads/</guid>
+      <guid>http://localhost:1313/rtos/atomthreads/</guid>
       <description>&lt;p&gt;Atomthreads is a free, lightweight, portable, real-time scheduler for embedded systems.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>BeRTOS</title>
-      <link>https://www.osrtos.com/rtos/bertos/</link>
+      <link>http://localhost:1313/rtos/bertos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/bertos/</guid>
+      <guid>http://localhost:1313/rtos/bertos/</guid>
       <description>&lt;p&gt;BeRTOS is a real time open source operating system supplied with drivers and libraries designed for the rapid development of embedded software.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>BRTOS</title>
-      <link>https://www.osrtos.com/rtos/brtos/</link>
+      <link>http://localhost:1313/rtos/brtos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/brtos/</guid>
+      <guid>http://localhost:1313/rtos/brtos/</guid>
       <description>&lt;p&gt;BRTOS is a lightweight preemptive real time operating system designed for low end microcontrollers.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>ChibiOS/RT</title>
-      <link>https://www.osrtos.com/rtos/chibios-rt/</link>
+      <link>http://localhost:1313/rtos/chibios-rt/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/chibios-rt/</guid>
+      <guid>http://localhost:1313/rtos/chibios-rt/</guid>
       <description>&lt;p&gt;ChibiOS is a complete development environment for embedded applications, featuring a compact and high-performance Real-Time Operating System (RTOS). It includes two kernel variants: ChibiOS/RT, a feature-rich preemptive kernel, and ChibiOS/NIL, designed for extremely resource-constrained devices. The ecosystem encompasses a Hardware Abstraction Layer (HAL) with drivers for many peripherals, an OS library (OSLIB) for extensions like dynamic memory allocation and advanced IPC, and tools like ChibiStudio IDE. ChibiOS emphasizes efficiency, a fully static architecture (for core components), and portability, primarily targeting ARM Cortex-M MCUs but supporting various other architectures.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Contiki OS</title>
-      <link>https://www.osrtos.com/rtos/contiki-os/</link>
+      <link>http://localhost:1313/rtos/contiki-os/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/contiki-os/</guid>
+      <guid>http://localhost:1313/rtos/contiki-os/</guid>
       <description>&lt;p&gt;Contiki is an open source operating system for the Internet of Things. Contiki connects tiny low-cost, low-power microcontrollers to the Internet.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>DuinOS</title>
-      <link>https://www.osrtos.com/rtos/duinos/</link>
+      <link>http://localhost:1313/rtos/duinos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/duinos/</guid>
+      <guid>http://localhost:1313/rtos/duinos/</guid>
       <description>&lt;p&gt;DuinOS is a small multithreading real time operating system (RTOS), based on the FreeRTOS kernel, for Arduino compatible boards.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>eCos</title>
-      <link>https://www.osrtos.com/rtos/ecos/</link>
+      <link>http://localhost:1313/rtos/ecos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/ecos/</guid>
+      <guid>http://localhost:1313/rtos/ecos/</guid>
       <description>&lt;p&gt;eCos is a free open source real-time operating system intended for embedded applications. The highly configurable nature of eCos allows the operating system to be customised to precise application requirements, delivering the best possible run-time perfor&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Erika Enterprise</title>
-      <link>https://www.osrtos.com/rtos/erika-enterprise/</link>
+      <link>http://localhost:1313/rtos/erika-enterprise/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/erika-enterprise/</guid>
+      <guid>http://localhost:1313/rtos/erika-enterprise/</guid>
       <description>&lt;p&gt;Erika Enterprise is the first open-source Free RTOS that has been certified OSEK/VDX compliant!.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Femto OS</title>
-      <link>https://www.osrtos.com/rtos/femto-os/</link>
+      <link>http://localhost:1313/rtos/femto-os/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/femto-os/</guid>
+      <guid>http://localhost:1313/rtos/femto-os/</guid>
       <description>&lt;p&gt;Femto OS: RTOS for small MCU&amp;rsquo;s like AVR.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>FreeRTOS</title>
-      <link>https://www.osrtos.com/rtos/freertos/</link>
+      <link>http://localhost:1313/rtos/freertos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/freertos/</guid>
+      <guid>http://localhost:1313/rtos/freertos/</guid>
       <description>&lt;p&gt;FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Freescale MQX</title>
-      <link>https://www.osrtos.com/rtos/freescale-mqx/</link>
+      <link>http://localhost:1313/rtos/freescale-mqx/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/freescale-mqx/</guid>
+      <guid>http://localhost:1313/rtos/freescale-mqx/</guid>
       <description>&lt;p&gt;The Freescale MQX Real-Time Operating System (RTOS) provides real-time performance within a small, configurable footprint. The RTOS is tightly integrated with the latest 32-bit MCUs and MPUs from Freescale and is provided with commonly used device drivers&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>FunkOS</title>
-      <link>https://www.osrtos.com/rtos/funkos/</link>
+      <link>http://localhost:1313/rtos/funkos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/funkos/</guid>
+      <guid>http://localhost:1313/rtos/funkos/</guid>
       <description>&lt;p&gt;FunkOS is an RTOS for 8-32 bit MCUs including AVR, MSP430, and Cortex M3. Both C and C++ kernels avaiable. Key features include preemption, periodic events, device drivers, and mutex/semaphores. Includes a variety of graphics and filesystem middleware.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Fusion Embedded RTOS</title>
-      <link>https://www.osrtos.com/rtos/fusion-embedded-rtos/</link>
+      <link>http://localhost:1313/rtos/fusion-embedded-rtos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/fusion-embedded-rtos/</guid>
+      <guid>http://localhost:1313/rtos/fusion-embedded-rtos/</guid>
       <description>&lt;p&gt;The Fusion Embedded RTOS (Real-Time Operating System) from Unicoi Systems is a Real-Time OS designed and optimized for networking and media-centric processors.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>MARK3</title>
-      <link>https://www.osrtos.com/rtos/mark3/</link>
+      <link>http://localhost:1313/rtos/mark3/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/mark3/</guid>
+      <guid>http://localhost:1313/rtos/mark3/</guid>
       <description>&lt;p&gt;Mark3 is a sophisticated, modern RTOS and application development platform, targeted towards a growing list of today&amp;rsquo;s most compelling embedded devices.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Nut/OS</title>
-      <link>https://www.osrtos.com/rtos/nut-os/</link>
+      <link>http://localhost:1313/rtos/nut-os/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/nut-os/</guid>
+      <guid>http://localhost:1313/rtos/nut-os/</guid>
       <description>&lt;p&gt;Nut/OS is an intentionally simple RTOS for the ATmega128, which provides a minimum of services to run Nut/Net, the TCP/IP stack.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>NuttX</title>
-      <link>https://www.osrtos.com/rtos/nuttx/</link>
+      <link>http://localhost:1313/rtos/nuttx/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/nuttx/</guid>
+      <guid>http://localhost:1313/rtos/nuttx/</guid>
       <description>&lt;p&gt;Apache NuttX is a real-time operating system (RTOS) emphasizing standards compliance (POSIX, ANSI) and a small footprint. Highly scalable, it operates on microcontrollers from 8-bit to 64-bit architectures. NuttX provides a rich, multi-threaded development environment suitable for deeply embedded systems. Its architecture includes a preemptible core, extensive networking capabilities (including IPv6 and 6LoWPAN), various filesystems, USB host/device support, a graphical subsystem, and options for protected builds using MPU/MMU. Licensed under Apache 2.0, it fosters an open development environment supported by GNU toolchains and simulation capabilities.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>RT-Thread</title>
-      <link>https://www.osrtos.com/rtos/rt-thread/</link>
+      <link>http://localhost:1313/rtos/rt-thread/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/rt-thread/</guid>
+      <guid>http://localhost:1313/rtos/rt-thread/</guid>
       <description>&lt;p&gt;RT-Thread is an open-source, community-driven embedded real-time operating system (RTOS) established in 2006, primarily targeting IoT and diverse embedded applications. It offers both a standard version for feature-rich devices and a lightweight Nano version requiring minimal resources (3KB Flash, 1.2KB RAM). RT-Thread features a modular architecture with a real-time kernel, extensive middleware components (like filesystems, networking, GUI), and a rich package ecosystem. It emphasizes ease of porting across various MCU architectures (ARM, RISC-V, MIPS, etc.) and provides development tools like RT-Thread Studio and Env for configuration and building.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>RTAI</title>
-      <link>https://www.osrtos.com/rtos/rtai/</link>
+      <link>http://localhost:1313/rtos/rtai/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/rtai/</guid>
+      <guid>http://localhost:1313/rtos/rtai/</guid>
       <description>&lt;p&gt;RTAI is the RealTime Application Interface for Linux - which lets you write applications with strict timing constraints for your favourite operating system. The RTAI distribution includes RTAI-Lab, a tool chain to convert block diagrams into RTAI executab&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>RTEMS</title>
-      <link>https://www.osrtos.com/rtos/rtems/</link>
+      <link>http://localhost:1313/rtos/rtems/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/rtems/</guid>
+      <guid>http://localhost:1313/rtos/rtems/</guid>
       <description>&lt;p&gt;RTEMS is an open source RTOS that supports open standard application programming interfaces such as POSIX. It is used in space flight, medical, networking and many more embedded devices.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>StratifyOS</title>
-      <link>https://www.osrtos.com/rtos/stratifyos/</link>
+      <link>http://localhost:1313/rtos/stratifyos/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/stratifyos/</guid>
+      <guid>http://localhost:1313/rtos/stratifyos/</guid>
       <description>&lt;p&gt;StratifyOS is a powerful embedded RTOS for the ARM Cortex M microcontrollers.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Xenomai</title>
-      <link>https://www.osrtos.com/rtos/xenomai/</link>
+      <link>http://localhost:1313/rtos/xenomai/</link>
       <pubDate>Tue, 29 Nov 2016 11:36:57 +0000</pubDate>
       
-      <guid>https://www.osrtos.com/rtos/xenomai/</guid>
+      <guid>http://localhost:1313/rtos/xenomai/</guid>
       <description>&lt;p&gt;Xenomai is a real-time development framework cooperating with the Linux kernel, in order to provide a pervasive, interface-agnostic, hard real-time support to user-space applications, seamlessly integrated into the GNU/Linux environment.&lt;/p&gt;</description>
       
     </item>

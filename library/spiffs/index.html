@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head>
-  <meta charset="utf-8" />
-  
-  <meta http-equiv="content-language" content="en-us" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <title>SPIFFS - Open Source Real-Time Operating Systems (RTOS)</title>
-  <meta name="title" content="SPIFFS - Open Source Real-Time Operating Systems (RTOS)" />
-  
-  
-  
-  
-  
-  <link rel="canonical" href="https://www.osrtos.com/library/spiffs/" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
-    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
-  
-  
-  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
-    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
-  
-  
-  
-  
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
-    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
-  
-  
-  
-  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
-  
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:url" content="https://www.osrtos.com/library/spiffs/">
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="content-language" content="en-us">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color">
+
+    
+    <title>SPIFFS - Open Source Real-Time Operating Systems (RTOS)</title>
+    <meta name="title" content="SPIFFS - Open Source Real-Time Operating Systems (RTOS)" />
+
+    
+    
+    
+    
+    
+    
+    <link rel="canonical" href="http://localhost:1313/library/spiffs/">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="/css/main.bundle.min.2051f57707d569cca9739b2110f76ec5504391bd7cc7464fc32a56d86aa4ce083b2fb103f7678b4b0b91f91c52f8ae00db09394358ca4f23346e2b7b948fab9b.css"
+            integrity="sha512-IFH1dwfVacypc5shEPduxVBDkb18x0ZPwypW2Gqkzgg7L7ED92eLSwuR&#43;RxS&#43;K4A2wk5Q1jKTyM0bit7lI&#43;rmw==">
+
+    
+    
+    <script
+            type="text/javascript"
+            src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+            integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script
+            defer
+            type="text/javascript"
+            id="script-bundle"
+            src="/js/main.bundle.min.e4b2d9aece2aa7a740c3ee7a0efc5acf56b204868ab0fb5bba9be32aed1cd0c9262979d98050759068d58144297f74b12ed05b5173cf2df2e6c097a066b984a8.js"
+            integrity="sha512-5LLZrs4qp6dAw&#43;56Dvxaz1ayBIaKsPtbupvjKu0c0MkmKXnZgFB1kGjVgUQpf3SxLtBbUXPPLfLmwJegZrmEqA=="
+            data-copy="Copy"
+    data-copied="Copied"></script>
+    
+    
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+    
+
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    <meta property="og:url" content="http://localhost:1313/library/spiffs/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="SPIFFS">
   <meta property="og:description" content="Spiffs is a file system intended for SPI NOR flash devices on embedded targets.">
@@ -70,13 +98,12 @@
     <meta property="article:published_time" content="2016-11-29T16:41:42+00:00">
     <meta property="article:modified_time" content="2016-11-29T16:41:42+00:00">
 
-  
+    
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="SPIFFS">
   <meta name="twitter:description" content="Spiffs is a file system intended for SPI NOR flash devices on embedded targets.">
 
-  
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -86,7 +113,7 @@
     
     "abstract": "\u003cp\u003eSpiffs is a file system intended for SPI NOR flash devices on embedded targets.\u003c\/p\u003e",
     "inLanguage": "en-us",
-    "url" : "https:\/\/www.osrtos.com\/library\/spiffs\/",
+    "url" : "http:\/\/localhost:1313\/library\/spiffs\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -105,11 +132,13 @@
   </script>
 
 
-  
-  
-  
-  
-  
+
+    
+    
+    
+
+    
+    
 
 <script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
@@ -134,10 +163,13 @@
 
 
 
-  
-  
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+    
+    
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -148,11 +180,20 @@
 
 
 
-  
-  
-  <meta name="theme-color"/>
-  
-  
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
@@ -163,240 +204,244 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          OSRTOS
+        </a>
+      
+    </nav>
     
-    <div class="flex flex-1 items-center justify-between">
-        <nav class="flex space-x-3">
-
-            
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
-            
-
-        </nav>
-        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
-
-            
-            
-            
-  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
     
-    <p class="text-base font-medium" title="">
-        Home
-    </p>
+      
+        
+  <a
+  href="/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Home
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        RTOS
-    </p>
+      
+        
+  <a
+  href="/rtos/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    RTOS
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        Library
-    </p>
+      
+        
+  <a
+  href="/library/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Library
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="Learn RTOS">
-        Learn RTOS
-    </p>
+      
+        
+  <a
+  href="/learn/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Learn RTOS">
+    Learn RTOS
+  </p>
 </a>
 
 
 
-            
-            
+      
+    
 
-            
+    
 
+    
 
-            
+    
 
-
-            
-            
-            <div
-                class=" flex items-center">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
-                    <div class="flex items-center justify-center dark:hidden">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                    </div>
-                    <div class="items-center justify-center hidden dark:flex">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                    </div>
-                </button>
-            </div>
-            
-
-        </nav>
-        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
-
-            <span></span>
-
-            
-
-
-            
-
-            
-            
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
-                <div class="flex items-center justify-center dark:hidden">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                </div>
-                <div class="items-center justify-center hidden dark:flex">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                </div>
-            </button>
-            
-
-        </div>
-    </div>
-    <div class="-my-2 md:hidden">
-
-        <label id="menu-button" class="block">
-            
-            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-                
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-
-  </span>
-
-
-            </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-
-                    <li id="menu-close-button">
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
 </span>
-                    </li>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
 
-                    
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
 
-                    
+    
+
+    
+
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
   <li class="mt-1">
-    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Home
-        </p>
-    </a>
+  <a
+    href="/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Home
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            RTOS
-        </p>
-    </a>
+  <a
+    href="/rtos/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      RTOS
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Library
-        </p>
-    </a>
+  <a
+    href="/library/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Library
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="Learn RTOS">
-            Learn RTOS
-        </p>
-    </a>
+  <a
+    href="/learn/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Learn RTOS">
+      Learn RTOS
+    </p>
+  </a>
 </li>
 
 
 
+            
 
-                    
-
-                </ul>
-                
-                
-
-            </div>
-        </label>
+          </ul>
+          
+        </div>
+      
     </div>
+  </div>
+
 </div>
 
 
@@ -506,14 +551,12 @@
         <div class="article-content max-w-full mb-20">
           <p>Spiffs is a file system intended for SPI NOR flash devices on embedded targets.</p>
 
-
 <h3 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#features" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -528,115 +571,404 @@
 <li>Highly configurable</li>
 </ul>
 
-
 <h3 class="relative group">Resources 
     <div id="resources" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <ul>
-<li><a href="https://github.com/nodemcu/nodemcu-firmware" target="_blank">nodemcu-firmware</a>. Lua based interactive firmware for ESP8266, ESP8285 and ESP32.</li>
-<li><a href="https://github.com/s00500/ESPUI" target="_blank">ESPUI</a>. A simple web user interface library for ESP32 and ESP8266.</li>
-<li><a href="https://github.com/joltwallet/esp_littlefs" target="_blank">esp_littlefs</a>. LittleFS port for ESP-IDF.</li>
-<li><a href="https://github.com/ETS-PoliTO/esp32-sniffer" target="_blank">esp32-sniffer</a>. ESP32 firmware that sniffs PROBE REQUEST packets sent from smartphones looking for a Wi-Fi connection in order to extract different types of information.</li>
-<li><a href="https://github.com/fbiego/ESP32_BLE_OTA_Arduino" target="_blank">ESP32_BLE_OTA_Arduino</a>. OTA update on ESP32 via BLE.</li>
-<li><a href="https://github.com/tobozo/ESP32-targz" target="_blank">ESP32-targz</a>. 🗜️ An Arduino library to unpack/uncompress tar, gz, and tar.gz files on ESP32 and ESP8266.</li>
-<li><a href="https://github.com/projetsdiy/ESP8266-Webserver-Tutorials" target="_blank">ESP8266-Webserver-Tutorials</a>. How to use ESP8266 as a Web Server.</li>
-<li><a href="https://github.com/xreef/SimpleFTPServer" target="_blank">SimpleFTPServer</a>. A simple FTP server for Arduino, ArduinoSAMD WiFiNINA, esp8266, esp32, stm32 and Raspberry Pi Pico W.</li>
-<li><a href="https://github.com/loboris/ESP32_spiffs_example" target="_blank">ESP32_spiffs_example</a>. Full example of using SPIFFS with ESP32 VFS.</li>
-<li><a href="https://github.com/workilabs/Bleeper" target="_blank">Bleeper</a>. Library to manage your firmware configurations written in C++.</li>
-<li><a href="https://github.com/bbx10/SFX-I2S-web-trigger" target="_blank">SFX-I2S-web-trigger</a>. ESP8266 Sound F/X I2S web trigger.</li>
-<li><a href="https://github.com/cotestatnt/esp-fs-webserver" target="_blank">esp-fs-webserver</a>. ESP32/ESP8266 webserver, WiFi manager and web editor Arduino library.</li>
-<li><a href="https://github.com/holgerlembke/ESPxWebFlMgr" target="_blank">ESPxWebFlMgr</a>. Manage your ESP8266/ESP32 SPIFFS/LittleFS files with a simple web based interface.</li>
-<li><a href="https://github.com/smford/esp32-asyncwebserver-fileupload-example" target="_blank">esp32-asyncwebserver-fileupload-example</a>. Examples of how to upload files to an ESP32 using Asyncwebserver, SPIFFS and an Upload progress bar..</li>
-<li><a href="https://github.com/khoih-prog/ESP_DoubleResetDetector" target="_blank">ESP_DoubleResetDetector</a>. ESP_DoubleResetDetector is a library for the ESP32/ESP8266 Arduino platform to enable trigger configure mode by resetting twice..</li>
-<li><a href="https://github.com/khoih-prog/Blynk_WM" target="_blank">Blynk_WM</a>. Blynk and WiFiManager Library for configuring/auto(re)connecting ESP8266/ESP32 modules to the best or available MultiWiFi APs and MultiBlynk servers at runtime, with or without SSL. Configuration data saved in either SPIFFS or EEPROM..</li>
-<li><a href="https://github.com/m1cr0lab-esp32/remote-control-with-websocket" target="_blank">remote-control-with-websocket</a>. ESP32 Remote Control with WebSocket.</li>
-<li><a href="https://github.com/thebigpotatoe/Effortless-SPIFFS" target="_blank">Effortless-SPIFFS</a>. A class designed to make reading and storing data on the ESP8266 and ESP32 effortless.</li>
-<li><a href="https://github.com/bitmario/SPIFFSLogger" target="_blank">SPIFFSLogger</a>. A minimal library for binary data logging in ESP8266 systems.</li>
-<li><a href="https://github.com/tobozo/ESP8266SDUpdater" target="_blank">ESP8266SDUpdater</a>. 💾 ESP8266 Prequel to M5Stack-SD-Updater.</li>
-<li><a href="https://github.com/lunokjod/watch" target="_blank">watch</a>. lunokWatch (lilygo twatch2020 series).</li>
-<li><a href="https://github.com/khoih-prog/BlynkGSM_Manager" target="_blank">BlynkGSM_Manager</a>. Simple GSM shield Manager for Blynk and ESP32 / ESP8266 boards, with or without SSL, configuration data saved in SPIFFS / EEPROM. This library enables user to include both Blynk GSM/GPRS and WiFi libraries in one sketch, run both WiFi and GSM/GPRS simultaneously, or select one to use at runtime after reboot..</li>
-<li><a href="https://github.com/hpirila/ESP32-Ruuvitag-Collector" target="_blank">ESP32-Ruuvitag-Collector</a>. Ruuvitag data collector for ESP32.</li>
-<li><a href="https://github.com/Jorgen-VikingGod/ESP8266-WiFi-Relay" target="_blank">ESP8266-WiFi-Relay</a>. simple sketch of using ESP8266WebServer to switch relays on GPIO pins. It serves a simple website with toggle buttons for each relay.</li>
-<li><a href="https://github.com/fabianoriccardi/RTCMemory" target="_blank">RTCMemory</a>. An intuitive library to simplify read and write operations on RTC memory of ESP8266 and its backup on flash memory..</li>
-<li><a href="https://github.com/khoih-prog/Blynk_Async_WM" target="_blank">Blynk_Async_WM</a>. Simple WiFiManager for Blynk and ESP8266/ESP32 (including ESP32-S2, ESP32-C3) with or without SSL, configuration data saved in either LittleFS, SPIFFS or EEPROM. This library, using AsyncWebServer instead of (ESP8266)WebServer, for configuring/auto(re)connecting ESP8266/ESP32 modules to best or available MultiWiFi APs and MultiBlynk servers at runtime. Enable adding dynamic custom parameters from sketch and input using the same Config Portal. Config Portal will be auto-adjusted to match the number of dynamic parameters. Optional default Credentials to be autoloaded into Config Portal to use or change instead of manually input. Static STA IP and DHCP Hostname as well as Config Portal AP channel, IP, SSID, Password can be configured. Multi or Double DetectDetector feature permits entering Config Portal as requested..</li>
-<li><a href="https://github.com/renat2985/easy_Iot_file_system" target="_blank">easy_Iot_file_system</a>. A simple and beautiful file system for your Iot devices. For ESP8266, ESP32.</li>
-<li><a href="https://github.com/JJFourie/ESP32Cam-MQTT-SPIFFS-PIR" target="_blank">ESP32Cam-MQTT-SPIFFS-PIR</a>. ESP32Cam - PIR-triggered photos uploaded to webserver. Motion broadcast via MQTT. Video streaming. Settings stored in SPIFFS. Temperature sensor..</li>
-<li><a href="https://github.com/Jorgen-VikingGod/ESP8266-WiFi-Relay-Async" target="_blank">ESP8266-WiFi-Relay-Async</a>. simple sketch for ESP8266 of using ESPAsyncWebServer to switch relays on GPIO pins, serves a simple website with toggle buttons for each relay and uses AsyncWiFiManager to configure WiFi network..</li>
-<li><a href="https://github.com/SergiuToporjinschi/settingsmanager" target="_blank">settingsmanager</a>. Saving, reading and changing settings from Json file on SPIFFS.</li>
-<li><a href="https://github.com/khoih-prog/Timezone_Generic" target="_blank">Timezone_Generic</a>. Library to facilitate time zone conversions and automatic daylight saving (summer) time adjustments. For ESP8266, ESP32, WT32-ETH01 (ESP32 + LAN8720), SAMD21, SAMD51, nRF52, STM32F/L/H/G/WB/MP1, Teensy, SAM DUE, RTL8720DN, RP2040-based (Nano_RP2040_Connect, RASPBERRY_PI_PICO), Portenta_H7 (Ethernet or WiFi) boards, etc. using W5x00/ENC28J60/LAN8742A Ethernet, ESP or ESP-AT WiFi or WiFiNINA. Ethernet_Generic library is used as default for W5x00..</li>
-<li><a href="https://github.com/rykovv/spiffs_circular_queue" target="_blank">spiffs_circular_queue</a>. ESP-IDF and PlatformIO compatible library for a circular queue or circular FIFO buffer over SPIFFS..</li>
-<li><a href="https://github.com/khoih-prog/DS323x_Generic" target="_blank">DS323x_Generic</a>. Library for DS3231/DS3232 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal. For nRF52, SAMD21/SAMD51, STM32F/L/H/G/WB/MP1, Teensy, Portenta_H7 boards, RP2040-based, etc. besides ESP8266/ESP32, using ESP WiFi, Portenta_H7 WiFi, WiFiNINA, Portenta_H7 Ethernet, Ethernet W5x00, ENC28J60, LAN8742A, ESP8266/ESP32 AT-command WiFi. Ethernet_Generic library is used as default for W5x00 Ethernet.</li>
-<li><a href="https://github.com/Cellgalvano/ESP32_SEA_SPIFFS_Loader" target="_blank">ESP32_SEA_SPIFFS_Loader</a>. SPIFFS Bitstreamloader for the Spartan Edge Accelerator Board.</li>
-<li><a href="https://github.com/AR-D-R/ESP32-OTA-File-management" target="_blank">ESP32-OTA-File-management</a>. ESP32 Async OTA Firmware Update &amp; File Management..</li>
-<li><a href="https://github.com/gaurabdg/ESP8266-arduino-serial-programmer" target="_blank">ESP8266-arduino-serial-programmer</a>. A serial bootloader utility&mdash;using an ESP12E to upload programs to Arduino boards, using the SPIFFS file system. .</li>
-<li><a href="https://github.com/khoih-prog/Blynk_Async_ESP32_BT_WF" target="_blank">Blynk_Async_ESP32_BT_WF</a>. Simple WiFiManager for Blynk and ESP32 with or without SSL, configuration data saved in either SPIFFS or EEPROM. Enable inclusion of both ESP32 Blynk BT/BLE and WiFi libraries. Then select one at reboot or run both. Eliminate hardcoding your Wifi and Blynk credentials and configuration data saved in either SPIFFS or EEPROM. Using AsyncWebServer instead of (ESP8266)WebServer..</li>
-<li><a href="https://github.com/kc1r74p/ReadMePaper" target="_blank">ReadMePaper</a>. Just some ESP32 - ePaper 7 Color project 🎉.</li>
-<li><a href="https://github.com/har-in-air/ESP32_ASYNC_WEB_SERVER_SPIFFS_OTA" target="_blank">ESP32_ASYNC_WEB_SERVER_SPIFFS_OTA</a>. Demo of ESP32 Async Web Server for webpage access and OTA firmware updates, SPIFFS hosted html and css files, DNS for user friendly webpage url. Visual Studio Code + PlatformIO project..</li>
-<li><a href="https://github.com/khoih-prog/ESP_MultiResetDetector" target="_blank">ESP_MultiResetDetector</a>. Library to detect a multi reset within a predetermined time, using RTC Memory, EEPROM, LittleFS or SPIFFS for ESP8266 and ESP32, ESP32_C3, ESP32_S2, ESP32_S3. An alternative start-up mode can be used. One example use is to allow re-configuration of device WiFi credentials.</li>
-<li><a href="https://github.com/khoih-prog/Blynk_Async_GSM_Manager" target="_blank">Blynk_Async_GSM_Manager</a>. Library, now using AsyncWebServer instead of (ESP8266)WebServer, for enabling GSM/GPRS and WiFi running simultaneously as well as configuring/auto(re)connecting at runtime GSM shields to Internet and Blynk and ESP8266/ESP32 WiFi modules to best or available MultiWiFi APs and MultiBlynk servers. Enable adding dynamic custom parameters from sketch and input using the same Config Portal. Config Portal will be auto-adjusted to match the number of dynamic parameters. Optional default Credentials to be autoloaded into Config Portal to use or change instead of manually input. Static STA IP and DHCP Hostname as well as Config Portal AP channel, IP, SSID, Password can be configured. DoubleDetectDetector feature permits entering Config Portal as requested..</li>
-<li><a href="https://github.com/DaVieS007/madWiFi" target="_blank">madWiFi</a>. madWiFi Project on ESP8266.</li>
-<li><a href="https://github.com/iotlearner0level/ESP-Datalogger" target="_blank">ESP-Datalogger</a>. A general purpose datalogger for esp8266 with provisions for displaying data &amp; graphing it. Also send data to firebase..</li>
-<li><a href="https://github.com/r-zlotorzynski/hommie_logger" target="_blank">hommie_logger</a>. Creates logs in file using the circular buffer algorithm.</li>
-<li><a href="https://github.com/polygontwist/ESP32_32x32RGBMatrix" target="_blank">ESP32_32x32RGBMatrix</a>. ESP32 width 32x32 RGB Matrix, OTA, SPIFFS.</li>
-<li><a href="https://github.com/brainelectronics/EspSaveCrashSpiffs" target="_blank">EspSaveCrashSpiffs</a>. Save exception details and stack trace to the SPIFFS everytime the ESP8266 crashes.</li>
-<li><a href="https://github.com/bellTanTan/Esp32PC8001SIO" target="_blank">Esp32PC8001SIO</a>. NEC/PC-8001 SIO(DIP16 socket)に挿すゲタのハードとソフトです。ESP32とBME280を活用してSNTP/BME280情報取得/FTPorSPIFFSリスト取得/FTPorSPIFFS DL GETを行うことが出来ます。.</li>
-<li><a href="https://github.com/mkgeiger/geiger-counter-iot" target="_blank">geiger-counter-iot</a>. Geiger Mueller counter for IoT on an ESP8266 microcontroller.</li>
-<li><a href="https://github.com/jxmot/ESP8266-config-data" target="_blank">ESP8266-config-data</a>. A demonstration of how to use SPIFFS on the ESP8266.</li>
-<li><a href="https://github.com/quackmore/esp8266_spiffs" target="_blank">esp8266_spiffs</a>. Spiffs for ESP8266 NON-OS SDK. Forked from the original SPIFFS. No dependecies..</li>
-<li><a href="https://github.com/Deliaz/ESP8266-DHT-SPIFFS" target="_blank">ESP8266-DHT-SPIFFS</a>. ESP8266 Web interface for DHT22.</li>
-<li><a href="https://github.com/gemi254/ConfigAssist-ESP32-ESP8266" target="_blank">ConfigAssist-ESP32-ESP8266</a>. A lightweight library allowing quick configuration for esp32/esp8266 devices using async requests. Edit application vars using a responsive captive portal and a json definition  dictionary and saving them on a file in local storage..</li>
-<li><a href="https://github.com/jangleboom/RTKBaseManager" target="_blank">RTKBaseManager</a>. Web interface (on ESP32) for managing caster and wifi credentials on a real time kinematics base station..</li>
-<li><a href="https://github.com/gertvantslot/esp-razorlike" target="_blank">esp-razorlike</a>. Code generator, generates code for a Web-server on the ESP8266 powered from Html pages with Razor-like syntax..</li>
-<li><a href="https://github.com/iml885203/7-Segment-Clock" target="_blank">7-Segment-Clock</a>. 7 segment clock with LED&rsquo;s.</li>
-<li><a href="https://github.com/guohaomeng/ESP32WebScope" target="_blank">ESP32WebScope</a>. 只用一块ESP32制作的ESP32网页示波器+波形发生器,可以拿来生成以及观察低频信号 esp32 web oscilloscope.</li>
-<li><a href="https://github.com/jxmot/esp8266-MLX90614" target="_blank">esp8266-MLX90614</a>. A sketch that reads a MLX90614 non-contact temperature sensor. An HTML/JavaScript client is also present..</li>
-<li><a href="https://github.com/AndrasSzep/NMEA0183-WiFi" target="_blank">NMEA0183-WiFi</a>. This is and Arduino ESP32 code to display UDP-broadcasted NMEA0183 messages through a webserver to be seen on any mobile device for free.</li>
-<li><a href="https://github.com/DaveBrad/DevFsUploadESP" target="_blank">DevFsUploadESP</a>. ESP32 ESP8266 file-system upload development aid with SPIFFS or LittleFS file-system.</li>
-<li><a href="https://github.com/jangleboom/RTKRoverManager" target="_blank">RTKRoverManager</a>. Web interface (on ESP32) for managing the credential settings for real time kinematics rover..</li>
-<li><a href="https://github.com/awaistkd/esp-configuration-manger" target="_blank">esp-configuration-manger</a>. Configuration manager for ESP32  and ESP8266.</li>
-<li><a href="https://github.com/Shaopus/esp32_spiffsgen" target="_blank">esp32_spiffsgen</a>. how to use mkspiffs in esp32.</li>
-<li><a href="https://github.com/zlgopen/awtk-fs-adapter" target="_blank">awtk-fs-adapter</a>. filesystem adapter for awtk.</li>
-<li><a href="https://github.com/SimonCrA/ESP32_WEB-SERVER_SPIFFS" target="_blank">ESP32_WEB-SERVER_SPIFFS</a>. Este código permite al esp32 conectarse a una red WIFI, usando el SPIFFS monta los archivos HTML y CSS en la memoria flash, y sirve una página web..</li>
-<li><a href="https://github.com/Gupta-Harshit/IOT_ESP8266_webserver_SPIFFS" target="_blank">IOT_ESP8266_webserver_SPIFFS</a>. A basic How-to for different functionalities of the ESP8266 (NodeMCU) - web server and SPIFFS file system Note - these codes are working sub-parts of a project I am working on.</li>
-<li><a href="https://github.com/hatembk/ESP8266-WSN" target="_blank">ESP8266-WSN</a>. ESP8266 wireless sensor network using websockets and chartjs to send and display sensor data .</li>
-<li><a href="https://github.com/CaptSnus/ShelfEdgeClock" target="_blank">ShelfEdgeClock</a>. Shelf Edge Clock is a sleek clock hidden behind the edges of shelves..</li>
-<li><a href="https://github.com/mssm199996/esp8266-WSN" target="_blank">esp8266-WSN</a>. WSN using ESP8266.</li>
-<li><a href="https://github.com/Jorgen-VikingGod/ESP8266-WiFi-Relay-Bahtinov-Masks" target="_blank">ESP8266-WiFi-Relay-Bahtinov-Masks</a>. simple sketch for ESP8266 of using ESP8266WebServer to switch relays on GPIO pins, control servos to open and close masks, serves a simple website with toggle buttons for each relay and mask servo..</li>
-<li><a href="https://github.com/ghettobuilder2027/test_spiffs_read_data" target="_blank">test_spiffs_read_data</a>. List all files and their content of the root folder of the spiffs memory on esp32.</li>
-<li><a href="https://github.com/TakayunDev/fs-uploader-spiffs" target="_blank">fs-uploader-spiffs</a>. filesystem uploader for esp32, using mkspiffs..</li>
-<li><a href="https://github.com/fikin/nodemcu-device" target="_blank">nodemcu-device</a>. Collection of Lua modules for NodeMCU.</li>
-<li><a href="https://github.com/jxmot/ESP8266-config-data-V2" target="_blank">ESP8266-config-data-V2</a>. Based on my &lsquo;ESP8266-config-data&rsquo; repo, but with extensive improvements and modifications..</li>
-<li><a href="https://github.com/andrey-08/Sistema-de-apertura-de-porton-con-modulo-GSM---Taller-comunicaciones-electricas" target="_blank">Sistema-de-apertura-de-porton-con-modulo-GSM&mdash;Taller-comunicaciones-electricas</a>. Se busca la implementación de protocolos de comunicación entre dispositivos a través de aplicación de una ESP32 v1.3  para apertura de un portón eléctrico, el proyecto se realiza sobre una maqueta..</li>
-<li><a href="https://github.com/mhightower83/arduino-esp8266-spiffs-utils" target="_blank">arduino-esp8266-spiffs-utils</a>. Some misc. utilities for accessing, backing up the SPIFFS file system on a ESP8266 running a Web Server sketch..</li>
-<li><a href="https://github.com/carmenauk/Y3S2" target="_blank">Y3S2</a>. IO&amp;E Project 2; ESP32 .</li>
-<li><a href="https://github.com/creative-engineering/vortexCannon-AP" target="_blank">vortexCannon-AP</a>. ESP32 Arduino code for Vortex Cannon LED &amp; message control interface.</li>
-<li><a href="https://github.com/g3rb3n/Thing" target="_blank">Thing</a>. A MQTT/Wifi/SPIFFS library based on PubSubClient for creating sensor and actuator things on the ESP..</li>
-<li><a href="https://github.com/devel0/iot-esp8266-serial-fwd" target="_blank">iot-esp8266-serial-fwd</a>. use esp8266 as a serial forwarder over wifi.</li>
-<li><a href="https://github.com/lshw/avr_spiffs" target="_blank">avr_spiffs</a>. add spiffs to ardino mega 2560.</li>
-<li><a href="https://github.com/Ariful17/IoT-Project-on-Agricultural-Data-Monitoring" target="_blank">IoT-Project-on-Agricultural-Data-Monitoring</a>. An IoT project on agricultural data monitoring using nodemcu.</li>
-<li><a href="https://github.com/josephlarralde/arduino-esp-utils" target="_blank">arduino-esp-utils</a>. a collection of utility classes for esp8266 and esp32 chips.</li>
-<li><a href="https://github.com/samlewis02/AC_control" target="_blank">AC_control</a>. Switch A/C on and off using MQTT.</li>
-<li><a href="https://github.com/Ariful17/IoT-project-on-industrial-operation-and-room-condition" target="_blank">IoT-project-on-industrial-operation-and-room-condition</a>. An arduino and nodemcu are used to monitor various room conditions and send them over the local internet..</li>
-<li><a href="https://github.com/Jurand2020/esp32logger" target="_blank">esp32logger</a>. Custom temperature / humidity logger.</li>
-<li><a href="https://github.com/bvujovic/EasyINI" target="_blank">EasyINI</a>. Utility class for reading from/writing to .ini files on ESP&rsquo;s SPIFFS.</li>
-<li><a href="https://github.com/ghettobuilder2027/format_spiffs_esp32" target="_blank">format_spiffs_esp32</a>. List files on spiffs memory and format if wanted.</li>
-<li><a href="https://github.com/Ariful17/IoT-Project-on-HVAC" target="_blank">IoT-Project-on-HVAC</a>. An IoT project that monitors Heating, Ventilation and Air-Conditioning of a closed area. .</li>
-<li><a href="https://github.com/mauriciobarroso/UBA_MSE-6Co2021_SED-TPI" target="_blank">UBA_MSE-6Co2021_SED-TPI</a>. Trabajo práctico integrador para la materia Sistemas Embebidos Distribuidos.</li>
-<li><a href="https://github.com/bvujovic/MeinDataLogger" target="_blank">MeinDataLogger</a>. Customer defined data is added to circular buffer and then dumped to LittleFS/SPIFFS (ESP8266/ESP32) file..</li>
-<li><a href="https://github.com/Joaosilgo/Esp32-Webserver" target="_blank">Esp32-Webserver</a>. 📡.</li>
-<li><a href="https://github.com/FreebeesClub/Freebees-AC-Arduino" target="_blank">Freebees-AC-Arduino</a>. Access control using Arduino IDE ESP32 PN532 DS3231 MQTT.</li>
-<li><a href="https://github.com/JJFourie/ESP32_MQTT_Motor_Control" target="_blank">ESP32_MQTT_Motor_Control</a>. Use an ESP32 to automate control of a DC motor based on MQTT messages received from e.g. Home Assistant.</li>
-<li><a href="https://github.com/calfizzi/MCOTAUpdater" target="_blank">MCOTAUpdater</a>. Simple Updaer using ESP HTTPUpdate library.</li>
-<li><a href="https://github.com/thelastoutpostworkshop/animated_gif_sdcard_spiffs" target="_blank">animated_gif_sdcard_spiffs</a>. Animated GIF stored in SD Card and played from SPIFFS on a Round Display (GC9A01) with the ESP32.</li>
-<li><a href="https://github.com/snackk/esp8266-home-automation" target="_blank">esp8266-home-automation</a>. Home Automation firmware for IoT devices based on esp8266..</li>
-<li><a href="https://github.com/JakubAndrysek/ESP32-monaco-editor-spiffs" target="_blank">ESP32-monaco-editor-spiffs</a>. This is the example that is possible to create VSCode like editor on ESP32 based on Monaco editor..</li>
+<li><a
+  href="https://github.com/nodemcu/nodemcu-firmware"
+    target="_blank"
+  >nodemcu-firmware</a>. Lua based interactive firmware for ESP8266, ESP8285 and ESP32.</li>
+<li><a
+  href="https://github.com/s00500/ESPUI"
+    target="_blank"
+  >ESPUI</a>. A simple web user interface library for ESP32 and ESP8266.</li>
+<li><a
+  href="https://github.com/joltwallet/esp_littlefs"
+    target="_blank"
+  >esp_littlefs</a>. LittleFS port for ESP-IDF.</li>
+<li><a
+  href="https://github.com/ETS-PoliTO/esp32-sniffer"
+    target="_blank"
+  >esp32-sniffer</a>. ESP32 firmware that sniffs PROBE REQUEST packets sent from smartphones looking for a Wi-Fi connection in order to extract different types of information.</li>
+<li><a
+  href="https://github.com/fbiego/ESP32_BLE_OTA_Arduino"
+    target="_blank"
+  >ESP32_BLE_OTA_Arduino</a>. OTA update on ESP32 via BLE.</li>
+<li><a
+  href="https://github.com/tobozo/ESP32-targz"
+    target="_blank"
+  >ESP32-targz</a>. 🗜️ An Arduino library to unpack/uncompress tar, gz, and tar.gz files on ESP32 and ESP8266.</li>
+<li><a
+  href="https://github.com/projetsdiy/ESP8266-Webserver-Tutorials"
+    target="_blank"
+  >ESP8266-Webserver-Tutorials</a>. How to use ESP8266 as a Web Server.</li>
+<li><a
+  href="https://github.com/xreef/SimpleFTPServer"
+    target="_blank"
+  >SimpleFTPServer</a>. A simple FTP server for Arduino, ArduinoSAMD WiFiNINA, esp8266, esp32, stm32 and Raspberry Pi Pico W.</li>
+<li><a
+  href="https://github.com/loboris/ESP32_spiffs_example"
+    target="_blank"
+  >ESP32_spiffs_example</a>. Full example of using SPIFFS with ESP32 VFS.</li>
+<li><a
+  href="https://github.com/workilabs/Bleeper"
+    target="_blank"
+  >Bleeper</a>. Library to manage your firmware configurations written in C++.</li>
+<li><a
+  href="https://github.com/bbx10/SFX-I2S-web-trigger"
+    target="_blank"
+  >SFX-I2S-web-trigger</a>. ESP8266 Sound F/X I2S web trigger.</li>
+<li><a
+  href="https://github.com/cotestatnt/esp-fs-webserver"
+    target="_blank"
+  >esp-fs-webserver</a>. ESP32/ESP8266 webserver, WiFi manager and web editor Arduino library.</li>
+<li><a
+  href="https://github.com/holgerlembke/ESPxWebFlMgr"
+    target="_blank"
+  >ESPxWebFlMgr</a>. Manage your ESP8266/ESP32 SPIFFS/LittleFS files with a simple web based interface.</li>
+<li><a
+  href="https://github.com/smford/esp32-asyncwebserver-fileupload-example"
+    target="_blank"
+  >esp32-asyncwebserver-fileupload-example</a>. Examples of how to upload files to an ESP32 using Asyncwebserver, SPIFFS and an Upload progress bar..</li>
+<li><a
+  href="https://github.com/khoih-prog/ESP_DoubleResetDetector"
+    target="_blank"
+  >ESP_DoubleResetDetector</a>. ESP_DoubleResetDetector is a library for the ESP32/ESP8266 Arduino platform to enable trigger configure mode by resetting twice..</li>
+<li><a
+  href="https://github.com/khoih-prog/Blynk_WM"
+    target="_blank"
+  >Blynk_WM</a>. Blynk and WiFiManager Library for configuring/auto(re)connecting ESP8266/ESP32 modules to the best or available MultiWiFi APs and MultiBlynk servers at runtime, with or without SSL. Configuration data saved in either SPIFFS or EEPROM..</li>
+<li><a
+  href="https://github.com/m1cr0lab-esp32/remote-control-with-websocket"
+    target="_blank"
+  >remote-control-with-websocket</a>. ESP32 Remote Control with WebSocket.</li>
+<li><a
+  href="https://github.com/thebigpotatoe/Effortless-SPIFFS"
+    target="_blank"
+  >Effortless-SPIFFS</a>. A class designed to make reading and storing data on the ESP8266 and ESP32 effortless.</li>
+<li><a
+  href="https://github.com/bitmario/SPIFFSLogger"
+    target="_blank"
+  >SPIFFSLogger</a>. A minimal library for binary data logging in ESP8266 systems.</li>
+<li><a
+  href="https://github.com/tobozo/ESP8266SDUpdater"
+    target="_blank"
+  >ESP8266SDUpdater</a>. 💾 ESP8266 Prequel to M5Stack-SD-Updater.</li>
+<li><a
+  href="https://github.com/lunokjod/watch"
+    target="_blank"
+  >watch</a>. lunokWatch (lilygo twatch2020 series).</li>
+<li><a
+  href="https://github.com/khoih-prog/BlynkGSM_Manager"
+    target="_blank"
+  >BlynkGSM_Manager</a>. Simple GSM shield Manager for Blynk and ESP32 / ESP8266 boards, with or without SSL, configuration data saved in SPIFFS / EEPROM. This library enables user to include both Blynk GSM/GPRS and WiFi libraries in one sketch, run both WiFi and GSM/GPRS simultaneously, or select one to use at runtime after reboot..</li>
+<li><a
+  href="https://github.com/hpirila/ESP32-Ruuvitag-Collector"
+    target="_blank"
+  >ESP32-Ruuvitag-Collector</a>. Ruuvitag data collector for ESP32.</li>
+<li><a
+  href="https://github.com/Jorgen-VikingGod/ESP8266-WiFi-Relay"
+    target="_blank"
+  >ESP8266-WiFi-Relay</a>. simple sketch of using ESP8266WebServer to switch relays on GPIO pins. It serves a simple website with toggle buttons for each relay.</li>
+<li><a
+  href="https://github.com/fabianoriccardi/RTCMemory"
+    target="_blank"
+  >RTCMemory</a>. An intuitive library to simplify read and write operations on RTC memory of ESP8266 and its backup on flash memory..</li>
+<li><a
+  href="https://github.com/khoih-prog/Blynk_Async_WM"
+    target="_blank"
+  >Blynk_Async_WM</a>. Simple WiFiManager for Blynk and ESP8266/ESP32 (including ESP32-S2, ESP32-C3) with or without SSL, configuration data saved in either LittleFS, SPIFFS or EEPROM. This library, using AsyncWebServer instead of (ESP8266)WebServer, for configuring/auto(re)connecting ESP8266/ESP32 modules to best or available MultiWiFi APs and MultiBlynk servers at runtime. Enable adding dynamic custom parameters from sketch and input using the same Config Portal. Config Portal will be auto-adjusted to match the number of dynamic parameters. Optional default Credentials to be autoloaded into Config Portal to use or change instead of manually input. Static STA IP and DHCP Hostname as well as Config Portal AP channel, IP, SSID, Password can be configured. Multi or Double DetectDetector feature permits entering Config Portal as requested..</li>
+<li><a
+  href="https://github.com/renat2985/easy_Iot_file_system"
+    target="_blank"
+  >easy_Iot_file_system</a>. A simple and beautiful file system for your Iot devices. For ESP8266, ESP32.</li>
+<li><a
+  href="https://github.com/JJFourie/ESP32Cam-MQTT-SPIFFS-PIR"
+    target="_blank"
+  >ESP32Cam-MQTT-SPIFFS-PIR</a>. ESP32Cam - PIR-triggered photos uploaded to webserver. Motion broadcast via MQTT. Video streaming. Settings stored in SPIFFS. Temperature sensor..</li>
+<li><a
+  href="https://github.com/Jorgen-VikingGod/ESP8266-WiFi-Relay-Async"
+    target="_blank"
+  >ESP8266-WiFi-Relay-Async</a>. simple sketch for ESP8266 of using ESPAsyncWebServer to switch relays on GPIO pins, serves a simple website with toggle buttons for each relay and uses AsyncWiFiManager to configure WiFi network..</li>
+<li><a
+  href="https://github.com/SergiuToporjinschi/settingsmanager"
+    target="_blank"
+  >settingsmanager</a>. Saving, reading and changing settings from Json file on SPIFFS.</li>
+<li><a
+  href="https://github.com/khoih-prog/Timezone_Generic"
+    target="_blank"
+  >Timezone_Generic</a>. Library to facilitate time zone conversions and automatic daylight saving (summer) time adjustments. For ESP8266, ESP32, WT32-ETH01 (ESP32 + LAN8720), SAMD21, SAMD51, nRF52, STM32F/L/H/G/WB/MP1, Teensy, SAM DUE, RTL8720DN, RP2040-based (Nano_RP2040_Connect, RASPBERRY_PI_PICO), Portenta_H7 (Ethernet or WiFi) boards, etc. using W5x00/ENC28J60/LAN8742A Ethernet, ESP or ESP-AT WiFi or WiFiNINA. Ethernet_Generic library is used as default for W5x00..</li>
+<li><a
+  href="https://github.com/rykovv/spiffs_circular_queue"
+    target="_blank"
+  >spiffs_circular_queue</a>. ESP-IDF and PlatformIO compatible library for a circular queue or circular FIFO buffer over SPIFFS..</li>
+<li><a
+  href="https://github.com/khoih-prog/DS323x_Generic"
+    target="_blank"
+  >DS323x_Generic</a>. Library for DS3231/DS3232 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal. For nRF52, SAMD21/SAMD51, STM32F/L/H/G/WB/MP1, Teensy, Portenta_H7 boards, RP2040-based, etc. besides ESP8266/ESP32, using ESP WiFi, Portenta_H7 WiFi, WiFiNINA, Portenta_H7 Ethernet, Ethernet W5x00, ENC28J60, LAN8742A, ESP8266/ESP32 AT-command WiFi. Ethernet_Generic library is used as default for W5x00 Ethernet.</li>
+<li><a
+  href="https://github.com/Cellgalvano/ESP32_SEA_SPIFFS_Loader"
+    target="_blank"
+  >ESP32_SEA_SPIFFS_Loader</a>. SPIFFS Bitstreamloader for the Spartan Edge Accelerator Board.</li>
+<li><a
+  href="https://github.com/AR-D-R/ESP32-OTA-File-management"
+    target="_blank"
+  >ESP32-OTA-File-management</a>. ESP32 Async OTA Firmware Update &amp; File Management..</li>
+<li><a
+  href="https://github.com/gaurabdg/ESP8266-arduino-serial-programmer"
+    target="_blank"
+  >ESP8266-arduino-serial-programmer</a>. A serial bootloader utility&mdash;using an ESP12E to upload programs to Arduino boards, using the SPIFFS file system. .</li>
+<li><a
+  href="https://github.com/khoih-prog/Blynk_Async_ESP32_BT_WF"
+    target="_blank"
+  >Blynk_Async_ESP32_BT_WF</a>. Simple WiFiManager for Blynk and ESP32 with or without SSL, configuration data saved in either SPIFFS or EEPROM. Enable inclusion of both ESP32 Blynk BT/BLE and WiFi libraries. Then select one at reboot or run both. Eliminate hardcoding your Wifi and Blynk credentials and configuration data saved in either SPIFFS or EEPROM. Using AsyncWebServer instead of (ESP8266)WebServer..</li>
+<li><a
+  href="https://github.com/kc1r74p/ReadMePaper"
+    target="_blank"
+  >ReadMePaper</a>. Just some ESP32 - ePaper 7 Color project 🎉.</li>
+<li><a
+  href="https://github.com/har-in-air/ESP32_ASYNC_WEB_SERVER_SPIFFS_OTA"
+    target="_blank"
+  >ESP32_ASYNC_WEB_SERVER_SPIFFS_OTA</a>. Demo of ESP32 Async Web Server for webpage access and OTA firmware updates, SPIFFS hosted html and css files, DNS for user friendly webpage url. Visual Studio Code + PlatformIO project..</li>
+<li><a
+  href="https://github.com/khoih-prog/ESP_MultiResetDetector"
+    target="_blank"
+  >ESP_MultiResetDetector</a>. Library to detect a multi reset within a predetermined time, using RTC Memory, EEPROM, LittleFS or SPIFFS for ESP8266 and ESP32, ESP32_C3, ESP32_S2, ESP32_S3. An alternative start-up mode can be used. One example use is to allow re-configuration of device WiFi credentials.</li>
+<li><a
+  href="https://github.com/khoih-prog/Blynk_Async_GSM_Manager"
+    target="_blank"
+  >Blynk_Async_GSM_Manager</a>. Library, now using AsyncWebServer instead of (ESP8266)WebServer, for enabling GSM/GPRS and WiFi running simultaneously as well as configuring/auto(re)connecting at runtime GSM shields to Internet and Blynk and ESP8266/ESP32 WiFi modules to best or available MultiWiFi APs and MultiBlynk servers. Enable adding dynamic custom parameters from sketch and input using the same Config Portal. Config Portal will be auto-adjusted to match the number of dynamic parameters. Optional default Credentials to be autoloaded into Config Portal to use or change instead of manually input. Static STA IP and DHCP Hostname as well as Config Portal AP channel, IP, SSID, Password can be configured. DoubleDetectDetector feature permits entering Config Portal as requested..</li>
+<li><a
+  href="https://github.com/DaVieS007/madWiFi"
+    target="_blank"
+  >madWiFi</a>. madWiFi Project on ESP8266.</li>
+<li><a
+  href="https://github.com/iotlearner0level/ESP-Datalogger"
+    target="_blank"
+  >ESP-Datalogger</a>. A general purpose datalogger for esp8266 with provisions for displaying data &amp; graphing it. Also send data to firebase..</li>
+<li><a
+  href="https://github.com/r-zlotorzynski/hommie_logger"
+    target="_blank"
+  >hommie_logger</a>. Creates logs in file using the circular buffer algorithm.</li>
+<li><a
+  href="https://github.com/polygontwist/ESP32_32x32RGBMatrix"
+    target="_blank"
+  >ESP32_32x32RGBMatrix</a>. ESP32 width 32x32 RGB Matrix, OTA, SPIFFS.</li>
+<li><a
+  href="https://github.com/brainelectronics/EspSaveCrashSpiffs"
+    target="_blank"
+  >EspSaveCrashSpiffs</a>. Save exception details and stack trace to the SPIFFS everytime the ESP8266 crashes.</li>
+<li><a
+  href="https://github.com/bellTanTan/Esp32PC8001SIO"
+    target="_blank"
+  >Esp32PC8001SIO</a>. NEC/PC-8001 SIO(DIP16 socket)に挿すゲタのハードとソフトです。ESP32とBME280を活用してSNTP/BME280情報取得/FTPorSPIFFSリスト取得/FTPorSPIFFS DL GETを行うことが出来ます。.</li>
+<li><a
+  href="https://github.com/mkgeiger/geiger-counter-iot"
+    target="_blank"
+  >geiger-counter-iot</a>. Geiger Mueller counter for IoT on an ESP8266 microcontroller.</li>
+<li><a
+  href="https://github.com/jxmot/ESP8266-config-data"
+    target="_blank"
+  >ESP8266-config-data</a>. A demonstration of how to use SPIFFS on the ESP8266.</li>
+<li><a
+  href="https://github.com/quackmore/esp8266_spiffs"
+    target="_blank"
+  >esp8266_spiffs</a>. Spiffs for ESP8266 NON-OS SDK. Forked from the original SPIFFS. No dependecies..</li>
+<li><a
+  href="https://github.com/Deliaz/ESP8266-DHT-SPIFFS"
+    target="_blank"
+  >ESP8266-DHT-SPIFFS</a>. ESP8266 Web interface for DHT22.</li>
+<li><a
+  href="https://github.com/gemi254/ConfigAssist-ESP32-ESP8266"
+    target="_blank"
+  >ConfigAssist-ESP32-ESP8266</a>. A lightweight library allowing quick configuration for esp32/esp8266 devices using async requests. Edit application vars using a responsive captive portal and a json definition  dictionary and saving them on a file in local storage..</li>
+<li><a
+  href="https://github.com/jangleboom/RTKBaseManager"
+    target="_blank"
+  >RTKBaseManager</a>. Web interface (on ESP32) for managing caster and wifi credentials on a real time kinematics base station..</li>
+<li><a
+  href="https://github.com/gertvantslot/esp-razorlike"
+    target="_blank"
+  >esp-razorlike</a>. Code generator, generates code for a Web-server on the ESP8266 powered from Html pages with Razor-like syntax..</li>
+<li><a
+  href="https://github.com/iml885203/7-Segment-Clock"
+    target="_blank"
+  >7-Segment-Clock</a>. 7 segment clock with LED&rsquo;s.</li>
+<li><a
+  href="https://github.com/guohaomeng/ESP32WebScope"
+    target="_blank"
+  >ESP32WebScope</a>. 只用一块ESP32制作的ESP32网页示波器+波形发生器,可以拿来生成以及观察低频信号 esp32 web oscilloscope.</li>
+<li><a
+  href="https://github.com/jxmot/esp8266-MLX90614"
+    target="_blank"
+  >esp8266-MLX90614</a>. A sketch that reads a MLX90614 non-contact temperature sensor. An HTML/JavaScript client is also present..</li>
+<li><a
+  href="https://github.com/AndrasSzep/NMEA0183-WiFi"
+    target="_blank"
+  >NMEA0183-WiFi</a>. This is and Arduino ESP32 code to display UDP-broadcasted NMEA0183 messages through a webserver to be seen on any mobile device for free.</li>
+<li><a
+  href="https://github.com/DaveBrad/DevFsUploadESP"
+    target="_blank"
+  >DevFsUploadESP</a>. ESP32 ESP8266 file-system upload development aid with SPIFFS or LittleFS file-system.</li>
+<li><a
+  href="https://github.com/jangleboom/RTKRoverManager"
+    target="_blank"
+  >RTKRoverManager</a>. Web interface (on ESP32) for managing the credential settings for real time kinematics rover..</li>
+<li><a
+  href="https://github.com/awaistkd/esp-configuration-manger"
+    target="_blank"
+  >esp-configuration-manger</a>. Configuration manager for ESP32  and ESP8266.</li>
+<li><a
+  href="https://github.com/Shaopus/esp32_spiffsgen"
+    target="_blank"
+  >esp32_spiffsgen</a>. how to use mkspiffs in esp32.</li>
+<li><a
+  href="https://github.com/zlgopen/awtk-fs-adapter"
+    target="_blank"
+  >awtk-fs-adapter</a>. filesystem adapter for awtk.</li>
+<li><a
+  href="https://github.com/SimonCrA/ESP32_WEB-SERVER_SPIFFS"
+    target="_blank"
+  >ESP32_WEB-SERVER_SPIFFS</a>. Este código permite al esp32 conectarse a una red WIFI, usando el SPIFFS monta los archivos HTML y CSS en la memoria flash, y sirve una página web..</li>
+<li><a
+  href="https://github.com/Gupta-Harshit/IOT_ESP8266_webserver_SPIFFS"
+    target="_blank"
+  >IOT_ESP8266_webserver_SPIFFS</a>. A basic How-to for different functionalities of the ESP8266 (NodeMCU) - web server and SPIFFS file system Note - these codes are working sub-parts of a project I am working on.</li>
+<li><a
+  href="https://github.com/hatembk/ESP8266-WSN"
+    target="_blank"
+  >ESP8266-WSN</a>. ESP8266 wireless sensor network using websockets and chartjs to send and display sensor data .</li>
+<li><a
+  href="https://github.com/CaptSnus/ShelfEdgeClock"
+    target="_blank"
+  >ShelfEdgeClock</a>. Shelf Edge Clock is a sleek clock hidden behind the edges of shelves..</li>
+<li><a
+  href="https://github.com/mssm199996/esp8266-WSN"
+    target="_blank"
+  >esp8266-WSN</a>. WSN using ESP8266.</li>
+<li><a
+  href="https://github.com/Jorgen-VikingGod/ESP8266-WiFi-Relay-Bahtinov-Masks"
+    target="_blank"
+  >ESP8266-WiFi-Relay-Bahtinov-Masks</a>. simple sketch for ESP8266 of using ESP8266WebServer to switch relays on GPIO pins, control servos to open and close masks, serves a simple website with toggle buttons for each relay and mask servo..</li>
+<li><a
+  href="https://github.com/ghettobuilder2027/test_spiffs_read_data"
+    target="_blank"
+  >test_spiffs_read_data</a>. List all files and their content of the root folder of the spiffs memory on esp32.</li>
+<li><a
+  href="https://github.com/TakayunDev/fs-uploader-spiffs"
+    target="_blank"
+  >fs-uploader-spiffs</a>. filesystem uploader for esp32, using mkspiffs..</li>
+<li><a
+  href="https://github.com/fikin/nodemcu-device"
+    target="_blank"
+  >nodemcu-device</a>. Collection of Lua modules for NodeMCU.</li>
+<li><a
+  href="https://github.com/jxmot/ESP8266-config-data-V2"
+    target="_blank"
+  >ESP8266-config-data-V2</a>. Based on my &lsquo;ESP8266-config-data&rsquo; repo, but with extensive improvements and modifications..</li>
+<li><a
+  href="https://github.com/andrey-08/Sistema-de-apertura-de-porton-con-modulo-GSM---Taller-comunicaciones-electricas"
+    target="_blank"
+  >Sistema-de-apertura-de-porton-con-modulo-GSM&mdash;Taller-comunicaciones-electricas</a>. Se busca la implementación de protocolos de comunicación entre dispositivos a través de aplicación de una ESP32 v1.3  para apertura de un portón eléctrico, el proyecto se realiza sobre una maqueta..</li>
+<li><a
+  href="https://github.com/mhightower83/arduino-esp8266-spiffs-utils"
+    target="_blank"
+  >arduino-esp8266-spiffs-utils</a>. Some misc. utilities for accessing, backing up the SPIFFS file system on a ESP8266 running a Web Server sketch..</li>
+<li><a
+  href="https://github.com/carmenauk/Y3S2"
+    target="_blank"
+  >Y3S2</a>. IO&amp;E Project 2; ESP32 .</li>
+<li><a
+  href="https://github.com/creative-engineering/vortexCannon-AP"
+    target="_blank"
+  >vortexCannon-AP</a>. ESP32 Arduino code for Vortex Cannon LED &amp; message control interface.</li>
+<li><a
+  href="https://github.com/g3rb3n/Thing"
+    target="_blank"
+  >Thing</a>. A MQTT/Wifi/SPIFFS library based on PubSubClient for creating sensor and actuator things on the ESP..</li>
+<li><a
+  href="https://github.com/devel0/iot-esp8266-serial-fwd"
+    target="_blank"
+  >iot-esp8266-serial-fwd</a>. use esp8266 as a serial forwarder over wifi.</li>
+<li><a
+  href="https://github.com/lshw/avr_spiffs"
+    target="_blank"
+  >avr_spiffs</a>. add spiffs to ardino mega 2560.</li>
+<li><a
+  href="https://github.com/Ariful17/IoT-Project-on-Agricultural-Data-Monitoring"
+    target="_blank"
+  >IoT-Project-on-Agricultural-Data-Monitoring</a>. An IoT project on agricultural data monitoring using nodemcu.</li>
+<li><a
+  href="https://github.com/josephlarralde/arduino-esp-utils"
+    target="_blank"
+  >arduino-esp-utils</a>. a collection of utility classes for esp8266 and esp32 chips.</li>
+<li><a
+  href="https://github.com/samlewis02/AC_control"
+    target="_blank"
+  >AC_control</a>. Switch A/C on and off using MQTT.</li>
+<li><a
+  href="https://github.com/Ariful17/IoT-project-on-industrial-operation-and-room-condition"
+    target="_blank"
+  >IoT-project-on-industrial-operation-and-room-condition</a>. An arduino and nodemcu are used to monitor various room conditions and send them over the local internet..</li>
+<li><a
+  href="https://github.com/Jurand2020/esp32logger"
+    target="_blank"
+  >esp32logger</a>. Custom temperature / humidity logger.</li>
+<li><a
+  href="https://github.com/bvujovic/EasyINI"
+    target="_blank"
+  >EasyINI</a>. Utility class for reading from/writing to .ini files on ESP&rsquo;s SPIFFS.</li>
+<li><a
+  href="https://github.com/ghettobuilder2027/format_spiffs_esp32"
+    target="_blank"
+  >format_spiffs_esp32</a>. List files on spiffs memory and format if wanted.</li>
+<li><a
+  href="https://github.com/Ariful17/IoT-Project-on-HVAC"
+    target="_blank"
+  >IoT-Project-on-HVAC</a>. An IoT project that monitors Heating, Ventilation and Air-Conditioning of a closed area. .</li>
+<li><a
+  href="https://github.com/mauriciobarroso/UBA_MSE-6Co2021_SED-TPI"
+    target="_blank"
+  >UBA_MSE-6Co2021_SED-TPI</a>. Trabajo práctico integrador para la materia Sistemas Embebidos Distribuidos.</li>
+<li><a
+  href="https://github.com/bvujovic/MeinDataLogger"
+    target="_blank"
+  >MeinDataLogger</a>. Customer defined data is added to circular buffer and then dumped to LittleFS/SPIFFS (ESP8266/ESP32) file..</li>
+<li><a
+  href="https://github.com/Joaosilgo/Esp32-Webserver"
+    target="_blank"
+  >Esp32-Webserver</a>. 📡.</li>
+<li><a
+  href="https://github.com/FreebeesClub/Freebees-AC-Arduino"
+    target="_blank"
+  >Freebees-AC-Arduino</a>. Access control using Arduino IDE ESP32 PN532 DS3231 MQTT.</li>
+<li><a
+  href="https://github.com/JJFourie/ESP32_MQTT_Motor_Control"
+    target="_blank"
+  >ESP32_MQTT_Motor_Control</a>. Use an ESP32 to automate control of a DC motor based on MQTT messages received from e.g. Home Assistant.</li>
+<li><a
+  href="https://github.com/calfizzi/MCOTAUpdater"
+    target="_blank"
+  >MCOTAUpdater</a>. Simple Updaer using ESP HTTPUpdate library.</li>
+<li><a
+  href="https://github.com/thelastoutpostworkshop/animated_gif_sdcard_spiffs"
+    target="_blank"
+  >animated_gif_sdcard_spiffs</a>. Animated GIF stored in SD Card and played from SPIFFS on a Round Display (GC9A01) with the ESP32.</li>
+<li><a
+  href="https://github.com/snackk/esp8266-home-automation"
+    target="_blank"
+  >esp8266-home-automation</a>. Home Automation firmware for IoT devices based on esp8266..</li>
+<li><a
+  href="https://github.com/JakubAndrysek/ESP32-monaco-editor-spiffs"
+    target="_blank"
+  >ESP32-monaco-editor-spiffs</a>. This is the example that is possible to create VSCode like editor on ESP32 based on Monaco editor..</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">
@@ -657,9 +989,11 @@
         
 
         
+
         
 
-          
+        
+  
       </div>
      
       
@@ -675,7 +1009,7 @@
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js" integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="></script>
       
   
     </section>
@@ -686,7 +1020,7 @@
     
     
     <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
       <div class="flex justify-between pt-3">
         <span>
           
@@ -700,8 +1034,7 @@
                 >&rarr;</span
               >
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Yaffs</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -715,8 +1048,7 @@
           
             <a class="flex text-right group ml-3" href="/library/minigui/">
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >MiniGUI</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -742,13 +1074,16 @@
   </footer>
 </article>
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0 z-10">
+  <a
+    href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top" title="Scroll to top">
+    aria-label="Scroll to top"
+    title="Scroll to top">
     &uarr;
   </a>
 </div>
+
     </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
   <div class="flex items-center justify-between">
     <p class="text-sm text-neutral-500 dark:text-neutral-400">

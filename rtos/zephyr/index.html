@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head>
-  <meta charset="utf-8" />
-  
-  <meta http-equiv="content-language" content="en-us" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <title>Zephyr - Open Source Real-Time Operating Systems (RTOS)</title>
-  <meta name="title" content="Zephyr - Open Source Real-Time Operating Systems (RTOS)" />
-  
-  
-  
-  
-  
-  <link rel="canonical" href="https://www.osrtos.com/rtos/zephyr/" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
-    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
-  
-  
-  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
-    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
-  
-  
-  
-  
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
-    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
-  
-  
-  
-  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
-  
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:url" content="https://www.osrtos.com/rtos/zephyr/">
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="content-language" content="en-us">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color">
+
+    
+    <title>Zephyr - Open Source Real-Time Operating Systems (RTOS)</title>
+    <meta name="title" content="Zephyr - Open Source Real-Time Operating Systems (RTOS)" />
+
+    
+    
+    
+    
+    
+    
+    <link rel="canonical" href="http://localhost:1313/rtos/zephyr/">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="/css/main.bundle.min.2051f57707d569cca9739b2110f76ec5504391bd7cc7464fc32a56d86aa4ce083b2fb103f7678b4b0b91f91c52f8ae00db09394358ca4f23346e2b7b948fab9b.css"
+            integrity="sha512-IFH1dwfVacypc5shEPduxVBDkb18x0ZPwypW2Gqkzgg7L7ED92eLSwuR&#43;RxS&#43;K4A2wk5Q1jKTyM0bit7lI&#43;rmw==">
+
+    
+    
+    <script
+            type="text/javascript"
+            src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+            integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script
+            defer
+            type="text/javascript"
+            id="script-bundle"
+            src="/js/main.bundle.min.e4b2d9aece2aa7a740c3ee7a0efc5acf56b204868ab0fb5bba9be32aed1cd0c9262979d98050759068d58144297f74b12ed05b5173cf2df2e6c097a066b984a8.js"
+            integrity="sha512-5LLZrs4qp6dAw&#43;56Dvxaz1ayBIaKsPtbupvjKu0c0MkmKXnZgFB1kGjVgUQpf3SxLtBbUXPPLfLmwJegZrmEqA=="
+            data-copy="Copy"
+    data-copied="Copied"></script>
+    
+    
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+    
+
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    <meta property="og:url" content="http://localhost:1313/rtos/zephyr/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Zephyr">
   <meta property="og:description" content="Zephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M/R/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.">
@@ -70,13 +98,12 @@
     <meta property="article:published_time" content="2016-11-29T11:36:58+00:00">
     <meta property="article:modified_time" content="2016-11-29T11:36:58+00:00">
 
-  
+    
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Zephyr">
   <meta name="twitter:description" content="Zephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M/R/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.">
 
-  
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -86,7 +113,7 @@
     
     "abstract": "\u003cp\u003eZephyr is a scalable, open-source Real-Time Operating System (RTOS) designed for resource-constrained embedded systems, ranging from simple sensors to complex IoT gateways. Built with security and safety in mind, it features a small-footprint kernel, extensive connectivity options (including BLE 5.0, Wi-Fi, OpenThread), and broad hardware support across multiple architectures like ARM Cortex-M\/R\/A, RISC-V, x86, and Xtensa. Its modular design, powered by the Kconfig and Devicetree systems, allows developers to tailor the OS precisely to their application needs, optimizing performance and memory usage. Zephyr is backed by the Linux Foundation and a large, active community.\u003c\/p\u003e",
     "inLanguage": "en-us",
-    "url" : "https:\/\/www.osrtos.com\/rtos\/zephyr\/",
+    "url" : "http:\/\/localhost:1313\/rtos\/zephyr\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -105,11 +132,13 @@
   </script>
 
 
-  
-  
-  
-  
-  
+
+    
+    
+    
+
+    
+    
 
 <script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
@@ -134,10 +163,13 @@
 
 
 
-  
-  
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+    
+    
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -148,11 +180,20 @@
 
 
 
-  
-  
-  <meta name="theme-color"/>
-  
-  
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
@@ -163,240 +204,244 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          OSRTOS
+        </a>
+      
+    </nav>
     
-    <div class="flex flex-1 items-center justify-between">
-        <nav class="flex space-x-3">
-
-            
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
-            
-
-        </nav>
-        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
-
-            
-            
-            
-  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
     
-    <p class="text-base font-medium" title="">
-        Home
-    </p>
+      
+        
+  <a
+  href="/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Home
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        RTOS
-    </p>
+      
+        
+  <a
+  href="/rtos/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    RTOS
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        Library
-    </p>
+      
+        
+  <a
+  href="/library/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Library
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="Learn RTOS">
-        Learn RTOS
-    </p>
+      
+        
+  <a
+  href="/learn/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Learn RTOS">
+    Learn RTOS
+  </p>
 </a>
 
 
 
-            
-            
+      
+    
 
-            
+    
 
+    
 
-            
+    
 
-
-            
-            
-            <div
-                class=" flex items-center">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
-                    <div class="flex items-center justify-center dark:hidden">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                    </div>
-                    <div class="items-center justify-center hidden dark:flex">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                    </div>
-                </button>
-            </div>
-            
-
-        </nav>
-        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
-
-            <span></span>
-
-            
-
-
-            
-
-            
-            
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
-                <div class="flex items-center justify-center dark:hidden">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                </div>
-                <div class="items-center justify-center hidden dark:flex">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                </div>
-            </button>
-            
-
-        </div>
-    </div>
-    <div class="-my-2 md:hidden">
-
-        <label id="menu-button" class="block">
-            
-            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-                
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-
-  </span>
-
-
-            </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-
-                    <li id="menu-close-button">
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
 </span>
-                    </li>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
 
-                    
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
 
-                    
+    
+
+    
+
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
   <li class="mt-1">
-    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Home
-        </p>
-    </a>
+  <a
+    href="/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Home
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            RTOS
-        </p>
-    </a>
+  <a
+    href="/rtos/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      RTOS
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Library
-        </p>
-    </a>
+  <a
+    href="/library/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Library
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="Learn RTOS">
-            Learn RTOS
-        </p>
-    </a>
+  <a
+    href="/learn/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Learn RTOS">
+      Learn RTOS
+    </p>
+  </a>
 </li>
 
 
 
+            
 
-                    
-
-                </ul>
-                
-                
-
-            </div>
-        </label>
+          </ul>
+          
+        </div>
+      
     </div>
+  </div>
+
 </div>
 
 
@@ -466,13 +511,13 @@
         
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: v4.1.0</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Version: v4.2.0</h4>
           </div>
           
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-26</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-08-22</h4>
           </div>
           
           
@@ -800,14 +845,12 @@ Zephyr boasts a native, highly optimized networking stack supporting IPv4/IPv6, 
 <p><strong>Development and Community:</strong>
 Development is supported on Linux, macOS, and Windows using CMake and the <code>west</code> meta-tool for managing the source code and build process. A native simulation target (<code>native_sim</code>) allows running and debugging Zephyr applications directly on the host PC. The project benefits from a vibrant community, extensive documentation, and support from numerous semiconductor vendors.</p>
 
-
 <h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#features" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -834,111 +877,397 @@ Development is supported on Linux, macOS, and Windows using CMake and the <code>
 <li><strong>Permissive Licensing:</strong> Apache 2.0 license for the core OS.</li>
 </ul>
 
-
 <h3 class="relative group">Resources 
     <div id="resources" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <ul>
-<li><a href="https://github.com/zlgopen/awtk" target="_blank">awtk</a>. AWTK = Toolkit AnyWhere(a cross-platform embedded GUI).</li>
-<li><a href="https://github.com/zmkfirmware/zmk" target="_blank">zmk</a>. ZMK Firmware Repository.</li>
-<li><a href="https://github.com/jakkra/ZSWatch" target="_blank">ZSWatch</a>. ZSWatch - the Open Source Zephyr™ based Smartwatch, including both HW and FW..</li>
-<li><a href="https://github.com/heliosproj/HeliOS" target="_blank">HeliOS</a>. A community delivered, open source embedded operating system project..</li>
-<li><a href="https://github.com/maksimdrachov/zephyr-rtos-tutorial" target="_blank">zephyr-rtos-tutorial</a>. Zephyr: Tutorial for beginners.</li>
-<li><a href="https://github.com/zephyrproject-rtos/west" target="_blank">west</a>. West, Zephyr&rsquo;s meta-tool.</li>
-<li><a href="https://github.com/chunhuajiang/zephyr-doc" target="_blank">zephyr-doc</a>. 《Zephyr OS 文档 - 中文版》.</li>
-<li><a href="https://github.com/chunhuajiang/zephyr-inside" target="_blank">zephyr-inside</a>. 揭秘 Zephyr OS  .</li>
-<li><a href="https://github.com/zephyrproject-rtos/sdk-ng" target="_blank">sdk-ng</a>. Zephyr SDK (Toolchains, Development Tools).</li>
-<li><a href="https://github.com/iotwuxi/iot_security" target="_blank">iot_security</a>. 《密码技术与物联网安全——mbedtls开发实战》示例代码.</li>
-<li><a href="https://github.com/zephyrproject-rtos/zscilib" target="_blank">zscilib</a>. An open-source scientific computing library for embedded systems running Zephyr OS or standalone..</li>
-<li><a href="https://github.com/golioth/awesome-zephyr-rtos" target="_blank">awesome-zephyr-rtos</a>. 🪁 A curated list of awesome projects and resources for the Zephyr RTOS project..</li>
-<li><a href="https://github.com/swedishembedded/control" target="_blank">control</a>. Embedded Firmware Control Systems Toolbox (Pure C and GNU Octave).</li>
-<li><a href="https://github.com/albsod/pinetime-hypnos" target="_blank">pinetime-hypnos</a>. Zephyr firmware for the nRF52832 PineTime smartwatch.</li>
-<li><a href="https://github.com/Linaro/lava" target="_blank">lava</a>. Read only mirror <a href="https://git.lavasoftware.org/lava/lava" target="_blank">https://git.lavasoftware.org/lava/lava</a>.</li>
-<li><a href="https://github.com/cenfun/monocart-reporter" target="_blank">monocart-reporter</a>. A playwright test reporter (Node.js).</li>
-<li><a href="https://github.com/svenssonjoel/lispBM" target="_blank">lispBM</a>. An interpreter for a concurrent lisp-like language with message-passing and pattern-matching implemented in C..</li>
-<li><a href="https://github.com/golioth/golioth-zephyr-sdk" target="_blank">golioth-zephyr-sdk</a>. Golioth SDK For Zephyr.</li>
-<li><a href="https://github.com/JuulLabs-OSS/mcumgr-android" target="_blank">mcumgr-android</a>. A mobile management library for devices running Apache Mynewt and Zephyr (DFU, logs, stats, config, etc.).</li>
-<li><a href="https://github.com/Featherweight-IP/fwrisc" target="_blank">fwrisc</a>. Featherweight RISC-V implementation.</li>
-<li><a href="https://github.com/NordicPlayground/nrf-docker" target="_blank">nrf-docker</a>. Dockerfile that contains all dependencies needed to build nRF Connect SDK applications..</li>
-<li><a href="https://github.com/rgujju/Dynamic_App_Loading" target="_blank">Dynamic_App_Loading</a>. Dynamically load apps to zephyr RTOS.</li>
-<li><a href="https://github.com/RT-LOC/zephyr-dwm1001" target="_blank">zephyr-dwm1001</a>. Open source DWM1001 + Zephyr example implementations.</li>
-<li><a href="https://github.com/JuulLabs-OSS/mcumgr-ios" target="_blank">mcumgr-ios</a>. A mobile management library for devices running Apache Mynewt and Zephyr (DFU, logs, stats, config, etc.).</li>
-<li><a href="https://github.com/scttnlsn/bms" target="_blank">bms</a>. Battery management system for 4-series li-ion packs.</li>
-<li><a href="https://github.com/lowlander/zpp" target="_blank">zpp</a>. Zephyr C++ Framework.</li>
-<li><a href="https://github.com/koenvervloesem/openhaystack-zephyr" target="_blank">openhaystack-zephyr</a>. Zephyr-based OpenHaystack firmware to track your personal Bluetooth devices via Apple&rsquo;s Find My network.</li>
-<li><a href="https://github.com/micro-ROS/micro_ros_zephyr_module" target="_blank">micro_ros_zephyr_module</a>. micro-ROS Zephyr module and sample code.</li>
-<li><a href="https://github.com/swedishembedded/sdk" target="_blank">sdk</a>. Embedded firmware development, simulation and verification SDK.</li>
-<li><a href="https://github.com/makerdiary/nrf52840-m2-devkit" target="_blank">nrf52840-m2-devkit</a>. An open-source developer kit based on a removable nRF52840 M.2 module, designed for IoT prototyping.</li>
-<li><a href="https://github.com/intel/tcf" target="_blank">tcf</a>. Documentation.</li>
-<li><a href="https://github.com/trond-snekvik/vscode-kconfig" target="_blank">vscode-kconfig</a>. Kconfig language support in vscode.</li>
-<li><a href="https://github.com/AVSystem/Anjay-zephyr-client" target="_blank">Anjay-zephyr-client</a>. Anjay Zephyr LwM2M client..</li>
-<li><a href="https://github.com/BLE-MIDI/NCS-MIDI" target="_blank">NCS-MIDI</a>. MIDI tools for nRF Connect SDK.</li>
-<li><a href="https://github.com/koenvervloesem/bluetooth-low-energy-applications" target="_blank">bluetooth-low-energy-applications</a>. Code examples, errata and additional tips and references to interesting projects for the book &ldquo;Develop your own Bluetooth Low Energy Applications for Raspberry Pi, ESP32 and nRF52 with Python, Arduino and Zephyr&rdquo;.</li>
-<li><a href="https://github.com/zmkfirmware/zmk-docker" target="_blank">zmk-docker</a>. Lightweight Docker images for ZMK.</li>
-<li><a href="https://github.com/elaichenkov/playwright-zephyr" target="_blank">playwright-zephyr</a>. Zephyr reporter for the Playwright.</li>
-<li><a href="https://github.com/swedishembedded/workstation" target="_blank">workstation</a>. Docker based development environment for coding, building and flashing embedded firmware..</li>
-<li><a href="https://github.com/boaks/zephyr-coaps-client" target="_blank">zephyr-coaps-client</a>. CoAP / DTLS 1.2 CID client for Zephyr - Reliable - Efficient - Encrypted.</li>
-<li><a href="https://github.com/theheraldproject/herald-for-cpp" target="_blank">herald-for-cpp</a>. Herald for C++ - Reliable mobile Bluetooth communications - Native library &amp; test apps.</li>
-<li><a href="https://github.com/Technoculture/awesome-zephyr-rtos" target="_blank">awesome-zephyr-rtos</a>. Zephyr RTOS for building modular firmware.</li>
-<li><a href="https://github.com/lindemer/cozy" target="_blank">cozy</a>. CBOR Object Signing and Encryption (COSE) for Zephyr RTOS.</li>
-<li><a href="https://github.com/ck-telecom/pinetime" target="_blank">pinetime</a>. zephyr based PineTime smartwatch.</li>
-<li><a href="https://github.com/a-smiggle/ruuvitag_fw_zephyr" target="_blank">ruuvitag_fw_zephyr</a>. Ruuvitag FW using Zephyr OS.</li>
-<li><a href="https://github.com/illinois/zephyr" target="_blank">zephyr</a>. A unified grading platform for student code.</li>
-<li><a href="https://github.com/CharlyCst/zephyr" target="_blank">zephyr</a>. A Programming Language built for WebAssembly.</li>
-<li><a href="https://github.com/dimka-rs/zephyr-stm32-webusb" target="_blank">zephyr-stm32-webusb</a>. Playing with Zephyr Web USB example on STM32 Bluepill.</li>
-<li><a href="https://github.com/koenvervloesem/send-my-sensor" target="_blank">send-my-sensor</a>. Zephyr-based firmware to upload sensor data via Apple&rsquo;s Find My network.</li>
-<li><a href="https://github.com/szymonh/zephyr_cve-2021-3625" target="_blank">zephyr_cve-2021-3625</a>. CVE-2021-3625 - Sample exploits for Zephyr.</li>
-<li><a href="https://github.com/platformio/platform-nxpimxrt" target="_blank">platform-nxpimxrt</a>. NXP i.MX RT: development platform for PlatformIO.</li>
-<li><a href="https://github.com/winnedatsch/aW_1-keyboard" target="_blank">aW_1-keyboard</a>. A split (semi-)wireless keyboard based on the NRF52832.</li>
-<li><a href="https://github.com/vkirankumar3090/zephyrWithCucumber" target="_blank">zephyrWithCucumber</a>. This Framework will help you to update the Test Cycle Status and Steps of the Test Case which is executed in the Test Cycle with the help of cucumber json file.</li>
-<li><a href="https://github.com/ufechner7/teensy4_shell" target="_blank">teensy4_shell</a>. Tutorial on how to use the shell of Zephyr with Teensy 4.0.</li>
-<li><a href="https://github.com/beriberikix/zephyr-docker" target="_blank">zephyr-docker</a>. Develop with Zephyr locally using Docker containers.</li>
-<li><a href="https://github.com/iwasz/zephyr-grbl" target="_blank">zephyr-grbl</a>. Started as a firmware for <a href="https://hackaday.io/project/177237-corexy-pen-plotter" target="_blank">https://hackaday.io/project/177237-corexy-pen-plotter</a>, possibly could be adapted to other CNCs as well..</li>
-<li><a href="https://github.com/craigpeacock/Zephyr_WiFi" target="_blank">Zephyr_WiFi</a>. Example Zephyr WiFi code.</li>
-<li><a href="https://github.com/tiacsys/bridle" target="_blank">bridle</a>. Bridle and kite line for embedded systems based on Zephyr..</li>
-<li><a href="https://github.com/bcdevices/ly10-zephyr-fw" target="_blank">ly10-zephyr-fw</a>. Zephyr-based firmware for PLT Demo V2.</li>
-<li><a href="https://github.com/jkdhn/mcumgr-dart" target="_blank">mcumgr-dart</a>. Dart mcumgr client.</li>
-<li><a href="https://github.com/jezztify/JiphyLib" target="_blank">JiphyLib</a>. making it easier to publish robotframework results to JIRA.</li>
-<li><a href="https://github.com/craigpeacock/Zephyr_LoRaWAN" target="_blank">Zephyr_LoRaWAN</a>. An example LoRaWAN Application on the Zephyr RTOS.</li>
-<li><a href="https://github.com/AVSystem/Anjay-zephyr" target="_blank">Anjay-zephyr</a>. Anjay LwM2M library module for Zephyr..</li>
-<li><a href="https://github.com/fallrisk/Kconfig-Highlighter" target="_blank">Kconfig-Highlighter</a>. Sublime Text 3 highlight script for the Kconfig language..</li>
-<li><a href="https://github.com/codingspirit/vscode-zephyr" target="_blank">vscode-zephyr</a>. This is an example vscode setting to provide supports for zephyr based projects build/debug..</li>
-<li><a href="https://github.com/fcgdam/zLorawan_Node" target="_blank">zLorawan_Node</a>. A Zephyr RTOS based Lorawan node..</li>
-<li><a href="https://github.com/joelguittet/mender-stm32l4a6-zephyr-example" target="_blank">mender-stm32l4a6-zephyr-example</a>. Mender MCU example running on STM32L4 using Zephyr RTOS.</li>
-<li><a href="https://github.com/GatCode/bazel2zephyr" target="_blank">bazel2zephyr</a>. Hands-on tutorial on building a static library (.a) with Bazel and linking it into a Zephyr based project..</li>
-<li><a href="https://github.com/ck-telecom/twatch" target="_blank">twatch</a>. Zephyr based firmware for ligo twatch.</li>
-<li><a href="https://github.com/oldrev/stm32_blackpill_zephyr_ssd1306_demo" target="_blank">stm32_blackpill_zephyr_ssd1306_demo</a>. A demo for Zephyr RTOS to shows how to using a custom TTF Font with CFB sub-system to prints text on a small OLED screen..</li>
-<li><a href="https://github.com/96boards-projects/patient_monitoring" target="_blank">patient_monitoring</a>. Patient Monitoring System using 96Boards.</li>
-<li><a href="https://github.com/pyrinas-iot/pyrinas-zephyr" target="_blank">pyrinas-zephyr</a>. Open companion cloud client to Pyrinas Server for the nRF9160 Feather and Zephyr.</li>
-<li><a href="https://github.com/ravindrakumarkumawat/Netflix-clone" target="_blank">Netflix-clone</a>. This the clone of Netflix functionalities using YouTube Data API. Where you can watch videos, search videos (Not Channel). You can view the preview screen. Every Video has a recommended video list. Sign in with Google..</li>
-<li><a href="https://github.com/lucamoroz/Bluetooth-Mesh-Sensor-Network" target="_blank">Bluetooth-Mesh-Sensor-Network</a>. Bluetooth Mesh sensor network.</li>
-<li><a href="https://github.com/inductivekickback/nrf_servo" target="_blank">nrf_servo</a>. Servo implementation that uses the NRFX PWM driver.</li>
-<li><a href="https://github.com/aaron-mohtar-co/Lemon-IoT-Accessories" target="_blank">Lemon-IoT-Accessories</a>. Support files for Lemon IoT Ecosystem Accessories.</li>
-<li><a href="https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nRF9160" target="_blank">Lemon-IoT-LTE-nRF9160</a>. Support files for the Lemon IoT LTE nRF9160 Board.</li>
-<li><a href="https://github.com/zmkfirmware/zmk-config-split-template" target="_blank">zmk-config-split-template</a>. A template used to generate user configuration repos for split (left + right) keyboards.</li>
-<li><a href="https://github.com/chaitanya8/ZAPI" target="_blank">ZAPI</a>. Test execution and result reporting on Jira + Zephyr setup.</li>
-<li><a href="https://github.com/LairdCP/MG100_firmware" target="_blank">MG100_firmware</a>. MG100 Zephyr RTOS based firmware.</li>
-<li><a href="https://github.com/LairdCP/Pinnacle-100-Firmware-Manifest" target="_blank">Pinnacle-100-Firmware-Manifest</a>. Manifest repository for Pinnacle 100 and MG100 BLE Gateway Firmware demos: <a href="https://github.com/LairdCP/BLE_Gateway_Firmware" target="_blank">https://github.com/LairdCP/BLE_Gateway_Firmware</a>.</li>
-<li><a href="https://github.com/inductivekickback/hc-sr04" target="_blank">hc-sr04</a>. Zephyr RTOS driver for HC-SR04 Ultrasonic Ranging Module.</li>
-<li><a href="https://github.com/rckTom/alturia-firmware" target="_blank">alturia-firmware</a>. Firmware for the alturia flight computer.</li>
-<li><a href="https://github.com/ideak/zephyr-stm32-spi" target="_blank">zephyr-stm32-spi</a>. Simple example of using SPI on the STM32 Nucleo-F411RE board.</li>
-<li><a href="https://github.com/jonnykl/kw1281-diag" target="_blank">kw1281-diag</a>. Simple KW1281 diagnosis tool using Zephyr shell.</li>
-<li><a href="https://github.com/hardwario/nrf-connect-sdk-build-docker" target="_blank">nrf-connect-sdk-build-docker</a>. Build Environment for nRF Connect SDK.</li>
-<li><a href="https://github.com/gaurav1264/zephyr-data-migrator" target="_blank">zephyr-data-migrator</a>. This is self-service utility to migrate zephyr for Jira data from one instance to another..</li>
-<li><a href="https://github.com/stuffmatic/zephyr-usb-midi" target="_blank">zephyr-usb-midi</a>. A configurable USB MIDI 1.0 device class driver for the Zephyr RTOS..</li>
-<li><a href="https://github.com/williamcaruso/AffectHub" target="_blank">AffectHub</a>. A multimodal physiological and affective data hub affectivecomputing.</li>
-<li><a href="https://github.com/HomeSmartMesh/sdk-hsm-thingy53" target="_blank">sdk-hsm-thingy53</a>. Zephyr Samples for Nordic Thingy53 dev kit OpenThread mesh with json data, BME688 BSEC2 for Air Quality, Light color, RGB Les, Battery.</li>
-<li><a href="https://github.com/HeartfeltBP/bpm" target="_blank">bpm</a>. Firmware for the Heartfelt Cardiac Monitor. Consists of sensor (MAX86150) driver, WiFi and Bluetooth connectivity, and client authentication..</li>
-<li><a href="https://github.com/jptcarreira/zephyr-demo-wifi" target="_blank">zephyr-demo-wifi</a>. Zephyr Demo Wifi and TCP/UDP connection console using STM32L4+ B-L4S5I-IOT01A.</li>
-<li><a href="https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest" target="_blank">Pinnacle_100_OOB_Demo_Manifest</a>. Manifest repo for the Pinnacle 100 Out of Box Demo.</li>
-<li><a href="https://github.com/nrjn/hello-zephyr" target="_blank">hello-zephyr</a>. playing around with zephyr .</li>
+<li><a
+  href="https://github.com/zlgopen/awtk"
+    target="_blank"
+  >awtk</a>. AWTK = Toolkit AnyWhere(a cross-platform embedded GUI).</li>
+<li><a
+  href="https://github.com/zmkfirmware/zmk"
+    target="_blank"
+  >zmk</a>. ZMK Firmware Repository.</li>
+<li><a
+  href="https://github.com/jakkra/ZSWatch"
+    target="_blank"
+  >ZSWatch</a>. ZSWatch - the Open Source Zephyr™ based Smartwatch, including both HW and FW..</li>
+<li><a
+  href="https://github.com/heliosproj/HeliOS"
+    target="_blank"
+  >HeliOS</a>. A community delivered, open source embedded operating system project..</li>
+<li><a
+  href="https://github.com/maksimdrachov/zephyr-rtos-tutorial"
+    target="_blank"
+  >zephyr-rtos-tutorial</a>. Zephyr: Tutorial for beginners.</li>
+<li><a
+  href="https://github.com/zephyrproject-rtos/west"
+    target="_blank"
+  >west</a>. West, Zephyr&rsquo;s meta-tool.</li>
+<li><a
+  href="https://github.com/chunhuajiang/zephyr-doc"
+    target="_blank"
+  >zephyr-doc</a>. 《Zephyr OS 文档 - 中文版》.</li>
+<li><a
+  href="https://github.com/chunhuajiang/zephyr-inside"
+    target="_blank"
+  >zephyr-inside</a>. 揭秘 Zephyr OS  .</li>
+<li><a
+  href="https://github.com/zephyrproject-rtos/sdk-ng"
+    target="_blank"
+  >sdk-ng</a>. Zephyr SDK (Toolchains, Development Tools).</li>
+<li><a
+  href="https://github.com/iotwuxi/iot_security"
+    target="_blank"
+  >iot_security</a>. 《密码技术与物联网安全——mbedtls开发实战》示例代码.</li>
+<li><a
+  href="https://github.com/zephyrproject-rtos/zscilib"
+    target="_blank"
+  >zscilib</a>. An open-source scientific computing library for embedded systems running Zephyr OS or standalone..</li>
+<li><a
+  href="https://github.com/golioth/awesome-zephyr-rtos"
+    target="_blank"
+  >awesome-zephyr-rtos</a>. 🪁 A curated list of awesome projects and resources for the Zephyr RTOS project..</li>
+<li><a
+  href="https://github.com/swedishembedded/control"
+    target="_blank"
+  >control</a>. Embedded Firmware Control Systems Toolbox (Pure C and GNU Octave).</li>
+<li><a
+  href="https://github.com/albsod/pinetime-hypnos"
+    target="_blank"
+  >pinetime-hypnos</a>. Zephyr firmware for the nRF52832 PineTime smartwatch.</li>
+<li><a
+  href="https://github.com/Linaro/lava"
+    target="_blank"
+  >lava</a>. Read only mirror <a
+  href="https://git.lavasoftware.org/lava/lava"
+    target="_blank"
+  >https://git.lavasoftware.org/lava/lava</a>.</li>
+<li><a
+  href="https://github.com/cenfun/monocart-reporter"
+    target="_blank"
+  >monocart-reporter</a>. A playwright test reporter (Node.js).</li>
+<li><a
+  href="https://github.com/svenssonjoel/lispBM"
+    target="_blank"
+  >lispBM</a>. An interpreter for a concurrent lisp-like language with message-passing and pattern-matching implemented in C..</li>
+<li><a
+  href="https://github.com/golioth/golioth-zephyr-sdk"
+    target="_blank"
+  >golioth-zephyr-sdk</a>. Golioth SDK For Zephyr.</li>
+<li><a
+  href="https://github.com/JuulLabs-OSS/mcumgr-android"
+    target="_blank"
+  >mcumgr-android</a>. A mobile management library for devices running Apache Mynewt and Zephyr (DFU, logs, stats, config, etc.).</li>
+<li><a
+  href="https://github.com/Featherweight-IP/fwrisc"
+    target="_blank"
+  >fwrisc</a>. Featherweight RISC-V implementation.</li>
+<li><a
+  href="https://github.com/NordicPlayground/nrf-docker"
+    target="_blank"
+  >nrf-docker</a>. Dockerfile that contains all dependencies needed to build nRF Connect SDK applications..</li>
+<li><a
+  href="https://github.com/rgujju/Dynamic_App_Loading"
+    target="_blank"
+  >Dynamic_App_Loading</a>. Dynamically load apps to zephyr RTOS.</li>
+<li><a
+  href="https://github.com/RT-LOC/zephyr-dwm1001"
+    target="_blank"
+  >zephyr-dwm1001</a>. Open source DWM1001 + Zephyr example implementations.</li>
+<li><a
+  href="https://github.com/JuulLabs-OSS/mcumgr-ios"
+    target="_blank"
+  >mcumgr-ios</a>. A mobile management library for devices running Apache Mynewt and Zephyr (DFU, logs, stats, config, etc.).</li>
+<li><a
+  href="https://github.com/scttnlsn/bms"
+    target="_blank"
+  >bms</a>. Battery management system for 4-series li-ion packs.</li>
+<li><a
+  href="https://github.com/lowlander/zpp"
+    target="_blank"
+  >zpp</a>. Zephyr C++ Framework.</li>
+<li><a
+  href="https://github.com/koenvervloesem/openhaystack-zephyr"
+    target="_blank"
+  >openhaystack-zephyr</a>. Zephyr-based OpenHaystack firmware to track your personal Bluetooth devices via Apple&rsquo;s Find My network.</li>
+<li><a
+  href="https://github.com/micro-ROS/micro_ros_zephyr_module"
+    target="_blank"
+  >micro_ros_zephyr_module</a>. micro-ROS Zephyr module and sample code.</li>
+<li><a
+  href="https://github.com/swedishembedded/sdk"
+    target="_blank"
+  >sdk</a>. Embedded firmware development, simulation and verification SDK.</li>
+<li><a
+  href="https://github.com/makerdiary/nrf52840-m2-devkit"
+    target="_blank"
+  >nrf52840-m2-devkit</a>. An open-source developer kit based on a removable nRF52840 M.2 module, designed for IoT prototyping.</li>
+<li><a
+  href="https://github.com/intel/tcf"
+    target="_blank"
+  >tcf</a>. Documentation.</li>
+<li><a
+  href="https://github.com/trond-snekvik/vscode-kconfig"
+    target="_blank"
+  >vscode-kconfig</a>. Kconfig language support in vscode.</li>
+<li><a
+  href="https://github.com/AVSystem/Anjay-zephyr-client"
+    target="_blank"
+  >Anjay-zephyr-client</a>. Anjay Zephyr LwM2M client..</li>
+<li><a
+  href="https://github.com/BLE-MIDI/NCS-MIDI"
+    target="_blank"
+  >NCS-MIDI</a>. MIDI tools for nRF Connect SDK.</li>
+<li><a
+  href="https://github.com/koenvervloesem/bluetooth-low-energy-applications"
+    target="_blank"
+  >bluetooth-low-energy-applications</a>. Code examples, errata and additional tips and references to interesting projects for the book &ldquo;Develop your own Bluetooth Low Energy Applications for Raspberry Pi, ESP32 and nRF52 with Python, Arduino and Zephyr&rdquo;.</li>
+<li><a
+  href="https://github.com/zmkfirmware/zmk-docker"
+    target="_blank"
+  >zmk-docker</a>. Lightweight Docker images for ZMK.</li>
+<li><a
+  href="https://github.com/elaichenkov/playwright-zephyr"
+    target="_blank"
+  >playwright-zephyr</a>. Zephyr reporter for the Playwright.</li>
+<li><a
+  href="https://github.com/swedishembedded/workstation"
+    target="_blank"
+  >workstation</a>. Docker based development environment for coding, building and flashing embedded firmware..</li>
+<li><a
+  href="https://github.com/boaks/zephyr-coaps-client"
+    target="_blank"
+  >zephyr-coaps-client</a>. CoAP / DTLS 1.2 CID client for Zephyr - Reliable - Efficient - Encrypted.</li>
+<li><a
+  href="https://github.com/theheraldproject/herald-for-cpp"
+    target="_blank"
+  >herald-for-cpp</a>. Herald for C++ - Reliable mobile Bluetooth communications - Native library &amp; test apps.</li>
+<li><a
+  href="https://github.com/Technoculture/awesome-zephyr-rtos"
+    target="_blank"
+  >awesome-zephyr-rtos</a>. Zephyr RTOS for building modular firmware.</li>
+<li><a
+  href="https://github.com/lindemer/cozy"
+    target="_blank"
+  >cozy</a>. CBOR Object Signing and Encryption (COSE) for Zephyr RTOS.</li>
+<li><a
+  href="https://github.com/ck-telecom/pinetime"
+    target="_blank"
+  >pinetime</a>. zephyr based PineTime smartwatch.</li>
+<li><a
+  href="https://github.com/a-smiggle/ruuvitag_fw_zephyr"
+    target="_blank"
+  >ruuvitag_fw_zephyr</a>. Ruuvitag FW using Zephyr OS.</li>
+<li><a
+  href="https://github.com/illinois/zephyr"
+    target="_blank"
+  >zephyr</a>. A unified grading platform for student code.</li>
+<li><a
+  href="https://github.com/CharlyCst/zephyr"
+    target="_blank"
+  >zephyr</a>. A Programming Language built for WebAssembly.</li>
+<li><a
+  href="https://github.com/dimka-rs/zephyr-stm32-webusb"
+    target="_blank"
+  >zephyr-stm32-webusb</a>. Playing with Zephyr Web USB example on STM32 Bluepill.</li>
+<li><a
+  href="https://github.com/koenvervloesem/send-my-sensor"
+    target="_blank"
+  >send-my-sensor</a>. Zephyr-based firmware to upload sensor data via Apple&rsquo;s Find My network.</li>
+<li><a
+  href="https://github.com/szymonh/zephyr_cve-2021-3625"
+    target="_blank"
+  >zephyr_cve-2021-3625</a>. CVE-2021-3625 - Sample exploits for Zephyr.</li>
+<li><a
+  href="https://github.com/platformio/platform-nxpimxrt"
+    target="_blank"
+  >platform-nxpimxrt</a>. NXP i.MX RT: development platform for PlatformIO.</li>
+<li><a
+  href="https://github.com/winnedatsch/aW_1-keyboard"
+    target="_blank"
+  >aW_1-keyboard</a>. A split (semi-)wireless keyboard based on the NRF52832.</li>
+<li><a
+  href="https://github.com/vkirankumar3090/zephyrWithCucumber"
+    target="_blank"
+  >zephyrWithCucumber</a>. This Framework will help you to update the Test Cycle Status and Steps of the Test Case which is executed in the Test Cycle with the help of cucumber json file.</li>
+<li><a
+  href="https://github.com/ufechner7/teensy4_shell"
+    target="_blank"
+  >teensy4_shell</a>. Tutorial on how to use the shell of Zephyr with Teensy 4.0.</li>
+<li><a
+  href="https://github.com/beriberikix/zephyr-docker"
+    target="_blank"
+  >zephyr-docker</a>. Develop with Zephyr locally using Docker containers.</li>
+<li><a
+  href="https://github.com/iwasz/zephyr-grbl"
+    target="_blank"
+  >zephyr-grbl</a>. Started as a firmware for <a
+  href="https://hackaday.io/project/177237-corexy-pen-plotter"
+    target="_blank"
+  >https://hackaday.io/project/177237-corexy-pen-plotter</a>, possibly could be adapted to other CNCs as well..</li>
+<li><a
+  href="https://github.com/craigpeacock/Zephyr_WiFi"
+    target="_blank"
+  >Zephyr_WiFi</a>. Example Zephyr WiFi code.</li>
+<li><a
+  href="https://github.com/tiacsys/bridle"
+    target="_blank"
+  >bridle</a>. Bridle and kite line for embedded systems based on Zephyr..</li>
+<li><a
+  href="https://github.com/bcdevices/ly10-zephyr-fw"
+    target="_blank"
+  >ly10-zephyr-fw</a>. Zephyr-based firmware for PLT Demo V2.</li>
+<li><a
+  href="https://github.com/jkdhn/mcumgr-dart"
+    target="_blank"
+  >mcumgr-dart</a>. Dart mcumgr client.</li>
+<li><a
+  href="https://github.com/jezztify/JiphyLib"
+    target="_blank"
+  >JiphyLib</a>. making it easier to publish robotframework results to JIRA.</li>
+<li><a
+  href="https://github.com/craigpeacock/Zephyr_LoRaWAN"
+    target="_blank"
+  >Zephyr_LoRaWAN</a>. An example LoRaWAN Application on the Zephyr RTOS.</li>
+<li><a
+  href="https://github.com/AVSystem/Anjay-zephyr"
+    target="_blank"
+  >Anjay-zephyr</a>. Anjay LwM2M library module for Zephyr..</li>
+<li><a
+  href="https://github.com/fallrisk/Kconfig-Highlighter"
+    target="_blank"
+  >Kconfig-Highlighter</a>. Sublime Text 3 highlight script for the Kconfig language..</li>
+<li><a
+  href="https://github.com/codingspirit/vscode-zephyr"
+    target="_blank"
+  >vscode-zephyr</a>. This is an example vscode setting to provide supports for zephyr based projects build/debug..</li>
+<li><a
+  href="https://github.com/fcgdam/zLorawan_Node"
+    target="_blank"
+  >zLorawan_Node</a>. A Zephyr RTOS based Lorawan node..</li>
+<li><a
+  href="https://github.com/joelguittet/mender-stm32l4a6-zephyr-example"
+    target="_blank"
+  >mender-stm32l4a6-zephyr-example</a>. Mender MCU example running on STM32L4 using Zephyr RTOS.</li>
+<li><a
+  href="https://github.com/GatCode/bazel2zephyr"
+    target="_blank"
+  >bazel2zephyr</a>. Hands-on tutorial on building a static library (.a) with Bazel and linking it into a Zephyr based project..</li>
+<li><a
+  href="https://github.com/ck-telecom/twatch"
+    target="_blank"
+  >twatch</a>. Zephyr based firmware for ligo twatch.</li>
+<li><a
+  href="https://github.com/oldrev/stm32_blackpill_zephyr_ssd1306_demo"
+    target="_blank"
+  >stm32_blackpill_zephyr_ssd1306_demo</a>. A demo for Zephyr RTOS to shows how to using a custom TTF Font with CFB sub-system to prints text on a small OLED screen..</li>
+<li><a
+  href="https://github.com/96boards-projects/patient_monitoring"
+    target="_blank"
+  >patient_monitoring</a>. Patient Monitoring System using 96Boards.</li>
+<li><a
+  href="https://github.com/pyrinas-iot/pyrinas-zephyr"
+    target="_blank"
+  >pyrinas-zephyr</a>. Open companion cloud client to Pyrinas Server for the nRF9160 Feather and Zephyr.</li>
+<li><a
+  href="https://github.com/ravindrakumarkumawat/Netflix-clone"
+    target="_blank"
+  >Netflix-clone</a>. This the clone of Netflix functionalities using YouTube Data API. Where you can watch videos, search videos (Not Channel). You can view the preview screen. Every Video has a recommended video list. Sign in with Google..</li>
+<li><a
+  href="https://github.com/lucamoroz/Bluetooth-Mesh-Sensor-Network"
+    target="_blank"
+  >Bluetooth-Mesh-Sensor-Network</a>. Bluetooth Mesh sensor network.</li>
+<li><a
+  href="https://github.com/inductivekickback/nrf_servo"
+    target="_blank"
+  >nrf_servo</a>. Servo implementation that uses the NRFX PWM driver.</li>
+<li><a
+  href="https://github.com/aaron-mohtar-co/Lemon-IoT-Accessories"
+    target="_blank"
+  >Lemon-IoT-Accessories</a>. Support files for Lemon IoT Ecosystem Accessories.</li>
+<li><a
+  href="https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nRF9160"
+    target="_blank"
+  >Lemon-IoT-LTE-nRF9160</a>. Support files for the Lemon IoT LTE nRF9160 Board.</li>
+<li><a
+  href="https://github.com/zmkfirmware/zmk-config-split-template"
+    target="_blank"
+  >zmk-config-split-template</a>. A template used to generate user configuration repos for split (left + right) keyboards.</li>
+<li><a
+  href="https://github.com/chaitanya8/ZAPI"
+    target="_blank"
+  >ZAPI</a>. Test execution and result reporting on Jira + Zephyr setup.</li>
+<li><a
+  href="https://github.com/LairdCP/MG100_firmware"
+    target="_blank"
+  >MG100_firmware</a>. MG100 Zephyr RTOS based firmware.</li>
+<li><a
+  href="https://github.com/LairdCP/Pinnacle-100-Firmware-Manifest"
+    target="_blank"
+  >Pinnacle-100-Firmware-Manifest</a>. Manifest repository for Pinnacle 100 and MG100 BLE Gateway Firmware demos: <a
+  href="https://github.com/LairdCP/BLE_Gateway_Firmware"
+    target="_blank"
+  >https://github.com/LairdCP/BLE_Gateway_Firmware</a>.</li>
+<li><a
+  href="https://github.com/inductivekickback/hc-sr04"
+    target="_blank"
+  >hc-sr04</a>. Zephyr RTOS driver for HC-SR04 Ultrasonic Ranging Module.</li>
+<li><a
+  href="https://github.com/rckTom/alturia-firmware"
+    target="_blank"
+  >alturia-firmware</a>. Firmware for the alturia flight computer.</li>
+<li><a
+  href="https://github.com/ideak/zephyr-stm32-spi"
+    target="_blank"
+  >zephyr-stm32-spi</a>. Simple example of using SPI on the STM32 Nucleo-F411RE board.</li>
+<li><a
+  href="https://github.com/jonnykl/kw1281-diag"
+    target="_blank"
+  >kw1281-diag</a>. Simple KW1281 diagnosis tool using Zephyr shell.</li>
+<li><a
+  href="https://github.com/hardwario/nrf-connect-sdk-build-docker"
+    target="_blank"
+  >nrf-connect-sdk-build-docker</a>. Build Environment for nRF Connect SDK.</li>
+<li><a
+  href="https://github.com/gaurav1264/zephyr-data-migrator"
+    target="_blank"
+  >zephyr-data-migrator</a>. This is self-service utility to migrate zephyr for Jira data from one instance to another..</li>
+<li><a
+  href="https://github.com/stuffmatic/zephyr-usb-midi"
+    target="_blank"
+  >zephyr-usb-midi</a>. A configurable USB MIDI 1.0 device class driver for the Zephyr RTOS..</li>
+<li><a
+  href="https://github.com/williamcaruso/AffectHub"
+    target="_blank"
+  >AffectHub</a>. A multimodal physiological and affective data hub affectivecomputing.</li>
+<li><a
+  href="https://github.com/HomeSmartMesh/sdk-hsm-thingy53"
+    target="_blank"
+  >sdk-hsm-thingy53</a>. Zephyr Samples for Nordic Thingy53 dev kit OpenThread mesh with json data, BME688 BSEC2 for Air Quality, Light color, RGB Les, Battery.</li>
+<li><a
+  href="https://github.com/HeartfeltBP/bpm"
+    target="_blank"
+  >bpm</a>. Firmware for the Heartfelt Cardiac Monitor. Consists of sensor (MAX86150) driver, WiFi and Bluetooth connectivity, and client authentication..</li>
+<li><a
+  href="https://github.com/jptcarreira/zephyr-demo-wifi"
+    target="_blank"
+  >zephyr-demo-wifi</a>. Zephyr Demo Wifi and TCP/UDP connection console using STM32L4+ B-L4S5I-IOT01A.</li>
+<li><a
+  href="https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest"
+    target="_blank"
+  >Pinnacle_100_OOB_Demo_Manifest</a>. Manifest repo for the Pinnacle 100 Out of Box Demo.</li>
+<li><a
+  href="https://github.com/nrjn/hello-zephyr"
+    target="_blank"
+  >hello-zephyr</a>. playing around with zephyr .</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">
@@ -959,9 +1288,11 @@ Development is supported on Linux, macOS, and Windows using CMake and the <code>
         
 
         
+
         
 
-          
+        
+  
       </div>
      
       
@@ -977,7 +1308,7 @@ Development is supported on Linux, macOS, and Windows using CMake and the <code>
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js" integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="></script>
       
   
     </section>
@@ -988,7 +1319,7 @@ Development is supported on Linux, macOS, and Windows using CMake and the <code>
     
     
     <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
       <div class="flex justify-between pt-3">
         <span>
           
@@ -1002,8 +1333,7 @@ Development is supported on Linux, macOS, and Windows using CMake and the <code>
                 >&rarr;</span
               >
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Atomthreads</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -1017,8 +1347,7 @@ Development is supported on Linux, macOS, and Windows using CMake and the <code>
           
             <a class="flex text-right group ml-3" href="/rtos/usmartx/">
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >uSmartX</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -1044,13 +1373,16 @@ Development is supported on Linux, macOS, and Windows using CMake and the <code>
   </footer>
 </article>
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0 z-10">
+  <a
+    href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top" title="Scroll to top">
+    aria-label="Scroll to top"
+    title="Scroll to top">
     &uarr;
   </a>
 </div>
+
     </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
   <div class="flex items-center justify-between">
     <p class="text-sm text-neutral-500 dark:text-neutral-400">

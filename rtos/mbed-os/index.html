@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head>
-  <meta charset="utf-8" />
-  
-  <meta http-equiv="content-language" content="en-us" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <title>mbed OS - Open Source Real-Time Operating Systems (RTOS)</title>
-  <meta name="title" content="mbed OS - Open Source Real-Time Operating Systems (RTOS)" />
-  
-  
-  
-  
-  
-  <link rel="canonical" href="https://www.osrtos.com/rtos/mbed-os/" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
-    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
-  
-  
-  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
-    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
-  
-  
-  
-  
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
-    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
-  
-  
-  
-  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
-  
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:url" content="https://www.osrtos.com/rtos/mbed-os/">
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="content-language" content="en-us">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color">
+
+    
+    <title>mbed OS - Open Source Real-Time Operating Systems (RTOS)</title>
+    <meta name="title" content="mbed OS - Open Source Real-Time Operating Systems (RTOS)" />
+
+    
+    
+    
+    
+    
+    
+    <link rel="canonical" href="http://localhost:1313/rtos/mbed-os/">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="/css/main.bundle.min.2051f57707d569cca9739b2110f76ec5504391bd7cc7464fc32a56d86aa4ce083b2fb103f7678b4b0b91f91c52f8ae00db09394358ca4f23346e2b7b948fab9b.css"
+            integrity="sha512-IFH1dwfVacypc5shEPduxVBDkb18x0ZPwypW2Gqkzgg7L7ED92eLSwuR&#43;RxS&#43;K4A2wk5Q1jKTyM0bit7lI&#43;rmw==">
+
+    
+    
+    <script
+            type="text/javascript"
+            src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+            integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script
+            defer
+            type="text/javascript"
+            id="script-bundle"
+            src="/js/main.bundle.min.e4b2d9aece2aa7a740c3ee7a0efc5acf56b204868ab0fb5bba9be32aed1cd0c9262979d98050759068d58144297f74b12ed05b5173cf2df2e6c097a066b984a8.js"
+            integrity="sha512-5LLZrs4qp6dAw&#43;56Dvxaz1ayBIaKsPtbupvjKu0c0MkmKXnZgFB1kGjVgUQpf3SxLtBbUXPPLfLmwJegZrmEqA=="
+            data-copy="Copy"
+    data-copied="Copied"></script>
+    
+    
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+    
+
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    <meta property="og:url" content="http://localhost:1313/rtos/mbed-os/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="mbed OS">
   <meta property="og:description" content="mbed OS is an open-source embedded operating system designed specifically for the “things” in the Internet of Things (IoT). It includes all the features you need to develop a connected product based on an ARM Cortex-M microcontroller.">
@@ -70,13 +98,12 @@
     <meta property="article:published_time" content="2016-11-29T11:36:58+00:00">
     <meta property="article:modified_time" content="2016-11-29T11:36:58+00:00">
 
-  
+    
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="mbed OS">
   <meta name="twitter:description" content="mbed OS is an open-source embedded operating system designed specifically for the “things” in the Internet of Things (IoT). It includes all the features you need to develop a connected product based on an ARM Cortex-M microcontroller.">
 
-  
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -86,7 +113,7 @@
     
     "abstract": "\u003cp\u003embed OS is an open-source embedded operating system designed specifically for the \u0026ldquo;things\u0026rdquo; in the Internet of Things (IoT). It includes all the features you need to develop a connected product based on an ARM Cortex-M microcontroller.\u003c\/p\u003e",
     "inLanguage": "en-us",
-    "url" : "https:\/\/www.osrtos.com\/rtos\/mbed-os\/",
+    "url" : "http:\/\/localhost:1313\/rtos\/mbed-os\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -105,11 +132,13 @@
   </script>
 
 
-  
-  
-  
-  
-  
+
+    
+    
+    
+
+    
+    
 
 <script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
@@ -134,10 +163,13 @@
 
 
 
-  
-  
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+    
+    
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -148,11 +180,20 @@
 
 
 
-  
-  
-  <meta name="theme-color"/>
-  
-  
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
@@ -163,240 +204,244 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          OSRTOS
+        </a>
+      
+    </nav>
     
-    <div class="flex flex-1 items-center justify-between">
-        <nav class="flex space-x-3">
-
-            
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
-            
-
-        </nav>
-        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
-
-            
-            
-            
-  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
     
-    <p class="text-base font-medium" title="">
-        Home
-    </p>
+      
+        
+  <a
+  href="/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Home
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        RTOS
-    </p>
+      
+        
+  <a
+  href="/rtos/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    RTOS
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        Library
-    </p>
+      
+        
+  <a
+  href="/library/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Library
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="Learn RTOS">
-        Learn RTOS
-    </p>
+      
+        
+  <a
+  href="/learn/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Learn RTOS">
+    Learn RTOS
+  </p>
 </a>
 
 
 
-            
-            
+      
+    
 
-            
+    
 
+    
 
-            
+    
 
-
-            
-            
-            <div
-                class=" flex items-center">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
-                    <div class="flex items-center justify-center dark:hidden">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                    </div>
-                    <div class="items-center justify-center hidden dark:flex">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                    </div>
-                </button>
-            </div>
-            
-
-        </nav>
-        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
-
-            <span></span>
-
-            
-
-
-            
-
-            
-            
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
-                <div class="flex items-center justify-center dark:hidden">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                </div>
-                <div class="items-center justify-center hidden dark:flex">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                </div>
-            </button>
-            
-
-        </div>
-    </div>
-    <div class="-my-2 md:hidden">
-
-        <label id="menu-button" class="block">
-            
-            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-                
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-
-  </span>
-
-
-            </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-
-                    <li id="menu-close-button">
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
 </span>
-                    </li>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
 
-                    
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
 
-                    
+    
+
+    
+
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
   <li class="mt-1">
-    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Home
-        </p>
-    </a>
+  <a
+    href="/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Home
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            RTOS
-        </p>
-    </a>
+  <a
+    href="/rtos/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      RTOS
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Library
-        </p>
-    </a>
+  <a
+    href="/library/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Library
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="Learn RTOS">
-            Learn RTOS
-        </p>
-    </a>
+  <a
+    href="/learn/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Learn RTOS">
+      Learn RTOS
+    </p>
+  </a>
 </li>
 
 
 
+            
 
-                    
-
-                </ul>
-                
-                
-
-            </div>
-        </label>
+          </ul>
+          
+        </div>
+      
     </div>
+  </div>
+
 </div>
 
 
@@ -607,14 +652,12 @@
         <div class="article-content max-w-full mb-20">
           <p>mbed OS is an open-source embedded operating system designed specifically for the &ldquo;things&rdquo; in the Internet of Things (IoT). It includes all the features you need to develop a connected product based on an ARM Cortex-M microcontroller.</p>
 
-
 <h3 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#features" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -628,114 +671,400 @@
 <li>Drivers and support libraries. Driver support for a wide range of standard MCU peripherals is included in mbed OS. This includes digital and analog IO, interrupts, port and bus IO, PWM, I2C, SPI and serial.</li>
 </ul>
 
-
 <h3 class="relative group">Sample projects and resources 
     <div id="sample-projects-and-resources" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <ul>
-<li><a href="https://github.com/ThingPulse/esp8266-oled-ssd1306" target="_blank">esp8266-oled-ssd1306</a>. Driver for the SSD1306 and SH1106 based 128x64, 128x32, 64x48 pixel OLED display running on ESP8266/ESP32.</li>
-<li><a href="https://github.com/cujomalainey/ant-arduino" target="_blank">ant-arduino</a>. An implementation of a ANT driver for Arduino, Mbed and ESP-IDF.</li>
-<li><a href="https://github.com/DaleGia/Nano33BLESensor" target="_blank">Nano33BLESensor</a>. An Arduino library for the Nano 33 BLE Sense that leverages Mbed OS to automatically place sensor measurements in a ring buffer that can be integrated into programs in a simple manner..</li>
-<li><a href="https://github.com/pstolarz/OneWireNg" target="_blank">OneWireNg</a>. Arduino 1-wire service library. OneWire compatible. Dallas thermometers support..</li>
-<li><a href="https://github.com/PelionIoT/mbed-bootloader" target="_blank">mbed-bootloader</a>. Generic bootloader to be used in conjunction with Pelion Device Management Client.</li>
-<li><a href="https://github.com/ARMmbed/mbed-tools" target="_blank">mbed-tools</a>. ⚠️ Beta Status: New command line tooling for Mbed OS.</li>
-<li><a href="https://github.com/ARMmbed/mbed-os-example-client" target="_blank">mbed-os-example-client</a>. DEPRECATED: This is the mbed Client example application for mbed OS..</li>
-<li><a href="https://github.com/ARMmbed/easy-connect" target="_blank">easy-connect</a>. DEPRECATED: Easily add all supported connectivity methods to your mbed OS project.</li>
-<li><a href="https://github.com/ARMmbed/mbed-os-example-pelion" target="_blank">mbed-os-example-pelion</a>. Mbed OS example for Pelion Device Management.</li>
-<li><a href="https://github.com/leka/LekaOS" target="_blank">LekaOS</a>. LekaOS is Leka&rsquo;s firmware based on Mbed OS.</li>
-<li><a href="https://github.com/StarGate01/chrzwatch-firmware" target="_blank">chrzwatch-firmware</a>. Custom firmware for the NRF52 based smartwatch I6HRC.</li>
-<li><a href="https://github.com/zero9178/Mbed-Support-for-CLion" target="_blank">Mbed-Support-for-CLion</a>. Plugin to support creating and developing Mbed OS projects in CLion.</li>
-<li><a href="https://github.com/YanMinge/Smoothieware_for_STM32" target="_blank">Smoothieware_for_STM32</a>. Smoothieware for stm32 or other chips.</li>
-<li><a href="https://github.com/jankammerath/L475VG-IOT01A-Mbed-AWS-IoT" target="_blank">L475VG-IOT01A-Mbed-AWS-IoT</a>. AWS IoT client for ARM Mbed OS on the STMicroelectronics STM32L4 Discovery Kit IoT Node.</li>
-<li><a href="https://github.com/WIZnet-MbedEthernet/WIZnetInterface" target="_blank">WIZnetInterface</a>. arm Mbed-OS 5 WIZnet chipset driver (W7xxx, W5/6xxx).</li>
-<li><a href="https://github.com/khoih-prog/MBED_RPI_PICO_TimerInterrupt" target="_blank">MBED_RPI_PICO_TimerInterrupt</a>. This library enables you to use Interrupt from Hardware Timers on RP2040-based boards such as Nano_RP2040_Connect, RASPBERRY_PI_PICO. These MBED_RPI_PICO_TimerInterrupt Hardware Timers, using Interrupt, still work even if other functions are blocking. Moreover, they are much more precise (certainly depending on clock frequency accuracy) than other software timers using millis() or micros(). That&rsquo;s mandatory if you need to measure some data requiring better accuracy. It now supports 16 ISR-based Timers, while consuming only 1 Hardware Timer. Timers&rsquo; interval is very long (ulong millisecs). The most important feature is they&rsquo;re ISR-based Timers. Therefore, their executions are not blocked by bad-behaving functions or tasks. This important feature is absolutely necessary for mission-critical tasks..</li>
-<li><a href="https://github.com/coisme/Mbed-to-Azure-IoT-Hub" target="_blank">Mbed-to-Azure-IoT-Hub</a>. Connecting to Azure IoT Hub from Mbed OS device..</li>
-<li><a href="https://github.com/qimao/CircleValve" target="_blank">CircleValve</a>. STM32 Mbed RTX 16路电磁阀流路控制.</li>
-<li><a href="https://github.com/codetent/mbed-os-blue-pill-usb-demo" target="_blank">mbed-os-blue-pill-usb-demo</a>. USB demo programm for the &ldquo;blue pill&rdquo; STM32F103C8 board.</li>
-<li><a href="https://github.com/ARMmbed/icetea" target="_blank">icetea</a>. DEPRECATED mbed test framework.</li>
-<li><a href="https://github.com/mshirw/Pruning-model-for-ARM-CortexM" target="_blank">Pruning-model-for-ARM-CortexM</a>. I integrated two kinds of model pruning methods and porting to ARM-CortexM with ARM-CMSIS library..</li>
-<li><a href="https://github.com/drewcassidy/Nokia5110-LCD-Library" target="_blank">Nokia5110-LCD-Library</a>. nokia 5110/3310 lcd driver for mbed OS.</li>
-<li><a href="https://github.com/Rajesh-Siraskar/EdgeAI-uTensor_Embedded_RTOS_for_ARM_processors" target="_blank">EdgeAI-uTensor_Embedded_RTOS_for_ARM_processors</a>. Predictive maintenance on the edge. uTensor - for building ML models for edge devices. Emedded RTOS C++ programming. Build a model on the desktop/laptop and transfer to a ST microprocessor. .</li>
-<li><a href="https://github.com/TNCT-Mechatech/SerialBridge" target="_blank">SerialBridge</a>. PC(Linux)-MCU(Arduino/Mbed)間でUARTによるシリアル通信を行うためのライブラリ。.</li>
-<li><a href="https://github.com/tinybeachthor/mbedos-maxon-epos4" target="_blank">mbedos-maxon-epos4</a>. EPOS4 Motorcontroller CANOpen communication.</li>
-<li><a href="https://github.com/coisme/Mbed-to-AWS-IoT" target="_blank">Mbed-to-AWS-IoT</a>. Mbed example program connecting to AWS IoT with MQTT over TLS.</li>
-<li><a href="https://github.com/vznncv/TARGET_BLACKPILL_F411CE" target="_blank">TARGET_BLACKPILL_F411CE</a>. Mbed OS 6 port of WeAct STM32F411CE board.</li>
-<li><a href="https://github.com/coisme/Mbed-to-Google-Cloud-IoT" target="_blank">Mbed-to-Google-Cloud-IoT</a>. Connecting to Google Cloud IoT Core from a Mbed OS device..</li>
-<li><a href="https://github.com/pilotak/UbxGpsI2C" target="_blank">UbxGpsI2C</a>. Ublox GPS I2C async library for mbed.</li>
-<li><a href="https://github.com/pilotak/DebounceIn" target="_blank">DebounceIn</a>. Debounce InterruptIn for mbed.</li>
-<li><a href="https://github.com/MultiTechSystems/mbed-os-lorawan-tinyshell" target="_blank">mbed-os-lorawan-tinyshell</a>. Command line interface integrated with mbed-os lorawan stack.</li>
-<li><a href="https://github.com/vznncv/TARGET_BLUEPILL_F103C8" target="_blank">TARGET_BLUEPILL_F103C8</a>. Mbed OS 6 port of BluePill STM32F103C8 board.</li>
-<li><a href="https://github.com/kshoji/mbed-os-USB-MIDI-2.0" target="_blank">mbed-os-USB-MIDI-2.0</a>. USB MIDI 2.0 implementation for Mbed OS 6.</li>
-<li><a href="https://github.com/pilotak/MovingAverage" target="_blank">MovingAverage</a>. Arduino &amp; Mbed Library for averaging fixed-point numbers .</li>
-<li><a href="https://github.com/Hameem1/Indoor-Localization-using-CellLocate" target="_blank">Indoor-Localization-using-CellLocate</a>. Makes use of the CellLocate feature for indoor position estimation without GPS. When GPS is available, the location is calculated using CellLocate and GPS data in a hybrid configuration..</li>
-<li><a href="https://github.com/KirillTregubov/SmartLock" target="_blank">SmartLock</a>. A TOTP-based smart lock system built for an ARM microprocessor..</li>
-<li><a href="https://github.com/pilotak/DS248X" target="_blank">DS248X</a>. A OneWire library using the DS2482 or DS2484 (1-Wire Master) for mbed..</li>
-<li><a href="https://github.com/khoih-prog/MBED_RP2040_PWM" target="_blank">MBED_RP2040_PWM</a>. This library enables you to use Hardware Timers on RP2040-based RP2040 board to create and output PWM to pins. These PWM channels, using RP2040 Hardware-PWM channels, still work even if other functions are blocking. Moreover, they are much more precise (certainly depending on clock frequency accuracy) than other software ISR-based PWM, using millis(), micros() or Timer Interrupt. This important feature is absolutely necessary for mission-critical tasks. You can start, stop, change and restore the settings of any PWM channel on-the-fly.</li>
-<li><a href="https://github.com/Insper/crazyflie-firmware" target="_blank">crazyflie-firmware</a>. Bitcraze Crazyflie 2.0/2.1 firmware utilizing ARM Mbed OS.</li>
-<li><a href="https://github.com/pilotak/BQ35100" target="_blank">BQ35100</a>. Mbed library for BQ35100 primary battery fuel gauge.</li>
-<li><a href="https://github.com/shindoh-org/mbed-vscode-tools" target="_blank">mbed-vscode-tools</a>. VSCode Intellisense For Your Mbed Projects.</li>
-<li><a href="https://github.com/yutotnh/spirit" target="_blank">spirit</a>. モータードライバ用ライブラリ.</li>
-<li><a href="https://github.com/tsaarni/ir-remote-control-repeater" target="_blank">ir-remote-control-repeater</a>. DYI IR remote control signal extender.</li>
-<li><a href="https://github.com/tsaarni/stm32f103-low-power-mbed" target="_blank">stm32f103-low-power-mbed</a>. How to enable standby mode on STM32F1.</li>
-<li><a href="https://github.com/vznncv/TARGET_BLACKPILL_F401CC" target="_blank">TARGET_BLACKPILL_F401CC</a>. Mbed OS 6 port of WeAct STM32F401CC board.</li>
-<li><a href="https://github.com/vznncv/TARGET_BLACKPILL_F401CE" target="_blank">TARGET_BLACKPILL_F401CE</a>. Mbed OS 6 port of WeAct STM32F401CE board.</li>
-<li><a href="https://github.com/vznncv/TARGET_WEACT_H743VI" target="_blank">TARGET_WEACT_H743VI</a>. Mbed OS 6 port of WeAct MiniSTM32H7xx board.</li>
-<li><a href="https://github.com/n-eq/mbed-vim" target="_blank">mbed-vim</a>. Execute mbed-CLI commands from within Vim.</li>
-<li><a href="https://github.com/leka/docker-embedded-toolchains" target="_blank">docker-embedded-toolchains</a>. ⚠️ - WIP - Docker container for the arm-none-eabi toolchain and tools used for LekaOS.</li>
-<li><a href="https://github.com/pilotak/AsynchSerial" target="_blank">AsynchSerial</a>. Wrapper around mbed UARTSerial with added timeouts.</li>
-<li><a href="https://github.com/phlegx/gnss" target="_blank">gnss</a>. GNSS library for Ublox C030-412m board with ZOE-M8B chip..</li>
-<li><a href="https://github.com/pilotak/MovingAverageFloat" target="_blank">MovingAverageFloat</a>. Arduino &amp; Mbed Library for averaging float numbers.</li>
-<li><a href="https://github.com/coisme/TLSSocket" target="_blank">TLSSocket</a>. TLS socket on mbed OS.</li>
-<li><a href="https://github.com/tsaarni/stm32f030-minimal-template" target="_blank">stm32f030-minimal-template</a>. Project template for barebones STM32F030F4.</li>
-<li><a href="https://github.com/hankhjliao/magic_wand_mbed" target="_blank">magic_wand_mbed</a>. Deploy magic wand model on mbed K66F.</li>
-<li><a href="https://github.com/tsaarni/stm32f103-minimal-template" target="_blank">stm32f103-minimal-template</a>. Project template for barebones STM32F103C8.</li>
-<li><a href="https://github.com/vketch/videoplayer" target="_blank">videoplayer</a>. mbed-os video player  based on UniGrapic for NUCLEO-F412ZG.</li>
-<li><a href="https://github.com/pilotak/stm32-uid" target="_blank">stm32-uid</a>. Mbed helper to get UID as base64.</li>
-<li><a href="https://github.com/thinkberg/mbed-memtrace-logger" target="_blank">mbed-memtrace-logger</a>. Analyzes and los the memtrace output from mbed-os in a readable form.</li>
-<li><a href="https://github.com/jongreene/acorns-rover" target="_blank">acorns-rover</a>. RTOS framework capable of servicing remote instructions received over a serial connection. .</li>
-<li><a href="https://github.com/grandboum/snippets" target="_blank">snippets</a>. Small pieces of code for reference.</li>
-<li><a href="https://github.com/sarincr/ARM-KL25Z-mBed-IDE-Example-Progrms" target="_blank">ARM-KL25Z-mBed-IDE-Example-Progrms</a>. Basic Programming exercises for FRDM-KL25Z: Freedom Development Platform for Kinetis® KL14, KL15, KL24, KL25 MCUs.   The Freedom KL25Z is an ultra-low-cost development platform for Kinetis® L Series KL1x (KL14/15) and KL2x (KL24/25) MCUs built on Arm® Cortex®-M0+ processor.      Features include easy access to MCU I/O, battery-ready, low-power operation, a standards-based form factor with expansion board options and a built-in debug interface for flash programming and run-control.     The FRDM-KL25Z is supported by a range of NXP® and third-party development software.     You can now use mbed.org at no charge, with full access to the online SDK, tools, reusable code—which means no downloads, installations or licenses—and an active community of developers.     Processor Expert® component for low voltage H-Bridge products enables rapid embedded application development.     The FRDM-KL25Z is supported by Zephyr OS for developing the Internet of Things with a free, open-source embedded operating system..</li>
-<li><a href="https://github.com/JulietNovember96/mmu-ace-assignment1" target="_blank">mmu-ace-assignment1</a>. A home automation system using ARM mbed. For a university assignment..</li>
-<li><a href="https://github.com/devangel77b/Spektrum" target="_blank">Spektrum</a>. mbed library for Spektrum serial receivers.</li>
-<li><a href="https://github.com/pilotak/CR95HF" target="_blank">CR95HF</a>. Mbed library for CR95HF (X-Nucleo NFC03A1).</li>
-<li><a href="https://github.com/LuigiSigillo/NextRoom" target="_blank">NextRoom</a>. An IoT system that can change the way in which you visit a museum, and makes you focus more on the pieces of art that you like most. It can suggest the next section you could visit based on the time you have spent in the previous sections..</li>
-<li><a href="https://github.com/pilotak/mbed-cellular-boilerplate" target="_blank">mbed-cellular-boilerplate</a>. Mbed uBlox cellular basic with reconnect.</li>
-<li><a href="https://github.com/istepura/kw41z-rf-driver" target="_blank">kw41z-rf-driver</a>. mbed Nanostack RF driver for NXP KW41Z wireless MCU.</li>
-<li><a href="https://github.com/pilotak/MovingAverageAngle" target="_blank">MovingAverageAngle</a>. Arduino &amp; Mbed Library for averaging angles 0-360°.</li>
-<li><a href="https://github.com/geekshow/mbed-os6-stm32-w5500-mqtt" target="_blank">mbed-os6-stm32-w5500-mqtt</a>. Home MQTT ethernet controller using mbed os.</li>
-<li><a href="https://github.com/akiroz/Mbed-ModbusMaster" target="_blank">Mbed-ModbusMaster</a>. Modbus-RTU master library for mbed OS.</li>
-<li><a href="https://github.com/priyablue/MQTT-demo-MBED-DISCO_L475VG_IOT01A" target="_blank">MQTT-demo-MBED-DISCO_L475VG_IOT01A</a>. MQTT demo for the STM32 IoT discovery Board with thingsboard.io.</li>
-<li><a href="https://github.com/veracioux/siau-devconf" target="_blank">siau-devconf</a>. An MBED C++ code generator for smart home devices.</li>
-<li><a href="https://github.com/Embedded-AMS/EmbeddedProto_Example_Mbed_to_server" target="_blank">EmbeddedProto_Example_Mbed_to_server</a>. This example shows how you could communicate over ethernet using TCP sockets in a structured manner, using protobuf and Mbed OS as an RTOS..</li>
-<li><a href="https://github.com/khoih-prog/nRF52_MBED_PWM" target="_blank">nRF52_MBED_PWM</a>. This library enables you to use Hardware Timers on nRF52840-based Nano_33_BLE or Nano_33_BLE_Sense board to create and output PWM to pins. These PWM channels, using nRF52840 Hardware Timers, still work even if other functions are blocking. Moreover, they are much more precise (certainly depending on clock frequency accuracy) than other software ir ISR-based PWM, using millis(), micros() or Timer Interrupt. This important feature is absolutely necessary for mission-critical tasks. You can start, stop, change and restore the settings of any PWM channel on-the-fly..</li>
-<li><a href="https://github.com/coisme/Mbed-to-IBM-Watson-IoT" target="_blank">Mbed-to-IBM-Watson-IoT</a>. Connecting to IBM Watson IoT from a Mbed OS device..</li>
-<li><a href="https://github.com/Avnet/wnc14a2a-driver" target="_blank">wnc14a2a-driver</a>. A driver for the WNC M14A2A Cellular Data Module for use with  ARM Mbed OS Network Interface..</li>
-<li><a href="https://github.com/tjpetz/mbed_BLE_GAP_scanner" target="_blank">mbed_BLE_GAP_scanner</a>. A simple example for the Arduino Nano 33 BLE of scanning on LE_CODED using mbed OS..</li>
-<li><a href="https://github.com/theo9921/ARMHack" target="_blank">ARMHack</a>. Arm CUES Hackathon 2017.</li>
-<li><a href="https://github.com/tjpetz/mbed_BLE_GAP_advertiser" target="_blank">mbed_BLE_GAP_advertiser</a>. An Arduino Nano 33 BLE sample in mbed OS that advertises using the LE_CODED PHY for long range..</li>
-<li><a href="https://github.com/kwilson33/ECE2035-Game" target="_blank">ECE2035-Game</a>. RPG game for ECE 2035 at GaTech that implements HashTable that I coded to store game objects..</li>
-<li><a href="https://github.com/MOVE-II/move-on-helium-sensors" target="_blank">move-on-helium-sensors</a>.  Sensors subsystem for the MOVE-ON Helium high-altitude balloon mission.</li>
-<li><a href="https://github.com/maiorfi/mbedos_wifi_sample_esp8266" target="_blank">mbedos_wifi_sample_esp8266</a>. Demo di utilizzo di ESP8266 con mbed-os.</li>
-<li><a href="https://github.com/mshakula/RoostaBoosta" target="_blank">RoostaBoosta</a>. IoT Weather Alarm Clock - Georgia Tech ECE 4180 Spring 2023 Final Project.</li>
-<li><a href="https://github.com/maiorfi/lablet-unipg-2" target="_blank">lablet-unipg-2</a>. Mbed-OS Samples.</li>
-<li><a href="https://github.com/lrutten/midiplayer" target="_blank">midiplayer</a>. Midi player on Nucleo-64 STM32F446RE.</li>
-<li><a href="https://github.com/vmanoj1996/mbed-encoder" target="_blank">mbed-encoder</a>. Code for interfacing Quadrature encoder with Mbed compatible microcontrollers. Written on Platform io ide. May not directly compile on Mbed online ide.</li>
-<li><a href="https://github.com/chirp/chirp-mbed-os-lib" target="_blank">chirp-mbed-os-lib</a>. Chirp SDK library for Mbed.</li>
-<li><a href="https://github.com/libredorm/mbed-libs" target="_blank">mbed-libs</a>. libraries for ARM mbed OS.</li>
-<li><a href="https://github.com/lhr-solar/PV-Curve-Tracer" target="_blank">PV-Curve-Tracer</a>. Firmware for the Array PV Curve Tracer board..</li>
-<li><a href="https://github.com/lazyoracle/nucleo-expt" target="_blank">nucleo-expt</a>. Experiment Control system using Embedded C++ with ARM mbed OS on STM32 Nucleo boards.</li>
-<li><a href="https://github.com/JuanHirschmann/LAL-Control-MbedOS" target="_blank">LAL-Control-MbedOS</a>. Sistema de control de extracción de vapores y control de procedimiento para operar un láser de ablación pulsada..</li>
-<li><a href="https://github.com/takuti/mbed-os-example-treasure-data" target="_blank">mbed-os-example-treasure-data</a>. Sending sensor data from Mbed OS to Treasure Data.</li>
-<li><a href="https://github.com/stevew817/MeetingroomDisplayFirmware" target="_blank">MeetingroomDisplayFirmware</a>. Firmware for Thread-connected, LWM2M-based Meeting Room Occupancy display.</li>
-<li><a href="https://github.com/maiorfi/mbed-unipg-samples-1" target="_blank">mbed-unipg-samples-1</a>. Esempi per attività di Laboratorio.</li>
-<li><a href="https://github.com/Supercaly/oled_ssd1351" target="_blank">oled_ssd1351</a>. Hexiwear OLED Display Driver.</li>
+<li><a
+  href="https://github.com/ThingPulse/esp8266-oled-ssd1306"
+    target="_blank"
+  >esp8266-oled-ssd1306</a>. Driver for the SSD1306 and SH1106 based 128x64, 128x32, 64x48 pixel OLED display running on ESP8266/ESP32.</li>
+<li><a
+  href="https://github.com/cujomalainey/ant-arduino"
+    target="_blank"
+  >ant-arduino</a>. An implementation of a ANT driver for Arduino, Mbed and ESP-IDF.</li>
+<li><a
+  href="https://github.com/DaleGia/Nano33BLESensor"
+    target="_blank"
+  >Nano33BLESensor</a>. An Arduino library for the Nano 33 BLE Sense that leverages Mbed OS to automatically place sensor measurements in a ring buffer that can be integrated into programs in a simple manner..</li>
+<li><a
+  href="https://github.com/pstolarz/OneWireNg"
+    target="_blank"
+  >OneWireNg</a>. Arduino 1-wire service library. OneWire compatible. Dallas thermometers support..</li>
+<li><a
+  href="https://github.com/PelionIoT/mbed-bootloader"
+    target="_blank"
+  >mbed-bootloader</a>. Generic bootloader to be used in conjunction with Pelion Device Management Client.</li>
+<li><a
+  href="https://github.com/ARMmbed/mbed-tools"
+    target="_blank"
+  >mbed-tools</a>. ⚠️ Beta Status: New command line tooling for Mbed OS.</li>
+<li><a
+  href="https://github.com/ARMmbed/mbed-os-example-client"
+    target="_blank"
+  >mbed-os-example-client</a>. DEPRECATED: This is the mbed Client example application for mbed OS..</li>
+<li><a
+  href="https://github.com/ARMmbed/easy-connect"
+    target="_blank"
+  >easy-connect</a>. DEPRECATED: Easily add all supported connectivity methods to your mbed OS project.</li>
+<li><a
+  href="https://github.com/ARMmbed/mbed-os-example-pelion"
+    target="_blank"
+  >mbed-os-example-pelion</a>. Mbed OS example for Pelion Device Management.</li>
+<li><a
+  href="https://github.com/leka/LekaOS"
+    target="_blank"
+  >LekaOS</a>. LekaOS is Leka&rsquo;s firmware based on Mbed OS.</li>
+<li><a
+  href="https://github.com/StarGate01/chrzwatch-firmware"
+    target="_blank"
+  >chrzwatch-firmware</a>. Custom firmware for the NRF52 based smartwatch I6HRC.</li>
+<li><a
+  href="https://github.com/zero9178/Mbed-Support-for-CLion"
+    target="_blank"
+  >Mbed-Support-for-CLion</a>. Plugin to support creating and developing Mbed OS projects in CLion.</li>
+<li><a
+  href="https://github.com/YanMinge/Smoothieware_for_STM32"
+    target="_blank"
+  >Smoothieware_for_STM32</a>. Smoothieware for stm32 or other chips.</li>
+<li><a
+  href="https://github.com/jankammerath/L475VG-IOT01A-Mbed-AWS-IoT"
+    target="_blank"
+  >L475VG-IOT01A-Mbed-AWS-IoT</a>. AWS IoT client for ARM Mbed OS on the STMicroelectronics STM32L4 Discovery Kit IoT Node.</li>
+<li><a
+  href="https://github.com/WIZnet-MbedEthernet/WIZnetInterface"
+    target="_blank"
+  >WIZnetInterface</a>. arm Mbed-OS 5 WIZnet chipset driver (W7xxx, W5/6xxx).</li>
+<li><a
+  href="https://github.com/khoih-prog/MBED_RPI_PICO_TimerInterrupt"
+    target="_blank"
+  >MBED_RPI_PICO_TimerInterrupt</a>. This library enables you to use Interrupt from Hardware Timers on RP2040-based boards such as Nano_RP2040_Connect, RASPBERRY_PI_PICO. These MBED_RPI_PICO_TimerInterrupt Hardware Timers, using Interrupt, still work even if other functions are blocking. Moreover, they are much more precise (certainly depending on clock frequency accuracy) than other software timers using millis() or micros(). That&rsquo;s mandatory if you need to measure some data requiring better accuracy. It now supports 16 ISR-based Timers, while consuming only 1 Hardware Timer. Timers&rsquo; interval is very long (ulong millisecs). The most important feature is they&rsquo;re ISR-based Timers. Therefore, their executions are not blocked by bad-behaving functions or tasks. This important feature is absolutely necessary for mission-critical tasks..</li>
+<li><a
+  href="https://github.com/coisme/Mbed-to-Azure-IoT-Hub"
+    target="_blank"
+  >Mbed-to-Azure-IoT-Hub</a>. Connecting to Azure IoT Hub from Mbed OS device..</li>
+<li><a
+  href="https://github.com/qimao/CircleValve"
+    target="_blank"
+  >CircleValve</a>. STM32 Mbed RTX 16路电磁阀流路控制.</li>
+<li><a
+  href="https://github.com/codetent/mbed-os-blue-pill-usb-demo"
+    target="_blank"
+  >mbed-os-blue-pill-usb-demo</a>. USB demo programm for the &ldquo;blue pill&rdquo; STM32F103C8 board.</li>
+<li><a
+  href="https://github.com/ARMmbed/icetea"
+    target="_blank"
+  >icetea</a>. DEPRECATED mbed test framework.</li>
+<li><a
+  href="https://github.com/mshirw/Pruning-model-for-ARM-CortexM"
+    target="_blank"
+  >Pruning-model-for-ARM-CortexM</a>. I integrated two kinds of model pruning methods and porting to ARM-CortexM with ARM-CMSIS library..</li>
+<li><a
+  href="https://github.com/drewcassidy/Nokia5110-LCD-Library"
+    target="_blank"
+  >Nokia5110-LCD-Library</a>. nokia 5110/3310 lcd driver for mbed OS.</li>
+<li><a
+  href="https://github.com/Rajesh-Siraskar/EdgeAI-uTensor_Embedded_RTOS_for_ARM_processors"
+    target="_blank"
+  >EdgeAI-uTensor_Embedded_RTOS_for_ARM_processors</a>. Predictive maintenance on the edge. uTensor - for building ML models for edge devices. Emedded RTOS C++ programming. Build a model on the desktop/laptop and transfer to a ST microprocessor. .</li>
+<li><a
+  href="https://github.com/TNCT-Mechatech/SerialBridge"
+    target="_blank"
+  >SerialBridge</a>. PC(Linux)-MCU(Arduino/Mbed)間でUARTによるシリアル通信を行うためのライブラリ。.</li>
+<li><a
+  href="https://github.com/tinybeachthor/mbedos-maxon-epos4"
+    target="_blank"
+  >mbedos-maxon-epos4</a>. EPOS4 Motorcontroller CANOpen communication.</li>
+<li><a
+  href="https://github.com/coisme/Mbed-to-AWS-IoT"
+    target="_blank"
+  >Mbed-to-AWS-IoT</a>. Mbed example program connecting to AWS IoT with MQTT over TLS.</li>
+<li><a
+  href="https://github.com/vznncv/TARGET_BLACKPILL_F411CE"
+    target="_blank"
+  >TARGET_BLACKPILL_F411CE</a>. Mbed OS 6 port of WeAct STM32F411CE board.</li>
+<li><a
+  href="https://github.com/coisme/Mbed-to-Google-Cloud-IoT"
+    target="_blank"
+  >Mbed-to-Google-Cloud-IoT</a>. Connecting to Google Cloud IoT Core from a Mbed OS device..</li>
+<li><a
+  href="https://github.com/pilotak/UbxGpsI2C"
+    target="_blank"
+  >UbxGpsI2C</a>. Ublox GPS I2C async library for mbed.</li>
+<li><a
+  href="https://github.com/pilotak/DebounceIn"
+    target="_blank"
+  >DebounceIn</a>. Debounce InterruptIn for mbed.</li>
+<li><a
+  href="https://github.com/MultiTechSystems/mbed-os-lorawan-tinyshell"
+    target="_blank"
+  >mbed-os-lorawan-tinyshell</a>. Command line interface integrated with mbed-os lorawan stack.</li>
+<li><a
+  href="https://github.com/vznncv/TARGET_BLUEPILL_F103C8"
+    target="_blank"
+  >TARGET_BLUEPILL_F103C8</a>. Mbed OS 6 port of BluePill STM32F103C8 board.</li>
+<li><a
+  href="https://github.com/kshoji/mbed-os-USB-MIDI-2.0"
+    target="_blank"
+  >mbed-os-USB-MIDI-2.0</a>. USB MIDI 2.0 implementation for Mbed OS 6.</li>
+<li><a
+  href="https://github.com/pilotak/MovingAverage"
+    target="_blank"
+  >MovingAverage</a>. Arduino &amp; Mbed Library for averaging fixed-point numbers .</li>
+<li><a
+  href="https://github.com/Hameem1/Indoor-Localization-using-CellLocate"
+    target="_blank"
+  >Indoor-Localization-using-CellLocate</a>. Makes use of the CellLocate feature for indoor position estimation without GPS. When GPS is available, the location is calculated using CellLocate and GPS data in a hybrid configuration..</li>
+<li><a
+  href="https://github.com/KirillTregubov/SmartLock"
+    target="_blank"
+  >SmartLock</a>. A TOTP-based smart lock system built for an ARM microprocessor..</li>
+<li><a
+  href="https://github.com/pilotak/DS248X"
+    target="_blank"
+  >DS248X</a>. A OneWire library using the DS2482 or DS2484 (1-Wire Master) for mbed..</li>
+<li><a
+  href="https://github.com/khoih-prog/MBED_RP2040_PWM"
+    target="_blank"
+  >MBED_RP2040_PWM</a>. This library enables you to use Hardware Timers on RP2040-based RP2040 board to create and output PWM to pins. These PWM channels, using RP2040 Hardware-PWM channels, still work even if other functions are blocking. Moreover, they are much more precise (certainly depending on clock frequency accuracy) than other software ISR-based PWM, using millis(), micros() or Timer Interrupt. This important feature is absolutely necessary for mission-critical tasks. You can start, stop, change and restore the settings of any PWM channel on-the-fly.</li>
+<li><a
+  href="https://github.com/Insper/crazyflie-firmware"
+    target="_blank"
+  >crazyflie-firmware</a>. Bitcraze Crazyflie 2.0/2.1 firmware utilizing ARM Mbed OS.</li>
+<li><a
+  href="https://github.com/pilotak/BQ35100"
+    target="_blank"
+  >BQ35100</a>. Mbed library for BQ35100 primary battery fuel gauge.</li>
+<li><a
+  href="https://github.com/shindoh-org/mbed-vscode-tools"
+    target="_blank"
+  >mbed-vscode-tools</a>. VSCode Intellisense For Your Mbed Projects.</li>
+<li><a
+  href="https://github.com/yutotnh/spirit"
+    target="_blank"
+  >spirit</a>. モータードライバ用ライブラリ.</li>
+<li><a
+  href="https://github.com/tsaarni/ir-remote-control-repeater"
+    target="_blank"
+  >ir-remote-control-repeater</a>. DYI IR remote control signal extender.</li>
+<li><a
+  href="https://github.com/tsaarni/stm32f103-low-power-mbed"
+    target="_blank"
+  >stm32f103-low-power-mbed</a>. How to enable standby mode on STM32F1.</li>
+<li><a
+  href="https://github.com/vznncv/TARGET_BLACKPILL_F401CC"
+    target="_blank"
+  >TARGET_BLACKPILL_F401CC</a>. Mbed OS 6 port of WeAct STM32F401CC board.</li>
+<li><a
+  href="https://github.com/vznncv/TARGET_BLACKPILL_F401CE"
+    target="_blank"
+  >TARGET_BLACKPILL_F401CE</a>. Mbed OS 6 port of WeAct STM32F401CE board.</li>
+<li><a
+  href="https://github.com/vznncv/TARGET_WEACT_H743VI"
+    target="_blank"
+  >TARGET_WEACT_H743VI</a>. Mbed OS 6 port of WeAct MiniSTM32H7xx board.</li>
+<li><a
+  href="https://github.com/n-eq/mbed-vim"
+    target="_blank"
+  >mbed-vim</a>. Execute mbed-CLI commands from within Vim.</li>
+<li><a
+  href="https://github.com/leka/docker-embedded-toolchains"
+    target="_blank"
+  >docker-embedded-toolchains</a>. ⚠️ - WIP - Docker container for the arm-none-eabi toolchain and tools used for LekaOS.</li>
+<li><a
+  href="https://github.com/pilotak/AsynchSerial"
+    target="_blank"
+  >AsynchSerial</a>. Wrapper around mbed UARTSerial with added timeouts.</li>
+<li><a
+  href="https://github.com/phlegx/gnss"
+    target="_blank"
+  >gnss</a>. GNSS library for Ublox C030-412m board with ZOE-M8B chip..</li>
+<li><a
+  href="https://github.com/pilotak/MovingAverageFloat"
+    target="_blank"
+  >MovingAverageFloat</a>. Arduino &amp; Mbed Library for averaging float numbers.</li>
+<li><a
+  href="https://github.com/coisme/TLSSocket"
+    target="_blank"
+  >TLSSocket</a>. TLS socket on mbed OS.</li>
+<li><a
+  href="https://github.com/tsaarni/stm32f030-minimal-template"
+    target="_blank"
+  >stm32f030-minimal-template</a>. Project template for barebones STM32F030F4.</li>
+<li><a
+  href="https://github.com/hankhjliao/magic_wand_mbed"
+    target="_blank"
+  >magic_wand_mbed</a>. Deploy magic wand model on mbed K66F.</li>
+<li><a
+  href="https://github.com/tsaarni/stm32f103-minimal-template"
+    target="_blank"
+  >stm32f103-minimal-template</a>. Project template for barebones STM32F103C8.</li>
+<li><a
+  href="https://github.com/vketch/videoplayer"
+    target="_blank"
+  >videoplayer</a>. mbed-os video player  based on UniGrapic for NUCLEO-F412ZG.</li>
+<li><a
+  href="https://github.com/pilotak/stm32-uid"
+    target="_blank"
+  >stm32-uid</a>. Mbed helper to get UID as base64.</li>
+<li><a
+  href="https://github.com/thinkberg/mbed-memtrace-logger"
+    target="_blank"
+  >mbed-memtrace-logger</a>. Analyzes and los the memtrace output from mbed-os in a readable form.</li>
+<li><a
+  href="https://github.com/jongreene/acorns-rover"
+    target="_blank"
+  >acorns-rover</a>. RTOS framework capable of servicing remote instructions received over a serial connection. .</li>
+<li><a
+  href="https://github.com/grandboum/snippets"
+    target="_blank"
+  >snippets</a>. Small pieces of code for reference.</li>
+<li><a
+  href="https://github.com/sarincr/ARM-KL25Z-mBed-IDE-Example-Progrms"
+    target="_blank"
+  >ARM-KL25Z-mBed-IDE-Example-Progrms</a>. Basic Programming exercises for FRDM-KL25Z: Freedom Development Platform for Kinetis® KL14, KL15, KL24, KL25 MCUs.   The Freedom KL25Z is an ultra-low-cost development platform for Kinetis® L Series KL1x (KL14/15) and KL2x (KL24/25) MCUs built on Arm® Cortex®-M0+ processor.      Features include easy access to MCU I/O, battery-ready, low-power operation, a standards-based form factor with expansion board options and a built-in debug interface for flash programming and run-control.     The FRDM-KL25Z is supported by a range of NXP® and third-party development software.     You can now use mbed.org at no charge, with full access to the online SDK, tools, reusable code—which means no downloads, installations or licenses—and an active community of developers.     Processor Expert® component for low voltage H-Bridge products enables rapid embedded application development.     The FRDM-KL25Z is supported by Zephyr OS for developing the Internet of Things with a free, open-source embedded operating system..</li>
+<li><a
+  href="https://github.com/JulietNovember96/mmu-ace-assignment1"
+    target="_blank"
+  >mmu-ace-assignment1</a>. A home automation system using ARM mbed. For a university assignment..</li>
+<li><a
+  href="https://github.com/devangel77b/Spektrum"
+    target="_blank"
+  >Spektrum</a>. mbed library for Spektrum serial receivers.</li>
+<li><a
+  href="https://github.com/pilotak/CR95HF"
+    target="_blank"
+  >CR95HF</a>. Mbed library for CR95HF (X-Nucleo NFC03A1).</li>
+<li><a
+  href="https://github.com/LuigiSigillo/NextRoom"
+    target="_blank"
+  >NextRoom</a>. An IoT system that can change the way in which you visit a museum, and makes you focus more on the pieces of art that you like most. It can suggest the next section you could visit based on the time you have spent in the previous sections..</li>
+<li><a
+  href="https://github.com/pilotak/mbed-cellular-boilerplate"
+    target="_blank"
+  >mbed-cellular-boilerplate</a>. Mbed uBlox cellular basic with reconnect.</li>
+<li><a
+  href="https://github.com/istepura/kw41z-rf-driver"
+    target="_blank"
+  >kw41z-rf-driver</a>. mbed Nanostack RF driver for NXP KW41Z wireless MCU.</li>
+<li><a
+  href="https://github.com/pilotak/MovingAverageAngle"
+    target="_blank"
+  >MovingAverageAngle</a>. Arduino &amp; Mbed Library for averaging angles 0-360°.</li>
+<li><a
+  href="https://github.com/geekshow/mbed-os6-stm32-w5500-mqtt"
+    target="_blank"
+  >mbed-os6-stm32-w5500-mqtt</a>. Home MQTT ethernet controller using mbed os.</li>
+<li><a
+  href="https://github.com/akiroz/Mbed-ModbusMaster"
+    target="_blank"
+  >Mbed-ModbusMaster</a>. Modbus-RTU master library for mbed OS.</li>
+<li><a
+  href="https://github.com/priyablue/MQTT-demo-MBED-DISCO_L475VG_IOT01A"
+    target="_blank"
+  >MQTT-demo-MBED-DISCO_L475VG_IOT01A</a>. MQTT demo for the STM32 IoT discovery Board with thingsboard.io.</li>
+<li><a
+  href="https://github.com/veracioux/siau-devconf"
+    target="_blank"
+  >siau-devconf</a>. An MBED C++ code generator for smart home devices.</li>
+<li><a
+  href="https://github.com/Embedded-AMS/EmbeddedProto_Example_Mbed_to_server"
+    target="_blank"
+  >EmbeddedProto_Example_Mbed_to_server</a>. This example shows how you could communicate over ethernet using TCP sockets in a structured manner, using protobuf and Mbed OS as an RTOS..</li>
+<li><a
+  href="https://github.com/khoih-prog/nRF52_MBED_PWM"
+    target="_blank"
+  >nRF52_MBED_PWM</a>. This library enables you to use Hardware Timers on nRF52840-based Nano_33_BLE or Nano_33_BLE_Sense board to create and output PWM to pins. These PWM channels, using nRF52840 Hardware Timers, still work even if other functions are blocking. Moreover, they are much more precise (certainly depending on clock frequency accuracy) than other software ir ISR-based PWM, using millis(), micros() or Timer Interrupt. This important feature is absolutely necessary for mission-critical tasks. You can start, stop, change and restore the settings of any PWM channel on-the-fly..</li>
+<li><a
+  href="https://github.com/coisme/Mbed-to-IBM-Watson-IoT"
+    target="_blank"
+  >Mbed-to-IBM-Watson-IoT</a>. Connecting to IBM Watson IoT from a Mbed OS device..</li>
+<li><a
+  href="https://github.com/Avnet/wnc14a2a-driver"
+    target="_blank"
+  >wnc14a2a-driver</a>. A driver for the WNC M14A2A Cellular Data Module for use with  ARM Mbed OS Network Interface..</li>
+<li><a
+  href="https://github.com/tjpetz/mbed_BLE_GAP_scanner"
+    target="_blank"
+  >mbed_BLE_GAP_scanner</a>. A simple example for the Arduino Nano 33 BLE of scanning on LE_CODED using mbed OS..</li>
+<li><a
+  href="https://github.com/theo9921/ARMHack"
+    target="_blank"
+  >ARMHack</a>. Arm CUES Hackathon 2017.</li>
+<li><a
+  href="https://github.com/tjpetz/mbed_BLE_GAP_advertiser"
+    target="_blank"
+  >mbed_BLE_GAP_advertiser</a>. An Arduino Nano 33 BLE sample in mbed OS that advertises using the LE_CODED PHY for long range..</li>
+<li><a
+  href="https://github.com/kwilson33/ECE2035-Game"
+    target="_blank"
+  >ECE2035-Game</a>. RPG game for ECE 2035 at GaTech that implements HashTable that I coded to store game objects..</li>
+<li><a
+  href="https://github.com/MOVE-II/move-on-helium-sensors"
+    target="_blank"
+  >move-on-helium-sensors</a>.  Sensors subsystem for the MOVE-ON Helium high-altitude balloon mission.</li>
+<li><a
+  href="https://github.com/maiorfi/mbedos_wifi_sample_esp8266"
+    target="_blank"
+  >mbedos_wifi_sample_esp8266</a>. Demo di utilizzo di ESP8266 con mbed-os.</li>
+<li><a
+  href="https://github.com/mshakula/RoostaBoosta"
+    target="_blank"
+  >RoostaBoosta</a>. IoT Weather Alarm Clock - Georgia Tech ECE 4180 Spring 2023 Final Project.</li>
+<li><a
+  href="https://github.com/maiorfi/lablet-unipg-2"
+    target="_blank"
+  >lablet-unipg-2</a>. Mbed-OS Samples.</li>
+<li><a
+  href="https://github.com/lrutten/midiplayer"
+    target="_blank"
+  >midiplayer</a>. Midi player on Nucleo-64 STM32F446RE.</li>
+<li><a
+  href="https://github.com/vmanoj1996/mbed-encoder"
+    target="_blank"
+  >mbed-encoder</a>. Code for interfacing Quadrature encoder with Mbed compatible microcontrollers. Written on Platform io ide. May not directly compile on Mbed online ide.</li>
+<li><a
+  href="https://github.com/chirp/chirp-mbed-os-lib"
+    target="_blank"
+  >chirp-mbed-os-lib</a>. Chirp SDK library for Mbed.</li>
+<li><a
+  href="https://github.com/libredorm/mbed-libs"
+    target="_blank"
+  >mbed-libs</a>. libraries for ARM mbed OS.</li>
+<li><a
+  href="https://github.com/lhr-solar/PV-Curve-Tracer"
+    target="_blank"
+  >PV-Curve-Tracer</a>. Firmware for the Array PV Curve Tracer board..</li>
+<li><a
+  href="https://github.com/lazyoracle/nucleo-expt"
+    target="_blank"
+  >nucleo-expt</a>. Experiment Control system using Embedded C++ with ARM mbed OS on STM32 Nucleo boards.</li>
+<li><a
+  href="https://github.com/JuanHirschmann/LAL-Control-MbedOS"
+    target="_blank"
+  >LAL-Control-MbedOS</a>. Sistema de control de extracción de vapores y control de procedimiento para operar un láser de ablación pulsada..</li>
+<li><a
+  href="https://github.com/takuti/mbed-os-example-treasure-data"
+    target="_blank"
+  >mbed-os-example-treasure-data</a>. Sending sensor data from Mbed OS to Treasure Data.</li>
+<li><a
+  href="https://github.com/stevew817/MeetingroomDisplayFirmware"
+    target="_blank"
+  >MeetingroomDisplayFirmware</a>. Firmware for Thread-connected, LWM2M-based Meeting Room Occupancy display.</li>
+<li><a
+  href="https://github.com/maiorfi/mbed-unipg-samples-1"
+    target="_blank"
+  >mbed-unipg-samples-1</a>. Esempi per attività di Laboratorio.</li>
+<li><a
+  href="https://github.com/Supercaly/oled_ssd1351"
+    target="_blank"
+  >oled_ssd1351</a>. Hexiwear OLED Display Driver.</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">
@@ -756,9 +1085,11 @@
         
 
         
+
         
 
-          
+        
+  
       </div>
      
       
@@ -774,7 +1105,7 @@
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js" integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="></script>
       
   
     </section>
@@ -785,7 +1116,7 @@
     
     
     <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
       <div class="flex justify-between pt-3">
         <span>
           
@@ -799,8 +1130,7 @@
                 >&rarr;</span
               >
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Prex</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -814,8 +1144,7 @@
           
             <a class="flex text-right group ml-3" href="/rtos/distortos/">
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >distortos</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -841,13 +1170,16 @@
   </footer>
 </article>
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0 z-10">
+  <a
+    href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top" title="Scroll to top">
+    aria-label="Scroll to top"
+    title="Scroll to top">
     &uarr;
   </a>
 </div>
+
     </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
   <div class="flex items-center justify-between">
     <p class="text-sm text-neutral-500 dark:text-neutral-400">

@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head>
-  <meta charset="utf-8" />
-  
-  <meta http-equiv="content-language" content="en-us" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <title>Mongoose OS - Open Source Real-Time Operating Systems (RTOS)</title>
-  <meta name="title" content="Mongoose OS - Open Source Real-Time Operating Systems (RTOS)" />
-  
-  
-  
-  
-  
-  <link rel="canonical" href="https://www.osrtos.com/rtos/mongoose-os/" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
-    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
-  
-  
-  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
-    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
-  
-  
-  
-  
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
-    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
-  
-  
-  
-  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
-  
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:url" content="https://www.osrtos.com/rtos/mongoose-os/">
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="content-language" content="en-us">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color">
+
+    
+    <title>Mongoose OS - Open Source Real-Time Operating Systems (RTOS)</title>
+    <meta name="title" content="Mongoose OS - Open Source Real-Time Operating Systems (RTOS)" />
+
+    
+    
+    
+    
+    
+    
+    <link rel="canonical" href="http://localhost:1313/rtos/mongoose-os/">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="/css/main.bundle.min.2051f57707d569cca9739b2110f76ec5504391bd7cc7464fc32a56d86aa4ce083b2fb103f7678b4b0b91f91c52f8ae00db09394358ca4f23346e2b7b948fab9b.css"
+            integrity="sha512-IFH1dwfVacypc5shEPduxVBDkb18x0ZPwypW2Gqkzgg7L7ED92eLSwuR&#43;RxS&#43;K4A2wk5Q1jKTyM0bit7lI&#43;rmw==">
+
+    
+    
+    <script
+            type="text/javascript"
+            src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+            integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script
+            defer
+            type="text/javascript"
+            id="script-bundle"
+            src="/js/main.bundle.min.e4b2d9aece2aa7a740c3ee7a0efc5acf56b204868ab0fb5bba9be32aed1cd0c9262979d98050759068d58144297f74b12ed05b5173cf2df2e6c097a066b984a8.js"
+            integrity="sha512-5LLZrs4qp6dAw&#43;56Dvxaz1ayBIaKsPtbupvjKu0c0MkmKXnZgFB1kGjVgUQpf3SxLtBbUXPPLfLmwJegZrmEqA=="
+            data-copy="Copy"
+    data-copied="Copied"></script>
+    
+    
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+    
+
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    <meta property="og:url" content="http://localhost:1313/rtos/mongoose-os/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="Mongoose OS">
   <meta property="og:description" content="Mongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C/C&#43;&#43; and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the mos command-line tool for simplified building, flashing, and device management.">
@@ -70,13 +98,12 @@
     <meta property="article:published_time" content="2018-01-24T01:43:59+00:00">
     <meta property="article:modified_time" content="2018-01-24T01:43:59+00:00">
 
-  
+    
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mongoose OS">
   <meta name="twitter:description" content="Mongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C/C&#43;&#43; and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the mos command-line tool for simplified building, flashing, and device management.">
 
-  
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -86,7 +113,7 @@
     
     "abstract": "\u003cp\u003eMongoose OS is an open-source IoT firmware development framework designed for resource-constrained microcontrollers like ESP32, ESP8266, STM32, and TI CC32xx series. It enables rapid development with support for both C\/C\u002b\u002b and JavaScript (via its embedded mJS engine). Key features include reliable Over-the-Air (OTA) updates with rollback, built-in security features like flash encryption and TLS, and seamless integration with major cloud platforms (AWS IoT, Google Cloud IoT, Azure IoT) and MQTT servers. It comes with the \u003ccode\u003emos\u003c\/code\u003e command-line tool for simplified building, flashing, and device management.\u003c\/p\u003e",
     "inLanguage": "en-us",
-    "url" : "https:\/\/www.osrtos.com\/rtos\/mongoose-os\/",
+    "url" : "http:\/\/localhost:1313\/rtos\/mongoose-os\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -105,11 +132,13 @@
   </script>
 
 
-  
-  
-  
-  
-  
+
+    
+    
+    
+
+    
+    
 
 <script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
@@ -134,10 +163,13 @@
 
 
 
-  
-  
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+    
+    
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -148,11 +180,20 @@
 
 
 
-  
-  
-  <meta name="theme-color"/>
-  
-  
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
@@ -163,240 +204,244 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          OSRTOS
+        </a>
+      
+    </nav>
     
-    <div class="flex flex-1 items-center justify-between">
-        <nav class="flex space-x-3">
-
-            
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
-            
-
-        </nav>
-        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
-
-            
-            
-            
-  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
     
-    <p class="text-base font-medium" title="">
-        Home
-    </p>
+      
+        
+  <a
+  href="/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Home
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        RTOS
-    </p>
+      
+        
+  <a
+  href="/rtos/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    RTOS
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        Library
-    </p>
+      
+        
+  <a
+  href="/library/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Library
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="Learn RTOS">
-        Learn RTOS
-    </p>
+      
+        
+  <a
+  href="/learn/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Learn RTOS">
+    Learn RTOS
+  </p>
 </a>
 
 
 
-            
-            
+      
+    
 
-            
+    
 
+    
 
-            
+    
 
-
-            
-            
-            <div
-                class=" flex items-center">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
-                    <div class="flex items-center justify-center dark:hidden">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                    </div>
-                    <div class="items-center justify-center hidden dark:flex">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                    </div>
-                </button>
-            </div>
-            
-
-        </nav>
-        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
-
-            <span></span>
-
-            
-
-
-            
-
-            
-            
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
-                <div class="flex items-center justify-center dark:hidden">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                </div>
-                <div class="items-center justify-center hidden dark:flex">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                </div>
-            </button>
-            
-
-        </div>
-    </div>
-    <div class="-my-2 md:hidden">
-
-        <label id="menu-button" class="block">
-            
-            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-                
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-
-  </span>
-
-
-            </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-
-                    <li id="menu-close-button">
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
 </span>
-                    </li>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
 
-                    
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
 
-                    
+    
+
+    
+
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
   <li class="mt-1">
-    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Home
-        </p>
-    </a>
+  <a
+    href="/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Home
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            RTOS
-        </p>
-    </a>
+  <a
+    href="/rtos/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      RTOS
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Library
-        </p>
-    </a>
+  <a
+    href="/library/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Library
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="Learn RTOS">
-            Learn RTOS
-        </p>
-    </a>
+  <a
+    href="/learn/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Learn RTOS">
+      Learn RTOS
+    </p>
+  </a>
 </li>
 
 
 
+            
 
-                    
-
-                </ul>
-                
-                
-
-            </div>
-        </label>
+          </ul>
+          
+        </div>
+      
     </div>
+  </div>
+
 </div>
 
 
@@ -472,7 +517,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-24</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-08-06</h4>
           </div>
           
           
@@ -640,14 +685,12 @@
 <p>Mongoose OS supports development in both C/C++ for performance-critical tasks and JavaScript (using the lightweight <code>mJS</code> engine) for application logic, offering flexibility to developers. It has built-in support for popular communication protocols like MQTT, HTTP, and WebSockets, facilitating easy connection to cloud services and backend systems.</p>
 <p>The project is dual-licensed, offering a free Apache 2.0 licensed Community Edition and a commercially licensed Enterprise Edition with additional features and support options. It&rsquo;s recognized and recommended by major industry players like AWS, Google Cloud, Microsoft Azure, Texas Instruments, and STMicroelectronics.</p>
 
-
 <h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#features" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -667,14 +710,12 @@
 <li><strong>Dual Licensing:</strong> Available under Apache 2.0 (Community) or Commercial (Enterprise) licenses.</li>
 </ul>
 
-
 <h2 class="relative group">Components 
     <div id="components" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#components" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -694,113 +735,399 @@
 <li><strong>logging:</strong> System and application logging framework.</li>
 </ul>
 
-
 <h3 class="relative group">Sample projects and resources 
     <div id="sample-projects-and-resources" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#sample-projects-and-resources" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <ul>
-<li><a href="https://github.com/yaourdt/mgos-to-tasmota" target="_blank">mgos-to-tasmota</a>. A minimal firmware for OTA (over the air) flashing Tasmota, HAA, or ESPurna from Mongoose OS or compatible firmware types..</li>
-<li><a href="https://github.com/yaourdt/tasmota-to-mgos" target="_blank">tasmota-to-mgos</a>. A minimal firmware for OTA (over the air) flashing Mongoose OS from Tasmota, Tuya stock, or compatible firmware types..</li>
-<li><a href="https://github.com/alvarowolfx/weather-station-gcp-mongoose-os" target="_blank">weather-station-gcp-mongoose-os</a>. A Weather station made with an ESP32, sending data through Google Cloud IoT Core and storing in BigQuery.</li>
-<li><a href="https://github.com/mongoose-os-libs/mel-ac" target="_blank">mel-ac</a>. Mitsubishi Electric AC (air conditioner unit) and ATW (air to water unit) control library for Mongoose OS.</li>
-<li><a href="https://github.com/mongoose-os-apps/sonoff-basic-openhab" target="_blank">sonoff-basic-openhab</a>. A Sonoff Basic firmware to work with openHAB.</li>
-<li><a href="https://github.com/atanasyanew/aqua-app" target="_blank">aqua-app</a>. Fish tank automation.</li>
-<li><a href="https://github.com/Tommystus/PIR-Monitor" target="_blank">PIR-Monitor</a>. ESP8266 PIR monitor with deep sleep and RTC memory store.</li>
-<li><a href="https://github.com/daniele-salvagni/pellet-aws-iot" target="_blank">pellet-aws-iot</a>. 🔥 Mongoose OS firmware for ESP32 to connect a pellet stove (Micronova) to AWS IoT. Implemented for a Piazzetta P937 model. (WIP).</li>
-<li><a href="https://github.com/Losant/losant-mqtt-mongoose-os" target="_blank">losant-mqtt-mongoose-os</a>. This is an example Mongoose OS app that connects to Losant via MQTT..</li>
-<li><a href="https://github.com/seanfhear/IoTea" target="_blank">IoTea</a>. IoT system for growing a tea plant..</li>
-<li><a href="https://github.com/kotelnikov/mgos_telegram" target="_blank">mgos_telegram</a>. Telegram Bot API for Mongoose OS.</li>
-<li><a href="https://github.com/mamuesp/timezones" target="_blank">timezones</a>. A Mongoose-OS library which will set the cryptic &lsquo;sys.tz_spec&rsquo; from a human readable notation..</li>
-<li><a href="https://github.com/pmanna/mongoose_os_playground" target="_blank">mongoose_os_playground</a>. Playground app for Mongoose OS - ESP 32 &amp; ESP8266.</li>
-<li><a href="https://github.com/UtkarshVerma/esp-temp" target="_blank">esp-temp</a>. :thermometer: A Mongoose OS app for sending temperature readings of ESP devices to Losant..</li>
-<li><a href="https://github.com/mongoose-os-apps/losant-temp-sensor" target="_blank">losant-temp-sensor</a>. :thermometer: A Mongoose OS app for sending temperature readings of ESP32 to Losant..</li>
-<li><a href="https://github.com/eduardb/arduino-rf24" target="_blank">arduino-rf24</a>. The nRF24L01 library for Arduino ported to Mongoose OS.</li>
-<li><a href="https://github.com/mercdev/LilyGo-HiGrow-Sensor-v1" target="_blank">LilyGo-HiGrow-Sensor-v1</a>. Use this code with MongooseOS and the LilyGo HiGrow ESP32 Plant Monitoring Sensor board (v1) to obtain sensor readings and control LED&rsquo;s.</li>
-<li><a href="https://github.com/mongoose-os-apps/LilyGo-HiGrow-Sensor-v1" target="_blank">LilyGo-HiGrow-Sensor-v1</a>. LilyGo HiGrow ESP32 Plant Monitoring Sensor Firmware (Hardware v1).</li>
-<li><a href="https://github.com/v-kiniv/mos-native" target="_blank">mos-native</a>. Build Mongoose OS apps without docker to speed up process.</li>
-<li><a href="https://github.com/yaourdt/mgos-combine" target="_blank">mgos-combine</a>. Combine all parts of a Mongoose OS firmware ZIP-file into a single binary.</li>
-<li><a href="https://github.com/mongoose-os-apps/losant-mqtt" target="_blank">losant-mqtt</a>. Losant + Mongoose OS example.</li>
-<li><a href="https://github.com/kotelnikov/mgos_skeleton" target="_blank">mgos_skeleton</a>. Mongoose OS Initial project skeleton.</li>
-<li><a href="https://github.com/OllieDay/sonoff-http" target="_blank">sonoff-http</a>. Alternative firmware for the ITEAD Sonoff Wi-Fi Remote Control Smart Switch.</li>
-<li><a href="https://github.com/jamezrin/mosmqtt_wakeonlan" target="_blank">mosmqtt_wakeonlan</a>. Mongoose OS app designed to run on esp8266 to help you wake your PCs remotely in a secure manner..</li>
-<li><a href="https://github.com/cruftlab/mongoose-os-docker" target="_blank">mongoose-os-docker</a>. Docker container with the Mongoose OS (mos) tool.</li>
-<li><a href="https://github.com/lucabelluccini/esp32-experiments" target="_blank">esp32-experiments</a>. A set of ESP32 experiments.</li>
-<li><a href="https://github.com/yaourdt/mgos-alexa-wemo" target="_blank">mgos-alexa-wemo</a>. A Mongoose OS library emulating WEMO UPnP plugs in Amazon Alexa.</li>
-<li><a href="https://github.com/eyantra-iot-platform/iot-workshop" target="_blank">iot-workshop</a>. Resources for e-Yantra IoT workshop.</li>
-<li><a href="https://github.com/mongoose-os-apps/mel-ac-demo" target="_blank">mel-ac-demo</a>. Demo app for the MEL-AC library. Controll Mitsubishi Electirc AC and AWT unit using Mongoose OS RPC.</li>
-<li><a href="https://github.com/meticulousCraftman/mongoose-os-x" target="_blank">mongoose-os-x</a>. &lsquo;x&rsquo; stands for extended. Mongoose OS extended to support STM32F446RE.</li>
-<li><a href="https://github.com/vergissberlin/coffee-bin-mqtt" target="_blank">coffee-bin-mqtt</a>. MQTT sensor project for coffee-bin.</li>
-<li><a href="https://github.com/nivu/mos_programs" target="_blank">mos_programs</a>. Mongoose-OS.</li>
-<li><a href="https://github.com/Dietatko/mjs-array" target="_blank">mjs-array</a>. Partial Array prototype polyfill for mJS engine.</li>
-<li><a href="https://github.com/Asondo/mjs-polyfill" target="_blank">mjs-polyfill</a>. Mongoose os example project with standardization polyfill.</li>
-<li><a href="https://github.com/dea82/mongoose-os-action" target="_blank">mongoose-os-action</a>. Github action with mongoose-os environment and mos tool.</li>
-<li><a href="https://github.com/scotthernandez/arduino-ir" target="_blank">arduino-ir</a>. Mongoose-OS IR Library.</li>
-<li><a href="https://github.com/wolfeidau/mgos-sgp30" target="_blank">mgos-sgp30</a>. A Sensirion&rsquo;s SGP30 Mongoose OS library.</li>
-<li><a href="https://github.com/dentraitim/Den_Trai_Tim" target="_blank">Den_Trai_Tim</a>. Đèn Trái Tim (HeartLight).</li>
-<li><a href="https://github.com/mamuesp-libs/common-tools" target="_blank">common-tools</a>.  A bunchs of tools and routines in C as well as in mJS always needed in every project..</li>
-<li><a href="https://github.com/dvv/mongoose-os-libs-ir" target="_blank">mongoose-os-libs-ir</a>. IR library for Mongoose OS.</li>
-<li><a href="https://github.com/Tommystus/hc-sr04test" target="_blank">hc-sr04test</a>. HC-SR04 Ultrasonic module test with Mongoose OS.</li>
-<li><a href="https://github.com/meticulousCraftman/stm32f4_experimental_mgos_app" target="_blank">stm32f4_experimental_mgos_app</a>. Running Mongoose OS app on STM32F446RE platform..</li>
-<li><a href="https://github.com/gitcodr/Mongoose-OS-LIS3DH" target="_blank">Mongoose-OS-LIS3DH</a>. Arduino Adafruit LIS3DH library for Mongoose OS.</li>
-<li><a href="https://github.com/mongoose-os-libs/arduino-adafruit-epd" target="_blank">arduino-adafruit-epd</a>. Adafruit E-Paper / E-Ink Library for Mongoose OS.</li>
-<li><a href="https://github.com/ztittle/qdbm" target="_blank">qdbm</a>. QDBM Library for Mongoose OS <a href="https://mongoose-os.com/" target="_blank">https://mongoose-os.com/</a>.</li>
-<li><a href="https://github.com/meticulousCraftman/mgos-sdcard-port" target="_blank">mgos-sdcard-port</a>. A port for ESP32 Arduino&rsquo;s SD.h and FS.h libraries to Mongoose OS..</li>
-<li><a href="https://github.com/douglaszuqueto/mongoose-os-samples" target="_blank">mongoose-os-samples</a>. Exemplos de uso do Mongoose-os no ESP32.</li>
-<li><a href="https://github.com/chris-zen/homey" target="_blank">homey</a>. My Smart Home hardware/firmware projects (2nd edition).</li>
-<li><a href="https://github.com/nopesir/ESP32Firmware" target="_blank">ESP32Firmware</a>. Part of the Chrono-thermostat project for the course of &ldquo;Project and laboratories on communication systems&rdquo;..</li>
-<li><a href="https://github.com/ericogr/led-matrix" target="_blank">led-matrix</a>. A MongooseOS ledMatrix implementation.</li>
-<li><a href="https://github.com/OllieDay/mongoose-ds3231" target="_blank">mongoose-ds3231</a>. Mongoose OS I2C driver for the DS3231 real-time clock.</li>
-<li><a href="https://github.com/OllieDay/mongoose-ws2812b" target="_blank">mongoose-ws2812b</a>. Mongoose OS driver for the WS2812B (aka NeoPixel) RGB LED strip.</li>
-<li><a href="https://github.com/Podnet/MAX17263" target="_blank">MAX17263</a>. A mongoose OS library to talk to MAX17263..</li>
-<li><a href="https://github.com/Dietatko/mjs-testing" target="_blank">mjs-testing</a>. mJS engine script testing framework.</li>
-<li><a href="https://github.com/Spiritdude/esp-enum" target="_blank">esp-enum</a>. Enumerate ESP8266 and ESP32 according their MAC address and chip id.</li>
-<li><a href="https://github.com/Podnet/hx711-mgos-test" target="_blank">hx711-mgos-test</a>. A mongoose OS app to test HX711 library ported from Arduino..</li>
-<li><a href="https://github.com/Podnet/max17263-mgos-test" target="_blank">max17263-mgos-test</a>. Mongoose os app to test MAX17263 library ported from Arduino..</li>
-<li><a href="https://github.com/Dietatko/mjs-math" target="_blank">mjs-math</a>. Partial Math object polyfill for mJS engine.</li>
-<li><a href="https://github.com/aschuma/esp32_nextion_js_binary_clock" target="_blank">esp32_nextion_js_binary_clock</a>. A binary clock driven by an ESP32 microcontroller and a Nextion display, utilizing Mongoose OS and JavaScript technology.</li>
-<li><a href="https://github.com/elzup/rainnow-core" target="_blank">rainnow-core</a>. rainnow api server.</li>
-<li><a href="https://github.com/popstas/mongoose-mlx90614" target="_blank">mongoose-mlx90614</a>. MLX90614 (GY-906) sensor on Mongoose OS, publish to MQTT..</li>
-<li><a href="https://github.com/licarth/compteur-velib" target="_blank">compteur-velib</a>. Compteur de velibs pour ESP8266.</li>
-<li><a href="https://github.com/yaourdt/mgos-combine-action" target="_blank">mgos-combine-action</a>. Github Action to combine all parts of a Mongoose OS firmware ZIP-file into a single binary..</li>
-<li><a href="https://github.com/kriansa/mongoose-button-switch" target="_blank">mongoose-button-switch</a>. A Mongoose OS project using MQTT to integrate with AWS IoT.</li>
-<li><a href="https://github.com/aghoneim92/cloudhome-firmware" target="_blank">cloudhome-firmware</a>. Cloudhome is a (WIP) home automation system.</li>
-<li><a href="https://github.com/manjrekarom/auth-post-c" target="_blank">auth-post-c</a>. A mongoose OS application that has three HTTP endpoints with digest access authentication..</li>
-<li><a href="https://github.com/felipeandres254/nodemcu" target="_blank">nodemcu</a>. Base IoT framework fot NodeMCU.</li>
-<li><a href="https://github.com/SakshiLajurkar/To-Do-List" target="_blank">To-Do-List</a>. A To-do list created over Node.js, Express.js and MongoDB Atlas..</li>
-<li><a href="https://github.com/pmanna/robotcar" target="_blank">robotcar</a>. This app uses Mongoose OS to drive a small off-the-shelf, two-wheels car robot..</li>
-<li><a href="https://github.com/Dietatko/mgos-ltc68xx" target="_blank">mgos-ltc68xx</a>. LTC68xx battery monitoring chip communication library for Mongoose OS.</li>
-<li><a href="https://github.com/spinningarrow/audio-input-selector" target="_blank">audio-input-selector</a>. ESP32 audio input selector using Mongoose OS..</li>
-<li><a href="https://github.com/elzup/leilei" target="_blank">leilei</a>. Room sensing and MQTT publish. with MongooseOS.</li>
-<li><a href="https://github.com/dbmarch/piCam" target="_blank">piCam</a>. Raspberry Pi GCP IoT Device &amp; ML execution.  .</li>
-<li><a href="https://github.com/nielswart/mos-esp8266" target="_blank">mos-esp8266</a>. General sensor node based on Mongoose OS and ESP8266 hardware.</li>
-<li><a href="https://github.com/infrat/energymon-js" target="_blank">energymon-js</a>. Energy monitor based on energy counter LED pulses.</li>
-<li><a href="https://github.com/kotelnikov/mgos_libskeleton" target="_blank">mgos_libskeleton</a>. Mongoose OS Initial library skeleton.</li>
-<li><a href="https://github.com/gopalkildoliya/swarmsense-mongoose-test" target="_blank">swarmsense-mongoose-test</a>. Example to integrate SwarmSense IoT Platform with Mongoose OS..</li>
-<li><a href="https://github.com/wolfeidau/mgos-bme680" target="_blank">mgos-bme680</a>. A Bosch Sensortec&rsquo;s BME680 Mongoose OS library.</li>
-<li><a href="https://github.com/infrat/energymon-c" target="_blank">energymon-c</a>. Energy monitor based on energy counter LED pulses.</li>
-<li><a href="https://github.com/bravokeyl/mos-aws" target="_blank">mos-aws</a>. ESP8266 - AWS IoT - UART0 - Thing Shadow.</li>
-<li><a href="https://github.com/yaourdt/mgos-hlw8012" target="_blank">mgos-hlw8012</a>. A Mongoose OS library for HLW8012 and BL0937 energy sensors..</li>
-<li><a href="https://github.com/popstas/mongoose-mqtt-ssd1306" target="_blank">mongoose-mqtt-ssd1306</a>. MongooseOS: Display MQTT message on SSD1306.</li>
-<li><a href="https://github.com/anyhotcountry/mgos-environment-logger" target="_blank">mgos-environment-logger</a>. Environment logger for Mongoose OS using BME280 sensor logging data to ThingSpeak..</li>
-<li><a href="https://github.com/anyhotcountry/ElectricityDisplay" target="_blank">ElectricityDisplay</a>. Display for an electricity monitor publishing to an MQTT topic.</li>
-<li><a href="https://github.com/wolfeidau/mgos-envsensors" target="_blank">mgos-envsensors</a>. Demonstrates the BME680 and SGP30 sensors delivering data to AWS IoT.</li>
-<li><a href="https://github.com/Podnet/ds18b20-mgos-test" target="_blank">ds18b20-mgos-test</a>. Mongoose OS library for DS18B20 temperature sensor.</li>
-<li><a href="https://github.com/avishkarabhishek786/torrent" target="_blank">torrent</a>. Torrent projects.</li>
-<li><a href="https://github.com/Podnet/HX711" target="_blank">HX711</a>. A mongoose OS library for talking to HX711 (Arduino Port).</li>
-<li><a href="https://github.com/meticulousCraftman/empty-mos-app" target="_blank">empty-mos-app</a>. An empty mongoose os app template repository.</li>
-<li><a href="https://github.com/sumancvb/mongoose-cron-app" target="_blank">mongoose-cron-app</a>. This is cron job app for Mongoose OS.</li>
-<li><a href="https://github.com/Podnet/pppos-mgos-test" target="_blank">pppos-mgos-test</a>. An application to test internet connectivity with GSM module using the PPPoS protocol.</li>
-<li><a href="https://github.com/Podnet/websocket-mgos-test" target="_blank">websocket-mgos-test</a>. Mongoose OS WebSocket client application.</li>
-<li><a href="https://github.com/Podnet/mcp2515-mgos-test" target="_blank">mcp2515-mgos-test</a>. Mongoose os app to test MCP2515 CAN library ported from Arduino..</li>
-<li><a href="https://github.com/kotelnikov/mgos_relay" target="_blank">mgos_relay</a>. Mongoose OS Relay library.</li>
-<li><a href="https://github.com/Podnet/uart-out-mgos-test" target="_blank">uart-out-mgos-test</a>. An MGOS app to periodically push data via UART interface.</li>
+<li><a
+  href="https://github.com/yaourdt/mgos-to-tasmota"
+    target="_blank"
+  >mgos-to-tasmota</a>. A minimal firmware for OTA (over the air) flashing Tasmota, HAA, or ESPurna from Mongoose OS or compatible firmware types..</li>
+<li><a
+  href="https://github.com/yaourdt/tasmota-to-mgos"
+    target="_blank"
+  >tasmota-to-mgos</a>. A minimal firmware for OTA (over the air) flashing Mongoose OS from Tasmota, Tuya stock, or compatible firmware types..</li>
+<li><a
+  href="https://github.com/alvarowolfx/weather-station-gcp-mongoose-os"
+    target="_blank"
+  >weather-station-gcp-mongoose-os</a>. A Weather station made with an ESP32, sending data through Google Cloud IoT Core and storing in BigQuery.</li>
+<li><a
+  href="https://github.com/mongoose-os-libs/mel-ac"
+    target="_blank"
+  >mel-ac</a>. Mitsubishi Electric AC (air conditioner unit) and ATW (air to water unit) control library for Mongoose OS.</li>
+<li><a
+  href="https://github.com/mongoose-os-apps/sonoff-basic-openhab"
+    target="_blank"
+  >sonoff-basic-openhab</a>. A Sonoff Basic firmware to work with openHAB.</li>
+<li><a
+  href="https://github.com/atanasyanew/aqua-app"
+    target="_blank"
+  >aqua-app</a>. Fish tank automation.</li>
+<li><a
+  href="https://github.com/Tommystus/PIR-Monitor"
+    target="_blank"
+  >PIR-Monitor</a>. ESP8266 PIR monitor with deep sleep and RTC memory store.</li>
+<li><a
+  href="https://github.com/daniele-salvagni/pellet-aws-iot"
+    target="_blank"
+  >pellet-aws-iot</a>. 🔥 Mongoose OS firmware for ESP32 to connect a pellet stove (Micronova) to AWS IoT. Implemented for a Piazzetta P937 model. (WIP).</li>
+<li><a
+  href="https://github.com/Losant/losant-mqtt-mongoose-os"
+    target="_blank"
+  >losant-mqtt-mongoose-os</a>. This is an example Mongoose OS app that connects to Losant via MQTT..</li>
+<li><a
+  href="https://github.com/seanfhear/IoTea"
+    target="_blank"
+  >IoTea</a>. IoT system for growing a tea plant..</li>
+<li><a
+  href="https://github.com/kotelnikov/mgos_telegram"
+    target="_blank"
+  >mgos_telegram</a>. Telegram Bot API for Mongoose OS.</li>
+<li><a
+  href="https://github.com/mamuesp/timezones"
+    target="_blank"
+  >timezones</a>. A Mongoose-OS library which will set the cryptic &lsquo;sys.tz_spec&rsquo; from a human readable notation..</li>
+<li><a
+  href="https://github.com/pmanna/mongoose_os_playground"
+    target="_blank"
+  >mongoose_os_playground</a>. Playground app for Mongoose OS - ESP 32 &amp; ESP8266.</li>
+<li><a
+  href="https://github.com/UtkarshVerma/esp-temp"
+    target="_blank"
+  >esp-temp</a>. :thermometer: A Mongoose OS app for sending temperature readings of ESP devices to Losant..</li>
+<li><a
+  href="https://github.com/mongoose-os-apps/losant-temp-sensor"
+    target="_blank"
+  >losant-temp-sensor</a>. :thermometer: A Mongoose OS app for sending temperature readings of ESP32 to Losant..</li>
+<li><a
+  href="https://github.com/eduardb/arduino-rf24"
+    target="_blank"
+  >arduino-rf24</a>. The nRF24L01 library for Arduino ported to Mongoose OS.</li>
+<li><a
+  href="https://github.com/mercdev/LilyGo-HiGrow-Sensor-v1"
+    target="_blank"
+  >LilyGo-HiGrow-Sensor-v1</a>. Use this code with MongooseOS and the LilyGo HiGrow ESP32 Plant Monitoring Sensor board (v1) to obtain sensor readings and control LED&rsquo;s.</li>
+<li><a
+  href="https://github.com/mongoose-os-apps/LilyGo-HiGrow-Sensor-v1"
+    target="_blank"
+  >LilyGo-HiGrow-Sensor-v1</a>. LilyGo HiGrow ESP32 Plant Monitoring Sensor Firmware (Hardware v1).</li>
+<li><a
+  href="https://github.com/v-kiniv/mos-native"
+    target="_blank"
+  >mos-native</a>. Build Mongoose OS apps without docker to speed up process.</li>
+<li><a
+  href="https://github.com/yaourdt/mgos-combine"
+    target="_blank"
+  >mgos-combine</a>. Combine all parts of a Mongoose OS firmware ZIP-file into a single binary.</li>
+<li><a
+  href="https://github.com/mongoose-os-apps/losant-mqtt"
+    target="_blank"
+  >losant-mqtt</a>. Losant + Mongoose OS example.</li>
+<li><a
+  href="https://github.com/kotelnikov/mgos_skeleton"
+    target="_blank"
+  >mgos_skeleton</a>. Mongoose OS Initial project skeleton.</li>
+<li><a
+  href="https://github.com/OllieDay/sonoff-http"
+    target="_blank"
+  >sonoff-http</a>. Alternative firmware for the ITEAD Sonoff Wi-Fi Remote Control Smart Switch.</li>
+<li><a
+  href="https://github.com/jamezrin/mosmqtt_wakeonlan"
+    target="_blank"
+  >mosmqtt_wakeonlan</a>. Mongoose OS app designed to run on esp8266 to help you wake your PCs remotely in a secure manner..</li>
+<li><a
+  href="https://github.com/cruftlab/mongoose-os-docker"
+    target="_blank"
+  >mongoose-os-docker</a>. Docker container with the Mongoose OS (mos) tool.</li>
+<li><a
+  href="https://github.com/lucabelluccini/esp32-experiments"
+    target="_blank"
+  >esp32-experiments</a>. A set of ESP32 experiments.</li>
+<li><a
+  href="https://github.com/yaourdt/mgos-alexa-wemo"
+    target="_blank"
+  >mgos-alexa-wemo</a>. A Mongoose OS library emulating WEMO UPnP plugs in Amazon Alexa.</li>
+<li><a
+  href="https://github.com/eyantra-iot-platform/iot-workshop"
+    target="_blank"
+  >iot-workshop</a>. Resources for e-Yantra IoT workshop.</li>
+<li><a
+  href="https://github.com/mongoose-os-apps/mel-ac-demo"
+    target="_blank"
+  >mel-ac-demo</a>. Demo app for the MEL-AC library. Controll Mitsubishi Electirc AC and AWT unit using Mongoose OS RPC.</li>
+<li><a
+  href="https://github.com/meticulousCraftman/mongoose-os-x"
+    target="_blank"
+  >mongoose-os-x</a>. &lsquo;x&rsquo; stands for extended. Mongoose OS extended to support STM32F446RE.</li>
+<li><a
+  href="https://github.com/vergissberlin/coffee-bin-mqtt"
+    target="_blank"
+  >coffee-bin-mqtt</a>. MQTT sensor project for coffee-bin.</li>
+<li><a
+  href="https://github.com/nivu/mos_programs"
+    target="_blank"
+  >mos_programs</a>. Mongoose-OS.</li>
+<li><a
+  href="https://github.com/Dietatko/mjs-array"
+    target="_blank"
+  >mjs-array</a>. Partial Array prototype polyfill for mJS engine.</li>
+<li><a
+  href="https://github.com/Asondo/mjs-polyfill"
+    target="_blank"
+  >mjs-polyfill</a>. Mongoose os example project with standardization polyfill.</li>
+<li><a
+  href="https://github.com/dea82/mongoose-os-action"
+    target="_blank"
+  >mongoose-os-action</a>. Github action with mongoose-os environment and mos tool.</li>
+<li><a
+  href="https://github.com/scotthernandez/arduino-ir"
+    target="_blank"
+  >arduino-ir</a>. Mongoose-OS IR Library.</li>
+<li><a
+  href="https://github.com/wolfeidau/mgos-sgp30"
+    target="_blank"
+  >mgos-sgp30</a>. A Sensirion&rsquo;s SGP30 Mongoose OS library.</li>
+<li><a
+  href="https://github.com/dentraitim/Den_Trai_Tim"
+    target="_blank"
+  >Den_Trai_Tim</a>. Đèn Trái Tim (HeartLight).</li>
+<li><a
+  href="https://github.com/mamuesp-libs/common-tools"
+    target="_blank"
+  >common-tools</a>.  A bunchs of tools and routines in C as well as in mJS always needed in every project..</li>
+<li><a
+  href="https://github.com/dvv/mongoose-os-libs-ir"
+    target="_blank"
+  >mongoose-os-libs-ir</a>. IR library for Mongoose OS.</li>
+<li><a
+  href="https://github.com/Tommystus/hc-sr04test"
+    target="_blank"
+  >hc-sr04test</a>. HC-SR04 Ultrasonic module test with Mongoose OS.</li>
+<li><a
+  href="https://github.com/meticulousCraftman/stm32f4_experimental_mgos_app"
+    target="_blank"
+  >stm32f4_experimental_mgos_app</a>. Running Mongoose OS app on STM32F446RE platform..</li>
+<li><a
+  href="https://github.com/gitcodr/Mongoose-OS-LIS3DH"
+    target="_blank"
+  >Mongoose-OS-LIS3DH</a>. Arduino Adafruit LIS3DH library for Mongoose OS.</li>
+<li><a
+  href="https://github.com/mongoose-os-libs/arduino-adafruit-epd"
+    target="_blank"
+  >arduino-adafruit-epd</a>. Adafruit E-Paper / E-Ink Library for Mongoose OS.</li>
+<li><a
+  href="https://github.com/ztittle/qdbm"
+    target="_blank"
+  >qdbm</a>. QDBM Library for Mongoose OS <a
+  href="https://mongoose-os.com/"
+    target="_blank"
+  >https://mongoose-os.com/</a>.</li>
+<li><a
+  href="https://github.com/meticulousCraftman/mgos-sdcard-port"
+    target="_blank"
+  >mgos-sdcard-port</a>. A port for ESP32 Arduino&rsquo;s SD.h and FS.h libraries to Mongoose OS..</li>
+<li><a
+  href="https://github.com/douglaszuqueto/mongoose-os-samples"
+    target="_blank"
+  >mongoose-os-samples</a>. Exemplos de uso do Mongoose-os no ESP32.</li>
+<li><a
+  href="https://github.com/chris-zen/homey"
+    target="_blank"
+  >homey</a>. My Smart Home hardware/firmware projects (2nd edition).</li>
+<li><a
+  href="https://github.com/nopesir/ESP32Firmware"
+    target="_blank"
+  >ESP32Firmware</a>. Part of the Chrono-thermostat project for the course of &ldquo;Project and laboratories on communication systems&rdquo;..</li>
+<li><a
+  href="https://github.com/ericogr/led-matrix"
+    target="_blank"
+  >led-matrix</a>. A MongooseOS ledMatrix implementation.</li>
+<li><a
+  href="https://github.com/OllieDay/mongoose-ds3231"
+    target="_blank"
+  >mongoose-ds3231</a>. Mongoose OS I2C driver for the DS3231 real-time clock.</li>
+<li><a
+  href="https://github.com/OllieDay/mongoose-ws2812b"
+    target="_blank"
+  >mongoose-ws2812b</a>. Mongoose OS driver for the WS2812B (aka NeoPixel) RGB LED strip.</li>
+<li><a
+  href="https://github.com/Podnet/MAX17263"
+    target="_blank"
+  >MAX17263</a>. A mongoose OS library to talk to MAX17263..</li>
+<li><a
+  href="https://github.com/Dietatko/mjs-testing"
+    target="_blank"
+  >mjs-testing</a>. mJS engine script testing framework.</li>
+<li><a
+  href="https://github.com/Spiritdude/esp-enum"
+    target="_blank"
+  >esp-enum</a>. Enumerate ESP8266 and ESP32 according their MAC address and chip id.</li>
+<li><a
+  href="https://github.com/Podnet/hx711-mgos-test"
+    target="_blank"
+  >hx711-mgos-test</a>. A mongoose OS app to test HX711 library ported from Arduino..</li>
+<li><a
+  href="https://github.com/Podnet/max17263-mgos-test"
+    target="_blank"
+  >max17263-mgos-test</a>. Mongoose os app to test MAX17263 library ported from Arduino..</li>
+<li><a
+  href="https://github.com/Dietatko/mjs-math"
+    target="_blank"
+  >mjs-math</a>. Partial Math object polyfill for mJS engine.</li>
+<li><a
+  href="https://github.com/aschuma/esp32_nextion_js_binary_clock"
+    target="_blank"
+  >esp32_nextion_js_binary_clock</a>. A binary clock driven by an ESP32 microcontroller and a Nextion display, utilizing Mongoose OS and JavaScript technology.</li>
+<li><a
+  href="https://github.com/elzup/rainnow-core"
+    target="_blank"
+  >rainnow-core</a>. rainnow api server.</li>
+<li><a
+  href="https://github.com/popstas/mongoose-mlx90614"
+    target="_blank"
+  >mongoose-mlx90614</a>. MLX90614 (GY-906) sensor on Mongoose OS, publish to MQTT..</li>
+<li><a
+  href="https://github.com/licarth/compteur-velib"
+    target="_blank"
+  >compteur-velib</a>. Compteur de velibs pour ESP8266.</li>
+<li><a
+  href="https://github.com/yaourdt/mgos-combine-action"
+    target="_blank"
+  >mgos-combine-action</a>. Github Action to combine all parts of a Mongoose OS firmware ZIP-file into a single binary..</li>
+<li><a
+  href="https://github.com/kriansa/mongoose-button-switch"
+    target="_blank"
+  >mongoose-button-switch</a>. A Mongoose OS project using MQTT to integrate with AWS IoT.</li>
+<li><a
+  href="https://github.com/aghoneim92/cloudhome-firmware"
+    target="_blank"
+  >cloudhome-firmware</a>. Cloudhome is a (WIP) home automation system.</li>
+<li><a
+  href="https://github.com/manjrekarom/auth-post-c"
+    target="_blank"
+  >auth-post-c</a>. A mongoose OS application that has three HTTP endpoints with digest access authentication..</li>
+<li><a
+  href="https://github.com/felipeandres254/nodemcu"
+    target="_blank"
+  >nodemcu</a>. Base IoT framework fot NodeMCU.</li>
+<li><a
+  href="https://github.com/SakshiLajurkar/To-Do-List"
+    target="_blank"
+  >To-Do-List</a>. A To-do list created over Node.js, Express.js and MongoDB Atlas..</li>
+<li><a
+  href="https://github.com/pmanna/robotcar"
+    target="_blank"
+  >robotcar</a>. This app uses Mongoose OS to drive a small off-the-shelf, two-wheels car robot..</li>
+<li><a
+  href="https://github.com/Dietatko/mgos-ltc68xx"
+    target="_blank"
+  >mgos-ltc68xx</a>. LTC68xx battery monitoring chip communication library for Mongoose OS.</li>
+<li><a
+  href="https://github.com/spinningarrow/audio-input-selector"
+    target="_blank"
+  >audio-input-selector</a>. ESP32 audio input selector using Mongoose OS..</li>
+<li><a
+  href="https://github.com/elzup/leilei"
+    target="_blank"
+  >leilei</a>. Room sensing and MQTT publish. with MongooseOS.</li>
+<li><a
+  href="https://github.com/dbmarch/piCam"
+    target="_blank"
+  >piCam</a>. Raspberry Pi GCP IoT Device &amp; ML execution.  .</li>
+<li><a
+  href="https://github.com/nielswart/mos-esp8266"
+    target="_blank"
+  >mos-esp8266</a>. General sensor node based on Mongoose OS and ESP8266 hardware.</li>
+<li><a
+  href="https://github.com/infrat/energymon-js"
+    target="_blank"
+  >energymon-js</a>. Energy monitor based on energy counter LED pulses.</li>
+<li><a
+  href="https://github.com/kotelnikov/mgos_libskeleton"
+    target="_blank"
+  >mgos_libskeleton</a>. Mongoose OS Initial library skeleton.</li>
+<li><a
+  href="https://github.com/gopalkildoliya/swarmsense-mongoose-test"
+    target="_blank"
+  >swarmsense-mongoose-test</a>. Example to integrate SwarmSense IoT Platform with Mongoose OS..</li>
+<li><a
+  href="https://github.com/wolfeidau/mgos-bme680"
+    target="_blank"
+  >mgos-bme680</a>. A Bosch Sensortec&rsquo;s BME680 Mongoose OS library.</li>
+<li><a
+  href="https://github.com/infrat/energymon-c"
+    target="_blank"
+  >energymon-c</a>. Energy monitor based on energy counter LED pulses.</li>
+<li><a
+  href="https://github.com/bravokeyl/mos-aws"
+    target="_blank"
+  >mos-aws</a>. ESP8266 - AWS IoT - UART0 - Thing Shadow.</li>
+<li><a
+  href="https://github.com/yaourdt/mgos-hlw8012"
+    target="_blank"
+  >mgos-hlw8012</a>. A Mongoose OS library for HLW8012 and BL0937 energy sensors..</li>
+<li><a
+  href="https://github.com/popstas/mongoose-mqtt-ssd1306"
+    target="_blank"
+  >mongoose-mqtt-ssd1306</a>. MongooseOS: Display MQTT message on SSD1306.</li>
+<li><a
+  href="https://github.com/anyhotcountry/mgos-environment-logger"
+    target="_blank"
+  >mgos-environment-logger</a>. Environment logger for Mongoose OS using BME280 sensor logging data to ThingSpeak..</li>
+<li><a
+  href="https://github.com/anyhotcountry/ElectricityDisplay"
+    target="_blank"
+  >ElectricityDisplay</a>. Display for an electricity monitor publishing to an MQTT topic.</li>
+<li><a
+  href="https://github.com/wolfeidau/mgos-envsensors"
+    target="_blank"
+  >mgos-envsensors</a>. Demonstrates the BME680 and SGP30 sensors delivering data to AWS IoT.</li>
+<li><a
+  href="https://github.com/Podnet/ds18b20-mgos-test"
+    target="_blank"
+  >ds18b20-mgos-test</a>. Mongoose OS library for DS18B20 temperature sensor.</li>
+<li><a
+  href="https://github.com/avishkarabhishek786/torrent"
+    target="_blank"
+  >torrent</a>. Torrent projects.</li>
+<li><a
+  href="https://github.com/Podnet/HX711"
+    target="_blank"
+  >HX711</a>. A mongoose OS library for talking to HX711 (Arduino Port).</li>
+<li><a
+  href="https://github.com/meticulousCraftman/empty-mos-app"
+    target="_blank"
+  >empty-mos-app</a>. An empty mongoose os app template repository.</li>
+<li><a
+  href="https://github.com/sumancvb/mongoose-cron-app"
+    target="_blank"
+  >mongoose-cron-app</a>. This is cron job app for Mongoose OS.</li>
+<li><a
+  href="https://github.com/Podnet/pppos-mgos-test"
+    target="_blank"
+  >pppos-mgos-test</a>. An application to test internet connectivity with GSM module using the PPPoS protocol.</li>
+<li><a
+  href="https://github.com/Podnet/websocket-mgos-test"
+    target="_blank"
+  >websocket-mgos-test</a>. Mongoose OS WebSocket client application.</li>
+<li><a
+  href="https://github.com/Podnet/mcp2515-mgos-test"
+    target="_blank"
+  >mcp2515-mgos-test</a>. Mongoose os app to test MCP2515 CAN library ported from Arduino..</li>
+<li><a
+  href="https://github.com/kotelnikov/mgos_relay"
+    target="_blank"
+  >mgos_relay</a>. Mongoose OS Relay library.</li>
+<li><a
+  href="https://github.com/Podnet/uart-out-mgos-test"
+    target="_blank"
+  >uart-out-mgos-test</a>. An MGOS app to periodically push data via UART interface.</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">
@@ -821,9 +1148,11 @@
         
 
         
+
         
 
-          
+        
+  
       </div>
      
       
@@ -839,7 +1168,7 @@
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js" integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="></script>
       
   
     </section>
@@ -850,7 +1179,7 @@
     
     
     <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
       <div class="flex justify-between pt-3">
         <span>
           
@@ -864,8 +1193,7 @@
                 >&rarr;</span
               >
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >AliOS Things</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -879,8 +1207,7 @@
           
             <a class="flex text-right group ml-3" href="/rtos/liteos/">
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >LiteOS</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -906,13 +1233,16 @@
   </footer>
 </article>
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0 z-10">
+  <a
+    href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top" title="Scroll to top">
+    aria-label="Scroll to top"
+    title="Scroll to top">
     &uarr;
   </a>
 </div>
+
     </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
   <div class="flex items-center justify-between">
     <p class="text-sm text-neutral-500 dark:text-neutral-400">

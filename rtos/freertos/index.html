@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head>
-  <meta charset="utf-8" />
-  
-  <meta http-equiv="content-language" content="en-us" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <title>FreeRTOS - Open Source Real-Time Operating Systems (RTOS)</title>
-  <meta name="title" content="FreeRTOS - Open Source Real-Time Operating Systems (RTOS)" />
-  
-  
-  
-  
-  
-  <link rel="canonical" href="https://www.osrtos.com/rtos/freertos/" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
-    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
-  
-  
-  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
-    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
-  
-  
-  
-  
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
-    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
-  
-  
-  
-  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
-  
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:url" content="https://www.osrtos.com/rtos/freertos/">
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="content-language" content="en-us">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color">
+
+    
+    <title>FreeRTOS - Open Source Real-Time Operating Systems (RTOS)</title>
+    <meta name="title" content="FreeRTOS - Open Source Real-Time Operating Systems (RTOS)" />
+
+    
+    
+    
+    
+    
+    
+    <link rel="canonical" href="http://localhost:1313/rtos/freertos/">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="/css/main.bundle.min.2051f57707d569cca9739b2110f76ec5504391bd7cc7464fc32a56d86aa4ce083b2fb103f7678b4b0b91f91c52f8ae00db09394358ca4f23346e2b7b948fab9b.css"
+            integrity="sha512-IFH1dwfVacypc5shEPduxVBDkb18x0ZPwypW2Gqkzgg7L7ED92eLSwuR&#43;RxS&#43;K4A2wk5Q1jKTyM0bit7lI&#43;rmw==">
+
+    
+    
+    <script
+            type="text/javascript"
+            src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+            integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script
+            defer
+            type="text/javascript"
+            id="script-bundle"
+            src="/js/main.bundle.min.e4b2d9aece2aa7a740c3ee7a0efc5acf56b204868ab0fb5bba9be32aed1cd0c9262979d98050759068d58144297f74b12ed05b5173cf2df2e6c097a066b984a8.js"
+            integrity="sha512-5LLZrs4qp6dAw&#43;56Dvxaz1ayBIaKsPtbupvjKu0c0MkmKXnZgFB1kGjVgUQpf3SxLtBbUXPPLfLmwJegZrmEqA=="
+            data-copy="Copy"
+    data-copied="Copied"></script>
+    
+    
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+    
+
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    <meta property="og:url" content="http://localhost:1313/rtos/freertos/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="FreeRTOS">
   <meta property="og:description" content="FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.">
@@ -70,13 +98,12 @@
     <meta property="article:published_time" content="2016-11-29T11:36:57+00:00">
     <meta property="article:modified_time" content="2016-11-29T11:36:57+00:00">
 
-  
+    
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="FreeRTOS">
   <meta name="twitter:description" content="FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.">
 
-  
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -86,7 +113,7 @@
     
     "abstract": "\u003cp\u003eFreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, it includes a kernel and a growing set of libraries suitable for use across industry sectors and applications. Amazon Web Services (AWS) took stewardship of the FreeRTOS kernel in 2016, ensuring its continued development and support. FreeRTOS is built with an emphasis on reliability, ease of use, and includes numerous libraries for connectivity, security, and over-the-air (OTA) updates, making it a popular choice for IoT and embedded systems development.\u003c\/p\u003e",
     "inLanguage": "en-us",
-    "url" : "https:\/\/www.osrtos.com\/rtos\/freertos\/",
+    "url" : "http:\/\/localhost:1313\/rtos\/freertos\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -105,11 +132,13 @@
   </script>
 
 
-  
-  
-  
-  
-  
+
+    
+    
+    
+
+    
+    
 
 <script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
@@ -134,10 +163,13 @@
 
 
 
-  
-  
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+    
+    
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -148,11 +180,20 @@
 
 
 
-  
-  
-  <meta name="theme-color"/>
-  
-  
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
@@ -163,240 +204,244 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          OSRTOS
+        </a>
+      
+    </nav>
     
-    <div class="flex flex-1 items-center justify-between">
-        <nav class="flex space-x-3">
-
-            
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
-            
-
-        </nav>
-        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
-
-            
-            
-            
-  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
     
-    <p class="text-base font-medium" title="">
-        Home
-    </p>
+      
+        
+  <a
+  href="/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Home
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        RTOS
-    </p>
+      
+        
+  <a
+  href="/rtos/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    RTOS
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        Library
-    </p>
+      
+        
+  <a
+  href="/library/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Library
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="Learn RTOS">
-        Learn RTOS
-    </p>
+      
+        
+  <a
+  href="/learn/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Learn RTOS">
+    Learn RTOS
+  </p>
 </a>
 
 
 
-            
-            
+      
+    
 
-            
+    
 
+    
 
-            
+    
 
-
-            
-            
-            <div
-                class=" flex items-center">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
-                    <div class="flex items-center justify-center dark:hidden">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                    </div>
-                    <div class="items-center justify-center hidden dark:flex">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                    </div>
-                </button>
-            </div>
-            
-
-        </nav>
-        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
-
-            <span></span>
-
-            
-
-
-            
-
-            
-            
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
-                <div class="flex items-center justify-center dark:hidden">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                </div>
-                <div class="items-center justify-center hidden dark:flex">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                </div>
-            </button>
-            
-
-        </div>
-    </div>
-    <div class="-my-2 md:hidden">
-
-        <label id="menu-button" class="block">
-            
-            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-                
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-
-  </span>
-
-
-            </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-
-                    <li id="menu-close-button">
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
 </span>
-                    </li>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
 
-                    
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
 
-                    
+    
+
+    
+
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
   <li class="mt-1">
-    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Home
-        </p>
-    </a>
+  <a
+    href="/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Home
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            RTOS
-        </p>
-    </a>
+  <a
+    href="/rtos/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      RTOS
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Library
-        </p>
-    </a>
+  <a
+    href="/library/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Library
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="Learn RTOS">
-            Learn RTOS
-        </p>
-    </a>
+  <a
+    href="/learn/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Learn RTOS">
+      Learn RTOS
+    </p>
+  </a>
 </li>
 
 
 
+            
 
-                    
-
-                </ul>
-                
-                
-
-            </div>
-        </label>
+          </ul>
+          
+        </div>
+      
     </div>
+  </div>
+
 </div>
 
 
@@ -472,7 +517,7 @@
 
           
           <div class="mt-2">
-            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-04-21</h4>
+            <h4 class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Last updated: 2025-08-15</h4>
           </div>
           
           
@@ -661,14 +706,12 @@
 <p>Beyond the kernel, the FreeRTOS ecosystem includes libraries such as FreeRTOS+TCP (a lightweight TCP/IP stack), coreMQTT, coreHTTP, corePKCS11, and integrations with security libraries like Mbed TLS and wolfSSL. AWS provides libraries for seamless integration with AWS IoT services, covering OTA updates, Device Shadow, Device Defender, and more. FreeRTOS also supports Symmetric Multiprocessing (SMP) on multi-core processors.</p>
 <p>The project emphasizes quality control, robustness, and long-term support (LTS) releases. Commercial licensing and support options are available through strategic partners like WITTENSTEIN high integrity systems (OpenRTOS/SafeRTOS) for users requiring additional guarantees or indemnification.</p>
 
-
 <h2 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#features" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -690,14 +733,12 @@
 <li><strong>Extensive Platform Support:</strong> Officially supports over 40 microcontroller architectures and multiple compilers.</li>
 </ul>
 
-
 <h2 class="relative group">Components 
     <div id="components" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#components" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#components" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -718,130 +759,461 @@
 <li><strong>Cellular Interface:</strong> Library for interfacing with cellular modems.</li>
 </ul>
 
-
 <h2 class="relative group">Resources 
     <div id="resources" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#resources" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#resources" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 <ul>
-<li><a href="https://github.com/jameswalmsley/RaspberryPi-FreeRTOS" target="_blank">FreeRTOS Ported to Raspberry Pi</a>. This project provides a very basic port of FreeRTOS to Raspberry pi. It includes a demo application that use 2 FreeRTOS tasks to flash the LED on and off.</li>
-<li><a href="https://code.google.com/p/duinos/" target="_blank">DuinOS</a>. DuinOS is a small multithreading real time operating system (RTOS), based on the FreeRTOS kernel, for Arduino compatible boards.It&rsquo;s installed as an Arduino core, and currently supports the following AVR processors:</li>
-<li><a href="https://github.com/Protoneer/LPC43XX-FreeRTOS-with-2xLED-Threads" target="_blank">LPC43XX-FreeRTOS-with-2xLED-Threads</a>. This is example code of using a NXP LPC4337 Xplorer board from NGX with FreeRTOS.It has two LED blinking tasks running at the same time.</li>
-<li><a href="https://github.com/yuriykulikov/FreeRTOS-on-XMEGA" target="_blank">FreeRTOS on XMEGA</a>. port.c and portmacro.h for FreeRTOS to run on any AVR XMEGA</li>
-<li><a href="http://www.scienceprog.com/freertos-on-stm32/" target="_blank">FreeRTOS on STM32</a>. FreeRTOS demos for STM32F103ZET6 board that include LEDs, Buttons, USART, and LCD.</li>
-<li><a href="http://www.scienceprog.com/freertos-on-avr-with-external-ram/" target="_blank">FreeRTOS on AVR with external RAM</a>. This project add extra RAM connected to the external memory interface of Atmega128.</li>
-<li><a href="http://www.lpc4350.com/" target="_blank">LPC4300 Development Boards with FreeRTOS demo</a>. LPC4350 Dual-Core Cortex-M4 and Cortex-M0 Development BoardLPC4350 is the first asymmetrical dual-core digital signal controller with ARM Cortex-M4 and Cortex-M0 processors. The LPC-4350-DB1 development board consists of the most essential components that you need to start your development.It contains the LPC4350FET256 dual-core controller, USB, Ethernet and JTAG connectors, 4 push buttons + 4 LEDs, 16MB external NOR flash.</li>
-<li><a href="http://www.libstock.com/projects/view/370/porting-freertos-to-mikroc-for-stm32-m3" target="_blank">Porting FreeRTOS to MikroC for STM32 M3</a>. This project port FreeRTOSV7.1.1 to CORTEX STM32F107 MikroC Version 2.5.</li>
-<li><a href="http://www.scienceprog.com/using-freertos-kernel-in-avr-projects/" target="_blank">Using FreeRTOS kernel in AVR projects</a>. Instructions to run FreeRTOS on AVR Atmega128L, using AVRStudio5.</li>
-<li><a href="http://www.scienceprog.com/running-multiple-freertos-tasks-on-avr/" target="_blank">Running multiple FreeRTOS tasks on AVR</a>. Let us go further with our example code and add more tasks to our FreeRTOS engine. We already have LED flashing task that toggles LED every second. Additionally we are going to create another task that checks button state. Also we are going to send some information to LCD. As always lets take care of drivers for all of them.</li>
-<li><a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dai0210A/index.html" target="_blank">Running FreeRTOS on the Keil MCBSTM32 Board with the RVMDK Evaluation Tools</a>. This application note describes how to modify an existing port demo of the FreeRTOS operating system that targets the Luminary Micro LM3S102 evaluation board. It uses Keil</li>
-<li><a href="http://www.avrfreaks.net/index.php?module=Freaks%20Academy&amp;func=viewItem&amp;item_id=3450&amp;item_type=project" target="_blank">uc3l0 freertos demo</a>. Demos for FreeRTOS and the UC3L0. This demo provides: Full USART Command TerminalConfigurable ADC TaskPWM control over RGB LEDs (on the L0 Xplained)Printable Data from various sources.</li>
-<li><a href="http://www.avrfreaks.net/projects/gsm-control-system-freertos?module=Freaks%20Academy&amp;func=viewItem&amp;item_id=3672&amp;item_type=project" target="_blank">gsm control system</a>. G.S.A. (GSM System Automation) is a control system that allows you to manage your domestic appliances by means of gsm-communication.You can program GSA simply by send a SMS.</li>
-<li><a href="https://istarc.wordpress.com/2014/07/10/stm32f4-deploy-freertos-in-under-10-seconds/" target="_blank">STM32F4 – Deploy FreeRTOS Embedded OS in under 10 seconds!</a>. This tutorial describe how to build and deploy the FreeRTOS embedded operating system on STM32F4 Discovery board under 10 seconds.</li>
-<li><a href="http://www.freertos.org/ST_STM32F7_Cortex-M7_RTOS_Demo.html" target="_blank">ST ARM Cortex-M7 STM32 F7 RTOS Demo</a>. This page provides documentation for the FreeRTOS demo that targets the STM32756G-EVAL Evaluation Kit, which incorporates an STM32F7 ARM Cortex-M7 microcontroller from STMicroelectronics. Pre-configured build projects are provided for both the IAR and ARM Keil tools.</li>
-<li><a href="https://visualgdb.com/tutorials/esp8266/relay/" target="_blank">Creating a FreeRTOS-based WiFi HTTP server for ESP8266</a>. This tutorial shows how to create a FreeRTOS-based HTTP server with the ESP8266 chip.</li>
-<li><a href="https://github.com/SuperHouse/esp-open-rtos" target="_blank">esp-open-rtos</a>. A community developed open source FreeRTOS-based framework for ESP8266 WiFi-enabled microcontrollers. Intended for use in both commercial and open source projects.</li>
+<li><a
+  href="https://github.com/jameswalmsley/RaspberryPi-FreeRTOS"
+    target="_blank"
+  >FreeRTOS Ported to Raspberry Pi</a>. This project provides a very basic port of FreeRTOS to Raspberry pi. It includes a demo application that use 2 FreeRTOS tasks to flash the LED on and off.</li>
+<li><a
+  href="https://code.google.com/p/duinos/"
+    target="_blank"
+  >DuinOS</a>. DuinOS is a small multithreading real time operating system (RTOS), based on the FreeRTOS kernel, for Arduino compatible boards.It&rsquo;s installed as an Arduino core, and currently supports the following AVR processors:</li>
+<li><a
+  href="https://github.com/Protoneer/LPC43XX-FreeRTOS-with-2xLED-Threads"
+    target="_blank"
+  >LPC43XX-FreeRTOS-with-2xLED-Threads</a>. This is example code of using a NXP LPC4337 Xplorer board from NGX with FreeRTOS.It has two LED blinking tasks running at the same time.</li>
+<li><a
+  href="https://github.com/yuriykulikov/FreeRTOS-on-XMEGA"
+    target="_blank"
+  >FreeRTOS on XMEGA</a>. port.c and portmacro.h for FreeRTOS to run on any AVR XMEGA</li>
+<li><a
+  href="http://www.scienceprog.com/freertos-on-stm32/"
+    target="_blank"
+  >FreeRTOS on STM32</a>. FreeRTOS demos for STM32F103ZET6 board that include LEDs, Buttons, USART, and LCD.</li>
+<li><a
+  href="http://www.scienceprog.com/freertos-on-avr-with-external-ram/"
+    target="_blank"
+  >FreeRTOS on AVR with external RAM</a>. This project add extra RAM connected to the external memory interface of Atmega128.</li>
+<li><a
+  href="http://www.lpc4350.com/"
+    target="_blank"
+  >LPC4300 Development Boards with FreeRTOS demo</a>. LPC4350 Dual-Core Cortex-M4 and Cortex-M0 Development BoardLPC4350 is the first asymmetrical dual-core digital signal controller with ARM Cortex-M4 and Cortex-M0 processors. The LPC-4350-DB1 development board consists of the most essential components that you need to start your development.It contains the LPC4350FET256 dual-core controller, USB, Ethernet and JTAG connectors, 4 push buttons + 4 LEDs, 16MB external NOR flash.</li>
+<li><a
+  href="http://www.libstock.com/projects/view/370/porting-freertos-to-mikroc-for-stm32-m3"
+    target="_blank"
+  >Porting FreeRTOS to MikroC for STM32 M3</a>. This project port FreeRTOSV7.1.1 to CORTEX STM32F107 MikroC Version 2.5.</li>
+<li><a
+  href="http://www.scienceprog.com/using-freertos-kernel-in-avr-projects/"
+    target="_blank"
+  >Using FreeRTOS kernel in AVR projects</a>. Instructions to run FreeRTOS on AVR Atmega128L, using AVRStudio5.</li>
+<li><a
+  href="http://www.scienceprog.com/running-multiple-freertos-tasks-on-avr/"
+    target="_blank"
+  >Running multiple FreeRTOS tasks on AVR</a>. Let us go further with our example code and add more tasks to our FreeRTOS engine. We already have LED flashing task that toggles LED every second. Additionally we are going to create another task that checks button state. Also we are going to send some information to LCD. As always lets take care of drivers for all of them.</li>
+<li><a
+  href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dai0210A/index.html"
+    target="_blank"
+  >Running FreeRTOS on the Keil MCBSTM32 Board with the RVMDK Evaluation Tools</a>. This application note describes how to modify an existing port demo of the FreeRTOS operating system that targets the Luminary Micro LM3S102 evaluation board. It uses Keil</li>
+<li><a
+  href="http://www.avrfreaks.net/index.php?module=Freaks%20Academy&amp;func=viewItem&amp;item_id=3450&amp;item_type=project"
+    target="_blank"
+  >uc3l0 freertos demo</a>. Demos for FreeRTOS and the UC3L0. This demo provides: Full USART Command TerminalConfigurable ADC TaskPWM control over RGB LEDs (on the L0 Xplained)Printable Data from various sources.</li>
+<li><a
+  href="http://www.avrfreaks.net/projects/gsm-control-system-freertos?module=Freaks%20Academy&amp;func=viewItem&amp;item_id=3672&amp;item_type=project"
+    target="_blank"
+  >gsm control system</a>. G.S.A. (GSM System Automation) is a control system that allows you to manage your domestic appliances by means of gsm-communication.You can program GSA simply by send a SMS.</li>
+<li><a
+  href="https://istarc.wordpress.com/2014/07/10/stm32f4-deploy-freertos-in-under-10-seconds/"
+    target="_blank"
+  >STM32F4 – Deploy FreeRTOS Embedded OS in under 10 seconds!</a>. This tutorial describe how to build and deploy the FreeRTOS embedded operating system on STM32F4 Discovery board under 10 seconds.</li>
+<li><a
+  href="http://www.freertos.org/ST_STM32F7_Cortex-M7_RTOS_Demo.html"
+    target="_blank"
+  >ST ARM Cortex-M7 STM32 F7 RTOS Demo</a>. This page provides documentation for the FreeRTOS demo that targets the STM32756G-EVAL Evaluation Kit, which incorporates an STM32F7 ARM Cortex-M7 microcontroller from STMicroelectronics. Pre-configured build projects are provided for both the IAR and ARM Keil tools.</li>
+<li><a
+  href="https://visualgdb.com/tutorials/esp8266/relay/"
+    target="_blank"
+  >Creating a FreeRTOS-based WiFi HTTP server for ESP8266</a>. This tutorial shows how to create a FreeRTOS-based HTTP server with the ESP8266 chip.</li>
+<li><a
+  href="https://github.com/SuperHouse/esp-open-rtos"
+    target="_blank"
+  >esp-open-rtos</a>. A community developed open source FreeRTOS-based framework for ESP8266 WiFi-enabled microcontrollers. Intended for use in both commercial and open source projects.</li>
 </ul>
 <ul>
-<li><a href="https://github.com/warmcat/libwebsockets" target="_blank">libwebsockets</a>. canonical libwebsockets.org networking library.</li>
-<li><a href="https://github.com/InfiniTimeOrg/InfiniTime" target="_blank">InfiniTime</a>. Firmware for Pinetime smartwatch written in C++ and based on FreeRTOS.</li>
-<li><a href="https://github.com/earlephilhower/arduino-pico" target="_blank">arduino-pico</a>. Raspberry Pi Pico Arduino core, for all RP2040 boards.</li>
-<li><a href="https://github.com/avem-labs/Avem" target="_blank">Avem</a>. 🚁 轻量级无人机飞控-[Drone]-[STM32]-[PID]-[BLDC].</li>
-<li><a href="https://github.com/whitecatboard/Lua-RTOS-ESP32" target="_blank">Lua-RTOS-ESP32</a>. Lua RTOS for ESP32.</li>
-<li><a href="https://github.com/feilipu/Arduino_FreeRTOS_Library" target="_blank">Arduino_FreeRTOS_Library</a>. A FreeRTOS Library for all Arduino AVR Devices (Uno, Leonardo, Mega, etc).</li>
-<li><a href="https://github.com/mudita/MuditaOS" target="_blank">MuditaOS</a>. Mobile operating system based on FreeRTOS™ optimized for E Ink displays - developed for Mudita Pure minimalist phone.</li>
-<li><a href="https://github.com/Luos-io/luos_engine" target="_blank">luos_engine</a>. Open-source and real-time orchestrator for cyber-physical-systems, to easily design, test and deploy embedded applications and digital twins..</li>
-<li><a href="https://github.com/michaelbecker/freertos-addons" target="_blank">freertos-addons</a>. Additions to FreeRTOS.</li>
-<li><a href="https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS" target="_blank">Modbus-STM32-HAL-FreeRTOS</a>. Modbus TCP and  RTU,  Master and Slave for STM32 using Cube HAL and FreeRTOS.</li>
-<li><a href="https://github.com/lobaro/FreeRTOS-rust" target="_blank">FreeRTOS-rust</a>. Rust crate for FreeRTOS.</li>
-<li><a href="https://github.com/hashmismatch/freertos.rs" target="_blank">freertos.rs</a>. A Rust wrapper for FreeRTOS..</li>
-<li><a href="https://github.com/kendryte/kendryte-freertos-sdk" target="_blank">kendryte-freertos-sdk</a>. This project is no longer maintained Not recommended for product development..</li>
-<li><a href="https://github.com/arkhipenko/esp32-cam-mjpeg-multiclient" target="_blank">esp32-cam-mjpeg-multiclient</a>. ESP32 MJPEG Multiclient Streaming Server.</li>
-<li><a href="https://github.com/hongbo-miao/hongbomiao.com" target="_blank">hongbomiao.com</a>. A personal research and development (R&amp;D) lab that facilitates the sharing of knowledge..</li>
-<li><a href="https://github.com/blinker-iot/blinker-doc" target="_blank">blinker-doc</a>. blinker中文文档.</li>
-<li><a href="https://github.com/lovelyterry/SmartSpeaker" target="_blank">SmartSpeaker</a>. 一个基于云端语音识别的智能控制设备，类似于天猫精灵，小爱同学。采用的芯片为stm32f407,wm8978,esp8266。.</li>
-<li><a href="https://github.com/elcritch/nesper" target="_blank">nesper</a>. Program the ESP32 with Nim! Wrappers around ESP-IDF API&rsquo;s. .</li>
-<li><a href="https://github.com/DiegoPaezA/ESP32-freeRTOS" target="_blank">ESP32-freeRTOS</a>. Basic Examples of FreeRTOS with ESP32 and ESP-IDF.</li>
-<li><a href="https://github.com/bbulkow/FastLED-idf" target="_blank">FastLED-idf</a>. FastLED port to the ESP-IDF 4.0 development environment.</li>
-<li><a href="https://github.com/Staok/stm32_framework" target="_blank">stm32_framework</a>. 一个志在实现STM32F1、F2和F4工程模板的项目，集成了FreeRTOS、LWIP、FATFS、DSP、USB、IAP、菜单库、有限状态机模板等等的组件，以及未来将加入的加密、BPNN、最小二乘、音频图片视频解码、LittlevGL等诸多常用的算法或组件，并具有良好的易用性、解耦性和可剪裁性！.</li>
-<li><a href="https://github.com/arkhipenko/esp32-mjpeg-multiclient-espcam-drivers" target="_blank">esp32-mjpeg-multiclient-espcam-drivers</a>. ESP32 MJPEG Multiclient Streaming Server with latest Espressif drivers.</li>
-<li><a href="https://github.com/openthread/ot-rtos" target="_blank">ot-rtos</a>. OpenThread RTOS, an integration of OpenThread, LwIP, and FreeRTOS..</li>
-<li><a href="https://github.com/nimaltd/ds18b20" target="_blank">ds18b20</a>. ds18b20 library for stm32 hal.</li>
-<li><a href="https://github.com/XradioTech/XR871-OLD" target="_blank">XR871-OLD</a>. XR871 SDK.</li>
-<li><a href="https://github.com/tuxera/reliance-edge" target="_blank">reliance-edge</a>. Transactional power-failsafe filesystem for microcontrollers.</li>
-<li><a href="https://github.com/Nuclei-Software/nuclei-sdk" target="_blank">nuclei-sdk</a>.   Nuclei RISC-V Software Development Kit.</li>
-<li><a href="https://github.com/No-Chicken/OV-Watch" target="_blank">OV-Watch</a>. A powerful Smart Watch. Only cost ￥80 RMB ( $12 USD )..</li>
-<li><a href="https://github.com/VedantParanjape/esp-wifi-logger" target="_blank">esp-wifi-logger</a>. ESP32 WiFi Logger component.</li>
-<li><a href="https://github.com/FASTSHIFT/XC-OS" target="_blank">XC-OS</a>. Open source graphics operating system for microcontroller.</li>
-<li><a href="https://github.com/hex-five/multizone-sdk" target="_blank">multizone-sdk</a>. MultiZone® Security TEE is the quick and safe way to add security and separation to any RISC-V processors. The RISC-V standard ISA doesn&rsquo;t define TrustZone-like primitives to provide hardware separation. To shield critical functionality from untrusted third-party components, MultiZone provides hardware-enforced, software-defined separation of multiple equally secure worlds. Unlike antiquated hypervisor-like solutions, MultiZone is self-contained, presents an extremely small attack surface, and it is policy driven, meaning that no coding is required – and in fact even allowed. MultiZone works with any 32-bit or 64-bit RISC-V processors with standard Physical Memory Protection unit (PMP) and “U” mode..</li>
-<li><a href="https://github.com/illustris/FreeRTOS-RISCV" target="_blank">FreeRTOS-RISCV</a>. A port of FreeRTOS for the RISC-V ISA.</li>
-<li><a href="https://github.com/tsandmann/freertos-teensy" target="_blank">freertos-teensy</a>. FreeRTOS port with C++ std::thread support for ARM boards Teensy 3.5, 3.6, 4.0 and 4.1 (cortex-m4f and cortex-m7f).</li>
-<li><a href="https://github.com/rgujju/STM32_Base_Project" target="_blank">STM32_Base_Project</a>. STM32 Base project with a lot of stuff.</li>
-<li><a href="https://github.com/smittytone/RP2040-FreeRTOS" target="_blank">RP2040-FreeRTOS</a>. Raspberry Pi RP2040 FreeRTOS baseline development project.</li>
-<li><a href="https://github.com/parikshitpagare/smart-home-automation-rtos" target="_blank">smart-home-automation-rtos</a>. A complete home automation system developed on ESP32 microcontroller using freeRTOS. The system is controlled wirelessly via Bluetooth with an android app developed using MIT App Inventor..</li>
-<li><a href="https://github.com/nabto/unabto" target="_blank">unabto</a>. uNabto SDK - direct P2P connectivity for embedded devices (and more).</li>
-<li><a href="https://github.com/alxhoff/FreeRTOS-Emulator" target="_blank">FreeRTOS-Emulator</a>. POSIX based FreeRTOS emulator with SDL2 graphics interface and multiple async communications interfaces, aiming to make it possible to teach FreeRTOS without embedded hardware using similar processes.</li>
-<li><a href="https://github.com/Dentrax/ArduRTOS" target="_blank">ArduRTOS</a>. Real Time Operating System Lessons using Arduino and The FreeRTOS Kernel.</li>
-<li><a href="https://github.com/jaracil/pubsub-c" target="_blank">pubsub-c</a>. Pub/Sub library for C.</li>
-<li><a href="https://github.com/alexCajas/EmbeddedMqttBroker" target="_blank">EmbeddedMqttBroker</a>. This is a Mqtt broker for embedded devices, developed in C++, FreeRTOS, arduino core and tested in an Esp32. .</li>
-<li><a href="https://github.com/siemens/freertos-cell" target="_blank">freertos-cell</a>. FreeRTOS for Jailhouse Cells.</li>
-<li><a href="https://github.com/Samsung/mTower" target="_blank">mTower</a>. mTower is Trusted Execution Environment specially designed to be used on MicroController Units (MCUs) supporting ARM TrustZone technology (e.g., Cortex-M23/33/35p). mTower operates well under restrictions typical for such environment – small RAM and ROM sizes, relatively low performance, absence of rich OSes providing variety of services available on PCs or in enterprise environments. mTower is intended for usage in IoT, embedded devices, Smart Home applications, distributed heterogeneous networks and other environments where secure processing of sensitive data is necessary..</li>
-<li><a href="https://github.com/igor-krechetov/hsmcpp" target="_blank">hsmcpp</a>. C++ based Hierarchical / Finite State Machine library oriented for embedded and RTOS systems..</li>
-<li><a href="https://github.com/PeterH0323/STM32_HTTPs_WolfSSL" target="_blank">STM32_HTTPs_WolfSSL</a>. STM32 HTTPs demo , using lib : WolfSSL, Lwip, FreeRTOS, LAN8720.</li>
-<li><a href="https://github.com/freelamb/stm32f10x_makefile_freertos" target="_blank">stm32f10x_makefile_freertos</a>. stm32f10x gcc makefile freertos.</li>
-<li><a href="https://github.com/spel-uchile/SUCHAI-Flight-Software" target="_blank">SUCHAI-Flight-Software</a>. THIS REPOSITORY HAS BEEN MOVED TO GITLAB.</li>
-<li><a href="https://github.com/FreeVario/FreeVario" target="_blank">FreeVario</a>. FreeVario for paragliders.</li>
-<li><a href="https://github.com/JON95Git/pid-stm32f746" target="_blank">pid-stm32f746</a>. Embedded graphical interface for PID control.</li>
-<li><a href="https://github.com/Seeed-Studio/Seeed_Arduino_FreeRTOS" target="_blank">Seeed_Arduino_FreeRTOS</a>. This library gives an example of how to get FreeRTOS running on Seeed production. The project can be used as a template to build your projects off of as well..</li>
-<li><a href="https://github.com/jonenz/FreeRTOS-Cpp" target="_blank">FreeRTOS-Cpp</a>. C++17 header-only interface to the FreeRTOS kernel API..</li>
-<li><a href="https://github.com/lnls-dig/openMMC" target="_blank">openMMC</a>. Open source firmware for MMC controllers.</li>
-<li><a href="https://github.com/jollen/rtos-wot" target="_blank">rtos-wot</a>. Open source FreeRTOS SDK for ESP8266 WiFi Module.</li>
-<li><a href="https://github.com/FreeRTOS/coreMQTT-Agent-Demos" target="_blank">coreMQTT-Agent-Demos</a>. Demonstrates use of coreMQTT-Agent for simple MQTT connection sharing among different threads of execution. .</li>
-<li><a href="https://github.com/akobyl/TM4C129_FreeRTOS_Demo" target="_blank">TM4C129_FreeRTOS_Demo</a>. Demo of FreeRTOS 10.2.1 for the Tiva TM4C1294 Connected Launchpad from Texas Instruments.</li>
-<li><a href="https://github.com/imxieyi/esp32-i2c-mpu6050" target="_blank">esp32-i2c-mpu6050</a>. ESP32 I2C MPU6050 driver for esp-idf.</li>
-<li><a href="https://github.com/TAMU-Robomasters/aimbots-dev" target="_blank">aimbots-dev</a>. The Taproot-based rewrite of our 2021 development platform..</li>
-<li><a href="https://github.com/AnielShri/STM32H745_Ethernet" target="_blank">STM32H745_Ethernet</a>. Ethernet on STM32H745 using FreeRTOS and LWIP.</li>
-<li><a href="https://github.com/IntergatedCircuits/freertos-mcpp" target="_blank">freertos-mcpp</a>. Wrapping FreeRTOS in modern C++ classes.</li>
-<li><a href="https://github.com/ctlst-tech/uas-catpilot" target="_blank">uas-catpilot</a>. CatPilot is a hardware and OS agnostic drone&rsquo;s autopilot software stack. It is designed for faster creation of scalable distributed control systems for mission-critical applications. (UAS-CatPilot repo is a upper lever repo for sharing configurations for UAVs).</li>
-<li><a href="https://github.com/Hamid-R-Tanhaei/ZYNQ_ADC_DMA_LWIP" target="_blank">ZYNQ_ADC_DMA_LWIP</a>. Interfacing ZYNQ SoC device with ADC, Transferring data through DMA and LwIP.</li>
-<li><a href="https://github.com/yunkya2/pico-freertos-sample" target="_blank">pico-freertos-sample</a>. Raspberry Pi Pico Sample application with FreeRTOS.</li>
-<li><a href="https://github.com/luigifcruz/ESP8266-RTOS-HomeKit" target="_blank">ESP8266-RTOS-HomeKit</a>. ESP8266 HomeKit Accessory Implementation based on FreeRTOS..</li>
-<li><a href="https://github.com/IOsetting/air32f103-template" target="_blank">air32f103-template</a>. AIR32F103 template project for GNU Arm Embedded Toolchain.</li>
-<li><a href="https://github.com/IPv6-ESP8266/IPv6-ESP8266" target="_blank">IPv6-ESP8266</a>. examples for setting up ipv6 on the esp8266.</li>
-<li><a href="https://github.com/jefftenney/LPTIM-Tick" target="_blank">LPTIM-Tick</a>. FreeRTOS Tick/Tickless via LPTIM.</li>
-<li><a href="https://github.com/golioth/golioth-firmware-sdk" target="_blank">golioth-firmware-sdk</a>. Golioth Firmware SDK.</li>
-<li><a href="https://github.com/husarion/micro_ros_stm32_template" target="_blank">micro_ros_stm32_template</a>. Boilerplate to create a project with:  STM32 + Ethernet + micro-ROS + FreeRTOS + Arduino + PlatformIO.</li>
-<li><a href="https://github.com/EnAccess/Cicada-FW" target="_blank">Cicada-FW</a>. IoT Communications Module for Energy Access. An easy way to get production ready, bi-directional communications for your IoT embedded device. Proiect supported by the EnAccess Foundation - <a href="https://enaccess.org" target="_blank">https://enaccess.org</a>.</li>
-<li><a href="https://github.com/Floessie/frt" target="_blank">frt</a>. Lightweight, easy-to-use wrapper around the Arduino_FreeRTOS_Library.</li>
-<li><a href="https://github.com/avaan/STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD" target="_blank">STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD</a>. STM32F407VG+freeRTOS+FATFS+SDIO+SD CARD example.</li>
-<li><a href="https://github.com/RT-Thread-packages/FreeRTOS-Wrapper" target="_blank">FreeRTOS-Wrapper</a>. RT-Thread操作系统的FreeRTOS兼容层 | FreeRTOS Application Compatibility Layer (ACL) for RT-Thread.</li>
-<li><a href="https://github.com/bjwschaap/platformio-libopencm3-freertos" target="_blank">platformio-libopencm3-freertos</a>. Sample blinky project for PlatformIO using libopencm3 and FreeRTOS.</li>
-<li><a href="https://github.com/floripasat/obdh" target="_blank">obdh</a>. On-Board Data Handling Module.</li>
-<li><a href="https://github.com/FreeRTOS/coreMQTT-Agent" target="_blank">coreMQTT-Agent</a>. Implements an MQTT agent (or daemon) task for simple MQTT connection sharing among different threads of execution..</li>
-<li><a href="https://github.com/solariun/CorePartition" target="_blank">CorePartition</a>. Universal Cooperative Multithread Lib with real time Scheduler that was designed to work, virtually, into any modern micro controller or Microchip and, also, for user space applications for modern OS  (Mac, Linux, Windows) or on FreeRTOS as well. Supports C and C++ .</li>
-<li><a href="https://github.com/spacelab-ufsc/obdh2" target="_blank">obdh2</a>. On-Board Data Handling Module 2.</li>
-<li><a href="https://github.com/hex-five/multizone-iot-sdk" target="_blank">multizone-iot-sdk</a>. MultiZone® Trusted Firmware is the quick and safe way to build secure IoT applications with any RISC-V processor. It provides secure access to commercial and private IoT clouds, real-time monitoring, secure boot, and remote firmware updates. The built-in Trusted Execution Environment provides hardware-enforced separation &hellip; .</li>
-<li><a href="https://github.com/YuzukiHD/FreeRTOS-HIFI4-DSP" target="_blank">FreeRTOS-HIFI4-DSP</a>. FreeRTOS for Cadence Tensilica HIFI 4 DSP on R329, D1-H, T113 With GCC Compiler.</li>
-<li><a href="https://github.com/visionspacetec/Prust" target="_blank">Prust</a>. PUS-C on Rust. This is the entry point for the Prust tools. List of the tools and a Wiki for them..</li>
-<li><a href="https://github.com/taligentx/dscKeybusInterface-RTOS" target="_blank">dscKeybusInterface-RTOS</a>. An esp-open-rtos library to directly interface with DSC security systems, including native HomeKit support..</li>
-<li><a href="https://github.com/ragu-manjegowda/development-of-real-time-systems" target="_blank">development-of-real-time-systems</a>. Coursera Development of Real-Time Systems Course Assignments.</li>
-<li><a href="https://github.com/jiejieTop/freertos-mqttclient" target="_blank">freertos-mqttclient</a>. a demo of mqttclient on freertos platform，https://github.com/jiejieTop/mqttclient.</li>
-<li><a href="https://github.com/suikan4github/murasaki" target="_blank">murasaki</a>. STM32 HAL class library.</li>
-<li><a href="https://github.com/EmbeddedArea/drone_stm32" target="_blank">drone_stm32</a>. An Open Source Hobby Drone project with STM32F103C8T6 (BluePill).</li>
-<li><a href="https://github.com/eggman/FreeRTOS-raspi3" target="_blank">FreeRTOS-raspi3</a>. FreeRTOS port Raspberry Pi 3 ( 64bit /  aarch64 ).</li>
-<li><a href="https://github.com/KNR-Selfie/selfie-archive-cc-iarrc2018" target="_blank">selfie-archive-cc-iarrc2018</a>. Software for 1:10 scale autonomous cars.</li>
-<li><a href="https://github.com/SUPLA/supla-device" target="_blank">supla-device</a>. Create your own Supla device! This software can be used as a library for Arduino IDE, or can be used directly with ESP8266 RTOS SDK and with ESP IDF. It is also possible to compile and run it on Linux and in FreeRTOS..</li>
-<li><a href="https://github.com/Open-Authenticator/open-authenticator-app" target="_blank">open-authenticator-app</a>. Firmware for Open Authenticator.</li>
-<li><a href="https://github.com/ctlst-tech/catpilot" target="_blank">catpilot</a>. CatPilot is a hardware and OS agnostic drone&rsquo;s autopilot software stack. It is designed for faster creation of scalable distributed control systems for mission-critical applications..</li>
-<li><a href="https://github.com/mikisama/FreeRTOS_RH850" target="_blank">FreeRTOS_RH850</a>. FreeRTOS port for Renesas RH850.</li>
-<li><a href="https://github.com/coder137/ESP32-Repo" target="_blank">ESP32-Repo</a>. ESP-IDF with ESP32.</li>
-<li><a href="https://github.com/phfbertoleti/lorawan_freertos_esp32" target="_blank">lorawan_freertos_esp32</a>. Projeto open-source de end-device LoRaWAN com ESP32, sensor BMP180 e FreeRTOS.</li>
+<li><a
+  href="https://github.com/warmcat/libwebsockets"
+    target="_blank"
+  >libwebsockets</a>. canonical libwebsockets.org networking library.</li>
+<li><a
+  href="https://github.com/InfiniTimeOrg/InfiniTime"
+    target="_blank"
+  >InfiniTime</a>. Firmware for Pinetime smartwatch written in C++ and based on FreeRTOS.</li>
+<li><a
+  href="https://github.com/earlephilhower/arduino-pico"
+    target="_blank"
+  >arduino-pico</a>. Raspberry Pi Pico Arduino core, for all RP2040 boards.</li>
+<li><a
+  href="https://github.com/avem-labs/Avem"
+    target="_blank"
+  >Avem</a>. 🚁 轻量级无人机飞控-[Drone]-[STM32]-[PID]-[BLDC].</li>
+<li><a
+  href="https://github.com/whitecatboard/Lua-RTOS-ESP32"
+    target="_blank"
+  >Lua-RTOS-ESP32</a>. Lua RTOS for ESP32.</li>
+<li><a
+  href="https://github.com/feilipu/Arduino_FreeRTOS_Library"
+    target="_blank"
+  >Arduino_FreeRTOS_Library</a>. A FreeRTOS Library for all Arduino AVR Devices (Uno, Leonardo, Mega, etc).</li>
+<li><a
+  href="https://github.com/mudita/MuditaOS"
+    target="_blank"
+  >MuditaOS</a>. Mobile operating system based on FreeRTOS™ optimized for E Ink displays - developed for Mudita Pure minimalist phone.</li>
+<li><a
+  href="https://github.com/Luos-io/luos_engine"
+    target="_blank"
+  >luos_engine</a>. Open-source and real-time orchestrator for cyber-physical-systems, to easily design, test and deploy embedded applications and digital twins..</li>
+<li><a
+  href="https://github.com/michaelbecker/freertos-addons"
+    target="_blank"
+  >freertos-addons</a>. Additions to FreeRTOS.</li>
+<li><a
+  href="https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS"
+    target="_blank"
+  >Modbus-STM32-HAL-FreeRTOS</a>. Modbus TCP and  RTU,  Master and Slave for STM32 using Cube HAL and FreeRTOS.</li>
+<li><a
+  href="https://github.com/lobaro/FreeRTOS-rust"
+    target="_blank"
+  >FreeRTOS-rust</a>. Rust crate for FreeRTOS.</li>
+<li><a
+  href="https://github.com/hashmismatch/freertos.rs"
+    target="_blank"
+  >freertos.rs</a>. A Rust wrapper for FreeRTOS..</li>
+<li><a
+  href="https://github.com/kendryte/kendryte-freertos-sdk"
+    target="_blank"
+  >kendryte-freertos-sdk</a>. This project is no longer maintained Not recommended for product development..</li>
+<li><a
+  href="https://github.com/arkhipenko/esp32-cam-mjpeg-multiclient"
+    target="_blank"
+  >esp32-cam-mjpeg-multiclient</a>. ESP32 MJPEG Multiclient Streaming Server.</li>
+<li><a
+  href="https://github.com/hongbo-miao/hongbomiao.com"
+    target="_blank"
+  >hongbomiao.com</a>. A personal research and development (R&amp;D) lab that facilitates the sharing of knowledge..</li>
+<li><a
+  href="https://github.com/blinker-iot/blinker-doc"
+    target="_blank"
+  >blinker-doc</a>. blinker中文文档.</li>
+<li><a
+  href="https://github.com/lovelyterry/SmartSpeaker"
+    target="_blank"
+  >SmartSpeaker</a>. 一个基于云端语音识别的智能控制设备，类似于天猫精灵，小爱同学。采用的芯片为stm32f407,wm8978,esp8266。.</li>
+<li><a
+  href="https://github.com/elcritch/nesper"
+    target="_blank"
+  >nesper</a>. Program the ESP32 with Nim! Wrappers around ESP-IDF API&rsquo;s. .</li>
+<li><a
+  href="https://github.com/DiegoPaezA/ESP32-freeRTOS"
+    target="_blank"
+  >ESP32-freeRTOS</a>. Basic Examples of FreeRTOS with ESP32 and ESP-IDF.</li>
+<li><a
+  href="https://github.com/bbulkow/FastLED-idf"
+    target="_blank"
+  >FastLED-idf</a>. FastLED port to the ESP-IDF 4.0 development environment.</li>
+<li><a
+  href="https://github.com/Staok/stm32_framework"
+    target="_blank"
+  >stm32_framework</a>. 一个志在实现STM32F1、F2和F4工程模板的项目，集成了FreeRTOS、LWIP、FATFS、DSP、USB、IAP、菜单库、有限状态机模板等等的组件，以及未来将加入的加密、BPNN、最小二乘、音频图片视频解码、LittlevGL等诸多常用的算法或组件，并具有良好的易用性、解耦性和可剪裁性！.</li>
+<li><a
+  href="https://github.com/arkhipenko/esp32-mjpeg-multiclient-espcam-drivers"
+    target="_blank"
+  >esp32-mjpeg-multiclient-espcam-drivers</a>. ESP32 MJPEG Multiclient Streaming Server with latest Espressif drivers.</li>
+<li><a
+  href="https://github.com/openthread/ot-rtos"
+    target="_blank"
+  >ot-rtos</a>. OpenThread RTOS, an integration of OpenThread, LwIP, and FreeRTOS..</li>
+<li><a
+  href="https://github.com/nimaltd/ds18b20"
+    target="_blank"
+  >ds18b20</a>. ds18b20 library for stm32 hal.</li>
+<li><a
+  href="https://github.com/XradioTech/XR871-OLD"
+    target="_blank"
+  >XR871-OLD</a>. XR871 SDK.</li>
+<li><a
+  href="https://github.com/tuxera/reliance-edge"
+    target="_blank"
+  >reliance-edge</a>. Transactional power-failsafe filesystem for microcontrollers.</li>
+<li><a
+  href="https://github.com/Nuclei-Software/nuclei-sdk"
+    target="_blank"
+  >nuclei-sdk</a>.   Nuclei RISC-V Software Development Kit.</li>
+<li><a
+  href="https://github.com/No-Chicken/OV-Watch"
+    target="_blank"
+  >OV-Watch</a>. A powerful Smart Watch. Only cost ￥80 RMB ( $12 USD )..</li>
+<li><a
+  href="https://github.com/VedantParanjape/esp-wifi-logger"
+    target="_blank"
+  >esp-wifi-logger</a>. ESP32 WiFi Logger component.</li>
+<li><a
+  href="https://github.com/FASTSHIFT/XC-OS"
+    target="_blank"
+  >XC-OS</a>. Open source graphics operating system for microcontroller.</li>
+<li><a
+  href="https://github.com/hex-five/multizone-sdk"
+    target="_blank"
+  >multizone-sdk</a>. MultiZone® Security TEE is the quick and safe way to add security and separation to any RISC-V processors. The RISC-V standard ISA doesn&rsquo;t define TrustZone-like primitives to provide hardware separation. To shield critical functionality from untrusted third-party components, MultiZone provides hardware-enforced, software-defined separation of multiple equally secure worlds. Unlike antiquated hypervisor-like solutions, MultiZone is self-contained, presents an extremely small attack surface, and it is policy driven, meaning that no coding is required – and in fact even allowed. MultiZone works with any 32-bit or 64-bit RISC-V processors with standard Physical Memory Protection unit (PMP) and “U” mode..</li>
+<li><a
+  href="https://github.com/illustris/FreeRTOS-RISCV"
+    target="_blank"
+  >FreeRTOS-RISCV</a>. A port of FreeRTOS for the RISC-V ISA.</li>
+<li><a
+  href="https://github.com/tsandmann/freertos-teensy"
+    target="_blank"
+  >freertos-teensy</a>. FreeRTOS port with C++ std::thread support for ARM boards Teensy 3.5, 3.6, 4.0 and 4.1 (cortex-m4f and cortex-m7f).</li>
+<li><a
+  href="https://github.com/rgujju/STM32_Base_Project"
+    target="_blank"
+  >STM32_Base_Project</a>. STM32 Base project with a lot of stuff.</li>
+<li><a
+  href="https://github.com/smittytone/RP2040-FreeRTOS"
+    target="_blank"
+  >RP2040-FreeRTOS</a>. Raspberry Pi RP2040 FreeRTOS baseline development project.</li>
+<li><a
+  href="https://github.com/parikshitpagare/smart-home-automation-rtos"
+    target="_blank"
+  >smart-home-automation-rtos</a>. A complete home automation system developed on ESP32 microcontroller using freeRTOS. The system is controlled wirelessly via Bluetooth with an android app developed using MIT App Inventor..</li>
+<li><a
+  href="https://github.com/nabto/unabto"
+    target="_blank"
+  >unabto</a>. uNabto SDK - direct P2P connectivity for embedded devices (and more).</li>
+<li><a
+  href="https://github.com/alxhoff/FreeRTOS-Emulator"
+    target="_blank"
+  >FreeRTOS-Emulator</a>. POSIX based FreeRTOS emulator with SDL2 graphics interface and multiple async communications interfaces, aiming to make it possible to teach FreeRTOS without embedded hardware using similar processes.</li>
+<li><a
+  href="https://github.com/Dentrax/ArduRTOS"
+    target="_blank"
+  >ArduRTOS</a>. Real Time Operating System Lessons using Arduino and The FreeRTOS Kernel.</li>
+<li><a
+  href="https://github.com/jaracil/pubsub-c"
+    target="_blank"
+  >pubsub-c</a>. Pub/Sub library for C.</li>
+<li><a
+  href="https://github.com/alexCajas/EmbeddedMqttBroker"
+    target="_blank"
+  >EmbeddedMqttBroker</a>. This is a Mqtt broker for embedded devices, developed in C++, FreeRTOS, arduino core and tested in an Esp32. .</li>
+<li><a
+  href="https://github.com/siemens/freertos-cell"
+    target="_blank"
+  >freertos-cell</a>. FreeRTOS for Jailhouse Cells.</li>
+<li><a
+  href="https://github.com/Samsung/mTower"
+    target="_blank"
+  >mTower</a>. mTower is Trusted Execution Environment specially designed to be used on MicroController Units (MCUs) supporting ARM TrustZone technology (e.g., Cortex-M23/33/35p). mTower operates well under restrictions typical for such environment – small RAM and ROM sizes, relatively low performance, absence of rich OSes providing variety of services available on PCs or in enterprise environments. mTower is intended for usage in IoT, embedded devices, Smart Home applications, distributed heterogeneous networks and other environments where secure processing of sensitive data is necessary..</li>
+<li><a
+  href="https://github.com/igor-krechetov/hsmcpp"
+    target="_blank"
+  >hsmcpp</a>. C++ based Hierarchical / Finite State Machine library oriented for embedded and RTOS systems..</li>
+<li><a
+  href="https://github.com/PeterH0323/STM32_HTTPs_WolfSSL"
+    target="_blank"
+  >STM32_HTTPs_WolfSSL</a>. STM32 HTTPs demo , using lib : WolfSSL, Lwip, FreeRTOS, LAN8720.</li>
+<li><a
+  href="https://github.com/freelamb/stm32f10x_makefile_freertos"
+    target="_blank"
+  >stm32f10x_makefile_freertos</a>. stm32f10x gcc makefile freertos.</li>
+<li><a
+  href="https://github.com/spel-uchile/SUCHAI-Flight-Software"
+    target="_blank"
+  >SUCHAI-Flight-Software</a>. THIS REPOSITORY HAS BEEN MOVED TO GITLAB.</li>
+<li><a
+  href="https://github.com/FreeVario/FreeVario"
+    target="_blank"
+  >FreeVario</a>. FreeVario for paragliders.</li>
+<li><a
+  href="https://github.com/JON95Git/pid-stm32f746"
+    target="_blank"
+  >pid-stm32f746</a>. Embedded graphical interface for PID control.</li>
+<li><a
+  href="https://github.com/Seeed-Studio/Seeed_Arduino_FreeRTOS"
+    target="_blank"
+  >Seeed_Arduino_FreeRTOS</a>. This library gives an example of how to get FreeRTOS running on Seeed production. The project can be used as a template to build your projects off of as well..</li>
+<li><a
+  href="https://github.com/jonenz/FreeRTOS-Cpp"
+    target="_blank"
+  >FreeRTOS-Cpp</a>. C++17 header-only interface to the FreeRTOS kernel API..</li>
+<li><a
+  href="https://github.com/lnls-dig/openMMC"
+    target="_blank"
+  >openMMC</a>. Open source firmware for MMC controllers.</li>
+<li><a
+  href="https://github.com/jollen/rtos-wot"
+    target="_blank"
+  >rtos-wot</a>. Open source FreeRTOS SDK for ESP8266 WiFi Module.</li>
+<li><a
+  href="https://github.com/FreeRTOS/coreMQTT-Agent-Demos"
+    target="_blank"
+  >coreMQTT-Agent-Demos</a>. Demonstrates use of coreMQTT-Agent for simple MQTT connection sharing among different threads of execution. .</li>
+<li><a
+  href="https://github.com/akobyl/TM4C129_FreeRTOS_Demo"
+    target="_blank"
+  >TM4C129_FreeRTOS_Demo</a>. Demo of FreeRTOS 10.2.1 for the Tiva TM4C1294 Connected Launchpad from Texas Instruments.</li>
+<li><a
+  href="https://github.com/imxieyi/esp32-i2c-mpu6050"
+    target="_blank"
+  >esp32-i2c-mpu6050</a>. ESP32 I2C MPU6050 driver for esp-idf.</li>
+<li><a
+  href="https://github.com/TAMU-Robomasters/aimbots-dev"
+    target="_blank"
+  >aimbots-dev</a>. The Taproot-based rewrite of our 2021 development platform..</li>
+<li><a
+  href="https://github.com/AnielShri/STM32H745_Ethernet"
+    target="_blank"
+  >STM32H745_Ethernet</a>. Ethernet on STM32H745 using FreeRTOS and LWIP.</li>
+<li><a
+  href="https://github.com/IntergatedCircuits/freertos-mcpp"
+    target="_blank"
+  >freertos-mcpp</a>. Wrapping FreeRTOS in modern C++ classes.</li>
+<li><a
+  href="https://github.com/ctlst-tech/uas-catpilot"
+    target="_blank"
+  >uas-catpilot</a>. CatPilot is a hardware and OS agnostic drone&rsquo;s autopilot software stack. It is designed for faster creation of scalable distributed control systems for mission-critical applications. (UAS-CatPilot repo is a upper lever repo for sharing configurations for UAVs).</li>
+<li><a
+  href="https://github.com/Hamid-R-Tanhaei/ZYNQ_ADC_DMA_LWIP"
+    target="_blank"
+  >ZYNQ_ADC_DMA_LWIP</a>. Interfacing ZYNQ SoC device with ADC, Transferring data through DMA and LwIP.</li>
+<li><a
+  href="https://github.com/yunkya2/pico-freertos-sample"
+    target="_blank"
+  >pico-freertos-sample</a>. Raspberry Pi Pico Sample application with FreeRTOS.</li>
+<li><a
+  href="https://github.com/luigifcruz/ESP8266-RTOS-HomeKit"
+    target="_blank"
+  >ESP8266-RTOS-HomeKit</a>. ESP8266 HomeKit Accessory Implementation based on FreeRTOS..</li>
+<li><a
+  href="https://github.com/IOsetting/air32f103-template"
+    target="_blank"
+  >air32f103-template</a>. AIR32F103 template project for GNU Arm Embedded Toolchain.</li>
+<li><a
+  href="https://github.com/IPv6-ESP8266/IPv6-ESP8266"
+    target="_blank"
+  >IPv6-ESP8266</a>. examples for setting up ipv6 on the esp8266.</li>
+<li><a
+  href="https://github.com/jefftenney/LPTIM-Tick"
+    target="_blank"
+  >LPTIM-Tick</a>. FreeRTOS Tick/Tickless via LPTIM.</li>
+<li><a
+  href="https://github.com/golioth/golioth-firmware-sdk"
+    target="_blank"
+  >golioth-firmware-sdk</a>. Golioth Firmware SDK.</li>
+<li><a
+  href="https://github.com/husarion/micro_ros_stm32_template"
+    target="_blank"
+  >micro_ros_stm32_template</a>. Boilerplate to create a project with:  STM32 + Ethernet + micro-ROS + FreeRTOS + Arduino + PlatformIO.</li>
+<li><a
+  href="https://github.com/EnAccess/Cicada-FW"
+    target="_blank"
+  >Cicada-FW</a>. IoT Communications Module for Energy Access. An easy way to get production ready, bi-directional communications for your IoT embedded device. Proiect supported by the EnAccess Foundation - <a
+  href="https://enaccess.org"
+    target="_blank"
+  >https://enaccess.org</a>.</li>
+<li><a
+  href="https://github.com/Floessie/frt"
+    target="_blank"
+  >frt</a>. Lightweight, easy-to-use wrapper around the Arduino_FreeRTOS_Library.</li>
+<li><a
+  href="https://github.com/avaan/STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD"
+    target="_blank"
+  >STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD</a>. STM32F407VG+freeRTOS+FATFS+SDIO+SD CARD example.</li>
+<li><a
+  href="https://github.com/RT-Thread-packages/FreeRTOS-Wrapper"
+    target="_blank"
+  >FreeRTOS-Wrapper</a>. RT-Thread操作系统的FreeRTOS兼容层 | FreeRTOS Application Compatibility Layer (ACL) for RT-Thread.</li>
+<li><a
+  href="https://github.com/bjwschaap/platformio-libopencm3-freertos"
+    target="_blank"
+  >platformio-libopencm3-freertos</a>. Sample blinky project for PlatformIO using libopencm3 and FreeRTOS.</li>
+<li><a
+  href="https://github.com/floripasat/obdh"
+    target="_blank"
+  >obdh</a>. On-Board Data Handling Module.</li>
+<li><a
+  href="https://github.com/FreeRTOS/coreMQTT-Agent"
+    target="_blank"
+  >coreMQTT-Agent</a>. Implements an MQTT agent (or daemon) task for simple MQTT connection sharing among different threads of execution..</li>
+<li><a
+  href="https://github.com/solariun/CorePartition"
+    target="_blank"
+  >CorePartition</a>. Universal Cooperative Multithread Lib with real time Scheduler that was designed to work, virtually, into any modern micro controller or Microchip and, also, for user space applications for modern OS  (Mac, Linux, Windows) or on FreeRTOS as well. Supports C and C++ .</li>
+<li><a
+  href="https://github.com/spacelab-ufsc/obdh2"
+    target="_blank"
+  >obdh2</a>. On-Board Data Handling Module 2.</li>
+<li><a
+  href="https://github.com/hex-five/multizone-iot-sdk"
+    target="_blank"
+  >multizone-iot-sdk</a>. MultiZone® Trusted Firmware is the quick and safe way to build secure IoT applications with any RISC-V processor. It provides secure access to commercial and private IoT clouds, real-time monitoring, secure boot, and remote firmware updates. The built-in Trusted Execution Environment provides hardware-enforced separation &hellip; .</li>
+<li><a
+  href="https://github.com/YuzukiHD/FreeRTOS-HIFI4-DSP"
+    target="_blank"
+  >FreeRTOS-HIFI4-DSP</a>. FreeRTOS for Cadence Tensilica HIFI 4 DSP on R329, D1-H, T113 With GCC Compiler.</li>
+<li><a
+  href="https://github.com/visionspacetec/Prust"
+    target="_blank"
+  >Prust</a>. PUS-C on Rust. This is the entry point for the Prust tools. List of the tools and a Wiki for them..</li>
+<li><a
+  href="https://github.com/taligentx/dscKeybusInterface-RTOS"
+    target="_blank"
+  >dscKeybusInterface-RTOS</a>. An esp-open-rtos library to directly interface with DSC security systems, including native HomeKit support..</li>
+<li><a
+  href="https://github.com/ragu-manjegowda/development-of-real-time-systems"
+    target="_blank"
+  >development-of-real-time-systems</a>. Coursera Development of Real-Time Systems Course Assignments.</li>
+<li><a
+  href="https://github.com/jiejieTop/freertos-mqttclient"
+    target="_blank"
+  >freertos-mqttclient</a>. a demo of mqttclient on freertos platform，https://github.com/jiejieTop/mqttclient.</li>
+<li><a
+  href="https://github.com/suikan4github/murasaki"
+    target="_blank"
+  >murasaki</a>. STM32 HAL class library.</li>
+<li><a
+  href="https://github.com/EmbeddedArea/drone_stm32"
+    target="_blank"
+  >drone_stm32</a>. An Open Source Hobby Drone project with STM32F103C8T6 (BluePill).</li>
+<li><a
+  href="https://github.com/eggman/FreeRTOS-raspi3"
+    target="_blank"
+  >FreeRTOS-raspi3</a>. FreeRTOS port Raspberry Pi 3 ( 64bit /  aarch64 ).</li>
+<li><a
+  href="https://github.com/KNR-Selfie/selfie-archive-cc-iarrc2018"
+    target="_blank"
+  >selfie-archive-cc-iarrc2018</a>. Software for 1:10 scale autonomous cars.</li>
+<li><a
+  href="https://github.com/SUPLA/supla-device"
+    target="_blank"
+  >supla-device</a>. Create your own Supla device! This software can be used as a library for Arduino IDE, or can be used directly with ESP8266 RTOS SDK and with ESP IDF. It is also possible to compile and run it on Linux and in FreeRTOS..</li>
+<li><a
+  href="https://github.com/Open-Authenticator/open-authenticator-app"
+    target="_blank"
+  >open-authenticator-app</a>. Firmware for Open Authenticator.</li>
+<li><a
+  href="https://github.com/ctlst-tech/catpilot"
+    target="_blank"
+  >catpilot</a>. CatPilot is a hardware and OS agnostic drone&rsquo;s autopilot software stack. It is designed for faster creation of scalable distributed control systems for mission-critical applications..</li>
+<li><a
+  href="https://github.com/mikisama/FreeRTOS_RH850"
+    target="_blank"
+  >FreeRTOS_RH850</a>. FreeRTOS port for Renesas RH850.</li>
+<li><a
+  href="https://github.com/coder137/ESP32-Repo"
+    target="_blank"
+  >ESP32-Repo</a>. ESP-IDF with ESP32.</li>
+<li><a
+  href="https://github.com/phfbertoleti/lorawan_freertos_esp32"
+    target="_blank"
+  >lorawan_freertos_esp32</a>. Projeto open-source de end-device LoRaWAN com ESP32, sensor BMP180 e FreeRTOS.</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">
@@ -862,9 +1234,11 @@
         
 
         
+
         
 
-          
+        
+  
       </div>
      
       
@@ -880,7 +1254,7 @@
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js" integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="></script>
       
   
     </section>
@@ -891,7 +1265,7 @@
     
     
     <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
       <div class="flex justify-between pt-3">
         <span>
           
@@ -905,8 +1279,7 @@
                 >&rarr;</span
               >
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Freescale MQX</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -920,8 +1293,7 @@
           
             <a class="flex text-right group ml-3" href="/rtos/femto-os/">
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Femto OS</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -947,13 +1319,16 @@
   </footer>
 </article>
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0 z-10">
+  <a
+    href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top" title="Scroll to top">
+    aria-label="Scroll to top"
+    title="Scroll to top">
     &uarr;
   </a>
 </div>
+
     </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
   <div class="flex items-center justify-between">
     <p class="text-sm text-neutral-500 dark:text-neutral-400">

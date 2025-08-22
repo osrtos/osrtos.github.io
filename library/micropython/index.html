@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head>
-  <meta charset="utf-8" />
-  
-  <meta http-equiv="content-language" content="en-us" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <title>MicroPython - Open Source Real-Time Operating Systems (RTOS)</title>
-  <meta name="title" content="MicroPython - Open Source Real-Time Operating Systems (RTOS)" />
-  
-  
-  
-  
-  
-  <link rel="canonical" href="https://www.osrtos.com/library/micropython/" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.312811befec45f3b18d599677296041b3b46157d1e70430aa23b2b2faadb68a0477b6f7257650136c3dbca00522f4c3b7d6953868329ec9237ca43e497a363cd.css"
-    integrity="sha512-MSgRvv7EXzsY1ZlncpYEGztGFX0ecEMKojsrL6rbaKBHe29yV2UBNsPbygBSL0w7fWlThoMp7JI3ykPkl6NjzQ==" />
-  
-  
-  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
-    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
-  
-  
-  
-  
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.38829a2d46667b3048ed12a339f7a49584d39596241b4e61e344c689c257fec016f6e18ea8a349c0a7e2b35a3ef0ab2aed556a64100ada730fc9666da5b7c29a.js"
-    integrity="sha512-OIKaLUZmezBI7RKjOfeklYTTlZYkG05h40TGicJX/sAW9uGOqKNJwKfis1o&#43;8Ksq7VVqZBAK2nMPyWZtpbfCmg==" data-copy="" data-copied=""></script>
-  
-  
-  
-  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
-  
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:url" content="https://www.osrtos.com/library/micropython/">
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="content-language" content="en-us">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color">
+
+    
+    <title>MicroPython - Open Source Real-Time Operating Systems (RTOS)</title>
+    <meta name="title" content="MicroPython - Open Source Real-Time Operating Systems (RTOS)" />
+
+    
+    
+    
+    
+    
+    
+    <link rel="canonical" href="http://localhost:1313/library/micropython/">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="/css/main.bundle.min.2051f57707d569cca9739b2110f76ec5504391bd7cc7464fc32a56d86aa4ce083b2fb103f7678b4b0b91f91c52f8ae00db09394358ca4f23346e2b7b948fab9b.css"
+            integrity="sha512-IFH1dwfVacypc5shEPduxVBDkb18x0ZPwypW2Gqkzgg7L7ED92eLSwuR&#43;RxS&#43;K4A2wk5Q1jKTyM0bit7lI&#43;rmw==">
+
+    
+    
+    <script
+            type="text/javascript"
+            src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+            integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script
+            defer
+            type="text/javascript"
+            id="script-bundle"
+            src="/js/main.bundle.min.e4b2d9aece2aa7a740c3ee7a0efc5acf56b204868ab0fb5bba9be32aed1cd0c9262979d98050759068d58144297f74b12ed05b5173cf2df2e6c097a066b984a8.js"
+            integrity="sha512-5LLZrs4qp6dAw&#43;56Dvxaz1ayBIaKsPtbupvjKu0c0MkmKXnZgFB1kGjVgUQpf3SxLtBbUXPPLfLmwJegZrmEqA=="
+            data-copy="Copy"
+    data-copied="Copied"></script>
+    
+    
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+    
+
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    <meta property="og:url" content="http://localhost:1313/library/micropython/">
   <meta property="og:site_name" content="OSRTOS">
   <meta property="og:title" content="MicroPython">
   <meta property="og:description" content="A lean and efficient Python implementation for microcontrollers and constrained systems.">
@@ -70,13 +98,12 @@
     <meta property="article:published_time" content="2018-08-07T02:47:39+00:00">
     <meta property="article:modified_time" content="2018-08-07T02:47:39+00:00">
 
-  
+    
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="MicroPython">
   <meta name="twitter:description" content="A lean and efficient Python implementation for microcontrollers and constrained systems.">
 
-  
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -86,7 +113,7 @@
     
     "abstract": "\u003cp\u003eA lean and efficient Python implementation for microcontrollers and constrained systems.\u003c\/p\u003e",
     "inLanguage": "en-us",
-    "url" : "https:\/\/www.osrtos.com\/library\/micropython\/",
+    "url" : "http:\/\/localhost:1313\/library\/micropython\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -105,11 +132,13 @@
   </script>
 
 
-  
-  
-  
-  
-  
+
+    
+    
+    
+
+    
+    
 
 <script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
@@ -134,10 +163,13 @@
 
 
 
-  
-  
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+    
+    
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -148,11 +180,20 @@
 
 
 
-  
-  
-  <meta name="theme-color"/>
-  
-  
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-full bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
@@ -163,240 +204,244 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          OSRTOS
+        </a>
+      
+    </nav>
     
-    <div class="flex flex-1 items-center justify-between">
-        <nav class="flex space-x-3">
-
-            
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OSRTOS</a>
-            
-
-        </nav>
-        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
-
-            
-            
-            
-  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
     
-    <p class="text-base font-medium" title="">
-        Home
-    </p>
+      
+        
+  <a
+  href="/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Home
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        RTOS
-    </p>
+      
+        
+  <a
+  href="/rtos/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    RTOS
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        Library
-    </p>
+      
+        
+  <a
+  href="/library/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="">
+    Library
+  </p>
 </a>
 
 
 
-            
-            
-  <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="Learn RTOS">
-        Learn RTOS
-    </p>
+      
+        
+  <a
+  href="/learn/"
+  
+  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Learn RTOS">
+    Learn RTOS
+  </p>
 </a>
 
 
 
-            
-            
+      
+    
 
-            
+    
 
+    
 
-            
+    
 
-
-            
-            
-            <div
-                class=" flex items-center">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
-                    <div class="flex items-center justify-center dark:hidden">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                    </div>
-                    <div class="items-center justify-center hidden dark:flex">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                    </div>
-                </button>
-            </div>
-            
-
-        </nav>
-        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
-
-            <span></span>
-
-            
-
-
-            
-
-            
-            
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
-                <div class="flex items-center justify-center dark:hidden">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                </div>
-                <div class="items-center justify-center hidden dark:flex">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                </div>
-            </button>
-            
-
-        </div>
-    </div>
-    <div class="-my-2 md:hidden">
-
-        <label id="menu-button" class="block">
-            
-            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-                
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-
-  </span>
-
-
-            </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-
-                    <li id="menu-close-button">
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
 </span>
-                    </li>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
 
-                    
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
 
-                    
+    
+
+    
+
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
   <li class="mt-1">
-    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Home
-        </p>
-    </a>
+  <a
+    href="/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Home
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/rtos/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            RTOS
-        </p>
-    </a>
+  <a
+    href="/rtos/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      RTOS
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/library/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Library
-        </p>
-    </a>
+  <a
+    href="/library/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="">
+      Library
+    </p>
+  </a>
 </li>
 
 
 
-
-                    
-
-                    
+            
+              
   <li class="mt-1">
-    <a href="/learn/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="Learn RTOS">
-            Learn RTOS
-        </p>
-    </a>
+  <a
+    href="/learn/"
+    
+    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Learn RTOS">
+      Learn RTOS
+    </p>
+  </a>
 </li>
 
 
 
+            
 
-                    
-
-                </ul>
-                
-                
-
-            </div>
-        </label>
+          </ul>
+          
+        </div>
+      
     </div>
+  </div>
+
 </div>
 
 
@@ -506,14 +551,12 @@
         <div class="article-content max-w-full mb-20">
           <p>A lean and efficient Python implementation for microcontrollers and constrained systems.</p>
 
-
 <h3 class="relative group">Features 
     <div id="features" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#features" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -539,116 +582,411 @@
 <li>inline assembler (currently Thumb and Xtensa instruction sets only)</li>
 </ul>
 
-
 <h3 class="relative group">Resource 
     <div id="resource" class="anchor"></div>
     
     <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#resource" aria-label="Anchor">#</a>
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#resource" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <ul>
-<li><a href="https://github.com/micropython/micropython-lib" target="_blank">micropython-lib</a>. Core Python libraries ported to MicroPython.</li>
-<li><a href="https://github.com/sipeed/MaixPy" target="_blank">MaixPy</a>. MicroPython for K210 RISC-V, let&rsquo;s play with edge AI easier.</li>
-<li><a href="https://github.com/mu-editor/mu" target="_blank">mu</a>. A small, simple editor for beginner Python programmers. Written in Python and Qt5..</li>
-<li><a href="https://github.com/pikasTech/PikaPython" target="_blank">PikaPython</a>. An ultra-lightweight Python interpreter that runs with only 4KB of RAM, zero dependencies. It is ready to use out of the box without any configuration required and easy to extend with C. Similar project: MicroPython, JerryScript..</li>
-<li><a href="https://github.com/trezor/trezor-firmware" target="_blank">trezor-firmware</a>. :lock: Trezor Firmware Monorepo.</li>
-<li><a href="https://github.com/KMKfw/kmk_firmware" target="_blank">kmk_firmware</a>. Clackety Keyboards Powered by Python.</li>
-<li><a href="https://github.com/mcauser/awesome-micropython" target="_blank">awesome-micropython</a>. A curated list of awesome MicroPython libraries, frameworks, software and resources..</li>
-<li><a href="https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo" target="_blank">MicroPython_ESP32_psRAM_LoBo</a>. MicroPython for ESP32 with psRAM support.</li>
-<li><a href="https://github.com/pfalcon/picotui" target="_blank">picotui</a>. Lightweight, pure-Python Text User Interface (TUI) widget toolkit with minimal dependencies. Dedicated to the Pycopy project..</li>
-<li><a href="https://github.com/pfalcon/pycopy" target="_blank">pycopy</a>. Pycopy - a minimalist and memory-efficient Python dialect. Good for desktop, cloud, constrained systems, microcontrollers, and just everything..</li>
-<li><a href="https://github.com/miguelgrinberg/microdot" target="_blank">microdot</a>. The impossibly small web framework for Python and MicroPython..</li>
-<li><a href="https://github.com/wasp-os/wasp-os" target="_blank">wasp-os</a>. A MicroPython based development environment for smart watches (including Pine64 PineTime).</li>
-<li><a href="https://github.com/mytechnotalent/Python-For-Kids" target="_blank">Python-For-Kids</a>. A FREE comprehensive online Python development tutorial FOR KIDS utilizing an official BBC micro:bit Development Board going step-by-step into the world of Python for microcontrollers..</li>
-<li><a href="https://github.com/agucova/awesome-esp" target="_blank">awesome-esp</a>. 📶 A curated list of awesome ESP8266/32 projects and code.</li>
-<li><a href="https://github.com/peterhinch/micropython-async" target="_blank">micropython-async</a>. Application of uasyncio to hardware interfaces. Tutorial and code..</li>
-<li><a href="https://github.com/jczic/MicroWebSrv" target="_blank">MicroWebSrv</a>. A micro HTTP Web server that supports WebSockets, html/python language templating and routing handlers, for MicroPython (used on Pycom modules &amp; ESP32).</li>
-<li><a href="https://github.com/sipeed/MaixPy_scripts" target="_blank">MaixPy_scripts</a>. micropython scripts for MaixPy.</li>
-<li><a href="https://github.com/jczic/MicroWebSrv2" target="_blank">MicroWebSrv2</a>. The last Micro Web Server for IoTs (MicroPython) or large servers (CPython), that supports WebSockets, routes, template engine and with really optimized architecture (mem allocations, async I/Os). Ready for ESP32, STM32 on Pyboard, Pycom&rsquo;s chipsets (WiPy, LoPy, &hellip;). Robust, efficient and documented!.</li>
-<li><a href="https://github.com/bbcmicrobit/micropython" target="_blank">micropython</a>. Port of MicroPython for the BBC micro:bit.</li>
-<li><a href="https://github.com/adafruit/awesome-circuitpython" target="_blank">awesome-circuitpython</a>. A curated list of awesome CircuitPython guides, videos, libraries, frameworks, software and resources..</li>
-<li><a href="https://github.com/micropython/pyboard" target="_blank">pyboard</a>. The MicroPython board.</li>
-<li><a href="https://github.com/pfalcon/picoweb" target="_blank">picoweb</a>. Really minimal web application framework for the Pycopy project (minimalist Python dialect) and its &ldquo;uasyncio&rdquo; async framework.</li>
-<li><a href="https://github.com/JetBrains/intellij-micropython" target="_blank">intellij-micropython</a>. Plugin for MicroPython devices in PyCharm and IntelliJ.</li>
-<li><a href="https://github.com/russhughes/st7789_mpy" target="_blank">st7789_mpy</a>. Fast MicroPython driver for  ST7789 display module written in C.</li>
-<li><a href="https://github.com/peterhinch/micropython-samples" target="_blank">micropython-samples</a>. Assorted code ideas, unofficial MP FAQ, plus index to my other repositories..</li>
-<li><a href="https://github.com/v923z/micropython-ulab" target="_blank">micropython-ulab</a>. a numpy-like fast vector module for micropython, circuitpython, and their derivatives.</li>
-<li><a href="https://github.com/Wei1234c/Broccoli" target="_blank">Broccoli</a>. Broccoli - distributed task queues for ESP32 cluster.</li>
-<li><a href="https://github.com/jczic/ESP32-MPY-Jama" target="_blank">ESP32-MPY-Jama</a>. v1.2 - UI tool for manage Espressif ESP32 microcontrollers with embedded MicroPython for MacOS, Windows and Linux: mini IDE, files manager, REPL, real time dashboards (sys/net), advanced features (gpio/mp3/leds/&hellip;).</li>
-<li><a href="https://github.com/Allen-Synthesis/EuroPi" target="_blank">EuroPi</a>. EuroPi: A reprogrammable Eurorack module based on the Raspberry Pi Pico.</li>
-<li><a href="https://github.com/gbafana25/esp8266_honeypot" target="_blank">esp8266_honeypot</a>. THE ESP8266 HONEYPOT.</li>
-<li><a href="https://github.com/lemariva/micropython-camera-driver" target="_blank">micropython-camera-driver</a>. add camera support to MicroPython.</li>
-<li><a href="https://github.com/peterhinch/micropython-font-to-py" target="_blank">micropython-font-to-py</a>. A Python 3 utility to convert fonts to Python source capable of being frozen as bytecode.</li>
-<li><a href="https://github.com/inmcm/micropyGPS" target="_blank">micropyGPS</a>. A Full Featured GPS NMEA-0183  sentence parser for use with Micropython and the PyBoard embedded platform.</li>
-<li><a href="https://github.com/tayfunulu/WiFiManager" target="_blank">WiFiManager</a>. WiFi manager for ESP8266 - ESP12 - ESP32 - micropython .</li>
-<li><a href="https://github.com/micropython-IMU/micropython-fusion" target="_blank">micropython-fusion</a>. Sensor fusion calculating yaw, pitch and roll from the outputs of motion tracking devices.</li>
-<li><a href="https://github.com/sqfmi/badgy" target="_blank">badgy</a>. Home of Badgy - IoT Badge.</li>
-<li><a href="https://github.com/eez-open/modular-psu" target="_blank">modular-psu</a>. EEZ Bench Box 3 (BB3) Modular T&amp;M chassis.</li>
-<li><a href="https://github.com/mcauser/micropython-waveshare-epaper" target="_blank">micropython-waveshare-epaper</a>. MicroPython drivers for Waveshare e-paper modules.</li>
-<li><a href="https://github.com/mindflayer/python-mocket" target="_blank">python-mocket</a>. a socket mock framework - for all kinds of socket animals, web-clients included.</li>
-<li><a href="https://github.com/BradenM/micropy-cli" target="_blank">micropy-cli</a>. Micropython Project Management Tool with VSCode support, Linting, Intellisense, Dependency Management, and more!.</li>
-<li><a href="https://github.com/micropython-IMU/micropython-mpu9x50" target="_blank">micropython-mpu9x50</a>. Drivers for InvenSense inertial measurement units MPU9250, MPU9150, MPU6050.</li>
-<li><a href="https://github.com/blynkkk/lib-python" target="_blank">lib-python</a>. Blynk IoT library for Python and Micropython.</li>
-<li><a href="https://github.com/hydrabus/hydrabus" target="_blank">hydrabus</a>. HydraBus an open source multi-tool hardware for researcher, hackers, students, embedded software developers or anyone interested in debugging/hacking/developing/penetration testing.</li>
-<li><a href="https://github.com/pfalcon/pycopy-lib" target="_blank">pycopy-lib</a>. Standard library of the Pycopy project, minimalist and light-weight Python language implementation.</li>
-<li><a href="https://github.com/miketeachman/micropython-rotary" target="_blank">micropython-rotary</a>. MicroPython module to read a rotary encoder.  .</li>
-<li><a href="https://github.com/belyalov/tinyweb" target="_blank">tinyweb</a>. Simple and lightweight HTTP async server for micropython.</li>
-<li><a href="https://github.com/insane-adding-machines/frosted" target="_blank">frosted</a>. Frosted: Free POSIX OS for tiny embedded devices.</li>
-<li><a href="https://github.com/BrianPugh/belay" target="_blank">belay</a>. Belay is a python library that enables the rapid development of projects that interact with hardware via a micropython-compatible board..</li>
-<li><a href="https://github.com/blaz-r/pi_pico_neopixel" target="_blank">pi_pico_neopixel</a>. Pi Pico library for NeoPixel led-strip written in MicroPython. Works with ws2812b (RGB) and sk6812 (RGBW)..</li>
-<li><a href="https://github.com/boochow/micropython-raspberrypi" target="_blank">micropython-raspberrypi</a>. bare metal Raspberry Pi Zero / Zero W port of MicroPython.</li>
-<li><a href="https://github.com/lvgl/lv_binding_micropython" target="_blank">lv_binding_micropython</a>. LVGL binding for MicroPython.</li>
-<li><a href="https://github.com/paulober/MicroPico" target="_blank">MicroPico</a>. MicroPico (aka Pico-W-Go) is a Visual Studio Code extension designed to simplify and speed up the development of MicroPython projects for the Raspberry Pi Pico and Pico W boards..</li>
-<li><a href="https://github.com/pfalcon/awesome-micropython" target="_blank">awesome-micropython</a>. Curated list of awesome MicroPython resources.</li>
-<li><a href="https://github.com/jczic/MicroMLP" target="_blank">MicroMLP</a>. A micro neural network multilayer perceptron for MicroPython (used on ESP32 and Pycom modules).</li>
-<li><a href="https://github.com/arduino/lab-micropython-editor" target="_blank">lab-micropython-editor</a>. Arduino Lab for MicroPython is an Integrated Development Environment (IDE) for MicroPython..</li>
-<li><a href="https://github.com/devbis/st7789_mpy" target="_blank">st7789_mpy</a>. Fast pure-C driver for MicroPython that can handle display modules on ST7789 chip.</li>
-<li><a href="https://github.com/mcauser/micropython-max7219" target="_blank">micropython-max7219</a>. MicroPython driver for MAX7219 8x8 LED matrix modules, cascadable and with framebuf.</li>
-<li><a href="https://github.com/brilliantlabsAR/monocle-micropython" target="_blank">monocle-micropython</a>. Micropython ported to the Monocle.</li>
-<li><a href="https://github.com/mcauser/micropython-tm1637" target="_blank">micropython-tm1637</a>. MicroPython driver for TM1637 quad 7-segment LED modules.</li>
-<li><a href="https://github.com/Heerkog/MicroPythonBLEHID" target="_blank">MicroPythonBLEHID</a>. Human Interface Device (HID) over Bluetooth Low Energy (BLE) GATT library for MicroPython..</li>
-<li><a href="https://github.com/miketeachman/micropython-i2s-examples" target="_blank">micropython-i2s-examples</a>. Examples for I2S support on microcontrollers that run MicroPython.</li>
-<li><a href="https://github.com/goatchurchprime/jupyter_micropython_kernel" target="_blank">jupyter_micropython_kernel</a>. Jupyter kernel to interact with a MicroPython/ESP8266 over the serial REPL.</li>
-<li><a href="https://github.com/boochow/MicroPython-ST7735" target="_blank">MicroPython-ST7735</a>. ST7735 TFT LCD driver for MicroPython.</li>
-<li><a href="https://github.com/gyroflow/flowshutter" target="_blank">flowshutter</a>. Firmware for FC based gyro logger device.</li>
-<li><a href="https://github.com/Josverl/micropython-stubber" target="_blank">micropython-stubber</a>. Generate and use stubs for different micropython firmwares to use with vscode and pylance or pylint.</li>
-<li><a href="https://github.com/loboris/MicroPython_K210_LoBo" target="_blank">MicroPython_K210_LoBo</a>. MicroPython implementation for Kendryte K210.</li>
-<li><a href="https://github.com/w84death/smolOS" target="_blank">smolOS</a>. smolOS - a tiny and simple 🧪 research ⚙️ operating system ⌨️ written in 🐍 MicroPython for microcontrollers giving user a POSIX-like 📁 environment and 🧰 tools to play..</li>
-<li><a href="https://github.com/BIPES/BIPES" target="_blank">BIPES</a>. BIPES: Block based Integrated Platform for Embedded Systems allows text and block based programming for several types of embedded systems and Internet of Things modules using MicroPython, CircuitPython, Python or Snek. You can connect, program, debug and monitor several types of boards using network, USB or Bluetooth. No software install needed!.</li>
-<li><a href="https://github.com/john30/ebusd-esp" target="_blank">ebusd-esp</a>. Firmware for ESP8266 allowing eBUS communication for ebusd (<a href="https://github.com/john30/ebusd%29" target="_blank">https://github.com/john30/ebusd)</a>.</li>
-<li><a href="https://github.com/labplus-cn/mpython" target="_blank">mpython</a>. mpython掌控板文档和固件源码.</li>
-<li><a href="https://github.com/lemariva/uPyCam" target="_blank">uPyCam</a>. Take a photo with an ESP32-CAM running MicroPython.</li>
-<li><a href="https://github.com/stinos/micropython-wrap" target="_blank">micropython-wrap</a>. API for interop between C/C++ and MicroPython.</li>
-<li><a href="https://github.com/tuupola/micropython-mpu9250" target="_blank">micropython-mpu9250</a>. MicroPython I2C driver for MPU9250 9-axis motion tracking device.</li>
-<li><a href="https://github.com/cvut/NI-PYT" target="_blank">NI-PYT</a>. Materiály k předmětu NI-PYT na FIT ČVUT.</li>
-<li><a href="https://github.com/tve/mqboard" target="_blank">mqboard</a>. Micro Framework for MicroPython Boards Managed via MQTT.</li>
-<li><a href="https://github.com/01studio-lab/MicroPython_Examples" target="_blank">MicroPython_Examples</a>. MicroPython Examples For 01Studio Development Board.</li>
-<li><a href="https://github.com/kevinkk525/pysmartnode" target="_blank">pysmartnode</a>. Micropython Smarthome framework.</li>
-<li><a href="https://github.com/mcauser/BLACK_F407VE" target="_blank">BLACK_F407VE</a>. MicroPython board definition for the MCUDev Black STM32F407VET6 board.</li>
-<li><a href="https://github.com/micropython/micropython-esp32-ulp" target="_blank">micropython-esp32-ulp</a>. ESP32 ULP Co-Processor toolchain implemented in MicroPython.</li>
-<li><a href="https://github.com/bwhitman/tulipcc" target="_blank">tulipcc</a>. The Tulip Creative Computer - a portable Python device for music, graphics and writing.</li>
-<li><a href="https://github.com/salvatoreraccardi/OBJEX_LINK" target="_blank">OBJEX_LINK</a>. OBJEX Link is a modular IoT board. It is designed to develop IoT devices that are easy to repair and recycle. It is also perfect for rapid prototyping and developing research and robotics projects..</li>
-<li><a href="https://github.com/dukeduck1984/uReflowOven-Esp32-Micropython" target="_blank">uReflowOven-Esp32-Micropython</a>. μReflow Oven controller based on ESP32 with MicroPython &amp; LVGL.</li>
-<li><a href="https://github.com/sgall17a/encodermenu" target="_blank">encodermenu</a>. Simple GUI menu for micropython using a rotary encoder and basic display..</li>
-<li><a href="https://github.com/gurgleapps/pico-web-server-control" target="_blank">pico-web-server-control</a>. A simple and efficient MicroPython web server designed for Raspberry Pi Pico, ESP8266, ESP32, allowing seamless control of microcontroller projects via a web browser..</li>
-<li><a href="https://github.com/russhughes/st7789py_mpy" target="_blank">st7789py_mpy</a>. Driver for 320x240, 240x240 and 135x240 ST7789 displays written in MicroPython.</li>
-<li><a href="https://github.com/SpotlightKid/micropython-stm-lib" target="_blank">micropython-stm-lib</a>. A collection of modules and examples for MicroPython..</li>
-<li><a href="https://github.com/1zlab/1ZLAB_PyEspCar" target="_blank">1ZLAB_PyEspCar</a>.  1ZLab在准备挑选合适的小车来研发计算机视觉的教程时候 , 发现习惯了Python语法的我们, 在市面上找不到合适小车, 后来我们选了ESP32作为小车的控制主板, 可以使用Python对其进行交互式编程, 极大的提升了开发效率..</li>
-<li><a href="https://github.com/SHA2017-badge/Firmware" target="_blank">Firmware</a>. ESP32 firmware for the SHA2017 badge.</li>
-<li><a href="https://github.com/Josverl/micropython-stubs" target="_blank">micropython-stubs</a>. Stubs of most MicroPython ports, boards and versions to make writing code that much simpler..</li>
-<li><a href="https://github.com/shariltumin/esp32-cam-micropython" target="_blank">esp32-cam-micropython</a>. Micropython  esp32-cam.</li>
-<li><a href="https://github.com/dmazzella/uble" target="_blank">uble</a>. Lightweight Bluetooth Low Energy driver written in pure python for micropython.</li>
-<li><a href="https://github.com/microhomie/microhomie" target="_blank">microhomie</a>. MicroPython implementation of the Homie MQTT convention for IoT..</li>
-<li><a href="https://github.com/tuupola/micropython-m5stack" target="_blank">micropython-m5stack</a>. MicroPython Kitchen Sink for M5Stack.</li>
-<li><a href="https://github.com/beeb/coffee-scale-app" target="_blank">coffee-scale-app</a>. Firmware and Progressive Web App to connect to a DIY bluetooth enabled coffee and espresso scale..</li>
-<li><a href="https://github.com/BxNxM/micrOS" target="_blank">micrOS</a>. micrOS - mini automation OS for DIY projects. .</li>
-<li><a href="https://github.com/fadushin/esp8266" target="_blank">esp8266</a>. This repository contains source code for the ESP8266..</li>
-<li><a href="https://github.com/RangerDigital/senko" target="_blank">senko</a>. 🦊 Simplest OTA update solution for your Micropython projects..</li>
-<li><a href="https://github.com/RetiredWizard/PyDOS" target="_blank">PyDOS</a>. DOS-like OS for microcontroller boards running Micropython or Circuitpython.</li>
+<li><a
+  href="https://github.com/micropython/micropython-lib"
+    target="_blank"
+  >micropython-lib</a>. Core Python libraries ported to MicroPython.</li>
+<li><a
+  href="https://github.com/sipeed/MaixPy"
+    target="_blank"
+  >MaixPy</a>. MicroPython for K210 RISC-V, let&rsquo;s play with edge AI easier.</li>
+<li><a
+  href="https://github.com/mu-editor/mu"
+    target="_blank"
+  >mu</a>. A small, simple editor for beginner Python programmers. Written in Python and Qt5..</li>
+<li><a
+  href="https://github.com/pikasTech/PikaPython"
+    target="_blank"
+  >PikaPython</a>. An ultra-lightweight Python interpreter that runs with only 4KB of RAM, zero dependencies. It is ready to use out of the box without any configuration required and easy to extend with C. Similar project: MicroPython, JerryScript..</li>
+<li><a
+  href="https://github.com/trezor/trezor-firmware"
+    target="_blank"
+  >trezor-firmware</a>. :lock: Trezor Firmware Monorepo.</li>
+<li><a
+  href="https://github.com/KMKfw/kmk_firmware"
+    target="_blank"
+  >kmk_firmware</a>. Clackety Keyboards Powered by Python.</li>
+<li><a
+  href="https://github.com/mcauser/awesome-micropython"
+    target="_blank"
+  >awesome-micropython</a>. A curated list of awesome MicroPython libraries, frameworks, software and resources..</li>
+<li><a
+  href="https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo"
+    target="_blank"
+  >MicroPython_ESP32_psRAM_LoBo</a>. MicroPython for ESP32 with psRAM support.</li>
+<li><a
+  href="https://github.com/pfalcon/picotui"
+    target="_blank"
+  >picotui</a>. Lightweight, pure-Python Text User Interface (TUI) widget toolkit with minimal dependencies. Dedicated to the Pycopy project..</li>
+<li><a
+  href="https://github.com/pfalcon/pycopy"
+    target="_blank"
+  >pycopy</a>. Pycopy - a minimalist and memory-efficient Python dialect. Good for desktop, cloud, constrained systems, microcontrollers, and just everything..</li>
+<li><a
+  href="https://github.com/miguelgrinberg/microdot"
+    target="_blank"
+  >microdot</a>. The impossibly small web framework for Python and MicroPython..</li>
+<li><a
+  href="https://github.com/wasp-os/wasp-os"
+    target="_blank"
+  >wasp-os</a>. A MicroPython based development environment for smart watches (including Pine64 PineTime).</li>
+<li><a
+  href="https://github.com/mytechnotalent/Python-For-Kids"
+    target="_blank"
+  >Python-For-Kids</a>. A FREE comprehensive online Python development tutorial FOR KIDS utilizing an official BBC micro:bit Development Board going step-by-step into the world of Python for microcontrollers..</li>
+<li><a
+  href="https://github.com/agucova/awesome-esp"
+    target="_blank"
+  >awesome-esp</a>. 📶 A curated list of awesome ESP8266/32 projects and code.</li>
+<li><a
+  href="https://github.com/peterhinch/micropython-async"
+    target="_blank"
+  >micropython-async</a>. Application of uasyncio to hardware interfaces. Tutorial and code..</li>
+<li><a
+  href="https://github.com/jczic/MicroWebSrv"
+    target="_blank"
+  >MicroWebSrv</a>. A micro HTTP Web server that supports WebSockets, html/python language templating and routing handlers, for MicroPython (used on Pycom modules &amp; ESP32).</li>
+<li><a
+  href="https://github.com/sipeed/MaixPy_scripts"
+    target="_blank"
+  >MaixPy_scripts</a>. micropython scripts for MaixPy.</li>
+<li><a
+  href="https://github.com/jczic/MicroWebSrv2"
+    target="_blank"
+  >MicroWebSrv2</a>. The last Micro Web Server for IoTs (MicroPython) or large servers (CPython), that supports WebSockets, routes, template engine and with really optimized architecture (mem allocations, async I/Os). Ready for ESP32, STM32 on Pyboard, Pycom&rsquo;s chipsets (WiPy, LoPy, &hellip;). Robust, efficient and documented!.</li>
+<li><a
+  href="https://github.com/bbcmicrobit/micropython"
+    target="_blank"
+  >micropython</a>. Port of MicroPython for the BBC micro:bit.</li>
+<li><a
+  href="https://github.com/adafruit/awesome-circuitpython"
+    target="_blank"
+  >awesome-circuitpython</a>. A curated list of awesome CircuitPython guides, videos, libraries, frameworks, software and resources..</li>
+<li><a
+  href="https://github.com/micropython/pyboard"
+    target="_blank"
+  >pyboard</a>. The MicroPython board.</li>
+<li><a
+  href="https://github.com/pfalcon/picoweb"
+    target="_blank"
+  >picoweb</a>. Really minimal web application framework for the Pycopy project (minimalist Python dialect) and its &ldquo;uasyncio&rdquo; async framework.</li>
+<li><a
+  href="https://github.com/JetBrains/intellij-micropython"
+    target="_blank"
+  >intellij-micropython</a>. Plugin for MicroPython devices in PyCharm and IntelliJ.</li>
+<li><a
+  href="https://github.com/russhughes/st7789_mpy"
+    target="_blank"
+  >st7789_mpy</a>. Fast MicroPython driver for  ST7789 display module written in C.</li>
+<li><a
+  href="https://github.com/peterhinch/micropython-samples"
+    target="_blank"
+  >micropython-samples</a>. Assorted code ideas, unofficial MP FAQ, plus index to my other repositories..</li>
+<li><a
+  href="https://github.com/v923z/micropython-ulab"
+    target="_blank"
+  >micropython-ulab</a>. a numpy-like fast vector module for micropython, circuitpython, and their derivatives.</li>
+<li><a
+  href="https://github.com/Wei1234c/Broccoli"
+    target="_blank"
+  >Broccoli</a>. Broccoli - distributed task queues for ESP32 cluster.</li>
+<li><a
+  href="https://github.com/jczic/ESP32-MPY-Jama"
+    target="_blank"
+  >ESP32-MPY-Jama</a>. v1.2 - UI tool for manage Espressif ESP32 microcontrollers with embedded MicroPython for MacOS, Windows and Linux: mini IDE, files manager, REPL, real time dashboards (sys/net), advanced features (gpio/mp3/leds/&hellip;).</li>
+<li><a
+  href="https://github.com/Allen-Synthesis/EuroPi"
+    target="_blank"
+  >EuroPi</a>. EuroPi: A reprogrammable Eurorack module based on the Raspberry Pi Pico.</li>
+<li><a
+  href="https://github.com/gbafana25/esp8266_honeypot"
+    target="_blank"
+  >esp8266_honeypot</a>. THE ESP8266 HONEYPOT.</li>
+<li><a
+  href="https://github.com/lemariva/micropython-camera-driver"
+    target="_blank"
+  >micropython-camera-driver</a>. add camera support to MicroPython.</li>
+<li><a
+  href="https://github.com/peterhinch/micropython-font-to-py"
+    target="_blank"
+  >micropython-font-to-py</a>. A Python 3 utility to convert fonts to Python source capable of being frozen as bytecode.</li>
+<li><a
+  href="https://github.com/inmcm/micropyGPS"
+    target="_blank"
+  >micropyGPS</a>. A Full Featured GPS NMEA-0183  sentence parser for use with Micropython and the PyBoard embedded platform.</li>
+<li><a
+  href="https://github.com/tayfunulu/WiFiManager"
+    target="_blank"
+  >WiFiManager</a>. WiFi manager for ESP8266 - ESP12 - ESP32 - micropython .</li>
+<li><a
+  href="https://github.com/micropython-IMU/micropython-fusion"
+    target="_blank"
+  >micropython-fusion</a>. Sensor fusion calculating yaw, pitch and roll from the outputs of motion tracking devices.</li>
+<li><a
+  href="https://github.com/sqfmi/badgy"
+    target="_blank"
+  >badgy</a>. Home of Badgy - IoT Badge.</li>
+<li><a
+  href="https://github.com/eez-open/modular-psu"
+    target="_blank"
+  >modular-psu</a>. EEZ Bench Box 3 (BB3) Modular T&amp;M chassis.</li>
+<li><a
+  href="https://github.com/mcauser/micropython-waveshare-epaper"
+    target="_blank"
+  >micropython-waveshare-epaper</a>. MicroPython drivers for Waveshare e-paper modules.</li>
+<li><a
+  href="https://github.com/mindflayer/python-mocket"
+    target="_blank"
+  >python-mocket</a>. a socket mock framework - for all kinds of socket animals, web-clients included.</li>
+<li><a
+  href="https://github.com/BradenM/micropy-cli"
+    target="_blank"
+  >micropy-cli</a>. Micropython Project Management Tool with VSCode support, Linting, Intellisense, Dependency Management, and more!.</li>
+<li><a
+  href="https://github.com/micropython-IMU/micropython-mpu9x50"
+    target="_blank"
+  >micropython-mpu9x50</a>. Drivers for InvenSense inertial measurement units MPU9250, MPU9150, MPU6050.</li>
+<li><a
+  href="https://github.com/blynkkk/lib-python"
+    target="_blank"
+  >lib-python</a>. Blynk IoT library for Python and Micropython.</li>
+<li><a
+  href="https://github.com/hydrabus/hydrabus"
+    target="_blank"
+  >hydrabus</a>. HydraBus an open source multi-tool hardware for researcher, hackers, students, embedded software developers or anyone interested in debugging/hacking/developing/penetration testing.</li>
+<li><a
+  href="https://github.com/pfalcon/pycopy-lib"
+    target="_blank"
+  >pycopy-lib</a>. Standard library of the Pycopy project, minimalist and light-weight Python language implementation.</li>
+<li><a
+  href="https://github.com/miketeachman/micropython-rotary"
+    target="_blank"
+  >micropython-rotary</a>. MicroPython module to read a rotary encoder.  .</li>
+<li><a
+  href="https://github.com/belyalov/tinyweb"
+    target="_blank"
+  >tinyweb</a>. Simple and lightweight HTTP async server for micropython.</li>
+<li><a
+  href="https://github.com/insane-adding-machines/frosted"
+    target="_blank"
+  >frosted</a>. Frosted: Free POSIX OS for tiny embedded devices.</li>
+<li><a
+  href="https://github.com/BrianPugh/belay"
+    target="_blank"
+  >belay</a>. Belay is a python library that enables the rapid development of projects that interact with hardware via a micropython-compatible board..</li>
+<li><a
+  href="https://github.com/blaz-r/pi_pico_neopixel"
+    target="_blank"
+  >pi_pico_neopixel</a>. Pi Pico library for NeoPixel led-strip written in MicroPython. Works with ws2812b (RGB) and sk6812 (RGBW)..</li>
+<li><a
+  href="https://github.com/boochow/micropython-raspberrypi"
+    target="_blank"
+  >micropython-raspberrypi</a>. bare metal Raspberry Pi Zero / Zero W port of MicroPython.</li>
+<li><a
+  href="https://github.com/lvgl/lv_binding_micropython"
+    target="_blank"
+  >lv_binding_micropython</a>. LVGL binding for MicroPython.</li>
+<li><a
+  href="https://github.com/paulober/MicroPico"
+    target="_blank"
+  >MicroPico</a>. MicroPico (aka Pico-W-Go) is a Visual Studio Code extension designed to simplify and speed up the development of MicroPython projects for the Raspberry Pi Pico and Pico W boards..</li>
+<li><a
+  href="https://github.com/pfalcon/awesome-micropython"
+    target="_blank"
+  >awesome-micropython</a>. Curated list of awesome MicroPython resources.</li>
+<li><a
+  href="https://github.com/jczic/MicroMLP"
+    target="_blank"
+  >MicroMLP</a>. A micro neural network multilayer perceptron for MicroPython (used on ESP32 and Pycom modules).</li>
+<li><a
+  href="https://github.com/arduino/lab-micropython-editor"
+    target="_blank"
+  >lab-micropython-editor</a>. Arduino Lab for MicroPython is an Integrated Development Environment (IDE) for MicroPython..</li>
+<li><a
+  href="https://github.com/devbis/st7789_mpy"
+    target="_blank"
+  >st7789_mpy</a>. Fast pure-C driver for MicroPython that can handle display modules on ST7789 chip.</li>
+<li><a
+  href="https://github.com/mcauser/micropython-max7219"
+    target="_blank"
+  >micropython-max7219</a>. MicroPython driver for MAX7219 8x8 LED matrix modules, cascadable and with framebuf.</li>
+<li><a
+  href="https://github.com/brilliantlabsAR/monocle-micropython"
+    target="_blank"
+  >monocle-micropython</a>. Micropython ported to the Monocle.</li>
+<li><a
+  href="https://github.com/mcauser/micropython-tm1637"
+    target="_blank"
+  >micropython-tm1637</a>. MicroPython driver for TM1637 quad 7-segment LED modules.</li>
+<li><a
+  href="https://github.com/Heerkog/MicroPythonBLEHID"
+    target="_blank"
+  >MicroPythonBLEHID</a>. Human Interface Device (HID) over Bluetooth Low Energy (BLE) GATT library for MicroPython..</li>
+<li><a
+  href="https://github.com/miketeachman/micropython-i2s-examples"
+    target="_blank"
+  >micropython-i2s-examples</a>. Examples for I2S support on microcontrollers that run MicroPython.</li>
+<li><a
+  href="https://github.com/goatchurchprime/jupyter_micropython_kernel"
+    target="_blank"
+  >jupyter_micropython_kernel</a>. Jupyter kernel to interact with a MicroPython/ESP8266 over the serial REPL.</li>
+<li><a
+  href="https://github.com/boochow/MicroPython-ST7735"
+    target="_blank"
+  >MicroPython-ST7735</a>. ST7735 TFT LCD driver for MicroPython.</li>
+<li><a
+  href="https://github.com/gyroflow/flowshutter"
+    target="_blank"
+  >flowshutter</a>. Firmware for FC based gyro logger device.</li>
+<li><a
+  href="https://github.com/Josverl/micropython-stubber"
+    target="_blank"
+  >micropython-stubber</a>. Generate and use stubs for different micropython firmwares to use with vscode and pylance or pylint.</li>
+<li><a
+  href="https://github.com/loboris/MicroPython_K210_LoBo"
+    target="_blank"
+  >MicroPython_K210_LoBo</a>. MicroPython implementation for Kendryte K210.</li>
+<li><a
+  href="https://github.com/w84death/smolOS"
+    target="_blank"
+  >smolOS</a>. smolOS - a tiny and simple 🧪 research ⚙️ operating system ⌨️ written in 🐍 MicroPython for microcontrollers giving user a POSIX-like 📁 environment and 🧰 tools to play..</li>
+<li><a
+  href="https://github.com/BIPES/BIPES"
+    target="_blank"
+  >BIPES</a>. BIPES: Block based Integrated Platform for Embedded Systems allows text and block based programming for several types of embedded systems and Internet of Things modules using MicroPython, CircuitPython, Python or Snek. You can connect, program, debug and monitor several types of boards using network, USB or Bluetooth. No software install needed!.</li>
+<li><a
+  href="https://github.com/john30/ebusd-esp"
+    target="_blank"
+  >ebusd-esp</a>. Firmware for ESP8266 allowing eBUS communication for ebusd (<a
+  href="https://github.com/john30/ebusd%29"
+    target="_blank"
+  >https://github.com/john30/ebusd)</a>.</li>
+<li><a
+  href="https://github.com/labplus-cn/mpython"
+    target="_blank"
+  >mpython</a>. mpython掌控板文档和固件源码.</li>
+<li><a
+  href="https://github.com/lemariva/uPyCam"
+    target="_blank"
+  >uPyCam</a>. Take a photo with an ESP32-CAM running MicroPython.</li>
+<li><a
+  href="https://github.com/stinos/micropython-wrap"
+    target="_blank"
+  >micropython-wrap</a>. API for interop between C/C++ and MicroPython.</li>
+<li><a
+  href="https://github.com/tuupola/micropython-mpu9250"
+    target="_blank"
+  >micropython-mpu9250</a>. MicroPython I2C driver for MPU9250 9-axis motion tracking device.</li>
+<li><a
+  href="https://github.com/cvut/NI-PYT"
+    target="_blank"
+  >NI-PYT</a>. Materiály k předmětu NI-PYT na FIT ČVUT.</li>
+<li><a
+  href="https://github.com/tve/mqboard"
+    target="_blank"
+  >mqboard</a>. Micro Framework for MicroPython Boards Managed via MQTT.</li>
+<li><a
+  href="https://github.com/01studio-lab/MicroPython_Examples"
+    target="_blank"
+  >MicroPython_Examples</a>. MicroPython Examples For 01Studio Development Board.</li>
+<li><a
+  href="https://github.com/kevinkk525/pysmartnode"
+    target="_blank"
+  >pysmartnode</a>. Micropython Smarthome framework.</li>
+<li><a
+  href="https://github.com/mcauser/BLACK_F407VE"
+    target="_blank"
+  >BLACK_F407VE</a>. MicroPython board definition for the MCUDev Black STM32F407VET6 board.</li>
+<li><a
+  href="https://github.com/micropython/micropython-esp32-ulp"
+    target="_blank"
+  >micropython-esp32-ulp</a>. ESP32 ULP Co-Processor toolchain implemented in MicroPython.</li>
+<li><a
+  href="https://github.com/bwhitman/tulipcc"
+    target="_blank"
+  >tulipcc</a>. The Tulip Creative Computer - a portable Python device for music, graphics and writing.</li>
+<li><a
+  href="https://github.com/salvatoreraccardi/OBJEX_LINK"
+    target="_blank"
+  >OBJEX_LINK</a>. OBJEX Link is a modular IoT board. It is designed to develop IoT devices that are easy to repair and recycle. It is also perfect for rapid prototyping and developing research and robotics projects..</li>
+<li><a
+  href="https://github.com/dukeduck1984/uReflowOven-Esp32-Micropython"
+    target="_blank"
+  >uReflowOven-Esp32-Micropython</a>. μReflow Oven controller based on ESP32 with MicroPython &amp; LVGL.</li>
+<li><a
+  href="https://github.com/sgall17a/encodermenu"
+    target="_blank"
+  >encodermenu</a>. Simple GUI menu for micropython using a rotary encoder and basic display..</li>
+<li><a
+  href="https://github.com/gurgleapps/pico-web-server-control"
+    target="_blank"
+  >pico-web-server-control</a>. A simple and efficient MicroPython web server designed for Raspberry Pi Pico, ESP8266, ESP32, allowing seamless control of microcontroller projects via a web browser..</li>
+<li><a
+  href="https://github.com/russhughes/st7789py_mpy"
+    target="_blank"
+  >st7789py_mpy</a>. Driver for 320x240, 240x240 and 135x240 ST7789 displays written in MicroPython.</li>
+<li><a
+  href="https://github.com/SpotlightKid/micropython-stm-lib"
+    target="_blank"
+  >micropython-stm-lib</a>. A collection of modules and examples for MicroPython..</li>
+<li><a
+  href="https://github.com/1zlab/1ZLAB_PyEspCar"
+    target="_blank"
+  >1ZLAB_PyEspCar</a>.  1ZLab在准备挑选合适的小车来研发计算机视觉的教程时候 , 发现习惯了Python语法的我们, 在市面上找不到合适小车, 后来我们选了ESP32作为小车的控制主板, 可以使用Python对其进行交互式编程, 极大的提升了开发效率..</li>
+<li><a
+  href="https://github.com/SHA2017-badge/Firmware"
+    target="_blank"
+  >Firmware</a>. ESP32 firmware for the SHA2017 badge.</li>
+<li><a
+  href="https://github.com/Josverl/micropython-stubs"
+    target="_blank"
+  >micropython-stubs</a>. Stubs of most MicroPython ports, boards and versions to make writing code that much simpler..</li>
+<li><a
+  href="https://github.com/shariltumin/esp32-cam-micropython"
+    target="_blank"
+  >esp32-cam-micropython</a>. Micropython  esp32-cam.</li>
+<li><a
+  href="https://github.com/dmazzella/uble"
+    target="_blank"
+  >uble</a>. Lightweight Bluetooth Low Energy driver written in pure python for micropython.</li>
+<li><a
+  href="https://github.com/microhomie/microhomie"
+    target="_blank"
+  >microhomie</a>. MicroPython implementation of the Homie MQTT convention for IoT..</li>
+<li><a
+  href="https://github.com/tuupola/micropython-m5stack"
+    target="_blank"
+  >micropython-m5stack</a>. MicroPython Kitchen Sink for M5Stack.</li>
+<li><a
+  href="https://github.com/beeb/coffee-scale-app"
+    target="_blank"
+  >coffee-scale-app</a>. Firmware and Progressive Web App to connect to a DIY bluetooth enabled coffee and espresso scale..</li>
+<li><a
+  href="https://github.com/BxNxM/micrOS"
+    target="_blank"
+  >micrOS</a>. micrOS - mini automation OS for DIY projects. .</li>
+<li><a
+  href="https://github.com/fadushin/esp8266"
+    target="_blank"
+  >esp8266</a>. This repository contains source code for the ESP8266..</li>
+<li><a
+  href="https://github.com/RangerDigital/senko"
+    target="_blank"
+  >senko</a>. 🦊 Simplest OTA update solution for your Micropython projects..</li>
+<li><a
+  href="https://github.com/RetiredWizard/PyDOS"
+    target="_blank"
+  >PyDOS</a>. DOS-like OS for microcontroller boards running Micropython or Circuitpython.</li>
 </ul>
           <div class="mb-5">
             <h3 class="text-md mb-2">
@@ -669,9 +1007,11 @@
         
 
         
+
         
 
-          
+        
+  
       </div>
      
       
@@ -687,7 +1027,7 @@
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js" integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="></script>
       
   
     </section>
@@ -698,7 +1038,7 @@
     
     
     <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
       <div class="flex justify-between pt-3">
         <span>
           
@@ -712,8 +1052,7 @@
                 >&rarr;</span
               >
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >lwIP</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -727,8 +1066,7 @@
           
             <a class="flex text-right group ml-3" href="/library/ucglib/">
               <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Ucglib</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -754,13 +1092,16 @@
   </footer>
 </article>
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0 z-10">
+  <a
+    href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top" title="Scroll to top">
+    aria-label="Scroll to top"
+    title="Scroll to top">
     &uarr;
   </a>
 </div>
+
     </main><footer id="site-footer" class="py-8 pb-4 print:hidden">
   <div class="flex items-center justify-between">
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
